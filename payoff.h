@@ -5,20 +5,21 @@
 #ifndef FINANCE_PAYOFF_H
 #define FINANCE_PAYOFF_H
 
+#include "nameDef.h"
 
 class Payoff {
 public:
-    virtual double GetPayoff(double Spot) const = 0;
+    virtual Money GetPayoff(Quote Spot) const = 0;
 };
 
 class VanillaCallPayoff : public Payoff {
 public:
-    VanillaCallPayoff(double Strike);
+    VanillaCallPayoff(Quote Strike);
 
-    double GetPayoff(double Spot) const override;
+    Money GetPayoff(Quote Spot) const override;
 
 private:
-    double Strike;
+    Quote Strike_;
 
 };
 
