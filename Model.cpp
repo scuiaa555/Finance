@@ -1,0 +1,29 @@
+//
+// Created by CUI Shidong on 27/6/2016.
+//
+
+#include "Model.h"
+
+BSModel::BSModel(double r, double q, double sigma) {
+    parameterSet_ = std::shared_ptr<BSModel::BSParameterSet>(
+            new BSModel::BSParameterSet(r, q, sigma));
+}
+
+void BSModel::GetParameterSet() {
+    return;
+}
+
+BSModel::BSParameterSet::BSParameterSet(double r, double q, double sigma) :
+        r_(r), q_(q), sigma_(sigma) { }
+
+double BSModel::BSParameterSet::GetRiskFree() const {
+    return r_;
+}
+
+double BSModel::BSParameterSet::GetDividend() const {
+    return q_;
+}
+
+double BSModel::BSParameterSet::GetVolatility() const {
+    return sigma_;
+}
