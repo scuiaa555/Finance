@@ -3,11 +3,14 @@
 //
 
 #include "PricingEngine.h"
-/*
+
+
+
 void AnalyticBSEngine::calculate() {
-    results_->price = 0;
+    test(5.0);
 }
 
+/*
 void PricingEngine::GetArguments(std::shared_ptr<Option::Arguments> arguments) {
     arguments_ = std::dynamic_pointer_cast<PricingEngine::Arguments>(arguments);
 }*/

@@ -8,37 +8,38 @@
 #include <memory>
 #include "nameDef.h"
 #include "Model.h"
-#include "Option.h"
+//#include "Option.h"   must not include
 
 class PricingEngine {
 public:
-    /*virtual void calculate() = 0;
+    virtual void calculate() = 0;
 
+    /*
     //class Arguments : public Option::Arguments {
-    //};
+    //};*/
 
-    class Arguments {
-        double a;
-    };
+    class Arguments;
 
-    class Results {
+    /*class Results {
     public:
         Money price;
     };*/
 
-    //virtual void GetArguments(std::shared_ptr<Option::Arguments> arguments);
+    virtual std::shared_ptr<Arguments> GetArguments() = 0;
 
     //std::shared_ptr<Results> results_;
-    //std::shared_ptr<PricingEngine::Arguments> arguments_;
+    std::shared_ptr<Arguments> arguments_;
 };
 
 class AnalyticBSEngine : public PricingEngine {
 public:
     AnalyticBSEngine(std::shared_ptr<BSModel> model);
 
-    //void calculate() override;
+    double test(double a) { return a; }
 
-    class AnalyticBSResults : public virtual PricingEngine::Results {
+    void calculate() override;
+
+/*    class AnalyticBSResults : public virtual PricingEngine::Results {
     public:
         double delta;
     };
@@ -46,7 +47,7 @@ public:
     class AnalyticBSArguments : public virtual PricingEngine::Arguments {
     public:
         std::shared_ptr<Payoff> payoff_;
-    };
+    };*/
 
 private:
     std::shared_ptr<BSModel> model_;
@@ -54,5 +55,25 @@ private:
     //std::shared_ptr<AnalyticBSEngine::Arguments> arguments_;
 };
 
+class PricingEngine::Arguments {
+public:
+    double a;
+
+    virtual void print() { double a = 0; };
+
+    //virtual ~Arguments() { }
+};
+
+/*template<typename ArgumentsType>
+class GenericEngine : public PricingEngine {
+public:
+    std::shared_ptr<PricingEngine::Arguments> GetArguments() const {
+        return arguments_;
+    }
+
+protected:
+    mutable std::shared_ptr<ArgumentsType> arguments_;
+
+};*/
 
 #endif //FINANCE_PRICING_ENGINE_H

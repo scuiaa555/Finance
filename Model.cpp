@@ -4,11 +4,22 @@
 
 #include "Model.h"
 
-BSModel::BSModel(double r, double q, double sigma) {
-    parameterSet_ = std::shared_ptr<BSModel::BSParameterSet>(
-            new BSModel::BSParameterSet(r, q, sigma));
+BSModel::BSModel(double r, double q, double sigma) : r_(r), q_(q), sigma_(sigma) {
 }
 
+double BSModel::GetRiskFree() const {
+    return r_;
+}
+
+double BSModel::GetDividend() const {
+    return q_;
+}
+
+double BSModel::GetVolatility() const {
+    return sigma_;
+}
+
+/*
 void BSModel::GetParameterSet() {
     return;
 }
@@ -27,3 +38,4 @@ double BSModel::BSParameterSet::GetDividend() const {
 double BSModel::BSParameterSet::GetVolatility() const {
     return sigma_;
 }
+*/

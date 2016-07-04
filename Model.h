@@ -18,7 +18,18 @@ class BSModel {
 public:
     BSModel(double r, double q, double sigma);
 
-    class BSParameterSet : public virtual Model::ParameterSet {
+    double GetRiskFree() const;
+
+    double GetDividend() const;
+
+    double GetVolatility() const;
+
+private:
+    double r_;
+    double q_;
+    double sigma_;
+
+    /*class BSParameterSet : public virtual Model::ParameterSet {
     public:
         BSParameterSet(double r, double q, double sigma);
 
@@ -31,12 +42,12 @@ public:
         double r_;
         double q_;
         double sigma_;
-    };
+    };*/
 
-    //std::shared_ptr<BSParameterSet> GetParameterSet();
+//std::shared_ptr<BSParameterSet> GetParameterSet();
 
-private:
-    std::shared_ptr<Model::ParameterSet> parameterSet_;
+//private:
+//std::shared_ptr<Model::ParameterSet> parameterSet_;
 
 };
 

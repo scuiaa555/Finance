@@ -2,10 +2,12 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/Payoff.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/nameDef.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PricingEngine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Payoff.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Option.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PricingEngine.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Model.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Model.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Option.cpp" isTestSource="false" />

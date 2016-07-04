@@ -7,6 +7,7 @@
 
 #include "nameDef.h"
 #include "Payoff.h"
+#include "PricingEngine.h"
 #include <memory>
 #include <string>
 
@@ -20,9 +21,15 @@ public:
 
     //virtual Time GetMaturity() const = 0;
 
-    //void SetPricingEngine(std::shared_ptr<PricingEngine> pricingEngine);
+    void SetPricingEngine(std::shared_ptr<PricingEngine> pricingEngine);
 
-    //Money npv();
+    class Arguments : public PricingEngine::Arguments {
+        double b;
+    };
+
+    Money npv();
+
+    virtual void SetupArguments(std::shared_ptr<PricingEngine::Arguments> arg) = 0;
 
     //void Calculate();
 
@@ -33,7 +40,8 @@ public:
     //class Arguments;
 
 protected:
-    //std::shared_ptr<PricingEngine> pricingEngine_;
+    std::shared_ptr<PricingEngine> pricingEngine_;
+    std::shared_ptr<Arguments> arguments;
 };
 
 class EuropeanCall : public Option {
@@ -44,11 +52,22 @@ public:
 
     EuropeanCall(Time Maturity, Quote Strike);
 
+    void SetupArguments(std::shared_ptr<PricingEngine::Arguments> arg) override;
+
     //Time GetMaturity() const override;
 
     //void GetArguments() override;
 
-    class EuropeanCallArguments;
+    class Arguments : public PricingEngine::Arguments {
+    public:
+        std::shared_ptr<Payoff> payoff_;
+
+        void print() override {
+            double b = 0;
+        }
+
+        //~Arguments() { }
+    };
 
 
 private:
