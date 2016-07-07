@@ -40,11 +40,11 @@ class PricingEngine::Arguments {
 public:
     Arguments() { }
 
-    double a;
+//    double a;
 
-    virtual void print() { double a = 0; };
+//    virtual void print() { double a = 0; };
 
-    //virtual ~Arguments() { }
+    virtual ~Arguments() { }
 };
 
 template<typename ArgumentsType>
