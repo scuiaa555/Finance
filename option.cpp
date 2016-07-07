@@ -8,6 +8,10 @@
 
 using std::shared_ptr;
 
+/*EuropeanCall::Arguments::Arguments(double a) : a_(a) {
+    payoff_ = nullptr;
+}*/
+
 void Option::SetPricingEngine(std::shared_ptr<PricingEngine> pricingEngine) {
     pricingEngine_ = pricingEngine;
 }
@@ -16,6 +20,7 @@ Money Option::npv() {
     //give option exercise to pricing engine
     //pricingEngine_->GetArguments(arguments);
     //SetupArguments(pricingEngine_->arguments_);
+//    pricingEngine_->validate();
     SetupArguments(pricingEngine_->GetArguments());
 
     //let pricing engine to the calculations
@@ -31,12 +36,15 @@ EuropeanCall::EuropeanCall(Time Maturity, Quote Strike) : Maturity_(Maturity) {
 EuropeanCall::EuropeanCall(Time Maturity, std::shared_ptr<Payoff> payoff) :
         Maturity_(Maturity), payoff_(payoff) { }
 
-void EuropeanCall::SetupArguments(std::shared_ptr<PricingEngine::Arguments> arg) {
-    std::shared_ptr<EuropeanCall::Arguments> arguments;
-    arguments = std::dynamic_pointer_cast<EuropeanCall::Arguments>(arg);
+void EuropeanCall::SetupArguments(PricingEngine::Arguments *arg) {
+    EuropeanCall::Arguments *arguments;
+    arguments = dynamic_cast<EuropeanCall::Arguments *>(arg);
     arguments->payoff_ = payoff_;
 
 }
+
+
+
 
 
 

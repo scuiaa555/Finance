@@ -12,7 +12,7 @@ class AnalyticEuropeanEngine : public EuropeanCall::engine {
 public:
     AnalyticEuropeanEngine(std::shared_ptr<BSModel> model);
 
-    double test(double a) { return a; }
+//    double test(double a) { return a; }
 
     void calculate() override;
 

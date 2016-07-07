@@ -7,7 +7,11 @@
 
 
 void AnalyticEuropeanEngine::calculate() {
-    std::cout << "Pricing succeeds" << std::endl;
+    EuropeanCall::Arguments *arguments;
+    arguments = dynamic_cast<EuropeanCall::Arguments *>(this->GetArguments());
+    std::cout << arguments->payoff_->GetPayoff(100.0) << std::endl;
+
+    std::cout << "Analytic European engine for European option pricing succeeds" << std::endl;
 
 }
 
