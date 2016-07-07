@@ -2,8 +2,7 @@
 
 //#include "payoff.h"
 #include "Option.h"
-#include "PricingEngine.h"
-#include "Model.h"
+#include "AnalyticEuropeanEngine.h"
 
 using namespace std;
 
@@ -12,7 +11,7 @@ int main() {
     EuropeanCall call(1.0, vanillaCallPayoff);
 
     shared_ptr<BSModel> bsModel(new BSModel(0.05, 0.01, 0.3));
-    shared_ptr<AnalyticBSEngine> pricingEngine(new AnalyticBSEngine(bsModel));
+    shared_ptr<AnalyticEuropeanEngine> pricingEngine(new AnalyticEuropeanEngine(bsModel));
 
     call.SetPricingEngine(pricingEngine);
     call.npv();

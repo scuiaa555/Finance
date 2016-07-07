@@ -6,13 +6,13 @@
 
 
 
-void AnalyticBSEngine::calculate() {
+/*void AnalyticBSEngine::calculate() {
     test(5.0);
 }
 
-/*
+*//*
 void PricingEngine::GetArguments(std::shared_ptr<Option::Arguments> arguments) {
     arguments_ = std::dynamic_pointer_cast<PricingEngine::Arguments>(arguments);
-}*/
+}*//*
 
-AnalyticBSEngine::AnalyticBSEngine(std::shared_ptr<BSModel> model) : model_(model) { }
+AnalyticBSEngine::AnalyticBSEngine(std::shared_ptr<BSModel> model) : model_(model) { }*/
