@@ -31,6 +31,8 @@ public:
 
     virtual void SetupArguments(PricingEngine::Arguments *arg) = 0;
 
+    virtual Money FetchResults(PricingEngine::Results *res) = 0;
+
     //void Calculate();
 
     //virtual void GetArguments() = 0;
@@ -54,13 +56,15 @@ public:
 
     void SetupArguments(PricingEngine::Arguments *arg) override;
 
+    Money FetchResults(PricingEngine::Results *res) override;
+
     //Time GetMaturity() const override;
 
     //void GetArguments() override;
 
     class Arguments : public PricingEngine::Arguments {
     public:
-        Arguments() { }
+//        Arguments() { }
 
         //Arguments(double a);
 
@@ -76,15 +80,25 @@ public:
         //~Arguments() { }
     };
 
+    class Results : public PricingEngine::Results {
+    public:
+//        Results() { }
+
+        Money price_;
+        double delta_;
+
+    };
+
     class engine;
 
-
+    std::shared_ptr<Results> results_;
 private:
     std::shared_ptr<Payoff> payoff_;
     Time maturity_;
+
 };
 
-class EuropeanCall::engine : public GenericEngine<EuropeanCall::Arguments> {
+class EuropeanCall::engine : public GenericEngine<EuropeanCall::Arguments, EuropeanCall::Results> {
 };
 
 
