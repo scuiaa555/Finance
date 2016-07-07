@@ -14,7 +14,7 @@ int main() {
     EuropeanCall call(1.0, vanillaCallPayoff);
 
     shared_ptr<BSModel> bsModel(new BSModel(0.05, 0.01, 0.3, 100));
-    BSModel bs(1, 2, 3, 4);
+//    BSModel bs(1, 2, 3, 4);
     shared_ptr<AnalyticEuropeanEngine> pricingEngine(new AnalyticEuropeanEngine(bsModel));
 
     call.SetPricingEngine(pricingEngine);

@@ -3,6 +3,7 @@
 //
 
 #include "Option.h"
+#include <iostream>
 //#include "PricingEngine.h"
 //#include "Payoff.h"
 
@@ -26,7 +27,9 @@ Money Option::npv() {
     //let pricing engine to the calculations
     pricingEngine_->calculate();
 
-    //fetch the results back
+    //fetch the results back to the option
+    return FetchResults(pricingEngine_->GetResults());
+
 }
 
 EuropeanCall::EuropeanCall(Time maturity, Quote strike) : maturity_(maturity) {
@@ -41,6 +44,13 @@ void EuropeanCall::SetupArguments(PricingEngine::Arguments *arg) {
     arguments = dynamic_cast<EuropeanCall::Arguments *>(arg);
     arguments->payoff_ = payoff_;
     arguments->maturity_ = maturity_;
+}
+
+Money EuropeanCall::FetchResults(PricingEngine::Results *res) {
+    EuropeanCall::Results *result = dynamic_cast<EuropeanCall::Results *>(res);
+    results_ = std::make_shared<EuropeanCall::Results>(*result);
+    std::cout << results_->price_ << std::endl;
+    return results_->price_;
 }
 
 
