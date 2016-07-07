@@ -48,9 +48,9 @@ class EuropeanCall : public Option {
 public:
     EuropeanCall() { }
 
-    EuropeanCall(Time Maturity, std::shared_ptr<Payoff> payoff);
+    EuropeanCall(Time maturity, std::shared_ptr<Payoff> payoff);
 
-    EuropeanCall(Time Maturity, Quote Strike);
+    EuropeanCall(Time maturity, Quote strike);
 
     void SetupArguments(PricingEngine::Arguments *arg) override;
 
@@ -65,6 +65,7 @@ public:
         //Arguments(double a);
 
         std::shared_ptr<Payoff> payoff_;
+        Time maturity_;
 
 /*        void print() override {
             double b = 0;
@@ -80,7 +81,7 @@ public:
 
 private:
     std::shared_ptr<Payoff> payoff_;
-    Time Maturity_;
+    Time maturity_;
 };
 
 class EuropeanCall::engine : public GenericEngine<EuropeanCall::Arguments> {

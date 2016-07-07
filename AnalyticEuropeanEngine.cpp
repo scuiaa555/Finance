@@ -4,6 +4,8 @@
 
 #include "AnalyticEuropeanEngine.h"
 #include <iostream>
+#include <boost/math/distributions/normal.hpp>
+//#include <cmath>
 
 
 void AnalyticEuropeanEngine::calculate() {
@@ -14,7 +16,13 @@ void AnalyticEuropeanEngine::calculate() {
     Quote strike = payoff->GetStrike();
     Rate r = model_->GetRiskFree();
     Rate q = model_->GetDividend();
+    Rate sigma = model_->GetVolatility();
     Time maturity = arguments->maturity_;
+    boost::math::normal_distribution<> nd(0.0, 1.0);
+    double d1 = (log(spot / strike) + (r - q) * maturity) / sigma / sqrt(maturity);
+    double d2 = d1 - sigma * sqrt(maturity);
+    double price = spot * boost::math::cdf(nd, d1) - strike * boost::math::cdf(nd, d2) * exp(-r * maturity);
+    std::cout << "European option price is " << price << "." << std::endl;
 
 //    std::cout << arguments->payoff_->GetPayoff(100.0) << std::endl;
 

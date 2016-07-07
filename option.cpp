@@ -29,18 +29,18 @@ Money Option::npv() {
     //fetch the results back
 }
 
-EuropeanCall::EuropeanCall(Time Maturity, Quote Strike) : Maturity_(Maturity) {
-    payoff_ = shared_ptr<Payoff>(new VanillaCallPayoff(Strike));
+EuropeanCall::EuropeanCall(Time maturity, Quote strike) : maturity_(maturity) {
+    payoff_ = shared_ptr<Payoff>(new VanillaCallPayoff(strike));
 }
 
-EuropeanCall::EuropeanCall(Time Maturity, std::shared_ptr<Payoff> payoff) :
-        Maturity_(Maturity), payoff_(payoff) { }
+EuropeanCall::EuropeanCall(Time maturity, std::shared_ptr<Payoff> payoff) :
+        maturity_(maturity), payoff_(payoff) { }
 
 void EuropeanCall::SetupArguments(PricingEngine::Arguments *arg) {
     EuropeanCall::Arguments *arguments;
     arguments = dynamic_cast<EuropeanCall::Arguments *>(arg);
     arguments->payoff_ = payoff_;
-
+    arguments->maturity_ = maturity_;
 }
 
 

@@ -3,8 +3,11 @@
 //#include "payoff.h"
 #include "Option.h"
 #include "AnalyticEuropeanEngine.h"
+//#include <boost>
+//#include "boost/align.hpp"
 
 using namespace std;
+//using namespace boost;
 
 int main() {
     shared_ptr<Payoff> vanillaCallPayoff(new VanillaCallPayoff(95.0));

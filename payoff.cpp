@@ -4,8 +4,12 @@
 
 #include "payoff.h"
 
-VanillaCallPayoff::VanillaCallPayoff(Quote Strike) : Strike_(Strike) { }
+VanillaCallPayoff::VanillaCallPayoff(Quote strike) : strike_(strike) { }
 
 Money VanillaCallPayoff::GetPayoff(Quote Spot) const {
-    return Spot - Strike_ > 0 ? Spot - Strike_: 0;
+    return Spot - strike_ > 0 ? Spot - strike_: 0;
+}
+
+Quote VanillaCallPayoff::GetStrike() const {
+    return strike_;
 }

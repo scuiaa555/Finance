@@ -9,17 +9,19 @@
 
 class Payoff {
 public:
-    virtual Money GetPayoff(Quote Spot) const = 0;
+    virtual Money GetPayoff(Quote spot) const = 0;
 };
 
 class VanillaCallPayoff : public Payoff {
 public:
-    VanillaCallPayoff(Quote Strike);
+    VanillaCallPayoff(Quote strike);
 
-    Money GetPayoff(Quote Spot) const override;
+    Money GetPayoff(Quote spot) const override;
+
+    Quote GetStrike() const;
 
 private:
-    Quote Strike_;
+    Quote strike_;
 
 };
 
