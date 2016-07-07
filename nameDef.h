@@ -8,5 +8,6 @@
 typedef double Time;
 typedef double Money;
 typedef double Quote;
+typedef double Rate;
 
 #endif //FINANCE_NAMEDEF_H

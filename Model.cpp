@@ -4,7 +4,11 @@
 
 #include "Model.h"
 
-BSModel::BSModel(double r, double q, double sigma) : r_(r), q_(q), sigma_(sigma) {
+BSModel::BSModel(double r, double q, double sigma, double spot) : r_(r), q_(q), sigma_(sigma), spot_(spot) {
+}
+
+double BSModel::GetSpot() const {
+    return spot_;
 }
 
 double BSModel::GetRiskFree() const {

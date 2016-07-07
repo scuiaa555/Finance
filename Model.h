@@ -16,7 +16,16 @@ public:
 
 class BSModel {
 public:
-    BSModel(double r, double q, double sigma);
+    /**
+     * @param r: riskfree rate
+     * @param q: dividend rate
+     * @param sigma: annualized volatility in percentage
+     * @param spot: spot price of the underlying
+     */
+    BSModel(double r, double q, double sigma, double spot);
+
+
+    double GetSpot() const;
 
     double GetRiskFree() const;
 
@@ -25,6 +34,7 @@ public:
     double GetVolatility() const;
 
 private:
+    double spot_;
     double r_;
     double q_;
     double sigma_;
