@@ -22,12 +22,16 @@ public:
 
     class Arguments;
 
+    class Results;
+
     /*class Results {
     public:
         Money price;
     };*/
 
     virtual Arguments *GetArguments() = 0;
+
+    virtual Results *GetResults() = 0;
 
 //    virtual void validate() = 0;
 
@@ -47,7 +51,14 @@ public:
     virtual ~Arguments() { }
 };
 
-template<typename ArgumentsType>
+class PricingEngine::Results {
+public:
+    Results() { }
+
+    virtual ~Results() { }
+};
+
+template<typename ArgumentsType, typename ResultsType>
 class GenericEngine : public PricingEngine {
 public:
     GenericEngine() { }
@@ -56,8 +67,13 @@ public:
         return &arguments_;
     }
 
+    PricingEngine::Results *GetResults() {
+        return &results_;
+    }
+
 //protected:
     mutable ArgumentsType arguments_;
+    mutable ResultsType results_;
 
 };
 

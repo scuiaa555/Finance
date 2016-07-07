@@ -18,7 +18,8 @@ int main() {
     shared_ptr<AnalyticEuropeanEngine> pricingEngine(new AnalyticEuropeanEngine(bsModel));
 
     call.SetPricingEngine(pricingEngine);
-    call.npv();
+    double a = call.npv();
+    double b = call.results_->delta_;
 
 /*    call.SetPricingEngine(pricingEngine);
     double p = call.npv();
