@@ -13,7 +13,7 @@ using std::shared_ptr;
     payoff_ = nullptr;
 }*/
 
-void Option::SetPricingEngine(std::shared_ptr<PricingEngine> pricingEngine) {
+void Option::SetPricingEngine(const std::shared_ptr<PricingEngine> pricingEngine) {
     pricingEngine_ = pricingEngine;
 }
 
@@ -39,15 +39,16 @@ EuropeanCall::EuropeanCall(Time maturity, Quote strike) : maturity_(maturity) {
 EuropeanCall::EuropeanCall(Time maturity, std::shared_ptr<Payoff> payoff) :
         maturity_(maturity), payoff_(payoff) { }
 
-void EuropeanCall::SetupArguments(PricingEngine::Arguments *arg) {
+void EuropeanCall::SetupArguments(PricingEngine::Arguments *arg) const {
     EuropeanCall::Arguments *arguments;
     arguments = dynamic_cast<EuropeanCall::Arguments *>(arg);
     arguments->payoff_ = payoff_;
     arguments->maturity_ = maturity_;
 }
 
-Money EuropeanCall::FetchResults(PricingEngine::Results *res) {
+Money EuropeanCall::FetchResults(PricingEngine::Results *const res) {
     EuropeanCall::Results *result = dynamic_cast<EuropeanCall::Results *>(res);
+    //fully create another copy of the results from the pricing engine
     results_ = std::make_shared<EuropeanCall::Results>(*result);
     std::cout << results_->price_ << std::endl;
     return results_->price_;

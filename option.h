@@ -21,7 +21,7 @@ public:
 
     //virtual Time GetMaturity() const = 0;
 
-    void SetPricingEngine(std::shared_ptr<PricingEngine> pricingEngine);
+    void SetPricingEngine(const std::shared_ptr<PricingEngine> pricingEngine);
 
 /*    class Arguments : public PricingEngine::Arguments {
         double b;
@@ -29,9 +29,9 @@ public:
 
     Money npv();
 
-    virtual void SetupArguments(PricingEngine::Arguments *arg) = 0;
+    virtual void SetupArguments(PricingEngine::Arguments *arg) const = 0;
 
-    virtual Money FetchResults(PricingEngine::Results *res) = 0;
+    virtual Money FetchResults(PricingEngine::Results *const res) = 0;
 
     //void Calculate();
 
@@ -54,9 +54,9 @@ public:
 
     EuropeanCall(Time maturity, Quote strike);
 
-    void SetupArguments(PricingEngine::Arguments *arg) override;
+    void SetupArguments(PricingEngine::Arguments *arg) const override;
 
-    Money FetchResults(PricingEngine::Results *res) override;
+    Money FetchResults(PricingEngine::Results *const res) override;
 
     //Time GetMaturity() const override;
 
