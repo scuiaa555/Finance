@@ -27,29 +27,14 @@ public:
 
     class Arguments : public PricingEngine::Arguments {
     public:
-//        Arguments() { }
-
-        //Arguments(double a);
-
         std::shared_ptr<Payoff> payoff_;
         Time maturity_;
-
-/*        void print() override {
-            double b = 0;
-        }*/
-
-//        double a_;
-
-        //~Arguments() { }
     };
 
     class Results : public PricingEngine::Results {
     public:
-//        Results() { }
-
         Money price_;
         double delta_;
-
     };
 
     class engine;
