@@ -1,7 +1,7 @@
 #include <iostream>
 
 //#include "payoff.h"
-#include "Option.h"
+#include "Instruments/EuropeanCall.h"
 #include "AnalyticEuropeanEngine.h"
 //#include <boost>
 //#include "boost/align.hpp"

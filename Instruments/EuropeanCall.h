@@ -1,52 +1,15 @@
 //
-// Created by CUI Shidong on 26/6/2016.
+// Created by CUI Shidong on 10/7/2016.
 //
 
-#ifndef FINANCE_OPTION_H
-#define FINANCE_OPTION_H
+#ifndef FINANCE_EUROPEANCALL_H
+#define FINANCE_EUROPEANCALL_H
 
-#include "nameDef.h"
-#include "Payoff.h"
-#include "PricingEngine.h"
-#include <memory>
-#include <string>
+#include "Instrument.h"
 
-//class PricingEngine;
 
-//class PricingEngine::Arguments;
 
-class Option {
-public:
-    Option() { }
-
-    //virtual Time GetMaturity() const = 0;
-
-    void SetPricingEngine(const std::shared_ptr<PricingEngine> pricingEngine);
-
-/*    class Arguments : public PricingEngine::Arguments {
-        double b;
-    };*/
-
-    Money npv();
-
-    virtual void SetupArguments(PricingEngine::Arguments *arg) const = 0;
-
-    virtual Money FetchResults(PricingEngine::Results *const res) = 0;
-
-    //void Calculate();
-
-    //virtual void GetArguments() = 0;
-
-    //class Arguments : public PricingEngine::Arguments {
-    //};
-    //class Arguments;
-
-protected:
-    std::shared_ptr<PricingEngine> pricingEngine_;
-    //std::shared_ptr<Arguments> arguments;
-};
-
-class EuropeanCall : public Option {
+class EuropeanCall: public Instrument {
 public:
     EuropeanCall() { }
 
@@ -102,4 +65,5 @@ class EuropeanCall::engine : public GenericEngine<EuropeanCall::Arguments, Europ
 };
 
 
-#endif //FINANCE_OPTION_H
+
+#endif //FINANCE_EUROPEANCALL_H

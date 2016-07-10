@@ -5,7 +5,7 @@
 #ifndef FINANCE_ANALYTICEUROPEANENGINE_H
 #define FINANCE_ANALYTICEUROPEANENGINE_H
 
-#include "Option.h"
+#include "Instruments/EuropeanCall.h"
 #include "Model.h"
 
 class AnalyticEuropeanEngine : public EuropeanCall::engine {
