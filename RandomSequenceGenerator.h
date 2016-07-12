@@ -1,0 +1,14 @@
+//
+// Created by CUI Shidong on 12/7/2016.
+//
+
+#ifndef FINANCE_RANDOMSEQUENCEGENERATOR_H
+#define FINANCE_RANDOMSEQUENCEGENERATOR_H
+
+
+class RandomSequenceGenerator {
+
+};
+
+
+#endif //FINANCE_RANDOMSEQUENCEGENERATOR_H

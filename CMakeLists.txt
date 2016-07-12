@@ -15,5 +15,5 @@ include_directories("/Users/CUI/Dropbox/C++/Finance")
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp Payoff.cpp Payoff.h Instrument.cpp Instrument.h nameDef.h Model.cpp Model.h PricingEngine.cpp PricingEngine.h PricingEngines/AnalyticEuropeanEngine.cpp PricingEngines/AnalyticEuropeanEngine.h Instruments/EuropeanCall.cpp Instruments/EuropeanCall.h Instruments/Forward.cpp Instruments/Forward.h PricingEngines/AnalyticForwardEngine.cpp PricingEngines/AnalyticForwardEngine.h)
+set(SOURCE_FILES main.cpp Payoff.cpp Payoff.h Instrument.cpp Instrument.h nameDef.h Model.cpp Model.h PricingEngine.cpp PricingEngine.h PricingEngines/AnalyticEuropeanEngine.cpp PricingEngines/AnalyticEuropeanEngine.h Instruments/EuropeanCall.cpp Instruments/EuropeanCall.h Instruments/Forward.cpp Instruments/Forward.h PricingEngines/AnalyticForwardEngine.cpp PricingEngines/AnalyticForwardEngine.h LEcuyerUniformRNG1.cpp LEcuyerUniformRNG1.h RandomSequenceGenerator.cpp RandomSequenceGenerator.h)
 add_executable(Finance ${SOURCE_FILES})
