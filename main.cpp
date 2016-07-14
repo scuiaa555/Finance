@@ -3,7 +3,8 @@
 #include "Instruments/Forward.h"
 #include "PricingEngines/AnalyticEuropeanEngine.h"
 #include "PricingEngines/AnalyticForwardEngine.h"
-#include "LEcuyerUniformRNG1.h"
+#include "RandomSequenceGenerator.h"
+#include "NormalMarsagliaBrayRng.h"
 
 using namespace std;
 //using namespace boost;
@@ -25,11 +26,21 @@ int main() {
     fwd.SetPricingEngine(pricingFwd);
     a = fwd.npv();*/
 
-    LEcuyerUniformRNG1 rng(5);
+    UniformLEcuyerRNG1 rng(5);
     rng.SetSeed(100);
-    cout << rng.next() << endl;
-    cout << rng.next() << endl;
+//    cout << rng.next() << endl;
+//    cout << rng.next() << endl;
+    RandomSequenceGenerator<UniformLEcuyerRNG1> rsg(5, rng);
+//    RandomSequenceGenerator rsg(5, rng);
+    vector<double> a(rsg.nextSequence());
+    a[0] = 1;
 
+    NormalMarsagliaBrayRng<UniformLEcuyerRNG1> rngNormal;
+    for (int i = 0; i < 15; i++)
+        cout << rngNormal.next() << endl;
+//    cout << rngNormal.next() << endl;
+    RandomSequenceGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> > rsg2(5, rngNormal);
+    vector<double> b(rsg2.nextSequence());
 
     cout << "Stone, fighting!" << endl;
     return 0;
