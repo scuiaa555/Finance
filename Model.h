@@ -12,9 +12,10 @@ class Model {
 public:
     class ParameterSet {
     };
+    virtual ~Model() {}
 };
 
-class BSModel {
+class BSModel: public Model {
 public:
     /**
      * @param r: riskfree rate

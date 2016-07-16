@@ -3,29 +3,35 @@
 #include "Instruments/Forward.h"
 #include "PricingEngines/AnalyticEuropeanEngine.h"
 #include "PricingEngines/AnalyticForwardEngine.h"
-#include "RandomSequenceGenerator.h"
-#include "NormalMarsagliaBrayRng.h"
+#include "RandNumGeneration/RandomSequenceGenerator.h"
+#include "RandNumGeneration/NormalMarsagliaBrayRng.h"
+#include "StochasticProcess.h"
 
 using namespace std;
 //using namespace boost;
 
 int main() {
-    /*shared_ptr<Payoff> vanillaCallPayoff(new VanillaCallPayoff(95.0));
+    double a;
+    shared_ptr<Payoff> vanillaCallPayoff(new VanillaCallPayoff(95.0));
     EuropeanCall call(1.0, vanillaCallPayoff);
 
     shared_ptr<BSModel> bsModel(new BSModel(0.05, 0.01, 0.3, 100));
+    BlackScholesProcess bsProcess(0.05, 0.01, 0.3, 100);
+    a = bsProcess.evolve(0, 100, 0.1, 0.2);
+
 //    BSModel bs(1, 2, 3, 4);
     shared_ptr<AnalyticEuropeanEngine> pricingEngine(new AnalyticEuropeanEngine(bsModel));
 
     call.SetPricingEngine(pricingEngine);
-    double a = call.npv();
+    a = call.npv();
     double b = call.results_->delta_;
 
     Forward fwd(1.0, 100, 100);
     shared_ptr<AnalyticForwardEngine> pricingFwd(new AnalyticForwardEngine(0.02));
     fwd.SetPricingEngine(pricingFwd);
-    a = fwd.npv();*/
+    a = fwd.npv();
 
+/*
     UniformLEcuyerRNG1 rng(5);
     rng.SetSeed(100);
 //    cout << rng.next() << endl;
@@ -41,6 +47,7 @@ int main() {
 //    cout << rngNormal.next() << endl;
     RandomSequenceGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> > rsg2(5, rngNormal);
     vector<double> b(rsg2.nextSequence());
+*/
 
     cout << "Stone, fighting!" << endl;
     return 0;
