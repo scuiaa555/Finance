@@ -1,6 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Finance" TARGET_NAME="Finance" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Finance" RUN_TARGET_NAME="Finance">
-    <envs />
-    <method />
-  </configuration>
-</component>
