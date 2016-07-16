@@ -6,6 +6,7 @@
 #include "RandNumGeneration/RandomSequenceGenerator.h"
 #include "RandNumGeneration/NormalMarsagliaBrayRng.h"
 #include "StochasticProcess.h"
+#include "PathGenerator.h"
 
 using namespace std;
 //using namespace boost;
@@ -16,8 +17,14 @@ int main() {
     EuropeanCall call(1.0, vanillaCallPayoff);
 
     shared_ptr<BSModel> bsModel(new BSModel(0.05, 0.01, 0.3, 100));
-    BlackScholesProcess bsProcess(0.05, 0.01, 0.3, 100);
-    a = bsProcess.evolve(0, 100, 0.1, 0.2);
+    shared_ptr<BlackScholesProcess> bsProcess(new BlackScholesProcess(0.05, 0.01, 0.3, 100));
+    a = bsProcess->evolve(0, 100, 0.1, 0.2);
+    vector<double> v1{1.0, 2.0, 3.0};
+    vector<double> v2(3, 2.0);
+    Path path(v1, v2);
+    path.timeGrid_[0] = 2.5;
+    PathGenerator pathGenerator(bsProcess, v1);
+    pathGenerator.next();
 
 //    BSModel bs(1, 2, 3, 4);
     shared_ptr<AnalyticEuropeanEngine> pricingEngine(new AnalyticEuropeanEngine(bsModel));

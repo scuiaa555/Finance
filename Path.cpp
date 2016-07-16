@@ -3,3 +3,7 @@
 //
 
 #include "Path.h"
+
+Path::Path(const vector<Time> &timeGrid, const vector<Quote> &values) : timeGrid_(timeGrid), values_(values) { }
+
+
