@@ -23,7 +23,7 @@ int main() {
     vector<double> v2(3, 2.0);
     Path path(v1, v2);
     path.timeGrid_[0] = 2.5;
-    PathGenerator pathGenerator(bsProcess, v1);
+    PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1>> pathGenerator(bsProcess, v1);
     pathGenerator.next();
 
 //    BSModel bs(1, 2, 3, 4);
