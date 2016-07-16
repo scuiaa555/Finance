@@ -7,6 +7,7 @@
 #include "RandNumGeneration/NormalMarsagliaBrayRng.h"
 #include "StochasticProcess.h"
 #include "PathGenerator.h"
+#include "PathPricer.h"
 
 using namespace std;
 //using namespace boost;
@@ -21,8 +22,13 @@ int main() {
     a = bsProcess->evolve(0, 100, 0.1, 0.2);
     vector<double> v1{1.0, 2.0, 3.0};
     vector<double> v2(3, 2.0);
+    v2[2] = 102;
     Path path(v1, v2);
     path.timeGrid_[0] = 2.5;
+
+    EuropeanPathPricer europeanPathPricer(vanillaCallPayoff, 1.0);
+    a = europeanPathPricer(path);
+
     PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1>> pathGenerator(bsProcess, v1);
     pathGenerator.next();
 

@@ -24,6 +24,7 @@
       <sourceFolder url="file://$MODULE_DIR$/StochasticProcess.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Model.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PathPricer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticEuropeanEngine.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticForwardEngine.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticEuropeanEngine.cpp" isTestSource="false" />
