@@ -22,5 +22,5 @@ set(SOURCE_FILES main.cpp Payoff.cpp Payoff.h Instrument.cpp
         Instruments/EuropeanCall.h Instruments/Forward.cpp Instruments/Forward.h
         PricingEngines/AnalyticForwardEngine.cpp PricingEngines/AnalyticForwardEngine.h
         RandNumGeneration/UniformLEcuyerRNG1.cpp RandNumGeneration/UniformLEcuyerRNG1.h RandNumGeneration/RandomSequenceGenerator.h
-        RandNumGeneration/NormalMarsagliaBrayRng.h StochasticProcess.cpp StochasticProcess.h Path.cpp Path.h PathGenerator.h PathPricer.h)
+        RandNumGeneration/NormalMarsagliaBrayRng.h StochasticProcess.cpp StochasticProcess.h Path.cpp Path.h PathGenerator.h PathPricer.h McModel.cpp McModel.h EuropeanPathPricer.cpp Statistics.cpp Statistics.h)
 add_executable(Finance ${SOURCE_FILES})

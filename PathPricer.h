@@ -25,14 +25,14 @@ private:
     double discount_;
 };
 
-EuropeanPathPricer::EuropeanPathPricer(const std::shared_ptr<Payoff> &payoff, Rate discount) : payoff_(payoff),
-                                                                                               discount_(discount) { }
-
-Money EuropeanPathPricer::operator()(const Path &path) const {
-    Money price;
-//    price=path.values_.back();
-    price = payoff_->GetPayoff(path.values_.back()) * discount_;
-    return price;
-}
+//EuropeanPathPricer::EuropeanPathPricer(const std::shared_ptr<Payoff> &payoff, Rate discount) : payoff_(payoff),
+//                                                                                               discount_(discount) { }
+//
+//Money EuropeanPathPricer::operator()(const Path &path) const {
+//    Money price;
+////    price=path.values_.back();
+//    price = payoff_->GetPayoff(path.values_.back()) * discount_;
+//    return price;
+//}
 
 #endif //FINANCE_PATHPRICER_H

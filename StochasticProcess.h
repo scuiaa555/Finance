@@ -21,6 +21,8 @@ public:
 
 class StochasticProcess1D : public StochasticProcess {
 public:
+    StochasticProcess1D(const shared_ptr<Model> model) : model_(model) { }
+
     shared_ptr<Model> GetModel() const {
         x0_ = model_->GetSpot();
         return model_;

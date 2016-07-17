@@ -6,20 +6,25 @@
       <sourceFolder url="file://$MODULE_DIR$/RandNumGeneration/RandomSequenceGenerator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RandNumGeneration/NormalMarsagliaBrayRng.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RandNumGeneration/UniformLEcuyerRNG1.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Path.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Statistics.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Model.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/nameDef.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EuropeanPathPricer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Instrument.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Instrument.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Statistics.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Instruments/Forward.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Instruments/EuropeanCall.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Instruments/EuropeanCall.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Instruments/Forward.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StochasticProcess.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/McModel.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Path.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngine.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Payoff.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngine.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Path.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Payoff.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StochasticProcess.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Model.cpp" isTestSource="false" />
@@ -29,7 +34,7 @@
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticForwardEngine.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticEuropeanEngine.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticForwardEngine.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Model.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/McModel.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PathGenerator.h" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
