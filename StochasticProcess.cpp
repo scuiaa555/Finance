@@ -9,13 +9,13 @@ void StochasticProcess1D::SetModel(const shared_ptr<Model> model) {
     model_ = model;
 }
 
-BlackScholesProcess::BlackScholesProcess(shared_ptr<BSModel> model) {
-    SetModel(model);
+BlackScholesProcess::BlackScholesProcess(shared_ptr<BSModel> model):StochasticProcess1D(model) {
+//    SetModel(model);
 }
 
-BlackScholesProcess::BlackScholesProcess(double r, double q, double sigma, double spot) {
-    shared_ptr<BSModel> bsModel = std::make_shared<BSModel>(r, q, sigma, spot);
-    SetModel(bsModel);
+BlackScholesProcess::BlackScholesProcess(double r, double q, double sigma, double spot):StochasticProcess1D(std::make_shared<BSModel>(r, q, sigma, spot)) {
+//    shared_ptr<BSModel> bsModel = std::make_shared<BSModel>(r, q, sigma, spot);
+//    SetModel(bsModel);
 }
 
 Quote BlackScholesProcess::evolve(Time t0, Quote x0, Time dt, double dw) const {
