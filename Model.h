@@ -7,14 +7,19 @@
 
 
 #include <memory>
+#include "nameDef.h"
 
 class Model {
 public:
     class ParameterSet {
     };
+
+    virtual Quote GetSpot() const = 0;
+
+    virtual ~Model() { }
 };
 
-class BSModel {
+class BSModel : public Model {
 public:
     /**
      * @param r: riskfree rate
@@ -25,19 +30,19 @@ public:
     BSModel(double r, double q, double sigma, double spot);
 
 
-    double GetSpot() const;
+    Quote GetSpot() const override;
 
-    double GetRiskFree() const;
+    Rate GetRiskFree() const;
 
-    double GetDividend() const;
+    Rate GetDividend() const;
 
-    double GetVolatility() const;
+    Rate GetVolatility() const;
 
 private:
-    double spot_;
-    double r_;
-    double q_;
-    double sigma_;
+    Quote spot_;
+    Rate r_;
+    Rate q_;
+    Rate sigma_;
 
     /*class BSParameterSet : public virtual Model::ParameterSet {
     public:
