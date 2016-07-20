@@ -8,7 +8,7 @@
 
 class UniformLEcuyerRNG1 {
 public:
-    explicit UniformLEcuyerRNG1(unsigned long seed = 1);
+    explicit UniformLEcuyerRNG1(unsigned long seed = 7777);
 
     void SetSeed(const long seed);
 

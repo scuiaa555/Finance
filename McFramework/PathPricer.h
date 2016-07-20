@@ -6,7 +6,7 @@
 #define FINANCE_PATHPRICER_H
 
 #include "nameDef.h"
-#include "Path.h"
+#include "McFramework/Path.h"
 #include "Payoff.h"
 
 class PathPricer {

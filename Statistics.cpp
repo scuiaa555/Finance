@@ -8,7 +8,7 @@ Money MCStatistics::mean() const{
     Money mean = 0.0;
     for (std::vector<SampleResults>::const_iterator iter = sampleAccumulator_.begin();
          iter != sampleAccumulator_.end(); iter++) {
-        mean += (iter->numSample_ / totalNum) * iter->price_;
+        mean += (double(iter->numSample_) / totalNum) * iter->price_;
     }
     return mean;
 }

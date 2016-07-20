@@ -16,7 +16,7 @@ public:
 
     mutable Quote x0_;
 
-//    virtual shared_ptr<Model> GetModel() const = 0;
+    virtual shared_ptr<Model> GetModel() const = 0;
 };
 
 class StochasticProcess1D : public StochasticProcess {

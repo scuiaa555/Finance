@@ -6,7 +6,7 @@
 #define FINANCE_PATHGENERATOR_H
 
 #include "RandNumGeneration/NormalMarsagliaBrayRng.h"
-#include "Path.h"
+#include "McFramework/Path.h"
 #include "StochasticProcess.h"
 
 template<typename NormRNG>
