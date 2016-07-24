@@ -6,24 +6,20 @@
 #define FINANCE_EUROPEANCALL_H
 
 #include "Instrument.h"
+#include "Payoffs/VanillaPayoff.h"
 
 
 
-class EuropeanCall: public Instrument {
+class EuropeanOption: public Instrument {
 public:
-    EuropeanCall() { }
 
-    EuropeanCall(Time maturity, std::shared_ptr<Payoff> payoff);
+    EuropeanOption(Time maturity, std::shared_ptr<Payoff> payoff);
 
-    EuropeanCall(Time maturity, Quote strike);
+//    EuropeanCall(Time maturity, Quote strike);
 
-    void SetupArguments(PricingEngine::Arguments *arg) const override;
+    void setupArguments(PricingEngine::Arguments *arg) const override;
 
-    Money FetchResults(PricingEngine::Results *const res) override;
-
-    //Time GetMaturity() const override;
-
-    //void GetArguments() override;
+    Money fetchResults(PricingEngine::Results *const res) override;
 
     class Arguments : public PricingEngine::Arguments {
     public:
@@ -39,14 +35,14 @@ public:
 
     class engine;
 
-    std::shared_ptr<Results> results_;
+
 private:
     std::shared_ptr<Payoff> payoff_;
     Time maturity_;
-
+    std::shared_ptr<Results> results_;
 };
 
-class EuropeanCall::engine : public GenericEngine<EuropeanCall::Arguments, EuropeanCall::Results> {
+class EuropeanOption::engine : public GenericEngine<EuropeanOption::Arguments, EuropeanOption::Results> {
 };
 
 

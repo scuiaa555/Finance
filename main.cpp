@@ -1,15 +1,8 @@
 #include <iostream>
-#include <vector>
-#include "Instruments/EuropeanCall.h"
-#include "Instruments/Forward.h"
-#include "PricingEngines/AnalyticEuropeanEngine.h"
-#include "PricingEngines/AnalyticForwardEngine.h"
-//#include "RandNumGeneration/RandomSequenceGenerator.h"
-//#include "RandNumGeneration/NormalMarsagliaBrayRng.h"
+#include "Instruments/EuropeanOption.h"
 #include "StochasticProcess.h"
-#include "McFramework/McModel.h"
-#include "PricingEngines/MCEuropeanEngine.h"
-#include <boost/random.hpp>
+#include "Instruments/AsianOption.h"
+#include "PricingEngines/McAsianEngine.h"
 
 
 using namespace std;
@@ -24,21 +17,34 @@ int main() {
 //            boost::normal_distribution<> > var_nor(rng, nd);
 //    cout << var_nor() << endl;
 
-    double a, a1, a2;
-    shared_ptr<Payoff> vanillaCallPayoff(new VanillaCallPayoff(95.0));
-    EuropeanCall call(1.0, vanillaCallPayoff);
+//    std::vector<double> v1(3, 0.5);
+//    std::vector<double> &v2 = v1;
+//    v2[1]=0.2;
+//    std::vector<double> v3 = v2;
+//    v3[1] = 0.3;
 
+    double a, a1, a2;
+    shared_ptr<Payoff> vanillaPayoff(new VanillaPayoff(95.0, "put"));
     shared_ptr<BSModel> bsModel(new BSModel(0.05, 0.0, 0.3, 100));
     shared_ptr<BlackScholesProcess> bsProcess(new BlackScholesProcess(bsModel));
+    AsianOption asian(1.0, vanillaPayoff, 0.1, AsianOption::AverageType::geometric);
+    shared_ptr<McAsianEngine<> > pricingAsianEngine(new McAsianEngine<>(bsProcess, 0.01, 20000, 1000));
+    asian.setPricingEngine(pricingAsianEngine);
+    a = asian.npv();
 
-    shared_ptr<MCEuropeanEngine<>> pricingEngine(new MCEuropeanEngine<>(bsProcess, 1, 200000, 10000));
-    call.SetPricingEngine(pricingEngine);
-    a1 = call.npv();
 
-    shared_ptr<AnalyticEuropeanEngine> pricingEngine2(new AnalyticEuropeanEngine(bsModel));
+//    EuropeanOption call(1.0, vanillaPayoff);
 //
-    call.SetPricingEngine(pricingEngine2);
-    a2 = call.npv();
+//
+//
+//    shared_ptr<McEuropeanEngine<>> pricingEngine(new McEuropeanEngine<>(bsProcess, 1, 200000, 10000));
+//    call.setPricingEngine(pricingEngine);
+//    a1 = call.npv();
+//
+//    shared_ptr<AnalyticEuropeanEngine> pricingEngine2(new AnalyticEuropeanEngine(bsModel));
+//
+//    call.setPricingEngine(pricingEngine2);
+//    a2 = call.npv();
 
 
 //    a = bsProcess->evolve(0, 100, 0.1, 0.2);
@@ -56,7 +62,7 @@ int main() {
 //    pathGenerator->next();
 //    McModel mcModel(pathGenerator, europeanPathPricer);
 //    mcModel.addSamples(10);
-//    a = mcModel.GetStatistics().mean();
+//    a = mcModel.getStatistics().mean();
 
 
 //    BSModel bs(1, 2, 3, 4);
@@ -69,7 +75,7 @@ int main() {
 //    a = fwd.npv();
 
 //    UniformLEcuyerRNG1 rng(5);
-//    rng.SetSeed(100);
+//    rng.setSeed(100);
 ////    cout << rng.next() << endl;
 ////    cout << rng.next() << endl;
 //    RandomSequenceGenerator<UniformLEcuyerRNG1> rsg(5, rng);

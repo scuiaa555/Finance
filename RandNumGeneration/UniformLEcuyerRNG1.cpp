@@ -12,7 +12,7 @@ const double h = 1.0 / m;
 
 UniformLEcuyerRNG1::UniformLEcuyerRNG1(unsigned long seed) : seed_(seed) { }
 
-void UniformLEcuyerRNG1::SetSeed(const long seed) {
+void UniformLEcuyerRNG1::setSeed(const long seed) {
     seed_ = seed;
 }
 

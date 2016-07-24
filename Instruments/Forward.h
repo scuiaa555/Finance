@@ -10,17 +10,17 @@
 
 class Forward: public Instrument {
 public:
-    Forward() { }
+//    Forward() { }
 
     Forward(Time maturity, Quote strike, Quote spot);
 
-    void SetupArguments(PricingEngine::Arguments *arg) const override;
+    void setupArguments(PricingEngine::Arguments *arg) const override;
 
-    Money FetchResults(PricingEngine::Results *const res) override;
+    Money fetchResults(PricingEngine::Results *const res) override;
 
     //Time GetMaturity() const override;
 
-    //void GetArguments() override;
+    //void getArguments() override;
 
     class Arguments : public PricingEngine::Arguments {
     public:

@@ -11,7 +11,7 @@
 }
 
 *//*
-void PricingEngine::GetArguments(std::shared_ptr<Option::Arguments> arguments) {
+void PricingEngine::getArguments(std::shared_ptr<Option::Arguments> arguments) {
     arguments_ = std::dynamic_pointer_cast<PricingEngine::Arguments>(arguments);
 }*//*
 

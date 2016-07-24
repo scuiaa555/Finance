@@ -5,10 +5,10 @@
 #ifndef FINANCE_ANALYTICEUROPEANENGINE_H
 #define FINANCE_ANALYTICEUROPEANENGINE_H
 
-#include "Instruments/EuropeanCall.h"
+#include "Instruments/EuropeanOption.h"
 #include "Model.h"
 
-class AnalyticEuropeanEngine : public EuropeanCall::engine {
+class AnalyticEuropeanEngine : public EuropeanOption::engine {
 public:
     AnalyticEuropeanEngine(std::shared_ptr<BSModel> model);
 

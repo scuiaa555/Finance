@@ -14,7 +14,7 @@ public:
     class ParameterSet {
     };
 
-    virtual Quote GetSpot() const = 0;
+    virtual Quote getSpot() const = 0;
 
     virtual ~Model() { }
 };
@@ -30,13 +30,13 @@ public:
     BSModel(double r, double q, double sigma, double spot);
 
 
-    Quote GetSpot() const override;
+    Quote getSpot() const override;
 
-    Rate GetRiskFree() const;
+    Rate getRiskFree() const;
 
-    Rate GetDividend() const;
+    Rate getDividend() const;
 
-    Rate GetVolatility() const;
+    Rate getVolatility() const;
 
 private:
     Quote spot_;
@@ -48,11 +48,11 @@ private:
     public:
         BSParameterSet(double r, double q, double sigma);
 
-        double GetRiskFree() const;
+        double getRiskFree() const;
 
-        double GetDividend() const;
+        double getDividend() const;
 
-        double GetVolatility() const;
+        double getVolatility() const;
 
         double r_;
         double q_;

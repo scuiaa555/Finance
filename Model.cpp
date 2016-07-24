@@ -7,19 +7,19 @@
 BSModel::BSModel(double r, double q, double sigma, double spot) : r_(r), q_(q), sigma_(sigma), spot_(spot) {
 }
 
-double BSModel::GetSpot() const {
+double BSModel::getSpot() const {
     return spot_;
 }
 
-double BSModel::GetRiskFree() const {
+double BSModel::getRiskFree() const {
     return r_;
 }
 
-double BSModel::GetDividend() const {
+double BSModel::getDividend() const {
     return q_;
 }
 
-double BSModel::GetVolatility() const {
+double BSModel::getVolatility() const {
     return sigma_;
 }
 
@@ -31,15 +31,15 @@ void BSModel::GetParameterSet() {
 BSModel::BSParameterSet::BSParameterSet(double r, double q, double sigma) :
         r_(r), q_(q), sigma_(sigma) { }
 
-double BSModel::BSParameterSet::GetRiskFree() const {
+double BSModel::BSParameterSet::getRiskFree() const {
     return r_;
 }
 
-double BSModel::BSParameterSet::GetDividend() const {
+double BSModel::BSParameterSet::getDividend() const {
     return q_;
 }
 
-double BSModel::BSParameterSet::GetVolatility() const {
+double BSModel::BSParameterSet::getVolatility() const {
     return sigma_;
 }
 */

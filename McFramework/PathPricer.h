@@ -7,23 +7,13 @@
 
 #include "nameDef.h"
 #include "McFramework/Path.h"
-#include "Payoff.h"
+//#include "Payoff.h"
 
 class PathPricer {
 public:
     virtual Money operator()(const Path &path) const = 0;
 };
 
-class EuropeanPathPricer : public PathPricer {
-public:
-    EuropeanPathPricer(const std::shared_ptr<Payoff> &payoff, Rate discount);
-
-    Money operator()(const Path &path) const override;
-
-private:
-    std::shared_ptr<Payoff> payoff_;
-    double discount_;
-};
 
 //EuropeanPathPricer::EuropeanPathPricer(const std::shared_ptr<Payoff> &payoff, Rate discount) : payoff_(payoff),
 //                                                                                               discount_(discount) { }
@@ -31,7 +21,7 @@ private:
 //Money EuropeanPathPricer::operator()(const Path &path) const {
 //    Money price;
 ////    price=path.values_.back();
-//    price = payoff_->GetPayoff(path.values_.back()) * discount_;
+//    price = payoff_->getPayoff(path.values_.back()) * discount_;
 //    return price;
 //}
 

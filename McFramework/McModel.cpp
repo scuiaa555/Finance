@@ -18,7 +18,7 @@ void McModel::addSamples(unsigned long numSamples) {
     sampleAccumulator_.add(numSamples, price);
 }
 
-const MCStatistics &McModel::GetStatistics() const {
+const MCStatistics &McModel::getStatistics() const {
     return sampleAccumulator_;
 }
 

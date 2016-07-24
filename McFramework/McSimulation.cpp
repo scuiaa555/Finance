@@ -21,7 +21,7 @@ void McSimulation::value(unsigned long maxSamples, unsigned long minSamples) {
 }
 
 const MCStatistics &McSimulation::sampleAccumulator() const {
-    return this->mcModel_->GetStatistics();
+    return this->mcModel_->getStatistics();
 }
 
 

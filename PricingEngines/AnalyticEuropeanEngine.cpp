@@ -9,27 +9,28 @@
 
 
 void AnalyticEuropeanEngine::calculate() {
-    EuropeanCall::Arguments *arguments;
-    arguments = dynamic_cast<EuropeanCall::Arguments *>(this->GetArguments());
-    Quote spot = model_->GetSpot();
-    std::shared_ptr<VanillaCallPayoff> payoff = std::dynamic_pointer_cast<VanillaCallPayoff>(arguments->payoff_);
-    Quote strike = payoff->GetStrike();
-    Rate r = model_->GetRiskFree();
-    Rate q = model_->GetDividend();
-    Rate sigma = model_->GetVolatility();
+    EuropeanOption::Arguments *arguments;
+    arguments = dynamic_cast<EuropeanOption::Arguments *>(this->getArguments());
+    Quote spot = model_->getSpot();
+    std::shared_ptr<VanillaPayoff> payoff = std::dynamic_pointer_cast<VanillaPayoff>(arguments->payoff_);
+    Quote strike = payoff->getStrike();
+    double type = payoff->getType();
+    Rate r = model_->getRiskFree();
+    Rate q = model_->getDividend();
+    Rate sigma = model_->getVolatility();
     Time maturity = arguments->maturity_;
     boost::math::normal_distribution<> nd(0.0, 1.0);
     double d1 = (log(spot / strike) + (r - q + 0.5 * sigma * sigma) * maturity) / sigma / sqrt(maturity);
     double d2 = d1 - sigma * sqrt(maturity);
-    double price = spot * exp(-q * maturity) * boost::math::cdf(nd, d1) -
-                   strike * boost::math::cdf(nd, d2) * exp(-r * maturity);  //Black-Sholes formula
+    double price = type * spot * exp(-q * maturity) * boost::math::cdf(nd, type * d1) -
+                   type * strike * boost::math::cdf(nd, type * d2) * exp(-r * maturity);  //Black-Sholes formula
+//    std::cout << arguments->payoff_->getPayoff(100.0) << std::endl;
+    std::cout << "Succeed: Analytic European engine for European option" << std::endl;
     std::cout << "European option price is " << price << "." << std::endl;
-//    std::cout << arguments->payoff_->GetPayoff(100.0) << std::endl;
-    std::cout << "Analytic European engine for European option pricing succeeds" << std::endl;
 
     /* need improvement */
-    EuropeanCall::Results *results;
-    results = dynamic_cast<EuropeanCall::Results *> (this->GetResults());
+    EuropeanOption::Results *results;
+    results = dynamic_cast<EuropeanOption::Results *> (this->getResults());
     results->price_ = price;
     results->delta_ = 1.0;
 
@@ -37,10 +38,10 @@ void AnalyticEuropeanEngine::calculate() {
 
 //void AnalyticEuropeanEngine::validate() {
 //    EuropeanCall::Arguments *arg;
-//    this->GetArguments()->;
+//    this->getArguments()->;
 //
 //    //std::cout << ptr->a_;
-//    //std::cout << this->GetArguments()->a_;
+//    //std::cout << this->getArguments()->a_;
 //}
 
 AnalyticEuropeanEngine::AnalyticEuropeanEngine(std::shared_ptr<BSModel> model) : model_(model) {

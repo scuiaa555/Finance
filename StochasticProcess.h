@@ -24,11 +24,11 @@ public:
     StochasticProcess1D(const shared_ptr<Model> model) : model_(model) { }
 
     shared_ptr<Model> GetModel() const {
-        x0_ = model_->GetSpot();
+        x0_ = model_->getSpot();
         return model_;
     }
 
-    void SetModel(const shared_ptr<Model> model);
+    void setModel(const shared_ptr<Model> model);
 
 private:
     shared_ptr<Model> model_;

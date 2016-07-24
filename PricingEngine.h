@@ -29,9 +29,9 @@ public:
         Money price;
     };*/
 
-    virtual Arguments *GetArguments() const = 0;
+    virtual Arguments *getArguments() const = 0;
 
-    virtual Results *GetResults() const = 0;
+    virtual Results *getResults() const = 0;
 
 //    virtual void validate() = 0;
 
@@ -63,11 +63,11 @@ class GenericEngine : public PricingEngine {
 public:
     GenericEngine() { }
 
-    PricingEngine::Arguments *GetArguments() const {
+    PricingEngine::Arguments *getArguments() const {
         return &arguments_;
     }
 
-    PricingEngine::Results *GetResults() const {
+    PricingEngine::Results *getResults() const {
         return &results_;
     }
 

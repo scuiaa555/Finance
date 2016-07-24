@@ -16,7 +16,7 @@ public:
 
     void addSamples(unsigned long numSamples);
 
-    const MCStatistics &GetStatistics() const;
+    const MCStatistics &getStatistics() const;
 
 private:
     shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> > > pathGenerator_;
