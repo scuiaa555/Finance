@@ -2,7 +2,7 @@
 // Created by CUI Shidong on 23/7/2016.
 //
 
-#include "AsianPathPricer.h"
+#include "PricingEngines/AsianPathPricer.h"
 #include <numeric>
 #include <cmath>
 

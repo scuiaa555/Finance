@@ -2,7 +2,7 @@
 // Created by CUI Shidong on 17/7/2016.
 //
 
-#include "EuropeanPathPricer.h"
+#include "PricingEngines/EuropeanPathPricer.h"
 #include <cmath>
 
 EuropeanPathPricer::EuropeanPathPricer(const std::shared_ptr<Payoff> &payoff, Rate discount) : payoff_(payoff),
