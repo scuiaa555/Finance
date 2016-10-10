@@ -10,7 +10,7 @@ McModel::McModel(const shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLE
 }
 
 void McModel::addSamples(unsigned long numSamples) {
-    double price;
+    double price = 0.0;
     for (unsigned long j = 1; j <= numSamples; j++) {
         price += (*pathPricer_)(pathGenerator_->next());
     }

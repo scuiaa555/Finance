@@ -11,7 +11,6 @@ void McSimulation::calculate(unsigned long maxSamples, unsigned long minSamples)
 //    //shared_ptr<PathPricer> pathPricer_();
     mcModel_ = shared_ptr<McModel>(new McModel(pathGenerator(), pathPricer()));
     this->value(maxSamples, minSamples);
-
 }
 
 void McSimulation::value(unsigned long maxSamples, unsigned long minSamples) {

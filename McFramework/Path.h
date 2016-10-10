@@ -10,13 +10,25 @@
 
 using std::vector;
 
+class PathPoint {
+public:
+    Time time_;
+    vector<double> values_;
+    unsigned int dimentionality_;
+};
+
 class Path {
 public:
-    Path(const vector<Time> &timeGrid, const vector<Quote> &values);
-
-    vector<Time> timeGrid_;
-    vector<Quote> values_;
+    vector<PathPoint> values_;
 };
+
+//class Path {
+//public:
+//    Path(const vector<Time> &timeGrid, const vector<Quote> &values);
+//
+//    vector<Time> timeGrid_;
+//    vector<Quote> values_;
+//};
 
 
 #endif //FINANCE_PATH_H

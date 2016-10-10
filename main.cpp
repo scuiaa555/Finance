@@ -3,27 +3,15 @@
 #include "StochasticProcess.h"
 #include "Instruments/AsianOption.h"
 #include "PricingEngines/McAsianEngine.h"
-
+//#include <armadillo>
 
 using namespace std;
+//using namespace arma;
 //using namespace boost;
 
 int main() {
-//    boost::mt19937 rng; // I don't seed it on purpouse (it's not relevant)
-//
-//    boost::normal_distribution<> nd(0.0, 1.0);
-//
-//    boost::variate_generator<boost::mt19937 &,
-//            boost::normal_distribution<> > var_nor(rng, nd);
-//    cout << var_nor() << endl;
 
-//    std::vector<double> v1(3, 0.5);
-//    std::vector<double> &v2 = v1;
-//    v2[1]=0.2;
-//    std::vector<double> v3 = v2;
-//    v3[1] = 0.3;
-
-    double a, a1, a2;
+//    double a, a1, a2;
     shared_ptr<Payoff> vanillaPayoff(new VanillaPayoff(95.0, "put"));
     shared_ptr<BSModel> bsModel(new BSModel(0.05, 0.0, 0.3, 100));
     shared_ptr<BlackScholesProcess> bsProcess(new BlackScholesProcess(bsModel));
