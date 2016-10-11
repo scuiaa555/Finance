@@ -7,22 +7,24 @@
 #include <cmath>
 
 AsianPathPricer::AsianPathPricer(std::shared_ptr<Payoff> payoff, Rate discount,
-                                 std::shared_ptr<vector<Time> > monitoredTimesPtr, AsianOption::AverageType averageType)
+                                 std::shared_ptr<vector<Time> > monitoredTimesPtr, AsianOption::AverageType averageType,
+                                 bool isAntithetic)
         : payoff_(payoff),
           discount_(discount),
-          monitoredTimesPtr_(
-                  monitoredTimesPtr), averageType_(averageType), monitoredTimesIters_() {
+          monitoredTimesPtr_(monitoredTimesPtr),
+          averageType_(averageType),
+          monitoredTimesIters_(),
+          isAntithetic_(isAntithetic) {
 }
 
-Money AsianPathPricer::operator()(const Path &path) const {
-    /* time consuming */
-    vector<Time>::const_iterator iterNext = path.timeGrid_.cbegin();
-    vector<Time>::const_iterator iterTimeBegin = path.timeGrid_.cbegin();
-    vector<Quote>::const_iterator iterValueBegin = path.values_.cbegin();
+Money AsianPathPricer::onePathCalc(const vector<Time> &timeGrid, const vector<Quote> &values) const {
+    vector<Time>::const_iterator iterNext = timeGrid.cbegin();
+    vector<Time>::const_iterator iterTimeBegin = timeGrid.cbegin();
+    vector<Quote>::const_iterator iterValueBegin = values.cbegin();
     if (monitoredTimesIters_.empty()) {
         for (vector<Time>::const_iterator iterMnt = (*monitoredTimesPtr_).cbegin();
              iterMnt != (*monitoredTimesPtr_).cend(); iterMnt++) {
-            iterNext = std::find_if(iterNext, path.timeGrid_.cend(), [iterMnt](Time t) -> bool {
+            iterNext = std::find_if(iterNext, timeGrid.cend(), [iterMnt](Time t) -> bool {
                 return std::abs(t - (*iterMnt)) < 1e-10;
             });
             monitoredTimesIters_.push_back(iterNext);
@@ -49,9 +51,20 @@ Money AsianPathPricer::operator()(const Path &path) const {
             spot = std::pow(spot, 1.0 / N);
             break;
     }
-    Rate discountFactor = exp(-discount_ * path.timeGrid_.back());
+    Rate discountFactor = exp(-discount_ * timeGrid.back());
     price = payoff_->getPayoff(spot) * discountFactor;
     return price;
+}
+
+Money AsianPathPricer::operator()(const Path &path) const {
+    if (!isAntithetic_) {
+        return onePathCalc(path.getTimeGrid(), path.getValues());
+    }
+    else {
+        return (onePathCalc(path.getTimeGrid(), path.getValues()) +
+                onePathCalc(path.getTimeGrid(), path.getAntitheticValues())) / 2.0;
+    }
+
 }
 
 

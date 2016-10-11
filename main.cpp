@@ -11,12 +11,12 @@ using namespace std;
 
 int main() {
 
-//    double a, a1, a2;
+    double a, a1, a2;
     shared_ptr<Payoff> vanillaPayoff(new VanillaPayoff(95.0, "put"));
     shared_ptr<BSModel> bsModel(new BSModel(0.05, 0.0, 0.3, 100));
     shared_ptr<BlackScholesProcess> bsProcess(new BlackScholesProcess(bsModel));
     AsianOption asian(1.0, vanillaPayoff, 0.1, AsianOption::AverageType::geometric);
-    shared_ptr<McAsianEngine<> > pricingAsianEngine(new McAsianEngine<>(bsProcess, 0.01, 20000, 1000));
+    shared_ptr<McAsianEngine<> > pricingAsianEngine(new McAsianEngine<>(bsProcess, 0.01, 20000, 1000,1));
     asian.setPricingEngine(pricingAsianEngine);
     a = asian.npv();
 

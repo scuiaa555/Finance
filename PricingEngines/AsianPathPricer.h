@@ -12,7 +12,7 @@
 class AsianPathPricer : public PathPricer {
 public:
     AsianPathPricer(std::shared_ptr<Payoff> payoff, Rate discount, std::shared_ptr<vector<Time> > monitoredTimesPtr,
-                    AsianOption::AverageType averageType);
+                    AsianOption::AverageType averageType, bool isAntithetic);
 
     Money operator()(const Path &path) const override;
 
@@ -22,6 +22,9 @@ private:
     std::shared_ptr<vector<Time> > monitoredTimesPtr_;
     AsianOption::AverageType averageType_;
     mutable vector<vector<Time>::const_iterator> monitoredTimesIters_;
+
+    bool isAntithetic_;
+    Money onePathCalc(const vector<Time> &timeGrid, const vector<Quote> &values) const;
 
 };
 

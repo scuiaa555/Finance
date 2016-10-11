@@ -4,6 +4,8 @@
 
 #include "McSimulation.h"
 
+//McSimulation::McSimulation(bool isAntithetic) : isAntithetic_(isAntithetic) { }
+
 void McSimulation::calculate(unsigned long maxSamples, unsigned long minSamples) {
 //    vector<double> v1(3);
 //    shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1>>> pathGenerator(

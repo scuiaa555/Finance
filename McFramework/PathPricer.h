@@ -12,6 +12,9 @@
 class PathPricer {
 public:
     virtual Money operator()(const Path &path) const = 0;
+
+//private:
+//    bool isAntithetic_;
 };
 
 

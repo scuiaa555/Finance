@@ -10,6 +10,8 @@
 /* any Monte Carlo pricing engine derives from this MsSimulation */
 class McSimulation {
 public:
+//    McSimulation(bool isAntithetic = 0);
+
     void calculate(unsigned long maxSamples, unsigned long minSamples);
 
     void value(unsigned long maxSamples, unsigned long minSamples);
@@ -25,6 +27,8 @@ private:
     virtual vector<Time> timeGrid() = 0;
 
     shared_ptr<McModel> mcModel_;
+
+    bool isAntithetic_;
 //    shared_ptr<StochasticProcess> process_;
 };
 

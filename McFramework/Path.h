@@ -10,16 +10,30 @@
 
 using std::vector;
 
-class PathPoint {
-public:
-    Time time_;
-    vector<double> values_;
-    unsigned int dimentionality_;
-};
-
 class Path {
+//    Path(const vector<Time>&timeGrid, const vector<Quete>)
+//private:
 public:
-    vector<PathPoint> values_;
+    Path(const vector<Time> &timeGrid, vector<Time>::size_type N, bool isAntithetic = 0);
+
+    vector<Time> &getTimeGrid();
+
+    vector<Quote> &getValues();
+
+    vector<Quote> &getAntitheticValues();
+
+    const vector<Time> &getTimeGrid() const;
+
+    const vector<Quote> &getValues() const;
+
+    const vector<Quote> &getAntitheticValues() const;
+
+private:
+
+    vector<Time> timeGrid_;
+    vector<Quote> values_;
+    vector<Quote> antitheticValues_;
+    bool isAntithetic_;
 };
 
 //class Path {

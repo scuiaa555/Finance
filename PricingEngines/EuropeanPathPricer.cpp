@@ -11,7 +11,7 @@ EuropeanPathPricer::EuropeanPathPricer(const std::shared_ptr<Payoff> &payoff, Ra
 Money EuropeanPathPricer::operator()(const Path &path) const {
     Money price;
 //    price=path.values_.back();
-    Rate discountFactor = exp(-discount_ * path.timeGrid_.back());
-    price = payoff_->getPayoff(path.values_.back()) * discountFactor;
+    Rate discountFactor = exp(-discount_ * path.getTimeGrid().back());
+    price = payoff_->getPayoff(path.getValues().back()) * discountFactor;
     return price;
 }
