@@ -24,7 +24,7 @@ Money AsianPathPricer::onePathCalc(const vector<Time> &timeGrid, const vector<Qu
     if (monitoredTimesIters_.empty()) {
         for (vector<Time>::const_iterator iterMnt = (*monitoredTimesPtr_).cbegin();
              iterMnt != (*monitoredTimesPtr_).cend(); iterMnt++) {
-            iterNext = std::find_if(iterNext, timeGrid.cend(), [iterMnt](Time t) -> bool {
+            iterNext = std::find_if(iterNext, timeGrid.cend(), [iterMnt](Time t) -> bool {    // lambda expression: [capture list](parameter list) -> return type {function body}
                 return std::abs(t - (*iterMnt)) < 1e-10;
             });
             monitoredTimesIters_.push_back(iterNext);

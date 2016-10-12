@@ -8,14 +8,10 @@
 #include "Instrument.h"
 #include "Payoffs/VanillaPayoff.h"
 
-
-
 class EuropeanOption: public Instrument {
 public:
 
     EuropeanOption(Time maturity, std::shared_ptr<Payoff> payoff);
-
-//    EuropeanCall(Time maturity, Quote strike);
 
     void setupArguments(PricingEngine::Arguments *arg) const override;
 
@@ -35,11 +31,10 @@ public:
 
     class engine;
 
-
 private:
     std::shared_ptr<Payoff> payoff_;
     Time maturity_;
-    std::shared_ptr<Results> results_;
+    std::shared_ptr<Results> results_;  //* reason that here uses shared_ptr refers to comments in EuropeanOption.cpp
 };
 
 class EuropeanOption::engine : public GenericEngine<EuropeanOption::Arguments, EuropeanOption::Results> {

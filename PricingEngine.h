@@ -8,7 +8,7 @@
 #include <memory>
 #include "nameDef.h"
 #include "Model.h"
-//#include "Option.h"   must not include
+//#include "Option.h"   must not be included
 
 class PricingEngine {
 public:
@@ -16,18 +16,14 @@ public:
 
     virtual void calculate() = 0;
 
-    /*
-    //class Arguments : public Option::Arguments {
-    //};*/
-
     class Arguments;
 
     class Results;
 
-    /*class Results {
-    public:
-        Money price;
-    };*/
+//    class Results {
+//    public:
+//        Money price;
+//    };
 
     virtual Arguments *getArguments() const = 0;
 
@@ -63,11 +59,11 @@ class GenericEngine : public PricingEngine {
 public:
     GenericEngine() { }
 
-    PricingEngine::Arguments *getArguments() const {
+    PricingEngine::Arguments *getArguments() const override {  // mutable below
         return &arguments_;
     }
 
-    PricingEngine::Results *getResults() const {
+    PricingEngine::Results *getResults() const override {
         return &results_;
     }
 
