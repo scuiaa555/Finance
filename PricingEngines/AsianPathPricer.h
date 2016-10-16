@@ -24,7 +24,8 @@ private:
     mutable vector<vector<Time>::const_iterator> monitoredTimesIters_;
 
     bool isAntithetic_;
-    Money onePathCalc(const vector<Time> &timeGrid, const vector<Quote> &values) const;
+
+    Money onePathCalc(const vector<Time> &timeGrid, const vector<vector<Quote> > &values) const;
 
 };
 

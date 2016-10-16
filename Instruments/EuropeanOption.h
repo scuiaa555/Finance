@@ -34,7 +34,8 @@ public:
 private:
     std::shared_ptr<Payoff> payoff_;
     Time maturity_;
-    std::shared_ptr<Results> results_;  //* reason that here uses shared_ptr refers to comments in EuropeanOption.cpp
+    /* reason that here uses 'shared_ptr' refers to comments in EuropeanOption.cpp */
+    std::shared_ptr<Results> results_;
 };
 
 class EuropeanOption::engine : public GenericEngine<EuropeanOption::Arguments, EuropeanOption::Results> {

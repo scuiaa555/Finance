@@ -20,24 +20,33 @@ public:
 private:
     NormRNG normalRng_;
     std::shared_ptr<StochasticProcess> process_;
-    Path next_;
+    std::shared_ptr<Path> next_;
+    /* the generator does not know the exact type of its path */
     bool isAntithetic_;
-
 };
 
 template<typename NormRNG>
 PathGenerator<NormRNG>::PathGenerator(const std::shared_ptr<StochasticProcess> process, const vector<Time> &timeGrid,
                                       bool isAntithetic)
-        : process_(process), normalRng_(), next_(timeGrid, timeGrid.size(),isAntithetic), isAntithetic_(isAntithetic) { }
+        : process_(process), normalRng_(), isAntithetic_(isAntithetic) {
+    if (isAntithetic) {
+        /*!!! problem of dimensional appeared here !!!*/
+        /*!!! should be implied by process         !!!*/
+        next_ = std::dynamic_pointer_cast<Path>(std::shared_ptr<AntitheticPath>(new AntitheticPath(timeGrid, 1)));
+    }
+    else {
+        next_ = std::shared_ptr<AntitheticPath>(new AntitheticPath(timeGrid, 1));
+    }
+}
 
 template<typename NormRNG>
 Path &PathGenerator<NormRNG>::next() {
     if (!isAntithetic_) {
-        vector<Quote>::iterator it_value = next_.getValues().begin();
-        Quote x0 = process_->x0_;
+        vector<vector<Quote> >::iterator it_value = next_->getValues().begin();
+        vector<Quote> x0 = process_->x0_;
         *it_value = x0;
-        for (vector<Time>::const_iterator it_time = next_.getTimeGrid().begin();
-             it_time != next_.getTimeGrid().end() - 1; it_time++) {
+        for (vector<Time>::const_iterator it_time = next_->getTimeGrid().begin();
+             it_time != next_->getTimeGrid().end() - 1; it_time++) {
             it_value++;
             Time dt = *(it_time + 1) - *it_time;
             double dw = normalRng_.next() * sqrt(dt);
@@ -46,14 +55,14 @@ Path &PathGenerator<NormRNG>::next() {
         }
     }
     else {
-        vector<Quote>::iterator it_value = next_.getValues().begin();
-        vector<Quote>::iterator it_anti_value = next_.getAntitheticValues().begin();
-        Quote x0_val = process_->x0_;
-        Quote x0_antiVal = x0_val;
+        vector<vector<Quote> >::iterator it_value = next_->getValues().begin();
+        vector<vector<Quote> >::iterator it_anti_value = next_->getAntitheticValues().begin();
+        vector<Quote> x0_val = process_->x0_;
+        vector<Quote> x0_antiVal = x0_val;
         *it_value = x0_val;
         *it_anti_value = x0_antiVal;
-        for (vector<Time>::const_iterator it_time = next_.getTimeGrid().begin();
-             it_time != next_.getTimeGrid().end() - 1; it_time++) {
+        for (vector<Time>::const_iterator it_time = next_->getTimeGrid().begin();
+             it_time != next_->getTimeGrid().end() - 1; it_time++) {
             it_value++;
             it_anti_value++;
             Time dt = *(it_time + 1) - *it_time;
@@ -64,7 +73,7 @@ Path &PathGenerator<NormRNG>::next() {
             x0_antiVal = *it_anti_value;
         }
     }
-    return next_;
+    return *next_;
 }
 
 

@@ -51,11 +51,11 @@ shared_ptr<PathPricer> McAsianEngine<UnifRng>::pathPricer() {
     AsianOption::Arguments *arguments;
     arguments = dynamic_cast<AsianOption::Arguments *>(this->getArguments());
     std::shared_ptr<VanillaPayoff> payoff = std::dynamic_pointer_cast<VanillaPayoff>(arguments->payoff_);
-    /* problem here */
+    /* !!!problem here */
     Rate r = std::dynamic_pointer_cast<BSModel>(process_->GetModel())->getRiskFree();
     std::shared_ptr<vector<Time> > monitorTimesPtr(new vector<Time>(arguments->monitoredTimes_));
     AsianOption::AverageType averageType = arguments->averageType_;
-    /* problem here */
+    /* !!!problem here */
     return shared_ptr<AsianPathPricer>(new AsianPathPricer(payoff, r, monitorTimesPtr, averageType, isAntithetic_));
 }
 
@@ -65,7 +65,7 @@ vector<Time> McAsianEngine<UnifRng>::timeGrid() {
     AsianOption::Arguments *arguments;
     arguments = dynamic_cast<AsianOption::Arguments *>(this->getArguments());
     Time maturity = arguments->maturity_;
-    /* error prone here */
+    /* !!!error prone here */
     int numberStep = maturity / timeStep_;
     for (int j = 0; j <= numberStep; j++) {
         timeGrid.push_back(timeStep_ * j);

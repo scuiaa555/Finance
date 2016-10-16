@@ -14,27 +14,44 @@ class Path {
 //    Path(const vector<Time>&timeGrid, const vector<Quete>)
 //private:
 public:
-    Path(const vector<Time> &timeGrid, vector<Time>::size_type N, bool isAntithetic = 0);
+    /* full copy of timeGrid is allowed here, which costs little typically */
+    Path(const vector<Time> &timeGrid, unsigned long dimensional);
 
-    vector<Time> &getTimeGrid();
-
-    vector<Quote> &getValues();
-
-    vector<Quote> &getAntitheticValues();
+    Path() = default;
 
     const vector<Time> &getTimeGrid() const;
 
-    const vector<Quote> &getValues() const;
+    vector<vector<Quote> > &getValues();
 
-    const vector<Quote> &getAntitheticValues() const;
+    const vector<vector<Quote> > &getValues() const;
+
+    virtual vector<vector<Quote> > &getAntitheticValues() { throw ('This path has no antithetic path.'); }
+
+    virtual const vector<vector<Quote> > &getAntitheticValues() const { throw ('This path has no antithetic path.'); }
+
+    virtual ~Path() { }
 
 private:
 
     vector<Time> timeGrid_;
-    vector<Quote> values_;
-    vector<Quote> antitheticValues_;
-    bool isAntithetic_;
+    unsigned long dimensional_;
+    vector<vector<Quote> > vals_;
 };
+
+/* no need to use decorator pattern */
+class AntitheticPath : public Path {
+public:
+    AntitheticPath(const vector<Time> &timeGrid, unsigned long dimensional);
+
+    vector<vector<Quote> > &getAntitheticValues() override;
+
+    const vector<vector<Quote> > &getAntitheticValues() const override;
+
+private:
+    vector<vector<Quote> > antiVals_;
+};
+
+
 
 //class Path {
 //public:

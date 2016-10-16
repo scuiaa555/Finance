@@ -79,5 +79,4 @@ void McEuropeanEngine<UnifRng>::calculate() {
     results->delta_ = 1.0;
 }
 
-
 #endif //FINANCE_MCEUROPEANENGINE_H

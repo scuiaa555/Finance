@@ -12,6 +12,6 @@ Money EuropeanPathPricer::operator()(const Path &path) const {
     Money price;
 //    price=path.values_.back();
     Rate discountFactor = exp(-discount_ * path.getTimeGrid().back());
-    price = payoff_->getPayoff(path.getValues().back()) * discountFactor;
+    price = payoff_->getPayoff(path.getValues().back()[0]) * discountFactor;
     return price;
 }

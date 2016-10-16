@@ -44,20 +44,20 @@ private:
     Rate q_;
     Rate sigma_;
 
-    /*class BSParameterSet : public virtual Model::ParameterSet {
-    public:
-        BSParameterSet(double r, double q, double sigma);
-
-        double getRiskFree() const;
-
-        double getDividend() const;
-
-        double getVolatility() const;
-
-        double r_;
-        double q_;
-        double sigma_;
-    };*/
+//    class BSParameterSet : public virtual Model::ParameterSet {
+//    public:
+//        BSParameterSet(double r, double q, double sigma);
+//
+//        double getRiskFree() const;
+//
+//        double getDividend() const;
+//
+//        double getVolatility() const;
+//
+//        double r_;
+//        double q_;
+//        double sigma_;
+//    };
 
 //std::shared_ptr<BSParameterSet> GetParameterSet();
 

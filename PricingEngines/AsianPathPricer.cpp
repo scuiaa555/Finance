@@ -17,14 +17,15 @@ AsianPathPricer::AsianPathPricer(std::shared_ptr<Payoff> payoff, Rate discount,
           isAntithetic_(isAntithetic) {
 }
 
-Money AsianPathPricer::onePathCalc(const vector<Time> &timeGrid, const vector<Quote> &values) const {
+Money AsianPathPricer::onePathCalc(const vector<Time> &timeGrid, const vector<vector<Quote> > &values) const {
     vector<Time>::const_iterator iterNext = timeGrid.cbegin();
     vector<Time>::const_iterator iterTimeBegin = timeGrid.cbegin();
-    vector<Quote>::const_iterator iterValueBegin = values.cbegin();
+    vector<vector<Quote>>::const_iterator iterValueBegin = values.cbegin();
     if (monitoredTimesIters_.empty()) {
         for (vector<Time>::const_iterator iterMnt = (*monitoredTimesPtr_).cbegin();
              iterMnt != (*monitoredTimesPtr_).cend(); iterMnt++) {
-            iterNext = std::find_if(iterNext, timeGrid.cend(), [iterMnt](Time t) -> bool {    // lambda expression: [capture list](parameter list) -> return type {function body}
+            iterNext = std::find_if(iterNext, timeGrid.cend(), [iterMnt](
+                    Time t) -> bool {    // lambda expression: [capture list](parameter list) -> return type {function body}
                 return std::abs(t - (*iterMnt)) < 1e-10;
             });
             monitoredTimesIters_.push_back(iterNext);
@@ -38,7 +39,7 @@ Money AsianPathPricer::onePathCalc(const vector<Time> &timeGrid, const vector<Qu
             spot = 0.0;
             std::for_each(monitoredTimesIters_.cbegin(), monitoredTimesIters_.cend(),
                           [&](vector<Time>::const_iterator iter) {
-                              spot += (*(iterValueBegin + (iter - iterTimeBegin)));
+                              spot += (*(iterValueBegin + (iter - iterTimeBegin)))[0];
                           });
             spot /= N;
             break;
@@ -46,7 +47,7 @@ Money AsianPathPricer::onePathCalc(const vector<Time> &timeGrid, const vector<Qu
             spot = 1.0;
             std::for_each(monitoredTimesIters_.cbegin(), monitoredTimesIters_.cend(),
                           [&](vector<Time>::const_iterator iter) {
-                              spot *= (*(iterValueBegin + (iter - iterTimeBegin)));
+                              spot *= (*(iterValueBegin + (iter - iterTimeBegin)))[0];
                           });
             spot = std::pow(spot, 1.0 / N);
             break;
