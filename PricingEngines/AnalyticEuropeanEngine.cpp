@@ -28,7 +28,7 @@ void AnalyticEuropeanEngine::calculate() {
     std::cout << "Succeed: Analytic European engine for European option" << std::endl;
     std::cout << "European option price is " << price << "." << std::endl;
 
-    /* need improvement */
+    /* !!! improvement needed here: delta? */
     EuropeanOption::Results *results;
     results = dynamic_cast<EuropeanOption::Results *> (this->getResults());
     results->price_ = price;

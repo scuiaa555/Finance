@@ -23,23 +23,21 @@ double BSModel::getVolatility() const {
     return sigma_;
 }
 
-/*
-void BSModel::GetParameterSet() {
-    return;
-}
-
-BSModel::BSParameterSet::BSParameterSet(double r, double q, double sigma) :
-        r_(r), q_(q), sigma_(sigma) { }
-
-double BSModel::BSParameterSet::getRiskFree() const {
-    return r_;
-}
-
-double BSModel::BSParameterSet::getDividend() const {
-    return q_;
-}
-
-double BSModel::BSParameterSet::getVolatility() const {
-    return sigma_;
-}
-*/
+//void BSModel::GetParameterSet() {
+//    return;
+//}
+//
+//BSModel::BSParameterSet::BSParameterSet(double r, double q, double sigma) :
+//        r_(r), q_(q), sigma_(sigma) { }
+//
+//double BSModel::BSParameterSet::getRiskFree() const {
+//    return r_;
+//}
+//
+//double BSModel::BSParameterSet::getDividend() const {
+//    return q_;
+//}
+//
+//double BSModel::BSParameterSet::getVolatility() const {
+//    return sigma_;
+//}

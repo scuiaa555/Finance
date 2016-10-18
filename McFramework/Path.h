@@ -25,9 +25,9 @@ public:
 
     const vector<vector<Quote> > &getValues() const;
 
-    virtual vector<vector<Quote> > &getAntitheticValues() { throw ('This path has no antithetic path.'); }
+    virtual vector<vector<Quote> > &getAntitheticValues() { throw ("This path has no antithetic path."); }
 
-    virtual const vector<vector<Quote> > &getAntitheticValues() const { throw ('This path has no antithetic path.'); }
+    virtual const vector<vector<Quote> > &getAntitheticValues() const { throw ("This path has no antithetic path."); }
 
     virtual ~Path() { }
 

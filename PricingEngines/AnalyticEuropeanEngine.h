@@ -18,15 +18,15 @@ public:
 
 //    void validate() override;
 
-/*    class AnalyticBSResults : public virtual PricingEngine::Results {
-    public:
-        double delta;
-    };
-
-    class AnalyticBSArguments : public virtual PricingEngine::Arguments {
-    public:
-        std::shared_ptr<Payoff> payoff_;
-    };*/
+//    class AnalyticBSResults : public virtual PricingEngine::Results {
+//    public:
+//        double delta;
+//    };
+//
+//    class AnalyticBSArguments : public virtual PricingEngine::Arguments {
+//    public:
+//        std::shared_ptr<Payoff> payoff_;
+//    };
 
 private:
     std::shared_ptr<BSModel> model_;

@@ -20,8 +20,8 @@ public:
 private:
     NormRNG normalRng_;
     std::shared_ptr<StochasticProcess> process_;
-    std::shared_ptr<Path> next_;
     /* the generator does not know the exact type of its path */
+    std::shared_ptr<Path> next_;
     bool isAntithetic_;
 };
 
@@ -30,8 +30,8 @@ PathGenerator<NormRNG>::PathGenerator(const std::shared_ptr<StochasticProcess> p
                                       bool isAntithetic)
         : process_(process), normalRng_(), isAntithetic_(isAntithetic) {
     if (isAntithetic) {
-        /*!!! problem of dimensional appeared here !!!*/
-        /*!!! should be implied by process         !!!*/
+        /*!!! dimension problem appeared here
+         *!!! should be implied by process/pathPricer */
         next_ = std::dynamic_pointer_cast<Path>(std::shared_ptr<AntitheticPath>(new AntitheticPath(timeGrid, 1)));
     }
     else {
@@ -43,7 +43,7 @@ template<typename NormRNG>
 Path &PathGenerator<NormRNG>::next() {
     if (!isAntithetic_) {
         vector<vector<Quote> >::iterator it_value = next_->getValues().begin();
-        vector<Quote> x0 = process_->x0_;
+        vector<Quote> x0 = process_->getInitial();
         *it_value = x0;
         for (vector<Time>::const_iterator it_time = next_->getTimeGrid().begin();
              it_time != next_->getTimeGrid().end() - 1; it_time++) {
@@ -57,7 +57,7 @@ Path &PathGenerator<NormRNG>::next() {
     else {
         vector<vector<Quote> >::iterator it_value = next_->getValues().begin();
         vector<vector<Quote> >::iterator it_anti_value = next_->getAntitheticValues().begin();
-        vector<Quote> x0_val = process_->x0_;
+        vector<Quote> x0_val = process_->getInitial();
         vector<Quote> x0_antiVal = x0_val;
         *it_value = x0_val;
         *it_anti_value = x0_antiVal;

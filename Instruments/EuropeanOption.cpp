@@ -25,8 +25,8 @@ void EuropeanOption::setupArguments(PricingEngine::Arguments *arg) const {
 Money EuropeanOption::fetchResults(PricingEngine::Results *const res) {
     EuropeanOption::Results *result = dynamic_cast<EuropeanOption::Results *>(res);
 
-    //*  fully create another copy of the results from the pricing engine
-    //*  if set another pricing engine to the instrument, results in previous engine would disappear
+    /*  fully create another copy of the results from the pricing engine
+    /*  if set another pricing engine to the instrument, results in previous engine would disappear */
     results_ = std::make_shared<EuropeanOption::Results>(*result);
     return results_->price_;
 }

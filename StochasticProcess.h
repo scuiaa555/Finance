@@ -14,8 +14,7 @@ using std::vector;
 
 class StochasticProcess {
 public:
-    /*!!! time-consuming issue: return type is a vector !!!*/
-    /*!!! use move??                                    !!!*/
+    /* acceptable to return a vector by value, since vector has move assignment operation */
     virtual vector<Quote> evolve(Time t0, vector<Quote> x0, Time dt, double dw) const = 0;
 
 //    virtual const std::vector<Quote> &GetInitial() const = 0;
@@ -25,7 +24,9 @@ public:
 
     virtual shared_ptr<Model> GetModel() const = 0;
 
-//private:
+    const vector<Quote> &getInitial() const { return x0_; }
+
+protected:
     mutable std::vector<Quote> x0_;
 };
 

@@ -3,6 +3,7 @@
 #include "StochasticProcess.h"
 #include "Instruments/AsianOption.h"
 #include "PricingEngines/McAsianEngine.h"
+#include <boost/timer.hpp>
 //#include <armadillo>
 
 using namespace std;
@@ -11,15 +12,17 @@ using namespace std;
 
 int main() {
 
+    boost::timer tm;
     double a, a1, a2;
     shared_ptr<Payoff> vanillaPayoff(new VanillaPayoff(95.0, "put"));
     shared_ptr<BSModel> bsModel(new BSModel(0.05, 0.0, 0.3, 100));
     shared_ptr<BlackScholesProcess> bsProcess(new BlackScholesProcess(bsModel));
     AsianOption asian(1.0, vanillaPayoff, 0.1, AsianOption::AverageType::geometric);
-    shared_ptr<McAsianEngine<> > pricingAsianEngine(new McAsianEngine<>(bsProcess, 0.01, 20000, 1000,1));
+    shared_ptr<McAsianEngine<> > pricingAsianEngine(new McAsianEngine<>(bsProcess, 0.01, 20000, 1000, 1));
     asian.setPricingEngine(pricingAsianEngine);
     a = asian.npv();
-
+    double duration = tm.elapsed();
+    std::cout << "***Time elaspsed in " << duration << " seconds.***" << endl;
 
 //    EuropeanOption call(1.0, vanillaPayoff);
 //

@@ -18,7 +18,7 @@ void Forward::setupArguments(PricingEngine::Arguments *arg) const {
 
 Money Forward::fetchResults(PricingEngine::Results *const res) {
     Forward::Results *result = dynamic_cast<Forward::Results *>(res);
-    //fully create another copy of the results from the pricing engine
+    /* fully create another copy of the results from the pricing engine */
     results_ = std::make_shared<Forward::Results>(*result);
     std::cout << results_->price_ << std::endl;
     return results_->price_;
