@@ -12,6 +12,9 @@
 class MCStatistics {
 public:
 
+    /* crucial, since unsigned long behaves strangely in syn default constructor */
+    MCStatistics() : sampleAccumulator_(), totalNum(0) { }
+
     Money mean() const;
 
     void add(unsigned long numSample, Money price);
