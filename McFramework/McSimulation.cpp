@@ -7,7 +7,7 @@
 //McSimulation::McSimulation(bool isAntithetic) : isAntithetic_(isAntithetic) { }
 
 void McSimulation::calculate(unsigned long maxSamples, unsigned long minSamples) {
-    mcModel_ = shared_ptr<McModel>(new McModel(pathGenerator(), pathPricer()));
+    mcModel_ = std::shared_ptr<McModel>(new McModel(pathGenerator(), pathPricer()));
     value(maxSamples, minSamples);
 }
 

@@ -5,11 +5,11 @@
 #include "StochasticProcess.h"
 #include <cmath>
 
-void StochasticProcess1D::setModel(const shared_ptr<Model> model) {
+void StochasticProcess1D::setModel(const std::shared_ptr<Model> model) {
     model_ = model;
 }
 
-BlackScholesProcess::BlackScholesProcess(shared_ptr<BSModel> model):StochasticProcess1D(model) {
+BlackScholesProcess::BlackScholesProcess(std::shared_ptr<BSModel> model):StochasticProcess1D(model) {
 //    setModel(model);
 }
 
@@ -19,7 +19,7 @@ BlackScholesProcess::BlackScholesProcess(double r, double q, double sigma, doubl
 }
 
 Quote BlackScholesProcess::evolve(Time t0, Quote x0, Time dt, double dw) const {
-    shared_ptr<BSModel> bsModel = std::dynamic_pointer_cast<BSModel>(GetModel());
+    std::shared_ptr<BSModel> bsModel = std::dynamic_pointer_cast<BSModel>(GetModel());
     Rate r = bsModel->getRiskFree();
     Rate sigma = bsModel->getVolatility();
     Rate q = bsModel->getDividend();

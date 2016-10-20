@@ -20,13 +20,13 @@ public:
 
 
 private:
-    virtual shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1>>> pathGenerator() = 0;
+    virtual std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1>>> pathGenerator() = 0;
 
-    virtual shared_ptr<PathPricer> pathPricer() = 0;
+    virtual std::shared_ptr<PathPricer> pathPricer() = 0;
 
     virtual vector<Time> timeGrid() = 0;
 
-    shared_ptr<McModel> mcModel_;
+    std::shared_ptr<McModel> mcModel_;
 
     bool isAntithetic_;
 //    shared_ptr<StochasticProcess> process_;

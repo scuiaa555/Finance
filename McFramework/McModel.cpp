@@ -4,8 +4,8 @@
 
 #include "McModel.h"
 
-McModel::McModel(const shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> > > &pathGenerator,
-                 const shared_ptr<PathPricer> pathPricer)
+McModel::McModel(const std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> > > &pathGenerator,
+                 const std::shared_ptr<PathPricer> pathPricer)
         : pathGenerator_(pathGenerator), pathPricer_(pathPricer) {
 }
 

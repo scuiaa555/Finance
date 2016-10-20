@@ -3,6 +3,8 @@
 #include "StochasticProcess.h"
 #include "Instruments/AsianOption.h"
 #include "PricingEngines/McAsianEngine.h"
+#include "PricingEngines/McEuropeanEngine.h"
+#include "PricingEngines/AnalyticEuropeanEngine.h"
 #include <boost/timer.hpp>
 //#include <armadillo>
 
@@ -24,18 +26,13 @@ int main() {
     double duration = tm.elapsed();
     std::cout << "***Time elaspsed in " << duration << " seconds.***" << endl;
 
-//    EuropeanOption call(1.0, vanillaPayoff);
-//
-//
-//
-//    shared_ptr<McEuropeanEngine<>> pricingEngine(new McEuropeanEngine<>(bsProcess, 1, 200000, 10000));
-//    call.setPricingEngine(pricingEngine);
-//    a1 = call.npv();
-//
-//    shared_ptr<AnalyticEuropeanEngine> pricingEngine2(new AnalyticEuropeanEngine(bsModel));
-//
-//    call.setPricingEngine(pricingEngine2);
-//    a2 = call.npv();
+    EuropeanOption call(1.0, vanillaPayoff);
+    shared_ptr<McEuropeanEngine<>> pricingEngine(new McEuropeanEngine<>(bsProcess, 1, 200000, 10000));
+    call.setPricingEngine(pricingEngine);
+    a1 = call.npv();
+    shared_ptr<AnalyticEuropeanEngine> pricingEngine2(new AnalyticEuropeanEngine(bsModel));
+    call.setPricingEngine(pricingEngine2);
+    a2 = call.npv();
 
 
 //    a = bsProcess->evolve(0, 100, 0.1, 0.2);

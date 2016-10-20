@@ -8,7 +8,8 @@ Path::Path(const vector<Time> &timeGrid, unsigned long dimensional) : timeGrid_(
     vals_.resize(timeGrid.size(), vector<Quote>(dimensional));
 }
 
-AntitheticPath::AntitheticPath(const vector<Time> &timeGrid, unsigned long dimensional) : Path(timeGrid, dimensional) {
+AntitheticPath::AntitheticPath(const vector<Time> &timeGrid, unsigned long dimensional) :
+        PathDecorator(std::unique_ptr<Path>(new Path(timeGrid, dimensional))) {
     antiVals_.resize(timeGrid.size(), vector<Quote>(dimensional));
 }
 
@@ -31,6 +32,18 @@ vector<vector<Quote> > &Path::getValues() {
 
 const vector<vector<Quote> > &Path::getValues() const {
     return vals_;
+}
+
+vector<vector<Quote >> &AntitheticPath::getValues() {
+    return innerPath_->getValues();
+}
+
+const vector<vector<Quote> > &AntitheticPath::getValues() const {
+    return innerPath_->getValues();
+}
+
+const vector<Time> &AntitheticPath::getTimeGrid() const {
+    return innerPath_->getTimeGrid();
 }
 
 vector<vector<Quote> > &AntitheticPath::getAntitheticValues() {

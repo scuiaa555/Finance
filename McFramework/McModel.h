@@ -11,16 +11,16 @@
 
 class McModel {
 public:
-    McModel(const shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> > > &pathGenerator,
-            const shared_ptr<PathPricer> pathPricer);
+    McModel(const std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> > > &pathGenerator,
+            const std::shared_ptr<PathPricer> pathPricer);
 
     void addSamples(unsigned long numSamples);
 
     const MCStatistics &getStatistics() const;
 
 private:
-    shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> > > pathGenerator_;
-    shared_ptr<PathPricer> pathPricer_;
+    std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> > > pathGenerator_;
+    std::shared_ptr<PathPricer> pathPricer_;
     MCStatistics sampleAccumulator_;
 
 };

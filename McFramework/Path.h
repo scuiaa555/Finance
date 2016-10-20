@@ -19,27 +19,40 @@ public:
 
     Path() = default;
 
-    const vector<Time> &getTimeGrid() const;
+    virtual const vector<Time> &getTimeGrid() const;
 
-    vector<vector<Quote> > &getValues();
+    virtual vector<vector<Quote> > &getValues();
 
-    const vector<vector<Quote> > &getValues() const;
+    virtual const vector<vector<Quote> > &getValues() const;
 
     virtual vector<vector<Quote> > &getAntitheticValues() { throw ("This path has no antithetic path."); }
 
     virtual const vector<vector<Quote> > &getAntitheticValues() const { throw ("This path has no antithetic path."); }
 
+//    virtual vector<vector<Quote >> &getControlValues() { throw ("This path has no control variable path."); }
+
+//    virtual const vector<vector<Quote >> &getControlValues() const { throw ("This path has no control variable path."); }
+
     virtual ~Path() { }
 
 private:
-
     vector<Time> timeGrid_;
     unsigned long dimensional_;
     vector<vector<Quote> > vals_;
 };
 
-/* no need to use decorator pattern */
-class AntitheticPath : public Path {
+/* decorator pattern */
+class PathDecorator : public Path {
+public:
+    PathDecorator() = default;
+
+    PathDecorator(std::unique_ptr<Path> &&innerPath) : innerPath_(std::move(innerPath)) { }
+
+protected:
+    std::unique_ptr<Path> innerPath_;
+};
+
+class AntitheticPath : public PathDecorator {
 public:
     AntitheticPath(const vector<Time> &timeGrid, unsigned long dimensional);
 
@@ -47,11 +60,15 @@ public:
 
     const vector<vector<Quote> > &getAntitheticValues() const override;
 
+    vector<vector<Quote> > &getValues() override;
+
+    const vector<vector<Quote> > &getValues() const override;
+
+    const vector<Time> &getTimeGrid() const override;
+
 private:
     vector<vector<Quote> > antiVals_;
 };
-
-
 
 //class Path {
 //public:
@@ -60,6 +77,5 @@ private:
 //    vector<Time> timeGrid_;
 //    vector<Quote> values_;
 //};
-
 
 #endif //FINANCE_PATH_H

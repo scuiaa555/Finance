@@ -32,10 +32,11 @@ PathGenerator<NormRNG>::PathGenerator(const std::shared_ptr<StochasticProcess> p
     if (isAntithetic) {
         /*!!! dimension problem appeared here
          *!!! should be implied by process/pathPricer */
-        next_ = std::dynamic_pointer_cast<Path>(std::shared_ptr<AntitheticPath>(new AntitheticPath(timeGrid, 1)));
+//        next_ = std::dynamic_pointer_cast<Path>(std::shared_ptr<AntitheticPath>(new AntitheticPath(timeGrid, 1)));
+        next_ = std::shared_ptr<Path>(new AntitheticPath(timeGrid, 1));
     }
     else {
-        next_ = std::shared_ptr<AntitheticPath>(new AntitheticPath(timeGrid, 1));
+        next_ = std::shared_ptr<Path>(new Path(timeGrid, 1));
     }
 }
 
