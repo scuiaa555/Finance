@@ -29,13 +29,13 @@
       <sourceFolder url="file://$MODULE_DIR$/nameDef.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngine.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngine.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Payoff.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/payoff.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Payoffs/VanillaPayoff.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Payoffs/VanillaPayoff.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Model.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Statistics.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/McEuropeanEngine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/MCEuropeanEngine.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticEuropeanEngine.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticForwardEngine.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/EuropeanPathPricer.h" isTestSource="false" />
@@ -43,7 +43,7 @@
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AsianPathPricer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AsianPathPricer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticForwardEngine.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/McAsianEngine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/MCAsianEngine.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticEuropeanEngine.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Model.h" isTestSource="false" />
     </content>

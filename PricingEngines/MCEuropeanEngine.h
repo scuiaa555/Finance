@@ -13,44 +13,44 @@
 template<typename UnifRng= UniformLEcuyerRNG1>
 class McEuropeanEngine : public EuropeanOption::engine, private McSimulation {
 public:
-    McEuropeanEngine(const shared_ptr<StochasticProcess> process, Time timeStep, unsigned long maxSamples,
+    McEuropeanEngine(const std::shared_ptr<StochasticProcess> process, Time timeStep, unsigned long maxSamples,
                      unsigned long minSamples);
 
-    shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> pathGenerator() override;
+    std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> pathGenerator() override;
 
-    shared_ptr<PathPricer> pathPricer() override;
+    std::shared_ptr<PathPricer> pathPricer() override;
 
     vector<Time> timeGrid() override;
 
     void calculate() override;
 
 private:
-    shared_ptr<StochasticProcess> process_;
+    std::shared_ptr<StochasticProcess> process_;
     unsigned long minSamples_;
     unsigned long maxSamples_;
     Time timeStep_;
 };
 
 template<typename UnifRng>
-McEuropeanEngine<UnifRng>::McEuropeanEngine(const shared_ptr<StochasticProcess> process, Time timeStep,
+McEuropeanEngine<UnifRng>::McEuropeanEngine(const std::shared_ptr<StochasticProcess> process, Time timeStep,
                                             unsigned long maxSamples, unsigned long minSamples) :
         process_(process), timeStep_(timeStep), maxSamples_(maxSamples), minSamples_(minSamples) { }
 
 template<typename UnifRng>
-shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> McEuropeanEngine<UnifRng>::pathGenerator() {
-    return shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>>(
+std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> McEuropeanEngine<UnifRng>::pathGenerator() {
+    return std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>>(
             new PathGenerator<NormalMarsagliaBrayRng<UnifRng>>(process_, timeGrid()));
 }
 
 template<typename UnifRng>
-shared_ptr<PathPricer> McEuropeanEngine<UnifRng>::pathPricer() {
+std::shared_ptr<PathPricer> McEuropeanEngine<UnifRng>::pathPricer() {
     EuropeanOption::Arguments *arguments;
     arguments = dynamic_cast<EuropeanOption::Arguments *>(this->getArguments());
     std::shared_ptr<VanillaPayoff> payoff = std::dynamic_pointer_cast<VanillaPayoff>(arguments->payoff_);
     /* problem here */
     Rate r = std::dynamic_pointer_cast<BSModel>(process_->GetModel())->getRiskFree();
     /* problem here */
-    return shared_ptr<EuropeanPathPricer>(new EuropeanPathPricer(payoff, r));
+    return std::shared_ptr<EuropeanPathPricer>(new EuropeanPathPricer(payoff, r));
 }
 
 template<typename UnifRng>

@@ -12,19 +12,19 @@
 template<typename UnifRng= UniformLEcuyerRNG1>
 class McAsianEngine : public AsianOption::engine, private McSimulation {
 public:
-    McAsianEngine(const shared_ptr<StochasticProcess> process, Time timeStep, unsigned long maxSamples,
+    McAsianEngine(const std::shared_ptr<StochasticProcess> process, Time timeStep, unsigned long maxSamples,
                   unsigned long minSamples, bool isAntithetic = 0);
 
-    shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> pathGenerator() override;
+    std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> pathGenerator() override;
 
-    shared_ptr<PathPricer> pathPricer() override;
+    std::shared_ptr<PathPricer> pathPricer() override;
 
     vector<Time> timeGrid() override;
 
     void calculate() override;
 
 private:
-    shared_ptr<StochasticProcess> process_;
+    std::shared_ptr<StochasticProcess> process_;
     unsigned long minSamples_;
     unsigned long maxSamples_;
     Time timeStep_;
@@ -32,7 +32,7 @@ private:
 };
 
 template<typename UnifRng>
-McAsianEngine<UnifRng>::McAsianEngine(const shared_ptr<StochasticProcess> process, Time timeStep,
+McAsianEngine<UnifRng>::McAsianEngine(const std::shared_ptr<StochasticProcess> process, Time timeStep,
                                       unsigned long maxSamples, unsigned long minSamples, bool isAntithetic) :
         process_(process),
         timeStep_(timeStep),
@@ -41,13 +41,13 @@ McAsianEngine<UnifRng>::McAsianEngine(const shared_ptr<StochasticProcess> proces
         isAntithetic_(isAntithetic) { }
 
 template<typename UnifRng>
-shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> McAsianEngine<UnifRng>::pathGenerator() {
-    return shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>>(
+std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> McAsianEngine<UnifRng>::pathGenerator() {
+    return std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>>(
             new PathGenerator<NormalMarsagliaBrayRng<UnifRng>>(process_, timeGrid(), isAntithetic_));
 }
 
 template<typename UnifRng>
-shared_ptr<PathPricer> McAsianEngine<UnifRng>::pathPricer() {
+std::shared_ptr<PathPricer> McAsianEngine<UnifRng>::pathPricer() {
     AsianOption::Arguments *arguments;
     arguments = dynamic_cast<AsianOption::Arguments *>(this->getArguments());
     std::shared_ptr<VanillaPayoff> payoff = std::dynamic_pointer_cast<VanillaPayoff>(arguments->payoff_);
@@ -56,7 +56,7 @@ shared_ptr<PathPricer> McAsianEngine<UnifRng>::pathPricer() {
     std::shared_ptr<vector<Time> > monitorTimesPtr(new vector<Time>(arguments->monitoredTimes_));
     AsianOption::AverageType averageType = arguments->averageType_;
     /* !!!problem here */
-    return shared_ptr<AsianPathPricer>(new AsianPathPricer(payoff, r, monitorTimesPtr, averageType, isAntithetic_));
+    return std::shared_ptr<AsianPathPricer>(new AsianPathPricer(payoff, r, monitorTimesPtr, averageType, isAntithetic_));
 }
 
 template<typename UnifRng>
