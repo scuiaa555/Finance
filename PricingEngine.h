@@ -7,7 +7,7 @@
 
 #include <memory>
 #include "nameDef.h"
-#include "Model.h"
+#include "StochasticProcess.h"
 //#include "Option.h"   must not be included
 
 class PricingEngine {

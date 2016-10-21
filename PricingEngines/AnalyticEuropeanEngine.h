@@ -6,11 +6,11 @@
 #define FINANCE_ANALYTICEUROPEANENGINE_H
 
 #include "Instruments/EuropeanOption.h"
-#include "Model.h"
+#include "StochasticProcess.h"
 
 class AnalyticEuropeanEngine : public EuropeanOption::engine {
 public:
-    AnalyticEuropeanEngine(std::shared_ptr<BSModel> model);
+    AnalyticEuropeanEngine(std::shared_ptr<BSStochasticProcess> process);
 
 //    double test(double a) { return a; }
 
@@ -29,7 +29,7 @@ public:
 //    };
 
 private:
-    std::shared_ptr<BSModel> model_;
+    std::shared_ptr<BSStochasticProcess> process_;
     //std::shared_ptr<AnalyticBSEngine::AnalyticBSResults> results_;
     //std::shared_ptr<AnalyticBSEngine::Arguments> arguments_;
 };

@@ -1,43 +1,30 @@
 //
-// Created by CUI Shidong on 27/6/2016.
+// Created by CUI Shidong on 16/7/2016.
 //
 
 #include "Model.h"
+#include <cmath>
 
-BSModel::BSModel(double r, double q, double sigma, double spot) : r_(r), q_(q), sigma_(sigma), spot_(spot) {
+void Model1D::setModel(const std::shared_ptr<StochasticProcess> process) {
+    process_ = process;
 }
 
-double BSModel::getSpot() const {
-    return spot_;
+BlackScholesModel::BlackScholesModel(std::shared_ptr<BSStochasticProcess> process):Model1D(process) {
+//    setModel(model);
 }
 
-double BSModel::getRiskFree() const {
-    return r_;
+BlackScholesModel::BlackScholesModel(double r, double q, double sigma, double spot):Model1D(std::make_shared<BSStochasticProcess>(r, q, sigma, spot)) {
+//    shared_ptr<BSModel> bsModel = std::make_shared<BSModel>(r, q, sigma, spot);
+//    setModel(bsModel);
 }
 
-double BSModel::getDividend() const {
-    return q_;
+Quote BlackScholesModel::evolve(Time t0, Quote x0, Time dt, double dw) const {
+    std::shared_ptr<BSStochasticProcess> bsModel = std::dynamic_pointer_cast<BSStochasticProcess>(getProcess());
+    Rate r = bsModel->getRiskFree();
+    Rate sigma = bsModel->getVolatility();
+    Rate q = bsModel->getDividend();
+    return x0 * exp((r - q - sigma * sigma / 2.0) * dt + sigma * dw);
+/*    should be compatible with different discretizations
+    give full control to the discretization class (to be implemented)*/
 }
 
-double BSModel::getVolatility() const {
-    return sigma_;
-}
-
-//void BSModel::GetParameterSet() {
-//    return;
-//}
-//
-//BSModel::BSParameterSet::BSParameterSet(double r, double q, double sigma) :
-//        r_(r), q_(q), sigma_(sigma) { }
-//
-//double BSModel::BSParameterSet::getRiskFree() const {
-//    return r_;
-//}
-//
-//double BSModel::BSParameterSet::getDividend() const {
-//    return q_;
-//}
-//
-//double BSModel::BSParameterSet::getVolatility() const {
-//    return sigma_;
-//}

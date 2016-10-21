@@ -12,7 +12,7 @@
 template<typename UnifRng= UniformLEcuyerRNG1>
 class McAsianEngine : public AsianOption::engine, private McSimulation {
 public:
-    McAsianEngine(const std::shared_ptr<StochasticProcess> process, Time timeStep, unsigned long maxSamples,
+    McAsianEngine(const std::shared_ptr<Model> model, Time timeStep, unsigned long maxSamples,
                   unsigned long minSamples, bool isAntithetic = 0);
 
     std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> pathGenerator() override;
@@ -24,7 +24,7 @@ public:
     void calculate() override;
 
 private:
-    std::shared_ptr<StochasticProcess> process_;
+    std::shared_ptr<Model> model_;
     unsigned long minSamples_;
     unsigned long maxSamples_;
     Time timeStep_;
@@ -32,9 +32,9 @@ private:
 };
 
 template<typename UnifRng>
-McAsianEngine<UnifRng>::McAsianEngine(const std::shared_ptr<StochasticProcess> process, Time timeStep,
+McAsianEngine<UnifRng>::McAsianEngine(const std::shared_ptr<Model> model, Time timeStep,
                                       unsigned long maxSamples, unsigned long minSamples, bool isAntithetic) :
-        process_(process),
+        model_(model),
         timeStep_(timeStep),
         maxSamples_(maxSamples),
         minSamples_(minSamples),
@@ -43,7 +43,7 @@ McAsianEngine<UnifRng>::McAsianEngine(const std::shared_ptr<StochasticProcess> p
 template<typename UnifRng>
 std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> McAsianEngine<UnifRng>::pathGenerator() {
     return std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>>(
-            new PathGenerator<NormalMarsagliaBrayRng<UnifRng>>(process_, timeGrid(), isAntithetic_));
+            new PathGenerator<NormalMarsagliaBrayRng<UnifRng>>(model_, timeGrid(), isAntithetic_));
 }
 
 template<typename UnifRng>
@@ -52,7 +52,7 @@ std::shared_ptr<PathPricer> McAsianEngine<UnifRng>::pathPricer() {
     arguments = dynamic_cast<AsianOption::Arguments *>(this->getArguments());
     std::shared_ptr<VanillaPayoff> payoff = std::dynamic_pointer_cast<VanillaPayoff>(arguments->payoff_);
     /* !!!problem here */
-    Rate r = std::dynamic_pointer_cast<BSModel>(process_->GetModel())->getRiskFree();
+    Rate r = std::dynamic_pointer_cast<BSStochasticProcess>(model_->getProcess())->getRiskFree();
     std::shared_ptr<vector<Time> > monitorTimesPtr(new vector<Time>(arguments->monitoredTimes_));
     AsianOption::AverageType averageType = arguments->averageType_;
     /* !!!problem here */

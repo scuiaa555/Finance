@@ -13,7 +13,7 @@
 template<typename UnifRng= UniformLEcuyerRNG1>
 class McEuropeanEngine : public EuropeanOption::engine, private McSimulation {
 public:
-    McEuropeanEngine(const std::shared_ptr<StochasticProcess> process, Time timeStep, unsigned long maxSamples,
+    McEuropeanEngine(const std::shared_ptr<Model> model, Time timeStep, unsigned long maxSamples,
                      unsigned long minSamples);
 
     std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> pathGenerator() override;
@@ -25,21 +25,21 @@ public:
     void calculate() override;
 
 private:
-    std::shared_ptr<StochasticProcess> process_;
+    std::shared_ptr<Model> model_;
     unsigned long minSamples_;
     unsigned long maxSamples_;
     Time timeStep_;
 };
 
 template<typename UnifRng>
-McEuropeanEngine<UnifRng>::McEuropeanEngine(const std::shared_ptr<StochasticProcess> process, Time timeStep,
+McEuropeanEngine<UnifRng>::McEuropeanEngine(const std::shared_ptr<Model> model, Time timeStep,
                                             unsigned long maxSamples, unsigned long minSamples) :
-        process_(process), timeStep_(timeStep), maxSamples_(maxSamples), minSamples_(minSamples) { }
+        model_(model), timeStep_(timeStep), maxSamples_(maxSamples), minSamples_(minSamples) { }
 
 template<typename UnifRng>
 std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> McEuropeanEngine<UnifRng>::pathGenerator() {
     return std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>>(
-            new PathGenerator<NormalMarsagliaBrayRng<UnifRng>>(process_, timeGrid()));
+            new PathGenerator<NormalMarsagliaBrayRng<UnifRng>>(model_, timeGrid()));
 }
 
 template<typename UnifRng>
@@ -48,7 +48,7 @@ std::shared_ptr<PathPricer> McEuropeanEngine<UnifRng>::pathPricer() {
     arguments = dynamic_cast<EuropeanOption::Arguments *>(this->getArguments());
     std::shared_ptr<VanillaPayoff> payoff = std::dynamic_pointer_cast<VanillaPayoff>(arguments->payoff_);
     /* problem here */
-    Rate r = std::dynamic_pointer_cast<BSModel>(process_->GetModel())->getRiskFree();
+    Rate r = std::dynamic_pointer_cast<BSStochasticProcess>(model_->getProcess())->getRiskFree();
     /* problem here */
     return std::shared_ptr<EuropeanPathPricer>(new EuropeanPathPricer(payoff, r));
 }

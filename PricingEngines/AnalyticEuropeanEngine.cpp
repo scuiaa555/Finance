@@ -11,13 +11,13 @@
 void AnalyticEuropeanEngine::calculate() {
     EuropeanOption::Arguments *arguments;
     arguments = dynamic_cast<EuropeanOption::Arguments *>(this->getArguments());
-    Quote spot = model_->getSpot();
+    Quote spot = process_->getSpot();
     std::shared_ptr<VanillaPayoff> payoff = std::dynamic_pointer_cast<VanillaPayoff>(arguments->payoff_);
     Quote strike = payoff->getStrike();
     double type = payoff->getType();
-    Rate r = model_->getRiskFree();
-    Rate q = model_->getDividend();
-    Rate sigma = model_->getVolatility();
+    Rate r = process_->getRiskFree();
+    Rate q = process_->getDividend();
+    Rate sigma = process_->getVolatility();
     Time maturity = arguments->maturity_;
     boost::math::normal_distribution<> nd(0.0, 1.0);
     double d1 = (log(spot / strike) + (r - q + 0.5 * sigma * sigma) * maturity) / sigma / sqrt(maturity);
@@ -44,7 +44,7 @@ void AnalyticEuropeanEngine::calculate() {
 //    //std::cout << this->getArguments()->a_;
 //}
 
-AnalyticEuropeanEngine::AnalyticEuropeanEngine(std::shared_ptr<BSModel> model) : model_(model) {
+AnalyticEuropeanEngine::AnalyticEuropeanEngine(std::shared_ptr<BSStochasticProcess> process) : process_(process) {
 }
 
 

@@ -1,70 +1,63 @@
 //
-// Created by CUI Shidong on 27/6/2016.
+// Created by CUI Shidong on 16/7/2016.
 //
 
-#ifndef FINANCE_MODEL_H
-#define FINANCE_MODEL_H
+#ifndef FINANCE_STOCHASTICPROCESS_H
+#define FINANCE_STOCHASTICPROCESS_H
 
-
-#include <memory>
 #include "nameDef.h"
+#include "StochasticProcess.h"
+#include <vector>
 
 class Model {
 public:
-    class ParameterSet {
-    };
+    /* acceptable to return a vector by value, since vector has move assignment operation */
+    virtual std::vector<Quote> evolve(Time t0, std::vector<Quote> x0, Time dt, double dw) const = 0;
 
-    virtual Quote getSpot() const = 0;
+//    virtual const std::vector<Quote> &GetInitial() const = 0;
 
-    virtual ~Model() { }
+//    virtual const std::vector<Quote> &G
+//    mutable Quote x0_;
+
+    virtual std::shared_ptr<StochasticProcess> getProcess() const = 0;
+
+    const std::vector<Quote> &getInitial() const { return x0_; }
+
+protected:
+    mutable std::vector<Quote> x0_;
 };
 
-class BSModel : public Model {
+class Model1D : public Model {
 public:
-    /**
-     * @param r: riskfree rate
-     * @param q: dividend rate
-     * @param sigma: annualized volatility in percentage
-     * @param spot: spot price of the underlying
-     */
-    BSModel(double r, double q, double sigma, double spot);
+    Model1D(const std::shared_ptr<StochasticProcess> &process) : process_(process) { }
 
+    std::shared_ptr<StochasticProcess> getProcess() const {
+        x0_ = std::vector<Quote>(1, process_->getSpot());
+        return process_;
+    }
 
-    Quote getSpot() const override;
-
-    Rate getRiskFree() const;
-
-    Rate getDividend() const;
-
-    Rate getVolatility() const;
+    void setModel(const std::shared_ptr<StochasticProcess> process);
 
 private:
-    Quote spot_;
-    Rate r_;
-    Rate q_;
-    Rate sigma_;
+    std::shared_ptr<StochasticProcess> process_;
+};
 
-//    class BSParameterSet : public virtual Model::ParameterSet {
-//    public:
-//        BSParameterSet(double r, double q, double sigma);
-//
-//        double getRiskFree() const;
-//
-//        double getDividend() const;
-//
-//        double getVolatility() const;
-//
-//        double r_;
-//        double q_;
-//        double sigma_;
-//    };
-
-//std::shared_ptr<BSParameterSet> GetParameterSet();
-
-//private:
-//std::shared_ptr<Model::ParameterSet> parameterSet_;
+class ModelND : public Model {
 
 };
 
+class BlackScholesModel : public Model1D {
+public:
+    BlackScholesModel(std::shared_ptr<BSStochasticProcess> process);
 
-#endif //FINANCE_MODEL_H
+    BlackScholesModel(double r, double q, double sigma, double spot);
+
+    Quote evolve(Time t0, Quote x0, Time dt, double dw) const;
+
+    std::vector<Quote> evolve(Time t0, std::vector<Quote> x0, Time dt, double dw) const override {
+        return std::vector<Quote>{evolve(t0, x0[0], dt, dw)};
+    };
+};
+
+
+#endif //FINANCE_STOCHASTICPROCESS_H
