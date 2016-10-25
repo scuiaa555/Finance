@@ -1,13 +1,9 @@
 //
-// Created by CUI Shidong on 16/7/2016.
+// Created by CUI Shidong on 25/10/2016.
 //
 
-#include "Model.h"
+#include "BlackScholesModel.h"
 #include <cmath>
-
-void Model1D::setModel(const std::shared_ptr<StochasticProcess> process) {
-    process_ = process;
-}
 
 BlackScholesModel::BlackScholesModel(std::shared_ptr<BSStochasticProcess> process):Model1D(process) {
 //    setModel(model);
@@ -27,4 +23,3 @@ Quote BlackScholesModel::evolve(Time t0, Quote x0, Time dt, double dw) const {
 /*    should be compatible with different discretizations
     give full control to the discretization class (to be implemented)*/
 }
-

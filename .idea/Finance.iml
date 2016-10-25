@@ -15,7 +15,10 @@
       <sourceFolder url="file://$MODULE_DIR$/McFramework/PathGenerator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/McFramework/Path.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Statistics.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/StochasticProcess.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Models/LMM.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Models/BlackScholesModel.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Models/BlackScholesModel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Models/LMM.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Instrument.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Instrument.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
@@ -25,7 +28,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Instruments/AsianOption.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Instruments/EuropeanOption.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Instruments/Forward.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/StochasticProcess.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Parameter.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NameDef.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngine.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngine.cpp" isTestSource="false" />
@@ -33,19 +36,22 @@
       <sourceFolder url="file://$MODULE_DIR$/Parameter.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Payoffs/VanillaPayoff.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Payoffs/VanillaPayoff.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Model.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Parameter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Statistics.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticForwardEngine.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/McEuropeanEngine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StochasticProcess.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StochasticProcesses/BSStochasticProcess.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StochasticProcesses/LogNormalProcess.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StochasticProcesses/LogNormalProcess.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StochasticProcesses/BSStochasticProcess.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticEuropeanEngine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/McEuropeanEngine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AsianPathPricer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticForwardEngine.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/McAsianEngine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/EuropeanPathPricer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/EuropeanPathPricer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AsianPathPricer.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AsianPathPricer.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/EuropeanPathPricer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/McAsianEngine.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticForwardEngine.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PricingEngines/AnalyticEuropeanEngine.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Model.h" isTestSource="false" />
     </content>

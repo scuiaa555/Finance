@@ -1,10 +1,11 @@
 //
-// Created by CUI Shidong on 27/6/2016.
+// Created by CUI Shidong on 25/10/2016.
 //
 
-#include "StochasticProcess.h"
+#include "BSStochasticProcess.h"
 
-BSStochasticProcess::BSStochasticProcess(double r, double q, double sigma, double spot) : r_(r), q_(q), sigma_(sigma), spot_(spot) {
+BSStochasticProcess::BSStochasticProcess(double r, double q, double sigma, double spot) : r_(r), q_(q), sigma_(sigma),
+                                                                                          spot_(spot) {
 }
 
 double BSStochasticProcess::getSpot() const {
@@ -12,15 +13,15 @@ double BSStochasticProcess::getSpot() const {
 }
 
 double BSStochasticProcess::getRiskFree() const {
-    return r_;
+    return r_(0);
 }
 
 double BSStochasticProcess::getDividend() const {
-    return q_;
+    return q_(0);
 }
 
 double BSStochasticProcess::getVolatility() const {
-    return sigma_;
+    return sigma_(0);
 }
 
 //void BSModel::GetParameterSet() {

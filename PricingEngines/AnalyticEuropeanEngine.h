@@ -7,6 +7,7 @@
 
 #include "Instruments/EuropeanOption.h"
 #include "StochasticProcess.h"
+#include "StochasticProcesses/BSStochasticProcess.h"
 
 class AnalyticEuropeanEngine : public EuropeanOption::engine {
 public:
