@@ -5,7 +5,7 @@
 #ifndef FINANCE_PAYOFF_H
 #define FINANCE_PAYOFF_H
 
-#include "nameDef.h"
+#include "NameDef.h"
 #include <string>
 
 class Payoff {

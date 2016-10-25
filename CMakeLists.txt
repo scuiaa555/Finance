@@ -15,8 +15,8 @@ include_directories("/Users/CUI/Dropbox/C++/Finance")
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp Payoff.h Instrument.cpp
-        Instrument.h nameDef.h StochasticProcess.cpp StochasticProcess.h PricingEngine.cpp
+set(SOURCE_FILES Main.cpp Payoff.h Instrument.cpp
+        Instrument.h NameDef.h StochasticProcess.cpp StochasticProcess.h PricingEngine.cpp
         PricingEngine.h PricingEngines/AnalyticEuropeanEngine.cpp
         PricingEngines/AnalyticEuropeanEngine.h Instruments/EuropeanOption.cpp
         Instruments/EuropeanOption.h Instruments/Forward.cpp Instruments/Forward.h
@@ -26,5 +26,5 @@ set(SOURCE_FILES main.cpp Payoff.h Instrument.cpp
         McFramework/Path.cpp McFramework/Path.h McFramework/PathGenerator.h McFramework/PathPricer.h
         McFramework/McModel.cpp McFramework/McModel.h PricingEngines/EuropeanPathPricer.cpp Statistics.cpp Statistics.h
         McFramework/McSimulation.cpp McFramework/McSimulation.h PricingEngines/McEuropeanEngine.h
-        Payoffs/VanillaPayoff.cpp Payoffs/VanillaPayoff.h Instruments/AsianOption.cpp Instruments/AsianOption.h PricingEngines/McAsianEngine.h PricingEngines/EuropeanPathPricer.h PricingEngines/AsianPathPricer.cpp PricingEngines/AsianPathPricer.h)
+        Payoffs/VanillaPayoff.cpp Payoffs/VanillaPayoff.h Instruments/AsianOption.cpp Instruments/AsianOption.h PricingEngines/McAsianEngine.h PricingEngines/EuropeanPathPricer.h PricingEngines/AsianPathPricer.cpp PricingEngines/AsianPathPricer.h Parameter.cpp Parameter.h)
 add_executable(Finance ${SOURCE_FILES})

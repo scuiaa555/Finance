@@ -7,7 +7,7 @@
 
 
 #include <memory>
-#include "nameDef.h"
+#include "NameDef.h"
 
 class StochasticProcess {
 public:

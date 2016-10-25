@@ -6,7 +6,7 @@
 #define FINANCE_PATH_H
 
 #include <vector>
-#include "nameDef.h"
+#include "NameDef.h"
 
 using std::vector;
 

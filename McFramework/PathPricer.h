@@ -5,7 +5,7 @@
 #ifndef FINANCE_PATHPRICER_H
 #define FINANCE_PATHPRICER_H
 
-#include "nameDef.h"
+#include "NameDef.h"
 #include "McFramework/Path.h"
 //#include "Payoff.h"
 

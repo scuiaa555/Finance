@@ -6,7 +6,7 @@
 #define FINANCE_PRICING_ENGINE_H
 
 #include <memory>
-#include "nameDef.h"
+#include "NameDef.h"
 #include "StochasticProcess.h"
 //#include "Option.h"   must not be included
 

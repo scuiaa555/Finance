@@ -5,7 +5,7 @@
 #ifndef FINANCE_STOCHASTICPROCESS_H
 #define FINANCE_STOCHASTICPROCESS_H
 
-#include "nameDef.h"
+#include "NameDef.h"
 #include "StochasticProcess.h"
 #include <vector>
 
