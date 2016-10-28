@@ -48,7 +48,7 @@ public:
 
     void setModel(const std::shared_ptr<StochasticProcess> &process) { process_ = process; }
 
-private:
+protected:
     std::shared_ptr<StochasticProcess> process_;
 };
 
@@ -62,7 +62,7 @@ public:
         return processes_[i];
     }
 
-private:
+protected:
     std::vector<std::shared_ptr<StochasticProcess> > processes_;
     unsigned long dimensional_; /* number of 1D-processes */
 };

@@ -15,6 +15,10 @@ class Parameter {
 public:
     Parameter() = default;
 
+    Parameter(const Parameter &) = default;
+
+    Parameter &operator=(const Parameter&) = default;
+
     virtual double operator()(Time t) const = 0;
 
     /* for calibration */
@@ -38,5 +42,9 @@ public:
     double operator()(Time t) const override;
 };
 
+class NullParameter : public ConstantParameter {
+public:
+    NullParameter() : ConstantParameter(0.0) { }
+};
 
 #endif //FINANCE_PARAMETER_H
