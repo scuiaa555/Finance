@@ -9,39 +9,38 @@
 #include "McFramework/Path.h"
 #include "Model.h"
 
-template<typename NormRNG>
+template<typename RNG>
 class PathGenerator {
 public:
-    PathGenerator(const std::shared_ptr<Model> model, const vector<Time> &timeGrid,
+    PathGenerator(const std::shared_ptr<Model> model, const vector<Time> &timeGrid, RNG rng,
                   bool isAntithetic = 0);
 
     Path &next();
 
 private:
-    NormRNG normalRng_;
+    RNG rng_;
     std::shared_ptr<Model> model_;
     /* the generator does not know the exact type of its path */
     std::shared_ptr<Path> next_;
     bool isAntithetic_;
 };
 
-template<typename NormRNG>
-PathGenerator<NormRNG>::PathGenerator(const std::shared_ptr<Model> model, const vector<Time> &timeGrid,
+template<typename RNG>
+PathGenerator<RNG>::PathGenerator(const std::shared_ptr<Model> model, const vector<Time> &timeGrid, RNG rng,
                                       bool isAntithetic)
-        : model_(model), normalRng_(), isAntithetic_(isAntithetic) {
+        : model_(model), rng_(rng), isAntithetic_(isAntithetic) {
     if (isAntithetic) {
-        /*!!! dimension problem appeared here
-         *!!! should be implied by process/pathPricer */
-//        next_ = std::dynamic_pointer_cast<Path>(std::shared_ptr<AntitheticPath>(new AntitheticPath(timeGrid, 1)));
-        next_ = std::shared_ptr<Path>(new AntitheticPath(timeGrid, 1));
+//        /*!!! dimension problem appeared here
+//         *!!! should be implied by process/pathPricer */
+        next_ = std::shared_ptr<Path>(new AntitheticPath(timeGrid, model->getDimensionality()));
     }
     else {
-        next_ = std::shared_ptr<Path>(new Path(timeGrid, 1));
+        next_ = std::shared_ptr<Path>(new Path(timeGrid, model->getDimensionality()));
     }
 }
 
-template<typename NormRNG>
-Path &PathGenerator<NormRNG>::next() {
+template<typename RNG>
+Path &PathGenerator<RNG>::next() {
     if (!isAntithetic_) {
         vector<vector<Quote> >::iterator it_value = next_->getValues().begin();
         vector<Quote> x0 = model_->getInitial();
@@ -50,7 +49,7 @@ Path &PathGenerator<NormRNG>::next() {
              it_time != next_->getTimeGrid().end() - 1; it_time++) {
             it_value++;
             Time dt = *(it_time + 1) - *it_time;
-            double dw = normalRng_.next() * sqrt(dt);
+            double dw = rng_.next() * sqrt(dt);
             *it_value = model_->evolve(*it_time, x0, dt, dw);
             x0 = *it_value;
         }
@@ -67,7 +66,7 @@ Path &PathGenerator<NormRNG>::next() {
             it_value++;
             it_anti_value++;
             Time dt = *(it_time + 1) - *it_time;
-            double dw = normalRng_.next() * sqrt(dt);
+            double dw = rng_.next() * sqrt(dt);
             *it_value = model_->evolve(*it_time, x0_val, dt, dw);
             *it_anti_value = model_->evolve(*it_time, x0_antiVal, dt, -dw);
             x0_val = *it_value;

@@ -6,7 +6,7 @@
 #include "PricingEngines/McEuropeanEngine.h"
 #include "PricingEngines/AnalyticEuropeanEngine.h"
 #include <boost/timer.hpp>
-#include "Parameter.h"
+#include "Models/LMM.h"
 //#include <armadillo>
 
 using namespace std;
@@ -16,6 +16,9 @@ using namespace std;
 int main() {
 
     ConstantParameter ppp(5.0);
+    std::shared_ptr<Parameter> sig(new ConstantParameter(2.4));
+    std::vector<std::shared_ptr<Parameter> > sigs(4, sig);
+    LMM lmm(2, std::vector<Quote>(2, 1), 2, sigs, 0.1);
     boost::timer tm;
     double a, a1, a2;
     shared_ptr<Payoff> vanillaPayoff(new VanillaPayoff(95.0, "put"));

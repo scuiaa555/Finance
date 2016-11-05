@@ -6,7 +6,7 @@
 #include "StochasticProcesses/LogNormalProcess.h"
 
 LMM::LMM(unsigned long dimensional, const std::vector<Quote> &initial, unsigned long dimVol,
-         const std::vector<std::shared_ptr<Parameter> > &params, Time tenorTimeInterval) {
+         const std::vector<std::shared_ptr<Parameter> > &params, Time tenor):tenor_(tenor) {
     /*!!! no check for the input */
     dimensional_ = dimensional;
     processes_.resize(dimensional);
@@ -15,9 +15,9 @@ LMM::LMM(unsigned long dimensional, const std::vector<Quote> &initial, unsigned 
 
     for (int k = 0; k < dimensional; k++) {
 //        iter = params.begin() + k * dimVol;
-        std::vector<std::shared_ptr<Parameter> > haha(iter, iter + 1);
+        std::vector<std::shared_ptr<Parameter> > forthis(iter + k * dimVol, iter + (k + 1) * dimVol);
         processes_[k] = std::shared_ptr<StochasticProcess>(
-                new LogNormalProcess(initial[k], std::shared_ptr<Parameter>(new NullParameter()), dimVol, haha));
+                new LogNormalProcess(initial[k], std::shared_ptr<Parameter>(new NullParameter()), dimVol, forthis));
     }
 }
 

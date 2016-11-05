@@ -16,7 +16,7 @@ public:
 
     Quote evolve(Time t0, Quote x0, Time dt, double dw) const;
 
-    std::vector<Quote> evolve(Time t0, std::vector<Quote> x0, Time dt, double dw) const override {
+    std::vector<Quote> evolve(Time t0, std::vector<Quote>& x0, Time dt, double dw) const override {
         return std::vector<Quote>{evolve(t0, x0[0], dt, dw)};
     };
 };

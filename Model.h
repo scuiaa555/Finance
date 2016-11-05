@@ -11,8 +11,8 @@
 
 class Model {
 public:
-    /* acceptable to return a vector by value, since vector has move assignment operation */
-    virtual std::vector<Quote> evolve(Time t0, std::vector<Quote> x0, Time dt, double dw) const = 0;
+    /* acceptable when return a vector by value, since vector has move assignment operation */
+    virtual std::vector<Quote> evolve(Time t0, std::vector<Quote> &x0, Time dt, double dw) const = 0;
 
 //    virtual const std::vector<Quote> &GetInitial() const = 0;
 
@@ -21,6 +21,8 @@ public:
     virtual const std::shared_ptr<StochasticProcess> &getProcess() const = 0;
 
     virtual const std::shared_ptr<StochasticProcess> &getProcess(int i) const = 0;
+
+    virtual unsigned long getDimensionality() const = 0;
 
     /* return i-th process */
 
@@ -46,6 +48,8 @@ public:
         return getProcess();
     }
 
+    unsigned long getDimensionality() const override { return 1; }
+
     void setModel(const std::shared_ptr<StochasticProcess> &process) { process_ = process; }
 
 protected:
@@ -61,6 +65,8 @@ public:
     const std::shared_ptr<StochasticProcess> &getProcess(int i) const override {
         return processes_[i];
     }
+
+    unsigned long getDimensionality() const override { return dimensional_; }
 
 protected:
     std::vector<std::shared_ptr<StochasticProcess> > processes_;
