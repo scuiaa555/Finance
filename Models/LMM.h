@@ -31,7 +31,7 @@ public:
     std::vector<Quote> evolve(Time t0, std::vector<Quote>& x0, Time dt, double dw) const override { }
 
 private:
-//    unsigned long dimensional_
+//    unsigned long dimension_
     Time tenor_;
 
 };

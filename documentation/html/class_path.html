@@ -60,11 +60,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_path-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Path Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_path_8h_source.html">Path.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Path:</div>
 <div class="dyncontent">
@@ -78,28 +81,317 @@ Inheritance diagram for Path:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a589f506da73b9b80f21a27102656b2ba"><td class="memItemLeft" align="right" valign="top"><a id="a589f506da73b9b80f21a27102656b2ba"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Path</b> (const vector&lt; Time &gt; &amp;timeGrid, unsigned long dimensional)</td></tr>
+<tr class="memitem:a589f506da73b9b80f21a27102656b2ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a589f506da73b9b80f21a27102656b2ba">Path</a> (const vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; &amp;timeGrid, unsigned long dimensional)</td></tr>
 <tr class="separator:a589f506da73b9b80f21a27102656b2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a774bc2169ae87142b8165c3934a9deb9"><td class="memItemLeft" align="right" valign="top"><a id="a774bc2169ae87142b8165c3934a9deb9"></a>
-virtual const vector&lt; Time &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTimeGrid</b> () const</td></tr>
+<tr class="memitem:a6ae58f503394f12a90ff7d059d30d26c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a6ae58f503394f12a90ff7d059d30d26c">Path</a> ()=default</td></tr>
+<tr class="separator:a6ae58f503394f12a90ff7d059d30d26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774bc2169ae87142b8165c3934a9deb9"><td class="memItemLeft" align="right" valign="top">virtual const vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a774bc2169ae87142b8165c3934a9deb9">getTimeGrid</a> () const</td></tr>
 <tr class="separator:a774bc2169ae87142b8165c3934a9deb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeb21dd5019a717cc8a36ddb0f82f427"><td class="memItemLeft" align="right" valign="top"><a id="aeeb21dd5019a717cc8a36ddb0f82f427"></a>
-virtual vector&lt; vector&lt; Quote &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getValues</b> ()</td></tr>
+<tr class="memitem:aeeb21dd5019a717cc8a36ddb0f82f427"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#aeeb21dd5019a717cc8a36ddb0f82f427">getValues</a> ()</td></tr>
 <tr class="separator:aeeb21dd5019a717cc8a36ddb0f82f427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d3469e98b5da124b51ca8a9cc2caa28"><td class="memItemLeft" align="right" valign="top"><a id="a6d3469e98b5da124b51ca8a9cc2caa28"></a>
-virtual const vector&lt; vector&lt; Quote &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getValues</b> () const</td></tr>
+<tr class="memitem:a6d3469e98b5da124b51ca8a9cc2caa28"><td class="memItemLeft" align="right" valign="top">virtual const vector&lt; vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a6d3469e98b5da124b51ca8a9cc2caa28">getValues</a> () const</td></tr>
 <tr class="separator:a6d3469e98b5da124b51ca8a9cc2caa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6097f4761ac45d2d3656c35f09563f0"><td class="memItemLeft" align="right" valign="top"><a id="ae6097f4761ac45d2d3656c35f09563f0"></a>
-virtual vector&lt; vector&lt; Quote &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getAntitheticValues</b> ()</td></tr>
+<tr class="memitem:ae6097f4761ac45d2d3656c35f09563f0"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#ae6097f4761ac45d2d3656c35f09563f0">getAntitheticValues</a> ()</td></tr>
 <tr class="separator:ae6097f4761ac45d2d3656c35f09563f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadadd7f7ad38c779e36f3ef2805f30e9"><td class="memItemLeft" align="right" valign="top"><a id="aadadd7f7ad38c779e36f3ef2805f30e9"></a>
-virtual const vector&lt; vector&lt; Quote &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getAntitheticValues</b> () const</td></tr>
+<tr class="memitem:aadadd7f7ad38c779e36f3ef2805f30e9"><td class="memItemLeft" align="right" valign="top">virtual const vector&lt; vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#aadadd7f7ad38c779e36f3ef2805f30e9">getAntitheticValues</a> () const</td></tr>
 <tr class="separator:aadadd7f7ad38c779e36f3ef2805f30e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11618e66fc700531d3ad998acfdb88a3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a11618e66fc700531d3ad998acfdb88a3">~Path</a> ()</td></tr>
+<tr class="separator:a11618e66fc700531d3ad998acfdb88a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a89dcf892f7c979692e1bdb12811a2db1"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a89dcf892f7c979692e1bdb12811a2db1">timeGrid_</a></td></tr>
+<tr class="separator:a89dcf892f7c979692e1bdb12811a2db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a577d3370c9142a9e73c2118799c6a8a2"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a577d3370c9142a9e73c2118799c6a8a2">dimensional_</a></td></tr>
+<tr class="separator:a577d3370c9142a9e73c2118799c6a8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b906724bca24f9ec14ad754559e27a"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#ac8b906724bca24f9ec14ad754559e27a">vals_</a></td></tr>
+<tr class="separator:ac8b906724bca24f9ec14ad754559e27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a589f506da73b9b80f21a27102656b2ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a589f506da73b9b80f21a27102656b2ba">&sect;&nbsp;</a></span>Path() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Path::Path </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>timeGrid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>dimensional</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ae58f503394f12a90ff7d059d30d26c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ae58f503394f12a90ff7d059d30d26c">&sect;&nbsp;</a></span>Path() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Path::Path </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11618e66fc700531d3ad998acfdb88a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11618e66fc700531d3ad998acfdb88a3">&sect;&nbsp;</a></span>~Path()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Path::~Path </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae6097f4761ac45d2d3656c35f09563f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6097f4761ac45d2d3656c35f09563f0">&sect;&nbsp;</a></span>getAntitheticValues() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual vector&lt;vector&lt;<a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a>&gt; &gt;&amp; Path::getAntitheticValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_antithetic_path.html#a7f94c2a66c0d16ebedba930fbca9d859">AntitheticPath</a>.</p>
+
+</div>
+</div>
+<a id="aadadd7f7ad38c779e36f3ef2805f30e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadadd7f7ad38c779e36f3ef2805f30e9">&sect;&nbsp;</a></span>getAntitheticValues() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const vector&lt;vector&lt;<a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a>&gt; &gt;&amp; Path::getAntitheticValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_antithetic_path.html#a7b6c87162d9c4642dda68b4f9af5f653">AntitheticPath</a>.</p>
+
+</div>
+</div>
+<a id="a774bc2169ae87142b8165c3934a9deb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774bc2169ae87142b8165c3934a9deb9">&sect;&nbsp;</a></span>getTimeGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; &amp; Path::getTimeGrid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_antithetic_path.html#a8986e32381ea393159a15dc2b1c0b12c">AntitheticPath</a>.</p>
+
+</div>
+</div>
+<a id="aeeb21dd5019a717cc8a36ddb0f82f427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeb21dd5019a717cc8a36ddb0f82f427">&sect;&nbsp;</a></span>getValues() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &gt; &amp; Path::getValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_antithetic_path.html#a631294808de3c75c98563f292464a7da">AntitheticPath</a>.</p>
+
+</div>
+</div>
+<a id="a6d3469e98b5da124b51ca8a9cc2caa28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d3469e98b5da124b51ca8a9cc2caa28">&sect;&nbsp;</a></span>getValues() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const vector&lt; vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &gt; &amp; Path::getValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_antithetic_path.html#ad15cfc2a074fd27bd3119ddafa24c3bd">AntitheticPath</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a577d3370c9142a9e73c2118799c6a8a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a577d3370c9142a9e73c2118799c6a8a2">&sect;&nbsp;</a></span>dimensional_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long Path::dimensional_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89dcf892f7c979692e1bdb12811a2db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89dcf892f7c979692e1bdb12811a2db1">&sect;&nbsp;</a></span>timeGrid_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a>&gt; Path::timeGrid_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8b906724bca24f9ec14ad754559e27a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8b906724bca24f9ec14ad754559e27a">&sect;&nbsp;</a></span>vals_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;vector&lt;<a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a>&gt; &gt; Path::vals_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Users/CUI/Dropbox/C++/Finance/McFramework/<a class="el" href="_path_8h_source.html">Path.h</a></li>
-<li>Users/CUI/Dropbox/C++/Finance/McFramework/Path.cpp</li>
+<li>Users/CUI/Dropbox/C++/Finance/McFramework/<a class="el" href="_path_8cpp.html">Path.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,5 +1,9 @@
 \hypertarget{class_vanilla_payoff}{}\section{Vanilla\+Payoff Class Reference}
 \label{class_vanilla_payoff}\index{Vanilla\+Payoff@{Vanilla\+Payoff}}
+
+
+{\ttfamily \#include $<$Vanilla\+Payoff.\+h$>$}
+
 Inheritance diagram for Vanilla\+Payoff\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,21 +13,73 @@ Inheritance diagram for Vanilla\+Payoff\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_vanilla_payoff_ae0d7f1fdb70f4ad9c2002f96df2199d3}{}\label{class_vanilla_payoff_ae0d7f1fdb70f4ad9c2002f96df2199d3} 
-{\bfseries Vanilla\+Payoff} (Quote strike, std\+::string type)
+\hyperlink{class_vanilla_payoff_ae0d7f1fdb70f4ad9c2002f96df2199d3}{Vanilla\+Payoff} (\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} strike, std\+::string type)
 \item 
-\hypertarget{class_vanilla_payoff_aa141f5b29c30d54448c93a21bef83bb3}{}\label{class_vanilla_payoff_aa141f5b29c30d54448c93a21bef83bb3} 
-Money {\bfseries get\+Payoff} (Quote spot) const override
+\hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_vanilla_payoff_aa141f5b29c30d54448c93a21bef83bb3}{get\+Payoff} (\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} spot) const override
 \item 
-\hypertarget{class_vanilla_payoff_ae99fb31f1496f723ec598367ece825e3}{}\label{class_vanilla_payoff_ae99fb31f1496f723ec598367ece825e3} 
-Quote {\bfseries get\+Strike} () const
+\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \hyperlink{class_vanilla_payoff_ae99fb31f1496f723ec598367ece825e3}{get\+Strike} () const
 \item 
-\hypertarget{class_vanilla_payoff_ac1b4cc9e4152ed3f7c07c71270fc1831}{}\label{class_vanilla_payoff_ac1b4cc9e4152ed3f7c07c71270fc1831} 
-double {\bfseries get\+Type} () const
+double \hyperlink{class_vanilla_payoff_ac1b4cc9e4152ed3f7c07c71270fc1831}{get\+Type} () const
 \end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \hyperlink{class_vanilla_payoff_a63c2c23fecb9b43cd250e28791a31a56}{strike\+\_\+}
+\item 
+double \hyperlink{class_vanilla_payoff_a4a09d08187de77df248cc3f7498e3e2f}{type\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_vanilla_payoff_ae0d7f1fdb70f4ad9c2002f96df2199d3}{}\label{class_vanilla_payoff_ae0d7f1fdb70f4ad9c2002f96df2199d3} 
+\index{Vanilla\+Payoff@{Vanilla\+Payoff}!Vanilla\+Payoff@{Vanilla\+Payoff}}
+\index{Vanilla\+Payoff@{Vanilla\+Payoff}!Vanilla\+Payoff@{Vanilla\+Payoff}}
+\subsubsection{\texorpdfstring{Vanilla\+Payoff()}{VanillaPayoff()}}
+{\footnotesize\ttfamily Vanilla\+Payoff\+::\+Vanilla\+Payoff (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote}}]{strike,  }\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_vanilla_payoff_aa141f5b29c30d54448c93a21bef83bb3}{}\label{class_vanilla_payoff_aa141f5b29c30d54448c93a21bef83bb3} 
+\index{Vanilla\+Payoff@{Vanilla\+Payoff}!get\+Payoff@{get\+Payoff}}
+\index{get\+Payoff@{get\+Payoff}!Vanilla\+Payoff@{Vanilla\+Payoff}}
+\subsubsection{\texorpdfstring{get\+Payoff()}{getPayoff()}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} Vanilla\+Payoff\+::get\+Payoff (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote}}]{spot }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_payoff_a908e732330294a111345b4183ddb025b}{Payoff}.
+
+\hypertarget{class_vanilla_payoff_ae99fb31f1496f723ec598367ece825e3}{}\label{class_vanilla_payoff_ae99fb31f1496f723ec598367ece825e3} 
+\index{Vanilla\+Payoff@{Vanilla\+Payoff}!get\+Strike@{get\+Strike}}
+\index{get\+Strike@{get\+Strike}!Vanilla\+Payoff@{Vanilla\+Payoff}}
+\subsubsection{\texorpdfstring{get\+Strike()}{getStrike()}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} Vanilla\+Payoff\+::get\+Strike (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{class_vanilla_payoff_ac1b4cc9e4152ed3f7c07c71270fc1831}{}\label{class_vanilla_payoff_ac1b4cc9e4152ed3f7c07c71270fc1831} 
+\index{Vanilla\+Payoff@{Vanilla\+Payoff}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Vanilla\+Payoff@{Vanilla\+Payoff}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily double Vanilla\+Payoff\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_vanilla_payoff_a63c2c23fecb9b43cd250e28791a31a56}{}\label{class_vanilla_payoff_a63c2c23fecb9b43cd250e28791a31a56} 
+\index{Vanilla\+Payoff@{Vanilla\+Payoff}!strike\+\_\+@{strike\+\_\+}}
+\index{strike\+\_\+@{strike\+\_\+}!Vanilla\+Payoff@{Vanilla\+Payoff}}
+\subsubsection{\texorpdfstring{strike\+\_\+}{strike\_}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} Vanilla\+Payoff\+::strike\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_vanilla_payoff_a4a09d08187de77df248cc3f7498e3e2f}{}\label{class_vanilla_payoff_a4a09d08187de77df248cc3f7498e3e2f} 
+\index{Vanilla\+Payoff@{Vanilla\+Payoff}!type\+\_\+@{type\+\_\+}}
+\index{type\+\_\+@{type\+\_\+}!Vanilla\+Payoff@{Vanilla\+Payoff}}
+\subsubsection{\texorpdfstring{type\+\_\+}{type\_}}
+{\footnotesize\ttfamily double Vanilla\+Payoff\+::type\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Payoffs/Vanilla\+Payoff.\+h\item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Payoffs/Vanilla\+Payoff.\+cpp\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Payoffs/\hyperlink{_vanilla_payoff_8h}{Vanilla\+Payoff.\+h}\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Payoffs/\hyperlink{_vanilla_payoff_8cpp}{Vanilla\+Payoff.\+cpp}\end{DoxyCompactItemize}

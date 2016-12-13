@@ -1,5 +1,9 @@
 \hypertarget{class_forward}{}\section{Forward Class Reference}
 \label{class_forward}\index{Forward@{Forward}}
+
+
+{\ttfamily \#include $<$Forward.\+h$>$}
+
 Inheritance diagram for Forward\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -18,25 +22,89 @@ class \hyperlink{class_forward_1_1_results}{Results}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_forward_a7ec14e1a089290cae0e70c4cddd353b5}{}\label{class_forward_a7ec14e1a089290cae0e70c4cddd353b5} 
-{\bfseries Forward} (Time maturity, Quote strike, Quote spot)
+\hyperlink{class_forward_a7ec14e1a089290cae0e70c4cddd353b5}{Forward} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} maturity, \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} strike, \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} spot)
 \item 
-\hypertarget{class_forward_ad6208ba4ee03c396e611c142be735b26}{}\label{class_forward_ad6208ba4ee03c396e611c142be735b26} 
-void {\bfseries setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$arg) const override
+void \hyperlink{class_forward_ad6208ba4ee03c396e611c142be735b26}{setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$arg) const override
 \item 
-\hypertarget{class_forward_ab1e2edeb8345c8605013634a598d1ae5}{}\label{class_forward_ab1e2edeb8345c8605013634a598d1ae5} 
-Money {\bfseries fetch\+Results} (\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const res) override
+\hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_forward_ab1e2edeb8345c8605013634a598d1ae5}{fetch\+Results} (\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const res) override
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_forward_abead12e748980177fb67f98bcffbf817}{}\label{class_forward_abead12e748980177fb67f98bcffbf817} 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_forward_1_1_results}{Results} $>$ {\bfseries results\+\_\+}
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_forward_1_1_results}{Results} $>$ \hyperlink{class_forward_abead12e748980177fb67f98bcffbf817}{results\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \hyperlink{class_forward_a17c32d0a673c13fd92288b1720a43b76}{strike\+\_\+}
+\item 
+\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \hyperlink{class_forward_a362d0396ceda462e504f77120339f8b0}{spot\+\_\+}
+\item 
+\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} \hyperlink{class_forward_ad599104a13c33fbf31e9214af904e9aa}{maturity\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_forward_a7ec14e1a089290cae0e70c4cddd353b5}{}\label{class_forward_a7ec14e1a089290cae0e70c4cddd353b5} 
+\index{Forward@{Forward}!Forward@{Forward}}
+\index{Forward@{Forward}!Forward@{Forward}}
+\subsubsection{\texorpdfstring{Forward()}{Forward()}}
+{\footnotesize\ttfamily Forward\+::\+Forward (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{maturity,  }\item[{\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote}}]{strike,  }\item[{\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote}}]{spot }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_forward_ab1e2edeb8345c8605013634a598d1ae5}{}\label{class_forward_ab1e2edeb8345c8605013634a598d1ae5} 
+\index{Forward@{Forward}!fetch\+Results@{fetch\+Results}}
+\index{fetch\+Results@{fetch\+Results}!Forward@{Forward}}
+\subsubsection{\texorpdfstring{fetch\+Results()}{fetchResults()}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} Forward\+::fetch\+Results (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_instrument_a381f093402f789ad7c0ffecd233167dc}{Instrument}.
+
+\hypertarget{class_forward_ad6208ba4ee03c396e611c142be735b26}{}\label{class_forward_ad6208ba4ee03c396e611c142be735b26} 
+\index{Forward@{Forward}!setup\+Arguments@{setup\+Arguments}}
+\index{setup\+Arguments@{setup\+Arguments}!Forward@{Forward}}
+\subsubsection{\texorpdfstring{setup\+Arguments()}{setupArguments()}}
+{\footnotesize\ttfamily void Forward\+::setup\+Arguments (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$}]{arg }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67}{Instrument}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_forward_ad599104a13c33fbf31e9214af904e9aa}{}\label{class_forward_ad599104a13c33fbf31e9214af904e9aa} 
+\index{Forward@{Forward}!maturity\+\_\+@{maturity\+\_\+}}
+\index{maturity\+\_\+@{maturity\+\_\+}!Forward@{Forward}}
+\subsubsection{\texorpdfstring{maturity\+\_\+}{maturity\_}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} Forward\+::maturity\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_forward_abead12e748980177fb67f98bcffbf817}{}\label{class_forward_abead12e748980177fb67f98bcffbf817} 
+\index{Forward@{Forward}!results\+\_\+@{results\+\_\+}}
+\index{results\+\_\+@{results\+\_\+}!Forward@{Forward}}
+\subsubsection{\texorpdfstring{results\+\_\+}{results\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_forward_1_1_results}{Results}$>$ Forward\+::results\+\_\+}
+
+\hypertarget{class_forward_a362d0396ceda462e504f77120339f8b0}{}\label{class_forward_a362d0396ceda462e504f77120339f8b0} 
+\index{Forward@{Forward}!spot\+\_\+@{spot\+\_\+}}
+\index{spot\+\_\+@{spot\+\_\+}!Forward@{Forward}}
+\subsubsection{\texorpdfstring{spot\+\_\+}{spot\_}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} Forward\+::spot\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_forward_a17c32d0a673c13fd92288b1720a43b76}{}\label{class_forward_a17c32d0a673c13fd92288b1720a43b76} 
+\index{Forward@{Forward}!strike\+\_\+@{strike\+\_\+}}
+\index{strike\+\_\+@{strike\+\_\+}!Forward@{Forward}}
+\subsubsection{\texorpdfstring{strike\+\_\+}{strike\_}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} Forward\+::strike\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Instruments/Forward.\+h\item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Instruments/Forward.\+cpp\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Instruments/\hyperlink{_forward_8h}{Forward.\+h}\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Instruments/\hyperlink{_forward_8cpp}{Forward.\+cpp}\end{DoxyCompactItemize}

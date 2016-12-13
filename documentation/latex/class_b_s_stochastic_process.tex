@@ -1,5 +1,9 @@
 \hypertarget{class_b_s_stochastic_process}{}\section{B\+S\+Stochastic\+Process Class Reference}
 \label{class_b_s_stochastic_process}\index{B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}}
+
+
+{\ttfamily \#include $<$B\+S\+Stochastic\+Process.\+h$>$}
+
 Inheritance diagram for B\+S\+Stochastic\+Process\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,19 +13,26 @@ Inheritance diagram for B\+S\+Stochastic\+Process\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_b_s_stochastic_process_aed9545004ecc3b8a23e95e6406f48327}{B\+S\+Stochastic\+Process} (double r, double q, double sigma, double spot)
+\hyperlink{class_b_s_stochastic_process_aed9545004ecc3b8a23e95e6406f48327}{B\+S\+Stochastic\+Process} (double \hyperlink{_uniform_l_ecuyer_r_n_g1_8cpp_a372556d73d7e403d9b677b89b21ee572}{r}, double \hyperlink{_uniform_l_ecuyer_r_n_g1_8cpp_a5cf10165494588b84d4231e0e8a5b1a9}{q}, double sigma, double spot)
 \item 
-\hypertarget{class_b_s_stochastic_process_a604f867d372fc55a6dfae456f56604ea}{}\label{class_b_s_stochastic_process_a604f867d372fc55a6dfae456f56604ea} 
-Quote {\bfseries get\+Spot} () const override
+\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \hyperlink{class_b_s_stochastic_process_a604f867d372fc55a6dfae456f56604ea}{get\+Spot} () const override
 \item 
-\hypertarget{class_b_s_stochastic_process_a9cd46cb3dceb0aee302bf3a6c2ea39a1}{}\label{class_b_s_stochastic_process_a9cd46cb3dceb0aee302bf3a6c2ea39a1} 
-Rate {\bfseries get\+Risk\+Free} () const
+\hyperlink{_name_def_8h_a25bee43a162de339c81f3d1caf6b887d}{Rate} \hyperlink{class_b_s_stochastic_process_a9cd46cb3dceb0aee302bf3a6c2ea39a1}{get\+Risk\+Free} () const
 \item 
-\hypertarget{class_b_s_stochastic_process_a42caffac3e61f92af6849b86df0d9b6b}{}\label{class_b_s_stochastic_process_a42caffac3e61f92af6849b86df0d9b6b} 
-Rate {\bfseries get\+Dividend} () const
+\hyperlink{_name_def_8h_a25bee43a162de339c81f3d1caf6b887d}{Rate} \hyperlink{class_b_s_stochastic_process_a42caffac3e61f92af6849b86df0d9b6b}{get\+Dividend} () const
 \item 
-\hypertarget{class_b_s_stochastic_process_ab63f363e94441ed0ee22ef10beea16a6}{}\label{class_b_s_stochastic_process_ab63f363e94441ed0ee22ef10beea16a6} 
-Rate {\bfseries get\+Volatility} () const
+\hyperlink{_name_def_8h_a25bee43a162de339c81f3d1caf6b887d}{Rate} \hyperlink{class_b_s_stochastic_process_ab63f363e94441ed0ee22ef10beea16a6}{get\+Volatility} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \hyperlink{class_b_s_stochastic_process_ab09ba6f304aa5cef5afb06652c98967d}{spot\+\_\+}
+\item 
+\hyperlink{class_constant_parameter}{Constant\+Parameter} \hyperlink{class_b_s_stochastic_process_a92dfcebbdbd50af90d401e899943c3bd}{r\+\_\+}
+\item 
+\hyperlink{class_constant_parameter}{Constant\+Parameter} \hyperlink{class_b_s_stochastic_process_ae7ca128da48604f063dce9ab91e8f861}{q\+\_\+}
+\item 
+\hyperlink{class_constant_parameter}{Constant\+Parameter} \hyperlink{class_b_s_stochastic_process_a4d1125a7ed9bd09380b10160ef4277d5}{sigma\+\_\+}
 \end{DoxyCompactItemize}
 
 
@@ -45,7 +56,65 @@ Rate {\bfseries get\+Volatility} () const
 \end{DoxyParams}
 
 
+\subsection{Member Function Documentation}
+\hypertarget{class_b_s_stochastic_process_a42caffac3e61f92af6849b86df0d9b6b}{}\label{class_b_s_stochastic_process_a42caffac3e61f92af6849b86df0d9b6b} 
+\index{B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}!get\+Dividend@{get\+Dividend}}
+\index{get\+Dividend@{get\+Dividend}!B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}}
+\subsubsection{\texorpdfstring{get\+Dividend()}{getDividend()}}
+{\footnotesize\ttfamily double B\+S\+Stochastic\+Process\+::get\+Dividend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{class_b_s_stochastic_process_a9cd46cb3dceb0aee302bf3a6c2ea39a1}{}\label{class_b_s_stochastic_process_a9cd46cb3dceb0aee302bf3a6c2ea39a1} 
+\index{B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}!get\+Risk\+Free@{get\+Risk\+Free}}
+\index{get\+Risk\+Free@{get\+Risk\+Free}!B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}}
+\subsubsection{\texorpdfstring{get\+Risk\+Free()}{getRiskFree()}}
+{\footnotesize\ttfamily double B\+S\+Stochastic\+Process\+::get\+Risk\+Free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{class_b_s_stochastic_process_a604f867d372fc55a6dfae456f56604ea}{}\label{class_b_s_stochastic_process_a604f867d372fc55a6dfae456f56604ea} 
+\index{B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}!get\+Spot@{get\+Spot}}
+\index{get\+Spot@{get\+Spot}!B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}}
+\subsubsection{\texorpdfstring{get\+Spot()}{getSpot()}}
+{\footnotesize\ttfamily double B\+S\+Stochastic\+Process\+::get\+Spot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_stochastic_process_aad2ef51ca4bc2fe5f33a73e8f0ee361e}{Stochastic\+Process}.
+
+\hypertarget{class_b_s_stochastic_process_ab63f363e94441ed0ee22ef10beea16a6}{}\label{class_b_s_stochastic_process_ab63f363e94441ed0ee22ef10beea16a6} 
+\index{B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}!get\+Volatility@{get\+Volatility}}
+\index{get\+Volatility@{get\+Volatility}!B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}}
+\subsubsection{\texorpdfstring{get\+Volatility()}{getVolatility()}}
+{\footnotesize\ttfamily double B\+S\+Stochastic\+Process\+::get\+Volatility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_b_s_stochastic_process_ae7ca128da48604f063dce9ab91e8f861}{}\label{class_b_s_stochastic_process_ae7ca128da48604f063dce9ab91e8f861} 
+\index{B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}!q\+\_\+@{q\+\_\+}}
+\index{q\+\_\+@{q\+\_\+}!B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}}
+\subsubsection{\texorpdfstring{q\+\_\+}{q\_}}
+{\footnotesize\ttfamily \hyperlink{class_constant_parameter}{Constant\+Parameter} B\+S\+Stochastic\+Process\+::q\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_b_s_stochastic_process_a92dfcebbdbd50af90d401e899943c3bd}{}\label{class_b_s_stochastic_process_a92dfcebbdbd50af90d401e899943c3bd} 
+\index{B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}!r\+\_\+@{r\+\_\+}}
+\index{r\+\_\+@{r\+\_\+}!B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}}
+\subsubsection{\texorpdfstring{r\+\_\+}{r\_}}
+{\footnotesize\ttfamily \hyperlink{class_constant_parameter}{Constant\+Parameter} B\+S\+Stochastic\+Process\+::r\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_b_s_stochastic_process_a4d1125a7ed9bd09380b10160ef4277d5}{}\label{class_b_s_stochastic_process_a4d1125a7ed9bd09380b10160ef4277d5} 
+\index{B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}!sigma\+\_\+@{sigma\+\_\+}}
+\index{sigma\+\_\+@{sigma\+\_\+}!B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}}
+\subsubsection{\texorpdfstring{sigma\+\_\+}{sigma\_}}
+{\footnotesize\ttfamily \hyperlink{class_constant_parameter}{Constant\+Parameter} B\+S\+Stochastic\+Process\+::sigma\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_b_s_stochastic_process_ab09ba6f304aa5cef5afb06652c98967d}{}\label{class_b_s_stochastic_process_ab09ba6f304aa5cef5afb06652c98967d} 
+\index{B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}!spot\+\_\+@{spot\+\_\+}}
+\index{spot\+\_\+@{spot\+\_\+}!B\+S\+Stochastic\+Process@{B\+S\+Stochastic\+Process}}
+\subsubsection{\texorpdfstring{spot\+\_\+}{spot\_}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} B\+S\+Stochastic\+Process\+::spot\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Stochastic\+Processes/B\+S\+Stochastic\+Process.\+h\item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Stochastic\+Processes/B\+S\+Stochastic\+Process.\+cpp\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Stochastic\+Processes/\hyperlink{_b_s_stochastic_process_8h}{B\+S\+Stochastic\+Process.\+h}\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Stochastic\+Processes/\hyperlink{_b_s_stochastic_process_8cpp}{B\+S\+Stochastic\+Process.\+cpp}\end{DoxyCompactItemize}

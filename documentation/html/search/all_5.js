@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['genericengine',['GenericEngine',['../class_generic_engine.html',1,'']]],
-  ['genericengine_3c_20asianoption_3a_3aarguments_2c_20asianoption_3a_3aresults_20_3e',['GenericEngine&lt; AsianOption::Arguments, AsianOption::Results &gt;',['../class_generic_engine.html',1,'']]],
-  ['genericengine_3c_20europeanoption_3a_3aarguments_2c_20europeanoption_3a_3aresults_20_3e',['GenericEngine&lt; EuropeanOption::Arguments, EuropeanOption::Results &gt;',['../class_generic_engine.html',1,'']]],
-  ['genericengine_3c_20forward_3a_3aarguments_2c_20forward_3a_3aresults_20_3e',['GenericEngine&lt; Forward::Arguments, Forward::Results &gt;',['../class_generic_engine.html',1,'']]]
+  ['fetchresults',['fetchResults',['../class_instrument.html#a381f093402f789ad7c0ffecd233167dc',1,'Instrument::fetchResults()'],['../class_asian_option.html#a99cd9956b73d99a64748c913dcccd6ea',1,'AsianOption::fetchResults()'],['../class_european_option.html#ae234d562ef21dc24c25f1538860da1cf',1,'EuropeanOption::fetchResults()'],['../class_forward.html#ab1e2edeb8345c8605013634a598d1ae5',1,'Forward::fetchResults()']]],
+  ['forward',['Forward',['../class_forward.html',1,'Forward'],['../class_forward.html#a7ec14e1a089290cae0e70c4cddd353b5',1,'Forward::Forward()']]],
+  ['forward_2ecpp',['Forward.cpp',['../_forward_8cpp.html',1,'']]],
+  ['forward_2eh',['Forward.h',['../_forward_8h.html',1,'']]],
+  ['finance',['Finance',['../md__users__c_u_i__dropbox__c_09_09__finance__r_e_a_d_m_e.html',1,'']]]
 ];

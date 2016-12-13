@@ -1,16 +1,71 @@
 \hypertarget{class_random_sequence_generator}{}\section{Random\+Sequence\+Generator$<$ R\+NG $>$ Class Template Reference}
 \label{class_random_sequence_generator}\index{Random\+Sequence\+Generator$<$ R\+N\+G $>$@{Random\+Sequence\+Generator$<$ R\+N\+G $>$}}
+
+
+{\ttfamily \#include $<$Random\+Sequence\+Generator.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_random_sequence_generator_a148644138c29dae6ebe57657c8ca2cce}{}\label{class_random_sequence_generator_a148644138c29dae6ebe57657c8ca2cce} 
-{\bfseries Random\+Sequence\+Generator} (vector$<$ double $>$\+::size\+\_\+type dimensionality, const R\+NG \&rng)
+\hyperlink{class_random_sequence_generator_a148644138c29dae6ebe57657c8ca2cce}{Random\+Sequence\+Generator} (vector$<$ double $>$\+::size\+\_\+type dimensionality, const R\+NG \&rng)
 \item 
-\hypertarget{class_random_sequence_generator_a63f2d6fdb7f7bab6cdf3506f91cc814c}{}\label{class_random_sequence_generator_a63f2d6fdb7f7bab6cdf3506f91cc814c} 
-const vector$<$ double $>$ \& {\bfseries next\+Sequence} ()
+const vector$<$ double $>$ \& \hyperlink{class_random_sequence_generator_a63f2d6fdb7f7bab6cdf3506f91cc814c}{next\+Sequence} ()
 \end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+R\+NG \hyperlink{class_random_sequence_generator_a8a7cbf03d0e0e50f2d4bf571a6654228}{rng\+\_\+}
+\item 
+vector$<$ double $>$\+::size\+\_\+type \hyperlink{class_random_sequence_generator_af950ba4e5e31b62b03997742d1e542ce}{dimensionality\+\_\+}
+\item 
+vector$<$ double $>$ \hyperlink{class_random_sequence_generator_a876cc58b9aa9d48e6a068567356eb6f0}{sequence\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_random_sequence_generator_a148644138c29dae6ebe57657c8ca2cce}{}\label{class_random_sequence_generator_a148644138c29dae6ebe57657c8ca2cce} 
+\index{Random\+Sequence\+Generator@{Random\+Sequence\+Generator}!Random\+Sequence\+Generator@{Random\+Sequence\+Generator}}
+\index{Random\+Sequence\+Generator@{Random\+Sequence\+Generator}!Random\+Sequence\+Generator@{Random\+Sequence\+Generator}}
+\subsubsection{\texorpdfstring{Random\+Sequence\+Generator()}{RandomSequenceGenerator()}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+\hyperlink{class_random_sequence_generator}{Random\+Sequence\+Generator}$<$ R\+NG $>$\+::\hyperlink{class_random_sequence_generator}{Random\+Sequence\+Generator} (\begin{DoxyParamCaption}\item[{vector$<$ double $>$\+::size\+\_\+type}]{dimensionality,  }\item[{const R\+NG \&}]{rng }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_random_sequence_generator_a63f2d6fdb7f7bab6cdf3506f91cc814c}{}\label{class_random_sequence_generator_a63f2d6fdb7f7bab6cdf3506f91cc814c} 
+\index{Random\+Sequence\+Generator@{Random\+Sequence\+Generator}!next\+Sequence@{next\+Sequence}}
+\index{next\+Sequence@{next\+Sequence}!Random\+Sequence\+Generator@{Random\+Sequence\+Generator}}
+\subsubsection{\texorpdfstring{next\+Sequence()}{nextSequence()}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+const vector$<$ double $>$ \& \hyperlink{class_random_sequence_generator}{Random\+Sequence\+Generator}$<$ R\+NG $>$\+::next\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_random_sequence_generator_af950ba4e5e31b62b03997742d1e542ce}{}\label{class_random_sequence_generator_af950ba4e5e31b62b03997742d1e542ce} 
+\index{Random\+Sequence\+Generator@{Random\+Sequence\+Generator}!dimensionality\+\_\+@{dimensionality\+\_\+}}
+\index{dimensionality\+\_\+@{dimensionality\+\_\+}!Random\+Sequence\+Generator@{Random\+Sequence\+Generator}}
+\subsubsection{\texorpdfstring{dimensionality\+\_\+}{dimensionality\_}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+vector$<$double$>$\+::size\+\_\+type \hyperlink{class_random_sequence_generator}{Random\+Sequence\+Generator}$<$ R\+NG $>$\+::dimensionality\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_random_sequence_generator_a8a7cbf03d0e0e50f2d4bf571a6654228}{}\label{class_random_sequence_generator_a8a7cbf03d0e0e50f2d4bf571a6654228} 
+\index{Random\+Sequence\+Generator@{Random\+Sequence\+Generator}!rng\+\_\+@{rng\+\_\+}}
+\index{rng\+\_\+@{rng\+\_\+}!Random\+Sequence\+Generator@{Random\+Sequence\+Generator}}
+\subsubsection{\texorpdfstring{rng\+\_\+}{rng\_}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+R\+NG \hyperlink{class_random_sequence_generator}{Random\+Sequence\+Generator}$<$ R\+NG $>$\+::rng\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_random_sequence_generator_a876cc58b9aa9d48e6a068567356eb6f0}{}\label{class_random_sequence_generator_a876cc58b9aa9d48e6a068567356eb6f0} 
+\index{Random\+Sequence\+Generator@{Random\+Sequence\+Generator}!sequence\+\_\+@{sequence\+\_\+}}
+\index{sequence\+\_\+@{sequence\+\_\+}!Random\+Sequence\+Generator@{Random\+Sequence\+Generator}}
+\subsubsection{\texorpdfstring{sequence\+\_\+}{sequence\_}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+vector$<$double$>$ \hyperlink{class_random_sequence_generator}{Random\+Sequence\+Generator}$<$ R\+NG $>$\+::sequence\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Rand\+Num\+Generation/Random\+Sequence\+Generator.\+h\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Rand\+Num\+Generation/\hyperlink{_random_sequence_generator_8h}{Random\+Sequence\+Generator.\+h}\end{DoxyCompactItemize}

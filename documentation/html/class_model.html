@@ -66,6 +66,8 @@ $(function() {
 <div class="title">Model Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_model_8h_source.html">Model.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Model:</div>
 <div class="dyncontent">
@@ -81,28 +83,203 @@ Inheritance diagram for Model:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a087d56280bb51e8b04be3a9a30d06c76"><td class="memItemLeft" align="right" valign="top"><a id="a087d56280bb51e8b04be3a9a30d06c76"></a>
-virtual std::vector&lt; Quote &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>evolve</b> (Time t0, std::vector&lt; Quote &gt; &amp;x0, Time dt, double dw) const =0</td></tr>
+<tr class="memitem:a087d56280bb51e8b04be3a9a30d06c76"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a087d56280bb51e8b04be3a9a30d06c76">evolve</a> (<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> t0, std::vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &amp;x0, <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> dt, double dw) const =0</td></tr>
 <tr class="separator:a087d56280bb51e8b04be3a9a30d06c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc6a695d3f6b2def79f2dde69b3ab547"><td class="memItemLeft" align="right" valign="top"><a id="adc6a695d3f6b2def79f2dde69b3ab547"></a>
-virtual const std::shared_ptr&lt; <a class="el" href="class_stochastic_process.html">StochasticProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getProcess</b> () const =0</td></tr>
+<tr class="memitem:adc6a695d3f6b2def79f2dde69b3ab547"><td class="memItemLeft" align="right" valign="top">virtual const std::shared_ptr&lt; <a class="el" href="class_stochastic_process.html">StochasticProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#adc6a695d3f6b2def79f2dde69b3ab547">getProcess</a> () const =0</td></tr>
 <tr class="separator:adc6a695d3f6b2def79f2dde69b3ab547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23adaaf21b2955a1f4d4893ad9b77f02"><td class="memItemLeft" align="right" valign="top"><a id="a23adaaf21b2955a1f4d4893ad9b77f02"></a>
-virtual const std::shared_ptr&lt; <a class="el" href="class_stochastic_process.html">StochasticProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getProcess</b> (int i) const =0</td></tr>
+<tr class="memitem:a23adaaf21b2955a1f4d4893ad9b77f02"><td class="memItemLeft" align="right" valign="top">virtual const std::shared_ptr&lt; <a class="el" href="class_stochastic_process.html">StochasticProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a23adaaf21b2955a1f4d4893ad9b77f02">getProcess</a> (int i) const =0</td></tr>
 <tr class="separator:a23adaaf21b2955a1f4d4893ad9b77f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbe41cf30367bce4b96e92812d644f2d"><td class="memItemLeft" align="right" valign="top"><a id="acbe41cf30367bce4b96e92812d644f2d"></a>
-virtual unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>getDimensionality</b> () const =0</td></tr>
+<tr class="memitem:acbe41cf30367bce4b96e92812d644f2d"><td class="memItemLeft" align="right" valign="top">virtual unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#acbe41cf30367bce4b96e92812d644f2d">getDimensionality</a> () const =0</td></tr>
 <tr class="separator:acbe41cf30367bce4b96e92812d644f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade5d08aae4d32777bfa048f356bbcca9"><td class="memItemLeft" align="right" valign="top"><a id="ade5d08aae4d32777bfa048f356bbcca9"></a>
-const std::vector&lt; Quote &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getInitial</b> () const</td></tr>
+<tr class="memitem:ade5d08aae4d32777bfa048f356bbcca9"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ade5d08aae4d32777bfa048f356bbcca9">getInitial</a> () const</td></tr>
 <tr class="separator:ade5d08aae4d32777bfa048f356bbcca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aea7cb62b50849b8c9beef1493435241e"><td class="memItemLeft" align="right" valign="top"><a id="aea7cb62b50849b8c9beef1493435241e"></a>
-std::vector&lt; Quote &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>x0_</b></td></tr>
+<tr class="memitem:aea7cb62b50849b8c9beef1493435241e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#aea7cb62b50849b8c9beef1493435241e">x0_</a></td></tr>
 <tr class="separator:aea7cb62b50849b8c9beef1493435241e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a087d56280bb51e8b04be3a9a30d06c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a087d56280bb51e8b04be3a9a30d06c76">&sect;&nbsp;</a></span>evolve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;<a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a>&gt; Model::evolve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a>&#160;</td>
+          <td class="paramname"><em>t0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a>&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_l_m_m.html#a8dfdd340048e482a8059f473b5aacfd1">LMM</a>, and <a class="el" href="class_black_scholes_model.html#ae7ece51fd9f0eac3f77975cff857216d">BlackScholesModel</a>.</p>
+
+</div>
+</div>
+<a id="acbe41cf30367bce4b96e92812d644f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe41cf30367bce4b96e92812d644f2d">&sect;&nbsp;</a></span>getDimensionality()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unsigned long Model::getDimensionality </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_model_n_d.html#ab2356536a38f4961257654de629d6093">ModelND</a>, and <a class="el" href="class_model1_d.html#ac81875523be6153cb58d0f37914eb9a1">Model1D</a>.</p>
+
+</div>
+</div>
+<a id="ade5d08aae4d32777bfa048f356bbcca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade5d08aae4d32777bfa048f356bbcca9">&sect;&nbsp;</a></span>getInitial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;<a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a>&gt;&amp; Model::getInitial </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc6a695d3f6b2def79f2dde69b3ab547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc6a695d3f6b2def79f2dde69b3ab547">&sect;&nbsp;</a></span>getProcess() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::shared_ptr&lt;<a class="el" href="class_stochastic_process.html">StochasticProcess</a>&gt;&amp; Model::getProcess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_model_n_d.html#a98976fe73a8895ff98ba60ea174232f8">ModelND</a>, and <a class="el" href="class_model1_d.html#ae3cdfcb2922f03a68b8e8e02d572746f">Model1D</a>.</p>
+
+</div>
+</div>
+<a id="a23adaaf21b2955a1f4d4893ad9b77f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23adaaf21b2955a1f4d4893ad9b77f02">&sect;&nbsp;</a></span>getProcess() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::shared_ptr&lt;<a class="el" href="class_stochastic_process.html">StochasticProcess</a>&gt;&amp; Model::getProcess </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_model_n_d.html#a62866814432b7c0a0d8f58223cc6279d">ModelND</a>, and <a class="el" href="class_model1_d.html#a08b3a9f594214b5e3bcba3fe5f63524e">Model1D</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aea7cb62b50849b8c9beef1493435241e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea7cb62b50849b8c9beef1493435241e">&sect;&nbsp;</a></span>x0_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a>&gt; Model::x0_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Users/CUI/Dropbox/C++/Finance/<a class="el" href="_model_8h_source.html">Model.h</a></li>
 </ul>

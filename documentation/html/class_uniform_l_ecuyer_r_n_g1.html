@@ -60,27 +60,169 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_uniform_l_ecuyer_r_n_g1-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">UniformLEcuyerRNG1 Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_uniform_l_ecuyer_r_n_g1_8h_source.html">UniformLEcuyerRNG1.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a337fc3fe276e950c8ef9e330779eedb7"><td class="memItemLeft" align="right" valign="top"><a id="a337fc3fe276e950c8ef9e330779eedb7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UniformLEcuyerRNG1</b> (unsigned long seed=7777)</td></tr>
+<tr class="memitem:a337fc3fe276e950c8ef9e330779eedb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_uniform_l_ecuyer_r_n_g1.html#a337fc3fe276e950c8ef9e330779eedb7">UniformLEcuyerRNG1</a> (unsigned long seed=7777)</td></tr>
 <tr class="separator:a337fc3fe276e950c8ef9e330779eedb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33e1ea51eb633a14e84d45d8c31a4e8b"><td class="memItemLeft" align="right" valign="top"><a id="a33e1ea51eb633a14e84d45d8c31a4e8b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSeed</b> (const long seed)</td></tr>
+<tr class="memitem:a33e1ea51eb633a14e84d45d8c31a4e8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_uniform_l_ecuyer_r_n_g1.html#a33e1ea51eb633a14e84d45d8c31a4e8b">setSeed</a> (const long seed)</td></tr>
 <tr class="separator:a33e1ea51eb633a14e84d45d8c31a4e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a166e0bef412d4c85565ec0017ae489"><td class="memItemLeft" align="right" valign="top"><a id="a6a166e0bef412d4c85565ec0017ae489"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>next</b> ()</td></tr>
+<tr class="memitem:a6a166e0bef412d4c85565ec0017ae489"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_uniform_l_ecuyer_r_n_g1.html#a6a166e0bef412d4c85565ec0017ae489">next</a> ()</td></tr>
 <tr class="separator:a6a166e0bef412d4c85565ec0017ae489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed8bab7d34f76064ca34b1d35b204f4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_uniform_l_ecuyer_r_n_g1.html#aaed8bab7d34f76064ca34b1d35b204f4">last</a> ()</td></tr>
+<tr class="separator:aaed8bab7d34f76064ca34b1d35b204f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab722b90ba6d65dea6874ccede2edc921"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_uniform_l_ecuyer_r_n_g1.html#ab722b90ba6d65dea6874ccede2edc921">seed_</a></td></tr>
+<tr class="separator:ab722b90ba6d65dea6874ccede2edc921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14608c81e072a8f46ef2dd9b865e90c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_uniform_l_ecuyer_r_n_g1.html#ae14608c81e072a8f46ef2dd9b865e90c">u_</a></td></tr>
+<tr class="separator:ae14608c81e072a8f46ef2dd9b865e90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a337fc3fe276e950c8ef9e330779eedb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a337fc3fe276e950c8ef9e330779eedb7">&sect;&nbsp;</a></span>UniformLEcuyerRNG1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UniformLEcuyerRNG1::UniformLEcuyerRNG1 </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>seed</em> = <code>7777</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaed8bab7d34f76064ca34b1d35b204f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaed8bab7d34f76064ca34b1d35b204f4">&sect;&nbsp;</a></span>last()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double UniformLEcuyerRNG1::last </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a166e0bef412d4c85565ec0017ae489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a166e0bef412d4c85565ec0017ae489">&sect;&nbsp;</a></span>next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double UniformLEcuyerRNG1::next </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33e1ea51eb633a14e84d45d8c31a4e8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33e1ea51eb633a14e84d45d8c31a4e8b">&sect;&nbsp;</a></span>setSeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UniformLEcuyerRNG1::setSeed </td>
+          <td>(</td>
+          <td class="paramtype">const long&#160;</td>
+          <td class="paramname"><em>seed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab722b90ba6d65dea6874ccede2edc921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab722b90ba6d65dea6874ccede2edc921">&sect;&nbsp;</a></span>seed_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long UniformLEcuyerRNG1::seed_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae14608c81e072a8f46ef2dd9b865e90c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae14608c81e072a8f46ef2dd9b865e90c">&sect;&nbsp;</a></span>u_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double UniformLEcuyerRNG1::u_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Users/CUI/Dropbox/C++/Finance/RandNumGeneration/<a class="el" href="_uniform_l_ecuyer_r_n_g1_8h_source.html">UniformLEcuyerRNG1.h</a></li>
-<li>Users/CUI/Dropbox/C++/Finance/RandNumGeneration/UniformLEcuyerRNG1.cpp</li>
+<li>Users/CUI/Dropbox/C++/Finance/RandNumGeneration/<a class="el" href="_uniform_l_ecuyer_r_n_g1_8cpp.html">UniformLEcuyerRNG1.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

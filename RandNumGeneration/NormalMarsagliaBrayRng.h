@@ -18,9 +18,12 @@ public:
 
     double next();
 
+    double last() { return last_; }
+
 private:
     UniformRNG rng_;
-    double z_;
+    double z_;           //!< second value of Marsaglia Bray scheme
+    double last_;        //!< last return value
     bool secondExists_;
 
 };
@@ -30,7 +33,8 @@ double NormalMarsagliaBrayRng<UniformRNG>::next() {
 
     if (secondExists_) {
         secondExists_ = !secondExists_;
-        return z_;
+        last_ = z_;
+        return last_;
     }
     secondExists_ = !secondExists_;
     double x, u1, u2;
@@ -41,8 +45,8 @@ double NormalMarsagliaBrayRng<UniformRNG>::next() {
     } while (x > 1);
     double y = sqrt(-2 * log(x) / x);
     z_ = u2 * y;
-    return u1 * y;
-
+    last_ = u1 * y;
+    return last_;
 }
 
 

@@ -60,11 +60,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_mc_european_engine-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">McEuropeanEngine&lt; UnifRng &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_mc_european_engine_8h_source.html">McEuropeanEngine.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for McEuropeanEngine&lt; UnifRng &gt;:</div>
 <div class="dyncontent">
@@ -80,39 +83,310 @@ Inheritance diagram for McEuropeanEngine&lt; UnifRng &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae43a5aacc327f15f33e63e3c505ec324"><td class="memItemLeft" align="right" valign="top"><a id="ae43a5aacc327f15f33e63e3c505ec324"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>McEuropeanEngine</b> (const std::shared_ptr&lt; <a class="el" href="class_model.html">Model</a> &gt; model, Time timeStep, unsigned long maxSamples, unsigned long minSamples)</td></tr>
+<tr class="memitem:ae43a5aacc327f15f33e63e3c505ec324"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#ae43a5aacc327f15f33e63e3c505ec324">McEuropeanEngine</a> (const std::shared_ptr&lt; <a class="el" href="class_model.html">Model</a> &gt; model, <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> timeStep, unsigned long maxSamples, unsigned long minSamples)</td></tr>
 <tr class="separator:ae43a5aacc327f15f33e63e3c505ec324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2a93d63269eac42449f8b958ec15535"><td class="memItemLeft" align="right" valign="top"><a id="ae2a93d63269eac42449f8b958ec15535"></a>
-std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; <a class="el" href="class_normal_marsaglia_bray_rng.html">NormalMarsagliaBrayRng</a>&lt; UnifRng &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pathGenerator</b> () override</td></tr>
+<tr class="memitem:ae2a93d63269eac42449f8b958ec15535"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; <a class="el" href="class_normal_marsaglia_bray_rng.html">NormalMarsagliaBrayRng</a>&lt; UnifRng &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#ae2a93d63269eac42449f8b958ec15535">pathGenerator</a> () override</td></tr>
 <tr class="separator:ae2a93d63269eac42449f8b958ec15535"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21dd3ee9970dd5bae2be03a723d0a290"><td class="memItemLeft" align="right" valign="top"><a id="a21dd3ee9970dd5bae2be03a723d0a290"></a>
-std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pathPricer</b> () override</td></tr>
+<tr class="memitem:a21dd3ee9970dd5bae2be03a723d0a290"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#a21dd3ee9970dd5bae2be03a723d0a290">pathPricer</a> () override</td></tr>
 <tr class="separator:a21dd3ee9970dd5bae2be03a723d0a290"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76252919552e4061795e30f30947a1ee"><td class="memItemLeft" align="right" valign="top"><a id="a76252919552e4061795e30f30947a1ee"></a>
-vector&lt; Time &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>timeGrid</b> () override</td></tr>
+<tr class="memitem:a76252919552e4061795e30f30947a1ee"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#a76252919552e4061795e30f30947a1ee">timeGrid</a> () override</td></tr>
 <tr class="separator:a76252919552e4061795e30f30947a1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b2f0147fbaf2b84c65851bbc2baa7b"><td class="memItemLeft" align="right" valign="top"><a id="a51b2f0147fbaf2b84c65851bbc2baa7b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate</b> () override</td></tr>
+<tr class="memitem:a51b2f0147fbaf2b84c65851bbc2baa7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#a51b2f0147fbaf2b84c65851bbc2baa7b">calculate</a> () override</td></tr>
 <tr class="separator:a51b2f0147fbaf2b84c65851bbc2baa7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_generic_engine"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_generic_engine')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_generic_engine.html">GenericEngine&lt; EuropeanOption::Arguments, EuropeanOption::Results &gt;</a></td></tr>
-<tr class="memitem:ac2adcbbc8d7b554e2cc1f90e4c4d055d inherit pub_methods_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a id="ac2adcbbc8d7b554e2cc1f90e4c4d055d"></a>
-<a class="el" href="class_pricing_engine_1_1_arguments.html">PricingEngine::Arguments</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getArguments</b> () const override</td></tr>
+<tr class="memitem:a080b4df876712b5529b4a19ec3b0c48f inherit pub_methods_class_generic_engine"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generic_engine.html#a080b4df876712b5529b4a19ec3b0c48f">GenericEngine</a> ()</td></tr>
+<tr class="separator:a080b4df876712b5529b4a19ec3b0c48f inherit pub_methods_class_generic_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2adcbbc8d7b554e2cc1f90e4c4d055d inherit pub_methods_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pricing_engine_1_1_arguments.html">PricingEngine::Arguments</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generic_engine.html#ac2adcbbc8d7b554e2cc1f90e4c4d055d">getArguments</a> () const override</td></tr>
 <tr class="separator:ac2adcbbc8d7b554e2cc1f90e4c4d055d inherit pub_methods_class_generic_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b8d7fba7e51c0795ea9f1e9c2f54afd inherit pub_methods_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a id="a2b8d7fba7e51c0795ea9f1e9c2f54afd"></a>
-<a class="el" href="class_pricing_engine_1_1_results.html">PricingEngine::Results</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getResults</b> () const override</td></tr>
+<tr class="memitem:a2b8d7fba7e51c0795ea9f1e9c2f54afd inherit pub_methods_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pricing_engine_1_1_results.html">PricingEngine::Results</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generic_engine.html#a2b8d7fba7e51c0795ea9f1e9c2f54afd">getResults</a> () const override</td></tr>
 <tr class="separator:a2b8d7fba7e51c0795ea9f1e9c2f54afd inherit pub_methods_class_generic_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_pricing_engine"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_pricing_engine')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_pricing_engine.html">PricingEngine</a></td></tr>
+<tr class="memitem:abfd32778b0483e92db2e7cd00a2f9345 inherit pub_methods_class_pricing_engine"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pricing_engine.html#abfd32778b0483e92db2e7cd00a2f9345">PricingEngine</a> ()</td></tr>
+<tr class="separator:abfd32778b0483e92db2e7cd00a2f9345 inherit pub_methods_class_pricing_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac9a776838f0c894f04c64491a6a0e931"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_model.html">Model</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#ac9a776838f0c894f04c64491a6a0e931">model_</a></td></tr>
+<tr class="separator:ac9a776838f0c894f04c64491a6a0e931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0811b021427b14b9e63afe57cf66f46"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#ab0811b021427b14b9e63afe57cf66f46">minSamples_</a></td></tr>
+<tr class="separator:ab0811b021427b14b9e63afe57cf66f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c942f2c6f52c461663968f8b5f9161"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#ae6c942f2c6f52c461663968f8b5f9161">maxSamples_</a></td></tr>
+<tr class="separator:ae6c942f2c6f52c461663968f8b5f9161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf4932a9ca4b0c8bd6d3f4a1a23367e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#a6cf4932a9ca4b0c8bd6d3f4a1a23367e">timeStep_</a></td></tr>
+<tr class="separator:a6cf4932a9ca4b0c8bd6d3f4a1a23367e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_generic_engine"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_generic_engine')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_generic_engine.html">GenericEngine&lt; EuropeanOption::Arguments, EuropeanOption::Results &gt;</a></td></tr>
-<tr class="memitem:a9ac595191e5d6976c65659d26063bfc8 inherit pub_attribs_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a id="a9ac595191e5d6976c65659d26063bfc8"></a>
-<a class="el" href="class_european_option_1_1_arguments.html">EuropeanOption::Arguments</a>&#160;</td><td class="memItemRight" valign="bottom"><b>arguments_</b></td></tr>
+<tr class="memitem:a9ac595191e5d6976c65659d26063bfc8 inherit pub_attribs_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_european_option_1_1_arguments.html">EuropeanOption::Arguments</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generic_engine.html#a9ac595191e5d6976c65659d26063bfc8">arguments_</a></td></tr>
 <tr class="separator:a9ac595191e5d6976c65659d26063bfc8 inherit pub_attribs_class_generic_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd6af7c4b3fd0e43826755ba7d347dd5 inherit pub_attribs_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a id="acd6af7c4b3fd0e43826755ba7d347dd5"></a>
-<a class="el" href="class_european_option_1_1_results.html">EuropeanOption::Results</a>&#160;</td><td class="memItemRight" valign="bottom"><b>results_</b></td></tr>
+<tr class="memitem:acd6af7c4b3fd0e43826755ba7d347dd5 inherit pub_attribs_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_european_option_1_1_results.html">EuropeanOption::Results</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generic_engine.html#acd6af7c4b3fd0e43826755ba7d347dd5">results_</a></td></tr>
 <tr class="separator:acd6af7c4b3fd0e43826755ba7d347dd5 inherit pub_attribs_class_generic_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_mc_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mc_simulation')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="class_mc_simulation.html">McSimulation</a></td></tr>
+<tr class="memitem:a34949008df3c2b7fd4df32fac3875582 inherit pub_methods_class_mc_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a34949008df3c2b7fd4df32fac3875582">calculate</a> (unsigned long maxSamples, unsigned long minSamples)</td></tr>
+<tr class="separator:a34949008df3c2b7fd4df32fac3875582 inherit pub_methods_class_mc_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f74044189f64941f7fd3aaa4acc8e8e inherit pub_methods_class_mc_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a5f74044189f64941f7fd3aaa4acc8e8e">value</a> (unsigned long maxSamples, unsigned long minSamples)</td></tr>
+<tr class="separator:a5f74044189f64941f7fd3aaa4acc8e8e inherit pub_methods_class_mc_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66197576bd23e26e91636f8ca1c7197 inherit pub_methods_class_mc_simulation"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_m_c_statistics.html">MCStatistics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#af66197576bd23e26e91636f8ca1c7197">sampleAccumulator</a> () const</td></tr>
+<tr class="separator:af66197576bd23e26e91636f8ca1c7197 inherit pub_methods_class_mc_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae43a5aacc327f15f33e63e3c505ec324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae43a5aacc327f15f33e63e3c505ec324">&sect;&nbsp;</a></span>McEuropeanEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UnifRng &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mc_european_engine.html">McEuropeanEngine</a>&lt; UnifRng &gt;::<a class="el" href="class_mc_european_engine.html">McEuropeanEngine</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_model.html">Model</a> &gt;&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a>&#160;</td>
+          <td class="paramname"><em>timeStep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>maxSamples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>minSamples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a51b2f0147fbaf2b84c65851bbc2baa7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b2f0147fbaf2b84c65851bbc2baa7b">&sect;&nbsp;</a></span>calculate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UnifRng &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_mc_european_engine.html">McEuropeanEngine</a>&lt; UnifRng &gt;::calculate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_pricing_engine.html#a733511ffc3cf5e4dc1fbc2a39208d8bd">PricingEngine</a>.</p>
+
+</div>
+</div>
+<a id="ae2a93d63269eac42449f8b958ec15535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2a93d63269eac42449f8b958ec15535">&sect;&nbsp;</a></span>pathGenerator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UnifRng &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; <a class="el" href="class_normal_marsaglia_bray_rng.html">NormalMarsagliaBrayRng</a>&lt; UnifRng &gt; &gt; &gt; <a class="el" href="class_mc_european_engine.html">McEuropeanEngine</a>&lt; UnifRng &gt;::pathGenerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_mc_simulation.html#ada27dc346c81cf3d7aff84188dd12381">McSimulation</a>.</p>
+
+</div>
+</div>
+<a id="a21dd3ee9970dd5bae2be03a723d0a290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21dd3ee9970dd5bae2be03a723d0a290">&sect;&nbsp;</a></span>pathPricer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UnifRng &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a> &gt; <a class="el" href="class_mc_european_engine.html">McEuropeanEngine</a>&lt; UnifRng &gt;::pathPricer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_mc_simulation.html#a3182a27c79d31cfb65e9a1a6b60f5391">McSimulation</a>.</p>
+
+</div>
+</div>
+<a id="a76252919552e4061795e30f30947a1ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76252919552e4061795e30f30947a1ee">&sect;&nbsp;</a></span>timeGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UnifRng &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; <a class="el" href="class_mc_european_engine.html">McEuropeanEngine</a>&lt; UnifRng &gt;::timeGrid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_mc_simulation.html#a71f4b6eedd90f057203a94467a691387">McSimulation</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae6c942f2c6f52c461663968f8b5f9161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c942f2c6f52c461663968f8b5f9161">&sect;&nbsp;</a></span>maxSamples_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UnifRng  = UniformLEcuyerRNG1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long <a class="el" href="class_mc_european_engine.html">McEuropeanEngine</a>&lt; UnifRng &gt;::maxSamples_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0811b021427b14b9e63afe57cf66f46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0811b021427b14b9e63afe57cf66f46">&sect;&nbsp;</a></span>minSamples_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UnifRng  = UniformLEcuyerRNG1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long <a class="el" href="class_mc_european_engine.html">McEuropeanEngine</a>&lt; UnifRng &gt;::minSamples_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9a776838f0c894f04c64491a6a0e931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a776838f0c894f04c64491a6a0e931">&sect;&nbsp;</a></span>model_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UnifRng  = UniformLEcuyerRNG1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_model.html">Model</a>&gt; <a class="el" href="class_mc_european_engine.html">McEuropeanEngine</a>&lt; UnifRng &gt;::model_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6cf4932a9ca4b0c8bd6d3f4a1a23367e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cf4932a9ca4b0c8bd6d3f4a1a23367e">&sect;&nbsp;</a></span>timeStep_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename UnifRng  = UniformLEcuyerRNG1&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> <a class="el" href="class_mc_european_engine.html">McEuropeanEngine</a>&lt; UnifRng &gt;::timeStep_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Users/CUI/Dropbox/C++/Finance/PricingEngines/<a class="el" href="_mc_european_engine_8h_source.html">McEuropeanEngine.h</a></li>
 </ul>

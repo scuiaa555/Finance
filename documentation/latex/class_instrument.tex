@@ -1,5 +1,9 @@
 \hypertarget{class_instrument}{}\section{Instrument Class Reference}
 \label{class_instrument}\index{Instrument@{Instrument}}
+
+
+{\ttfamily \#include $<$Instrument.\+h$>$}
+
 Inheritance diagram for Instrument\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,27 +13,77 @@ Inheritance diagram for Instrument\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_instrument_a47bdaa9390ab5e0616e8499a507c50cd}{}\label{class_instrument_a47bdaa9390ab5e0616e8499a507c50cd} 
-void {\bfseries set\+Pricing\+Engine} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_pricing_engine}{Pricing\+Engine} $>$ pricing\+Engine)
+\hyperlink{class_instrument_a1a297b2cbe1e239c8ede2e90185e2880}{Instrument} ()
 \item 
-\hypertarget{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{}\label{class_instrument_aa750f2ae95a21d65a073da3171e8d084} 
-Money {\bfseries npv} ()
+void \hyperlink{class_instrument_a47bdaa9390ab5e0616e8499a507c50cd}{set\+Pricing\+Engine} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_pricing_engine}{Pricing\+Engine} $>$ pricing\+Engine)
 \item 
-\hypertarget{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67}{}\label{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67} 
-virtual void {\bfseries setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$arg) const =0
+\hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv} ()
 \item 
-\hypertarget{class_instrument_a381f093402f789ad7c0ffecd233167dc}{}\label{class_instrument_a381f093402f789ad7c0ffecd233167dc} 
-virtual Money {\bfseries fetch\+Results} (\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const res)=0
+virtual void \hyperlink{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67}{setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$arg) const =0
+\item 
+virtual \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_instrument_a381f093402f789ad7c0ffecd233167dc}{fetch\+Results} (\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const res)=0
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_instrument_a6fdd5548ccc944536ff73913d98bf598}{}\label{class_instrument_a6fdd5548ccc944536ff73913d98bf598} 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_pricing_engine}{Pricing\+Engine} $>$ {\bfseries pricing\+Engine\+\_\+}
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_pricing_engine}{Pricing\+Engine} $>$ \hyperlink{class_instrument_a6fdd5548ccc944536ff73913d98bf598}{pricing\+Engine\+\_\+}
 \end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_instrument_a1a297b2cbe1e239c8ede2e90185e2880}{}\label{class_instrument_a1a297b2cbe1e239c8ede2e90185e2880} 
+\index{Instrument@{Instrument}!Instrument@{Instrument}}
+\index{Instrument@{Instrument}!Instrument@{Instrument}}
+\subsubsection{\texorpdfstring{Instrument()}{Instrument()}}
+{\footnotesize\ttfamily Instrument\+::\+Instrument (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_instrument_a381f093402f789ad7c0ffecd233167dc}{}\label{class_instrument_a381f093402f789ad7c0ffecd233167dc} 
+\index{Instrument@{Instrument}!fetch\+Results@{fetch\+Results}}
+\index{fetch\+Results@{fetch\+Results}!Instrument@{Instrument}}
+\subsubsection{\texorpdfstring{fetch\+Results()}{fetchResults()}}
+{\footnotesize\ttfamily virtual \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} Instrument\+::fetch\+Results (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_asian_option_a99cd9956b73d99a64748c913dcccd6ea}{Asian\+Option}, \hyperlink{class_forward_ab1e2edeb8345c8605013634a598d1ae5}{Forward}, and \hyperlink{class_european_option_ae234d562ef21dc24c25f1538860da1cf}{European\+Option}.
+
+\hypertarget{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{}\label{class_instrument_aa750f2ae95a21d65a073da3171e8d084} 
+\index{Instrument@{Instrument}!npv@{npv}}
+\index{npv@{npv}!Instrument@{Instrument}}
+\subsubsection{\texorpdfstring{npv()}{npv()}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} Instrument\+::npv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{class_instrument_a47bdaa9390ab5e0616e8499a507c50cd}{}\label{class_instrument_a47bdaa9390ab5e0616e8499a507c50cd} 
+\index{Instrument@{Instrument}!set\+Pricing\+Engine@{set\+Pricing\+Engine}}
+\index{set\+Pricing\+Engine@{set\+Pricing\+Engine}!Instrument@{Instrument}}
+\subsubsection{\texorpdfstring{set\+Pricing\+Engine()}{setPricingEngine()}}
+{\footnotesize\ttfamily void Instrument\+::set\+Pricing\+Engine (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_pricing_engine}{Pricing\+Engine} $>$}]{pricing\+Engine }\end{DoxyParamCaption})}
+
+\hypertarget{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67}{}\label{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67} 
+\index{Instrument@{Instrument}!setup\+Arguments@{setup\+Arguments}}
+\index{setup\+Arguments@{setup\+Arguments}!Instrument@{Instrument}}
+\subsubsection{\texorpdfstring{setup\+Arguments()}{setupArguments()}}
+{\footnotesize\ttfamily virtual void Instrument\+::setup\+Arguments (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$}]{arg }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_asian_option_a475cbd83529df369b371ee44f63cdd08}{Asian\+Option}, \hyperlink{class_forward_ad6208ba4ee03c396e611c142be735b26}{Forward}, and \hyperlink{class_european_option_a94c1826feba0099400bce8dd6fc01cb9}{European\+Option}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_instrument_a6fdd5548ccc944536ff73913d98bf598}{}\label{class_instrument_a6fdd5548ccc944536ff73913d98bf598} 
+\index{Instrument@{Instrument}!pricing\+Engine\+\_\+@{pricing\+Engine\+\_\+}}
+\index{pricing\+Engine\+\_\+@{pricing\+Engine\+\_\+}!Instrument@{Instrument}}
+\subsubsection{\texorpdfstring{pricing\+Engine\+\_\+}{pricingEngine\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_pricing_engine}{Pricing\+Engine}$>$ Instrument\+::pricing\+Engine\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/Instrument.\+h\item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/Instrument.\+cpp\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\hyperlink{_instrument_8h}{Instrument.\+h}\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\hyperlink{_instrument_8cpp}{Instrument.\+cpp}\end{DoxyCompactItemize}

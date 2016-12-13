@@ -1,12 +1,26 @@
 \hypertarget{class_path_generator}{}\section{Path\+Generator$<$ R\+NG $>$ Class Template Reference}
 \label{class_path_generator}\index{Path\+Generator$<$ R\+N\+G $>$@{Path\+Generator$<$ R\+N\+G $>$}}
+
+
+{\ttfamily \#include $<$Path\+Generator.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_path_generator_a7cd1bbe2d0d6afc8b7a6b812553deacc}{Path\+Generator} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$ model, const vector$<$ Time $>$ \&time\+Grid, R\+NG rng, bool is\+Antithetic=0)
+\hyperlink{class_path_generator_a7cd1bbe2d0d6afc8b7a6b812553deacc}{Path\+Generator} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$ model, const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \&time\+Grid, R\+NG rng, bool is\+Antithetic=0)
 \item 
-\hypertarget{class_path_generator_a848a4f432d86df5b03d835d99472ab37}{}\label{class_path_generator_a848a4f432d86df5b03d835d99472ab37} 
-\hyperlink{class_path}{Path} \& {\bfseries next} ()
+\hyperlink{class_path}{Path} \& \hyperlink{class_path_generator_a848a4f432d86df5b03d835d99472ab37}{next} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+R\+NG \hyperlink{class_path_generator_ae8b29fa9173cf38dfc448375163adf25}{rng\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$ \hyperlink{class_path_generator_a80dcaacd0b79c84c4bf83e980f5ed7ff}{model\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path}{Path} $>$ \hyperlink{class_path_generator_a2af5b3cab0498565a56b20e97a3d6f35}{next\+\_\+}
+\item 
+bool \hyperlink{class_path_generator_aa45100f04c27cd0f25c059c410316346}{is\+Antithetic\+\_\+}
 \end{DoxyCompactItemize}
 
 
@@ -16,10 +30,51 @@
 \index{Path\+Generator@{Path\+Generator}!Path\+Generator@{Path\+Generator}}
 \subsubsection{\texorpdfstring{Path\+Generator()}{PathGenerator()}}
 {\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-\hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$\+::\hyperlink{class_path_generator}{Path\+Generator} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$}]{model,  }\item[{const vector$<$ Time $>$ \&}]{time\+Grid,  }\item[{R\+NG}]{rng,  }\item[{bool}]{is\+Antithetic = {\ttfamily 0} }\end{DoxyParamCaption})}
+\hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$\+::\hyperlink{class_path_generator}{Path\+Generator} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$}]{model,  }\item[{const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \&}]{time\+Grid,  }\item[{R\+NG}]{rng,  }\item[{bool}]{is\+Antithetic = {\ttfamily 0} }\end{DoxyParamCaption})}
 
 !! dimension problem appeared here !!! should be implied by process/path\+Pricer 
 
+\subsection{Member Function Documentation}
+\hypertarget{class_path_generator_a848a4f432d86df5b03d835d99472ab37}{}\label{class_path_generator_a848a4f432d86df5b03d835d99472ab37} 
+\index{Path\+Generator@{Path\+Generator}!next@{next}}
+\index{next@{next}!Path\+Generator@{Path\+Generator}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+\hyperlink{class_path}{Path} \& \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_path_generator_aa45100f04c27cd0f25c059c410316346}{}\label{class_path_generator_aa45100f04c27cd0f25c059c410316346} 
+\index{Path\+Generator@{Path\+Generator}!is\+Antithetic\+\_\+@{is\+Antithetic\+\_\+}}
+\index{is\+Antithetic\+\_\+@{is\+Antithetic\+\_\+}!Path\+Generator@{Path\+Generator}}
+\subsubsection{\texorpdfstring{is\+Antithetic\+\_\+}{isAntithetic\_}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+bool \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$\+::is\+Antithetic\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_path_generator_a80dcaacd0b79c84c4bf83e980f5ed7ff}{}\label{class_path_generator_a80dcaacd0b79c84c4bf83e980f5ed7ff} 
+\index{Path\+Generator@{Path\+Generator}!model\+\_\+@{model\+\_\+}}
+\index{model\+\_\+@{model\+\_\+}!Path\+Generator@{Path\+Generator}}
+\subsubsection{\texorpdfstring{model\+\_\+}{model\_}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{class_model}{Model}$>$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$\+::model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_path_generator_a2af5b3cab0498565a56b20e97a3d6f35}{}\label{class_path_generator_a2af5b3cab0498565a56b20e97a3d6f35} 
+\index{Path\+Generator@{Path\+Generator}!next\+\_\+@{next\+\_\+}}
+\index{next\+\_\+@{next\+\_\+}!Path\+Generator@{Path\+Generator}}
+\subsubsection{\texorpdfstring{next\+\_\+}{next\_}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{class_path}{Path}$>$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$\+::next\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_path_generator_ae8b29fa9173cf38dfc448375163adf25}{}\label{class_path_generator_ae8b29fa9173cf38dfc448375163adf25} 
+\index{Path\+Generator@{Path\+Generator}!rng\+\_\+@{rng\+\_\+}}
+\index{rng\+\_\+@{rng\+\_\+}!Path\+Generator@{Path\+Generator}}
+\subsubsection{\texorpdfstring{rng\+\_\+}{rng\_}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+R\+NG \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$\+::rng\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Mc\+Framework/Path\+Generator.\+h\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Mc\+Framework/\hyperlink{_path_generator_8h}{Path\+Generator.\+h}\end{DoxyCompactItemize}

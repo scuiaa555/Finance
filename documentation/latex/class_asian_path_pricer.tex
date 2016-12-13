@@ -1,5 +1,9 @@
 \hypertarget{class_asian_path_pricer}{}\section{Asian\+Path\+Pricer Class Reference}
 \label{class_asian_path_pricer}\index{Asian\+Path\+Pricer@{Asian\+Path\+Pricer}}
+
+
+{\ttfamily \#include $<$Asian\+Path\+Pricer.\+h$>$}
+
 Inheritance diagram for Asian\+Path\+Pricer\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,15 +13,100 @@ Inheritance diagram for Asian\+Path\+Pricer\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_asian_path_pricer_a8e295461d8e635e39d8075810bcc1e6a}{}\label{class_asian_path_pricer_a8e295461d8e635e39d8075810bcc1e6a} 
-{\bfseries Asian\+Path\+Pricer} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ payoff, Rate discount, std\+::shared\+\_\+ptr$<$ vector$<$ Time $>$ $>$ monitored\+Times\+Ptr, Asian\+Option\+::\+Average\+Type average\+Type, bool is\+Antithetic)
+\hyperlink{class_asian_path_pricer_a8e295461d8e635e39d8075810bcc1e6a}{Asian\+Path\+Pricer} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ payoff, \hyperlink{_name_def_8h_a25bee43a162de339c81f3d1caf6b887d}{Rate} discount, std\+::shared\+\_\+ptr$<$ vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ $>$ monitored\+Times\+Ptr, \hyperlink{class_asian_option_add7292791bf85820ff9fdbfd4407f3b9}{Asian\+Option\+::\+Average\+Type} average\+Type, bool is\+Antithetic)
 \item 
-\hypertarget{class_asian_path_pricer_adb10ce912ab34560d762ce0523ae394e}{}\label{class_asian_path_pricer_adb10ce912ab34560d762ce0523ae394e} 
-Money {\bfseries operator()} (const \hyperlink{class_path}{Path} \&path) const override
+\hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_asian_path_pricer_adb10ce912ab34560d762ce0523ae394e}{operator()} (const \hyperlink{class_path}{Path} \&path) const override
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_asian_path_pricer_a33d53acde0a8553f4adcee70c47f50b4}{one\+Path\+Calc} (const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \&time\+Grid, const vector$<$ vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} $>$ $>$ \&values) const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ \hyperlink{class_asian_path_pricer_a21540fed13894f9f62828d9817de8f5f}{payoff\+\_\+}
+\item 
+\hyperlink{_name_def_8h_a25bee43a162de339c81f3d1caf6b887d}{Rate} \hyperlink{class_asian_path_pricer_a3b8dfce72f9ec0d56c116b7b27e8504f}{discount\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ $>$ \hyperlink{class_asian_path_pricer_aa774ae5f2659aee3a7b5e40b3089c3be}{monitored\+Times\+Ptr\+\_\+}
+\item 
+\hyperlink{class_asian_option_add7292791bf85820ff9fdbfd4407f3b9}{Asian\+Option\+::\+Average\+Type} \hyperlink{class_asian_path_pricer_a28ff57b497033627d84ffa2273b6613e}{average\+Type\+\_\+}
+\item 
+vector$<$ vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$\+::const\+\_\+iterator $>$ \hyperlink{class_asian_path_pricer_acad7de97a262edf4e9f0ebb5f70e81f1}{monitored\+Times\+Iters\+\_\+}
+\item 
+bool \hyperlink{class_asian_path_pricer_ad42c5d8d3b3d1c66d01620491c07bef6}{is\+Antithetic\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_asian_path_pricer_a8e295461d8e635e39d8075810bcc1e6a}{}\label{class_asian_path_pricer_a8e295461d8e635e39d8075810bcc1e6a} 
+\index{Asian\+Path\+Pricer@{Asian\+Path\+Pricer}!Asian\+Path\+Pricer@{Asian\+Path\+Pricer}}
+\index{Asian\+Path\+Pricer@{Asian\+Path\+Pricer}!Asian\+Path\+Pricer@{Asian\+Path\+Pricer}}
+\subsubsection{\texorpdfstring{Asian\+Path\+Pricer()}{AsianPathPricer()}}
+{\footnotesize\ttfamily Asian\+Path\+Pricer\+::\+Asian\+Path\+Pricer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$}]{payoff,  }\item[{\hyperlink{_name_def_8h_a25bee43a162de339c81f3d1caf6b887d}{Rate}}]{discount,  }\item[{std\+::shared\+\_\+ptr$<$ vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ $>$}]{monitored\+Times\+Ptr,  }\item[{\hyperlink{class_asian_option_add7292791bf85820ff9fdbfd4407f3b9}{Asian\+Option\+::\+Average\+Type}}]{average\+Type,  }\item[{bool}]{is\+Antithetic }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_asian_path_pricer_a33d53acde0a8553f4adcee70c47f50b4}{}\label{class_asian_path_pricer_a33d53acde0a8553f4adcee70c47f50b4} 
+\index{Asian\+Path\+Pricer@{Asian\+Path\+Pricer}!one\+Path\+Calc@{one\+Path\+Calc}}
+\index{one\+Path\+Calc@{one\+Path\+Calc}!Asian\+Path\+Pricer@{Asian\+Path\+Pricer}}
+\subsubsection{\texorpdfstring{one\+Path\+Calc()}{onePathCalc()}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} Asian\+Path\+Pricer\+::one\+Path\+Calc (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \&}]{time\+Grid,  }\item[{const vector$<$ vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} $>$ $>$ \&}]{values }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_asian_path_pricer_adb10ce912ab34560d762ce0523ae394e}{}\label{class_asian_path_pricer_adb10ce912ab34560d762ce0523ae394e} 
+\index{Asian\+Path\+Pricer@{Asian\+Path\+Pricer}!operator()@{operator()}}
+\index{operator()@{operator()}!Asian\+Path\+Pricer@{Asian\+Path\+Pricer}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} Asian\+Path\+Pricer\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_path}{Path} \&}]{path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_path_pricer_a057bf6a83f0cc2be06154144192ed918}{Path\+Pricer}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_asian_path_pricer_a28ff57b497033627d84ffa2273b6613e}{}\label{class_asian_path_pricer_a28ff57b497033627d84ffa2273b6613e} 
+\index{Asian\+Path\+Pricer@{Asian\+Path\+Pricer}!average\+Type\+\_\+@{average\+Type\+\_\+}}
+\index{average\+Type\+\_\+@{average\+Type\+\_\+}!Asian\+Path\+Pricer@{Asian\+Path\+Pricer}}
+\subsubsection{\texorpdfstring{average\+Type\+\_\+}{averageType\_}}
+{\footnotesize\ttfamily \hyperlink{class_asian_option_add7292791bf85820ff9fdbfd4407f3b9}{Asian\+Option\+::\+Average\+Type} Asian\+Path\+Pricer\+::average\+Type\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_asian_path_pricer_a3b8dfce72f9ec0d56c116b7b27e8504f}{}\label{class_asian_path_pricer_a3b8dfce72f9ec0d56c116b7b27e8504f} 
+\index{Asian\+Path\+Pricer@{Asian\+Path\+Pricer}!discount\+\_\+@{discount\+\_\+}}
+\index{discount\+\_\+@{discount\+\_\+}!Asian\+Path\+Pricer@{Asian\+Path\+Pricer}}
+\subsubsection{\texorpdfstring{discount\+\_\+}{discount\_}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a25bee43a162de339c81f3d1caf6b887d}{Rate} Asian\+Path\+Pricer\+::discount\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_asian_path_pricer_ad42c5d8d3b3d1c66d01620491c07bef6}{}\label{class_asian_path_pricer_ad42c5d8d3b3d1c66d01620491c07bef6} 
+\index{Asian\+Path\+Pricer@{Asian\+Path\+Pricer}!is\+Antithetic\+\_\+@{is\+Antithetic\+\_\+}}
+\index{is\+Antithetic\+\_\+@{is\+Antithetic\+\_\+}!Asian\+Path\+Pricer@{Asian\+Path\+Pricer}}
+\subsubsection{\texorpdfstring{is\+Antithetic\+\_\+}{isAntithetic\_}}
+{\footnotesize\ttfamily bool Asian\+Path\+Pricer\+::is\+Antithetic\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_asian_path_pricer_acad7de97a262edf4e9f0ebb5f70e81f1}{}\label{class_asian_path_pricer_acad7de97a262edf4e9f0ebb5f70e81f1} 
+\index{Asian\+Path\+Pricer@{Asian\+Path\+Pricer}!monitored\+Times\+Iters\+\_\+@{monitored\+Times\+Iters\+\_\+}}
+\index{monitored\+Times\+Iters\+\_\+@{monitored\+Times\+Iters\+\_\+}!Asian\+Path\+Pricer@{Asian\+Path\+Pricer}}
+\subsubsection{\texorpdfstring{monitored\+Times\+Iters\+\_\+}{monitoredTimesIters\_}}
+{\footnotesize\ttfamily vector$<$vector$<$\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}$>$\+::const\+\_\+iterator$>$ Asian\+Path\+Pricer\+::monitored\+Times\+Iters\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+\hypertarget{class_asian_path_pricer_aa774ae5f2659aee3a7b5e40b3089c3be}{}\label{class_asian_path_pricer_aa774ae5f2659aee3a7b5e40b3089c3be} 
+\index{Asian\+Path\+Pricer@{Asian\+Path\+Pricer}!monitored\+Times\+Ptr\+\_\+@{monitored\+Times\+Ptr\+\_\+}}
+\index{monitored\+Times\+Ptr\+\_\+@{monitored\+Times\+Ptr\+\_\+}!Asian\+Path\+Pricer@{Asian\+Path\+Pricer}}
+\subsubsection{\texorpdfstring{monitored\+Times\+Ptr\+\_\+}{monitoredTimesPtr\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$vector$<$\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}$>$ $>$ Asian\+Path\+Pricer\+::monitored\+Times\+Ptr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_asian_path_pricer_a21540fed13894f9f62828d9817de8f5f}{}\label{class_asian_path_pricer_a21540fed13894f9f62828d9817de8f5f} 
+\index{Asian\+Path\+Pricer@{Asian\+Path\+Pricer}!payoff\+\_\+@{payoff\+\_\+}}
+\index{payoff\+\_\+@{payoff\+\_\+}!Asian\+Path\+Pricer@{Asian\+Path\+Pricer}}
+\subsubsection{\texorpdfstring{payoff\+\_\+}{payoff\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_payoff}{Payoff}$>$ Asian\+Path\+Pricer\+::payoff\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Pricing\+Engines/Asian\+Path\+Pricer.\+h\item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Pricing\+Engines/Asian\+Path\+Pricer.\+cpp\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Pricing\+Engines/\hyperlink{_asian_path_pricer_8h}{Asian\+Path\+Pricer.\+h}\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Pricing\+Engines/\hyperlink{_asian_path_pricer_8cpp}{Asian\+Path\+Pricer.\+cpp}\end{DoxyCompactItemize}

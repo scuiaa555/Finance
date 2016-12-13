@@ -1,5 +1,9 @@
 \hypertarget{class_mc_simulation}{}\section{Mc\+Simulation Class Reference}
 \label{class_mc_simulation}\index{Mc\+Simulation@{Mc\+Simulation}}
+
+
+{\ttfamily \#include $<$Mc\+Simulation.\+h$>$}
+
 Inheritance diagram for Mc\+Simulation\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,18 +13,97 @@ Inheritance diagram for Mc\+Simulation\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_mc_simulation_a34949008df3c2b7fd4df32fac3875582}{}\label{class_mc_simulation_a34949008df3c2b7fd4df32fac3875582} 
-void {\bfseries calculate} (unsigned long max\+Samples, unsigned long min\+Samples)
+void \hyperlink{class_mc_simulation_a34949008df3c2b7fd4df32fac3875582}{calculate} (unsigned long max\+Samples, unsigned long min\+Samples)
 \item 
-\hypertarget{class_mc_simulation_a5f74044189f64941f7fd3aaa4acc8e8e}{}\label{class_mc_simulation_a5f74044189f64941f7fd3aaa4acc8e8e} 
-void {\bfseries value} (unsigned long max\+Samples, unsigned long min\+Samples)
+void \hyperlink{class_mc_simulation_a5f74044189f64941f7fd3aaa4acc8e8e}{value} (unsigned long max\+Samples, unsigned long min\+Samples)
 \item 
-\hypertarget{class_mc_simulation_af66197576bd23e26e91636f8ca1c7197}{}\label{class_mc_simulation_af66197576bd23e26e91636f8ca1c7197} 
-const \hyperlink{class_m_c_statistics}{M\+C\+Statistics} \& {\bfseries sample\+Accumulator} () const
+const \hyperlink{class_m_c_statistics}{M\+C\+Statistics} \& \hyperlink{class_mc_simulation_af66197576bd23e26e91636f8ca1c7197}{sample\+Accumulator} () const
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ \hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}$<$ \hyperlink{class_uniform_l_ecuyer_r_n_g1}{Uniform\+L\+Ecuyer\+R\+N\+G1} $>$ $>$ $>$ \hyperlink{class_mc_simulation_ada27dc346c81cf3d7aff84188dd12381}{path\+Generator} ()=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_simulation_a3182a27c79d31cfb65e9a1a6b60f5391}{path\+Pricer} ()=0
+\item 
+virtual vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_simulation_a71f4b6eedd90f057203a94467a691387}{time\+Grid} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_mc_model}{Mc\+Model} $>$ \hyperlink{class_mc_simulation_a7f6445b880401bcd208fd921ca8d82c2}{mc\+Model\+\_\+}
+\item 
+bool \hyperlink{class_mc_simulation_aabbb28856a126b01552583a571e1e807}{is\+Antithetic\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_mc_simulation_a34949008df3c2b7fd4df32fac3875582}{}\label{class_mc_simulation_a34949008df3c2b7fd4df32fac3875582} 
+\index{Mc\+Simulation@{Mc\+Simulation}!calculate@{calculate}}
+\index{calculate@{calculate}!Mc\+Simulation@{Mc\+Simulation}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily void Mc\+Simulation\+::calculate (\begin{DoxyParamCaption}\item[{unsigned long}]{max\+Samples,  }\item[{unsigned long}]{min\+Samples }\end{DoxyParamCaption})}
+
+\hypertarget{class_mc_simulation_ada27dc346c81cf3d7aff84188dd12381}{}\label{class_mc_simulation_ada27dc346c81cf3d7aff84188dd12381} 
+\index{Mc\+Simulation@{Mc\+Simulation}!path\+Generator@{path\+Generator}}
+\index{path\+Generator@{path\+Generator}!Mc\+Simulation@{Mc\+Simulation}}
+\subsubsection{\texorpdfstring{path\+Generator()}{pathGenerator()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{class_path_generator}{Path\+Generator}$<$\hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}$<$\hyperlink{class_uniform_l_ecuyer_r_n_g1}{Uniform\+L\+Ecuyer\+R\+N\+G1}$>$ $>$ $>$ Mc\+Simulation\+::path\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_mc_european_engine_ae2a93d63269eac42449f8b958ec15535}{Mc\+European\+Engine$<$ Unif\+Rng $>$}, and \hyperlink{class_mc_asian_engine_a93c9216b38bcbe0fe7e8131bf975dbc2}{Mc\+Asian\+Engine$<$ Unif\+Rng $>$}.
+
+\hypertarget{class_mc_simulation_a3182a27c79d31cfb65e9a1a6b60f5391}{}\label{class_mc_simulation_a3182a27c79d31cfb65e9a1a6b60f5391} 
+\index{Mc\+Simulation@{Mc\+Simulation}!path\+Pricer@{path\+Pricer}}
+\index{path\+Pricer@{path\+Pricer}!Mc\+Simulation@{Mc\+Simulation}}
+\subsubsection{\texorpdfstring{path\+Pricer()}{pathPricer()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{class_path_pricer}{Path\+Pricer}$>$ Mc\+Simulation\+::path\+Pricer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_mc_european_engine_a21dd3ee9970dd5bae2be03a723d0a290}{Mc\+European\+Engine$<$ Unif\+Rng $>$}, and \hyperlink{class_mc_asian_engine_afb903df1f8e0023a1f6bfae43ccbc8f7}{Mc\+Asian\+Engine$<$ Unif\+Rng $>$}.
+
+\hypertarget{class_mc_simulation_af66197576bd23e26e91636f8ca1c7197}{}\label{class_mc_simulation_af66197576bd23e26e91636f8ca1c7197} 
+\index{Mc\+Simulation@{Mc\+Simulation}!sample\+Accumulator@{sample\+Accumulator}}
+\index{sample\+Accumulator@{sample\+Accumulator}!Mc\+Simulation@{Mc\+Simulation}}
+\subsubsection{\texorpdfstring{sample\+Accumulator()}{sampleAccumulator()}}
+{\footnotesize\ttfamily const \hyperlink{class_m_c_statistics}{M\+C\+Statistics} \& Mc\+Simulation\+::sample\+Accumulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\hypertarget{class_mc_simulation_a71f4b6eedd90f057203a94467a691387}{}\label{class_mc_simulation_a71f4b6eedd90f057203a94467a691387} 
+\index{Mc\+Simulation@{Mc\+Simulation}!time\+Grid@{time\+Grid}}
+\index{time\+Grid@{time\+Grid}!Mc\+Simulation@{Mc\+Simulation}}
+\subsubsection{\texorpdfstring{time\+Grid()}{timeGrid()}}
+{\footnotesize\ttfamily virtual vector$<$\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}$>$ Mc\+Simulation\+::time\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_mc_european_engine_a76252919552e4061795e30f30947a1ee}{Mc\+European\+Engine$<$ Unif\+Rng $>$}, and \hyperlink{class_mc_asian_engine_a4c16366e8dec7d689e934cbafe413332}{Mc\+Asian\+Engine$<$ Unif\+Rng $>$}.
+
+\hypertarget{class_mc_simulation_a5f74044189f64941f7fd3aaa4acc8e8e}{}\label{class_mc_simulation_a5f74044189f64941f7fd3aaa4acc8e8e} 
+\index{Mc\+Simulation@{Mc\+Simulation}!value@{value}}
+\index{value@{value}!Mc\+Simulation@{Mc\+Simulation}}
+\subsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily void Mc\+Simulation\+::value (\begin{DoxyParamCaption}\item[{unsigned long}]{max\+Samples,  }\item[{unsigned long}]{min\+Samples }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_mc_simulation_aabbb28856a126b01552583a571e1e807}{}\label{class_mc_simulation_aabbb28856a126b01552583a571e1e807} 
+\index{Mc\+Simulation@{Mc\+Simulation}!is\+Antithetic\+\_\+@{is\+Antithetic\+\_\+}}
+\index{is\+Antithetic\+\_\+@{is\+Antithetic\+\_\+}!Mc\+Simulation@{Mc\+Simulation}}
+\subsubsection{\texorpdfstring{is\+Antithetic\+\_\+}{isAntithetic\_}}
+{\footnotesize\ttfamily bool Mc\+Simulation\+::is\+Antithetic\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_mc_simulation_a7f6445b880401bcd208fd921ca8d82c2}{}\label{class_mc_simulation_a7f6445b880401bcd208fd921ca8d82c2} 
+\index{Mc\+Simulation@{Mc\+Simulation}!mc\+Model\+\_\+@{mc\+Model\+\_\+}}
+\index{mc\+Model\+\_\+@{mc\+Model\+\_\+}!Mc\+Simulation@{Mc\+Simulation}}
+\subsubsection{\texorpdfstring{mc\+Model\+\_\+}{mcModel\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_mc_model}{Mc\+Model}$>$ Mc\+Simulation\+::mc\+Model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Mc\+Framework/Mc\+Simulation.\+h\item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Mc\+Framework/Mc\+Simulation.\+cpp\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Mc\+Framework/\hyperlink{_mc_simulation_8h}{Mc\+Simulation.\+h}\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Mc\+Framework/\hyperlink{_mc_simulation_8cpp}{Mc\+Simulation.\+cpp}\end{DoxyCompactItemize}

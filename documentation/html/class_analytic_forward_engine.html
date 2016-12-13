@@ -60,11 +60,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_analytic_forward_engine-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AnalyticForwardEngine Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_analytic_forward_engine_8h_source.html">AnalyticForwardEngine.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AnalyticForwardEngine:</div>
 <div class="dyncontent">
@@ -79,33 +82,107 @@ Inheritance diagram for AnalyticForwardEngine:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7745431773dc2910c8aa01183b7780d0"><td class="memItemLeft" align="right" valign="top"><a id="a7745431773dc2910c8aa01183b7780d0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AnalyticForwardEngine</b> (Rate r)</td></tr>
+<tr class="memitem:a7745431773dc2910c8aa01183b7780d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_analytic_forward_engine.html#a7745431773dc2910c8aa01183b7780d0">AnalyticForwardEngine</a> (<a class="el" href="_name_def_8h.html#a25bee43a162de339c81f3d1caf6b887d">Rate</a> <a class="el" href="_uniform_l_ecuyer_r_n_g1_8cpp.html#a372556d73d7e403d9b677b89b21ee572">r</a>)</td></tr>
 <tr class="separator:a7745431773dc2910c8aa01183b7780d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12d6791a13bf727d43ffcff9cb55b094"><td class="memItemLeft" align="right" valign="top"><a id="a12d6791a13bf727d43ffcff9cb55b094"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate</b> () override</td></tr>
+<tr class="memitem:a12d6791a13bf727d43ffcff9cb55b094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_analytic_forward_engine.html#a12d6791a13bf727d43ffcff9cb55b094">calculate</a> () override</td></tr>
 <tr class="separator:a12d6791a13bf727d43ffcff9cb55b094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_generic_engine"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_generic_engine')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_generic_engine.html">GenericEngine&lt; Forward::Arguments, Forward::Results &gt;</a></td></tr>
-<tr class="memitem:ac2adcbbc8d7b554e2cc1f90e4c4d055d inherit pub_methods_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a id="ac2adcbbc8d7b554e2cc1f90e4c4d055d"></a>
-<a class="el" href="class_pricing_engine_1_1_arguments.html">PricingEngine::Arguments</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getArguments</b> () const override</td></tr>
+<tr class="memitem:a080b4df876712b5529b4a19ec3b0c48f inherit pub_methods_class_generic_engine"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generic_engine.html#a080b4df876712b5529b4a19ec3b0c48f">GenericEngine</a> ()</td></tr>
+<tr class="separator:a080b4df876712b5529b4a19ec3b0c48f inherit pub_methods_class_generic_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2adcbbc8d7b554e2cc1f90e4c4d055d inherit pub_methods_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pricing_engine_1_1_arguments.html">PricingEngine::Arguments</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generic_engine.html#ac2adcbbc8d7b554e2cc1f90e4c4d055d">getArguments</a> () const override</td></tr>
 <tr class="separator:ac2adcbbc8d7b554e2cc1f90e4c4d055d inherit pub_methods_class_generic_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b8d7fba7e51c0795ea9f1e9c2f54afd inherit pub_methods_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a id="a2b8d7fba7e51c0795ea9f1e9c2f54afd"></a>
-<a class="el" href="class_pricing_engine_1_1_results.html">PricingEngine::Results</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getResults</b> () const override</td></tr>
+<tr class="memitem:a2b8d7fba7e51c0795ea9f1e9c2f54afd inherit pub_methods_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pricing_engine_1_1_results.html">PricingEngine::Results</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generic_engine.html#a2b8d7fba7e51c0795ea9f1e9c2f54afd">getResults</a> () const override</td></tr>
 <tr class="separator:a2b8d7fba7e51c0795ea9f1e9c2f54afd inherit pub_methods_class_generic_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_pricing_engine"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_pricing_engine')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_pricing_engine.html">PricingEngine</a></td></tr>
+<tr class="memitem:abfd32778b0483e92db2e7cd00a2f9345 inherit pub_methods_class_pricing_engine"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pricing_engine.html#abfd32778b0483e92db2e7cd00a2f9345">PricingEngine</a> ()</td></tr>
+<tr class="separator:abfd32778b0483e92db2e7cd00a2f9345 inherit pub_methods_class_pricing_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4398f98b358ec1800db1e8e609b45321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_name_def_8h.html#a25bee43a162de339c81f3d1caf6b887d">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_analytic_forward_engine.html#a4398f98b358ec1800db1e8e609b45321">r_</a></td></tr>
+<tr class="separator:a4398f98b358ec1800db1e8e609b45321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_generic_engine"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_generic_engine')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_generic_engine.html">GenericEngine&lt; Forward::Arguments, Forward::Results &gt;</a></td></tr>
-<tr class="memitem:a9ac595191e5d6976c65659d26063bfc8 inherit pub_attribs_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a id="a9ac595191e5d6976c65659d26063bfc8"></a>
-<a class="el" href="class_forward_1_1_arguments.html">Forward::Arguments</a>&#160;</td><td class="memItemRight" valign="bottom"><b>arguments_</b></td></tr>
+<tr class="memitem:a9ac595191e5d6976c65659d26063bfc8 inherit pub_attribs_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_forward_1_1_arguments.html">Forward::Arguments</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generic_engine.html#a9ac595191e5d6976c65659d26063bfc8">arguments_</a></td></tr>
 <tr class="separator:a9ac595191e5d6976c65659d26063bfc8 inherit pub_attribs_class_generic_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd6af7c4b3fd0e43826755ba7d347dd5 inherit pub_attribs_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a id="acd6af7c4b3fd0e43826755ba7d347dd5"></a>
-<a class="el" href="class_forward_1_1_results.html">Forward::Results</a>&#160;</td><td class="memItemRight" valign="bottom"><b>results_</b></td></tr>
+<tr class="memitem:acd6af7c4b3fd0e43826755ba7d347dd5 inherit pub_attribs_class_generic_engine"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_forward_1_1_results.html">Forward::Results</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_generic_engine.html#acd6af7c4b3fd0e43826755ba7d347dd5">results_</a></td></tr>
 <tr class="separator:acd6af7c4b3fd0e43826755ba7d347dd5 inherit pub_attribs_class_generic_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7745431773dc2910c8aa01183b7780d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7745431773dc2910c8aa01183b7780d0">&sect;&nbsp;</a></span>AnalyticForwardEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AnalyticForwardEngine::AnalyticForwardEngine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_name_def_8h.html#a25bee43a162de339c81f3d1caf6b887d">Rate</a>&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a12d6791a13bf727d43ffcff9cb55b094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12d6791a13bf727d43ffcff9cb55b094">&sect;&nbsp;</a></span>calculate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AnalyticForwardEngine::calculate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_pricing_engine.html#a733511ffc3cf5e4dc1fbc2a39208d8bd">PricingEngine</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4398f98b358ec1800db1e8e609b45321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4398f98b358ec1800db1e8e609b45321">&sect;&nbsp;</a></span>r_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_name_def_8h.html#a25bee43a162de339c81f3d1caf6b887d">Rate</a> AnalyticForwardEngine::r_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Users/CUI/Dropbox/C++/Finance/PricingEngines/<a class="el" href="_analytic_forward_engine_8h_source.html">AnalyticForwardEngine.h</a></li>
-<li>Users/CUI/Dropbox/C++/Finance/PricingEngines/AnalyticForwardEngine.cpp</li>
+<li>Users/CUI/Dropbox/C++/Finance/PricingEngines/<a class="el" href="_analytic_forward_engine_8cpp.html">AnalyticForwardEngine.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,5 +1,9 @@
 \hypertarget{class_european_path_pricer}{}\section{European\+Path\+Pricer Class Reference}
 \label{class_european_path_pricer}\index{European\+Path\+Pricer@{European\+Path\+Pricer}}
+
+
+{\ttfamily \#include $<$European\+Path\+Pricer.\+h$>$}
+
 Inheritance diagram for European\+Path\+Pricer\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,15 +13,57 @@ Inheritance diagram for European\+Path\+Pricer\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_european_path_pricer_aa571bb1652a0d7e4f97d3d58e7c8b295}{}\label{class_european_path_pricer_aa571bb1652a0d7e4f97d3d58e7c8b295} 
-{\bfseries European\+Path\+Pricer} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ \&payoff, Rate discount)
+\hyperlink{class_european_path_pricer_aa571bb1652a0d7e4f97d3d58e7c8b295}{European\+Path\+Pricer} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ \&payoff, \hyperlink{_name_def_8h_a25bee43a162de339c81f3d1caf6b887d}{Rate} discount)
 \item 
-\hypertarget{class_european_path_pricer_ac12142089ccdc7fe73ba93d66a7964e6}{}\label{class_european_path_pricer_ac12142089ccdc7fe73ba93d66a7964e6} 
-Money {\bfseries operator()} (const \hyperlink{class_path}{Path} \&path) const override
+\hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_european_path_pricer_ac12142089ccdc7fe73ba93d66a7964e6}{operator()} (const \hyperlink{class_path}{Path} \&path) const override
 \end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ \hyperlink{class_european_path_pricer_a2023ec56bae32c6db123e8d400d2b0cf}{payoff\+\_\+}
+\item 
+\hyperlink{_name_def_8h_a25bee43a162de339c81f3d1caf6b887d}{Rate} \hyperlink{class_european_path_pricer_a1bb1874fe4f263bff17a998f0ec9588c}{discount\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_european_path_pricer_aa571bb1652a0d7e4f97d3d58e7c8b295}{}\label{class_european_path_pricer_aa571bb1652a0d7e4f97d3d58e7c8b295} 
+\index{European\+Path\+Pricer@{European\+Path\+Pricer}!European\+Path\+Pricer@{European\+Path\+Pricer}}
+\index{European\+Path\+Pricer@{European\+Path\+Pricer}!European\+Path\+Pricer@{European\+Path\+Pricer}}
+\subsubsection{\texorpdfstring{European\+Path\+Pricer()}{EuropeanPathPricer()}}
+{\footnotesize\ttfamily European\+Path\+Pricer\+::\+European\+Path\+Pricer (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ \&}]{payoff,  }\item[{\hyperlink{_name_def_8h_a25bee43a162de339c81f3d1caf6b887d}{Rate}}]{discount }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_european_path_pricer_ac12142089ccdc7fe73ba93d66a7964e6}{}\label{class_european_path_pricer_ac12142089ccdc7fe73ba93d66a7964e6} 
+\index{European\+Path\+Pricer@{European\+Path\+Pricer}!operator()@{operator()}}
+\index{operator()@{operator()}!European\+Path\+Pricer@{European\+Path\+Pricer}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} European\+Path\+Pricer\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_path}{Path} \&}]{path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_path_pricer_a057bf6a83f0cc2be06154144192ed918}{Path\+Pricer}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_european_path_pricer_a1bb1874fe4f263bff17a998f0ec9588c}{}\label{class_european_path_pricer_a1bb1874fe4f263bff17a998f0ec9588c} 
+\index{European\+Path\+Pricer@{European\+Path\+Pricer}!discount\+\_\+@{discount\+\_\+}}
+\index{discount\+\_\+@{discount\+\_\+}!European\+Path\+Pricer@{European\+Path\+Pricer}}
+\subsubsection{\texorpdfstring{discount\+\_\+}{discount\_}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a25bee43a162de339c81f3d1caf6b887d}{Rate} European\+Path\+Pricer\+::discount\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_european_path_pricer_a2023ec56bae32c6db123e8d400d2b0cf}{}\label{class_european_path_pricer_a2023ec56bae32c6db123e8d400d2b0cf} 
+\index{European\+Path\+Pricer@{European\+Path\+Pricer}!payoff\+\_\+@{payoff\+\_\+}}
+\index{payoff\+\_\+@{payoff\+\_\+}!European\+Path\+Pricer@{European\+Path\+Pricer}}
+\subsubsection{\texorpdfstring{payoff\+\_\+}{payoff\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_payoff}{Payoff}$>$ European\+Path\+Pricer\+::payoff\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Pricing\+Engines/European\+Path\+Pricer.\+h\item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Pricing\+Engines/European\+Path\+Pricer.\+cpp\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Pricing\+Engines/\hyperlink{_european_path_pricer_8h}{European\+Path\+Pricer.\+h}\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Pricing\+Engines/\hyperlink{_european_path_pricer_8cpp}{European\+Path\+Pricer.\+cpp}\end{DoxyCompactItemize}

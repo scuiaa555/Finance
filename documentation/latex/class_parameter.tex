@@ -1,5 +1,9 @@
 \hypertarget{class_parameter}{}\section{Parameter Class Reference}
 \label{class_parameter}\index{Parameter@{Parameter}}
+
+
+{\ttfamily \#include $<$Parameter.\+h$>$}
+
 Inheritance diagram for Parameter\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,29 +13,80 @@ Inheritance diagram for Parameter\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_parameter_a07b46a4af924cbaea806505343d7b83a}{}\label{class_parameter_a07b46a4af924cbaea806505343d7b83a} 
-{\bfseries Parameter} (const \hyperlink{class_parameter}{Parameter} \&)=default
+\hyperlink{class_parameter_a5de1d76f6b0342f3e98d004733ce9c2c}{Parameter} ()=default
 \item 
-\hypertarget{class_parameter_ac7e34f069ed1474901fce2f06e0ee54f}{}\label{class_parameter_ac7e34f069ed1474901fce2f06e0ee54f} 
-\hyperlink{class_parameter}{Parameter} \& {\bfseries operator=} (const \hyperlink{class_parameter}{Parameter} \&)=default
+\hyperlink{class_parameter_a07b46a4af924cbaea806505343d7b83a}{Parameter} (const \hyperlink{class_parameter}{Parameter} \&)=default
 \item 
-\hypertarget{class_parameter_ae6317fac3d0b5e69101eb7059d151ca7}{}\label{class_parameter_ae6317fac3d0b5e69101eb7059d151ca7} 
-virtual double {\bfseries operator()} (Time t) const =0
+\hyperlink{class_parameter}{Parameter} \& \hyperlink{class_parameter_ac7e34f069ed1474901fce2f06e0ee54f}{operator=} (const \hyperlink{class_parameter}{Parameter} \&)=default
 \item 
-\hypertarget{class_parameter_a8cebb26e89537b098c8b42ef9aeb0f66}{}\label{class_parameter_a8cebb26e89537b098c8b42ef9aeb0f66} 
-void {\bfseries set\+Param} (int i, double new\+Val)
+virtual double \hyperlink{class_parameter_ae6317fac3d0b5e69101eb7059d151ca7}{operator()} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t) const =0
 \item 
-\hypertarget{class_parameter_ae1ca6e3ab5f2d2ed3bffbdee6e941068}{}\label{class_parameter_ae1ca6e3ab5f2d2ed3bffbdee6e941068} 
-unsigned long {\bfseries size} () const
+void \hyperlink{class_parameter_a8cebb26e89537b098c8b42ef9aeb0f66}{set\+Param} (int i, double new\+Val)
+\item 
+unsigned long \hyperlink{class_parameter_ae1ca6e3ab5f2d2ed3bffbdee6e941068}{size} () const
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_parameter_abcbcc6573234afb8f6027d3c716917bb}{}\label{class_parameter_abcbcc6573234afb8f6027d3c716917bb} 
-std\+::vector$<$ double $>$ {\bfseries params\+\_\+}
+std\+::vector$<$ double $>$ \hyperlink{class_parameter_abcbcc6573234afb8f6027d3c716917bb}{params\+\_\+}
 \end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_parameter_a5de1d76f6b0342f3e98d004733ce9c2c}{}\label{class_parameter_a5de1d76f6b0342f3e98d004733ce9c2c} 
+\index{Parameter@{Parameter}!Parameter@{Parameter}}
+\index{Parameter@{Parameter}!Parameter@{Parameter}}
+\subsubsection{\texorpdfstring{Parameter()}{Parameter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Parameter\+::\+Parameter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{class_parameter_a07b46a4af924cbaea806505343d7b83a}{}\label{class_parameter_a07b46a4af924cbaea806505343d7b83a} 
+\index{Parameter@{Parameter}!Parameter@{Parameter}}
+\index{Parameter@{Parameter}!Parameter@{Parameter}}
+\subsubsection{\texorpdfstring{Parameter()}{Parameter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Parameter\+::\+Parameter (\begin{DoxyParamCaption}\item[{const \hyperlink{class_parameter}{Parameter} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_parameter_ae6317fac3d0b5e69101eb7059d151ca7}{}\label{class_parameter_ae6317fac3d0b5e69101eb7059d151ca7} 
+\index{Parameter@{Parameter}!operator()@{operator()}}
+\index{operator()@{operator()}!Parameter@{Parameter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily virtual double Parameter\+::operator() (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_constant_parameter_a23abb141692843e2ef68d43f610beb5e}{Constant\+Parameter}.
+
+\hypertarget{class_parameter_ac7e34f069ed1474901fce2f06e0ee54f}{}\label{class_parameter_ac7e34f069ed1474901fce2f06e0ee54f} 
+\index{Parameter@{Parameter}!operator=@{operator=}}
+\index{operator=@{operator=}!Parameter@{Parameter}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_parameter}{Parameter}\& Parameter\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_parameter}{Parameter} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{class_parameter_a8cebb26e89537b098c8b42ef9aeb0f66}{}\label{class_parameter_a8cebb26e89537b098c8b42ef9aeb0f66} 
+\index{Parameter@{Parameter}!set\+Param@{set\+Param}}
+\index{set\+Param@{set\+Param}!Parameter@{Parameter}}
+\subsubsection{\texorpdfstring{set\+Param()}{setParam()}}
+{\footnotesize\ttfamily void Parameter\+::set\+Param (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{double}]{new\+Val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{class_parameter_ae1ca6e3ab5f2d2ed3bffbdee6e941068}{}\label{class_parameter_ae1ca6e3ab5f2d2ed3bffbdee6e941068} 
+\index{Parameter@{Parameter}!size@{size}}
+\index{size@{size}!Parameter@{Parameter}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily unsigned long Parameter\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_parameter_abcbcc6573234afb8f6027d3c716917bb}{}\label{class_parameter_abcbcc6573234afb8f6027d3c716917bb} 
+\index{Parameter@{Parameter}!params\+\_\+@{params\+\_\+}}
+\index{params\+\_\+@{params\+\_\+}!Parameter@{Parameter}}
+\subsubsection{\texorpdfstring{params\+\_\+}{params\_}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Parameter\+::params\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/Parameter.\+h\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\hyperlink{_parameter_8h}{Parameter.\+h}\end{DoxyCompactItemize}

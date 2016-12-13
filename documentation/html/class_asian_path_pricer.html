@@ -60,11 +60,15 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_asian_path_pricer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AsianPathPricer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_asian_path_pricer_8h_source.html">AsianPathPricer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AsianPathPricer:</div>
 <div class="dyncontent">
@@ -77,16 +81,279 @@ Inheritance diagram for AsianPathPricer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8e295461d8e635e39d8075810bcc1e6a"><td class="memItemLeft" align="right" valign="top"><a id="a8e295461d8e635e39d8075810bcc1e6a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AsianPathPricer</b> (std::shared_ptr&lt; <a class="el" href="class_payoff.html">Payoff</a> &gt; payoff, Rate discount, std::shared_ptr&lt; vector&lt; Time &gt; &gt; monitoredTimesPtr, AsianOption::AverageType averageType, bool isAntithetic)</td></tr>
+<tr class="memitem:a8e295461d8e635e39d8075810bcc1e6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_asian_path_pricer.html#a8e295461d8e635e39d8075810bcc1e6a">AsianPathPricer</a> (std::shared_ptr&lt; <a class="el" href="class_payoff.html">Payoff</a> &gt; payoff, <a class="el" href="_name_def_8h.html#a25bee43a162de339c81f3d1caf6b887d">Rate</a> discount, std::shared_ptr&lt; vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; &gt; monitoredTimesPtr, <a class="el" href="class_asian_option.html#add7292791bf85820ff9fdbfd4407f3b9">AsianOption::AverageType</a> averageType, bool isAntithetic)</td></tr>
 <tr class="separator:a8e295461d8e635e39d8075810bcc1e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb10ce912ab34560d762ce0523ae394e"><td class="memItemLeft" align="right" valign="top"><a id="adb10ce912ab34560d762ce0523ae394e"></a>
-Money&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="class_path.html">Path</a> &amp;path) const override</td></tr>
+<tr class="memitem:adb10ce912ab34560d762ce0523ae394e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_asian_path_pricer.html#adb10ce912ab34560d762ce0523ae394e">operator()</a> (const <a class="el" href="class_path.html">Path</a> &amp;path) const override</td></tr>
 <tr class="separator:adb10ce912ab34560d762ce0523ae394e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a33d53acde0a8553f4adcee70c47f50b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_asian_path_pricer.html#a33d53acde0a8553f4adcee70c47f50b4">onePathCalc</a> (const vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; &amp;timeGrid, const vector&lt; vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &gt; &amp;values) const</td></tr>
+<tr class="separator:a33d53acde0a8553f4adcee70c47f50b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a21540fed13894f9f62828d9817de8f5f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_payoff.html">Payoff</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_asian_path_pricer.html#a21540fed13894f9f62828d9817de8f5f">payoff_</a></td></tr>
+<tr class="separator:a21540fed13894f9f62828d9817de8f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8dfce72f9ec0d56c116b7b27e8504f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_name_def_8h.html#a25bee43a162de339c81f3d1caf6b887d">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_asian_path_pricer.html#a3b8dfce72f9ec0d56c116b7b27e8504f">discount_</a></td></tr>
+<tr class="separator:a3b8dfce72f9ec0d56c116b7b27e8504f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa774ae5f2659aee3a7b5e40b3089c3be"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_asian_path_pricer.html#aa774ae5f2659aee3a7b5e40b3089c3be">monitoredTimesPtr_</a></td></tr>
+<tr class="separator:aa774ae5f2659aee3a7b5e40b3089c3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ff57b497033627d84ffa2273b6613e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_asian_option.html#add7292791bf85820ff9fdbfd4407f3b9">AsianOption::AverageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_asian_path_pricer.html#a28ff57b497033627d84ffa2273b6613e">averageType_</a></td></tr>
+<tr class="separator:a28ff57b497033627d84ffa2273b6613e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad7de97a262edf4e9f0ebb5f70e81f1"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt;::const_iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_asian_path_pricer.html#acad7de97a262edf4e9f0ebb5f70e81f1">monitoredTimesIters_</a></td></tr>
+<tr class="separator:acad7de97a262edf4e9f0ebb5f70e81f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42c5d8d3b3d1c66d01620491c07bef6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_asian_path_pricer.html#ad42c5d8d3b3d1c66d01620491c07bef6">isAntithetic_</a></td></tr>
+<tr class="separator:ad42c5d8d3b3d1c66d01620491c07bef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8e295461d8e635e39d8075810bcc1e6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e295461d8e635e39d8075810bcc1e6a">&sect;&nbsp;</a></span>AsianPathPricer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AsianPathPricer::AsianPathPricer </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_payoff.html">Payoff</a> &gt;&#160;</td>
+          <td class="paramname"><em>payoff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_name_def_8h.html#a25bee43a162de339c81f3d1caf6b887d">Rate</a>&#160;</td>
+          <td class="paramname"><em>discount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>monitoredTimesPtr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_asian_option.html#add7292791bf85820ff9fdbfd4407f3b9">AsianOption::AverageType</a>&#160;</td>
+          <td class="paramname"><em>averageType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isAntithetic</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a33d53acde0a8553f4adcee70c47f50b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33d53acde0a8553f4adcee70c47f50b4">&sect;&nbsp;</a></span>onePathCalc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a> AsianPathPricer::onePathCalc </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>timeGrid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const vector&lt; vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb10ce912ab34560d762ce0523ae394e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb10ce912ab34560d762ce0523ae394e">&sect;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a> AsianPathPricer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_path.html">Path</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_path_pricer.html#a057bf6a83f0cc2be06154144192ed918">PathPricer</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a28ff57b497033627d84ffa2273b6613e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ff57b497033627d84ffa2273b6613e">&sect;&nbsp;</a></span>averageType_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_asian_option.html#add7292791bf85820ff9fdbfd4407f3b9">AsianOption::AverageType</a> AsianPathPricer::averageType_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b8dfce72f9ec0d56c116b7b27e8504f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b8dfce72f9ec0d56c116b7b27e8504f">&sect;&nbsp;</a></span>discount_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_name_def_8h.html#a25bee43a162de339c81f3d1caf6b887d">Rate</a> AsianPathPricer::discount_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad42c5d8d3b3d1c66d01620491c07bef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42c5d8d3b3d1c66d01620491c07bef6">&sect;&nbsp;</a></span>isAntithetic_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AsianPathPricer::isAntithetic_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acad7de97a262edf4e9f0ebb5f70e81f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad7de97a262edf4e9f0ebb5f70e81f1">&sect;&nbsp;</a></span>monitoredTimesIters_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;vector&lt;<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a>&gt;::const_iterator&gt; AsianPathPricer::monitoredTimesIters_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa774ae5f2659aee3a7b5e40b3089c3be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa774ae5f2659aee3a7b5e40b3089c3be">&sect;&nbsp;</a></span>monitoredTimesPtr_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;vector&lt;<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a>&gt; &gt; AsianPathPricer::monitoredTimesPtr_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21540fed13894f9f62828d9817de8f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21540fed13894f9f62828d9817de8f5f">&sect;&nbsp;</a></span>payoff_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_payoff.html">Payoff</a>&gt; AsianPathPricer::payoff_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Users/CUI/Dropbox/C++/Finance/PricingEngines/<a class="el" href="_asian_path_pricer_8h_source.html">AsianPathPricer.h</a></li>
-<li>Users/CUI/Dropbox/C++/Finance/PricingEngines/AsianPathPricer.cpp</li>
+<li>Users/CUI/Dropbox/C++/Finance/PricingEngines/<a class="el" href="_asian_path_pricer_8cpp.html">AsianPathPricer.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

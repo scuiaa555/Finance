@@ -1,20 +1,75 @@
 \hypertarget{class_uniform_l_ecuyer_r_n_g1}{}\section{Uniform\+L\+Ecuyer\+R\+N\+G1 Class Reference}
 \label{class_uniform_l_ecuyer_r_n_g1}\index{Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}}
+
+
+{\ttfamily \#include $<$Uniform\+L\+Ecuyer\+R\+N\+G1.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_uniform_l_ecuyer_r_n_g1_a337fc3fe276e950c8ef9e330779eedb7}{}\label{class_uniform_l_ecuyer_r_n_g1_a337fc3fe276e950c8ef9e330779eedb7} 
-{\bfseries Uniform\+L\+Ecuyer\+R\+N\+G1} (unsigned long seed=7777)
+\hyperlink{class_uniform_l_ecuyer_r_n_g1_a337fc3fe276e950c8ef9e330779eedb7}{Uniform\+L\+Ecuyer\+R\+N\+G1} (unsigned long seed=7777)
 \item 
-\hypertarget{class_uniform_l_ecuyer_r_n_g1_a33e1ea51eb633a14e84d45d8c31a4e8b}{}\label{class_uniform_l_ecuyer_r_n_g1_a33e1ea51eb633a14e84d45d8c31a4e8b} 
-void {\bfseries set\+Seed} (const long seed)
+void \hyperlink{class_uniform_l_ecuyer_r_n_g1_a33e1ea51eb633a14e84d45d8c31a4e8b}{set\+Seed} (const long seed)
 \item 
-\hypertarget{class_uniform_l_ecuyer_r_n_g1_a6a166e0bef412d4c85565ec0017ae489}{}\label{class_uniform_l_ecuyer_r_n_g1_a6a166e0bef412d4c85565ec0017ae489} 
-double {\bfseries next} ()
+double \hyperlink{class_uniform_l_ecuyer_r_n_g1_a6a166e0bef412d4c85565ec0017ae489}{next} ()
+\item 
+double \hyperlink{class_uniform_l_ecuyer_r_n_g1_aaed8bab7d34f76064ca34b1d35b204f4}{last} ()
 \end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{class_uniform_l_ecuyer_r_n_g1_ab722b90ba6d65dea6874ccede2edc921}{seed\+\_\+}
+\item 
+double \hyperlink{class_uniform_l_ecuyer_r_n_g1_ae14608c81e072a8f46ef2dd9b865e90c}{u\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_uniform_l_ecuyer_r_n_g1_a337fc3fe276e950c8ef9e330779eedb7}{}\label{class_uniform_l_ecuyer_r_n_g1_a337fc3fe276e950c8ef9e330779eedb7} 
+\index{Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}!Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}}
+\index{Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}!Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}}
+\subsubsection{\texorpdfstring{Uniform\+L\+Ecuyer\+R\+N\+G1()}{UniformLEcuyerRNG1()}}
+{\footnotesize\ttfamily Uniform\+L\+Ecuyer\+R\+N\+G1\+::\+Uniform\+L\+Ecuyer\+R\+N\+G1 (\begin{DoxyParamCaption}\item[{unsigned long}]{seed = {\ttfamily 7777} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_uniform_l_ecuyer_r_n_g1_aaed8bab7d34f76064ca34b1d35b204f4}{}\label{class_uniform_l_ecuyer_r_n_g1_aaed8bab7d34f76064ca34b1d35b204f4} 
+\index{Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}!last@{last}}
+\index{last@{last}!Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}}
+\subsubsection{\texorpdfstring{last()}{last()}}
+{\footnotesize\ttfamily double Uniform\+L\+Ecuyer\+R\+N\+G1\+::last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{class_uniform_l_ecuyer_r_n_g1_a6a166e0bef412d4c85565ec0017ae489}{}\label{class_uniform_l_ecuyer_r_n_g1_a6a166e0bef412d4c85565ec0017ae489} 
+\index{Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}!next@{next}}
+\index{next@{next}!Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily double Uniform\+L\+Ecuyer\+R\+N\+G1\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{class_uniform_l_ecuyer_r_n_g1_a33e1ea51eb633a14e84d45d8c31a4e8b}{}\label{class_uniform_l_ecuyer_r_n_g1_a33e1ea51eb633a14e84d45d8c31a4e8b} 
+\index{Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}!set\+Seed@{set\+Seed}}
+\index{set\+Seed@{set\+Seed}!Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}}
+\subsubsection{\texorpdfstring{set\+Seed()}{setSeed()}}
+{\footnotesize\ttfamily void Uniform\+L\+Ecuyer\+R\+N\+G1\+::set\+Seed (\begin{DoxyParamCaption}\item[{const long}]{seed }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_uniform_l_ecuyer_r_n_g1_ab722b90ba6d65dea6874ccede2edc921}{}\label{class_uniform_l_ecuyer_r_n_g1_ab722b90ba6d65dea6874ccede2edc921} 
+\index{Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}!seed\+\_\+@{seed\+\_\+}}
+\index{seed\+\_\+@{seed\+\_\+}!Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}}
+\subsubsection{\texorpdfstring{seed\+\_\+}{seed\_}}
+{\footnotesize\ttfamily long Uniform\+L\+Ecuyer\+R\+N\+G1\+::seed\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_uniform_l_ecuyer_r_n_g1_ae14608c81e072a8f46ef2dd9b865e90c}{}\label{class_uniform_l_ecuyer_r_n_g1_ae14608c81e072a8f46ef2dd9b865e90c} 
+\index{Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}!u\+\_\+@{u\+\_\+}}
+\index{u\+\_\+@{u\+\_\+}!Uniform\+L\+Ecuyer\+R\+N\+G1@{Uniform\+L\+Ecuyer\+R\+N\+G1}}
+\subsubsection{\texorpdfstring{u\+\_\+}{u\_}}
+{\footnotesize\ttfamily double Uniform\+L\+Ecuyer\+R\+N\+G1\+::u\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Rand\+Num\+Generation/Uniform\+L\+Ecuyer\+R\+N\+G1.\+h\item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Rand\+Num\+Generation/Uniform\+L\+Ecuyer\+R\+N\+G1.\+cpp\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Rand\+Num\+Generation/\hyperlink{_uniform_l_ecuyer_r_n_g1_8h}{Uniform\+L\+Ecuyer\+R\+N\+G1.\+h}\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Rand\+Num\+Generation/\hyperlink{_uniform_l_ecuyer_r_n_g1_8cpp}{Uniform\+L\+Ecuyer\+R\+N\+G1.\+cpp}\end{DoxyCompactItemize}

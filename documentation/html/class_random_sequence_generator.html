@@ -60,21 +60,155 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_random_sequence_generator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">RandomSequenceGenerator&lt; RNG &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_random_sequence_generator_8h_source.html">RandomSequenceGenerator.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a148644138c29dae6ebe57657c8ca2cce"><td class="memItemLeft" align="right" valign="top"><a id="a148644138c29dae6ebe57657c8ca2cce"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RandomSequenceGenerator</b> (vector&lt; double &gt;::size_type dimensionality, const RNG &amp;rng)</td></tr>
+<tr class="memitem:a148644138c29dae6ebe57657c8ca2cce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_random_sequence_generator.html#a148644138c29dae6ebe57657c8ca2cce">RandomSequenceGenerator</a> (vector&lt; double &gt;::size_type dimensionality, const RNG &amp;rng)</td></tr>
 <tr class="separator:a148644138c29dae6ebe57657c8ca2cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63f2d6fdb7f7bab6cdf3506f91cc814c"><td class="memItemLeft" align="right" valign="top"><a id="a63f2d6fdb7f7bab6cdf3506f91cc814c"></a>
-const vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>nextSequence</b> ()</td></tr>
+<tr class="memitem:a63f2d6fdb7f7bab6cdf3506f91cc814c"><td class="memItemLeft" align="right" valign="top">const vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_random_sequence_generator.html#a63f2d6fdb7f7bab6cdf3506f91cc814c">nextSequence</a> ()</td></tr>
 <tr class="separator:a63f2d6fdb7f7bab6cdf3506f91cc814c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8a7cbf03d0e0e50f2d4bf571a6654228"><td class="memItemLeft" align="right" valign="top">RNG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_random_sequence_generator.html#a8a7cbf03d0e0e50f2d4bf571a6654228">rng_</a></td></tr>
+<tr class="separator:a8a7cbf03d0e0e50f2d4bf571a6654228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af950ba4e5e31b62b03997742d1e542ce"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_random_sequence_generator.html#af950ba4e5e31b62b03997742d1e542ce">dimensionality_</a></td></tr>
+<tr class="separator:af950ba4e5e31b62b03997742d1e542ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876cc58b9aa9d48e6a068567356eb6f0"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_random_sequence_generator.html#a876cc58b9aa9d48e6a068567356eb6f0">sequence_</a></td></tr>
+<tr class="separator:a876cc58b9aa9d48e6a068567356eb6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a148644138c29dae6ebe57657c8ca2cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148644138c29dae6ebe57657c8ca2cce">&sect;&nbsp;</a></span>RandomSequenceGenerator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RNG &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_random_sequence_generator.html">RandomSequenceGenerator</a>&lt; RNG &gt;::<a class="el" href="class_random_sequence_generator.html">RandomSequenceGenerator</a> </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; double &gt;::size_type&#160;</td>
+          <td class="paramname"><em>dimensionality</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RNG &amp;&#160;</td>
+          <td class="paramname"><em>rng</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a63f2d6fdb7f7bab6cdf3506f91cc814c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f2d6fdb7f7bab6cdf3506f91cc814c">&sect;&nbsp;</a></span>nextSequence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RNG &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const vector&lt; double &gt; &amp; <a class="el" href="class_random_sequence_generator.html">RandomSequenceGenerator</a>&lt; RNG &gt;::nextSequence </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af950ba4e5e31b62b03997742d1e542ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af950ba4e5e31b62b03997742d1e542ce">&sect;&nbsp;</a></span>dimensionality_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RNG &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double&gt;::size_type <a class="el" href="class_random_sequence_generator.html">RandomSequenceGenerator</a>&lt; RNG &gt;::dimensionality_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a7cbf03d0e0e50f2d4bf571a6654228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a7cbf03d0e0e50f2d4bf571a6654228">&sect;&nbsp;</a></span>rng_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RNG &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RNG <a class="el" href="class_random_sequence_generator.html">RandomSequenceGenerator</a>&lt; RNG &gt;::rng_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a876cc58b9aa9d48e6a068567356eb6f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876cc58b9aa9d48e6a068567356eb6f0">&sect;&nbsp;</a></span>sequence_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RNG &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;double&gt; <a class="el" href="class_random_sequence_generator.html">RandomSequenceGenerator</a>&lt; RNG &gt;::sequence_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Users/CUI/Dropbox/C++/Finance/RandNumGeneration/<a class="el" href="_random_sequence_generator_8h_source.html">RandomSequenceGenerator.h</a></li>
 </ul>

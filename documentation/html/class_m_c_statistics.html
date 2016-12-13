@@ -61,11 +61,14 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_m_c_statistics-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MCStatistics Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_statistics_8h_source.html">Statistics.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -74,16 +77,140 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af1aab02cf590dee3fdc6d7b6cf9443fa"><td class="memItemLeft" align="right" valign="top"><a id="af1aab02cf590dee3fdc6d7b6cf9443fa"></a>
-Money&#160;</td><td class="memItemRight" valign="bottom"><b>mean</b> () const</td></tr>
+<tr class="memitem:aa4a6abdd39edf6efff8151da45568095"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_statistics.html#aa4a6abdd39edf6efff8151da45568095">MCStatistics</a> ()</td></tr>
+<tr class="separator:aa4a6abdd39edf6efff8151da45568095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1aab02cf590dee3fdc6d7b6cf9443fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_statistics.html#af1aab02cf590dee3fdc6d7b6cf9443fa">mean</a> () const</td></tr>
 <tr class="separator:af1aab02cf590dee3fdc6d7b6cf9443fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6557ced886141997d13d86777b1970c5"><td class="memItemLeft" align="right" valign="top"><a id="a6557ced886141997d13d86777b1970c5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (unsigned long numSample, Money price)</td></tr>
+<tr class="memitem:a6557ced886141997d13d86777b1970c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_statistics.html#a6557ced886141997d13d86777b1970c5">add</a> (unsigned long numSample, <a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a> price)</td></tr>
 <tr class="separator:a6557ced886141997d13d86777b1970c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a60f5e1f87ba55ca837a3067ed726ff9a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_m_c_statistics_1_1_sample_results.html">SampleResults</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_statistics.html#a60f5e1f87ba55ca837a3067ed726ff9a">sampleAccumulator_</a></td></tr>
+<tr class="separator:a60f5e1f87ba55ca837a3067ed726ff9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada9be8c85593b98c76b8b61252db97e2"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_statistics.html#ada9be8c85593b98c76b8b61252db97e2">totalNum</a></td></tr>
+<tr class="separator:ada9be8c85593b98c76b8b61252db97e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa4a6abdd39edf6efff8151da45568095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a6abdd39edf6efff8151da45568095">&sect;&nbsp;</a></span>MCStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MCStatistics::MCStatistics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6557ced886141997d13d86777b1970c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6557ced886141997d13d86777b1970c5">&sect;&nbsp;</a></span>add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MCStatistics::add </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>numSample</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a>&#160;</td>
+          <td class="paramname"><em>price</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1aab02cf590dee3fdc6d7b6cf9443fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1aab02cf590dee3fdc6d7b6cf9443fa">&sect;&nbsp;</a></span>mean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a> MCStatistics::mean </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a60f5e1f87ba55ca837a3067ed726ff9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60f5e1f87ba55ca837a3067ed726ff9a">&sect;&nbsp;</a></span>sampleAccumulator_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_m_c_statistics_1_1_sample_results.html">SampleResults</a>&gt; MCStatistics::sampleAccumulator_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada9be8c85593b98c76b8b61252db97e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada9be8c85593b98c76b8b61252db97e2">&sect;&nbsp;</a></span>totalNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long MCStatistics::totalNum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Users/CUI/Dropbox/C++/Finance/<a class="el" href="_statistics_8h_source.html">Statistics.h</a></li>
-<li>Users/CUI/Dropbox/C++/Finance/Statistics.cpp</li>
+<li>Users/CUI/Dropbox/C++/Finance/<a class="el" href="_statistics_8cpp.html">Statistics.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

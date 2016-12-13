@@ -1,5 +1,9 @@
 \hypertarget{class_m_c_statistics}{}\section{M\+C\+Statistics Class Reference}
 \label{class_m_c_statistics}\index{M\+C\+Statistics@{M\+C\+Statistics}}
+
+
+{\ttfamily \#include $<$Statistics.\+h$>$}
+
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -8,15 +12,61 @@ class \hyperlink{class_m_c_statistics_1_1_sample_results}{Sample\+Results}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_m_c_statistics_af1aab02cf590dee3fdc6d7b6cf9443fa}{}\label{class_m_c_statistics_af1aab02cf590dee3fdc6d7b6cf9443fa} 
-Money {\bfseries mean} () const
+\hyperlink{class_m_c_statistics_aa4a6abdd39edf6efff8151da45568095}{M\+C\+Statistics} ()
 \item 
-\hypertarget{class_m_c_statistics_a6557ced886141997d13d86777b1970c5}{}\label{class_m_c_statistics_a6557ced886141997d13d86777b1970c5} 
-void {\bfseries add} (unsigned long num\+Sample, Money price)
+\hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_m_c_statistics_af1aab02cf590dee3fdc6d7b6cf9443fa}{mean} () const
+\item 
+void \hyperlink{class_m_c_statistics_a6557ced886141997d13d86777b1970c5}{add} (unsigned long num\+Sample, \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} price)
 \end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_m_c_statistics_1_1_sample_results}{Sample\+Results} $>$ \hyperlink{class_m_c_statistics_a60f5e1f87ba55ca837a3067ed726ff9a}{sample\+Accumulator\+\_\+}
+\item 
+unsigned long \hyperlink{class_m_c_statistics_ada9be8c85593b98c76b8b61252db97e2}{total\+Num}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_m_c_statistics_aa4a6abdd39edf6efff8151da45568095}{}\label{class_m_c_statistics_aa4a6abdd39edf6efff8151da45568095} 
+\index{M\+C\+Statistics@{M\+C\+Statistics}!M\+C\+Statistics@{M\+C\+Statistics}}
+\index{M\+C\+Statistics@{M\+C\+Statistics}!M\+C\+Statistics@{M\+C\+Statistics}}
+\subsubsection{\texorpdfstring{M\+C\+Statistics()}{MCStatistics()}}
+{\footnotesize\ttfamily M\+C\+Statistics\+::\+M\+C\+Statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_m_c_statistics_a6557ced886141997d13d86777b1970c5}{}\label{class_m_c_statistics_a6557ced886141997d13d86777b1970c5} 
+\index{M\+C\+Statistics@{M\+C\+Statistics}!add@{add}}
+\index{add@{add}!M\+C\+Statistics@{M\+C\+Statistics}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void M\+C\+Statistics\+::add (\begin{DoxyParamCaption}\item[{unsigned long}]{num\+Sample,  }\item[{\hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money}}]{price }\end{DoxyParamCaption})}
+
+\hypertarget{class_m_c_statistics_af1aab02cf590dee3fdc6d7b6cf9443fa}{}\label{class_m_c_statistics_af1aab02cf590dee3fdc6d7b6cf9443fa} 
+\index{M\+C\+Statistics@{M\+C\+Statistics}!mean@{mean}}
+\index{mean@{mean}!M\+C\+Statistics@{M\+C\+Statistics}}
+\subsubsection{\texorpdfstring{mean()}{mean()}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} M\+C\+Statistics\+::mean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_m_c_statistics_a60f5e1f87ba55ca837a3067ed726ff9a}{}\label{class_m_c_statistics_a60f5e1f87ba55ca837a3067ed726ff9a} 
+\index{M\+C\+Statistics@{M\+C\+Statistics}!sample\+Accumulator\+\_\+@{sample\+Accumulator\+\_\+}}
+\index{sample\+Accumulator\+\_\+@{sample\+Accumulator\+\_\+}!M\+C\+Statistics@{M\+C\+Statistics}}
+\subsubsection{\texorpdfstring{sample\+Accumulator\+\_\+}{sampleAccumulator\_}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_m_c_statistics_1_1_sample_results}{Sample\+Results}$>$ M\+C\+Statistics\+::sample\+Accumulator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_m_c_statistics_ada9be8c85593b98c76b8b61252db97e2}{}\label{class_m_c_statistics_ada9be8c85593b98c76b8b61252db97e2} 
+\index{M\+C\+Statistics@{M\+C\+Statistics}!total\+Num@{total\+Num}}
+\index{total\+Num@{total\+Num}!M\+C\+Statistics@{M\+C\+Statistics}}
+\subsubsection{\texorpdfstring{total\+Num}{totalNum}}
+{\footnotesize\ttfamily unsigned long M\+C\+Statistics\+::total\+Num\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/Statistics.\+h\item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/Statistics.\+cpp\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\hyperlink{_statistics_8h}{Statistics.\+h}\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\hyperlink{_statistics_8cpp}{Statistics.\+cpp}\end{DoxyCompactItemize}

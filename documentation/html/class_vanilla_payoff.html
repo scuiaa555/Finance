@@ -60,11 +60,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_vanilla_payoff-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">VanillaPayoff Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_vanilla_payoff_8h_source.html">VanillaPayoff.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for VanillaPayoff:</div>
 <div class="dyncontent">
@@ -77,22 +80,162 @@ Inheritance diagram for VanillaPayoff:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae0d7f1fdb70f4ad9c2002f96df2199d3"><td class="memItemLeft" align="right" valign="top"><a id="ae0d7f1fdb70f4ad9c2002f96df2199d3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>VanillaPayoff</b> (Quote strike, std::string type)</td></tr>
+<tr class="memitem:ae0d7f1fdb70f4ad9c2002f96df2199d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vanilla_payoff.html#ae0d7f1fdb70f4ad9c2002f96df2199d3">VanillaPayoff</a> (<a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> strike, std::string type)</td></tr>
 <tr class="separator:ae0d7f1fdb70f4ad9c2002f96df2199d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa141f5b29c30d54448c93a21bef83bb3"><td class="memItemLeft" align="right" valign="top"><a id="aa141f5b29c30d54448c93a21bef83bb3"></a>
-Money&#160;</td><td class="memItemRight" valign="bottom"><b>getPayoff</b> (Quote spot) const override</td></tr>
+<tr class="memitem:aa141f5b29c30d54448c93a21bef83bb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vanilla_payoff.html#aa141f5b29c30d54448c93a21bef83bb3">getPayoff</a> (<a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> spot) const override</td></tr>
 <tr class="separator:aa141f5b29c30d54448c93a21bef83bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae99fb31f1496f723ec598367ece825e3"><td class="memItemLeft" align="right" valign="top"><a id="ae99fb31f1496f723ec598367ece825e3"></a>
-Quote&#160;</td><td class="memItemRight" valign="bottom"><b>getStrike</b> () const</td></tr>
+<tr class="memitem:ae99fb31f1496f723ec598367ece825e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vanilla_payoff.html#ae99fb31f1496f723ec598367ece825e3">getStrike</a> () const</td></tr>
 <tr class="separator:ae99fb31f1496f723ec598367ece825e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1b4cc9e4152ed3f7c07c71270fc1831"><td class="memItemLeft" align="right" valign="top"><a id="ac1b4cc9e4152ed3f7c07c71270fc1831"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> () const</td></tr>
+<tr class="memitem:ac1b4cc9e4152ed3f7c07c71270fc1831"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vanilla_payoff.html#ac1b4cc9e4152ed3f7c07c71270fc1831">getType</a> () const</td></tr>
 <tr class="separator:ac1b4cc9e4152ed3f7c07c71270fc1831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a63c2c23fecb9b43cd250e28791a31a56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vanilla_payoff.html#a63c2c23fecb9b43cd250e28791a31a56">strike_</a></td></tr>
+<tr class="separator:a63c2c23fecb9b43cd250e28791a31a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a09d08187de77df248cc3f7498e3e2f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vanilla_payoff.html#a4a09d08187de77df248cc3f7498e3e2f">type_</a></td></tr>
+<tr class="separator:a4a09d08187de77df248cc3f7498e3e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae0d7f1fdb70f4ad9c2002f96df2199d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0d7f1fdb70f4ad9c2002f96df2199d3">&sect;&nbsp;</a></span>VanillaPayoff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VanillaPayoff::VanillaPayoff </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a>&#160;</td>
+          <td class="paramname"><em>strike</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa141f5b29c30d54448c93a21bef83bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa141f5b29c30d54448c93a21bef83bb3">&sect;&nbsp;</a></span>getPayoff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a> VanillaPayoff::getPayoff </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a>&#160;</td>
+          <td class="paramname"><em>spot</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_payoff.html#a908e732330294a111345b4183ddb025b">Payoff</a>.</p>
+
+</div>
+</div>
+<a id="ae99fb31f1496f723ec598367ece825e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae99fb31f1496f723ec598367ece825e3">&sect;&nbsp;</a></span>getStrike()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> VanillaPayoff::getStrike </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac1b4cc9e4152ed3f7c07c71270fc1831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1b4cc9e4152ed3f7c07c71270fc1831">&sect;&nbsp;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VanillaPayoff::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a63c2c23fecb9b43cd250e28791a31a56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63c2c23fecb9b43cd250e28791a31a56">&sect;&nbsp;</a></span>strike_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> VanillaPayoff::strike_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a09d08187de77df248cc3f7498e3e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a09d08187de77df248cc3f7498e3e2f">&sect;&nbsp;</a></span>type_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VanillaPayoff::type_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Users/CUI/Dropbox/C++/Finance/Payoffs/<a class="el" href="_vanilla_payoff_8h_source.html">VanillaPayoff.h</a></li>
-<li>Users/CUI/Dropbox/C++/Finance/Payoffs/VanillaPayoff.cpp</li>
+<li>Users/CUI/Dropbox/C++/Finance/Payoffs/<a class="el" href="_vanilla_payoff_8cpp.html">VanillaPayoff.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

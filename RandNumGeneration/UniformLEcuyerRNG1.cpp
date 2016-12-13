@@ -20,5 +20,6 @@ double UniformLEcuyerRNG1::next() {
     unsigned long k = seed_ / q;
     seed_ = a * (seed_ - k * q) - k * r;
     if (seed_ < 0) seed_ += m;
-    return h * seed_;
+    u_ = h * seed_;
+    return u_;
 }

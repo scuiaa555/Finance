@@ -14,8 +14,11 @@ public:
 
     double next();
 
+    double last() { return u_; }
+
 private:
     long seed_;
+    double u_;
 };
 
 

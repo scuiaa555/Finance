@@ -1,5 +1,9 @@
 \hypertarget{class_pricing_engine}{}\section{Pricing\+Engine Class Reference}
 \label{class_pricing_engine}\index{Pricing\+Engine@{Pricing\+Engine}}
+
+
+{\ttfamily \#include $<$Pricing\+Engine.\+h$>$}
+
 Inheritance diagram for Pricing\+Engine\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,17 +20,58 @@ class \hyperlink{class_pricing_engine_1_1_results}{Results}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_pricing_engine_a733511ffc3cf5e4dc1fbc2a39208d8bd}{}\label{class_pricing_engine_a733511ffc3cf5e4dc1fbc2a39208d8bd} 
-virtual void {\bfseries calculate} ()=0
+\hyperlink{class_pricing_engine_abfd32778b0483e92db2e7cd00a2f9345}{Pricing\+Engine} ()
 \item 
-\hypertarget{class_pricing_engine_a399f4519f58b2ac1d108ce14d0058c97}{}\label{class_pricing_engine_a399f4519f58b2ac1d108ce14d0058c97} 
-virtual \hyperlink{class_pricing_engine_1_1_arguments}{Arguments} $\ast$ {\bfseries get\+Arguments} () const =0
+virtual void \hyperlink{class_pricing_engine_a733511ffc3cf5e4dc1fbc2a39208d8bd}{calculate} ()=0
 \item 
-\hypertarget{class_pricing_engine_a73e2852ef4c28e92a402492e86717d0b}{}\label{class_pricing_engine_a73e2852ef4c28e92a402492e86717d0b} 
-virtual \hyperlink{class_pricing_engine_1_1_results}{Results} $\ast$ {\bfseries get\+Results} () const =0
+virtual \hyperlink{class_pricing_engine_1_1_arguments}{Arguments} $\ast$ \hyperlink{class_pricing_engine_a399f4519f58b2ac1d108ce14d0058c97}{get\+Arguments} () const =0
+\item 
+virtual \hyperlink{class_pricing_engine_1_1_results}{Results} $\ast$ \hyperlink{class_pricing_engine_a73e2852ef4c28e92a402492e86717d0b}{get\+Results} () const =0
 \end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_pricing_engine_abfd32778b0483e92db2e7cd00a2f9345}{}\label{class_pricing_engine_abfd32778b0483e92db2e7cd00a2f9345} 
+\index{Pricing\+Engine@{Pricing\+Engine}!Pricing\+Engine@{Pricing\+Engine}}
+\index{Pricing\+Engine@{Pricing\+Engine}!Pricing\+Engine@{Pricing\+Engine}}
+\subsubsection{\texorpdfstring{Pricing\+Engine()}{PricingEngine()}}
+{\footnotesize\ttfamily Pricing\+Engine\+::\+Pricing\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pricing_engine_a733511ffc3cf5e4dc1fbc2a39208d8bd}{}\label{class_pricing_engine_a733511ffc3cf5e4dc1fbc2a39208d8bd} 
+\index{Pricing\+Engine@{Pricing\+Engine}!calculate@{calculate}}
+\index{calculate@{calculate}!Pricing\+Engine@{Pricing\+Engine}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily virtual void Pricing\+Engine\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_mc_european_engine_a51b2f0147fbaf2b84c65851bbc2baa7b}{Mc\+European\+Engine$<$ Unif\+Rng $>$}, \hyperlink{class_mc_asian_engine_a4e67149307de395f821c8aa07afad3b8}{Mc\+Asian\+Engine$<$ Unif\+Rng $>$}, \hyperlink{class_analytic_european_engine_adeda22c7b482779d7deaa17037195487}{Analytic\+European\+Engine}, and \hyperlink{class_analytic_forward_engine_a12d6791a13bf727d43ffcff9cb55b094}{Analytic\+Forward\+Engine}.
+
+\hypertarget{class_pricing_engine_a399f4519f58b2ac1d108ce14d0058c97}{}\label{class_pricing_engine_a399f4519f58b2ac1d108ce14d0058c97} 
+\index{Pricing\+Engine@{Pricing\+Engine}!get\+Arguments@{get\+Arguments}}
+\index{get\+Arguments@{get\+Arguments}!Pricing\+Engine@{Pricing\+Engine}}
+\subsubsection{\texorpdfstring{get\+Arguments()}{getArguments()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_pricing_engine_1_1_arguments}{Arguments}$\ast$ Pricing\+Engine\+::get\+Arguments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_generic_engine_ac2adcbbc8d7b554e2cc1f90e4c4d055d}{Generic\+Engine$<$ Arguments\+Type, Results\+Type $>$}, \hyperlink{class_generic_engine_ac2adcbbc8d7b554e2cc1f90e4c4d055d}{Generic\+Engine$<$ European\+Option\+::\+Arguments, European\+Option\+::\+Results $>$}, \hyperlink{class_generic_engine_ac2adcbbc8d7b554e2cc1f90e4c4d055d}{Generic\+Engine$<$ Asian\+Option\+::\+Arguments, Asian\+Option\+::\+Results $>$}, and \hyperlink{class_generic_engine_ac2adcbbc8d7b554e2cc1f90e4c4d055d}{Generic\+Engine$<$ Forward\+::\+Arguments, Forward\+::\+Results $>$}.
+
+\hypertarget{class_pricing_engine_a73e2852ef4c28e92a402492e86717d0b}{}\label{class_pricing_engine_a73e2852ef4c28e92a402492e86717d0b} 
+\index{Pricing\+Engine@{Pricing\+Engine}!get\+Results@{get\+Results}}
+\index{get\+Results@{get\+Results}!Pricing\+Engine@{Pricing\+Engine}}
+\subsubsection{\texorpdfstring{get\+Results()}{getResults()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_pricing_engine_1_1_results}{Results}$\ast$ Pricing\+Engine\+::get\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_generic_engine_a2b8d7fba7e51c0795ea9f1e9c2f54afd}{Generic\+Engine$<$ Arguments\+Type, Results\+Type $>$}, \hyperlink{class_generic_engine_a2b8d7fba7e51c0795ea9f1e9c2f54afd}{Generic\+Engine$<$ European\+Option\+::\+Arguments, European\+Option\+::\+Results $>$}, \hyperlink{class_generic_engine_a2b8d7fba7e51c0795ea9f1e9c2f54afd}{Generic\+Engine$<$ Asian\+Option\+::\+Arguments, Asian\+Option\+::\+Results $>$}, and \hyperlink{class_generic_engine_a2b8d7fba7e51c0795ea9f1e9c2f54afd}{Generic\+Engine$<$ Forward\+::\+Arguments, Forward\+::\+Results $>$}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/Pricing\+Engine.\+h\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\hyperlink{_pricing_engine_8h}{Pricing\+Engine.\+h}\end{DoxyCompactItemize}

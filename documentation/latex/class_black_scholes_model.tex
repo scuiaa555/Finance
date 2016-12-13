@@ -1,5 +1,9 @@
 \hypertarget{class_black_scholes_model}{}\section{Black\+Scholes\+Model Class Reference}
 \label{class_black_scholes_model}\index{Black\+Scholes\+Model@{Black\+Scholes\+Model}}
+
+
+{\ttfamily \#include $<$Black\+Scholes\+Model.\+h$>$}
+
 Inheritance diagram for Black\+Scholes\+Model\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,22 +13,52 @@ Inheritance diagram for Black\+Scholes\+Model\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_black_scholes_model_a5cc9ce0cdb0f040da65677b2c07f09b5}{}\label{class_black_scholes_model_a5cc9ce0cdb0f040da65677b2c07f09b5} 
-{\bfseries Black\+Scholes\+Model} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_b_s_stochastic_process}{B\+S\+Stochastic\+Process} $>$ process)
+\hyperlink{class_black_scholes_model_a5cc9ce0cdb0f040da65677b2c07f09b5}{Black\+Scholes\+Model} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_b_s_stochastic_process}{B\+S\+Stochastic\+Process} $>$ process)
 \item 
-\hypertarget{class_black_scholes_model_a59aa736bd849bc59fed035f702e9813b}{}\label{class_black_scholes_model_a59aa736bd849bc59fed035f702e9813b} 
-{\bfseries Black\+Scholes\+Model} (double r, double q, double sigma, double spot)
+\hyperlink{class_black_scholes_model_a59aa736bd849bc59fed035f702e9813b}{Black\+Scholes\+Model} (double \hyperlink{_uniform_l_ecuyer_r_n_g1_8cpp_a372556d73d7e403d9b677b89b21ee572}{r}, double \hyperlink{_uniform_l_ecuyer_r_n_g1_8cpp_a5cf10165494588b84d4231e0e8a5b1a9}{q}, double sigma, double spot)
 \item 
-\hypertarget{class_black_scholes_model_abcbe5f02a1820adf876b1981c78dc43a}{}\label{class_black_scholes_model_abcbe5f02a1820adf876b1981c78dc43a} 
-Quote {\bfseries evolve} (Time t0, Quote x0, Time dt, double dw) const
+\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \hyperlink{class_black_scholes_model_abcbe5f02a1820adf876b1981c78dc43a}{evolve} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t0, \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} x0, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} dt, double dw) const
 \item 
-\hypertarget{class_black_scholes_model_ae7ece51fd9f0eac3f77975cff857216d}{}\label{class_black_scholes_model_ae7ece51fd9f0eac3f77975cff857216d} 
-std\+::vector$<$ Quote $>$ {\bfseries evolve} (Time t0, std\+::vector$<$ Quote $>$ \&x0, Time dt, double dw) const override
+std\+::vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} $>$ \hyperlink{class_black_scholes_model_ae7ece51fd9f0eac3f77975cff857216d}{evolve} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t0, std\+::vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} $>$ \&x0, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} dt, double dw) const override
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_black_scholes_model_a5cc9ce0cdb0f040da65677b2c07f09b5}{}\label{class_black_scholes_model_a5cc9ce0cdb0f040da65677b2c07f09b5} 
+\index{Black\+Scholes\+Model@{Black\+Scholes\+Model}!Black\+Scholes\+Model@{Black\+Scholes\+Model}}
+\index{Black\+Scholes\+Model@{Black\+Scholes\+Model}!Black\+Scholes\+Model@{Black\+Scholes\+Model}}
+\subsubsection{\texorpdfstring{Black\+Scholes\+Model()}{BlackScholesModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Black\+Scholes\+Model\+::\+Black\+Scholes\+Model (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{class_b_s_stochastic_process}{B\+S\+Stochastic\+Process} $>$}]{process }\end{DoxyParamCaption})}
+
+\hypertarget{class_black_scholes_model_a59aa736bd849bc59fed035f702e9813b}{}\label{class_black_scholes_model_a59aa736bd849bc59fed035f702e9813b} 
+\index{Black\+Scholes\+Model@{Black\+Scholes\+Model}!Black\+Scholes\+Model@{Black\+Scholes\+Model}}
+\index{Black\+Scholes\+Model@{Black\+Scholes\+Model}!Black\+Scholes\+Model@{Black\+Scholes\+Model}}
+\subsubsection{\texorpdfstring{Black\+Scholes\+Model()}{BlackScholesModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Black\+Scholes\+Model\+::\+Black\+Scholes\+Model (\begin{DoxyParamCaption}\item[{double}]{r,  }\item[{double}]{q,  }\item[{double}]{sigma,  }\item[{double}]{spot }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_black_scholes_model_abcbe5f02a1820adf876b1981c78dc43a}{}\label{class_black_scholes_model_abcbe5f02a1820adf876b1981c78dc43a} 
+\index{Black\+Scholes\+Model@{Black\+Scholes\+Model}!evolve@{evolve}}
+\index{evolve@{evolve}!Black\+Scholes\+Model@{Black\+Scholes\+Model}}
+\subsubsection{\texorpdfstring{evolve()}{evolve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} Black\+Scholes\+Model\+::evolve (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{t0,  }\item[{\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote}}]{x0,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{dt,  }\item[{double}]{dw }\end{DoxyParamCaption}) const}
+
+\hypertarget{class_black_scholes_model_ae7ece51fd9f0eac3f77975cff857216d}{}\label{class_black_scholes_model_ae7ece51fd9f0eac3f77975cff857216d} 
+\index{Black\+Scholes\+Model@{Black\+Scholes\+Model}!evolve@{evolve}}
+\index{evolve@{evolve}!Black\+Scholes\+Model@{Black\+Scholes\+Model}}
+\subsubsection{\texorpdfstring{evolve()}{evolve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote}$>$ Black\+Scholes\+Model\+::evolve (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{t0,  }\item[{std\+::vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} $>$ \&}]{x0,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{dt,  }\item[{double}]{dw }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_model_a087d56280bb51e8b04be3a9a30d06c76}{Model}.
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Models/Black\+Scholes\+Model.\+h\item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Models/Black\+Scholes\+Model.\+cpp\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Models/\hyperlink{_black_scholes_model_8h}{Black\+Scholes\+Model.\+h}\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Models/\hyperlink{_black_scholes_model_8cpp}{Black\+Scholes\+Model.\+cpp}\end{DoxyCompactItemize}

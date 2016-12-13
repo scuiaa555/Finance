@@ -18,10 +18,16 @@ Inheritance diagram for L\+MM\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_l_m_m_aabe5f5723727412de2e34c4d1bf4f3b8}{L\+MM} (unsigned long dimensional, const std\+::vector$<$ Quote $>$ \&initial, unsigned long dim\+Vol, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ $>$ \&params, Time tenor)
+\hyperlink{class_l_m_m_a4de26d3647b221d5d16667a402edfef2}{L\+MM} ()=default
 \item 
-\hypertarget{class_l_m_m_a8dfdd340048e482a8059f473b5aacfd1}{}\label{class_l_m_m_a8dfdd340048e482a8059f473b5aacfd1} 
-std\+::vector$<$ Quote $>$ {\bfseries evolve} (Time t0, std\+::vector$<$ Quote $>$ \&x0, Time dt, double dw) const override
+\hyperlink{class_l_m_m_aa6d3ff98a4153869dd59c17135181a4c}{L\+MM} (unsigned long dimension, const std\+::vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} $>$ \&initial, unsigned long dim\+Vol, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ $>$ \&params, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} tenor)
+\item 
+std\+::vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} $>$ \hyperlink{class_l_m_m_a8dfdd340048e482a8059f473b5aacfd1}{evolve} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t0, std\+::vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} $>$ \&x0, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} dt, double dw) const override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} \hyperlink{class_l_m_m_a92e55b5b940238e97a668c039cc593fa}{tenor\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -32,28 +38,56 @@ Standard \hyperlink{class_l_m_m}{L\+MM} model.
 This is the most standard Libor market model before financial crisis. The log-\/normal processes without stochastic multipliers are imposed in the dynamics of the \hyperlink{class_l_m_m}{L\+MM} model. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_l_m_m_aabe5f5723727412de2e34c4d1bf4f3b8}{}\label{class_l_m_m_aabe5f5723727412de2e34c4d1bf4f3b8} 
+\hypertarget{class_l_m_m_a4de26d3647b221d5d16667a402edfef2}{}\label{class_l_m_m_a4de26d3647b221d5d16667a402edfef2} 
 \index{L\+MM@{L\+MM}!L\+MM@{L\+MM}}
 \index{L\+MM@{L\+MM}!L\+MM@{L\+MM}}
-\subsubsection{\texorpdfstring{L\+M\+M()}{LMM()}}
-{\footnotesize\ttfamily L\+M\+M\+::\+L\+MM (\begin{DoxyParamCaption}\item[{unsigned long}]{dimensional,  }\item[{const std\+::vector$<$ Quote $>$ \&}]{initial,  }\item[{unsigned long}]{dim\+Vol,  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ $>$ \&}]{params,  }\item[{Time}]{tenor }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{L\+M\+M()}{LMM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily L\+M\+M\+::\+L\+MM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\hypertarget{class_l_m_m_aa6d3ff98a4153869dd59c17135181a4c}{}\label{class_l_m_m_aa6d3ff98a4153869dd59c17135181a4c} 
+\index{L\+MM@{L\+MM}!L\+MM@{L\+MM}}
+\index{L\+MM@{L\+MM}!L\+MM@{L\+MM}}
+\subsubsection{\texorpdfstring{L\+M\+M()}{LMM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily L\+M\+M\+::\+L\+MM (\begin{DoxyParamCaption}\item[{unsigned long}]{dimension,  }\item[{const std\+::vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} $>$ \&}]{initial,  }\item[{unsigned long}]{dim\+Vol,  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ $>$ \&}]{params,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{tenor }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
-{\em dimensional} & number of (riskfree) forward rates \\
+{\em dimension} & number of (riskfree) forward rates \\
 \hline
 {\em initial} & initial value at time 0 \\
 \hline
 {\em dim\+Vol} & volatility dimension of each dynamic \\
 \hline
-{\em paras} & vector of needed parameters structure \\
+{\em params} & vector of needed parameters structure \\
 \hline
 {\em tenor} & tenor of forward rates, e.\+g. 1M(1/12), 3M(1/4), 6M(1/2), 12M(1) \\
 \hline
 \end{DoxyParams}
 no check for the input 
 
+\subsection{Member Function Documentation}
+\hypertarget{class_l_m_m_a8dfdd340048e482a8059f473b5aacfd1}{}\label{class_l_m_m_a8dfdd340048e482a8059f473b5aacfd1} 
+\index{L\+MM@{L\+MM}!evolve@{evolve}}
+\index{evolve@{evolve}!L\+MM@{L\+MM}}
+\subsubsection{\texorpdfstring{evolve()}{evolve()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote}$>$ L\+M\+M\+::evolve (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{t0,  }\item[{std\+::vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} $>$ \&}]{x0,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{dt,  }\item[{double}]{dw }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_model_a087d56280bb51e8b04be3a9a30d06c76}{Model}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_l_m_m_a92e55b5b940238e97a668c039cc593fa}{}\label{class_l_m_m_a92e55b5b940238e97a668c039cc593fa} 
+\index{L\+MM@{L\+MM}!tenor\+\_\+@{tenor\+\_\+}}
+\index{tenor\+\_\+@{tenor\+\_\+}!L\+MM@{L\+MM}}
+\subsubsection{\texorpdfstring{tenor\+\_\+}{tenor\_}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} L\+M\+M\+::tenor\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Models/L\+M\+M.\+h\item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Models/L\+M\+M.\+cpp\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Models/\hyperlink{_l_m_m_8h}{L\+M\+M.\+h}\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Models/\hyperlink{_l_m_m_8cpp}{L\+M\+M.\+cpp}\end{DoxyCompactItemize}

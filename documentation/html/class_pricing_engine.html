@@ -66,6 +66,8 @@ $(function() {
 <div class="title">PricingEngine Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_pricing_engine_8h_source.html">PricingEngine.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for PricingEngine:</div>
 <div class="dyncontent">
@@ -95,16 +97,123 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a733511ffc3cf5e4dc1fbc2a39208d8bd"><td class="memItemLeft" align="right" valign="top"><a id="a733511ffc3cf5e4dc1fbc2a39208d8bd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate</b> ()=0</td></tr>
+<tr class="memitem:abfd32778b0483e92db2e7cd00a2f9345"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pricing_engine.html#abfd32778b0483e92db2e7cd00a2f9345">PricingEngine</a> ()</td></tr>
+<tr class="separator:abfd32778b0483e92db2e7cd00a2f9345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733511ffc3cf5e4dc1fbc2a39208d8bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pricing_engine.html#a733511ffc3cf5e4dc1fbc2a39208d8bd">calculate</a> ()=0</td></tr>
 <tr class="separator:a733511ffc3cf5e4dc1fbc2a39208d8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a399f4519f58b2ac1d108ce14d0058c97"><td class="memItemLeft" align="right" valign="top"><a id="a399f4519f58b2ac1d108ce14d0058c97"></a>
-virtual <a class="el" href="class_pricing_engine_1_1_arguments.html">Arguments</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getArguments</b> () const =0</td></tr>
+<tr class="memitem:a399f4519f58b2ac1d108ce14d0058c97"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_pricing_engine_1_1_arguments.html">Arguments</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pricing_engine.html#a399f4519f58b2ac1d108ce14d0058c97">getArguments</a> () const =0</td></tr>
 <tr class="separator:a399f4519f58b2ac1d108ce14d0058c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e2852ef4c28e92a402492e86717d0b"><td class="memItemLeft" align="right" valign="top"><a id="a73e2852ef4c28e92a402492e86717d0b"></a>
-virtual <a class="el" href="class_pricing_engine_1_1_results.html">Results</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getResults</b> () const =0</td></tr>
+<tr class="memitem:a73e2852ef4c28e92a402492e86717d0b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_pricing_engine_1_1_results.html">Results</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pricing_engine.html#a73e2852ef4c28e92a402492e86717d0b">getResults</a> () const =0</td></tr>
 <tr class="separator:a73e2852ef4c28e92a402492e86717d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="abfd32778b0483e92db2e7cd00a2f9345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfd32778b0483e92db2e7cd00a2f9345">&sect;&nbsp;</a></span>PricingEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PricingEngine::PricingEngine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a733511ffc3cf5e4dc1fbc2a39208d8bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733511ffc3cf5e4dc1fbc2a39208d8bd">&sect;&nbsp;</a></span>calculate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PricingEngine::calculate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_mc_european_engine.html#a51b2f0147fbaf2b84c65851bbc2baa7b">McEuropeanEngine&lt; UnifRng &gt;</a>, <a class="el" href="class_mc_asian_engine.html#a4e67149307de395f821c8aa07afad3b8">McAsianEngine&lt; UnifRng &gt;</a>, <a class="el" href="class_analytic_european_engine.html#adeda22c7b482779d7deaa17037195487">AnalyticEuropeanEngine</a>, and <a class="el" href="class_analytic_forward_engine.html#a12d6791a13bf727d43ffcff9cb55b094">AnalyticForwardEngine</a>.</p>
+
+</div>
+</div>
+<a id="a399f4519f58b2ac1d108ce14d0058c97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399f4519f58b2ac1d108ce14d0058c97">&sect;&nbsp;</a></span>getArguments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_pricing_engine_1_1_arguments.html">Arguments</a>* PricingEngine::getArguments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_generic_engine.html#ac2adcbbc8d7b554e2cc1f90e4c4d055d">GenericEngine&lt; ArgumentsType, ResultsType &gt;</a>, <a class="el" href="class_generic_engine.html#ac2adcbbc8d7b554e2cc1f90e4c4d055d">GenericEngine&lt; EuropeanOption::Arguments, EuropeanOption::Results &gt;</a>, <a class="el" href="class_generic_engine.html#ac2adcbbc8d7b554e2cc1f90e4c4d055d">GenericEngine&lt; AsianOption::Arguments, AsianOption::Results &gt;</a>, and <a class="el" href="class_generic_engine.html#ac2adcbbc8d7b554e2cc1f90e4c4d055d">GenericEngine&lt; Forward::Arguments, Forward::Results &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a73e2852ef4c28e92a402492e86717d0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e2852ef4c28e92a402492e86717d0b">&sect;&nbsp;</a></span>getResults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_pricing_engine_1_1_results.html">Results</a>* PricingEngine::getResults </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_generic_engine.html#a2b8d7fba7e51c0795ea9f1e9c2f54afd">GenericEngine&lt; ArgumentsType, ResultsType &gt;</a>, <a class="el" href="class_generic_engine.html#a2b8d7fba7e51c0795ea9f1e9c2f54afd">GenericEngine&lt; EuropeanOption::Arguments, EuropeanOption::Results &gt;</a>, <a class="el" href="class_generic_engine.html#a2b8d7fba7e51c0795ea9f1e9c2f54afd">GenericEngine&lt; AsianOption::Arguments, AsianOption::Results &gt;</a>, and <a class="el" href="class_generic_engine.html#a2b8d7fba7e51c0795ea9f1e9c2f54afd">GenericEngine&lt; Forward::Arguments, Forward::Results &gt;</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Users/CUI/Dropbox/C++/Finance/<a class="el" href="_pricing_engine_8h_source.html">PricingEngine.h</a></li>
 </ul>

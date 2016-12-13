@@ -1,5 +1,9 @@
 \hypertarget{class_model1_d}{}\section{Model1D Class Reference}
 \label{class_model1_d}\index{Model1D@{Model1D}}
+
+
+{\ttfamily \#include $<$Model.\+h$>$}
+
 Inheritance diagram for Model1D\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,29 +13,80 @@ Inheritance diagram for Model1D\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_model1_d_aca6508f11a4b419dacdc830afbe0af36}{}\label{class_model1_d_aca6508f11a4b419dacdc830afbe0af36} 
-{\bfseries Model1D} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \&process)
+\hyperlink{class_model1_d_aca6508f11a4b419dacdc830afbe0af36}{Model1D} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \&process)
 \item 
-\hypertarget{class_model1_d_ae3cdfcb2922f03a68b8e8e02d572746f}{}\label{class_model1_d_ae3cdfcb2922f03a68b8e8e02d572746f} 
-const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \& {\bfseries get\+Process} () const override
+const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \& \hyperlink{class_model1_d_ae3cdfcb2922f03a68b8e8e02d572746f}{get\+Process} () const override
 \item 
-\hypertarget{class_model1_d_a08b3a9f594214b5e3bcba3fe5f63524e}{}\label{class_model1_d_a08b3a9f594214b5e3bcba3fe5f63524e} 
-const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \& {\bfseries get\+Process} (int i) const override
+const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \& \hyperlink{class_model1_d_a08b3a9f594214b5e3bcba3fe5f63524e}{get\+Process} (int i) const override
 \item 
-\hypertarget{class_model1_d_ac81875523be6153cb58d0f37914eb9a1}{}\label{class_model1_d_ac81875523be6153cb58d0f37914eb9a1} 
-unsigned long {\bfseries get\+Dimensionality} () const override
+unsigned long \hyperlink{class_model1_d_ac81875523be6153cb58d0f37914eb9a1}{get\+Dimensionality} () const override
 \item 
-\hypertarget{class_model1_d_af0665a1beba2852b5382d4590e9fbbce}{}\label{class_model1_d_af0665a1beba2852b5382d4590e9fbbce} 
-void {\bfseries set\+Model} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \&process)
+void \hyperlink{class_model1_d_af0665a1beba2852b5382d4590e9fbbce}{set\+Model} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \&process)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_model1_d_ad646c53c0c7d97d7699ccf4d77e22bf2}{}\label{class_model1_d_ad646c53c0c7d97d7699ccf4d77e22bf2} 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ {\bfseries process\+\_\+}
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \hyperlink{class_model1_d_ad646c53c0c7d97d7699ccf4d77e22bf2}{process\+\_\+}
 \end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_model1_d_aca6508f11a4b419dacdc830afbe0af36}{}\label{class_model1_d_aca6508f11a4b419dacdc830afbe0af36} 
+\index{Model1D@{Model1D}!Model1D@{Model1D}}
+\index{Model1D@{Model1D}!Model1D@{Model1D}}
+\subsubsection{\texorpdfstring{Model1\+D()}{Model1D()}}
+{\footnotesize\ttfamily Model1\+D\+::\+Model1D (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \&}]{process }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_model1_d_ac81875523be6153cb58d0f37914eb9a1}{}\label{class_model1_d_ac81875523be6153cb58d0f37914eb9a1} 
+\index{Model1D@{Model1D}!get\+Dimensionality@{get\+Dimensionality}}
+\index{get\+Dimensionality@{get\+Dimensionality}!Model1D@{Model1D}}
+\subsubsection{\texorpdfstring{get\+Dimensionality()}{getDimensionality()}}
+{\footnotesize\ttfamily unsigned long Model1\+D\+::get\+Dimensionality (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_model_acbe41cf30367bce4b96e92812d644f2d}{Model}.
+
+\hypertarget{class_model1_d_ae3cdfcb2922f03a68b8e8e02d572746f}{}\label{class_model1_d_ae3cdfcb2922f03a68b8e8e02d572746f} 
+\index{Model1D@{Model1D}!get\+Process@{get\+Process}}
+\index{get\+Process@{get\+Process}!Model1D@{Model1D}}
+\subsubsection{\texorpdfstring{get\+Process()}{getProcess()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$\hyperlink{class_stochastic_process}{Stochastic\+Process}$>$\& Model1\+D\+::get\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_model_adc6a695d3f6b2def79f2dde69b3ab547}{Model}.
+
+\hypertarget{class_model1_d_a08b3a9f594214b5e3bcba3fe5f63524e}{}\label{class_model1_d_a08b3a9f594214b5e3bcba3fe5f63524e} 
+\index{Model1D@{Model1D}!get\+Process@{get\+Process}}
+\index{get\+Process@{get\+Process}!Model1D@{Model1D}}
+\subsubsection{\texorpdfstring{get\+Process()}{getProcess()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$\hyperlink{class_stochastic_process}{Stochastic\+Process}$>$\& Model1\+D\+::get\+Process (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_model_a23adaaf21b2955a1f4d4893ad9b77f02}{Model}.
+
+\hypertarget{class_model1_d_af0665a1beba2852b5382d4590e9fbbce}{}\label{class_model1_d_af0665a1beba2852b5382d4590e9fbbce} 
+\index{Model1D@{Model1D}!set\+Model@{set\+Model}}
+\index{set\+Model@{set\+Model}!Model1D@{Model1D}}
+\subsubsection{\texorpdfstring{set\+Model()}{setModel()}}
+{\footnotesize\ttfamily void Model1\+D\+::set\+Model (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \&}]{process }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_model1_d_ad646c53c0c7d97d7699ccf4d77e22bf2}{}\label{class_model1_d_ad646c53c0c7d97d7699ccf4d77e22bf2} 
+\index{Model1D@{Model1D}!process\+\_\+@{process\+\_\+}}
+\index{process\+\_\+@{process\+\_\+}!Model1D@{Model1D}}
+\subsubsection{\texorpdfstring{process\+\_\+}{process\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_stochastic_process}{Stochastic\+Process}$>$ Model1\+D\+::process\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/Model.\+h\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\hyperlink{_model_8h}{Model.\+h}\end{DoxyCompactItemize}

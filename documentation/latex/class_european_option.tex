@@ -1,5 +1,9 @@
 \hypertarget{class_european_option}{}\section{European\+Option Class Reference}
 \label{class_european_option}\index{European\+Option@{European\+Option}}
+
+
+{\ttfamily \#include $<$European\+Option.\+h$>$}
+
 Inheritance diagram for European\+Option\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -18,19 +22,78 @@ class \hyperlink{class_european_option_1_1_results}{Results}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_european_option_a92132b61922cb628bc355d4d9f302513}{}\label{class_european_option_a92132b61922cb628bc355d4d9f302513} 
-{\bfseries European\+Option} (Time maturity, std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ payoff)
+\hyperlink{class_european_option_a92132b61922cb628bc355d4d9f302513}{European\+Option} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} maturity, std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ payoff)
 \item 
-\hypertarget{class_european_option_a94c1826feba0099400bce8dd6fc01cb9}{}\label{class_european_option_a94c1826feba0099400bce8dd6fc01cb9} 
-void {\bfseries setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$arg) const override
+void \hyperlink{class_european_option_a94c1826feba0099400bce8dd6fc01cb9}{setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$arg) const override
 \item 
-\hypertarget{class_european_option_ae234d562ef21dc24c25f1538860da1cf}{}\label{class_european_option_ae234d562ef21dc24c25f1538860da1cf} 
-Money {\bfseries fetch\+Results} (\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const res) override
+\hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_european_option_ae234d562ef21dc24c25f1538860da1cf}{fetch\+Results} (\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const res) override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ \hyperlink{class_european_option_a3d597cb0b811f69a08e49b1af13b5a04}{payoff\+\_\+}
+\item 
+\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} \hyperlink{class_european_option_a8853b9bd1af9abc371630ae1c68f304c}{maturity\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_european_option_1_1_results}{Results} $>$ \hyperlink{class_european_option_a228f13a5ce4c46caef1e3052b4a27610}{results\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_european_option_a92132b61922cb628bc355d4d9f302513}{}\label{class_european_option_a92132b61922cb628bc355d4d9f302513} 
+\index{European\+Option@{European\+Option}!European\+Option@{European\+Option}}
+\index{European\+Option@{European\+Option}!European\+Option@{European\+Option}}
+\subsubsection{\texorpdfstring{European\+Option()}{EuropeanOption()}}
+{\footnotesize\ttfamily European\+Option\+::\+European\+Option (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{maturity,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$}]{payoff }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_european_option_ae234d562ef21dc24c25f1538860da1cf}{}\label{class_european_option_ae234d562ef21dc24c25f1538860da1cf} 
+\index{European\+Option@{European\+Option}!fetch\+Results@{fetch\+Results}}
+\index{fetch\+Results@{fetch\+Results}!European\+Option@{European\+Option}}
+\subsubsection{\texorpdfstring{fetch\+Results()}{fetchResults()}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} European\+Option\+::fetch\+Results (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_instrument_a381f093402f789ad7c0ffecd233167dc}{Instrument}.
+
+\hypertarget{class_european_option_a94c1826feba0099400bce8dd6fc01cb9}{}\label{class_european_option_a94c1826feba0099400bce8dd6fc01cb9} 
+\index{European\+Option@{European\+Option}!setup\+Arguments@{setup\+Arguments}}
+\index{setup\+Arguments@{setup\+Arguments}!European\+Option@{European\+Option}}
+\subsubsection{\texorpdfstring{setup\+Arguments()}{setupArguments()}}
+{\footnotesize\ttfamily void European\+Option\+::setup\+Arguments (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$}]{arg }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67}{Instrument}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_european_option_a8853b9bd1af9abc371630ae1c68f304c}{}\label{class_european_option_a8853b9bd1af9abc371630ae1c68f304c} 
+\index{European\+Option@{European\+Option}!maturity\+\_\+@{maturity\+\_\+}}
+\index{maturity\+\_\+@{maturity\+\_\+}!European\+Option@{European\+Option}}
+\subsubsection{\texorpdfstring{maturity\+\_\+}{maturity\_}}
+{\footnotesize\ttfamily \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} European\+Option\+::maturity\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_european_option_a3d597cb0b811f69a08e49b1af13b5a04}{}\label{class_european_option_a3d597cb0b811f69a08e49b1af13b5a04} 
+\index{European\+Option@{European\+Option}!payoff\+\_\+@{payoff\+\_\+}}
+\index{payoff\+\_\+@{payoff\+\_\+}!European\+Option@{European\+Option}}
+\subsubsection{\texorpdfstring{payoff\+\_\+}{payoff\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_payoff}{Payoff}$>$ European\+Option\+::payoff\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_european_option_a228f13a5ce4c46caef1e3052b4a27610}{}\label{class_european_option_a228f13a5ce4c46caef1e3052b4a27610} 
+\index{European\+Option@{European\+Option}!results\+\_\+@{results\+\_\+}}
+\index{results\+\_\+@{results\+\_\+}!European\+Option@{European\+Option}}
+\subsubsection{\texorpdfstring{results\+\_\+}{results\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_european_option_1_1_results}{Results}$>$ European\+Option\+::results\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Instruments/European\+Option.\+h\item 
-Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Instruments/European\+Option.\+cpp\end{DoxyCompactItemize}
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Instruments/\hyperlink{_european_option_8h}{European\+Option.\+h}\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Instruments/\hyperlink{_european_option_8cpp}{European\+Option.\+cpp}\end{DoxyCompactItemize}
