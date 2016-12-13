@@ -1,0 +1,50 @@
+\hypertarget{class_asian_option}{}\section{Asian\+Option Class Reference}
+\label{class_asian_option}\index{Asian\+Option@{Asian\+Option}}
+Inheritance diagram for Asian\+Option\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_asian_option}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_asian_option_1_1_arguments}{Arguments}
+\item 
+class \hyperlink{class_asian_option_1_1engine}{engine}
+\item 
+class \hyperlink{class_asian_option_1_1_results}{Results}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_asian_option_add7292791bf85820ff9fdbfd4407f3b9}{}\label{class_asian_option_add7292791bf85820ff9fdbfd4407f3b9} 
+enum {\bfseries Average\+Type} \{ {\bfseries arithmetic} = 0, 
+{\bfseries geometric} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_asian_option_aa4020dfa8edd8d1e8f2756b633b3828b}{}\label{class_asian_option_aa4020dfa8edd8d1e8f2756b633b3828b} 
+{\bfseries Asian\+Option} (Time maturity, std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ payoff, std\+::vector$<$ Time $>$ \&monitored\+Times, Average\+Type average\+Type, bool is\+Discretely\+Monitored=1)
+\item 
+\hypertarget{class_asian_option_a055f90a9d85eac93bac28cc9901489af}{}\label{class_asian_option_a055f90a9d85eac93bac28cc9901489af} 
+{\bfseries Asian\+Option} (Time maturity, std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ payoff, Time time\+Step, Average\+Type average\+Type, bool is\+Discretely\+Monitored=1)
+\item 
+\hypertarget{class_asian_option_af6dc588a9183209493caf9eb7eb5e572}{}\label{class_asian_option_af6dc588a9183209493caf9eb7eb5e572} 
+{\bfseries Asian\+Option} (Time maturity, std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ payoff, Average\+Type average\+Type, bool is\+Continuously\+Monitored=1)
+\item 
+\hypertarget{class_asian_option_a475cbd83529df369b371ee44f63cdd08}{}\label{class_asian_option_a475cbd83529df369b371ee44f63cdd08} 
+void {\bfseries setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$arg) const override
+\item 
+\hypertarget{class_asian_option_a99cd9956b73d99a64748c913dcccd6ea}{}\label{class_asian_option_a99cd9956b73d99a64748c913dcccd6ea} 
+Money {\bfseries fetch\+Results} (\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const res) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Instruments/Asian\+Option.\+h\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Instruments/Asian\+Option.\+cpp\end{DoxyCompactItemize}

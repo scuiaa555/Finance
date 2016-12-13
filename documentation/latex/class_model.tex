@@ -1,0 +1,37 @@
+\hypertarget{class_model}{}\section{Model Class Reference}
+\label{class_model}\index{Model@{Model}}
+Inheritance diagram for Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_model}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_model_a087d56280bb51e8b04be3a9a30d06c76}{}\label{class_model_a087d56280bb51e8b04be3a9a30d06c76} 
+virtual std\+::vector$<$ Quote $>$ {\bfseries evolve} (Time t0, std\+::vector$<$ Quote $>$ \&x0, Time dt, double dw) const =0
+\item 
+\hypertarget{class_model_adc6a695d3f6b2def79f2dde69b3ab547}{}\label{class_model_adc6a695d3f6b2def79f2dde69b3ab547} 
+virtual const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \& {\bfseries get\+Process} () const =0
+\item 
+\hypertarget{class_model_a23adaaf21b2955a1f4d4893ad9b77f02}{}\label{class_model_a23adaaf21b2955a1f4d4893ad9b77f02} 
+virtual const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \& {\bfseries get\+Process} (int i) const =0
+\item 
+\hypertarget{class_model_acbe41cf30367bce4b96e92812d644f2d}{}\label{class_model_acbe41cf30367bce4b96e92812d644f2d} 
+virtual unsigned long {\bfseries get\+Dimensionality} () const =0
+\item 
+\hypertarget{class_model_ade5d08aae4d32777bfa048f356bbcca9}{}\label{class_model_ade5d08aae4d32777bfa048f356bbcca9} 
+const std\+::vector$<$ Quote $>$ \& {\bfseries get\+Initial} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_model_aea7cb62b50849b8c9beef1493435241e}{}\label{class_model_aea7cb62b50849b8c9beef1493435241e} 
+std\+::vector$<$ Quote $>$ {\bfseries x0\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/Model.\+h\end{DoxyCompactItemize}

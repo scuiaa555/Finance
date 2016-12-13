@@ -20,7 +20,7 @@ public:
 
 
 private:
-    virtual std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1>>> pathGenerator() = 0;
+    virtual std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> > > pathGenerator() = 0;
 
     virtual std::shared_ptr<PathPricer> pathPricer() = 0;
 

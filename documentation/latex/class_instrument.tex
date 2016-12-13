@@ -1,0 +1,35 @@
+\hypertarget{class_instrument}{}\section{Instrument Class Reference}
+\label{class_instrument}\index{Instrument@{Instrument}}
+Inheritance diagram for Instrument\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_instrument}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_instrument_a47bdaa9390ab5e0616e8499a507c50cd}{}\label{class_instrument_a47bdaa9390ab5e0616e8499a507c50cd} 
+void {\bfseries set\+Pricing\+Engine} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_pricing_engine}{Pricing\+Engine} $>$ pricing\+Engine)
+\item 
+\hypertarget{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{}\label{class_instrument_aa750f2ae95a21d65a073da3171e8d084} 
+Money {\bfseries npv} ()
+\item 
+\hypertarget{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67}{}\label{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67} 
+virtual void {\bfseries setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$arg) const =0
+\item 
+\hypertarget{class_instrument_a381f093402f789ad7c0ffecd233167dc}{}\label{class_instrument_a381f093402f789ad7c0ffecd233167dc} 
+virtual Money {\bfseries fetch\+Results} (\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const res)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_instrument_a6fdd5548ccc944536ff73913d98bf598}{}\label{class_instrument_a6fdd5548ccc944536ff73913d98bf598} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_pricing_engine}{Pricing\+Engine} $>$ {\bfseries pricing\+Engine\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/Instrument.\+h\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/Instrument.\+cpp\end{DoxyCompactItemize}

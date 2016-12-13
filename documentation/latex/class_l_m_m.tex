@@ -1,0 +1,59 @@
+\hypertarget{class_l_m_m}{}\section{L\+MM Class Reference}
+\label{class_l_m_m}\index{L\+MM@{L\+MM}}
+
+
+Standard \hyperlink{class_l_m_m}{L\+MM} model.  
+
+
+
+
+{\ttfamily \#include $<$L\+M\+M.\+h$>$}
+
+Inheritance diagram for L\+MM\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_l_m_m}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_l_m_m_aabe5f5723727412de2e34c4d1bf4f3b8}{L\+MM} (unsigned long dimensional, const std\+::vector$<$ Quote $>$ \&initial, unsigned long dim\+Vol, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ $>$ \&params, Time tenor)
+\item 
+\hypertarget{class_l_m_m_a8dfdd340048e482a8059f473b5aacfd1}{}\label{class_l_m_m_a8dfdd340048e482a8059f473b5aacfd1} 
+std\+::vector$<$ Quote $>$ {\bfseries evolve} (Time t0, std\+::vector$<$ Quote $>$ \&x0, Time dt, double dw) const override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Standard \hyperlink{class_l_m_m}{L\+MM} model. 
+
+This is the most standard Libor market model before financial crisis. The log-\/normal processes without stochastic multipliers are imposed in the dynamics of the \hyperlink{class_l_m_m}{L\+MM} model. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_l_m_m_aabe5f5723727412de2e34c4d1bf4f3b8}{}\label{class_l_m_m_aabe5f5723727412de2e34c4d1bf4f3b8} 
+\index{L\+MM@{L\+MM}!L\+MM@{L\+MM}}
+\index{L\+MM@{L\+MM}!L\+MM@{L\+MM}}
+\subsubsection{\texorpdfstring{L\+M\+M()}{LMM()}}
+{\footnotesize\ttfamily L\+M\+M\+::\+L\+MM (\begin{DoxyParamCaption}\item[{unsigned long}]{dimensional,  }\item[{const std\+::vector$<$ Quote $>$ \&}]{initial,  }\item[{unsigned long}]{dim\+Vol,  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ $>$ \&}]{params,  }\item[{Time}]{tenor }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimensional} & number of (riskfree) forward rates \\
+\hline
+{\em initial} & initial value at time 0 \\
+\hline
+{\em dim\+Vol} & volatility dimension of each dynamic \\
+\hline
+{\em paras} & vector of needed parameters structure \\
+\hline
+{\em tenor} & tenor of forward rates, e.\+g. 1M(1/12), 3M(1/4), 6M(1/2), 12M(1) \\
+\hline
+\end{DoxyParams}
+no check for the input 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Models/L\+M\+M.\+h\item 
+Users/\+C\+U\+I/\+Dropbox/\+C++/\+Finance/\+Models/L\+M\+M.\+cpp\end{DoxyCompactItemize}

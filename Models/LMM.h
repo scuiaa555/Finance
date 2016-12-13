@@ -22,7 +22,7 @@ public:
      * @param dimension: number of (riskfree) forward rates
      * @param initial: initial value at time 0
      * @param dimVol: volatility dimension of each dynamic
-     * @param paras: vector of needed parameters structure
+     * @param params: vector of needed parameters structure
      * @param tenor: tenor of forward rates, e.g. 1M(1/12), 3M(1/4), 6M(1/2), 12M(1)
      */
     LMM(unsigned long dimension, const std::vector<Quote> &initial, unsigned long dimVol,
