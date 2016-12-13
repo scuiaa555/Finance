@@ -2,6 +2,7 @@
 Financial Engineering
 
 This repo is for my own practise using C++.
+The documentation file can be found in the folder "documentation".
 
 Instruction to link Quantlib with Xcode projects: 1. Target Project-> Build Settings-> Search Paths-> Header Search Paths-> /opt/local/include 2. Target Project-> Build Settings-> Search Paths-> Library Search Paths-> /opt/local/lib 3. Target Project-> Build Phases-> Link Binary With Library-> + -> libQuantLib.0.dylib (path:"/opt/local/lib") 4. Target Project-> Build Settings-> Apple LLVM 7.1-Language- C++-> C++ Language Dialect -> GNU++98[-std=gnu++98]
 
