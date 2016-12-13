@@ -7,7 +7,7 @@
 
 #include "McFramework/McModel.h"
 
-/* any Monte Carlo pricing engine derives from this MsSimulation */
+/* any Monte Carlo pricing engine privately derives from this MsSimulation */
 class McSimulation {
 public:
 //    McSimulation(bool isAntithetic = 0);

@@ -7,8 +7,9 @@
 
 LMM::LMM(unsigned long dimensional, const std::vector<Quote> &initial, unsigned long dimVol,
          const std::vector<std::shared_ptr<Parameter> > &params, Time tenor):tenor_(tenor) {
-    /*!!! no check for the input */
-    dimensional_ = dimensional;
+    /*!
+     * no check for the input */
+    dimension_ = dimensional;
     processes_.resize(dimensional);
 //    for (std::vector<std::shared_ptr<StochasticProcess> >::iterator iter = processes_.begin(); iter !=
     std::vector<std::shared_ptr<Parameter> >::const_iterator iter = params.begin();

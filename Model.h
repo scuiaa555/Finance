@@ -66,11 +66,11 @@ public:
         return processes_[i];
     }
 
-    unsigned long getDimensionality() const override { return dimensional_; }
+    unsigned long getDimensionality() const override { return dimension_; }
 
 protected:
     std::vector<std::shared_ptr<StochasticProcess> > processes_;
-    unsigned long dimensional_; /* number of 1D-processes */
+    unsigned long dimension_; /* number of 1D-processes */
 };
 
 
