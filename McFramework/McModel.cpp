@@ -4,9 +4,13 @@
 
 #include "McModel.h"
 
-McModel::McModel(const std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> > > &pathGenerator,
-                 const std::shared_ptr<PathPricer> pathPricer)
-        : pathGenerator_(pathGenerator), pathPricer_(pathPricer) {
+McModel::McModel(
+        const std::shared_ptr<PathGenerator<SingleRandom<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> >>> &pathGenerator,
+        const std::shared_ptr<PathPricer> pathPricer
+)
+        :
+
+        pathGenerator_(pathGenerator), pathPricer_(pathPricer), sampleAccumulator_() {
 }
 
 void McModel::addSamples(unsigned long numSamples) {

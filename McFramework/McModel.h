@@ -8,10 +8,11 @@
 #include "PathGenerator.h"
 #include "PathPricer.h"
 #include "Statistics.h"
+#include "RandNumGeneration/PseudoRandom.h"
 
 class McModel {
 public:
-    McModel(const std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> > > &pathGenerator,
+    McModel(const std::shared_ptr<PathGenerator<SingleRandom<NormalMarsagliaBrayRng<UniformLEcuyerRNG1>>> > &pathGenerator,
             const std::shared_ptr<PathPricer> pathPricer);
 
     void addSamples(unsigned long numSamples);
@@ -19,7 +20,7 @@ public:
     const MCStatistics &getStatistics() const;
 
 private:
-    std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> > > pathGenerator_;
+    std::shared_ptr<PathGenerator<SingleRandom<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> >>> pathGenerator_;
     std::shared_ptr<PathPricer> pathPricer_;
     MCStatistics sampleAccumulator_;
 

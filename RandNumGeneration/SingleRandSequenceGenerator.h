@@ -18,6 +18,8 @@ public:
 
     virtual unsigned long getDimension() const = 0;
 
+    virtual void setDimension(unsigned long dimension) = 0;
+
     virtual ~RNGComponent() { }
 };
 
@@ -25,7 +27,11 @@ public:
 template<typename RNG>
 class SingleRandSequenceGenerator : public RNGComponent {
 public:
+    SingleRandSequenceGenerator() = default;
+
     SingleRandSequenceGenerator(vector<double>::size_type dimension);
+
+    void setDimension(unsigned long dimension) override;
 
     const vector<double> &next() override;
 
@@ -52,6 +58,11 @@ const vector<double> &SingleRandSequenceGenerator<RNG>::next() {
         sequence_[i] = rng_.next();
     }
     return sequence_;
+}
+
+template<typename RNG>
+void SingleRandSequenceGenerator<RNG>::setDimension(unsigned long dimension) {
+    dimension_ = dimension;
 }
 
 #endif //FINANCE_RANDOMSEQUENCEGENERATOR_H

@@ -8,11 +8,13 @@
 #include "RandNumGeneration/NormalMarsagliaBrayRng.h"
 #include "McFramework/Path.h"
 #include "Model.h"
+#include "RandNumGeneration/MultiRandGenerator.h"
 
 template<typename RNG>
 class PathGenerator {
 public:
     typedef typename RNG::rng_return_type return_type;
+    typedef typename RNG::rng_type rng_type;
 
     PathGenerator(const std::shared_ptr<Model> model, const vector<Time> &timeGrid,
                   bool isAntithetic = 0);
@@ -20,7 +22,7 @@ public:
     Path &next();
 
 private:
-    RNG rng_;
+    rng_type rng_;
     std::shared_ptr<Model> model_;
     /* the generator does not know the exact type of its path */
     std::shared_ptr<Path> next_;
@@ -84,10 +86,17 @@ Path &PathGenerator<RNG>::next() {
 template<typename RNG>
 void PathGenerator<RNG>::setRNG() {
     vector<int> dimOfEachGenerator = model_->getMCdimension();
-    if (dimOfEachGenerator.size() == 1) return;
-    for (int i = 0; i < dimOfEachGenerator.size(); ++i) {
-        
+    if (dimOfEachGenerator.size() == 1) {
+        if (dimOfEachGenerator[0] == 1) return;
     }
+    if (dimOfEachGenerator.size() > 1) {
+        vector<shared_ptr<RNGComponent>>::iterator iter = rng_.getRsgs().begin();
+        for (int i = 0; i < dimOfEachGenerator.size(); ++i) {
+            (*iter)->setDimension(dimOfEachGenerator[i]);
+            ++iter;
+        }
+    }
+
 }
 
 
