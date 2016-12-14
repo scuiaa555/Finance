@@ -153,6 +153,9 @@ $(function() {
 : <a class="el" href="class_generic_engine.html#ac2adcbbc8d7b554e2cc1f90e4c4d055d">GenericEngine&lt; ArgumentsType, ResultsType &gt;</a>
 , <a class="el" href="class_pricing_engine.html#a399f4519f58b2ac1d108ce14d0058c97">PricingEngine</a>
 </li>
+<li>getDimension()
+: <a class="el" href="class_single_rand_sequence_generator.html#a36364446f579ca7e97b6e832eae5a4ad">SingleRandSequenceGenerator&lt; RNG &gt;</a>
+</li>
 <li>getDimensionality()
 : <a class="el" href="class_model1_d.html#ac81875523be6153cb58d0f37914eb9a1">Model1D</a>
 , <a class="el" href="class_model.html#acbe41cf30367bce4b96e92812d644f2d">Model</a>
@@ -169,8 +172,8 @@ $(function() {
 , <a class="el" href="class_vanilla_payoff.html#aa141f5b29c30d54448c93a21bef83bb3">VanillaPayoff</a>
 </li>
 <li>getProcess()
-: <a class="el" href="class_model1_d.html#a08b3a9f594214b5e3bcba3fe5f63524e">Model1D</a>
-, <a class="el" href="class_model.html#a23adaaf21b2955a1f4d4893ad9b77f02">Model</a>
+: <a class="el" href="class_model1_d.html#ae3cdfcb2922f03a68b8e8e02d572746f">Model1D</a>
+, <a class="el" href="class_model.html#adc6a695d3f6b2def79f2dde69b3ab547">Model</a>
 , <a class="el" href="class_model_n_d.html#a98976fe73a8895ff98ba60ea174232f8">ModelND</a>
 </li>
 <li>getResults()
@@ -200,7 +203,7 @@ $(function() {
 </li>
 <li>getValues()
 : <a class="el" href="class_antithetic_path.html#a631294808de3c75c98563f292464a7da">AntitheticPath</a>
-, <a class="el" href="class_path.html#a6d3469e98b5da124b51ca8a9cc2caa28">Path</a>
+, <a class="el" href="class_path.html#aeeb21dd5019a717cc8a36ddb0f82f427">Path</a>
 </li>
 <li>getVolatility()
 : <a class="el" href="class_b_s_stochastic_process.html#ab63f363e94441ed0ee22ef10beea16a6">BSStochasticProcess</a>
@@ -217,7 +220,10 @@ $(function() {
 
 <h3><a id="index_l"></a>- l -</h3><ul>
 <li>last()
-: <a class="el" href="class_uniform_l_ecuyer_r_n_g1.html#aaed8bab7d34f76064ca34b1d35b204f4">UniformLEcuyerRNG1</a>
+: <a class="el" href="class_multi_rand_generator.html#adabfa1110e265eb168bef1bc1b9a5963">MultiRandGenerator</a>
+, <a class="el" href="class_normal_marsaglia_bray_rng.html#af90ac458fcbf302dfad98816132658c2">NormalMarsagliaBrayRng&lt; UniformRNG &gt;</a>
+, <a class="el" href="class_single_rand_sequence_generator.html#a55a7be74efb71301267ff5aaff8349a9">SingleRandSequenceGenerator&lt; RNG &gt;</a>
+, <a class="el" href="class_uniform_l_ecuyer_r_n_g1.html#aaed8bab7d34f76064ca34b1d35b204f4">UniformLEcuyerRNG1</a>
 </li>
 <li>LMM()
 : <a class="el" href="class_l_m_m.html#a4de26d3647b221d5d16667a402edfef2">LMM</a>
@@ -247,17 +253,19 @@ $(function() {
 <li>Model1D()
 : <a class="el" href="class_model1_d.html#aca6508f11a4b419dacdc830afbe0af36">Model1D</a>
 </li>
+<li>MultiRandGenerator()
+: <a class="el" href="class_multi_rand_generator.html#a6bcce2e4f7c85583cdb07d22ced57a4f">MultiRandGenerator</a>
+</li>
 </ul>
 
 
 <h3><a id="index_n"></a>- n -</h3><ul>
 <li>next()
-: <a class="el" href="class_normal_marsaglia_bray_rng.html#a2cc54f5f331a5bd71eedc67c84db7279">NormalMarsagliaBrayRng&lt; UniformRNG &gt;</a>
+: <a class="el" href="class_multi_rand_generator.html#a1e707c762c20b81d5ffbce9d3aceaf45">MultiRandGenerator</a>
+, <a class="el" href="class_normal_marsaglia_bray_rng.html#a2cc54f5f331a5bd71eedc67c84db7279">NormalMarsagliaBrayRng&lt; UniformRNG &gt;</a>
 , <a class="el" href="class_path_generator.html#a848a4f432d86df5b03d835d99472ab37">PathGenerator&lt; RNG &gt;</a>
+, <a class="el" href="class_single_rand_sequence_generator.html#abb6b9fa64903d30cea5c1e03e0b1ca58">SingleRandSequenceGenerator&lt; RNG &gt;</a>
 , <a class="el" href="class_uniform_l_ecuyer_r_n_g1.html#a6a166e0bef412d4c85565ec0017ae489">UniformLEcuyerRNG1</a>
-</li>
-<li>nextSequence()
-: <a class="el" href="class_random_sequence_generator.html#a63f2d6fdb7f7bab6cdf3506f91cc814c">RandomSequenceGenerator&lt; RNG &gt;</a>
 </li>
 <li>NormalMarsagliaBrayRng()
 : <a class="el" href="class_normal_marsaglia_bray_rng.html#a4d225dedc26e6dcf154a2902827b2ede">NormalMarsagliaBrayRng&lt; UniformRNG &gt;</a>
@@ -318,9 +326,6 @@ $(function() {
 
 
 <h3><a id="index_r"></a>- r -</h3><ul>
-<li>RandomSequenceGenerator()
-: <a class="el" href="class_random_sequence_generator.html#a148644138c29dae6ebe57657c8ca2cce">RandomSequenceGenerator&lt; RNG &gt;</a>
-</li>
 <li>Results()
 : <a class="el" href="class_pricing_engine_1_1_results.html#a2bbf5c82ee43b77905a06659f26f3bf0">PricingEngine::Results</a>
 </li>
@@ -351,6 +356,9 @@ $(function() {
 , <a class="el" href="class_european_option.html#a94c1826feba0099400bce8dd6fc01cb9">EuropeanOption</a>
 , <a class="el" href="class_forward.html#ad6208ba4ee03c396e611c142be735b26">Forward</a>
 , <a class="el" href="class_instrument.html#ac0f78fd32a360abde0c31b5bc01c7e67">Instrument</a>
+</li>
+<li>SingleRandSequenceGenerator()
+: <a class="el" href="class_single_rand_sequence_generator.html#a978b64047fcb9ecedaee6b53faf08bf1">SingleRandSequenceGenerator&lt; RNG &gt;</a>
 </li>
 <li>size()
 : <a class="el" href="class_parameter.html#ae1ca6e3ab5f2d2ed3bffbdee6e941068">Parameter</a>

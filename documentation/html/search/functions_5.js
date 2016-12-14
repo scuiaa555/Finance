@@ -3,6 +3,7 @@ var searchData=
   ['genericengine',['GenericEngine',['../class_generic_engine.html#a080b4df876712b5529b4a19ec3b0c48f',1,'GenericEngine']]],
   ['getantitheticvalues',['getAntitheticValues',['../class_path.html#ae6097f4761ac45d2d3656c35f09563f0',1,'Path::getAntitheticValues()'],['../class_path.html#aadadd7f7ad38c779e36f3ef2805f30e9',1,'Path::getAntitheticValues() const'],['../class_antithetic_path.html#a7f94c2a66c0d16ebedba930fbca9d859',1,'AntitheticPath::getAntitheticValues() override'],['../class_antithetic_path.html#a7b6c87162d9c4642dda68b4f9af5f653',1,'AntitheticPath::getAntitheticValues() const override']]],
   ['getarguments',['getArguments',['../class_pricing_engine.html#a399f4519f58b2ac1d108ce14d0058c97',1,'PricingEngine::getArguments()'],['../class_generic_engine.html#ac2adcbbc8d7b554e2cc1f90e4c4d055d',1,'GenericEngine::getArguments()']]],
+  ['getdimension',['getDimension',['../class_single_rand_sequence_generator.html#a36364446f579ca7e97b6e832eae5a4ad',1,'SingleRandSequenceGenerator']]],
   ['getdimensionality',['getDimensionality',['../class_model.html#acbe41cf30367bce4b96e92812d644f2d',1,'Model::getDimensionality()'],['../class_model1_d.html#ac81875523be6153cb58d0f37914eb9a1',1,'Model1D::getDimensionality()'],['../class_model_n_d.html#ab2356536a38f4961257654de629d6093',1,'ModelND::getDimensionality()']]],
   ['getdividend',['getDividend',['../class_b_s_stochastic_process.html#a42caffac3e61f92af6849b86df0d9b6b',1,'BSStochasticProcess']]],
   ['getinitial',['getInitial',['../class_model.html#ade5d08aae4d32777bfa048f356bbcca9',1,'Model']]],

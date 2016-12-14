@@ -12,7 +12,9 @@
 template<typename RNG>
 class PathGenerator {
 public:
-    PathGenerator(const std::shared_ptr<Model> model, const vector<Time> &timeGrid, RNG rng,
+    typedef typename RNG::rng_return_type return_type;
+
+    PathGenerator(const std::shared_ptr<Model> model, const vector<Time> &timeGrid,
                   bool isAntithetic = 0);
 
     Path &next();
@@ -23,12 +25,15 @@ private:
     /* the generator does not know the exact type of its path */
     std::shared_ptr<Path> next_;
     bool isAntithetic_;
+
+    void setRNG();
 };
 
 template<typename RNG>
-PathGenerator<RNG>::PathGenerator(const std::shared_ptr<Model> model, const vector<Time> &timeGrid, RNG rng,
-                                      bool isAntithetic)
-        : model_(model), rng_(rng), isAntithetic_(isAntithetic) {
+PathGenerator<RNG>::PathGenerator(const std::shared_ptr<Model> model, const vector<Time> &timeGrid,
+                                  bool isAntithetic)
+        : rng_(), model_(model), isAntithetic_(isAntithetic) {
+    setRNG();
     if (isAntithetic) {
 //        /*!!! dimension problem appeared here
 //         *!!! should be implied by process/pathPricer */
@@ -49,7 +54,7 @@ Path &PathGenerator<RNG>::next() {
              it_time != next_->getTimeGrid().end() - 1; it_time++) {
             it_value++;
             Time dt = *(it_time + 1) - *it_time;
-            double dw = rng_.next() * sqrt(dt);
+            return_type dw = rng_.next() * sqrt(dt);
             *it_value = model_->evolve(*it_time, x0, dt, dw);
             x0 = *it_value;
         }
@@ -66,7 +71,7 @@ Path &PathGenerator<RNG>::next() {
             it_value++;
             it_anti_value++;
             Time dt = *(it_time + 1) - *it_time;
-            double dw = rng_.next() * sqrt(dt);
+            return_type dw = rng_.next() * sqrt(dt);
             *it_value = model_->evolve(*it_time, x0_val, dt, dw);
             *it_anti_value = model_->evolve(*it_time, x0_antiVal, dt, -dw);
             x0_val = *it_value;
@@ -74,6 +79,15 @@ Path &PathGenerator<RNG>::next() {
         }
     }
     return *next_;
+}
+
+template<typename RNG>
+void PathGenerator<RNG>::setRNG() {
+    vector<int> dimOfEachGenerator = model_->getMCdimension();
+    if (dimOfEachGenerator.size() == 1) return;
+    for (int i = 0; i < dimOfEachGenerator.size(); ++i) {
+        
+    }
 }
 
 

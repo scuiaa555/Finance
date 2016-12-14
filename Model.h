@@ -9,6 +9,8 @@
 #include "StochasticProcess.h"
 #include <vector>
 
+using std::vector;
+
 class Model {
 public:
     /* acceptable when return a vector by value, since vector has move assignment operation */
@@ -21,6 +23,8 @@ public:
     virtual const std::shared_ptr<StochasticProcess> &getProcess() const = 0;
 
     virtual const std::shared_ptr<StochasticProcess> &getProcess(int i) const = 0;
+
+    virtual const vector<int> &getMCdimension() const = 0;
 
     virtual unsigned long getDimensionality() const = 0;
 

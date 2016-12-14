@@ -5,11 +5,13 @@
 #include "BlackScholesModel.h"
 #include <cmath>
 
-BlackScholesModel::BlackScholesModel(std::shared_ptr<BSStochasticProcess> process):Model1D(process) {
+BlackScholesModel::BlackScholesModel(std::shared_ptr<BSStochasticProcess> process) : Model1D(process) {
 //    setModel(model);
 }
 
-BlackScholesModel::BlackScholesModel(double r, double q, double sigma, double spot):Model1D(std::make_shared<BSStochasticProcess>(r, q, sigma, spot)) {
+BlackScholesModel::BlackScholesModel(double r, double q, double sigma, double spot) : Model1D(
+        std::make_shared<BSStochasticProcess>(r, q, sigma, spot)) {
+    MCdimension_.resize(1, 1);
 //    shared_ptr<BSModel> bsModel = std::make_shared<BSModel>(r, q, sigma, spot);
 //    setModel(bsModel);
 }

@@ -7,5 +7,6 @@ var searchData=
   ['setpricingengine',['setPricingEngine',['../class_instrument.html#a47bdaa9390ab5e0616e8499a507c50cd',1,'Instrument']]],
   ['setseed',['setSeed',['../class_uniform_l_ecuyer_r_n_g1.html#a33e1ea51eb633a14e84d45d8c31a4e8b',1,'UniformLEcuyerRNG1']]],
   ['setuparguments',['setupArguments',['../class_instrument.html#ac0f78fd32a360abde0c31b5bc01c7e67',1,'Instrument::setupArguments()'],['../class_asian_option.html#a475cbd83529df369b371ee44f63cdd08',1,'AsianOption::setupArguments()'],['../class_european_option.html#a94c1826feba0099400bce8dd6fc01cb9',1,'EuropeanOption::setupArguments()'],['../class_forward.html#ad6208ba4ee03c396e611c142be735b26',1,'Forward::setupArguments()']]],
+  ['singlerandsequencegenerator',['SingleRandSequenceGenerator',['../class_single_rand_sequence_generator.html#a978b64047fcb9ecedaee6b53faf08bf1',1,'SingleRandSequenceGenerator']]],
   ['size',['size',['../class_parameter.html#ae1ca6e3ab5f2d2ed3bffbdee6e941068',1,'Parameter']]]
 ];

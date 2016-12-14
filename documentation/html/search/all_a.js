@@ -27,5 +27,8 @@ var searchData=
   ['money',['Money',['../_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5',1,'NameDef.h']]],
   ['monitoredtimes_5f',['monitoredTimes_',['../class_asian_option_1_1_arguments.html#a27e013476613aec57076742ba561a722',1,'AsianOption::Arguments::monitoredTimes_()'],['../class_asian_option.html#a8cc25f4cabd8ceac95a69598481f18c8',1,'AsianOption::monitoredTimes_()']]],
   ['monitoredtimesiters_5f',['monitoredTimesIters_',['../class_asian_path_pricer.html#acad7de97a262edf4e9f0ebb5f70e81f1',1,'AsianPathPricer']]],
-  ['monitoredtimesptr_5f',['monitoredTimesPtr_',['../class_asian_path_pricer.html#aa774ae5f2659aee3a7b5e40b3089c3be',1,'AsianPathPricer']]]
+  ['monitoredtimesptr_5f',['monitoredTimesPtr_',['../class_asian_path_pricer.html#aa774ae5f2659aee3a7b5e40b3089c3be',1,'AsianPathPricer']]],
+  ['multirandgenerator',['MultiRandGenerator',['../class_multi_rand_generator.html',1,'MultiRandGenerator'],['../class_multi_rand_generator.html#a6bcce2e4f7c85583cdb07d22ced57a4f',1,'MultiRandGenerator::MultiRandGenerator()']]],
+  ['multirandgenerator_2ecpp',['MultiRandGenerator.cpp',['../_multi_rand_generator_8cpp.html',1,'']]],
+  ['multirandgenerator_2eh',['MultiRandGenerator.h',['../_multi_rand_generator_8h.html',1,'']]]
 ];

@@ -9,6 +9,7 @@
 #include "McFramework/McSimulation.h"
 #include "EuropeanPathPricer.h"
 #include <iostream>
+#include "RandNumGeneration/PseudoRandom.h"
 
 template<typename UnifRng= UniformLEcuyerRNG1>
 class McEuropeanEngine : public EuropeanOption::engine, private McSimulation {
@@ -16,7 +17,7 @@ public:
     McEuropeanEngine(const std::shared_ptr<Model> model, Time timeStep, unsigned long maxSamples,
                      unsigned long minSamples);
 
-    std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> pathGenerator() override;
+    std::shared_ptr<PathGenerator<SingleRandom<NormalMarsagliaBrayRng<UnifRng>>>> pathGenerator() override;
 
     std::shared_ptr<PathPricer> pathPricer() override;
 
@@ -37,9 +38,9 @@ McEuropeanEngine<UnifRng>::McEuropeanEngine(const std::shared_ptr<Model> model, 
         model_(model), timeStep_(timeStep), maxSamples_(maxSamples), minSamples_(minSamples) { }
 
 template<typename UnifRng>
-std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> McEuropeanEngine<UnifRng>::pathGenerator() {
-    return std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>>(
-            new PathGenerator<NormalMarsagliaBrayRng<UnifRng>>(model_, timeGrid()));
+std::shared_ptr<PathGenerator<SingleRandom<NormalMarsagliaBrayRng<UnifRng>>>> McEuropeanEngine<UnifRng>::pathGenerator() {
+    return std::shared_ptr<PathGenerator<SingleRandom<NormalMarsagliaBrayRng<UnifRng>>>>(
+            new PathGenerator<SingleRandom<NormalMarsagliaBrayRng<UnifRng>>>(model_, timeGrid()));
 }
 
 template<typename UnifRng>

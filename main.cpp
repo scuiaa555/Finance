@@ -15,21 +15,21 @@ using namespace std;
 
 int main() {
 
-    ConstantParameter ppp(5.0);
-    std::shared_ptr<Parameter> sig(new ConstantParameter(2.4));
-    std::vector<std::shared_ptr<Parameter> > sigs(4, sig);
-    LMM lmm(2, std::vector<Quote>(2, 1), 2, sigs, 0.1);
+//    ConstantParameter ppp(5.0);
+//    std::shared_ptr<Parameter> sig(new ConstantParameter(2.4));
+//    std::vector<std::shared_ptr<Parameter> > sigs(4, sig);
+//    LMM lmm(2, std::vector<Quote>(2, 1), 2, sigs, 0.1);
     boost::timer tm;
     double a, a1, a2;
     shared_ptr<Payoff> vanillaPayoff(new VanillaPayoff(95.0, "put"));
     shared_ptr<BSStochasticProcess> bsModel(new BSStochasticProcess(0.05, 0.0, 0.3, 100));
     shared_ptr<BlackScholesModel> bsProcess(new BlackScholesModel(bsModel));
-    AsianOption asian(1.0, vanillaPayoff, 0.1, AsianOption::AverageType::geometric);
-    shared_ptr<McAsianEngine<>> pricingAsianEngine(new McAsianEngine<>(bsProcess, 0.01, 20000, 1000, 1));
-    asian.setPricingEngine(pricingAsianEngine);
-    a = asian.npv();
-    double duration = tm.elapsed();
-    std::cout << "***Time elapsed in " << duration << " seconds.***" << endl;
+//    AsianOption asian(1.0, vanillaPayoff, 0.1, AsianOption::AverageType::geometric);
+//    shared_ptr<McAsianEngine<>> pricingAsianEngine(new McAsianEngine<>(bsProcess, 0.01, 20000, 1000, 1));
+//    asian.setPricingEngine(pricingAsianEngine);
+//    a = asian.npv();
+//    double duration = tm.elapsed();
+//    std::cout << "***Time elapsed in " << duration << " seconds.***" << endl;
 
     EuropeanOption call(1.0, vanillaPayoff);
     shared_ptr<McEuropeanEngine<>> pricingEngine(new McEuropeanEngine<>(bsProcess, 1, 200000, 10000));
@@ -38,6 +38,8 @@ int main() {
     shared_ptr<AnalyticEuropeanEngine> pricingEngine2(new AnalyticEuropeanEngine(bsModel));
     call.setPricingEngine(pricingEngine2);
     a2 = call.npv();
+    double duration = tm.elapsed();
+    std::cout << "***Time elapsed in " << duration << " seconds.***" << endl;
 
 
 //    a = bsProcess->evolve(0, 100, 0.1, 0.2);

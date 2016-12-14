@@ -10,17 +10,28 @@
 
 using std::vector;
 
+class RNGComponent {
+public:
+    virtual const vector<double> &next() = 0;
+
+    virtual const vector<double> &last() = 0;
+
+    virtual unsigned long getDimension() const = 0;
+
+    virtual ~RNGComponent() { }
+};
+
 /* decorator pattern */
 template<typename RNG>
-class SingleRandSequenceGenerator {
+class SingleRandSequenceGenerator : public RNGComponent {
 public:
-    SingleRandSequenceGenerator(vector<double>::size_type dimension, const RNG &rng);
+    SingleRandSequenceGenerator(vector<double>::size_type dimension);
 
-    const vector<double> &next();
+    const vector<double> &next() override;
 
-    const vector<double> &last() { return sequence_; }
+    const vector<double> &last() override { return sequence_; }
 
-    unsigned long getDimension() const { return dimension_; }
+    unsigned long getDimension() const override { return dimension_; }
 
 private:
     RNG rng_;
@@ -29,9 +40,9 @@ private:
 };
 
 template<typename RNG>
-SingleRandSequenceGenerator<RNG>::SingleRandSequenceGenerator(vector<double>::size_type dimension, const RNG &rng)
+SingleRandSequenceGenerator<RNG>::SingleRandSequenceGenerator(vector<double>::size_type dimension)
         : dimension_(
-        dimension), rng_(rng) {
+        dimension), rng_() {
     sequence_.resize(dimension_);
 }
 
