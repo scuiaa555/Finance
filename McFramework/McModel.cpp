@@ -5,7 +5,7 @@
 #include "McModel.h"
 
 McModel::McModel(
-        const std::shared_ptr<PathGenerator<SingleRandom<NormalMarsagliaBrayRng<UniformLEcuyerRNG1> >>> &pathGenerator,
+        const std::shared_ptr<PathGenerator<SingleRandom<Normal<>>>> &pathGenerator,
         const std::shared_ptr<PathPricer> pathPricer
 )
         :

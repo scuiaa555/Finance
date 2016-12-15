@@ -32,6 +32,15 @@ public:
 
     const std::vector<Quote> &getInitial() const { return x0_; }
 
+    class Argument {
+    public:
+        virtual ~Argument() { }
+    };
+
+    virtual void setupArgument(Model::Argument *) { }
+
+    virtual void setupArgument(vector<Model::Argument *>) { }
+
 protected:
     mutable std::vector<Quote> x0_;
 };

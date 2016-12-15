@@ -7,6 +7,7 @@
 
 #include "Model.h"
 #include "StochasticProcesses/BSStochasticProcess.h"
+#include "RandNumGeneration/Normal.h"
 
 class BlackScholesModel : public Model1D {
 public:
@@ -21,6 +22,12 @@ public:
     };
 
     const vector<int> &getMCdimension() const { return MCdimension_; }
+
+    void setupArgument(Model::Argument *arg) override {
+        GenericNormal::Argument *argument = dynamic_cast<GenericNormal::Argument *>(arg);
+        argument->mean_ = 0.0;
+        argument->variance_ = 1.0;
+    }
 
 private:
     vector<int> MCdimension_;

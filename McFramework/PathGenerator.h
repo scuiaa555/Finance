@@ -9,6 +9,7 @@
 #include "McFramework/Path.h"
 #include "Model.h"
 #include "RandNumGeneration/MultiRandGenerator.h"
+#include <type_traits>
 
 template<typename RNG>
 class PathGenerator {
@@ -28,14 +29,20 @@ private:
     std::shared_ptr<Path> next_;
     bool isAntithetic_;
 
-    void setRNG();
+    template<typename ArgType>
+    void setRNGs(typename std::enable_if<std::is_same<ArgType, Model::Argument *>::value, Model::Argument *> args);
+
+    template<typename ArgType>
+    void setRNGs(
+            typename std::enable_if<std::is_same<ArgType, vector<Model::Argument *>>::value, vector<Model::Argument *>> args);
 };
 
 template<typename RNG>
 PathGenerator<RNG>::PathGenerator(const std::shared_ptr<Model> model, const vector<Time> &timeGrid,
                                   bool isAntithetic)
         : rng_(), model_(model), isAntithetic_(isAntithetic) {
-    setRNG();
+    typename RNG::rng_argument_type arg;
+    setRNGs<typename RNG::rng_argument_type>(arg);
     if (isAntithetic) {
 //        /*!!! dimension problem appeared here
 //         *!!! should be implied by process/pathPricer */
@@ -83,21 +90,11 @@ Path &PathGenerator<RNG>::next() {
     return *next_;
 }
 
-template<typename RNG>
-void PathGenerator<RNG>::setRNG() {
-    vector<int> dimOfEachGenerator = model_->getMCdimension();
-    if (dimOfEachGenerator.size() == 1) {
-        if (dimOfEachGenerator[0] == 1) return;
-    }
-    if (dimOfEachGenerator.size() > 1) {
-        vector<shared_ptr<RNGComponent>>::iterator iter = rng_.getRsgs().begin();
-        for (int i = 0; i < dimOfEachGenerator.size(); ++i) {
-            (*iter)->setDimension(dimOfEachGenerator[i]);
-            ++iter;
-        }
-    }
-
-}
+//template<typename RNG>
+//void PathGenerator<RNG>::setRNGs() {
+//    typename RNG::rng_argument_type arguments;
+//
+//}
 
 
 #endif //FINANCE_PATHGENERATOR_H

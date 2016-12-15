@@ -12,12 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="864a6095-397c-4358-9ac8-60dc0d38eac9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RandNumGeneration/Normal.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RandNumGeneration/RandomVariableGenerator.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Finance.iml" afterPath="$PROJECT_DIR$/.idea/Finance.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/McFramework/McModel.cpp" afterPath="$PROJECT_DIR$/McFramework/McModel.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/McFramework/McModel.h" afterPath="$PROJECT_DIR$/McFramework/McModel.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/McFramework/PathGenerator.h" afterPath="$PROJECT_DIR$/McFramework/PathGenerator.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h" afterPath="$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandNumGeneration/SingleRandSequenceGenerator.h" afterPath="$PROJECT_DIR$/RandNumGeneration/SingleRandSequenceGenerator.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model.h" afterPath="$PROJECT_DIR$/Model.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/BlackScholesModel.h" afterPath="$PROJECT_DIR$/Models/BlackScholesModel.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.cpp" afterPath="$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandNumGeneration/PseudoRandom.h" afterPath="$PROJECT_DIR$/RandNumGeneration/PseudoRandom.h" />
     </list>
     <ignored path="Finance.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,78 +44,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PathGenerator.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PathGenerator.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/McFramework/PathGenerator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+            <state relative-caret-position="247">
+              <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
               <folding>
                 <element signature="e#112#165#0" expanded="true" />
-                <element signature="e#274#288#0" expanded="true" />
-                <element signature="e#783#797#0" expanded="true" />
-                <element signature="e#1377#1391#0" expanded="true" />
-                <element signature="e#2903#2917#0" expanded="true" />
+                <element signature="e#787#805#0" expanded="true" />
+                <element signature="e#935#953#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BSStochasticProcess.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.cpp">
+      <file leaf-file-name="McModel.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/McFramework/McModel.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-240">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="437">
+              <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+              <folding>
+                <element signature="e#100#126#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BSStochasticProcess.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NormalMarsagliaBrayRng.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/NormalMarsagliaBrayRng.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="McEuropeanEngine.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PricingEngines/McEuropeanEngine.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="72" column="62" selection-start-line="72" selection-start-column="62" selection-end-line="72" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlackScholesModel.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BlackScholesModel.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
-              <folding />
+            <state relative-caret-position="532">
+              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+              <folding>
+                <element signature="e#121#139#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LMM.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models/LMM.h">
+      <file leaf-file-name="Normal.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RandNumGeneration/Normal.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="-734">
+              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+              <folding>
+                <element signature="e#99#153#0" expanded="true" />
+                <element signature="e#819#885#0" expanded="true" />
+                <element signature="e#1380#1401#0" expanded="true" />
+                <element signature="e#1525#1546#0" expanded="true" />
+                <element signature="e#1619#1640#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PseudoRandom.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RandNumGeneration/PseudoRandom.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+              <folding>
+                <element signature="e#111#128#0" expanded="true" />
+                <element signature="e#398#416#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,13 +131,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="McAsianEngine.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PricingEngines/McAsianEngine.h">
+      <file leaf-file-name="MultiRandGenerator.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
+            <state relative-caret-position="-57">
+              <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomVariableGenerator.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RandNumGeneration/RandomVariableGenerator.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#112#149#0" expanded="true" />
+                <element signature="e#161#173#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,8 +156,8 @@
       <file leaf-file-name="Model.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+            <state relative-caret-position="423">
+              <caret line="39" column="53" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -161,7 +178,6 @@
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/Instruments/EuropeanOption.cpp" />
-        <option value="$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.cpp" />
         <option value="$PROJECT_DIR$/PricingEngines/MCAsianEngine.h" />
         <option value="$PROJECT_DIR$/PricingEngines/MCEuropeanEngine.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
@@ -185,22 +201,25 @@
         <option value="$PROJECT_DIR$/Models/LMM.h" />
         <option value="$PROJECT_DIR$/RandNumGeneration/NormalMarsagliaBrayRng.h" />
         <option value="$PROJECT_DIR$/RandNumGeneration/RandomSequenceGenerator.h" />
-        <option value="$PROJECT_DIR$/RandNumGeneration/PseudoRandom.h" />
-        <option value="$PROJECT_DIR$/Main.cpp" />
         <option value="$PROJECT_DIR$/McFramework/McSimulation.cpp" />
         <option value="$PROJECT_DIR$/McFramework/McSimulation.h" />
         <option value="$PROJECT_DIR$/Models/BlackScholesModel.cpp" />
-        <option value="$PROJECT_DIR$/Models/BlackScholesModel.h" />
         <option value="$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.cpp" />
         <option value="$PROJECT_DIR$/RandNumGeneration/SingleRandSequenceGenerator.h" />
         <option value="$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h" />
-        <option value="$PROJECT_DIR$/McFramework/McModel.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/McFramework/McModel.cpp" />
+        <option value="$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.cpp" />
+        <option value="$PROJECT_DIR$/RandNumGeneration/RandomVariableGenerator.h" />
         <option value="$PROJECT_DIR$/PricingEngines/McAsianEngine.h" />
         <option value="$PROJECT_DIR$/PricingEngines/McEuropeanEngine.h" />
-        <option value="$PROJECT_DIR$/Model.h" />
+        <option value="$PROJECT_DIR$/McFramework/McModel.h" />
+        <option value="$PROJECT_DIR$/McFramework/McModel.cpp" />
+        <option value="$PROJECT_DIR$/Main.cpp" />
+        <option value="$PROJECT_DIR$/RandNumGeneration/PseudoRandom.h" />
         <option value="$PROJECT_DIR$/McFramework/PathGenerator.h" />
+        <option value="$PROJECT_DIR$/Model.h" />
+        <option value="$PROJECT_DIR$/RandNumGeneration/Normal.h" />
+        <option value="$PROJECT_DIR$/Models/BlackScholesModel.h" />
       </list>
     </option>
   </component>
@@ -637,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481706856413</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="modify RNG 2.0&#10;">
+      <created>1481722896164</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1481722896164</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -657,8 +683,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.47815728" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3309659" sideWeight="0.5194599" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22764228" sideWeight="0.4940429" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3306288" sideWeight="0.5194599" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22662602" sideWeight="0.4940429" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.4805401" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -695,18 +721,12 @@
     <MESSAGE value="documentation added" />
     <MESSAGE value="MultiRandGenerator added" />
     <MESSAGE value="modify RNG&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify RNG&#10;" />
+    <MESSAGE value="modify RNG 2.0&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify RNG 2.0&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/McFramework/PathGenerator.h</url>
-          <line>89</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
@@ -715,41 +735,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Instruments/AsianOption.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Instruments/EuropeanOption.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Instruments/EuropeanOption.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Instruments/Forward.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Instruments/Forward.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/McFramework/Path.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -814,35 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PricingEngine.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PricingEngine.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="46" column="111" selection-start-line="46" selection-start-column="111" selection-end-line="46" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PricingEngines/AnalyticForwardEngine.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -873,20 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PricingEngines/EuropeanPathPricer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PricingEngines/EuropeanPathPricer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Statistics.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -909,16 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <marker date="1481625110000" expanded="true" signature="148:350" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -936,45 +868,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.cpp" />
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-335">
-          <caret line="27" column="96" selection-start-line="27" selection-start-column="96" selection-end-line="27" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/SingleRandSequenceGenerator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
-          <folding>
-            <element signature="e#1448#1462#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Documentation/html/search/all_a.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/PseudoRandom.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -982,24 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="23" column="121" selection-start-line="23" selection-start-column="121" selection-end-line="23" selection-end-column="121" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/McFramework/McModel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
-          <folding>
-            <element signature="e#100#126#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/McFramework/McModel.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
           <folding />
         </state>
       </provider>
@@ -1012,27 +891,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PricingEngines/McAsianEngine.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
-          <folding>
-            <element signature="e#112#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PricingEngines/McEuropeanEngine.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="72" column="62" selection-start-line="72" selection-start-column="62" selection-end-line="72" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1046,35 +907,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Models/LMM.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
+        <state relative-caret-position="627">
           <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.h">
+    <entry file="file://$PROJECT_DIR$/PricingEngines/EuropeanPathPricer.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+        <state relative-caret-position="361">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.cpp">
+    <entry file="file://$PROJECT_DIR$/PricingEngines/EuropeanPathPricer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PricingEngine.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Instruments/EuropeanOption.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/SingleRandSequenceGenerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="766">
+          <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Instruments/EuropeanOption.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="e#110#133#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Instrument.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#98#118#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PricingEngine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <folding>
+            <element signature="e#114#131#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,16 +1009,163 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PricingEngines/McAsianEngine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="78" column="8" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="8" />
+          <folding>
+            <element signature="e#112#149#0" expanded="false" />
+            <element signature="e#252#266#0" expanded="false" />
+            <element signature="e#873#887#0" expanded="false" />
+            <element signature="e#1251#1265#0" expanded="false" />
+            <element signature="e#1471#1485#0" expanded="false" />
+            <element signature="e#2221#2235#0" expanded="false" />
+            <element signature="e#2666#2680#0" expanded="false" />
+            <marker date="1481785620000" expanded="true" signature="343:862" ph="{...}" />
+            <marker date="1481785620000" expanded="true" signature="1338:1461" ph="{...}" />
+            <marker date="1481785620000" expanded="true" signature="1547:2211" ph="{...}" />
+            <marker date="1481785620000" expanded="true" signature="2280:2656" ph="{...}" />
+            <marker date="1481785620000" expanded="true" signature="2718:3177" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PricingEngines/McEuropeanEngine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+          <folding>
+            <element signature="e#118#157#0" expanded="true" />
+            <element signature="e#339#353#0" expanded="true" />
+            <element signature="e#933#947#0" expanded="true" />
+            <element signature="e#1239#1253#0" expanded="true" />
+            <element signature="e#1447#1461#0" expanded="true" />
+            <element signature="e#1995#2009#0" expanded="true" />
+            <element signature="e#2454#2468#0" expanded="true" />
+            <marker date="1481785685000" expanded="true" signature="444:922" ph="{...}" />
+            <marker date="1481785685000" expanded="true" signature="1329:1437" ph="{...}" />
+            <marker date="1481785685000" expanded="true" signature="1526:1985" ph="{...}" />
+            <marker date="1481785685000" expanded="true" signature="2057:2444" ph="{...}" />
+            <marker date="1481785685000" expanded="true" signature="2509:2989" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/McFramework/McModel.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+          <folding>
+            <marker date="1481785869000" expanded="true" signature="323:326" ph="{...}" />
+            <marker date="1481785869000" expanded="true" signature="379:595" ph="{...}" />
+            <marker date="1481785869000" expanded="true" signature="648:682" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/PseudoRandom.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding>
+            <element signature="e#111#128#0" expanded="true" />
+            <element signature="e#398#416#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/RandomVariableGenerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#161#173#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/McFramework/McModel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+          <folding>
+            <element signature="e#100#126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/Normal.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-734">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding>
+            <element signature="e#99#153#0" expanded="true" />
+            <element signature="e#819#885#0" expanded="true" />
+            <element signature="e#1380#1401#0" expanded="true" />
+            <element signature="e#1525#1546#0" expanded="true" />
+            <element signature="e#1619#1640#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="39" column="53" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/McFramework/PathGenerator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        <state relative-caret-position="247">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
           <folding>
             <element signature="e#112#165#0" expanded="true" />
-            <element signature="e#274#288#0" expanded="true" />
-            <element signature="e#783#797#0" expanded="true" />
-            <element signature="e#1377#1391#0" expanded="true" />
-            <element signature="e#2903#2917#0" expanded="true" />
+            <element signature="e#787#805#0" expanded="true" />
+            <element signature="e#935#953#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="e#121#139#0" expanded="true" />
           </folding>
         </state>
       </provider>

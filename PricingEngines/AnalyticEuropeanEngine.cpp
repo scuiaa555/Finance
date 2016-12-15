@@ -23,7 +23,7 @@ void AnalyticEuropeanEngine::calculate() {
     double d1 = (log(spot / strike) + (r - q + 0.5 * sigma * sigma) * maturity) / sigma / sqrt(maturity);
     double d2 = d1 - sigma * sqrt(maturity);
     double price = type * spot * exp(-q * maturity) * boost::math::cdf(nd, type * d1) -
-                   type * strike * boost::math::cdf(nd, type * d2) * exp(-r * maturity);  //Black-Sholes formula
+                   type * strike * boost::math::cdf(nd, type * d2) * exp(-r * maturity);  //Black-Scholes formula
 //    std::cout << arguments->payoff_->getPayoff(100.0) << std::endl;
     std::cout << "Succeed: Analytic European engine for European option" << std::endl;
     std::cout << "European option price is " << price << "." << std::endl;
