@@ -10,14 +10,16 @@
 #include "EuropeanPathPricer.h"
 #include <iostream>
 #include "RandNumGeneration/PseudoRandom.h"
+#include "RandNumGeneration/Normal.h"
 
-template<typename UnifRng= UniformLEcuyerRNG1>
-class McEuropeanEngine : public EuropeanOption::engine, private McSimulation {
+template<typename RNG>
+class McEuropeanEngine
+        : public EuropeanOption::engine, private McSimulation<RNG> {
 public:
     McEuropeanEngine(const std::shared_ptr<Model> model, Time timeStep, unsigned long maxSamples,
                      unsigned long minSamples);
 
-    std::shared_ptr<PathGenerator<SingleRandom<NormalMarsagliaBrayRng<UnifRng>>>> pathGenerator() override;
+    std::shared_ptr<PathGenerator<RNG>> pathGenerator() override;
 
     std::shared_ptr<PathPricer> pathPricer() override;
 
@@ -32,19 +34,19 @@ private:
     Time timeStep_;
 };
 
-template<typename UnifRng>
-McEuropeanEngine<UnifRng>::McEuropeanEngine(const std::shared_ptr<Model> model, Time timeStep,
-                                            unsigned long maxSamples, unsigned long minSamples) :
+template<typename RNG>
+McEuropeanEngine<RNG>::McEuropeanEngine(const std::shared_ptr<Model> model, Time timeStep,
+                                        unsigned long maxSamples, unsigned long minSamples) :
         model_(model), timeStep_(timeStep), maxSamples_(maxSamples), minSamples_(minSamples) { }
 
-template<typename UnifRng>
-std::shared_ptr<PathGenerator<SingleRandom<NormalMarsagliaBrayRng<UnifRng>>>> McEuropeanEngine<UnifRng>::pathGenerator() {
-    return std::shared_ptr<PathGenerator<SingleRandom<NormalMarsagliaBrayRng<UnifRng>>>>(
-            new PathGenerator<SingleRandom<NormalMarsagliaBrayRng<UnifRng>>>(model_, timeGrid()));
+template<typename RNG>
+std::shared_ptr<PathGenerator<RNG>> McEuropeanEngine<RNG>::pathGenerator() {
+    return std::shared_ptr<PathGenerator<RNG>>(
+            new PathGenerator<RNG>(model_, timeGrid()));
 }
 
-template<typename UnifRng>
-std::shared_ptr<PathPricer> McEuropeanEngine<UnifRng>::pathPricer() {
+template<typename RNG>
+std::shared_ptr<PathPricer> McEuropeanEngine<RNG>::pathPricer() {
     EuropeanOption::Arguments *arguments;
     arguments = dynamic_cast<EuropeanOption::Arguments *>(this->getArguments());
     std::shared_ptr<VanillaPayoff> payoff = std::dynamic_pointer_cast<VanillaPayoff>(arguments->payoff_);
@@ -54,8 +56,8 @@ std::shared_ptr<PathPricer> McEuropeanEngine<UnifRng>::pathPricer() {
     return std::shared_ptr<EuropeanPathPricer>(new EuropeanPathPricer(payoff, r));
 }
 
-template<typename UnifRng>
-vector<Time> McEuropeanEngine<UnifRng>::timeGrid() {
+template<typename RNG>
+vector<Time> McEuropeanEngine<RNG>::timeGrid() {
     vector<Time> timeGrid;
     EuropeanOption::Arguments *arguments;
     arguments = dynamic_cast<EuropeanOption::Arguments *>(this->getArguments());
@@ -68,13 +70,13 @@ vector<Time> McEuropeanEngine<UnifRng>::timeGrid() {
     return timeGrid;
 }
 
-template<typename UnifRng>
-void McEuropeanEngine<UnifRng>::calculate() {
-    McSimulation::calculate(maxSamples_, minSamples_);
+template<typename RNG>
+void McEuropeanEngine<RNG>::calculate() {
+    McSimulation<RNG>::calculate(maxSamples_, minSamples_);
     EuropeanOption::Results *results;
     results = dynamic_cast<EuropeanOption::Results *> (this->getResults());
-    double price = sampleAccumulator().mean();
-    results->price_ = sampleAccumulator().mean();
+    double price = this->sampleAccumulator().mean();
+    results->price_ = this->sampleAccumulator().mean();
     std::cout << "Succeed: Monte Carlo simulation engine for European option" << std::endl;
     std::cout << "European option price is " << price << "." << std::endl;
     results->delta_ = 1.0;

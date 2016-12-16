@@ -8,14 +8,15 @@
 #include "McFramework/McSimulation.h"
 #include "AsianPathPricer.h"
 #include <iostream>
+#include "RandNumGeneration/PseudoRandom.h"
 
-template<typename UnifRng= UniformLEcuyerRNG1>
-class McAsianEngine : public AsianOption::engine, private McSimulation {
+template<typename RNG>
+class McAsianEngine : public AsianOption::engine, private McSimulation<RNG> {
 public:
     McAsianEngine(const std::shared_ptr<Model> model, Time timeStep, unsigned long maxSamples,
                   unsigned long minSamples, bool isAntithetic = 0);
 
-    std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> pathGenerator() override;
+    std::shared_ptr<PathGenerator<RNG>> pathGenerator() override;
 
     std::shared_ptr<PathPricer> pathPricer() override;
 
@@ -31,8 +32,8 @@ private:
     bool isAntithetic_;
 };
 
-template<typename UnifRng>
-McAsianEngine<UnifRng>::McAsianEngine(const std::shared_ptr<Model> model, Time timeStep,
+template<typename RNG>
+McAsianEngine<RNG>::McAsianEngine(const std::shared_ptr<Model> model, Time timeStep,
                                       unsigned long maxSamples, unsigned long minSamples, bool isAntithetic) :
         model_(model),
         timeStep_(timeStep),
@@ -40,14 +41,14 @@ McAsianEngine<UnifRng>::McAsianEngine(const std::shared_ptr<Model> model, Time t
         minSamples_(minSamples),
         isAntithetic_(isAntithetic) { }
 
-template<typename UnifRng>
-std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>> McAsianEngine<UnifRng>::pathGenerator() {
-    return std::shared_ptr<PathGenerator<NormalMarsagliaBrayRng<UnifRng>>>(
-            new PathGenerator<NormalMarsagliaBrayRng<UnifRng>>(model_, timeGrid(), isAntithetic_));
+template<typename RNG>
+std::shared_ptr<PathGenerator<RNG>> McAsianEngine<RNG>::pathGenerator() {
+    return std::shared_ptr<PathGenerator<RNG>>(
+            new PathGenerator<RNG>(model_, timeGrid(), isAntithetic_));
 }
 
-template<typename UnifRng>
-std::shared_ptr<PathPricer> McAsianEngine<UnifRng>::pathPricer() {
+template<typename RNG>
+std::shared_ptr<PathPricer> McAsianEngine<RNG>::pathPricer() {
     AsianOption::Arguments *arguments;
     arguments = dynamic_cast<AsianOption::Arguments *>(this->getArguments());
     std::shared_ptr<VanillaPayoff> payoff = std::dynamic_pointer_cast<VanillaPayoff>(arguments->payoff_);
@@ -59,8 +60,8 @@ std::shared_ptr<PathPricer> McAsianEngine<UnifRng>::pathPricer() {
     return std::shared_ptr<AsianPathPricer>(new AsianPathPricer(payoff, r, monitorTimesPtr, averageType, isAntithetic_));
 }
 
-template<typename UnifRng>
-vector<Time> McAsianEngine<UnifRng>::timeGrid() {
+template<typename RNG>
+vector<Time> McAsianEngine<RNG>::timeGrid() {
     vector<Time> timeGrid;
     AsianOption::Arguments *arguments;
     arguments = dynamic_cast<AsianOption::Arguments *>(this->getArguments());
@@ -73,13 +74,13 @@ vector<Time> McAsianEngine<UnifRng>::timeGrid() {
     return timeGrid;
 }
 
-template<typename UnifRng>
-void McAsianEngine<UnifRng>::calculate() {
-    McSimulation::calculate(maxSamples_, minSamples_);
+template<typename RNG>
+void McAsianEngine<RNG>::calculate() {
+    McSimulation<RNG>::calculate(maxSamples_, minSamples_);
     AsianOption::Results *results;
     results = dynamic_cast<AsianOption::Results *> (this->getResults());
-    double price = sampleAccumulator().mean();
-    results->price_ = sampleAccumulator().mean();
+    double price = this->sampleAccumulator().mean();
+    results->price_ = this->sampleAccumulator().mean();
     std::cout << "Succeed: Monte Carlo simulation engine for European Asian option" << std::endl;
     std::cout << "European Asian option price is " << price << "." << std::endl;
 }

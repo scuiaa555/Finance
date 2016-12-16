@@ -1,12 +1,10 @@
 #include <iostream>
 #include "Instruments/EuropeanOption.h"
 #include "Models/BlackScholesModel.h"
-#include "Instruments/AsianOption.h"
 #include "PricingEngines/McAsianEngine.h"
 #include "PricingEngines/McEuropeanEngine.h"
 #include "PricingEngines/AnalyticEuropeanEngine.h"
 #include <boost/timer.hpp>
-#include "Models/LMM.h"
 //#include <armadillo>
 
 using namespace std;
@@ -32,7 +30,8 @@ int main() {
 //    std::cout << "***Time elapsed in " << duration << " seconds.***" << endl;
 
     EuropeanOption call(1.0, vanillaPayoff);
-    shared_ptr<McEuropeanEngine<>> pricingEngine(new McEuropeanEngine<>(bsProcess, 1, 200000, 10000));
+    shared_ptr<McEuropeanEngine<SingleRandom<Normal<>>>> pricingEngine(
+            new McEuropeanEngine<SingleRandom<Normal<>>>(bsProcess, 1, 200000, 10000));
     call.setPricingEngine(pricingEngine);
     a1 = call.npv();
     shared_ptr<AnalyticEuropeanEngine> pricingEngine2(new AnalyticEuropeanEngine(bsModel));
