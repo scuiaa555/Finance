@@ -20,8 +20,8 @@ int main() {
     boost::timer tm;
     double a, a1, a2;
     shared_ptr<Payoff> vanillaPayoff(new VanillaPayoff(95.0, "put"));
-    shared_ptr<BSStochasticProcess> bsModel(new BSStochasticProcess(0.05, 0.0, 0.3, 100));
-    shared_ptr<BlackScholesModel> bsProcess(new BlackScholesModel(bsModel));
+    shared_ptr<BSStochasticProcess> bsProcess(new BSStochasticProcess(0.05, 0.0, 0.3, 100));
+    shared_ptr<BlackScholesModel> bsModel(new BlackScholesModel(bsProcess));
 //    AsianOption asian(1.0, vanillaPayoff, 0.1, AsianOption::AverageType::geometric);
 //    shared_ptr<McAsianEngine<>> pricingAsianEngine(new McAsianEngine<>(bsProcess, 0.01, 20000, 1000, 1));
 //    asian.setPricingEngine(pricingAsianEngine);
@@ -29,14 +29,14 @@ int main() {
 //    double duration = tm.elapsed();
 //    std::cout << "***Time elapsed in " << duration << " seconds.***" << endl;
 
-    EuropeanOption call(1.0, vanillaPayoff);
+    EuropeanOption vanillaOpt(1.0, vanillaPayoff);
     shared_ptr<McEuropeanEngine<SingleRandom<Normal<>>>> pricingEngine(
-            new McEuropeanEngine<SingleRandom<Normal<>>>(bsProcess, 1, 200000, 10000));
-    call.setPricingEngine(pricingEngine);
-    a1 = call.npv();
-    shared_ptr<AnalyticEuropeanEngine> pricingEngine2(new AnalyticEuropeanEngine(bsModel));
-    call.setPricingEngine(pricingEngine2);
-    a2 = call.npv();
+            new McEuropeanEngine<SingleRandom<Normal<>>>(bsModel, 1, 200000, 10000));
+    vanillaOpt.setPricingEngine(pricingEngine);
+    a1 = vanillaOpt.npv();
+    shared_ptr<AnalyticEuropeanEngine> pricingEngine2(new AnalyticEuropeanEngine(bsProcess));
+    vanillaOpt.setPricingEngine(pricingEngine2);
+    a2 = vanillaOpt.npv();
     double duration = tm.elapsed();
     std::cout << "***Time elapsed in " << duration << " seconds.***" << endl;
 

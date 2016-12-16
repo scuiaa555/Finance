@@ -26,8 +26,8 @@ set(SOURCE_FILES Main.cpp Payoff.h Instrument.cpp
         McFramework/Path.cpp McFramework/Path.h McFramework/PathGenerator.h McFramework/PathPricer.h
         McFramework/McModel.cpp McFramework/McModel.h PricingEngines/EuropeanPathPricer.cpp Statistics.cpp Statistics.h
         McFramework/McSimulation.h PricingEngines/McEuropeanEngine.h
-        Payoffs/VanillaPayoff.cpp Payoffs/VanillaPayoff.h Instruments/AsianOption.cpp Instruments/AsianOption.h PricingEngines/McAsianEngine.h
-        PricingEngines/EuropeanPathPricer.h PricingEngines/AsianPathPricer.cpp PricingEngines/AsianPathPricer.h Parameter.cpp Parameter.h
+        Payoffs/VanillaPayoff.cpp Payoffs/VanillaPayoff.h Instruments/AsianOption.cpp Instruments/AsianOption.h
+        PricingEngines/EuropeanPathPricer.h Parameter.cpp Parameter.h
         Models/BlackScholesModel.cpp Models/BlackScholesModel.h Models/LMM.cpp Models/LMM.h StochasticProcesses/BSStochasticProcess.cpp
         StochasticProcesses/BSStochasticProcess.h StochasticProcesses/LogNormalProcess.cpp StochasticProcesses/LogNormalProcess.h
         RandNumGeneration/MultiRandGenerator.h RandNumGeneration/PseudoRandom.h RandNumGeneration/RandomVariableGenerator.h RandNumGeneration/Normal.h)

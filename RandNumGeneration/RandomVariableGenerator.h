@@ -7,15 +7,23 @@
 
 #include "Model.h"
 
+class GenericRandomVariableGenerator {
+public:
+    class Argument {
+    public:
+        virtual ~Argument() { }
+    };
+};
+
 template<typename T>
-class RandomVariableGenerator {
+class RandomVariableGenerator : public GenericRandomVariableGenerator {
 public:
 
     virtual const T &next() = 0;
 
     virtual const T &last() = 0;
 
-    virtual void getArgument(Model::Argument *arg) { }
+    virtual GenericRandomVariableGenerator::Argument *getArgument() { }
 };
 
 #endif //FINANCE_RANDOMVARIABLEGENERATOR_H

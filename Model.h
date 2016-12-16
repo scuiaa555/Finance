@@ -8,6 +8,7 @@
 #include "NameDef.h"
 #include "StochasticProcess.h"
 #include <vector>
+#include <RandNumGeneration/RandomVariableGenerator.h>
 
 using std::vector;
 
@@ -32,14 +33,14 @@ public:
 
     const std::vector<Quote> &getInitial() const { return x0_; }
 
-    class Argument {
-    public:
-        virtual ~Argument() { }
-    };
+//    class Argument {
+//    public:
+//        virtual ~Argument() { }
+//    };
 
-    virtual void setupArgument(Model::Argument *) { }
+    virtual void setupArgument(Time t, Time dt, GenericRandomVariableGenerator::Argument *) { }
 
-    virtual void setupArgument(vector<Model::Argument *>) { }
+    virtual void setupArgument(Time t, Time dt, vector<GenericRandomVariableGenerator::Argument *>) { }
 
 protected:
     mutable std::vector<Quote> x0_;

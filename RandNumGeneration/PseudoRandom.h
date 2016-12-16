@@ -13,14 +13,14 @@ template<typename RNG>
 struct SingleRandom {
     typedef RNG rng_type;
     typedef typename RNG::rng_return_type rng_return_type;
-    typedef vector<Model::Argument *> rng_argument_type;
+    typedef GenericRandomVariableGenerator::Argument * rng_argument_type;
 };
 
 template<typename ...RNGs>
 struct MultiRandom {
     typedef MultiRandGenerator<RNGs...> rng_type;
     typedef std::vector<double> rng_return_type;
-    typedef Model::Argument *rng_argument_type;
+    typedef vector<GenericRandomVariableGenerator::Argument *> rng_argument_type;
 };
 
 #endif //FINANCE_PSEUDORANDOM_H

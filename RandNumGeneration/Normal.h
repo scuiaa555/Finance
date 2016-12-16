@@ -9,10 +9,12 @@
 #include "RandNumGeneration/NormalMarsagliaBrayRng.h"
 #include <cmath>
 
+//using std::shared_ptr;
+
 //template<typename NormMethod = NormalMarsagliaBrayRng<UniformLEcuyerRNG1>>
 class GenericNormal : public RandomVariableGenerator<double> {
 public:
-    GenericNormal() : mean_(0.0), variance_(1.0) { }
+    GenericNormal() = default;
 
 //    typedef double rng_return_type;
 
@@ -22,16 +24,17 @@ public:
 
 //    void getArgument(Model::Argument *arg) override;
 
-    class Argument : public Model::Argument {
+    class Argument : public GenericRandomVariableGenerator::Argument {
     public:
+        Argument() : mean_(0.0), variance_(1.0) { }
+
         double mean_;
         double variance_;
     };
 
 protected:
 //    NormMethod rng_;
-    double mean_;
-    double variance_;
+    Argument argument_;
 //    double last_;
 };
 
@@ -46,7 +49,7 @@ public:
 
     const double &last() override;
 
-    void getArgument(Model::Argument *arg) override;
+    virtual GenericRandomVariableGenerator::Argument *getArgument() override;
 
 //    class Argument : public Model::Argument {
 //    public:
@@ -64,7 +67,7 @@ private:
 
 template<typename NormMethod>
 const double &Normal<NormMethod>::next() {
-    last_ = rng_.next() * sqrt(variance_) + mean_;
+    last_ = rng_.next() * sqrt(argument_.variance_) + argument_.mean_;
     return last_;
 }
 
@@ -74,10 +77,8 @@ const double &Normal<NormMethod>::last() {
 }
 
 template<typename NormMethod>
-void Normal<NormMethod>::getArgument(Model::Argument *arg) {
-    GenericNormal::Argument *argument = dynamic_cast<GenericNormal::Argument *>(arg);   //need to check!!!
-    mean_ = argument->mean_;
-    variance_ = argument->variance_;
+GenericRandomVariableGenerator::Argument *Normal<NormMethod>::getArgument() {
+    return &argument_;
 
 }
 
