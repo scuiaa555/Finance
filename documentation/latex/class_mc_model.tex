@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_mc_model_ac8cfd885b4baeabe5c20ad56ce1803f0}{Mc\+Model} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ \hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}$<$ \hyperlink{class_uniform_l_ecuyer_r_n_g1}{Uniform\+L\+Ecuyer\+R\+N\+G1} $>$ $>$ $>$ \&path\+Generator, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ path\+Pricer)
+\hyperlink{class_mc_model_af5a2a0799f0157a7398cde7f60184507}{Mc\+Model} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ \hyperlink{struct_single_random}{Single\+Random}$<$ \hyperlink{class_normal}{Normal}$<$$>$$>$$>$$>$ \&path\+Generator, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ path\+Pricer)
 \item 
 void \hyperlink{class_mc_model_a81f56ed90c002927bdec595eb52c57c3}{add\+Samples} (unsigned long num\+Samples)
 \item 
@@ -16,7 +16,7 @@ const \hyperlink{class_m_c_statistics}{M\+C\+Statistics} \& \hyperlink{class_mc_
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ \hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}$<$ \hyperlink{class_uniform_l_ecuyer_r_n_g1}{Uniform\+L\+Ecuyer\+R\+N\+G1} $>$ $>$ $>$ \hyperlink{class_mc_model_a169810bfa106409ed8bcdba1a5097997}{path\+Generator\+\_\+}
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ \hyperlink{struct_single_random}{Single\+Random}$<$ \hyperlink{class_normal}{Normal}$<$$>$ $>$ $>$ $>$ \hyperlink{class_mc_model_a79918134182b5642b719bb9e78a5f2fc}{path\+Generator\+\_\+}
 \item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_model_a8b4390b3abdd1ffdd121a09f141299f9}{path\+Pricer\+\_\+}
 \item 
@@ -25,11 +25,11 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyper
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_mc_model_ac8cfd885b4baeabe5c20ad56ce1803f0}{}\label{class_mc_model_ac8cfd885b4baeabe5c20ad56ce1803f0} 
+\hypertarget{class_mc_model_af5a2a0799f0157a7398cde7f60184507}{}\label{class_mc_model_af5a2a0799f0157a7398cde7f60184507} 
 \index{Mc\+Model@{Mc\+Model}!Mc\+Model@{Mc\+Model}}
 \index{Mc\+Model@{Mc\+Model}!Mc\+Model@{Mc\+Model}}
 \subsubsection{\texorpdfstring{Mc\+Model()}{McModel()}}
-{\footnotesize\ttfamily Mc\+Model\+::\+Mc\+Model (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ \hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}$<$ \hyperlink{class_uniform_l_ecuyer_r_n_g1}{Uniform\+L\+Ecuyer\+R\+N\+G1} $>$ $>$ $>$ \&}]{path\+Generator,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$}]{path\+Pricer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Mc\+Model\+::\+Mc\+Model (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ \hyperlink{struct_single_random}{Single\+Random}$<$ \hyperlink{class_normal}{Normal}$<$$>$$>$$>$$>$ \&}]{path\+Generator,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$}]{path\+Pricer }\end{DoxyParamCaption})}
 
 
 
@@ -49,11 +49,11 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyper
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_mc_model_a169810bfa106409ed8bcdba1a5097997}{}\label{class_mc_model_a169810bfa106409ed8bcdba1a5097997} 
+\hypertarget{class_mc_model_a79918134182b5642b719bb9e78a5f2fc}{}\label{class_mc_model_a79918134182b5642b719bb9e78a5f2fc} 
 \index{Mc\+Model@{Mc\+Model}!path\+Generator\+\_\+@{path\+Generator\+\_\+}}
 \index{path\+Generator\+\_\+@{path\+Generator\+\_\+}!Mc\+Model@{Mc\+Model}}
 \subsubsection{\texorpdfstring{path\+Generator\+\_\+}{pathGenerator\_}}
-{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_path_generator}{Path\+Generator}$<$\hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}$<$\hyperlink{class_uniform_l_ecuyer_r_n_g1}{Uniform\+L\+Ecuyer\+R\+N\+G1}$>$ $>$ $>$ Mc\+Model\+::path\+Generator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_path_generator}{Path\+Generator}$<$\hyperlink{struct_single_random}{Single\+Random}$<$\hyperlink{class_normal}{Normal}$<$$>$ $>$ $>$ $>$ Mc\+Model\+::path\+Generator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{class_mc_model_a8b4390b3abdd1ffdd121a09f141299f9}{}\label{class_mc_model_a8b4390b3abdd1ffdd121a09f141299f9} 
 \index{Mc\+Model@{Mc\+Model}!path\+Pricer\+\_\+@{path\+Pricer\+\_\+}}

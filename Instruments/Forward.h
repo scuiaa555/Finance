@@ -14,7 +14,7 @@ public:
 
     Forward(Time maturity, Quote strike, Quote spot);
 
-    void setupArguments(PricingEngine::Arguments *arg) const override;
+    void setupArguments(PricingEngine::Arguments *const arg) const override;
 
     Money fetchResults(PricingEngine::Results *const res) override;
 

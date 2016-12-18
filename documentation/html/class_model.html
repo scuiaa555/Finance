@@ -89,10 +89,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adc6a695d3f6b2def79f2dde69b3ab547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23adaaf21b2955a1f4d4893ad9b77f02"><td class="memItemLeft" align="right" valign="top">virtual const std::shared_ptr&lt; <a class="el" href="class_stochastic_process.html">StochasticProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a23adaaf21b2955a1f4d4893ad9b77f02">getProcess</a> (int i) const =0</td></tr>
 <tr class="separator:a23adaaf21b2955a1f4d4893ad9b77f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a8c7e69b0be1df63ad141e0e14bf1e"><td class="memItemLeft" align="right" valign="top">virtual const vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ac8a8c7e69b0be1df63ad141e0e14bf1e">getMCdimension</a> () const =0</td></tr>
+<tr class="separator:ac8a8c7e69b0be1df63ad141e0e14bf1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbe41cf30367bce4b96e92812d644f2d"><td class="memItemLeft" align="right" valign="top">virtual unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#acbe41cf30367bce4b96e92812d644f2d">getDimensionality</a> () const =0</td></tr>
 <tr class="separator:acbe41cf30367bce4b96e92812d644f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade5d08aae4d32777bfa048f356bbcca9"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ade5d08aae4d32777bfa048f356bbcca9">getInitial</a> () const</td></tr>
 <tr class="separator:ade5d08aae4d32777bfa048f356bbcca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab75ee969956d763343ebe2e19f80735c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ab75ee969956d763343ebe2e19f80735c">setupArgument</a> (<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> t, <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> dt, <a class="el" href="class_generic_random_variable_generator_1_1_argument.html">GenericRandomVariableGenerator::Argument</a> *)</td></tr>
+<tr class="separator:ab75ee969956d763343ebe2e19f80735c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86fe5251e1a0c56097ba71f7d8c228d1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a86fe5251e1a0c56097ba71f7d8c228d1">setupArgument</a> (<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> t, <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> dt, vector&lt; <a class="el" href="class_generic_random_variable_generator_1_1_argument.html">GenericRandomVariableGenerator::Argument</a> *&gt;)</td></tr>
+<tr class="separator:a86fe5251e1a0c56097ba71f7d8c228d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -202,6 +208,33 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac8a8c7e69b0be1df63ad141e0e14bf1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8a8c7e69b0be1df63ad141e0e14bf1e">&sect;&nbsp;</a></span>getMCdimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const vector&lt;int&gt;&amp; Model::getMCdimension </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_black_scholes_model.html#a5665e6ea247e4f243082f5c98bbdbad6">BlackScholesModel</a>.</p>
+
+</div>
+</div>
 <a id="adc6a695d3f6b2def79f2dde69b3ab547"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc6a695d3f6b2def79f2dde69b3ab547">&sect;&nbsp;</a></span>getProcess() <span class="overload">[1/2]</span></h2>
 
@@ -254,6 +287,92 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="class_model_n_d.html#a62866814432b7c0a0d8f58223cc6279d">ModelND</a>, and <a class="el" href="class_model1_d.html#a08b3a9f594214b5e3bcba3fe5f63524e">Model1D</a>.</p>
+
+</div>
+</div>
+<a id="ab75ee969956d763343ebe2e19f80735c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab75ee969956d763343ebe2e19f80735c">&sect;&nbsp;</a></span>setupArgument() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Model::setupArgument </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a>&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_generic_random_variable_generator_1_1_argument.html">GenericRandomVariableGenerator::Argument</a> *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_black_scholes_model.html#a04a6ba4c59cd70a92dedbeb482e9d5aa">BlackScholesModel</a>.</p>
+
+</div>
+</div>
+<a id="a86fe5251e1a0c56097ba71f7d8c228d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86fe5251e1a0c56097ba71f7d8c228d1">&sect;&nbsp;</a></span>setupArgument() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Model::setupArgument </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a>&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="class_generic_random_variable_generator_1_1_argument.html">GenericRandomVariableGenerator::Argument</a> *&gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

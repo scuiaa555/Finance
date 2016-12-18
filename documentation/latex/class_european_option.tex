@@ -24,10 +24,10 @@ class \hyperlink{class_european_option_1_1_results}{Results}
 \item 
 \hyperlink{class_european_option_a92132b61922cb628bc355d4d9f302513}{European\+Option} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} maturity, std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ payoff)
 \item 
-void \hyperlink{class_european_option_a94c1826feba0099400bce8dd6fc01cb9}{setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$arg) const override
-\item 
+void \hyperlink{class_european_option_a77e3bc17dbcf317561c4920f6bfa84de}{setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$const arg) const override
+\begin{DoxyCompactList}\small\item\em To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv()} which is to setup all the arguments that are needed for pricing engine. \end{DoxyCompactList}\item 
 \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_european_option_ae234d562ef21dc24c25f1538860da1cf}{fetch\+Results} (\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const res) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv()} which is to get back the net present value after calculation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -58,17 +58,38 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{class_european_option_1_1_results}{Results}
 
 
 
+To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv()} which is to get back the net present value after calculation. 
+
+{\itshape Constness\+:} Unlike setup\+Arguments, it is not a const member function. Result pointer res itself is const, but it does not point to const object. 
+\begin{DoxyParams}{Parameters}
+{\em res} & \hyperlink{class_european_option_1_1_results}{Results} that are fetched back. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Net present value after calculation. Other results are stored in the results class. 
+\end{DoxyReturn}
+
+
 Implements \hyperlink{class_instrument_a381f093402f789ad7c0ffecd233167dc}{Instrument}.
 
-\hypertarget{class_european_option_a94c1826feba0099400bce8dd6fc01cb9}{}\label{class_european_option_a94c1826feba0099400bce8dd6fc01cb9} 
+\hypertarget{class_european_option_a77e3bc17dbcf317561c4920f6bfa84de}{}\label{class_european_option_a77e3bc17dbcf317561c4920f6bfa84de} 
 \index{European\+Option@{European\+Option}!setup\+Arguments@{setup\+Arguments}}
 \index{setup\+Arguments@{setup\+Arguments}!European\+Option@{European\+Option}}
 \subsubsection{\texorpdfstring{setup\+Arguments()}{setupArguments()}}
-{\footnotesize\ttfamily void European\+Option\+::setup\+Arguments (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$}]{arg }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void European\+Option\+::setup\+Arguments (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$const}]{arg }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \hyperlink{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67}{Instrument}.
+To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv()} which is to setup all the arguments that are needed for pricing engine. 
+
+{\itshape Constness\+:} Const member function. Argument pointer arg itself is const, but it does not point to const object. 
+\begin{DoxyParams}{Parameters}
+{\em arg} & \hyperlink{class_european_option_1_1_arguments}{Arguments} that are needed for pricing engine. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_instrument_a5cd384be384fe415f09ecc78e2a87539}{Instrument}.
 
 
 

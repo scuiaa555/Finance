@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['singlerandsequencegenerator_2eh',['SingleRandSequenceGenerator.h',['../_single_rand_sequence_generator_8h.html',1,'']]],
-  ['statistics_2ecpp',['Statistics.cpp',['../_statistics_8cpp.html',1,'']]],
-  ['statistics_2eh',['Statistics.h',['../_statistics_8h.html',1,'']]],
-  ['stochasticprocess_2eh',['StochasticProcess.h',['../_stochastic_process_8h.html',1,'']]]
+  ['randomvariablegenerator_2eh',['RandomVariableGenerator.h',['../_random_variable_generator_8h.html',1,'']]],
+  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]]
 ];

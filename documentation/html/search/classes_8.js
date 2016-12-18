@@ -8,5 +8,6 @@ var searchData=
   ['model',['Model',['../class_model.html',1,'']]],
   ['model1d',['Model1D',['../class_model1_d.html',1,'']]],
   ['modelnd',['ModelND',['../class_model_n_d.html',1,'']]],
-  ['multirandgenerator',['MultiRandGenerator',['../class_multi_rand_generator.html',1,'']]]
+  ['multirandgenerator',['MultiRandGenerator',['../class_multi_rand_generator.html',1,'']]],
+  ['multirandom',['MultiRandom',['../struct_multi_random.html',1,'']]]
 ];

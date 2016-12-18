@@ -20,6 +20,15 @@ Inheritance diagram for Black\+Scholes\+Model\+:\begin{figure}[H]
 \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \hyperlink{class_black_scholes_model_abcbe5f02a1820adf876b1981c78dc43a}{evolve} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t0, \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} x0, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} dt, double dw) const
 \item 
 std\+::vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} $>$ \hyperlink{class_black_scholes_model_ae7ece51fd9f0eac3f77975cff857216d}{evolve} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t0, std\+::vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} $>$ \&x0, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} dt, double dw) const override
+\item 
+const vector$<$ int $>$ \& \hyperlink{class_black_scholes_model_a5665e6ea247e4f243082f5c98bbdbad6}{get\+M\+Cdimension} () const override
+\item 
+void \hyperlink{class_black_scholes_model_a04a6ba4c59cd70a92dedbeb482e9d5aa}{setup\+Argument} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} dt, \hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument} $\ast$arg) override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ int $>$ \hyperlink{class_black_scholes_model_a9457c1edc58d9f737f7eeeaaa6812488}{M\+Cdimension\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -55,6 +64,35 @@ std\+::vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quot
 
 
 Implements \hyperlink{class_model_a087d56280bb51e8b04be3a9a30d06c76}{Model}.
+
+\hypertarget{class_black_scholes_model_a5665e6ea247e4f243082f5c98bbdbad6}{}\label{class_black_scholes_model_a5665e6ea247e4f243082f5c98bbdbad6} 
+\index{Black\+Scholes\+Model@{Black\+Scholes\+Model}!get\+M\+Cdimension@{get\+M\+Cdimension}}
+\index{get\+M\+Cdimension@{get\+M\+Cdimension}!Black\+Scholes\+Model@{Black\+Scholes\+Model}}
+\subsubsection{\texorpdfstring{get\+M\+Cdimension()}{getMCdimension()}}
+{\footnotesize\ttfamily const vector$<$int$>$\& Black\+Scholes\+Model\+::get\+M\+Cdimension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_model_ac8a8c7e69b0be1df63ad141e0e14bf1e}{Model}.
+
+\hypertarget{class_black_scholes_model_a04a6ba4c59cd70a92dedbeb482e9d5aa}{}\label{class_black_scholes_model_a04a6ba4c59cd70a92dedbeb482e9d5aa} 
+\index{Black\+Scholes\+Model@{Black\+Scholes\+Model}!setup\+Argument@{setup\+Argument}}
+\index{setup\+Argument@{setup\+Argument}!Black\+Scholes\+Model@{Black\+Scholes\+Model}}
+\subsubsection{\texorpdfstring{setup\+Argument()}{setupArgument()}}
+{\footnotesize\ttfamily void Black\+Scholes\+Model\+::setup\+Argument (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{t,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{dt,  }\item[{\hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument} $\ast$}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_model_ab75ee969956d763343ebe2e19f80735c}{Model}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_black_scholes_model_a9457c1edc58d9f737f7eeeaaa6812488}{}\label{class_black_scholes_model_a9457c1edc58d9f737f7eeeaaa6812488} 
+\index{Black\+Scholes\+Model@{Black\+Scholes\+Model}!M\+Cdimension\+\_\+@{M\+Cdimension\+\_\+}}
+\index{M\+Cdimension\+\_\+@{M\+Cdimension\+\_\+}!Black\+Scholes\+Model@{Black\+Scholes\+Model}}
+\subsubsection{\texorpdfstring{M\+Cdimension\+\_\+}{MCdimension\_}}
+{\footnotesize\ttfamily vector$<$int$>$ Black\+Scholes\+Model\+::\+M\+Cdimension\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

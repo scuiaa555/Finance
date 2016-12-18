@@ -28,7 +28,7 @@ AsianOption::AsianOption(Time maturity, std::shared_ptr<Payoff> payoff, AverageT
                          bool isContinuouslyMonitored) : maturity_(
         maturity), payoff_(payoff), averageType_(averageType) { }
 
-void AsianOption::setupArguments(PricingEngine::Arguments *arg) const {
+void AsianOption::setupArguments(PricingEngine::Arguments *const arg) const {
     AsianOption::Arguments *arguments;
     arguments = dynamic_cast<AsianOption::Arguments *>(arg);
     arguments->payoff_ = payoff_;

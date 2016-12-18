@@ -19,9 +19,15 @@ virtual const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Sto
 \item 
 virtual const std\+::shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \& \hyperlink{class_model_a23adaaf21b2955a1f4d4893ad9b77f02}{get\+Process} (int i) const =0
 \item 
+virtual const vector$<$ int $>$ \& \hyperlink{class_model_ac8a8c7e69b0be1df63ad141e0e14bf1e}{get\+M\+Cdimension} () const =0
+\item 
 virtual unsigned long \hyperlink{class_model_acbe41cf30367bce4b96e92812d644f2d}{get\+Dimensionality} () const =0
 \item 
 const std\+::vector$<$ \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} $>$ \& \hyperlink{class_model_ade5d08aae4d32777bfa048f356bbcca9}{get\+Initial} () const
+\item 
+virtual void \hyperlink{class_model_ab75ee969956d763343ebe2e19f80735c}{setup\+Argument} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} dt, \hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument} $\ast$)
+\item 
+virtual void \hyperlink{class_model_a86fe5251e1a0c56097ba71f7d8c228d1}{setup\+Argument} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} dt, vector$<$ \hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument} $\ast$$>$)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -57,6 +63,16 @@ Implemented in \hyperlink{class_model_n_d_ab2356536a38f4961257654de629d6093}{Mod
 \subsubsection{\texorpdfstring{get\+Initial()}{getInitial()}}
 {\footnotesize\ttfamily const std\+::vector$<$\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote}$>$\& Model\+::get\+Initial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+\hypertarget{class_model_ac8a8c7e69b0be1df63ad141e0e14bf1e}{}\label{class_model_ac8a8c7e69b0be1df63ad141e0e14bf1e} 
+\index{Model@{Model}!get\+M\+Cdimension@{get\+M\+Cdimension}}
+\index{get\+M\+Cdimension@{get\+M\+Cdimension}!Model@{Model}}
+\subsubsection{\texorpdfstring{get\+M\+Cdimension()}{getMCdimension()}}
+{\footnotesize\ttfamily virtual const vector$<$int$>$\& Model\+::get\+M\+Cdimension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_black_scholes_model_a5665e6ea247e4f243082f5c98bbdbad6}{Black\+Scholes\+Model}.
+
 \hypertarget{class_model_adc6a695d3f6b2def79f2dde69b3ab547}{}\label{class_model_adc6a695d3f6b2def79f2dde69b3ab547} 
 \index{Model@{Model}!get\+Process@{get\+Process}}
 \index{get\+Process@{get\+Process}!Model@{Model}}
@@ -76,6 +92,22 @@ Implemented in \hyperlink{class_model_n_d_a98976fe73a8895ff98ba60ea174232f8}{Mod
 
 
 Implemented in \hyperlink{class_model_n_d_a62866814432b7c0a0d8f58223cc6279d}{Model\+ND}, and \hyperlink{class_model1_d_a08b3a9f594214b5e3bcba3fe5f63524e}{Model1D}.
+
+\hypertarget{class_model_ab75ee969956d763343ebe2e19f80735c}{}\label{class_model_ab75ee969956d763343ebe2e19f80735c} 
+\index{Model@{Model}!setup\+Argument@{setup\+Argument}}
+\index{setup\+Argument@{setup\+Argument}!Model@{Model}}
+\subsubsection{\texorpdfstring{setup\+Argument()}{setupArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Model\+::setup\+Argument (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{t,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{dt,  }\item[{\hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_black_scholes_model_a04a6ba4c59cd70a92dedbeb482e9d5aa}{Black\+Scholes\+Model}.
+
+\hypertarget{class_model_a86fe5251e1a0c56097ba71f7d8c228d1}{}\label{class_model_a86fe5251e1a0c56097ba71f7d8c228d1} 
+\index{Model@{Model}!setup\+Argument@{setup\+Argument}}
+\index{setup\+Argument@{setup\+Argument}!Model@{Model}}
+\subsubsection{\texorpdfstring{setup\+Argument()}{setupArgument()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Model\+::setup\+Argument (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{t,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{dt,  }\item[{vector$<$ \hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument} $\ast$$>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 

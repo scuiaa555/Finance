@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['uniformlecuyerrng1_2ecpp',['UniformLEcuyerRNG1.cpp',['../_uniform_l_ecuyer_r_n_g1_8cpp.html',1,'']]],
-  ['uniformlecuyerrng1_2eh',['UniformLEcuyerRNG1.h',['../_uniform_l_ecuyer_r_n_g1_8h.html',1,'']]]
+  ['singlerandsequencegenerator_2eh',['SingleRandSequenceGenerator.h',['../_single_rand_sequence_generator_8h.html',1,'']]],
+  ['statistics_2ecpp',['Statistics.cpp',['../_statistics_8cpp.html',1,'']]],
+  ['statistics_2eh',['Statistics.h',['../_statistics_8h.html',1,'']]],
+  ['stochasticprocess_2eh',['StochasticProcess.h',['../_stochastic_process_8h.html',1,'']]]
 ];

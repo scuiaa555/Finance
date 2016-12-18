@@ -37,10 +37,10 @@ int main() {
     shared_ptr<McEuropeanEngine<SingleRandom<Normal<>>>> pricingEngine(
             new McEuropeanEngine<SingleRandom<Normal<>>>(bsModel, 1, 200000, 10000));
     vanillaOpt.setPricingEngine(pricingEngine);
-//    a1 = vanillaOpt.npv();
+    a1 = vanillaOpt.npv();
     shared_ptr<AnalyticEuropeanEngine> pricingEngine2(new AnalyticEuropeanEngine(bsProcess));
     vanillaOpt.setPricingEngine(pricingEngine2);
-//    a2 = vanillaOpt.npv();
+    a2 = vanillaOpt.npv();
     double duration = tm.elapsed();
     std::cout << "***Time elapsed in " << duration << " seconds.***" << endl;
 

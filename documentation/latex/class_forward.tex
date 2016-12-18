@@ -24,10 +24,10 @@ class \hyperlink{class_forward_1_1_results}{Results}
 \item 
 \hyperlink{class_forward_a7ec14e1a089290cae0e70c4cddd353b5}{Forward} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} maturity, \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} strike, \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} spot)
 \item 
-void \hyperlink{class_forward_ad6208ba4ee03c396e611c142be735b26}{setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$arg) const override
-\item 
+void \hyperlink{class_forward_a909ab0cefa0ab42bdaf3bf6e84ac0096}{setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$const arg) const override
+\begin{DoxyCompactList}\small\item\em To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv()} which is to setup all the arguments that are needed for pricing engine. \end{DoxyCompactList}\item 
 \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_forward_ab1e2edeb8345c8605013634a598d1ae5}{fetch\+Results} (\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const res) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv()} which is to get back the net present value after calculation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -63,17 +63,38 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{class_forward_1_1_results}{Results} $>$ \hy
 
 
 
+To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv()} which is to get back the net present value after calculation. 
+
+{\itshape Constness\+:} Unlike setup\+Arguments, it is not a const member function. Result pointer res itself is const, but it does not point to const object. 
+\begin{DoxyParams}{Parameters}
+{\em res} & \hyperlink{class_forward_1_1_results}{Results} that are fetched back. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Net present value after calculation. Other results are stored in the results class. 
+\end{DoxyReturn}
+
+
 Implements \hyperlink{class_instrument_a381f093402f789ad7c0ffecd233167dc}{Instrument}.
 
-\hypertarget{class_forward_ad6208ba4ee03c396e611c142be735b26}{}\label{class_forward_ad6208ba4ee03c396e611c142be735b26} 
+\hypertarget{class_forward_a909ab0cefa0ab42bdaf3bf6e84ac0096}{}\label{class_forward_a909ab0cefa0ab42bdaf3bf6e84ac0096} 
 \index{Forward@{Forward}!setup\+Arguments@{setup\+Arguments}}
 \index{setup\+Arguments@{setup\+Arguments}!Forward@{Forward}}
 \subsubsection{\texorpdfstring{setup\+Arguments()}{setupArguments()}}
-{\footnotesize\ttfamily void Forward\+::setup\+Arguments (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$}]{arg }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Forward\+::setup\+Arguments (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$const}]{arg }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \hyperlink{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67}{Instrument}.
+To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv()} which is to setup all the arguments that are needed for pricing engine. 
+
+{\itshape Constness\+:} Const member function. Argument pointer arg itself is const, but it does not point to const object. 
+\begin{DoxyParams}{Parameters}
+{\em arg} & \hyperlink{class_forward_1_1_arguments}{Arguments} that are needed for pricing engine. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_instrument_a5cd384be384fe415f09ecc78e2a87539}{Instrument}.
 
 
 

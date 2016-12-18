@@ -60,12 +60,16 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_instrument-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Instrument Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base <a class="el" href="class_instrument.html" title="Base Instrument class. ">Instrument</a> class.  
+ <a href="class_instrument.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_instrument_8h_source.html">Instrument.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -74,7 +78,7 @@ Inheritance diagram for Instrument:</div>
  <div class="center">
   <img src="class_instrument.png" usemap="#Instrument_map" alt=""/>
   <map id="Instrument_map" name="Instrument_map">
-<area href="class_asian_option.html" alt="AsianOption" shape="rect" coords="0,56,104,80"/>
+<area href="class_asian_option.html" title="Asian option class. " alt="AsianOption" shape="rect" coords="0,56,104,80"/>
 <area href="class_european_option.html" alt="EuropeanOption" shape="rect" coords="114,56,218,80"/>
 <area href="class_forward.html" alt="Forward" shape="rect" coords="228,56,332,80"/>
 </map>
@@ -82,49 +86,32 @@ Inheritance diagram for Instrument:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1a297b2cbe1e239c8ede2e90185e2880"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_instrument.html#a1a297b2cbe1e239c8ede2e90185e2880">Instrument</a> ()</td></tr>
-<tr class="separator:a1a297b2cbe1e239c8ede2e90185e2880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47bdaa9390ab5e0616e8499a507c50cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_instrument.html#a47bdaa9390ab5e0616e8499a507c50cd">setPricingEngine</a> (const std::shared_ptr&lt; <a class="el" href="class_pricing_engine.html">PricingEngine</a> &gt; pricingEngine)</td></tr>
-<tr class="separator:a47bdaa9390ab5e0616e8499a507c50cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa750f2ae95a21d65a073da3171e8d084"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_instrument.html#aa750f2ae95a21d65a073da3171e8d084">npv</a> ()</td></tr>
+<tr class="memdesc:aa750f2ae95a21d65a073da3171e8d084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the net present value by using the attached pricing engine.  <a href="#aa750f2ae95a21d65a073da3171e8d084">More...</a><br /></td></tr>
 <tr class="separator:aa750f2ae95a21d65a073da3171e8d084"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0f78fd32a360abde0c31b5bc01c7e67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_instrument.html#ac0f78fd32a360abde0c31b5bc01c7e67">setupArguments</a> (<a class="el" href="class_pricing_engine_1_1_arguments.html">PricingEngine::Arguments</a> *arg) const =0</td></tr>
-<tr class="separator:ac0f78fd32a360abde0c31b5bc01c7e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47bdaa9390ab5e0616e8499a507c50cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_instrument.html#a47bdaa9390ab5e0616e8499a507c50cd">setPricingEngine</a> (const std::shared_ptr&lt; <a class="el" href="class_pricing_engine.html">PricingEngine</a> &gt; pricingEngine)</td></tr>
+<tr class="memdesc:a47bdaa9390ab5e0616e8499a507c50cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the corresponding pricing engine.  <a href="#a47bdaa9390ab5e0616e8499a507c50cd">More...</a><br /></td></tr>
+<tr class="separator:a47bdaa9390ab5e0616e8499a507c50cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5cd384be384fe415f09ecc78e2a87539"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_instrument.html#a5cd384be384fe415f09ecc78e2a87539">setupArguments</a> (<a class="el" href="class_pricing_engine_1_1_arguments.html">PricingEngine::Arguments</a> *const arg) const =0</td></tr>
+<tr class="memdesc:a5cd384be384fe415f09ecc78e2a87539"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called in method <a class="el" href="class_instrument.html#aa750f2ae95a21d65a073da3171e8d084" title="Calculate the net present value by using the attached pricing engine. ">npv()</a> which is to setup all the arguments that are needed for pricing engine.  <a href="#a5cd384be384fe415f09ecc78e2a87539">More...</a><br /></td></tr>
+<tr class="separator:a5cd384be384fe415f09ecc78e2a87539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a381f093402f789ad7c0ffecd233167dc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_instrument.html#a381f093402f789ad7c0ffecd233167dc">fetchResults</a> (<a class="el" href="class_pricing_engine_1_1_results.html">PricingEngine::Results</a> *const res)=0</td></tr>
+<tr class="memdesc:a381f093402f789ad7c0ffecd233167dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called in method <a class="el" href="class_instrument.html#aa750f2ae95a21d65a073da3171e8d084" title="Calculate the net present value by using the attached pricing engine. ">npv()</a> which is to get back the net present value after calculation.  <a href="#a381f093402f789ad7c0ffecd233167dc">More...</a><br /></td></tr>
 <tr class="separator:a381f093402f789ad7c0ffecd233167dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a6fdd5548ccc944536ff73913d98bf598"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_pricing_engine.html">PricingEngine</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_instrument.html#a6fdd5548ccc944536ff73913d98bf598">pricingEngine_</a></td></tr>
+<tr class="memdesc:a6fdd5548ccc944536ff73913d98bf598"><td class="mdescLeft">&#160;</td><td class="mdescRight">One pricing engine also can be used for other instrument, so shared_ptr is used here.  <a href="#a6fdd5548ccc944536ff73913d98bf598">More...</a><br /></td></tr>
 <tr class="separator:a6fdd5548ccc944536ff73913d98bf598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1a297b2cbe1e239c8ede2e90185e2880"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a297b2cbe1e239c8ede2e90185e2880">&sect;&nbsp;</a></span>Instrument()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Instrument::Instrument </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base <a class="el" href="class_instrument.html" title="Base Instrument class. ">Instrument</a> class. </p>
+<p>This <a class="el" href="class_instrument.html" title="Base Instrument class. ">Instrument</a> class is an abstract base class for any financial instruments, like options, forward, swap, swaption, etc. There is always a set of <a class="el" href="class_pricing_engine.html">PricingEngine</a> associated to each kind of instrument that can be used to price. Any inherited financial instrument classes should override the methods that are used to communicate the pricingEngines. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a381f093402f789ad7c0ffecd233167dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a381f093402f789ad7c0ffecd233167dc">&sect;&nbsp;</a></span>fetchResults()</h2>
 
@@ -144,10 +131,19 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>To be called in method <a class="el" href="class_instrument.html#aa750f2ae95a21d65a073da3171e8d084" title="Calculate the net present value by using the attached pricing engine. ">npv()</a> which is to get back the net present value after calculation. </p>
+<p><em>Constness:</em> Unlike setupArguments, it is not a const member function. Result pointer res itself is const, but it does not point to const object. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">res</td><td>Results that are fetched back. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Net present value after calculation. Other results are stored in the results class. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_asian_option.html#a99cd9956b73d99a64748c913dcccd6ea">AsianOption</a>, <a class="el" href="class_forward.html#ab1e2edeb8345c8605013634a598d1ae5">Forward</a>, and <a class="el" href="class_european_option.html#ae234d562ef21dc24c25f1538860da1cf">EuropeanOption</a>.</p>
 
@@ -168,6 +164,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Calculate the net present value by using the attached pricing engine. </p>
+<p>Implemented by template pattern. <br />
+Set the argument of <a class="el" href="class_pricing_engine.html">PricingEngine</a> first and then calculate the npv by calling the method of <a class="el" href="class_pricing_engine.html">PricingEngine</a> and finally fetch the results back from the <a class="el" href="class_pricing_engine.html">PricingEngine</a> class. </p>
+
 </div>
 </div>
 <a id="a47bdaa9390ab5e0616e8499a507c50cd"></a>
@@ -186,10 +186,19 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the corresponding pricing engine. </p>
+<p><em>Constness:</em> Pricing engine will not change. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pricingEngine</td><td>The pricing engine to be used for pricing. <br />
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ac0f78fd32a360abde0c31b5bc01c7e67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0f78fd32a360abde0c31b5bc01c7e67">&sect;&nbsp;</a></span>setupArguments()</h2>
+<a id="a5cd384be384fe415f09ecc78e2a87539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cd384be384fe415f09ecc78e2a87539">&sect;&nbsp;</a></span>setupArguments()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,19 +209,27 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void Instrument::setupArguments </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_pricing_engine_1_1_arguments.html">PricingEngine::Arguments</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_pricing_engine_1_1_arguments.html">PricingEngine::Arguments</a> *const&#160;</td>
           <td class="paramname"><em>arg</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_asian_option.html#a475cbd83529df369b371ee44f63cdd08">AsianOption</a>, <a class="el" href="class_forward.html#ad6208ba4ee03c396e611c142be735b26">Forward</a>, and <a class="el" href="class_european_option.html#a94c1826feba0099400bce8dd6fc01cb9">EuropeanOption</a>.</p>
+<p>To be called in method <a class="el" href="class_instrument.html#aa750f2ae95a21d65a073da3171e8d084" title="Calculate the net present value by using the attached pricing engine. ">npv()</a> which is to setup all the arguments that are needed for pricing engine. </p>
+<p><em>Constness:</em> Const member function. Argument pointer arg itself is const, but it does not point to const object. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>Arguments that are needed for pricing engine. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_asian_option.html#a82c9b5fb3bea69f476a65e9675e1cc28">AsianOption</a>, <a class="el" href="class_forward.html#a909ab0cefa0ab42bdaf3bf6e84ac0096">Forward</a>, and <a class="el" href="class_european_option.html#a77e3bc17dbcf317561c4920f6bfa84de">EuropeanOption</a>.</p>
 
 </div>
 </div>
@@ -236,6 +253,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>One pricing engine also can be used for other instrument, so shared_ptr is used here. </p>
 
 </div>
 </div>

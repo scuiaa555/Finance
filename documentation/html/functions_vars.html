@@ -64,6 +64,9 @@ $(function() {
 <li>antiVals_
 : <a class="el" href="class_antithetic_path.html#a4aae58299bbbd6516c71fc837bcfe3e7">AntitheticPath</a>
 </li>
+<li>argument_
+: <a class="el" href="class_generic_normal.html#a9fe590cf9e7fd6693a040b513b3e58d2">GenericNormal</a>
+</li>
 <li>arguments_
 : <a class="el" href="class_generic_engine.html#a9ac595191e5d6976c65659d26063bfc8">GenericEngine&lt; ArgumentsType, ResultsType &gt;</a>
 </li>
@@ -80,9 +83,8 @@ $(function() {
 : <a class="el" href="class_european_option_1_1_results.html#a3e9ddb58f8e1f69b972bfed5e893414b">EuropeanOption::Results</a>
 </li>
 <li>dimension_
-: <a class="el" href="class_model_n_d.html#ac86872437daeeffeb8fb1b387bea28f8">ModelND</a>
-, <a class="el" href="class_multi_rand_generator.html#aef5f631e930874deb01b87d4d6741bfe">MultiRandGenerator</a>
-, <a class="el" href="class_single_rand_sequence_generator.html#a9cc3a5a32282f4d6ef9e6ae838647e3e">SingleRandSequenceGenerator&lt; RNG &gt;</a>
+: <a class="el" href="class_generic_random_variable_generator.html#aec0118677502f71bbb4ad07c6b8e95be">GenericRandomVariableGenerator</a>
+, <a class="el" href="class_model_n_d.html#ac86872437daeeffeb8fb1b387bea28f8">ModelND</a>
 </li>
 <li>dimensional_
 : <a class="el" href="class_path.html#a577d3370c9142a9e73c2118799c6a8a2">Path</a>
@@ -106,8 +108,8 @@ $(function() {
 </li>
 <li>isAntithetic_
 : <a class="el" href="class_asian_path_pricer.html#ad42c5d8d3b3d1c66d01620491c07bef6">AsianPathPricer</a>
-, <a class="el" href="class_mc_asian_engine.html#adbc09c299d05335c926179154fd52eca">McAsianEngine&lt; UnifRng &gt;</a>
-, <a class="el" href="class_mc_simulation.html#aabbb28856a126b01552583a571e1e807">McSimulation</a>
+, <a class="el" href="class_mc_asian_engine.html#ae5678e3c643e058d4c5f2d6b0e5fe515">McAsianEngine&lt; RNG &gt;</a>
+, <a class="el" href="class_mc_simulation.html#a42eb4d165bfdfae218b4508e2321c4a3">McSimulation&lt; RNG &gt;</a>
 , <a class="el" href="class_path_generator.html#aa45100f04c27cd0f25c059c410316346">PathGenerator&lt; RNG &gt;</a>
 </li>
 </ul>
@@ -115,7 +117,8 @@ $(function() {
 
 <h3><a id="index_l"></a>- l -</h3><ul>
 <li>last_
-: <a class="el" href="class_normal_marsaglia_bray_rng.html#a39a4a809c38812b344b3695b915133c6">NormalMarsagliaBrayRng&lt; UniformRNG &gt;</a>
+: <a class="el" href="class_normal.html#a69f8977c8b8224cf6345b1e2d0d35382">Normal&lt; NormMethod &gt;</a>
+, <a class="el" href="class_normal_marsaglia_bray_rng.html#a39a4a809c38812b344b3695b915133c6">NormalMarsagliaBrayRng&lt; UniformRNG &gt;</a>
 </li>
 </ul>
 
@@ -130,19 +133,25 @@ $(function() {
 , <a class="el" href="class_forward.html#ad599104a13c33fbf31e9214af904e9aa">Forward</a>
 </li>
 <li>maxSamples_
-: <a class="el" href="class_mc_asian_engine.html#afef8e1a62d6d3e865a511f9b24bc16fe">McAsianEngine&lt; UnifRng &gt;</a>
-, <a class="el" href="class_mc_european_engine.html#ae6c942f2c6f52c461663968f8b5f9161">McEuropeanEngine&lt; UnifRng &gt;</a>
+: <a class="el" href="class_mc_asian_engine.html#a512cbb76b5daeb503dc55c2ef72dd74f">McAsianEngine&lt; RNG &gt;</a>
+, <a class="el" href="class_mc_european_engine.html#a4f951d1b93039bb0cf5e65abb1d61f2e">McEuropeanEngine&lt; RNG &gt;</a>
+</li>
+<li>MCdimension_
+: <a class="el" href="class_black_scholes_model.html#a9457c1edc58d9f737f7eeeaaa6812488">BlackScholesModel</a>
 </li>
 <li>mcModel_
-: <a class="el" href="class_mc_simulation.html#a7f6445b880401bcd208fd921ca8d82c2">McSimulation</a>
+: <a class="el" href="class_mc_simulation.html#a5ccf1b2ffc6ec2dd7d7efcf4c6163f62">McSimulation&lt; RNG &gt;</a>
+</li>
+<li>mean_
+: <a class="el" href="class_generic_normal_1_1_argument.html#a2831c73fc24cfc71afc7045b47ef5d49">GenericNormal::Argument</a>
 </li>
 <li>minSamples_
-: <a class="el" href="class_mc_asian_engine.html#ad310118988d49cf73b5515ee6af85996">McAsianEngine&lt; UnifRng &gt;</a>
-, <a class="el" href="class_mc_european_engine.html#ab0811b021427b14b9e63afe57cf66f46">McEuropeanEngine&lt; UnifRng &gt;</a>
+: <a class="el" href="class_mc_asian_engine.html#a71e8848ac19c88cee59590b9cab10700">McAsianEngine&lt; RNG &gt;</a>
+, <a class="el" href="class_mc_european_engine.html#a1fc3ac7c29f0ebb565d4f3a6a0baa315">McEuropeanEngine&lt; RNG &gt;</a>
 </li>
 <li>model_
-: <a class="el" href="class_mc_asian_engine.html#a3b8579245987fd1a2f98561fee7e7011">McAsianEngine&lt; UnifRng &gt;</a>
-, <a class="el" href="class_mc_european_engine.html#ac9a776838f0c894f04c64491a6a0e931">McEuropeanEngine&lt; UnifRng &gt;</a>
+: <a class="el" href="class_mc_asian_engine.html#ae23208fbc0b859e7bfc13821a709c852">McAsianEngine&lt; RNG &gt;</a>
+, <a class="el" href="class_mc_european_engine.html#a81d241a7b2c065d2ecb9c8ed367f65b6">McEuropeanEngine&lt; RNG &gt;</a>
 , <a class="el" href="class_path_generator.html#a80dcaacd0b79c84c4bf83e980f5ed7ff">PathGenerator&lt; RNG &gt;</a>
 </li>
 <li>monitoredTimes_
@@ -162,6 +171,9 @@ $(function() {
 <li>next_
 : <a class="el" href="class_path_generator.html#a2af5b3cab0498565a56b20e97a3d6f35">PathGenerator&lt; RNG &gt;</a>
 </li>
+<li>numOfSingleRNG_
+: <a class="el" href="class_multi_rand_generator.html#a31ad84bf3f1e2c7db54b563945801b75">MultiRandGenerator&lt; Args &gt;</a>
+</li>
 <li>numSample_
 : <a class="el" href="class_m_c_statistics_1_1_sample_results.html#a068edc7e162d279df3df01df775f431a">MCStatistics::SampleResults</a>
 </li>
@@ -173,7 +185,7 @@ $(function() {
 : <a class="el" href="class_parameter.html#abcbcc6573234afb8f6027d3c716917bb">Parameter</a>
 </li>
 <li>pathGenerator_
-: <a class="el" href="class_mc_model.html#a169810bfa106409ed8bcdba1a5097997">McModel</a>
+: <a class="el" href="class_mc_model.html#a79918134182b5642b719bb9e78a5f2fc">McModel</a>
 </li>
 <li>pathPricer_
 : <a class="el" href="class_mc_model.html#a8b4390b3abdd1ffdd121a09f141299f9">McModel</a>
@@ -224,12 +236,15 @@ $(function() {
 , <a class="el" href="class_generic_engine.html#acd6af7c4b3fd0e43826755ba7d347dd5">GenericEngine&lt; ArgumentsType, ResultsType &gt;</a>
 </li>
 <li>rng_
-: <a class="el" href="class_normal_marsaglia_bray_rng.html#a590b5bfbb3888d5163c6e3d702bfb2e0">NormalMarsagliaBrayRng&lt; UniformRNG &gt;</a>
-, <a class="el" href="class_path_generator.html#ae8b29fa9173cf38dfc448375163adf25">PathGenerator&lt; RNG &gt;</a>
-, <a class="el" href="class_single_rand_sequence_generator.html#ae558374c172ea997e1d7d717fc7fe95e">SingleRandSequenceGenerator&lt; RNG &gt;</a>
+: <a class="el" href="class_normal.html#a84d6a0d0b702c4cc19d66f960040276c">Normal&lt; NormMethod &gt;</a>
+, <a class="el" href="class_normal_marsaglia_bray_rng.html#a590b5bfbb3888d5163c6e3d702bfb2e0">NormalMarsagliaBrayRng&lt; UniformRNG &gt;</a>
+, <a class="el" href="class_path_generator.html#a4fad0001eee9b8185049f3c860f53b1f">PathGenerator&lt; RNG &gt;</a>
 </li>
-<li>rsgs_
-: <a class="el" href="class_multi_rand_generator.html#a945cbedeabadae00fcf266292d26b2bd">MultiRandGenerator</a>
+<li>rngArguments_
+: <a class="el" href="class_multi_rand_generator.html#a267533dce301acea01978671fa3cb72f">MultiRandGenerator&lt; Args &gt;</a>
+</li>
+<li>rngs_
+: <a class="el" href="class_multi_rand_generator.html#a531c3ee630241e7c43b0e3fce70850b1">MultiRandGenerator&lt; Args &gt;</a>
 </li>
 </ul>
 
@@ -246,8 +261,7 @@ $(function() {
 : <a class="el" href="class_uniform_l_ecuyer_r_n_g1.html#ab722b90ba6d65dea6874ccede2edc921">UniformLEcuyerRNG1</a>
 </li>
 <li>sequence_
-: <a class="el" href="class_multi_rand_generator.html#a9885149b827d762612c1a851ba23782b">MultiRandGenerator</a>
-, <a class="el" href="class_single_rand_sequence_generator.html#af886df7f0afc0d33da3472558856f0a0">SingleRandSequenceGenerator&lt; RNG &gt;</a>
+: <a class="el" href="class_multi_rand_generator.html#a9a4e23b864633276d73890b770736edd">MultiRandGenerator&lt; Args &gt;</a>
 </li>
 <li>sigma_
 : <a class="el" href="class_b_s_stochastic_process.html#a4d1125a7ed9bd09380b10160ef4277d5">BSStochasticProcess</a>
@@ -273,8 +287,8 @@ $(function() {
 : <a class="el" href="class_path.html#a89dcf892f7c979692e1bdb12811a2db1">Path</a>
 </li>
 <li>timeStep_
-: <a class="el" href="class_mc_asian_engine.html#a44bf438e294ec6b6475e85412422ec54">McAsianEngine&lt; UnifRng &gt;</a>
-, <a class="el" href="class_mc_european_engine.html#a6cf4932a9ca4b0c8bd6d3f4a1a23367e">McEuropeanEngine&lt; UnifRng &gt;</a>
+: <a class="el" href="class_mc_asian_engine.html#a0dadab191a7097d0e474ebf084f6bca8">McAsianEngine&lt; RNG &gt;</a>
+, <a class="el" href="class_mc_european_engine.html#aa2e85e2348747a35494677719b023991">McEuropeanEngine&lt; RNG &gt;</a>
 </li>
 <li>totalNum
 : <a class="el" href="class_m_c_statistics.html#ada9be8c85593b98c76b8b61252db97e2">MCStatistics</a>
@@ -295,6 +309,9 @@ $(function() {
 <h3><a id="index_v"></a>- v -</h3><ul>
 <li>vals_
 : <a class="el" href="class_path.html#ac8b906724bca24f9ec14ad754559e27a">Path</a>
+</li>
+<li>variance_
+: <a class="el" href="class_generic_normal_1_1_argument.html#a95dbb3649aa02c89f3614ce0836e0596">GenericNormal::Argument</a>
 </li>
 <li>volatility_
 : <a class="el" href="class_log_normal_process.html#ac51be6698f524d4cc5da8ccbdd4e1256">LogNormalProcess</a>

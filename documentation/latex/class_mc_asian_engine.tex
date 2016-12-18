@@ -1,10 +1,10 @@
-\hypertarget{class_mc_asian_engine}{}\section{Mc\+Asian\+Engine$<$ Unif\+Rng $>$ Class Template Reference}
-\label{class_mc_asian_engine}\index{Mc\+Asian\+Engine$<$ Unif\+Rng $>$@{Mc\+Asian\+Engine$<$ Unif\+Rng $>$}}
+\hypertarget{class_mc_asian_engine}{}\section{Mc\+Asian\+Engine$<$ R\+NG $>$ Class Template Reference}
+\label{class_mc_asian_engine}\index{Mc\+Asian\+Engine$<$ R\+N\+G $>$@{Mc\+Asian\+Engine$<$ R\+N\+G $>$}}
 
 
-{\ttfamily \#include $<$Mc\+Asian\+Engine.\+h$>$}
+{\ttfamily \#include $<$M\+C\+Asian\+Engine.\+h$>$}
 
-Inheritance diagram for Mc\+Asian\+Engine$<$ Unif\+Rng $>$\+:\begin{figure}[H]
+Inheritance diagram for Mc\+Asian\+Engine$<$ R\+NG $>$\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.894057cm]{class_mc_asian_engine}
@@ -13,127 +13,127 @@ Inheritance diagram for Mc\+Asian\+Engine$<$ Unif\+Rng $>$\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_mc_asian_engine_a8688d15638d6176095dab92ef31ad3ad}{Mc\+Asian\+Engine} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$ model, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} time\+Step, unsigned long max\+Samples, unsigned long min\+Samples, bool is\+Antithetic=0)
+\hyperlink{class_mc_asian_engine_a4b2cd236024fd32623e1f7a7a27277d6}{Mc\+Asian\+Engine} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$ model, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} time\+Step, unsigned long max\+Samples, unsigned long min\+Samples, bool is\+Antithetic=0)
 \item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ \hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}$<$ Unif\+Rng $>$ $>$ $>$ \hyperlink{class_mc_asian_engine_a93c9216b38bcbe0fe7e8131bf975dbc2}{path\+Generator} () override
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$ $>$ \hyperlink{class_mc_asian_engine_ae38592c71ae4d5d09c9eb13d7cc0c5ff}{path\+Generator} () override
 \item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_asian_engine_afb903df1f8e0023a1f6bfae43ccbc8f7}{path\+Pricer} () override
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_asian_engine_a5b7351c28b68878b7f6d130eef293d6c}{path\+Pricer} () override
 \item 
-vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_asian_engine_a4c16366e8dec7d689e934cbafe413332}{time\+Grid} () override
+vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_asian_engine_ad8d2c8721172ab1d7327db91a26c5052}{time\+Grid} () override
 \item 
-void \hyperlink{class_mc_asian_engine_a4e67149307de395f821c8aa07afad3b8}{calculate} () override
+void \hyperlink{class_mc_asian_engine_ac16f4259846f55dc6c02d0b628f34e63}{calculate} () override
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$ \hyperlink{class_mc_asian_engine_a3b8579245987fd1a2f98561fee7e7011}{model\+\_\+}
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$ \hyperlink{class_mc_asian_engine_ae23208fbc0b859e7bfc13821a709c852}{model\+\_\+}
 \item 
-unsigned long \hyperlink{class_mc_asian_engine_ad310118988d49cf73b5515ee6af85996}{min\+Samples\+\_\+}
+unsigned long \hyperlink{class_mc_asian_engine_a71e8848ac19c88cee59590b9cab10700}{min\+Samples\+\_\+}
 \item 
-unsigned long \hyperlink{class_mc_asian_engine_afef8e1a62d6d3e865a511f9b24bc16fe}{max\+Samples\+\_\+}
+unsigned long \hyperlink{class_mc_asian_engine_a512cbb76b5daeb503dc55c2ef72dd74f}{max\+Samples\+\_\+}
 \item 
-\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} \hyperlink{class_mc_asian_engine_a44bf438e294ec6b6475e85412422ec54}{time\+Step\+\_\+}
+\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} \hyperlink{class_mc_asian_engine_a0dadab191a7097d0e474ebf084f6bca8}{time\+Step\+\_\+}
 \item 
-bool \hyperlink{class_mc_asian_engine_adbc09c299d05335c926179154fd52eca}{is\+Antithetic\+\_\+}
+bool \hyperlink{class_mc_asian_engine_ae5678e3c643e058d4c5f2d6b0e5fe515}{is\+Antithetic\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_mc_asian_engine_a8688d15638d6176095dab92ef31ad3ad}{}\label{class_mc_asian_engine_a8688d15638d6176095dab92ef31ad3ad} 
+\hypertarget{class_mc_asian_engine_a4b2cd236024fd32623e1f7a7a27277d6}{}\label{class_mc_asian_engine_a4b2cd236024fd32623e1f7a7a27277d6} 
 \index{Mc\+Asian\+Engine@{Mc\+Asian\+Engine}!Mc\+Asian\+Engine@{Mc\+Asian\+Engine}}
 \index{Mc\+Asian\+Engine@{Mc\+Asian\+Engine}!Mc\+Asian\+Engine@{Mc\+Asian\+Engine}}
 \subsubsection{\texorpdfstring{Mc\+Asian\+Engine()}{McAsianEngine()}}
-{\footnotesize\ttfamily template$<$typename Unif\+Rng $>$ \\
-\hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ Unif\+Rng $>$\+::\hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$}]{model,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{time\+Step,  }\item[{unsigned long}]{max\+Samples,  }\item[{unsigned long}]{min\+Samples,  }\item[{bool}]{is\+Antithetic = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+\hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ R\+NG $>$\+::\hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$}]{model,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{time\+Step,  }\item[{unsigned long}]{max\+Samples,  }\item[{unsigned long}]{min\+Samples,  }\item[{bool}]{is\+Antithetic = {\ttfamily 0} }\end{DoxyParamCaption})}
 
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_mc_asian_engine_a4e67149307de395f821c8aa07afad3b8}{}\label{class_mc_asian_engine_a4e67149307de395f821c8aa07afad3b8} 
+\hypertarget{class_mc_asian_engine_ac16f4259846f55dc6c02d0b628f34e63}{}\label{class_mc_asian_engine_ac16f4259846f55dc6c02d0b628f34e63} 
 \index{Mc\+Asian\+Engine@{Mc\+Asian\+Engine}!calculate@{calculate}}
 \index{calculate@{calculate}!Mc\+Asian\+Engine@{Mc\+Asian\+Engine}}
 \subsubsection{\texorpdfstring{calculate()}{calculate()}}
-{\footnotesize\ttfamily template$<$typename Unif\+Rng $>$ \\
-void \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ Unif\+Rng $>$\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+void \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ R\+NG $>$\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \hyperlink{class_pricing_engine_a733511ffc3cf5e4dc1fbc2a39208d8bd}{Pricing\+Engine}.
 
-\hypertarget{class_mc_asian_engine_a93c9216b38bcbe0fe7e8131bf975dbc2}{}\label{class_mc_asian_engine_a93c9216b38bcbe0fe7e8131bf975dbc2} 
+\hypertarget{class_mc_asian_engine_ae38592c71ae4d5d09c9eb13d7cc0c5ff}{}\label{class_mc_asian_engine_ae38592c71ae4d5d09c9eb13d7cc0c5ff} 
 \index{Mc\+Asian\+Engine@{Mc\+Asian\+Engine}!path\+Generator@{path\+Generator}}
 \index{path\+Generator@{path\+Generator}!Mc\+Asian\+Engine@{Mc\+Asian\+Engine}}
 \subsubsection{\texorpdfstring{path\+Generator()}{pathGenerator()}}
-{\footnotesize\ttfamily template$<$typename Unif\+Rng $>$ \\
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ \hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}$<$ Unif\+Rng $>$ $>$ $>$ \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ Unif\+Rng $>$\+::path\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$ $>$ \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ R\+NG $>$\+::path\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \hyperlink{class_mc_simulation_ada27dc346c81cf3d7aff84188dd12381}{Mc\+Simulation}.
+Implements \hyperlink{class_mc_simulation_a44086a1efd452d8644c9f2e52417038f}{Mc\+Simulation$<$ R\+N\+G $>$}.
 
-\hypertarget{class_mc_asian_engine_afb903df1f8e0023a1f6bfae43ccbc8f7}{}\label{class_mc_asian_engine_afb903df1f8e0023a1f6bfae43ccbc8f7} 
+\hypertarget{class_mc_asian_engine_a5b7351c28b68878b7f6d130eef293d6c}{}\label{class_mc_asian_engine_a5b7351c28b68878b7f6d130eef293d6c} 
 \index{Mc\+Asian\+Engine@{Mc\+Asian\+Engine}!path\+Pricer@{path\+Pricer}}
 \index{path\+Pricer@{path\+Pricer}!Mc\+Asian\+Engine@{Mc\+Asian\+Engine}}
 \subsubsection{\texorpdfstring{path\+Pricer()}{pathPricer()}}
-{\footnotesize\ttfamily template$<$typename Unif\+Rng $>$ \\
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ Unif\+Rng $>$\+::path\+Pricer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ R\+NG $>$\+::path\+Pricer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \hyperlink{class_mc_simulation_a3182a27c79d31cfb65e9a1a6b60f5391}{Mc\+Simulation}.
+Implements \hyperlink{class_mc_simulation_ae3b894a78823df7897abf418bb04a4a1}{Mc\+Simulation$<$ R\+N\+G $>$}.
 
-\hypertarget{class_mc_asian_engine_a4c16366e8dec7d689e934cbafe413332}{}\label{class_mc_asian_engine_a4c16366e8dec7d689e934cbafe413332} 
+\hypertarget{class_mc_asian_engine_ad8d2c8721172ab1d7327db91a26c5052}{}\label{class_mc_asian_engine_ad8d2c8721172ab1d7327db91a26c5052} 
 \index{Mc\+Asian\+Engine@{Mc\+Asian\+Engine}!time\+Grid@{time\+Grid}}
 \index{time\+Grid@{time\+Grid}!Mc\+Asian\+Engine@{Mc\+Asian\+Engine}}
 \subsubsection{\texorpdfstring{time\+Grid()}{timeGrid()}}
-{\footnotesize\ttfamily template$<$typename Unif\+Rng $>$ \\
-vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ Unif\+Rng $>$\+::time\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ R\+NG $>$\+::time\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \hyperlink{class_mc_simulation_a71f4b6eedd90f057203a94467a691387}{Mc\+Simulation}.
+Implements \hyperlink{class_mc_simulation_ac3c90184d3d97fc7c01c974ad861f8d9}{Mc\+Simulation$<$ R\+N\+G $>$}.
 
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_mc_asian_engine_adbc09c299d05335c926179154fd52eca}{}\label{class_mc_asian_engine_adbc09c299d05335c926179154fd52eca} 
+\hypertarget{class_mc_asian_engine_ae5678e3c643e058d4c5f2d6b0e5fe515}{}\label{class_mc_asian_engine_ae5678e3c643e058d4c5f2d6b0e5fe515} 
 \index{Mc\+Asian\+Engine@{Mc\+Asian\+Engine}!is\+Antithetic\+\_\+@{is\+Antithetic\+\_\+}}
 \index{is\+Antithetic\+\_\+@{is\+Antithetic\+\_\+}!Mc\+Asian\+Engine@{Mc\+Asian\+Engine}}
 \subsubsection{\texorpdfstring{is\+Antithetic\+\_\+}{isAntithetic\_}}
-{\footnotesize\ttfamily template$<$typename Unif\+Rng  = Uniform\+L\+Ecuyer\+R\+N\+G1$>$ \\
-bool \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ Unif\+Rng $>$\+::is\+Antithetic\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+bool \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ R\+NG $>$\+::is\+Antithetic\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{class_mc_asian_engine_afef8e1a62d6d3e865a511f9b24bc16fe}{}\label{class_mc_asian_engine_afef8e1a62d6d3e865a511f9b24bc16fe} 
+\hypertarget{class_mc_asian_engine_a512cbb76b5daeb503dc55c2ef72dd74f}{}\label{class_mc_asian_engine_a512cbb76b5daeb503dc55c2ef72dd74f} 
 \index{Mc\+Asian\+Engine@{Mc\+Asian\+Engine}!max\+Samples\+\_\+@{max\+Samples\+\_\+}}
 \index{max\+Samples\+\_\+@{max\+Samples\+\_\+}!Mc\+Asian\+Engine@{Mc\+Asian\+Engine}}
 \subsubsection{\texorpdfstring{max\+Samples\+\_\+}{maxSamples\_}}
-{\footnotesize\ttfamily template$<$typename Unif\+Rng  = Uniform\+L\+Ecuyer\+R\+N\+G1$>$ \\
-unsigned long \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ Unif\+Rng $>$\+::max\+Samples\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+unsigned long \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ R\+NG $>$\+::max\+Samples\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{class_mc_asian_engine_ad310118988d49cf73b5515ee6af85996}{}\label{class_mc_asian_engine_ad310118988d49cf73b5515ee6af85996} 
+\hypertarget{class_mc_asian_engine_a71e8848ac19c88cee59590b9cab10700}{}\label{class_mc_asian_engine_a71e8848ac19c88cee59590b9cab10700} 
 \index{Mc\+Asian\+Engine@{Mc\+Asian\+Engine}!min\+Samples\+\_\+@{min\+Samples\+\_\+}}
 \index{min\+Samples\+\_\+@{min\+Samples\+\_\+}!Mc\+Asian\+Engine@{Mc\+Asian\+Engine}}
 \subsubsection{\texorpdfstring{min\+Samples\+\_\+}{minSamples\_}}
-{\footnotesize\ttfamily template$<$typename Unif\+Rng  = Uniform\+L\+Ecuyer\+R\+N\+G1$>$ \\
-unsigned long \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ Unif\+Rng $>$\+::min\+Samples\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+unsigned long \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ R\+NG $>$\+::min\+Samples\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{class_mc_asian_engine_a3b8579245987fd1a2f98561fee7e7011}{}\label{class_mc_asian_engine_a3b8579245987fd1a2f98561fee7e7011} 
+\hypertarget{class_mc_asian_engine_ae23208fbc0b859e7bfc13821a709c852}{}\label{class_mc_asian_engine_ae23208fbc0b859e7bfc13821a709c852} 
 \index{Mc\+Asian\+Engine@{Mc\+Asian\+Engine}!model\+\_\+@{model\+\_\+}}
 \index{model\+\_\+@{model\+\_\+}!Mc\+Asian\+Engine@{Mc\+Asian\+Engine}}
 \subsubsection{\texorpdfstring{model\+\_\+}{model\_}}
-{\footnotesize\ttfamily template$<$typename Unif\+Rng  = Uniform\+L\+Ecuyer\+R\+N\+G1$>$ \\
-std\+::shared\+\_\+ptr$<$\hyperlink{class_model}{Model}$>$ \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ Unif\+Rng $>$\+::model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{class_model}{Model}$>$ \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ R\+NG $>$\+::model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{class_mc_asian_engine_a44bf438e294ec6b6475e85412422ec54}{}\label{class_mc_asian_engine_a44bf438e294ec6b6475e85412422ec54} 
+\hypertarget{class_mc_asian_engine_a0dadab191a7097d0e474ebf084f6bca8}{}\label{class_mc_asian_engine_a0dadab191a7097d0e474ebf084f6bca8} 
 \index{Mc\+Asian\+Engine@{Mc\+Asian\+Engine}!time\+Step\+\_\+@{time\+Step\+\_\+}}
 \index{time\+Step\+\_\+@{time\+Step\+\_\+}!Mc\+Asian\+Engine@{Mc\+Asian\+Engine}}
 \subsubsection{\texorpdfstring{time\+Step\+\_\+}{timeStep\_}}
-{\footnotesize\ttfamily template$<$typename Unif\+Rng  = Uniform\+L\+Ecuyer\+R\+N\+G1$>$ \\
-\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ Unif\+Rng $>$\+::time\+Step\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ R\+NG $>$\+::time\+Step\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Pricing\+Engines/\hyperlink{_mc_asian_engine_8h}{Mc\+Asian\+Engine.\+h}\end{DoxyCompactItemize}
+Pricing\+Engines/\hyperlink{_m_c_asian_engine_8h}{M\+C\+Asian\+Engine.\+h}\end{DoxyCompactItemize}

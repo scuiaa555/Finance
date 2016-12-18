@@ -173,9 +173,9 @@
 
 boxfont setfont
 1 boundaspect scale
-(McAsianEngine< UnifRng >) cw
+(McAsianEngine< RNG >) cw
 (AsianOption::engine) cw
-(McSimulation) cw
+(McSimulation< RNG >) cw
 (GenericEngine< AsianOption::Arguments, AsianOption::Results >) cw
 (PricingEngine) cw
 /boxwidth boxwidth marginwidth 2 mul add def
@@ -189,9 +189,9 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (McAsianEngine< UnifRng >) 0.500000 0.000000 box
+ (McAsianEngine< RNG >) 0.500000 0.000000 box
  (AsianOption::engine) 0.000000 1.000000 box
- (McSimulation) 1.000000 1.000000 box
+ (McSimulation< RNG >) 1.000000 1.000000 box
  (GenericEngine< AsianOption::Arguments, AsianOption::Results >) 0.000000 2.000000 box
  (PricingEngine) 0.000000 3.000000 box
 

@@ -2,6 +2,11 @@
 \label{class_instrument}\index{Instrument@{Instrument}}
 
 
+Base \hyperlink{class_instrument}{Instrument} class.  
+
+
+
+
 {\ttfamily \#include $<$Instrument.\+h$>$}
 
 Inheritance diagram for Instrument\+:\begin{figure}[H]
@@ -13,39 +18,48 @@ Inheritance diagram for Instrument\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_instrument_a1a297b2cbe1e239c8ede2e90185e2880}{Instrument} ()
-\item 
-void \hyperlink{class_instrument_a47bdaa9390ab5e0616e8499a507c50cd}{set\+Pricing\+Engine} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_pricing_engine}{Pricing\+Engine} $>$ pricing\+Engine)
-\item 
 \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv} ()
+\begin{DoxyCompactList}\small\item\em Calculate the net present value by using the attached pricing engine. \end{DoxyCompactList}\item 
+void \hyperlink{class_instrument_a47bdaa9390ab5e0616e8499a507c50cd}{set\+Pricing\+Engine} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_pricing_engine}{Pricing\+Engine} $>$ pricing\+Engine)
+\begin{DoxyCompactList}\small\item\em Set the corresponding pricing engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
 \item 
-virtual void \hyperlink{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67}{setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$arg) const =0
-\item 
+virtual void \hyperlink{class_instrument_a5cd384be384fe415f09ecc78e2a87539}{setup\+Arguments} (\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$const arg) const =0
+\begin{DoxyCompactList}\small\item\em To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv()} which is to setup all the arguments that are needed for pricing engine. \end{DoxyCompactList}\item 
 virtual \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_instrument_a381f093402f789ad7c0ffecd233167dc}{fetch\+Results} (\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const res)=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv()} which is to get back the net present value after calculation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{class_pricing_engine}{Pricing\+Engine} $>$ \hyperlink{class_instrument_a6fdd5548ccc944536ff73913d98bf598}{pricing\+Engine\+\_\+}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em One pricing engine also can be used for other instrument, so shared\+\_\+ptr is used here. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_instrument_a1a297b2cbe1e239c8ede2e90185e2880}{}\label{class_instrument_a1a297b2cbe1e239c8ede2e90185e2880} 
-\index{Instrument@{Instrument}!Instrument@{Instrument}}
-\index{Instrument@{Instrument}!Instrument@{Instrument}}
-\subsubsection{\texorpdfstring{Instrument()}{Instrument()}}
-{\footnotesize\ttfamily Instrument\+::\+Instrument (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsection{Detailed Description}
+Base \hyperlink{class_instrument}{Instrument} class. 
 
-
+This \hyperlink{class_instrument}{Instrument} class is an abstract base class for any financial instruments, like options, forward, swap, swaption, etc. There is always a set of \hyperlink{class_pricing_engine}{Pricing\+Engine} associated to each kind of instrument that can be used to price. Any inherited financial instrument classes should override the methods that are used to communicate the pricing\+Engines. 
 
 \subsection{Member Function Documentation}
 \hypertarget{class_instrument_a381f093402f789ad7c0ffecd233167dc}{}\label{class_instrument_a381f093402f789ad7c0ffecd233167dc} 
 \index{Instrument@{Instrument}!fetch\+Results@{fetch\+Results}}
 \index{fetch\+Results@{fetch\+Results}!Instrument@{Instrument}}
 \subsubsection{\texorpdfstring{fetch\+Results()}{fetchResults()}}
-{\footnotesize\ttfamily virtual \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} Instrument\+::fetch\+Results (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} Instrument\+::fetch\+Results (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_results}{Pricing\+Engine\+::\+Results} $\ast$const}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
 
+
+
+To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv()} which is to get back the net present value after calculation. 
+
+{\itshape Constness\+:} Unlike setup\+Arguments, it is not a const member function. Result pointer res itself is const, but it does not point to const object. 
+\begin{DoxyParams}{Parameters}
+{\em res} & Results that are fetched back. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Net present value after calculation. Other results are stored in the results class. 
+\end{DoxyReturn}
 
 
 Implemented in \hyperlink{class_asian_option_a99cd9956b73d99a64748c913dcccd6ea}{Asian\+Option}, \hyperlink{class_forward_ab1e2edeb8345c8605013634a598d1ae5}{Forward}, and \hyperlink{class_european_option_ae234d562ef21dc24c25f1538860da1cf}{European\+Option}.
@@ -56,21 +70,45 @@ Implemented in \hyperlink{class_asian_option_a99cd9956b73d99a64748c913dcccd6ea}{
 \subsubsection{\texorpdfstring{npv()}{npv()}}
 {\footnotesize\ttfamily \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} Instrument\+::npv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\hypertarget{class_instrument_a47bdaa9390ab5e0616e8499a507c50cd}{}\label{class_instrument_a47bdaa9390ab5e0616e8499a507c50cd} 
+
+
+Calculate the net present value by using the attached pricing engine. 
+
+Implemented by template pattern. ~\newline
+Set the argument of \hyperlink{class_pricing_engine}{Pricing\+Engine} first and then calculate the npv by calling the method of \hyperlink{class_pricing_engine}{Pricing\+Engine} and finally fetch the results back from the \hyperlink{class_pricing_engine}{Pricing\+Engine} class. \hypertarget{class_instrument_a47bdaa9390ab5e0616e8499a507c50cd}{}\label{class_instrument_a47bdaa9390ab5e0616e8499a507c50cd} 
 \index{Instrument@{Instrument}!set\+Pricing\+Engine@{set\+Pricing\+Engine}}
 \index{set\+Pricing\+Engine@{set\+Pricing\+Engine}!Instrument@{Instrument}}
 \subsubsection{\texorpdfstring{set\+Pricing\+Engine()}{setPricingEngine()}}
 {\footnotesize\ttfamily void Instrument\+::set\+Pricing\+Engine (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_pricing_engine}{Pricing\+Engine} $>$}]{pricing\+Engine }\end{DoxyParamCaption})}
 
-\hypertarget{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67}{}\label{class_instrument_ac0f78fd32a360abde0c31b5bc01c7e67} 
+
+
+Set the corresponding pricing engine. 
+
+{\itshape Constness\+:} Pricing engine will not change. 
+\begin{DoxyParams}{Parameters}
+{\em pricing\+Engine} & The pricing engine to be used for pricing. ~\newline
+\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_instrument_a5cd384be384fe415f09ecc78e2a87539}{}\label{class_instrument_a5cd384be384fe415f09ecc78e2a87539} 
 \index{Instrument@{Instrument}!setup\+Arguments@{setup\+Arguments}}
 \index{setup\+Arguments@{setup\+Arguments}!Instrument@{Instrument}}
 \subsubsection{\texorpdfstring{setup\+Arguments()}{setupArguments()}}
-{\footnotesize\ttfamily virtual void Instrument\+::setup\+Arguments (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$}]{arg }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Instrument\+::setup\+Arguments (\begin{DoxyParamCaption}\item[{\hyperlink{class_pricing_engine_1_1_arguments}{Pricing\+Engine\+::\+Arguments} $\ast$const}]{arg }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
 
 
 
-Implemented in \hyperlink{class_asian_option_a475cbd83529df369b371ee44f63cdd08}{Asian\+Option}, \hyperlink{class_forward_ad6208ba4ee03c396e611c142be735b26}{Forward}, and \hyperlink{class_european_option_a94c1826feba0099400bce8dd6fc01cb9}{European\+Option}.
+To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8d084}{npv()} which is to setup all the arguments that are needed for pricing engine. 
+
+{\itshape Constness\+:} Const member function. Argument pointer arg itself is const, but it does not point to const object. 
+\begin{DoxyParams}{Parameters}
+{\em arg} & Arguments that are needed for pricing engine. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_asian_option_a82c9b5fb3bea69f476a65e9675e1cc28}{Asian\+Option}, \hyperlink{class_forward_a909ab0cefa0ab42bdaf3bf6e84ac0096}{Forward}, and \hyperlink{class_european_option_a77e3bc17dbcf317561c4920f6bfa84de}{European\+Option}.
 
 
 
@@ -80,6 +118,10 @@ Implemented in \hyperlink{class_asian_option_a475cbd83529df369b371ee44f63cdd08}{
 \index{pricing\+Engine\+\_\+@{pricing\+Engine\+\_\+}!Instrument@{Instrument}}
 \subsubsection{\texorpdfstring{pricing\+Engine\+\_\+}{pricingEngine\_}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_pricing_engine}{Pricing\+Engine}$>$ Instrument\+::pricing\+Engine\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+One pricing engine also can be used for other instrument, so shared\+\_\+ptr is used here. 
 
 
 

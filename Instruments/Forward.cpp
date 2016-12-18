@@ -8,7 +8,7 @@
 Forward::Forward(Time maturity, Quote strike, Quote spot) : maturity_(maturity), strike_(strike), spot_(spot) {
 }
 
-void Forward::setupArguments(PricingEngine::Arguments *arg) const {
+void Forward::setupArguments(PricingEngine::Arguments *const arg) const {
     Forward::Arguments *arguments;
     arguments = dynamic_cast<Forward::Arguments *>(arg);
     arguments->strike_ = strike_;

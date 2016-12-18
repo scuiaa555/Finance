@@ -13,7 +13,7 @@ public:
 
     EuropeanOption(Time maturity, std::shared_ptr<Payoff> payoff);
 
-    void setupArguments(PricingEngine::Arguments *arg) const override;
+    void setupArguments(PricingEngine::Arguments *const arg) const override;
 
     Money fetchResults(PricingEngine::Results *const res) override;
 

@@ -11,94 +11,49 @@
 #include <memory>
 #include <string>
 
-//class PricingEngine;
-
-//class PricingEngine::Arguments;
-
+/**
+ * Base Instrument class.
+ * This Instrument class is an abstract base class for any financial instruments, like options, forward, swap, swaption, etc.
+ * There is always a set of PricingEngine associated to each kind of instrument that can be used to price.
+ * Any inherited financial instrument classes should override the methods that are used to communicate the pricingEngines.
+ *
+ */
 class Instrument {
 public:
-    Instrument() { }
 
-    //virtual Time GetMaturity() const = 0;
-
-    void setPricingEngine(const std::shared_ptr<PricingEngine> pricingEngine);
-
-//    class Arguments : public PricingEngine::Arguments {
-//        double b;
-//    };
-
+    /**
+     * Calculate the net present value by using the attached pricing engine.
+     * Implemented by template pattern. \n
+     * Set the argument of PricingEngine first and then calculate the npv by calling the method of PricingEngine and finally
+     *     fetch the results back from the PricingEngine class.
+     */
     Money npv();
 
-    virtual void setupArguments(PricingEngine::Arguments *arg) const = 0;
-
-    virtual Money fetchResults(PricingEngine::Results *const res) = 0;
-
-    //void Calculate();
-
-    //virtual void getArguments() = 0;
-
-    //class Arguments : public PricingEngine::Arguments {
-    //};
-    //class Arguments;
+    /**
+     * Set the corresponding pricing engine.
+     * \e Constness: Pricing engine will not change.
+     * @param pricingEngine The pricing engine to be used for pricing. \n
+     */
+    void setPricingEngine(const std::shared_ptr<PricingEngine> pricingEngine);
 
 protected:
-    std::shared_ptr<PricingEngine> pricingEngine_;
-    //std::shared_ptr<Arguments> arguments;
-};
+    std::shared_ptr<PricingEngine> pricingEngine_;  /**< One pricing engine also can be used for other instrument, so shared_ptr is used here */
 
-// class EuropeanCall : public Instrument {
-//public:
-//    EuropeanCall() { }
-//
-//    EuropeanCall(Time maturity, std::shared_ptr<Payoff> payoff);
-//
-//    EuropeanCall(Time maturity, Quote strike);
-//
-//    void SetupArguments(PricingEngine::Arguments *arg) const override;
-//
-//    Money FetchResults(PricingEngine::Results *const res) override;
-//
-//    //Time GetMaturity() const override;
-//
-//    //void getArguments() override;
-//
-//    class Arguments : public PricingEngine::Arguments {
-//    public:
-////        Arguments() { }
-//
-//        //Arguments(double a);
-//
-//        std::shared_ptr<Payoff> payoff_;
-//        Time maturity_;
-//
-//        void print() override {
-//            double b = 0;
-//        }
-//
-////        double a_;
-//
-//        //~Arguments() { }
-//    };
-//
-//    class Results : public PricingEngine::Results {
-//    public:
-////        Results() { }
-//
-//        Money price_;
-//        double delta_;
-//
-//    };
-//
-//    class engine;
-//
-//    std::shared_ptr<Results> results_;
-//private:
-//    std::shared_ptr<Payoff> payoff_;
-//    Time maturity_;
-//
-//};
-//
-//class EuropeanCall::engine : public GenericEngine<EuropeanCall::Arguments, EuropeanCall::Results> {
-//};
+    /**
+     * To be called in method npv() which is to setup all the arguments that are needed for pricing engine.
+     * \e Constness: Const member function. Argument pointer arg itself is const, but it does not point to const object.
+     * @param arg Arguments that are needed for pricing engine.
+     */
+    virtual void setupArguments(PricingEngine::Arguments *const arg) const = 0;
+
+    /**
+     * To be called in method npv() which is to get back the net present value after calculation.
+     * \e Constness: Unlike setupArguments, it is not a const member function. Result pointer res itself is const, but it does not point to const object.
+     * @param res Results that are fetched back.
+     * @return Net present value after calculation. Other results are stored in the results class.
+     */
+    virtual Money fetchResults(PricingEngine::Results *const res) = 0;
+
+};
 
 #endif //FINANCE_OPTION_H

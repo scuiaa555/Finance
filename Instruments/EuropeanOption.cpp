@@ -15,7 +15,7 @@ using std::shared_ptr;
 EuropeanOption::EuropeanOption(Time maturity, std::shared_ptr<Payoff> payoff) :
         maturity_(maturity), payoff_(payoff) { }
 
-void EuropeanOption::setupArguments(PricingEngine::Arguments *arg) const {
+void EuropeanOption::setupArguments(PricingEngine::Arguments *const arg) const {
     EuropeanOption::Arguments *arguments;
     arguments = dynamic_cast<EuropeanOption::Arguments *>(arg);
     arguments->payoff_ = payoff_;

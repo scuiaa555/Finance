@@ -12,15 +12,173 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="864a6095-397c-4358-9ac8-60dc0d38eac9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Finance.iml" afterPath="$PROJECT_DIR$/.idea/Finance.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_asian_option_1_1engine.png" afterPath="$PROJECT_DIR$/documentation/html/class_asian_option_1_1engine.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_european_option_1_1engine.png" afterPath="$PROJECT_DIR$/documentation/html/class_european_option_1_1engine.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_mc_asian_engine.png" afterPath="$PROJECT_DIR$/documentation/html/class_mc_asian_engine.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_mc_european_engine.png" afterPath="$PROJECT_DIR$/documentation/html/class_mc_european_engine.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_mc_simulation.png" afterPath="$PROJECT_DIR$/documentation/html/class_mc_simulation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_pricing_engine.png" afterPath="$PROJECT_DIR$/documentation/html/class_pricing_engine.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/CUI.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/CUI.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/McFramework/PathGenerator.h" afterPath="$PROJECT_DIR$/McFramework/PathGenerator.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/BlackScholesModel.h" afterPath="$PROJECT_DIR$/Models/BlackScholesModel.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h" afterPath="$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandNumGeneration/Normal.h" afterPath="$PROJECT_DIR$/RandNumGeneration/Normal.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandNumGeneration/RandomVariableGenerator.h" afterPath="$PROJECT_DIR$/RandNumGeneration/RandomVariableGenerator.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandNumGeneration/SingleRandSequenceGenerator.h" afterPath="$PROJECT_DIR$/RandNumGeneration/SingleRandSequenceGenerator.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Instrument.h" afterPath="$PROJECT_DIR$/Instrument.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Instruments/AsianOption.cpp" afterPath="$PROJECT_DIR$/Instruments/AsianOption.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Instruments/AsianOption.h" afterPath="$PROJECT_DIR$/Instruments/AsianOption.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Instruments/EuropeanOption.cpp" afterPath="$PROJECT_DIR$/Instruments/EuropeanOption.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Instruments/EuropeanOption.h" afterPath="$PROJECT_DIR$/Instruments/EuropeanOption.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Instruments/Forward.cpp" afterPath="$PROJECT_DIR$/Instruments/Forward.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Instruments/Forward.h" afterPath="$PROJECT_DIR$/Instruments/Forward.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_asian_option_8h.html" afterPath="$PROJECT_DIR$/documentation/html/_asian_option_8h.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_asian_option_8h_source.html" afterPath="$PROJECT_DIR$/documentation/html/_asian_option_8h_source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_asian_path_pricer_8h_source.html" afterPath="$PROJECT_DIR$/documentation/html/_asian_path_pricer_8h_source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_black_scholes_model_8h.html" afterPath="$PROJECT_DIR$/documentation/html/_black_scholes_model_8h.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_black_scholes_model_8h_source.html" afterPath="$PROJECT_DIR$/documentation/html/_black_scholes_model_8h_source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_european_option_8h_source.html" afterPath="$PROJECT_DIR$/documentation/html/_european_option_8h_source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_forward_8h_source.html" afterPath="$PROJECT_DIR$/documentation/html/_forward_8h_source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_instrument_8h.html" afterPath="$PROJECT_DIR$/documentation/html/_instrument_8h.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_instrument_8h_source.html" afterPath="$PROJECT_DIR$/documentation/html/_instrument_8h_source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_l_m_m_8h_source.html" afterPath="$PROJECT_DIR$/documentation/html/_l_m_m_8h_source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_mc_model_8h.html" afterPath="$PROJECT_DIR$/documentation/html/_mc_model_8h.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_mc_model_8h_source.html" afterPath="$PROJECT_DIR$/documentation/html/_mc_model_8h_source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_mc_simulation_8h.html" afterPath="$PROJECT_DIR$/documentation/html/_mc_simulation_8h.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_mc_simulation_8h_source.html" afterPath="$PROJECT_DIR$/documentation/html/_mc_simulation_8h_source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_model_8h.html" afterPath="$PROJECT_DIR$/documentation/html/_model_8h.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_model_8h_source.html" afterPath="$PROJECT_DIR$/documentation/html/_model_8h_source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_path_generator_8h.html" afterPath="$PROJECT_DIR$/documentation/html/_path_generator_8h.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/_path_generator_8h_source.html" afterPath="$PROJECT_DIR$/documentation/html/_path_generator_8h_source.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/annotated.html" afterPath="$PROJECT_DIR$/documentation/html/annotated.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_asian_option-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_asian_option-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_asian_option.html" afterPath="$PROJECT_DIR$/documentation/html/class_asian_option.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_asian_option_1_1_arguments.html" afterPath="$PROJECT_DIR$/documentation/html/class_asian_option_1_1_arguments.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_asian_option_1_1engine.html" afterPath="$PROJECT_DIR$/documentation/html/class_asian_option_1_1engine.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_black_scholes_model-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_black_scholes_model-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_black_scholes_model.html" afterPath="$PROJECT_DIR$/documentation/html/class_black_scholes_model.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_european_option-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_european_option-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_european_option.html" afterPath="$PROJECT_DIR$/documentation/html/class_european_option.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_european_option_1_1engine.html" afterPath="$PROJECT_DIR$/documentation/html/class_european_option_1_1engine.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_forward-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_forward-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_forward.html" afterPath="$PROJECT_DIR$/documentation/html/class_forward.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_instrument-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_instrument-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_instrument.html" afterPath="$PROJECT_DIR$/documentation/html/class_instrument.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_l_m_m-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_l_m_m-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_l_m_m.html" afterPath="$PROJECT_DIR$/documentation/html/class_l_m_m.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_mc_asian_engine-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_mc_asian_engine-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_mc_asian_engine.html" afterPath="$PROJECT_DIR$/documentation/html/class_mc_asian_engine.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_mc_european_engine-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_mc_european_engine-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_mc_european_engine.html" afterPath="$PROJECT_DIR$/documentation/html/class_mc_european_engine.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_mc_model-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_mc_model-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_mc_model.html" afterPath="$PROJECT_DIR$/documentation/html/class_mc_model.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_mc_simulation-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_mc_simulation-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_mc_simulation.html" afterPath="$PROJECT_DIR$/documentation/html/class_mc_simulation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_model-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_model-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_model.html" afterPath="$PROJECT_DIR$/documentation/html/class_model.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_model1_d-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_model1_d-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_model1_d.html" afterPath="$PROJECT_DIR$/documentation/html/class_model1_d.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_model_n_d-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_model_n_d-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_model_n_d.html" afterPath="$PROJECT_DIR$/documentation/html/class_model_n_d.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_path_generator-members.html" afterPath="$PROJECT_DIR$/documentation/html/class_path_generator-members.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_path_generator.html" afterPath="$PROJECT_DIR$/documentation/html/class_path_generator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_pricing_engine.html" afterPath="$PROJECT_DIR$/documentation/html/class_pricing_engine.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/class_pricing_engine_1_1_arguments.html" afterPath="$PROJECT_DIR$/documentation/html/class_pricing_engine_1_1_arguments.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/classes.html" afterPath="$PROJECT_DIR$/documentation/html/classes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/files.html" afterPath="$PROJECT_DIR$/documentation/html/files.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/functions.html" afterPath="$PROJECT_DIR$/documentation/html/functions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/functions_func.html" afterPath="$PROJECT_DIR$/documentation/html/functions_func.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/functions_vars.html" afterPath="$PROJECT_DIR$/documentation/html/functions_vars.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/globals.html" afterPath="$PROJECT_DIR$/documentation/html/globals.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/globals_func.html" afterPath="$PROJECT_DIR$/documentation/html/globals_func.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/globals_vars.html" afterPath="$PROJECT_DIR$/documentation/html/globals_vars.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/hierarchy.html" afterPath="$PROJECT_DIR$/documentation/html/hierarchy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/menudata.js" afterPath="$PROJECT_DIR$/documentation/html/menudata.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_0.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_10.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_10.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_11.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_11.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_13.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_13.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_2.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_3.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_5.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_6.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_6.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_7.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_7.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_8.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_9.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_a.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_a.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_b.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_b.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_d.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_d.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/all_f.js" afterPath="$PROJECT_DIR$/documentation/html/search/all_f.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/classes_0.js" afterPath="$PROJECT_DIR$/documentation/html/search/classes_0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/classes_5.js" afterPath="$PROJECT_DIR$/documentation/html/search/classes_5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/classes_8.js" afterPath="$PROJECT_DIR$/documentation/html/search/classes_8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/classes_9.js" afterPath="$PROJECT_DIR$/documentation/html/search/classes_9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/classes_b.js" afterPath="$PROJECT_DIR$/documentation/html/search/classes_b.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/classes_c.js" afterPath="$PROJECT_DIR$/documentation/html/search/classes_c.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/files_2.js" afterPath="$PROJECT_DIR$/documentation/html/search/files_2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/files_3.js" afterPath="$PROJECT_DIR$/documentation/html/search/files_3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/files_4.js" afterPath="$PROJECT_DIR$/documentation/html/search/files_4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/files_5.js" afterPath="$PROJECT_DIR$/documentation/html/search/files_5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/files_6.js" afterPath="$PROJECT_DIR$/documentation/html/search/files_6.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/files_7.js" afterPath="$PROJECT_DIR$/documentation/html/search/files_7.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/files_8.js" afterPath="$PROJECT_DIR$/documentation/html/search/files_8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/files_9.js" afterPath="$PROJECT_DIR$/documentation/html/search/files_9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/files_a.js" afterPath="$PROJECT_DIR$/documentation/html/search/files_a.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/files_b.js" afterPath="$PROJECT_DIR$/documentation/html/search/files_b.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/files_c.js" afterPath="$PROJECT_DIR$/documentation/html/search/files_c.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_0.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_10.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_10.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_11.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_11.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_2.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_5.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_6.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_6.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_7.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_7.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_8.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_9.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_a.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_a.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_b.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_b.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_c.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_c.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_d.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_d.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_e.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_e.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/functions_f.js" afterPath="$PROJECT_DIR$/documentation/html/search/functions_f.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/searchdata.js" afterPath="$PROJECT_DIR$/documentation/html/search/searchdata.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/typedefs_2.js" afterPath="$PROJECT_DIR$/documentation/html/search/typedefs_2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/variables_0.js" afterPath="$PROJECT_DIR$/documentation/html/search/variables_0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/variables_1.js" afterPath="$PROJECT_DIR$/documentation/html/search/variables_1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/variables_2.js" afterPath="$PROJECT_DIR$/documentation/html/search/variables_2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/variables_3.js" afterPath="$PROJECT_DIR$/documentation/html/search/variables_3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/variables_4.js" afterPath="$PROJECT_DIR$/documentation/html/search/variables_4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/variables_5.js" afterPath="$PROJECT_DIR$/documentation/html/search/variables_5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/variables_6.js" afterPath="$PROJECT_DIR$/documentation/html/search/variables_6.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/variables_7.js" afterPath="$PROJECT_DIR$/documentation/html/search/variables_7.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/variables_8.js" afterPath="$PROJECT_DIR$/documentation/html/search/variables_8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/variables_9.js" afterPath="$PROJECT_DIR$/documentation/html/search/variables_9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/html/search/variables_a.js" afterPath="$PROJECT_DIR$/documentation/html/search/variables_a.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/_asian_option_8h.tex" afterPath="$PROJECT_DIR$/documentation/latex/_asian_option_8h.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/_black_scholes_model_8h.tex" afterPath="$PROJECT_DIR$/documentation/latex/_black_scholes_model_8h.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/_instrument_8h.tex" afterPath="$PROJECT_DIR$/documentation/latex/_instrument_8h.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/_mc_model_8h.tex" afterPath="$PROJECT_DIR$/documentation/latex/_mc_model_8h.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/_mc_simulation_8h.tex" afterPath="$PROJECT_DIR$/documentation/latex/_mc_simulation_8h.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/_model_8h.tex" afterPath="$PROJECT_DIR$/documentation/latex/_model_8h.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/_path_generator_8h.tex" afterPath="$PROJECT_DIR$/documentation/latex/_path_generator_8h.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/annotated.tex" afterPath="$PROJECT_DIR$/documentation/latex/annotated.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_asian_option.tex" afterPath="$PROJECT_DIR$/documentation/latex/class_asian_option.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_asian_option_1_1_arguments.tex" afterPath="$PROJECT_DIR$/documentation/latex/class_asian_option_1_1_arguments.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_asian_option_1_1engine.eps" afterPath="$PROJECT_DIR$/documentation/latex/class_asian_option_1_1engine.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_black_scholes_model.tex" afterPath="$PROJECT_DIR$/documentation/latex/class_black_scholes_model.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_european_option.tex" afterPath="$PROJECT_DIR$/documentation/latex/class_european_option.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_european_option_1_1engine.eps" afterPath="$PROJECT_DIR$/documentation/latex/class_european_option_1_1engine.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_forward.tex" afterPath="$PROJECT_DIR$/documentation/latex/class_forward.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_instrument.tex" afterPath="$PROJECT_DIR$/documentation/latex/class_instrument.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_mc_asian_engine.eps" afterPath="$PROJECT_DIR$/documentation/latex/class_mc_asian_engine.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_mc_asian_engine.tex" afterPath="$PROJECT_DIR$/documentation/latex/class_mc_asian_engine.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_mc_european_engine.eps" afterPath="$PROJECT_DIR$/documentation/latex/class_mc_european_engine.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_mc_european_engine.tex" afterPath="$PROJECT_DIR$/documentation/latex/class_mc_european_engine.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_mc_model.tex" afterPath="$PROJECT_DIR$/documentation/latex/class_mc_model.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_mc_simulation.eps" afterPath="$PROJECT_DIR$/documentation/latex/class_mc_simulation.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_mc_simulation.tex" afterPath="$PROJECT_DIR$/documentation/latex/class_mc_simulation.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_model.tex" afterPath="$PROJECT_DIR$/documentation/latex/class_model.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_path_generator.tex" afterPath="$PROJECT_DIR$/documentation/latex/class_path_generator.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_pricing_engine.eps" afterPath="$PROJECT_DIR$/documentation/latex/class_pricing_engine.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/class_pricing_engine.tex" afterPath="$PROJECT_DIR$/documentation/latex/class_pricing_engine.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/files.tex" afterPath="$PROJECT_DIR$/documentation/latex/files.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/hierarchy.tex" afterPath="$PROJECT_DIR$/documentation/latex/hierarchy.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/latex/refman.tex" afterPath="$PROJECT_DIR$/documentation/latex/refman.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="Finance.iws" />
@@ -41,23 +199,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PathGenerator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/McFramework/PathGenerator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="785">
-              <caret line="67" column="12" lean-forward="false" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
-              <folding>
-                <element signature="e#112#165#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="817">
+              <caret line="43" column="11" lean-forward="false" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -65,104 +211,96 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlackScholesModel.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.h">
+      <file leaf-file-name="Instrument.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Instrument.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="23" column="55" lean-forward="false" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+            <state relative-caret-position="665">
+              <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+              <folding>
+                <element signature="e#98#118#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NameDef.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NameDef.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Normal.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/Normal.h">
+      <file leaf-file-name="Instrument.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Instrument.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-              <folding>
-                <element signature="e#99#153#0" expanded="true" />
-                <element signature="e#884#950#0" expanded="true" />
-                <element signature="e#1460#1481#0" expanded="true" />
-                <element signature="e#1625#1646#0" expanded="true" />
-                <element signature="e#1719#1740#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PseudoRandom.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/PseudoRandom.h">
+      <file leaf-file-name="EuropeanOption.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Instruments/EuropeanOption.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-              <folding>
-                <element signature="e#111#128#0" expanded="true" />
-                <element signature="e#415#433#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomVariableGenerator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/RandomVariableGenerator.h">
+      <file leaf-file-name="EuropeanOption.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Instruments/EuropeanOption.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-              <folding>
-                <element signature="e#417#429#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MultiRandGenerator.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-              <folding>
-                <element signature="e#123#163#0" expanded="true" />
-                <element signature="e#1171#1206#0" expanded="true" />
-                <element signature="e#1400#1435#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EuropeanPathPricer.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PricingEngines/EuropeanPathPricer.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingleRandSequenceGenerator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/SingleRandSequenceGenerator.h">
+      <file leaf-file-name="Forward.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Instruments/Forward.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+            <state relative-caret-position="304">
+              <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Forward.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Instruments/Forward.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="61" lean-forward="false" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsianOption.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Instruments/AsianOption.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="82" column="6" lean-forward="true" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
               <folding>
-                <marker date="1481897285000" expanded="false" signature="578:600" ph="&lt;RNG&gt;" />
-                <marker date="1481897285000" expanded="false" signature="1178:1200" ph="&lt;RNG&gt;" />
-                <marker date="1481897285000" expanded="false" signature="1402:1424" ph="&lt;RNG&gt;" />
-                <marker date="1481897285000" expanded="false" signature="1616:1638" ph="&lt;RNG&gt;" />
+                <element signature="e#108#131#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model.h">
+      <file leaf-file-name="AsianOption.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Instruments/AsianOption.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="42" column="62" lean-forward="false" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
-              <folding>
-                <element signature="e#120#140#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="532">
+              <caret line="30" column="65" lean-forward="false" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -181,10 +319,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/Instruments/EuropeanOption.cpp" />
         <option value="$PROJECT_DIR$/PricingEngines/MCAsianEngine.h" />
         <option value="$PROJECT_DIR$/PricingEngines/MCEuropeanEngine.h" />
-        <option value="$PROJECT_DIR$/Instrument.h" />
         <option value="$PROJECT_DIR$/Payoff.h" />
         <option value="$PROJECT_DIR$/Parameter.cpp" />
         <option value="$PROJECT_DIR$/Model.cpp" />
@@ -220,10 +356,17 @@
         <option value="$PROJECT_DIR$/McFramework/PathGenerator.h" />
         <option value="$PROJECT_DIR$/RandNumGeneration/SingleRandSequenceGenerator.h" />
         <option value="$PROJECT_DIR$/RandNumGeneration/RandomVariableGenerator.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/RandNumGeneration/Normal.h" />
         <option value="$PROJECT_DIR$/Models/BlackScholesModel.h" />
         <option value="$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Instruments/EuropeanOption.h" />
+        <option value="$PROJECT_DIR$/Instruments/EuropeanOption.cpp" />
+        <option value="$PROJECT_DIR$/Instruments/Forward.h" />
+        <option value="$PROJECT_DIR$/Instruments/Forward.cpp" />
+        <option value="$PROJECT_DIR$/Instruments/AsianOption.cpp" />
+        <option value="$PROJECT_DIR$/Instrument.h" />
+        <option value="$PROJECT_DIR$/Instruments/AsianOption.h" />
       </list>
     </option>
   </component>
@@ -249,7 +392,7 @@
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <autoscrollToSource />
+      <autoscrollToSource ProjectPane="true" />
       <autoscrollFromSource />
       <sortByType />
       <manualOrder />
@@ -278,77 +421,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="StochasticProcesses" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finance" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RandNumGeneration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finance" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PricingEngines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finance" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Payoffs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finance" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finance" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="McFramework" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -570,7 +643,8 @@
       <option name="presentableId" value="Default" />
       <updated>1469019663811</updated>
       <workItem from="1482040645204" duration="3624000" />
-      <workItem from="1482048005431" duration="1353000" />
+      <workItem from="1482048005431" duration="6648000" />
+      <workItem from="1482058875448" duration="2330000" />
     </task>
     <task id="LOCAL-00001" summary="antithetic branch merged into">
       <created>1476980586328</created>
@@ -670,11 +744,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481879458591</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Multiple RNG (tuple version) succeeds&#10;">
+      <created>1482049518554</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1482049518554</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4977000" />
+    <option name="totallyTimeSpent" value="12602000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,7 +770,7 @@
     <frame x="1280" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1637704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16324382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2449187" sideWeight="0.47815728" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -737,17 +818,11 @@
     <MESSAGE value="modify RNG 2.0&#10;" />
     <MESSAGE value="modify RNG 3.0&#10;" />
     <MESSAGE value="RNG for Vanilla succeeds&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="RNG for Vanilla succeeds&#10;" />
+    <MESSAGE value="Multiple RNG (tuple version) succeeds&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multiple RNG (tuple version) succeeds&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>23</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -760,48 +835,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/McFramework/Path.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/McFramework/PathPricer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NameDef.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parameter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parameter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Payoff.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Payoffs/VanillaPayoff.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -888,13 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/LMM.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PricingEngines/EuropeanPathPricer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -903,27 +929,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PricingEngine.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Instruments/EuropeanOption.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Instruments/EuropeanOption.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Instrument.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1032,10 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-          <folding>
-            <element signature="e#111#128#0" expanded="true" />
-            <element signature="e#415#433#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,7 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,12 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-          <folding>
-            <marker date="1481897285000" expanded="false" signature="578:600" ph="&lt;RNG&gt;" />
-            <marker date="1481897285000" expanded="false" signature="1178:1200" ph="&lt;RNG&gt;" />
-            <marker date="1481897285000" expanded="false" signature="1402:1424" ph="&lt;RNG&gt;" />
-            <marker date="1481897285000" expanded="false" signature="1616:1638" ph="&lt;RNG&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,9 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
           <caret line="42" column="62" lean-forward="false" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
-          <folding>
-            <element signature="e#120#140#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,13 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="817">
           <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-          <folding>
-            <element signature="e#99#153#0" expanded="true" />
-            <element signature="e#884#950#0" expanded="true" />
-            <element signature="e#1460#1481#0" expanded="true" />
-            <element signature="e#1625#1646#0" expanded="true" />
-            <element signature="e#1719#1740#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1095,9 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="785">
           <caret line="67" column="12" lean-forward="false" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
-          <folding>
-            <element signature="e#112#165#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1105,17 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="23" column="55" lean-forward="false" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1123,20 +1093,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="e#417#429#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/LMM.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="14" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Instruments/EuropeanOption.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Instruments/EuropeanOption.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="68" lean-forward="false" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Instruments/Forward.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="61" lean-forward="false" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="11" lean-forward="false" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
           <folding>
-            <element signature="e#123#163#0" expanded="true" />
-            <element signature="e#1171#1206#0" expanded="true" />
-            <element signature="e#1400#1435#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Instrument.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Instruments/Forward.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Instruments/AsianOption.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="30" column="65" lean-forward="false" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NameDef.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Instrument.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding>
+            <element signature="e#98#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Instruments/AsianOption.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="82" column="6" lean-forward="true" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
+          <folding>
+            <element signature="e#108#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
