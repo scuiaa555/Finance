@@ -14,8 +14,9 @@
 template<typename RNG>
 class PathGenerator {
 public:
-    typedef typename RNG::rng_return_type return_type;
+    typedef typename RNG::rng_return_type rng_return_type;
     typedef typename RNG::rng_type rng_type;
+    typedef typename RNG::rng_argument_type rng_argument_type;
 
     PathGenerator(const std::shared_ptr<Model> model, const vector<Time> &timeGrid,
                   bool isAntithetic = 0);
@@ -64,8 +65,7 @@ Path &PathGenerator<RNG>::next() {
             it_value++;
             Time dt = *(it_time + 1) - *it_time;
             model_->setupArgument(*it_time, dt, rng_.getArgument());
-            return_type dw = rng_.next();
-            *it_value = model_->evolve(*it_time, x0, dt, dw);
+            *it_value = model_->evolve(*it_time, x0, dt, rng_.next());
             x0 = *it_value;
         }
     }

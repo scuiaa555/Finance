@@ -5,6 +5,7 @@
 #include "PricingEngines/McEuropeanEngine.h"
 #include "PricingEngines/AnalyticEuropeanEngine.h"
 #include <boost/timer.hpp>
+#include "RandNumGeneration/MultiRandGenerator.h"
 //#include <armadillo>
 
 using namespace std;
@@ -13,13 +14,16 @@ using namespace std;
 
 int main() {
 
+    MultiRandGenerator<Normal<>,Normal<>> rngs;
+    vector<double> result=rngs.next();
+
 //    ConstantParameter ppp(5.0);
 //    std::shared_ptr<Parameter> sig(new ConstantParameter(2.4));
 //    std::vector<std::shared_ptr<Parameter> > sigs(4, sig);
 //    LMM lmm(2, std::vector<Quote>(2, 1), 2, sigs, 0.1);
     boost::timer tm;
     double a, a1, a2;
-    shared_ptr<Payoff> vanillaPayoff(new VanillaPayoff(95.0, "put"));
+    shared_ptr<Payoff> vanillaPayoff(new VanillaPayoff(100.0, "put"));
     shared_ptr<BSStochasticProcess> bsProcess(new BSStochasticProcess(0.05, 0.0, 0.3, 100));
     shared_ptr<BlackScholesModel> bsModel(new BlackScholesModel(bsProcess));
 //    AsianOption asian(1.0, vanillaPayoff, 0.1, AsianOption::AverageType::geometric);
@@ -33,10 +37,10 @@ int main() {
     shared_ptr<McEuropeanEngine<SingleRandom<Normal<>>>> pricingEngine(
             new McEuropeanEngine<SingleRandom<Normal<>>>(bsModel, 1, 200000, 10000));
     vanillaOpt.setPricingEngine(pricingEngine);
-    a1 = vanillaOpt.npv();
+//    a1 = vanillaOpt.npv();
     shared_ptr<AnalyticEuropeanEngine> pricingEngine2(new AnalyticEuropeanEngine(bsProcess));
     vanillaOpt.setPricingEngine(pricingEngine2);
-    a2 = vanillaOpt.npv();
+//    a2 = vanillaOpt.npv();
     double duration = tm.elapsed();
     std::cout << "***Time elapsed in " << duration << " seconds.***" << endl;
 

@@ -21,7 +21,7 @@ public:
         return std::vector<Quote>{evolve(t0, x0[0], dt, dw)};
     };
 
-    const vector<int> &getMCdimension() const { return MCdimension_; }
+    const vector<int> &getMCdimension() const override { return MCdimension_; }
 
     void setupArgument(Time t, Time dt, GenericRandomVariableGenerator::Argument *arg) override {
         GenericNormal::Argument *argument = dynamic_cast<GenericNormal::Argument *>(arg);

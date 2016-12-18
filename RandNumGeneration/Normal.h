@@ -26,7 +26,7 @@ public:
 
     class Argument : public GenericRandomVariableGenerator::Argument {
     public:
-        Argument() : mean_(0.0), variance_(1.0) { }
+        Argument() : mean_(0.0), variance_(1.0) {}
 
         double mean_;
         double variance_;
@@ -41,7 +41,7 @@ protected:
 template<typename NormMethod = NormalMarsagliaBrayRng<UniformLEcuyerRNG1>>
 class Normal : public GenericNormal {
 public:
-    Normal() : GenericNormal(), rng_(), last_(0.0) { }
+    Normal() : GenericNormal(), rng_(), last_(0.0) {}
 
     typedef double rng_return_type;
 
@@ -49,7 +49,7 @@ public:
 
     const double &last() override;
 
-    virtual GenericRandomVariableGenerator::Argument *getArgument() override;
+    virtual GenericRandomVariableGenerator::Argument *getArgument();
 
 //    class Argument : public Model::Argument {
 //    public:

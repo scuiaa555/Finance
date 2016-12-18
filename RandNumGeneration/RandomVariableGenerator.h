@@ -9,21 +9,25 @@
 
 class GenericRandomVariableGenerator {
 public:
+    GenericRandomVariableGenerator():dimension_(0) {}
     class Argument {
     public:
         virtual ~Argument() { }
     };
+    unsigned long dimension_;
+    virtual ~GenericRandomVariableGenerator() {}
 };
 
 template<typename T>
 class RandomVariableGenerator : public GenericRandomVariableGenerator {
 public:
+//    typedef T rng_return_type;
+    RandomVariableGenerator():GenericRandomVariableGenerator() {}
 
     virtual const T &next() = 0;
 
     virtual const T &last() = 0;
 
-    virtual GenericRandomVariableGenerator::Argument *getArgument() { }
 };
 
 #endif //FINANCE_RANDOMVARIABLEGENERATOR_H
