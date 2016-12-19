@@ -7,11 +7,19 @@
 
 #include "Instrument.h"
 
-
+/**
+ * Forward contract class.
+ * This Forward contract class is used for pricing forward contract.
+ */
 class Forward: public Instrument {
 public:
-//    Forward() { }
 
+    /**
+     * Constructor.
+     * @param maturity Maturity of forward contract.
+     * @param strike Strike of forward contract.
+     * @param spot Spot price of underlying.
+     */
     Forward(Time maturity, Quote strike, Quote spot);
 
     void setupArguments(PricingEngine::Arguments *const arg) const override;

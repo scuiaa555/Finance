@@ -15,13 +15,10 @@ using std::tuple;
 template<typename ...Args>
 class MultiRandGenerator : public RandomVariableGenerator<vector<double>> {
 public:
-//    MultiRandGenerator() : rngs_(),
-//                           numOfSingleRNG_(sizeof...(Args)), rngArguments_(numOfSingleRNG_),
-//                           RandomVariableGenerator<vector<double>>() {
-//        for (int i = 0; i < numOfSingleRNG_; ++i) {
-//            dimension_ += rngs_[i]->dimension_;
-//        }
-//    }
+
+    MultiRandGenerator() : rngs_(), sequence_(), numOfSingleRNG_(sizeof...(Args)), rngArguments_() {
+        getEachDimension(rngs_);
+    }
 
     vector<GenericRandomVariableGenerator::Argument *> getArgument() {
         return rngArguments_;
@@ -35,13 +32,11 @@ public:
 private:
     tuple<Args...> rngs_;
     vector<double> sequence_;
-//    unsigned long dimension_;
-    unsigned long numOfSingleRNG_;
-    /*!< dimension of different single random sequence generators */
+    unsigned long numOfSingleRNG_;   /*!< dimension of different single random sequence generators */
     vector<GenericRandomVariableGenerator::Argument *> rngArguments_;
 
 
-
+    /* compile recursion */
     template<std::size_t I = 0, typename... Tp>
     inline typename std::enable_if<I < sizeof...(Tp), void>::type
     nextRNG(std::tuple<Tp...> &t) {
@@ -60,6 +55,19 @@ private:
     void merge(vector<double> vals) {
         std::copy(vals.begin(), vals.end(), std::back_inserter(sequence_));
     }
+
+    /* compile recursion */
+    template<std::size_t I = 0, typename... Tp>
+    inline typename std::enable_if<I < sizeof...(Tp), void>::type
+    getEachDimension(std::tuple<Tp...> &t) {
+        dimension_ += std::get<I>(t).getDimension();
+        getEachDimension<I + 1, Tp...>(t);
+    }
+
+    template<std::size_t I = 0, typename... Tp>
+    inline typename std::enable_if<I == sizeof...(Tp), void>::type
+    getEachDimension(std::tuple<Tp...> &t) {}
+
 };
 
 

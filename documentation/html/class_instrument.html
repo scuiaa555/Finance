@@ -79,8 +79,8 @@ Inheritance diagram for Instrument:</div>
   <img src="class_instrument.png" usemap="#Instrument_map" alt=""/>
   <map id="Instrument_map" name="Instrument_map">
 <area href="class_asian_option.html" title="Asian option class. " alt="AsianOption" shape="rect" coords="0,56,104,80"/>
-<area href="class_european_option.html" alt="EuropeanOption" shape="rect" coords="114,56,218,80"/>
-<area href="class_forward.html" alt="Forward" shape="rect" coords="228,56,332,80"/>
+<area href="class_european_option.html" title="European option class. " alt="EuropeanOption" shape="rect" coords="114,56,218,80"/>
+<area href="class_forward.html" title="Forward contract class. " alt="Forward" shape="rect" coords="228,56,332,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -139,13 +139,13 @@ Protected Attributes</h2></td></tr>
 <p>To be called in method <a class="el" href="class_instrument.html#aa750f2ae95a21d65a073da3171e8d084" title="Calculate the net present value by using the attached pricing engine. ">npv()</a> which is to get back the net present value after calculation. </p>
 <p><em>Constness:</em> Unlike setupArguments, it is not a const member function. Result pointer res itself is const, but it does not point to const object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">res</td><td>Results that are fetched back. </td></tr>
+    <tr><td class="paramname">res</td><td>Results to be fetched back. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Net present value after calculation. Other results are stored in the results class. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_asian_option.html#a99cd9956b73d99a64748c913dcccd6ea">AsianOption</a>, <a class="el" href="class_forward.html#ab1e2edeb8345c8605013634a598d1ae5">Forward</a>, and <a class="el" href="class_european_option.html#ae234d562ef21dc24c25f1538860da1cf">EuropeanOption</a>.</p>
+<p>Implemented in <a class="el" href="class_asian_option.html#a99cd9956b73d99a64748c913dcccd6ea">AsianOption</a>, <a class="el" href="class_european_option.html#ae234d562ef21dc24c25f1538860da1cf">EuropeanOption</a>, and <a class="el" href="class_forward.html#ab1e2edeb8345c8605013634a598d1ae5">Forward</a>.</p>
 
 </div>
 </div>
@@ -224,12 +224,12 @@ Set the argument of <a class="el" href="class_pricing_engine.html">PricingEngine
 <p>To be called in method <a class="el" href="class_instrument.html#aa750f2ae95a21d65a073da3171e8d084" title="Calculate the net present value by using the attached pricing engine. ">npv()</a> which is to setup all the arguments that are needed for pricing engine. </p>
 <p><em>Constness:</em> Const member function. Argument pointer arg itself is const, but it does not point to const object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">arg</td><td>Arguments that are needed for pricing engine. </td></tr>
+    <tr><td class="paramname">arg</td><td>Arguments which are needed for pricing engine. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_asian_option.html#a82c9b5fb3bea69f476a65e9675e1cc28">AsianOption</a>, <a class="el" href="class_forward.html#a909ab0cefa0ab42bdaf3bf6e84ac0096">Forward</a>, and <a class="el" href="class_european_option.html#a77e3bc17dbcf317561c4920f6bfa84de">EuropeanOption</a>.</p>
+<p>Implemented in <a class="el" href="class_asian_option.html#a82c9b5fb3bea69f476a65e9675e1cc28">AsianOption</a>, <a class="el" href="class_european_option.html#a77e3bc17dbcf317561c4920f6bfa84de">EuropeanOption</a>, and <a class="el" href="class_forward.html#a909ab0cefa0ab42bdaf3bf6e84ac0096">Forward</a>.</p>
 
 </div>
 </div>

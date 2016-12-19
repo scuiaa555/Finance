@@ -42,14 +42,14 @@ protected:
     /**
      * To be called in method npv() which is to setup all the arguments that are needed for pricing engine.
      * \e Constness: Const member function. Argument pointer arg itself is const, but it does not point to const object.
-     * @param arg Arguments that are needed for pricing engine.
+     * @param arg Arguments which are needed for pricing engine.
      */
     virtual void setupArguments(PricingEngine::Arguments *const arg) const = 0;
 
     /**
      * To be called in method npv() which is to get back the net present value after calculation.
      * \e Constness: Unlike setupArguments, it is not a const member function. Result pointer res itself is const, but it does not point to const object.
-     * @param res Results that are fetched back.
+     * @param res Results to be fetched back.
      * @return Net present value after calculation. Other results are stored in the results class.
      */
     virtual Money fetchResults(PricingEngine::Results *const res) = 0;

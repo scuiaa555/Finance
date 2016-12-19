@@ -59,7 +59,7 @@ public:
                 bool isContinuouslyMonitored = 1);
 
     /**
-     * Argument class of Asian Option.
+     * Argument class of Asian option.
      * Accessory class which is used to interact with pricing engine. \n
      * Inherited from Arguments class of PricingEngine.
      */
@@ -72,7 +72,7 @@ public:
     };
 
     /**
-     * Results class of Asian Option
+     * Result class of Asian option
      * Accessory class which is used to interact with pricing engine. \n
      * Inherited from Result class of PricingEngine.
      */
@@ -83,20 +83,21 @@ public:
     };
 
     /**
-     * Engine class of Asian Option
+     * Engine class of Asian option
      * Accessory class which is used to interact with pricing engine. \n
-     * Inherited from GenericEngine which group the Arguments and Results of Asian option together.
+     * Inherited from GenericEngine which groups the Arguments and Results of Asian option together.
      */
     class engine;
 
 private:
-    Time maturity_;
-    std::shared_ptr<Payoff> payoff_;
-    std::vector<Time> monitoredTimes_;
-    std::shared_ptr<Results> results_;
-    AverageType averageType_;
+    Time maturity_;                      /**< Maturity of Asian option. */
+    std::shared_ptr<Payoff> payoff_;     /**< Pay-off type of Asian option. */
+    std::vector<Time> monitoredTimes_;   /**< Vector of monitoring dates. */
+    std::shared_ptr<Results> results_;   /**< Results calculated by pricing engine. */
+    AverageType averageType_;            /**< Averaging type of Asian option. */
 
     void setupArguments(PricingEngine::Arguments *const arg) const override;
+
     Money fetchResults(PricingEngine::Results *const res) override;
 };
 

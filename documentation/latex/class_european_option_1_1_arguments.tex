@@ -2,6 +2,11 @@
 \label{class_european_option_1_1_arguments}\index{European\+Option\+::\+Arguments@{European\+Option\+::\+Arguments}}
 
 
+Argument class of European option.  
+
+
+
+
 {\ttfamily \#include $<$European\+Option.\+h$>$}
 
 Inheritance diagram for European\+Option\+:\+:Arguments\+:\begin{figure}[H]
@@ -14,11 +19,17 @@ Inheritance diagram for European\+Option\+:\+:Arguments\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ \hyperlink{class_european_option_1_1_arguments_a01a26c6641a2bb9f439c4191c5eb7d76}{payoff\+\_\+}
-\item 
+\begin{DoxyCompactList}\small\item\em Pay-\/off type. \end{DoxyCompactList}\item 
 \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} \hyperlink{class_european_option_1_1_arguments_a75cb97c8679f5827e3faa8db031e5196}{maturity\+\_\+}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Maturity of option. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+Argument class of European option. 
+
+Accessory class which is used to interact with pricing engine. ~\newline
+Inherited from \hyperlink{class_european_option_1_1_arguments}{Arguments} class of \hyperlink{class_pricing_engine}{Pricing\+Engine}. 
 
 \subsection{Member Data Documentation}
 \hypertarget{class_european_option_1_1_arguments_a75cb97c8679f5827e3faa8db031e5196}{}\label{class_european_option_1_1_arguments_a75cb97c8679f5827e3faa8db031e5196} 
@@ -27,11 +38,19 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ \hyperlink{class_
 \subsubsection{\texorpdfstring{maturity\+\_\+}{maturity\_}}
 {\footnotesize\ttfamily \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} European\+Option\+::\+Arguments\+::maturity\+\_\+}
 
+
+
+Maturity of option. 
+
 \hypertarget{class_european_option_1_1_arguments_a01a26c6641a2bb9f439c4191c5eb7d76}{}\label{class_european_option_1_1_arguments_a01a26c6641a2bb9f439c4191c5eb7d76} 
 \index{European\+Option\+::\+Arguments@{European\+Option\+::\+Arguments}!payoff\+\_\+@{payoff\+\_\+}}
 \index{payoff\+\_\+@{payoff\+\_\+}!European\+Option\+::\+Arguments@{European\+Option\+::\+Arguments}}
 \subsubsection{\texorpdfstring{payoff\+\_\+}{payoff\_}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_payoff}{Payoff}$>$ European\+Option\+::\+Arguments\+::payoff\+\_\+}
+
+
+
+Pay-\/off type. 
 
 
 

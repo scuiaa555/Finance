@@ -69,6 +69,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="class_forward.html" title="Forward contract class. ">Forward</a> contract class.  
+ <a href="class_forward.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_forward_8h_source.html">Forward.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Forward:</div>
@@ -92,6 +95,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ec14e1a089290cae0e70c4cddd353b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward.html#a7ec14e1a089290cae0e70c4cddd353b5">Forward</a> (<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> maturity, <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> strike, <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> spot)</td></tr>
+<tr class="memdesc:a7ec14e1a089290cae0e70c4cddd353b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a7ec14e1a089290cae0e70c4cddd353b5">More...</a><br /></td></tr>
 <tr class="separator:a7ec14e1a089290cae0e70c4cddd353b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a909ab0cefa0ab42bdaf3bf6e84ac0096"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_forward.html#a909ab0cefa0ab42bdaf3bf6e84ac0096">setupArguments</a> (<a class="el" href="class_pricing_engine_1_1_arguments.html">PricingEngine::Arguments</a> *const arg) const override</td></tr>
 <tr class="memdesc:a909ab0cefa0ab42bdaf3bf6e84ac0096"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called in method <a class="el" href="class_instrument.html#aa750f2ae95a21d65a073da3171e8d084" title="Calculate the net present value by using the attached pricing engine. ">npv()</a> which is to setup all the arguments that are needed for pricing engine.  <a href="#a909ab0cefa0ab42bdaf3bf6e84ac0096">More...</a><br /></td></tr>
@@ -128,7 +132,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a6fdd5548ccc944536ff73913d98bf598 inherit pro_attribs_class_instrument"><td class="mdescLeft">&#160;</td><td class="mdescRight">One pricing engine also can be used for other instrument, so shared_ptr is used here.  <a href="class_instrument.html#a6fdd5548ccc944536ff73913d98bf598">More...</a><br /></td></tr>
 <tr class="separator:a6fdd5548ccc944536ff73913d98bf598 inherit pro_attribs_class_instrument"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_forward.html" title="Forward contract class. ">Forward</a> contract class. </p>
+<p>This <a class="el" href="class_forward.html" title="Forward contract class. ">Forward</a> contract class is used for pricing forward contract. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7ec14e1a089290cae0e70c4cddd353b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ec14e1a089290cae0e70c4cddd353b5">&sect;&nbsp;</a></span>Forward()</h2>
 
@@ -161,6 +168,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maturity</td><td>Maturity of forward contract. </td></tr>
+    <tr><td class="paramname">strike</td><td>Strike of forward contract. </td></tr>
+    <tr><td class="paramname">spot</td><td>Spot price of underlying. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -191,7 +208,7 @@ Additional Inherited Members</h2></td></tr>
 <p>To be called in method <a class="el" href="class_instrument.html#aa750f2ae95a21d65a073da3171e8d084" title="Calculate the net present value by using the attached pricing engine. ">npv()</a> which is to get back the net present value after calculation. </p>
 <p><em>Constness:</em> Unlike setupArguments, it is not a const member function. Result pointer res itself is const, but it does not point to const object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">res</td><td><a class="el" href="class_forward_1_1_results.html">Results</a> that are fetched back. </td></tr>
+    <tr><td class="paramname">res</td><td><a class="el" href="class_forward_1_1_results.html">Results</a> to be fetched back. </td></tr>
   </table>
   </dd>
 </dl>
@@ -228,7 +245,7 @@ Additional Inherited Members</h2></td></tr>
 <p>To be called in method <a class="el" href="class_instrument.html#aa750f2ae95a21d65a073da3171e8d084" title="Calculate the net present value by using the attached pricing engine. ">npv()</a> which is to setup all the arguments that are needed for pricing engine. </p>
 <p><em>Constness:</em> Const member function. Argument pointer arg itself is const, but it does not point to const object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">arg</td><td><a class="el" href="class_forward_1_1_arguments.html">Arguments</a> that are needed for pricing engine. </td></tr>
+    <tr><td class="paramname">arg</td><td><a class="el" href="class_forward_1_1_arguments.html">Arguments</a> which are needed for pricing engine. </td></tr>
   </table>
   </dd>
 </dl>

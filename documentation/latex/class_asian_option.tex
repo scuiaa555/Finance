@@ -19,11 +19,11 @@ Inheritance diagram for Asian\+Option\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{class_asian_option_1_1_arguments}{Arguments}
-\begin{DoxyCompactList}\small\item\em Argument class of Asian Option. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Argument class of Asian option. \end{DoxyCompactList}\item 
 class \hyperlink{class_asian_option_1_1engine}{engine}
 \item 
 class \hyperlink{class_asian_option_1_1_results}{Results}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Result class of Asian option Accessory class which is used to interact with pricing engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -51,15 +51,15 @@ void \hyperlink{class_asian_option_a82c9b5fb3bea69f476a65e9675e1cc28}{setup\+Arg
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} \hyperlink{class_asian_option_aff2f0be31b55a1b859cde9ee9b339075}{maturity\+\_\+}
-\item 
+\begin{DoxyCompactList}\small\item\em Maturity of Asian option. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ \hyperlink{class_asian_option_abb0ef9b7f812435dcf24e4dd8edb2be2}{payoff\+\_\+}
-\item 
+\begin{DoxyCompactList}\small\item\em Pay-\/off type of Asian option. \end{DoxyCompactList}\item 
 std\+::vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_asian_option_a8cc25f4cabd8ceac95a69598481f18c8}{monitored\+Times\+\_\+}
-\item 
+\begin{DoxyCompactList}\small\item\em Vector of monitoring dates. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{class_asian_option_1_1_results}{Results} $>$ \hyperlink{class_asian_option_aea29a8aff78cbe4101b4f060cedb6307}{results\+\_\+}
-\item 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_asian_option_1_1_results}{Results} calculated by pricing engine. \end{DoxyCompactList}\item 
 \hyperlink{class_asian_option_add7292791bf85820ff9fdbfd4407f3b9}{Average\+Type} \hyperlink{class_asian_option_a602d4f41bc033a8242a0641cf5104045}{average\+Type\+\_\+}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Averaging type of Asian option. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
@@ -174,7 +174,7 @@ To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8
 
 {\itshape Constness\+:} Unlike setup\+Arguments, it is not a const member function. Result pointer res itself is const, but it does not point to const object. 
 \begin{DoxyParams}{Parameters}
-{\em res} & \hyperlink{class_asian_option_1_1_results}{Results} that are fetched back. \\
+{\em res} & \hyperlink{class_asian_option_1_1_results}{Results} to be fetched back. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -196,7 +196,7 @@ To be called in method \hyperlink{class_instrument_aa750f2ae95a21d65a073da3171e8
 
 {\itshape Constness\+:} Const member function. Argument pointer arg itself is const, but it does not point to const object. 
 \begin{DoxyParams}{Parameters}
-{\em arg} & \hyperlink{class_asian_option_1_1_arguments}{Arguments} that are needed for pricing engine. \\
+{\em arg} & \hyperlink{class_asian_option_1_1_arguments}{Arguments} which are needed for pricing engine. \\
 \hline
 \end{DoxyParams}
 
@@ -212,11 +212,19 @@ Implements \hyperlink{class_instrument_a5cd384be384fe415f09ecc78e2a87539}{Instru
 \subsubsection{\texorpdfstring{average\+Type\+\_\+}{averageType\_}}
 {\footnotesize\ttfamily \hyperlink{class_asian_option_add7292791bf85820ff9fdbfd4407f3b9}{Average\+Type} Asian\+Option\+::average\+Type\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Averaging type of Asian option. 
+
 \hypertarget{class_asian_option_aff2f0be31b55a1b859cde9ee9b339075}{}\label{class_asian_option_aff2f0be31b55a1b859cde9ee9b339075} 
 \index{Asian\+Option@{Asian\+Option}!maturity\+\_\+@{maturity\+\_\+}}
 \index{maturity\+\_\+@{maturity\+\_\+}!Asian\+Option@{Asian\+Option}}
 \subsubsection{\texorpdfstring{maturity\+\_\+}{maturity\_}}
 {\footnotesize\ttfamily \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} Asian\+Option\+::maturity\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Maturity of Asian option. 
 
 \hypertarget{class_asian_option_a8cc25f4cabd8ceac95a69598481f18c8}{}\label{class_asian_option_a8cc25f4cabd8ceac95a69598481f18c8} 
 \index{Asian\+Option@{Asian\+Option}!monitored\+Times\+\_\+@{monitored\+Times\+\_\+}}
@@ -224,17 +232,29 @@ Implements \hyperlink{class_instrument_a5cd384be384fe415f09ecc78e2a87539}{Instru
 \subsubsection{\texorpdfstring{monitored\+Times\+\_\+}{monitoredTimes\_}}
 {\footnotesize\ttfamily std\+::vector$<$\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}$>$ Asian\+Option\+::monitored\+Times\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Vector of monitoring dates. 
+
 \hypertarget{class_asian_option_abb0ef9b7f812435dcf24e4dd8edb2be2}{}\label{class_asian_option_abb0ef9b7f812435dcf24e4dd8edb2be2} 
 \index{Asian\+Option@{Asian\+Option}!payoff\+\_\+@{payoff\+\_\+}}
 \index{payoff\+\_\+@{payoff\+\_\+}!Asian\+Option@{Asian\+Option}}
 \subsubsection{\texorpdfstring{payoff\+\_\+}{payoff\_}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_payoff}{Payoff}$>$ Asian\+Option\+::payoff\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Pay-\/off type of Asian option. 
+
 \hypertarget{class_asian_option_aea29a8aff78cbe4101b4f060cedb6307}{}\label{class_asian_option_aea29a8aff78cbe4101b4f060cedb6307} 
 \index{Asian\+Option@{Asian\+Option}!results\+\_\+@{results\+\_\+}}
 \index{results\+\_\+@{results\+\_\+}!Asian\+Option@{Asian\+Option}}
 \subsubsection{\texorpdfstring{results\+\_\+}{results\_}}
 {\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_asian_option_1_1_results}{Results}$>$ Asian\+Option\+::results\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\hyperlink{class_asian_option_1_1_results}{Results} calculated by pricing engine. 
 
 
 
