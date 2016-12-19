@@ -11,6 +11,7 @@
 
 class BlackScholesModel : public Model1D {
 public:
+
     BlackScholesModel(std::shared_ptr<BSStochasticProcess> process);
 
     BlackScholesModel(double r, double q, double sigma, double spot);
