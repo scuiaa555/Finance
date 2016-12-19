@@ -1,7 +1,7 @@
 var searchData=
 [
   ['namedef_2eh',['NameDef.h',['../_name_def_8h.html',1,'']]],
-  ['next',['next',['../class_path_generator.html#a848a4f432d86df5b03d835d99472ab37',1,'PathGenerator::next()'],['../class_multi_rand_generator.html#a39838e440c70bb6de68052a2ea25e258',1,'MultiRandGenerator::next()'],['../class_normal.html#a2cd9c31195181491a4bf0d3856746437',1,'Normal::next()'],['../class_normal_marsaglia_bray_rng.html#a2cc54f5f331a5bd71eedc67c84db7279',1,'NormalMarsagliaBrayRng::next()'],['../class_random_variable_generator.html#a8770e03c1e5cf1b438738a4b7cb7ffc6',1,'RandomVariableGenerator::next()'],['../class_uniform_l_ecuyer_r_n_g1.html#a6a166e0bef412d4c85565ec0017ae489',1,'UniformLEcuyerRNG1::next()']]],
+  ['next',['next',['../class_path_generator.html#a848a4f432d86df5b03d835d99472ab37',1,'PathGenerator::next()'],['../class_multi_rand_generator.html#a39838e440c70bb6de68052a2ea25e258',1,'MultiRandGenerator::next()'],['../class_normal.html#a2cd9c31195181491a4bf0d3856746437',1,'Normal::next()'],['../class_normal_marsaglia_bray_rng.html#a2cc54f5f331a5bd71eedc67c84db7279',1,'NormalMarsagliaBrayRng::next()'],['../class_random_variable_generator.html#a5178e1f85eff432dffd6320767136836',1,'RandomVariableGenerator::next()'],['../class_uniform_l_ecuyer_r_n_g1.html#a6a166e0bef412d4c85565ec0017ae489',1,'UniformLEcuyerRNG1::next()']]],
   ['next_5f',['next_',['../class_path_generator.html#a2af5b3cab0498565a56b20e97a3d6f35',1,'PathGenerator']]],
   ['normal',['Normal',['../class_normal.html',1,'Normal&lt; NormMethod &gt;'],['../class_normal.html#abd6aa5f1a9d1619ad8db2600e11e795e',1,'Normal::Normal()']]],
   ['normal_2eh',['Normal.h',['../_normal_8h.html',1,'']]],

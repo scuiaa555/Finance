@@ -2,6 +2,11 @@
 \label{class_mc_simulation}\index{Mc\+Simulation$<$ R\+N\+G $>$@{Mc\+Simulation$<$ R\+N\+G $>$}}
 
 
+Base class for all Monte Carlo pricing engines.  
+
+
+
+
 {\ttfamily \#include $<$Mc\+Simulation.\+h$>$}
 
 Inheritance diagram for Mc\+Simulation$<$ R\+NG $>$\+:\begin{figure}[H]
@@ -14,27 +19,44 @@ Inheritance diagram for Mc\+Simulation$<$ R\+NG $>$\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{class_mc_simulation_acaa09060a9ee90e0cc3631d8b30ebae0}{calculate} (unsigned long max\+Samples, unsigned long min\+Samples)
-\item 
-void \hyperlink{class_mc_simulation_a476b6d633c6ebb742d6d26a62a6a3810}{value} (unsigned long max\+Samples, unsigned long min\+Samples)
+\begin{DoxyCompactList}\small\item\em Create its data member mc\+Model(shared\+\_\+ptr) with corresponding path generator and path pricer and control the calculation procedure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
 \item 
 const \hyperlink{class_m_c_statistics}{M\+C\+Statistics} \& \hyperlink{class_mc_simulation_ae806933e305840081ef1554ad17012c3}{sample\+Accumulator} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get all the statistics back from mc\+Model. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$ $>$ \hyperlink{class_mc_simulation_a44086a1efd452d8644c9f2e52417038f}{path\+Generator} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Defer the implementation of path\+Generator to the derived class. \end{DoxyCompactList}\item 
 virtual std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_simulation_ae3b894a78823df7897abf418bb04a4a1}{path\+Pricer} ()=0
-\item 
-virtual vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_simulation_ac3c90184d3d97fc7c01c974ad861f8d9}{time\+Grid} ()=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Defer the implementation of path\+Pricer to the derived class. \end{DoxyCompactList}\item 
+virtual const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_simulation_a8af54a9121f2d875872295b03a1b2a40}{time\+Grid} () const =0
+\begin{DoxyCompactList}\small\item\em Defer the implementation of setting time grid to the derived class. \end{DoxyCompactList}\item 
+void \hyperlink{class_mc_simulation_a476b6d633c6ebb742d6d26a62a6a3810}{value} (unsigned long max\+Samples, unsigned long min\+Samples)
+\begin{DoxyCompactList}\small\item\em Call the \hyperlink{class_mc_model}{Mc\+Model} to do the valuation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_mc_model}{Mc\+Model} $>$ \hyperlink{class_mc_simulation_a5ccf1b2ffc6ec2dd7d7efcf4c6163f62}{mc\+Model\+\_\+}
-\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_mc_model}{Mc\+Model}$<$ R\+NG $>$ $>$ \hyperlink{class_mc_simulation_a7bc913519c8fdf97955870ca8d0530e4}{mc\+Model\+\_\+}
+\begin{DoxyCompactList}\small\item\em Shared\+\_\+ptr of \hyperlink{class_mc_model}{Mc\+Model} which contains the needed path generator and pricer. \end{DoxyCompactList}\item 
 bool \hyperlink{class_mc_simulation_a42eb4d165bfdfae218b4508e2321c4a3}{is\+Antithetic\+\_\+}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em =1 indicates use of antithetic path; =0 makes no use of antithetic path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename R\+NG$>$\newline
+class Mc\+Simulation$<$ R\+N\+G $>$}
+
+Base class for all Monte Carlo pricing engines. 
+
+Any Monte Carlo pricing engine will be privately inherited(implement in terms of) from this class.~\newline
+It will provide the mc\+Model class(its data member) with a specific path generator and a path pricer and control the calculation procedure of mc\+Model. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em R\+NG} & Generic random number generator(e.\+g. \hyperlink{struct_single_random}{Single\+Random}$<$Normal$<$$>$$>$, \hyperlink{struct_multi_random}{Multi\+Random}$<$Normal$<$$>$,Poisson$>$,...) \\
+\hline
+\end{DoxyTemplParams}
 
 
 \subsection{Member Function Documentation}
@@ -45,6 +67,17 @@ bool \hyperlink{class_mc_simulation_a42eb4d165bfdfae218b4508e2321c4a3}{is\+Antit
 {\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
 void \hyperlink{class_mc_simulation}{Mc\+Simulation}$<$ R\+NG $>$\+::calculate (\begin{DoxyParamCaption}\item[{unsigned long}]{max\+Samples,  }\item[{unsigned long}]{min\+Samples }\end{DoxyParamCaption})}
 
+
+
+Create its data member mc\+Model(shared\+\_\+ptr) with corresponding path generator and path pricer and control the calculation procedure. 
+
+{\itshape Constness\+:} data member mc\+Model will change, so it cannot be const member function. 
+\begin{DoxyParams}{Parameters}
+{\em max\+Samples} & Maximum number of samples. \\
+\hline
+{\em min\+Samples} & Number of samples for each valuation. \\
+\hline
+\end{DoxyParams}
 \hypertarget{class_mc_simulation_a44086a1efd452d8644c9f2e52417038f}{}\label{class_mc_simulation_a44086a1efd452d8644c9f2e52417038f} 
 \index{Mc\+Simulation@{Mc\+Simulation}!path\+Generator@{path\+Generator}}
 \index{path\+Generator@{path\+Generator}!Mc\+Simulation@{Mc\+Simulation}}
@@ -52,6 +85,13 @@ void \hyperlink{class_mc_simulation}{Mc\+Simulation}$<$ R\+NG $>$\+::calculate (
 {\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
 virtual std\+::shared\+\_\+ptr$<$\hyperlink{class_path_generator}{Path\+Generator}$<$R\+NG$>$ $>$ \hyperlink{class_mc_simulation}{Mc\+Simulation}$<$ R\+NG $>$\+::path\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
 
+
+
+Defer the implementation of path\+Generator to the derived class. 
+
+\begin{DoxyReturn}{Returns}
+shared\+\_\+ptr of path generator. 
+\end{DoxyReturn}
 
 
 Implemented in \hyperlink{class_mc_european_engine_af3bd77fe30b60833448ee44efe6280d9}{Mc\+European\+Engine$<$ R\+N\+G $>$}, and \hyperlink{class_mc_asian_engine_ae38592c71ae4d5d09c9eb13d7cc0c5ff}{Mc\+Asian\+Engine$<$ R\+N\+G $>$}.
@@ -65,6 +105,13 @@ virtual std\+::shared\+\_\+ptr$<$\hyperlink{class_path_pricer}{Path\+Pricer}$>$ 
 
 
 
+Defer the implementation of path\+Pricer to the derived class. 
+
+\begin{DoxyReturn}{Returns}
+shared\+\_\+ptr of path pricer. 
+\end{DoxyReturn}
+
+
 Implemented in \hyperlink{class_mc_european_engine_aa504b56142c757d49cc4c9e079682f6d}{Mc\+European\+Engine$<$ R\+N\+G $>$}, and \hyperlink{class_mc_asian_engine_a5b7351c28b68878b7f6d130eef293d6c}{Mc\+Asian\+Engine$<$ R\+N\+G $>$}.
 
 \hypertarget{class_mc_simulation_ae806933e305840081ef1554ad17012c3}{}\label{class_mc_simulation_ae806933e305840081ef1554ad17012c3} 
@@ -72,26 +119,53 @@ Implemented in \hyperlink{class_mc_european_engine_aa504b56142c757d49cc4c9e07968
 \index{sample\+Accumulator@{sample\+Accumulator}!Mc\+Simulation@{Mc\+Simulation}}
 \subsubsection{\texorpdfstring{sample\+Accumulator()}{sampleAccumulator()}}
 {\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-const \hyperlink{class_m_c_statistics}{M\+C\+Statistics} \& \hyperlink{class_mc_simulation}{Mc\+Simulation}$<$ R\+NG $>$\+::sample\+Accumulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+const \hyperlink{class_m_c_statistics}{M\+C\+Statistics} \& \hyperlink{class_mc_simulation}{Mc\+Simulation}$<$ R\+NG $>$\+::sample\+Accumulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{class_mc_simulation_ac3c90184d3d97fc7c01c974ad861f8d9}{}\label{class_mc_simulation_ac3c90184d3d97fc7c01c974ad861f8d9} 
+
+
+Get all the statistics back from mc\+Model. 
+
+{\itshape Accessibility\+:} Protected, since other class except derived classes should not be able to get the statistics.~\newline
+{\itshape Constness\+:} Return type is a const, since users should not modify this result. \begin{DoxyReturn}{Returns}
+All the statistics(mean, variance,...) after calculations. 
+\end{DoxyReturn}
+\hypertarget{class_mc_simulation_a8af54a9121f2d875872295b03a1b2a40}{}\label{class_mc_simulation_a8af54a9121f2d875872295b03a1b2a40} 
 \index{Mc\+Simulation@{Mc\+Simulation}!time\+Grid@{time\+Grid}}
 \index{time\+Grid@{time\+Grid}!Mc\+Simulation@{Mc\+Simulation}}
 \subsubsection{\texorpdfstring{time\+Grid()}{timeGrid()}}
 {\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-virtual vector$<$\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}$>$ \hyperlink{class_mc_simulation}{Mc\+Simulation}$<$ R\+NG $>$\+::time\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+virtual const vector$<$\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}$>$ \hyperlink{class_mc_simulation}{Mc\+Simulation}$<$ R\+NG $>$\+::time\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
 
 
 
-Implemented in \hyperlink{class_mc_european_engine_a0c81d3320dc3567596b41d91444f5f54}{Mc\+European\+Engine$<$ R\+N\+G $>$}, and \hyperlink{class_mc_asian_engine_ad8d2c8721172ab1d7327db91a26c5052}{Mc\+Asian\+Engine$<$ R\+N\+G $>$}.
+Defer the implementation of setting time grid to the derived class. 
+
+Time grid is a vector which is saved in the \hyperlink{class_path}{Path} class.~\newline
+{\itshape Constness\+:} Return by value, since it is a local variable. \begin{DoxyReturn}{Returns}
+Vector of time grid. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_mc_european_engine_a62341229306247e5c1eed9a7d4a2dba3}{Mc\+European\+Engine$<$ R\+N\+G $>$}.
 
 \hypertarget{class_mc_simulation_a476b6d633c6ebb742d6d26a62a6a3810}{}\label{class_mc_simulation_a476b6d633c6ebb742d6d26a62a6a3810} 
 \index{Mc\+Simulation@{Mc\+Simulation}!value@{value}}
 \index{value@{value}!Mc\+Simulation@{Mc\+Simulation}}
 \subsubsection{\texorpdfstring{value()}{value()}}
 {\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-void \hyperlink{class_mc_simulation}{Mc\+Simulation}$<$ R\+NG $>$\+::value (\begin{DoxyParamCaption}\item[{unsigned long}]{max\+Samples,  }\item[{unsigned long}]{min\+Samples }\end{DoxyParamCaption})}
+void \hyperlink{class_mc_simulation}{Mc\+Simulation}$<$ R\+NG $>$\+::value (\begin{DoxyParamCaption}\item[{unsigned long}]{max\+Samples,  }\item[{unsigned long}]{min\+Samples }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Call the \hyperlink{class_mc_model}{Mc\+Model} to do the valuation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Samples} & Maximum number of samples. \\
+\hline
+{\em min\+Samples} & Number of samples for each valuation. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
@@ -102,12 +176,20 @@ void \hyperlink{class_mc_simulation}{Mc\+Simulation}$<$ R\+NG $>$\+::value (\beg
 {\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
 bool \hyperlink{class_mc_simulation}{Mc\+Simulation}$<$ R\+NG $>$\+::is\+Antithetic\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{class_mc_simulation_a5ccf1b2ffc6ec2dd7d7efcf4c6163f62}{}\label{class_mc_simulation_a5ccf1b2ffc6ec2dd7d7efcf4c6163f62} 
+
+
+=1 indicates use of antithetic path; =0 makes no use of antithetic path. 
+
+\hypertarget{class_mc_simulation_a7bc913519c8fdf97955870ca8d0530e4}{}\label{class_mc_simulation_a7bc913519c8fdf97955870ca8d0530e4} 
 \index{Mc\+Simulation@{Mc\+Simulation}!mc\+Model\+\_\+@{mc\+Model\+\_\+}}
 \index{mc\+Model\+\_\+@{mc\+Model\+\_\+}!Mc\+Simulation@{Mc\+Simulation}}
 \subsubsection{\texorpdfstring{mc\+Model\+\_\+}{mcModel\_}}
 {\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-std\+::shared\+\_\+ptr$<$\hyperlink{class_mc_model}{Mc\+Model}$>$ \hyperlink{class_mc_simulation}{Mc\+Simulation}$<$ R\+NG $>$\+::mc\+Model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+std\+::shared\+\_\+ptr$<$\hyperlink{class_mc_model}{Mc\+Model}$<$R\+NG$>$ $>$ \hyperlink{class_mc_simulation}{Mc\+Simulation}$<$ R\+NG $>$\+::mc\+Model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Shared\+\_\+ptr of \hyperlink{class_mc_model}{Mc\+Model} which contains the needed path generator and pricer. 
 
 
 

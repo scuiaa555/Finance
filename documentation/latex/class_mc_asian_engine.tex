@@ -16,9 +16,9 @@ Inheritance diagram for Mc\+Asian\+Engine$<$ R\+NG $>$\+:\begin{figure}[H]
 \hyperlink{class_mc_asian_engine_a4b2cd236024fd32623e1f7a7a27277d6}{Mc\+Asian\+Engine} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$ model, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} time\+Step, unsigned long max\+Samples, unsigned long min\+Samples, bool is\+Antithetic=0)
 \item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$ $>$ \hyperlink{class_mc_asian_engine_ae38592c71ae4d5d09c9eb13d7cc0c5ff}{path\+Generator} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Defer the implementation of path\+Generator to the derived class. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_asian_engine_a5b7351c28b68878b7f6d130eef293d6c}{path\+Pricer} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Defer the implementation of path\+Pricer to the derived class. \end{DoxyCompactList}\item 
 vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_asian_engine_ad8d2c8721172ab1d7327db91a26c5052}{time\+Grid} () override
 \item 
 void \hyperlink{class_mc_asian_engine_ac16f4259846f55dc6c02d0b628f34e63}{calculate} () override
@@ -70,6 +70,13 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R
 
 
 
+Defer the implementation of path\+Generator to the derived class. 
+
+\begin{DoxyReturn}{Returns}
+shared\+\_\+ptr of path generator. 
+\end{DoxyReturn}
+
+
 Implements \hyperlink{class_mc_simulation_a44086a1efd452d8644c9f2e52417038f}{Mc\+Simulation$<$ R\+N\+G $>$}.
 
 \hypertarget{class_mc_asian_engine_a5b7351c28b68878b7f6d130eef293d6c}{}\label{class_mc_asian_engine_a5b7351c28b68878b7f6d130eef293d6c} 
@@ -81,6 +88,13 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyper
 
 
 
+Defer the implementation of path\+Pricer to the derived class. 
+
+\begin{DoxyReturn}{Returns}
+shared\+\_\+ptr of path pricer. 
+\end{DoxyReturn}
+
+
 Implements \hyperlink{class_mc_simulation_ae3b894a78823df7897abf418bb04a4a1}{Mc\+Simulation$<$ R\+N\+G $>$}.
 
 \hypertarget{class_mc_asian_engine_ad8d2c8721172ab1d7327db91a26c5052}{}\label{class_mc_asian_engine_ad8d2c8721172ab1d7327db91a26c5052} 
@@ -88,11 +102,7 @@ Implements \hyperlink{class_mc_simulation_ae3b894a78823df7897abf418bb04a4a1}{Mc\
 \index{time\+Grid@{time\+Grid}!Mc\+Asian\+Engine@{Mc\+Asian\+Engine}}
 \subsubsection{\texorpdfstring{time\+Grid()}{timeGrid()}}
 {\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ R\+NG $>$\+::time\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-Implements \hyperlink{class_mc_simulation_ac3c90184d3d97fc7c01c974ad861f8d9}{Mc\+Simulation$<$ R\+N\+G $>$}.
+vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_asian_engine}{Mc\+Asian\+Engine}$<$ R\+NG $>$\+::time\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
 
 
 

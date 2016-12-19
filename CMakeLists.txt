@@ -24,7 +24,7 @@ set(SOURCE_FILES Main.cpp Payoff.h Instrument.cpp
         RandNumGeneration/UniformLEcuyerRNG1.cpp RandNumGeneration/UniformLEcuyerRNG1.h RandNumGeneration/SingleRandSequenceGenerator.h
         RandNumGeneration/NormalMarsagliaBrayRng.h Model.h
         McFramework/Path.cpp McFramework/Path.h McFramework/PathGenerator.h McFramework/PathPricer.h
-        McFramework/McModel.cpp McFramework/McModel.h PricingEngines/EuropeanPathPricer.cpp Statistics.cpp Statistics.h
+        McFramework/McModel.h PricingEngines/EuropeanPathPricer.cpp Statistics.cpp Statistics.h
         McFramework/McSimulation.h PricingEngines/McEuropeanEngine.h
         Payoffs/VanillaPayoff.cpp Payoffs/VanillaPayoff.h Instruments/AsianOption.cpp Instruments/AsianOption.h
         PricingEngines/EuropeanPathPricer.h Parameter.cpp Parameter.h

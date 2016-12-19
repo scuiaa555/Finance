@@ -1,5 +1,5 @@
-\hypertarget{class_mc_model}{}\section{Mc\+Model Class Reference}
-\label{class_mc_model}\index{Mc\+Model@{Mc\+Model}}
+\hypertarget{class_mc_model}{}\section{Mc\+Model$<$ R\+NG $>$ Class Template Reference}
+\label{class_mc_model}\index{Mc\+Model$<$ R\+N\+G $>$@{Mc\+Model$<$ R\+N\+G $>$}}
 
 
 {\ttfamily \#include $<$Mc\+Model.\+h$>$}
@@ -7,69 +7,74 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_mc_model_af5a2a0799f0157a7398cde7f60184507}{Mc\+Model} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ \hyperlink{struct_single_random}{Single\+Random}$<$ \hyperlink{class_normal}{Normal}$<$$>$$>$$>$$>$ \&path\+Generator, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ path\+Pricer)
+\hyperlink{class_mc_model_aeb469e49833dce6d5ffecfb31bcd0714}{Mc\+Model} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$$>$ \&path\+Generator, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ path\+Pricer)
 \item 
-void \hyperlink{class_mc_model_a81f56ed90c002927bdec595eb52c57c3}{add\+Samples} (unsigned long num\+Samples)
+void \hyperlink{class_mc_model_a9ed7099395a0eae21fd3b719fab6b9de}{add\+Samples} (unsigned long num\+Samples)
 \item 
-const \hyperlink{class_m_c_statistics}{M\+C\+Statistics} \& \hyperlink{class_mc_model_afc977c490efd468506d7436901a72177}{get\+Statistics} () const
+const \hyperlink{class_m_c_statistics}{M\+C\+Statistics} \& \hyperlink{class_mc_model_afb59f4097bca3e5c22920cec8ce8b80f}{get\+Statistics} () const
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ \hyperlink{struct_single_random}{Single\+Random}$<$ \hyperlink{class_normal}{Normal}$<$$>$ $>$ $>$ $>$ \hyperlink{class_mc_model_a79918134182b5642b719bb9e78a5f2fc}{path\+Generator\+\_\+}
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$ $>$ \hyperlink{class_mc_model_ae583ee693ceb83b83593f15e2e5e371e}{path\+Generator\+\_\+}
 \item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_model_a8b4390b3abdd1ffdd121a09f141299f9}{path\+Pricer\+\_\+}
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_model_a0936370baabb19be59052f108733279d}{path\+Pricer\+\_\+}
 \item 
-\hyperlink{class_m_c_statistics}{M\+C\+Statistics} \hyperlink{class_mc_model_aec19a3ee01c95751a50360d264d51def}{sample\+Accumulator\+\_\+}
+\hyperlink{class_m_c_statistics}{M\+C\+Statistics} \hyperlink{class_mc_model_a8fd3f9f39a642cbb8fd0f7fb3c18f919}{sample\+Accumulator\+\_\+}
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_mc_model_af5a2a0799f0157a7398cde7f60184507}{}\label{class_mc_model_af5a2a0799f0157a7398cde7f60184507} 
+\hypertarget{class_mc_model_aeb469e49833dce6d5ffecfb31bcd0714}{}\label{class_mc_model_aeb469e49833dce6d5ffecfb31bcd0714} 
 \index{Mc\+Model@{Mc\+Model}!Mc\+Model@{Mc\+Model}}
 \index{Mc\+Model@{Mc\+Model}!Mc\+Model@{Mc\+Model}}
 \subsubsection{\texorpdfstring{Mc\+Model()}{McModel()}}
-{\footnotesize\ttfamily Mc\+Model\+::\+Mc\+Model (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ \hyperlink{struct_single_random}{Single\+Random}$<$ \hyperlink{class_normal}{Normal}$<$$>$$>$$>$$>$ \&}]{path\+Generator,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$}]{path\+Pricer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+\hyperlink{class_mc_model}{Mc\+Model}$<$ R\+NG $>$\+::\hyperlink{class_mc_model}{Mc\+Model} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$$>$ \&}]{path\+Generator,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$}]{path\+Pricer }\end{DoxyParamCaption})}
 
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_mc_model_a81f56ed90c002927bdec595eb52c57c3}{}\label{class_mc_model_a81f56ed90c002927bdec595eb52c57c3} 
+\hypertarget{class_mc_model_a9ed7099395a0eae21fd3b719fab6b9de}{}\label{class_mc_model_a9ed7099395a0eae21fd3b719fab6b9de} 
 \index{Mc\+Model@{Mc\+Model}!add\+Samples@{add\+Samples}}
 \index{add\+Samples@{add\+Samples}!Mc\+Model@{Mc\+Model}}
 \subsubsection{\texorpdfstring{add\+Samples()}{addSamples()}}
-{\footnotesize\ttfamily void Mc\+Model\+::add\+Samples (\begin{DoxyParamCaption}\item[{unsigned long}]{num\+Samples }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+void \hyperlink{class_mc_model}{Mc\+Model}$<$ R\+NG $>$\+::add\+Samples (\begin{DoxyParamCaption}\item[{unsigned long}]{num\+Samples }\end{DoxyParamCaption})}
 
-\hypertarget{class_mc_model_afc977c490efd468506d7436901a72177}{}\label{class_mc_model_afc977c490efd468506d7436901a72177} 
+\hypertarget{class_mc_model_afb59f4097bca3e5c22920cec8ce8b80f}{}\label{class_mc_model_afb59f4097bca3e5c22920cec8ce8b80f} 
 \index{Mc\+Model@{Mc\+Model}!get\+Statistics@{get\+Statistics}}
 \index{get\+Statistics@{get\+Statistics}!Mc\+Model@{Mc\+Model}}
 \subsubsection{\texorpdfstring{get\+Statistics()}{getStatistics()}}
-{\footnotesize\ttfamily const \hyperlink{class_m_c_statistics}{M\+C\+Statistics} \& Mc\+Model\+::get\+Statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+const \hyperlink{class_m_c_statistics}{M\+C\+Statistics} \& \hyperlink{class_mc_model}{Mc\+Model}$<$ R\+NG $>$\+::get\+Statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_mc_model_a79918134182b5642b719bb9e78a5f2fc}{}\label{class_mc_model_a79918134182b5642b719bb9e78a5f2fc} 
+\hypertarget{class_mc_model_ae583ee693ceb83b83593f15e2e5e371e}{}\label{class_mc_model_ae583ee693ceb83b83593f15e2e5e371e} 
 \index{Mc\+Model@{Mc\+Model}!path\+Generator\+\_\+@{path\+Generator\+\_\+}}
 \index{path\+Generator\+\_\+@{path\+Generator\+\_\+}!Mc\+Model@{Mc\+Model}}
 \subsubsection{\texorpdfstring{path\+Generator\+\_\+}{pathGenerator\_}}
-{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_path_generator}{Path\+Generator}$<$\hyperlink{struct_single_random}{Single\+Random}$<$\hyperlink{class_normal}{Normal}$<$$>$ $>$ $>$ $>$ Mc\+Model\+::path\+Generator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{class_path_generator}{Path\+Generator}$<$R\+NG$>$ $>$ \hyperlink{class_mc_model}{Mc\+Model}$<$ R\+NG $>$\+::path\+Generator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{class_mc_model_a8b4390b3abdd1ffdd121a09f141299f9}{}\label{class_mc_model_a8b4390b3abdd1ffdd121a09f141299f9} 
+\hypertarget{class_mc_model_a0936370baabb19be59052f108733279d}{}\label{class_mc_model_a0936370baabb19be59052f108733279d} 
 \index{Mc\+Model@{Mc\+Model}!path\+Pricer\+\_\+@{path\+Pricer\+\_\+}}
 \index{path\+Pricer\+\_\+@{path\+Pricer\+\_\+}!Mc\+Model@{Mc\+Model}}
 \subsubsection{\texorpdfstring{path\+Pricer\+\_\+}{pathPricer\_}}
-{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_path_pricer}{Path\+Pricer}$>$ Mc\+Model\+::path\+Pricer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{class_path_pricer}{Path\+Pricer}$>$ \hyperlink{class_mc_model}{Mc\+Model}$<$ R\+NG $>$\+::path\+Pricer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{class_mc_model_aec19a3ee01c95751a50360d264d51def}{}\label{class_mc_model_aec19a3ee01c95751a50360d264d51def} 
+\hypertarget{class_mc_model_a8fd3f9f39a642cbb8fd0f7fb3c18f919}{}\label{class_mc_model_a8fd3f9f39a642cbb8fd0f7fb3c18f919} 
 \index{Mc\+Model@{Mc\+Model}!sample\+Accumulator\+\_\+@{sample\+Accumulator\+\_\+}}
 \index{sample\+Accumulator\+\_\+@{sample\+Accumulator\+\_\+}!Mc\+Model@{Mc\+Model}}
 \subsubsection{\texorpdfstring{sample\+Accumulator\+\_\+}{sampleAccumulator\_}}
-{\footnotesize\ttfamily \hyperlink{class_m_c_statistics}{M\+C\+Statistics} Mc\+Model\+::sample\+Accumulator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
+\hyperlink{class_m_c_statistics}{M\+C\+Statistics} \hyperlink{class_mc_model}{Mc\+Model}$<$ R\+NG $>$\+::sample\+Accumulator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Mc\+Framework/\hyperlink{_mc_model_8h}{Mc\+Model.\+h}\item 
-Mc\+Framework/\hyperlink{_mc_model_8cpp}{Mc\+Model.\+cpp}\end{DoxyCompactItemize}
+Mc\+Framework/\hyperlink{_mc_model_8h}{Mc\+Model.\+h}\end{DoxyCompactItemize}

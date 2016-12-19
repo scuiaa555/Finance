@@ -75,7 +75,7 @@ Inheritance diagram for McAsianEngine&lt; RNG &gt;:</div>
   <img src="class_mc_asian_engine.png" usemap="#McAsianEngine_3C_20RNG_20_3E_map" alt=""/>
   <map id="McAsianEngine_3C_20RNG_20_3E_map" name="McAsianEngine&lt; RNG &gt;_map">
 <area href="class_asian_option_1_1engine.html" alt="AsianOption::engine" shape="rect" coords="0,112,379,136"/>
-<area href="class_mc_simulation.html" alt="McSimulation&lt; RNG &gt;" shape="rect" coords="389,112,768,136"/>
+<area href="class_mc_simulation.html" title="Base class for all Monte Carlo pricing engines. " alt="McSimulation&lt; RNG &gt;" shape="rect" coords="389,112,768,136"/>
 <area href="class_generic_engine.html" alt="GenericEngine&lt; AsianOption::Arguments, AsianOption::Results &gt;" shape="rect" coords="0,56,379,80"/>
 <area href="class_pricing_engine.html" alt="PricingEngine" shape="rect" coords="0,0,379,24"/>
 </map>
@@ -86,8 +86,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b2cd236024fd32623e1f7a7a27277d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_asian_engine.html#a4b2cd236024fd32623e1f7a7a27277d6">McAsianEngine</a> (const std::shared_ptr&lt; <a class="el" href="class_model.html">Model</a> &gt; model, <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> timeStep, unsigned long maxSamples, unsigned long minSamples, bool isAntithetic=0)</td></tr>
 <tr class="separator:a4b2cd236024fd32623e1f7a7a27277d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae38592c71ae4d5d09c9eb13d7cc0c5ff"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_asian_engine.html#ae38592c71ae4d5d09c9eb13d7cc0c5ff">pathGenerator</a> () override</td></tr>
+<tr class="memdesc:ae38592c71ae4d5d09c9eb13d7cc0c5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathGenerator to the derived class.  <a href="#ae38592c71ae4d5d09c9eb13d7cc0c5ff">More...</a><br /></td></tr>
 <tr class="separator:ae38592c71ae4d5d09c9eb13d7cc0c5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b7351c28b68878b7f6d130eef293d6c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_asian_engine.html#a5b7351c28b68878b7f6d130eef293d6c">pathPricer</a> () override</td></tr>
+<tr class="memdesc:a5b7351c28b68878b7f6d130eef293d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathPricer to the derived class.  <a href="#a5b7351c28b68878b7f6d130eef293d6c">More...</a><br /></td></tr>
 <tr class="separator:a5b7351c28b68878b7f6d130eef293d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8d2c8721172ab1d7327db91a26c5052"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_asian_engine.html#ad8d2c8721172ab1d7327db91a26c5052">timeGrid</a> () override</td></tr>
 <tr class="separator:ad8d2c8721172ab1d7327db91a26c5052"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,10 +128,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:acd6af7c4b3fd0e43826755ba7d347dd5 inherit pub_attribs_class_generic_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_mc_simulation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mc_simulation')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="class_mc_simulation.html">McSimulation&lt; RNG &gt;</a></td></tr>
 <tr class="memitem:acaa09060a9ee90e0cc3631d8b30ebae0 inherit pub_methods_class_mc_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#acaa09060a9ee90e0cc3631d8b30ebae0">calculate</a> (unsigned long maxSamples, unsigned long minSamples)</td></tr>
+<tr class="memdesc:acaa09060a9ee90e0cc3631d8b30ebae0 inherit pub_methods_class_mc_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create its data member mcModel(shared_ptr) with corresponding path generator and path pricer and control the calculation procedure.  <a href="class_mc_simulation.html#acaa09060a9ee90e0cc3631d8b30ebae0">More...</a><br /></td></tr>
 <tr class="separator:acaa09060a9ee90e0cc3631d8b30ebae0 inherit pub_methods_class_mc_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a476b6d633c6ebb742d6d26a62a6a3810 inherit pub_methods_class_mc_simulation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a476b6d633c6ebb742d6d26a62a6a3810">value</a> (unsigned long maxSamples, unsigned long minSamples)</td></tr>
-<tr class="separator:a476b6d633c6ebb742d6d26a62a6a3810 inherit pub_methods_class_mc_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae806933e305840081ef1554ad17012c3 inherit pub_methods_class_mc_simulation"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_m_c_statistics.html">MCStatistics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#ae806933e305840081ef1554ad17012c3">sampleAccumulator</a> () const</td></tr>
+<tr class="memdesc:ae806933e305840081ef1554ad17012c3 inherit pub_methods_class_mc_simulation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the statistics back from mcModel.  <a href="class_mc_simulation.html#ae806933e305840081ef1554ad17012c3">More...</a><br /></td></tr>
 <tr class="separator:ae806933e305840081ef1554ad17012c3 inherit pub_methods_class_mc_simulation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -236,6 +238,9 @@ template&lt;typename RNG &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Defer the implementation of pathGenerator to the derived class. </p>
+<dl class="section return"><dt>Returns</dt><dd>shared_ptr of path generator. </dd></dl>
+
 <p>Implements <a class="el" href="class_mc_simulation.html#a44086a1efd452d8644c9f2e52417038f">McSimulation&lt; RNG &gt;</a>.</p>
 
 </div>
@@ -265,6 +270,9 @@ template&lt;typename RNG &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Defer the implementation of pathPricer to the derived class. </p>
+<dl class="section return"><dt>Returns</dt><dd>shared_ptr of path pricer. </dd></dl>
+
 <p>Implements <a class="el" href="class_mc_simulation.html#ae3b894a78823df7897abf418bb04a4a1">McSimulation&lt; RNG &gt;</a>.</p>
 
 </div>
@@ -289,12 +297,10 @@ template&lt;typename RNG &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Implements <a class="el" href="class_mc_simulation.html#ac3c90184d3d97fc7c01c974ad861f8d9">McSimulation&lt; RNG &gt;</a>.</p>
 
 </div>
 </div>

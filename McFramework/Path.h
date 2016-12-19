@@ -33,7 +33,7 @@ public:
 
 //    virtual const vector<vector<Quote >> &getControlValues() const { throw ("This path has no control variable path."); }
 
-    virtual ~Path() { }
+    virtual ~Path() {}
 
 private:
     vector<Time> timeGrid_;
@@ -46,7 +46,7 @@ class PathDecorator : public Path {
 public:
     PathDecorator() = default;
 
-    PathDecorator(std::unique_ptr<Path> &&innerPath) : innerPath_(std::move(innerPath)) { }
+    PathDecorator(std::unique_ptr<Path> &&innerPath) : innerPath_(std::move(innerPath)) {}
 
 protected:
     std::unique_ptr<Path> innerPath_;

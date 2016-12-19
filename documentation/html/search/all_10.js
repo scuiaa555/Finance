@@ -1,7 +1,7 @@
 var searchData=
 [
   ['sampleaccumulator',['sampleAccumulator',['../class_mc_simulation.html#ae806933e305840081ef1554ad17012c3',1,'McSimulation']]],
-  ['sampleaccumulator_5f',['sampleAccumulator_',['../class_mc_model.html#aec19a3ee01c95751a50360d264d51def',1,'McModel::sampleAccumulator_()'],['../class_m_c_statistics.html#a60f5e1f87ba55ca837a3067ed726ff9a',1,'MCStatistics::sampleAccumulator_()']]],
+  ['sampleaccumulator_5f',['sampleAccumulator_',['../class_mc_model.html#a8fd3f9f39a642cbb8fd0f7fb3c18f919',1,'McModel::sampleAccumulator_()'],['../class_m_c_statistics.html#a60f5e1f87ba55ca837a3067ed726ff9a',1,'MCStatistics::sampleAccumulator_()']]],
   ['sampleresults',['SampleResults',['../class_m_c_statistics_1_1_sample_results.html',1,'MCStatistics']]],
   ['sampleresults',['SampleResults',['../class_m_c_statistics_1_1_sample_results.html#a49be18ef127e000d7f828ff69813abee',1,'MCStatistics::SampleResults']]],
   ['secondexists_5f',['secondExists_',['../class_normal_marsaglia_bray_rng.html#a6b795b729e795b1b81aa1b30d5dfe8ef',1,'NormalMarsagliaBrayRng']]],

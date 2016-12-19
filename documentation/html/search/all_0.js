@@ -2,7 +2,7 @@ var searchData=
 [
   ['a',['a',['../_uniform_l_ecuyer_r_n_g1_8cpp.html#a3a77c120d5fe28f4824d78571a701dc8',1,'UniformLEcuyerRNG1.cpp']]],
   ['add',['add',['../class_m_c_statistics.html#a6557ced886141997d13d86777b1970c5',1,'MCStatistics']]],
-  ['addsamples',['addSamples',['../class_mc_model.html#a81f56ed90c002927bdec595eb52c57c3',1,'McModel']]],
+  ['addsamples',['addSamples',['../class_mc_model.html#a9ed7099395a0eae21fd3b719fab6b9de',1,'McModel']]],
   ['analyticeuropeanengine',['AnalyticEuropeanEngine',['../class_analytic_european_engine.html',1,'AnalyticEuropeanEngine'],['../class_analytic_european_engine.html#ae29c59f14976eaa910d4773d11aa234f',1,'AnalyticEuropeanEngine::AnalyticEuropeanEngine()']]],
   ['analyticeuropeanengine_2ecpp',['AnalyticEuropeanEngine.cpp',['../_analytic_european_engine_8cpp.html',1,'']]],
   ['analyticeuropeanengine_2eh',['AnalyticEuropeanEngine.h',['../_analytic_european_engine_8h.html',1,'']]],

@@ -2,7 +2,7 @@ var searchData=
 [
   ['r',['r',['../_uniform_l_ecuyer_r_n_g1_8cpp.html#a372556d73d7e403d9b677b89b21ee572',1,'UniformLEcuyerRNG1.cpp']]],
   ['r_5f',['r_',['../class_analytic_forward_engine.html#a4398f98b358ec1800db1e8e609b45321',1,'AnalyticForwardEngine::r_()'],['../class_b_s_stochastic_process.html#a92dfcebbdbd50af90d401e899943c3bd',1,'BSStochasticProcess::r_()']]],
-  ['randomvariablegenerator',['RandomVariableGenerator',['../class_random_variable_generator.html',1,'RandomVariableGenerator&lt; T &gt;'],['../class_random_variable_generator.html#a169116e4bedab8c340c62ddc7f6eac51',1,'RandomVariableGenerator::RandomVariableGenerator()']]],
+  ['randomvariablegenerator',['RandomVariableGenerator',['../class_random_variable_generator.html',1,'RandomVariableGenerator&lt; returnType &gt;'],['../class_random_variable_generator.html#a5404af4975ab4f9452e5d99b0479fa23',1,'RandomVariableGenerator::RandomVariableGenerator()'],['../class_random_variable_generator.html#a4bb14a0ef48a87cea066c69ea74175af',1,'RandomVariableGenerator::RandomVariableGenerator(unsigned long dimension)']]],
   ['randomvariablegenerator_2eh',['RandomVariableGenerator.h',['../_random_variable_generator_8h.html',1,'']]],
   ['randomvariablegenerator_3c_20double_20_3e',['RandomVariableGenerator&lt; double &gt;',['../class_random_variable_generator.html',1,'']]],
   ['randomvariablegenerator_3c_20vector_3c_20double_20_3e_20_3e',['RandomVariableGenerator&lt; vector&lt; double &gt; &gt;',['../class_random_variable_generator.html',1,'']]],

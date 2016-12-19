@@ -19,12 +19,6 @@ public:
     McEuropeanEngine(const std::shared_ptr<Model> model, Time timeStep, unsigned long maxSamples,
                      unsigned long minSamples);
 
-    std::shared_ptr<PathGenerator<RNG>> pathGenerator() override;
-
-    std::shared_ptr<PathPricer> pathPricer() override;
-
-    vector<Time> timeGrid() override;
-
     void calculate() override;
 
 private:
@@ -32,12 +26,19 @@ private:
     unsigned long minSamples_;
     unsigned long maxSamples_;
     Time timeStep_;
+
+    std::shared_ptr<PathGenerator<RNG>> pathGenerator() override;
+
+    std::shared_ptr<PathPricer> pathPricer() override;
+
+    const vector<Time> timeGrid() const override;
+
 };
 
 template<typename RNG>
 McEuropeanEngine<RNG>::McEuropeanEngine(const std::shared_ptr<Model> model, Time timeStep,
                                         unsigned long maxSamples, unsigned long minSamples) :
-        model_(model), timeStep_(timeStep), maxSamples_(maxSamples), minSamples_(minSamples) { }
+        model_(model), timeStep_(timeStep), maxSamples_(maxSamples), minSamples_(minSamples) {}
 
 template<typename RNG>
 std::shared_ptr<PathGenerator<RNG>> McEuropeanEngine<RNG>::pathGenerator() {
@@ -57,7 +58,7 @@ std::shared_ptr<PathPricer> McEuropeanEngine<RNG>::pathPricer() {
 }
 
 template<typename RNG>
-vector<Time> McEuropeanEngine<RNG>::timeGrid() {
+const vector<Time> McEuropeanEngine<RNG>::timeGrid() const {
     vector<Time> timeGrid;
     EuropeanOption::Arguments *arguments;
     arguments = dynamic_cast<EuropeanOption::Arguments *>(this->getArguments());

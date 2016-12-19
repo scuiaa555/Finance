@@ -10,10 +10,9 @@ var searchData=
   ['mcdimension_5f',['MCdimension_',['../class_black_scholes_model.html#a9457c1edc58d9f737f7eeeaaa6812488',1,'BlackScholesModel']]],
   ['mceuropeanengine',['McEuropeanEngine',['../class_mc_european_engine.html',1,'McEuropeanEngine&lt; RNG &gt;'],['../class_mc_european_engine.html#a22424812ecaf6e04134eeaa45b9d1e1f',1,'McEuropeanEngine::McEuropeanEngine()']]],
   ['mceuropeanengine_2eh',['MCEuropeanEngine.h',['../_m_c_european_engine_8h.html',1,'']]],
-  ['mcmodel',['McModel',['../class_mc_model.html',1,'McModel'],['../class_mc_model.html#af5a2a0799f0157a7398cde7f60184507',1,'McModel::McModel()']]],
-  ['mcmodel_2ecpp',['McModel.cpp',['../_mc_model_8cpp.html',1,'']]],
+  ['mcmodel',['McModel',['../class_mc_model.html',1,'McModel&lt; RNG &gt;'],['../class_mc_model.html#aeb469e49833dce6d5ffecfb31bcd0714',1,'McModel::McModel()']]],
   ['mcmodel_2eh',['McModel.h',['../_mc_model_8h.html',1,'']]],
-  ['mcmodel_5f',['mcModel_',['../class_mc_simulation.html#a5ccf1b2ffc6ec2dd7d7efcf4c6163f62',1,'McSimulation']]],
+  ['mcmodel_5f',['mcModel_',['../class_mc_simulation.html#a7bc913519c8fdf97955870ca8d0530e4',1,'McSimulation']]],
   ['mcsimulation',['McSimulation',['../class_mc_simulation.html',1,'']]],
   ['mcsimulation_2eh',['McSimulation.h',['../_mc_simulation_8h.html',1,'']]],
   ['mcstatistics',['MCStatistics',['../class_m_c_statistics.html',1,'MCStatistics'],['../class_m_c_statistics.html#aa4a6abdd39edf6efff8151da45568095',1,'MCStatistics::MCStatistics()']]],
@@ -29,7 +28,7 @@ var searchData=
   ['monitoredtimes_5f',['monitoredTimes_',['../class_asian_option_1_1_arguments.html#a27e013476613aec57076742ba561a722',1,'AsianOption::Arguments::monitoredTimes_()'],['../class_asian_option.html#a8cc25f4cabd8ceac95a69598481f18c8',1,'AsianOption::monitoredTimes_()']]],
   ['monitoredtimesiters_5f',['monitoredTimesIters_',['../class_asian_path_pricer.html#acad7de97a262edf4e9f0ebb5f70e81f1',1,'AsianPathPricer']]],
   ['monitoredtimesptr_5f',['monitoredTimesPtr_',['../class_asian_path_pricer.html#aa774ae5f2659aee3a7b5e40b3089c3be',1,'AsianPathPricer']]],
-  ['multirandgenerator',['MultiRandGenerator',['../class_multi_rand_generator.html',1,'']]],
+  ['multirandgenerator',['MultiRandGenerator',['../class_multi_rand_generator.html',1,'MultiRandGenerator&lt; Args &gt;'],['../class_multi_rand_generator.html#abf466c4d24a1c565abe493b26926f3c1',1,'MultiRandGenerator::MultiRandGenerator()']]],
   ['multirandgenerator_2eh',['MultiRandGenerator.h',['../_multi_rand_generator_8h.html',1,'']]],
   ['multirandom',['MultiRandom',['../struct_multi_random.html',1,'']]]
 ];

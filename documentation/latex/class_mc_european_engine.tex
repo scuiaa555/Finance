@@ -15,14 +15,17 @@ Inheritance diagram for Mc\+European\+Engine$<$ R\+NG $>$\+:\begin{figure}[H]
 \item 
 \hyperlink{class_mc_european_engine_a22424812ecaf6e04134eeaa45b9d1e1f}{Mc\+European\+Engine} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$ model, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} time\+Step, unsigned long max\+Samples, unsigned long min\+Samples)
 \item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$ $>$ \hyperlink{class_mc_european_engine_af3bd77fe30b60833448ee44efe6280d9}{path\+Generator} () override
-\item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_european_engine_aa504b56142c757d49cc4c9e079682f6d}{path\+Pricer} () override
-\item 
-vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_european_engine_a0c81d3320dc3567596b41d91444f5f54}{time\+Grid} () override
-\item 
 void \hyperlink{class_mc_european_engine_a6c29ef7a7ba6cd1a2f93ee63070cf40e}{calculate} () override
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$ $>$ \hyperlink{class_mc_european_engine_af3bd77fe30b60833448ee44efe6280d9}{path\+Generator} () override
+\begin{DoxyCompactList}\small\item\em Defer the implementation of path\+Generator to the derived class. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_european_engine_aa504b56142c757d49cc4c9e079682f6d}{path\+Pricer} () override
+\begin{DoxyCompactList}\small\item\em Defer the implementation of path\+Pricer to the derived class. \end{DoxyCompactList}\item 
+const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_european_engine_a62341229306247e5c1eed9a7d4a2dba3}{time\+Grid} () const override
+\begin{DoxyCompactList}\small\item\em Defer the implementation of setting time grid to the derived class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -64,8 +67,15 @@ Implements \hyperlink{class_pricing_engine_a733511ffc3cf5e4dc1fbc2a39208d8bd}{Pr
 \index{path\+Generator@{path\+Generator}!Mc\+European\+Engine@{Mc\+European\+Engine}}
 \subsubsection{\texorpdfstring{path\+Generator()}{pathGenerator()}}
 {\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$ $>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::path\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$ $>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::path\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
+
+
+Defer the implementation of path\+Generator to the derived class. 
+
+\begin{DoxyReturn}{Returns}
+shared\+\_\+ptr of path generator. 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{class_mc_simulation_a44086a1efd452d8644c9f2e52417038f}{Mc\+Simulation$<$ R\+N\+G $>$}.
@@ -75,22 +85,37 @@ Implements \hyperlink{class_mc_simulation_a44086a1efd452d8644c9f2e52417038f}{Mc\
 \index{path\+Pricer@{path\+Pricer}!Mc\+European\+Engine@{Mc\+European\+Engine}}
 \subsubsection{\texorpdfstring{path\+Pricer()}{pathPricer()}}
 {\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::path\+Pricer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::path\+Pricer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
+
+
+Defer the implementation of path\+Pricer to the derived class. 
+
+\begin{DoxyReturn}{Returns}
+shared\+\_\+ptr of path pricer. 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{class_mc_simulation_ae3b894a78823df7897abf418bb04a4a1}{Mc\+Simulation$<$ R\+N\+G $>$}.
 
-\hypertarget{class_mc_european_engine_a0c81d3320dc3567596b41d91444f5f54}{}\label{class_mc_european_engine_a0c81d3320dc3567596b41d91444f5f54} 
+\hypertarget{class_mc_european_engine_a62341229306247e5c1eed9a7d4a2dba3}{}\label{class_mc_european_engine_a62341229306247e5c1eed9a7d4a2dba3} 
 \index{Mc\+European\+Engine@{Mc\+European\+Engine}!time\+Grid@{time\+Grid}}
 \index{time\+Grid@{time\+Grid}!Mc\+European\+Engine@{Mc\+European\+Engine}}
 \subsubsection{\texorpdfstring{time\+Grid()}{timeGrid()}}
 {\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::time\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::time\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
 
 
-Implements \hyperlink{class_mc_simulation_ac3c90184d3d97fc7c01c974ad861f8d9}{Mc\+Simulation$<$ R\+N\+G $>$}.
+Defer the implementation of setting time grid to the derived class. 
+
+Time grid is a vector which is saved in the \hyperlink{class_path}{Path} class.~\newline
+{\itshape Constness\+:} Return by value, since it is a local variable. \begin{DoxyReturn}{Returns}
+Vector of time grid. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_mc_simulation_a8af54a9121f2d875872295b03a1b2a40}{Mc\+Simulation$<$ R\+N\+G $>$}.
 
 
 

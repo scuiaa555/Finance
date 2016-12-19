@@ -48,8 +48,7 @@ PathGenerator<RNG>::PathGenerator(const std::shared_ptr<Model> model, const vect
 //        /*!!! dimension problem appeared here
 //         *!!! should be implied by process/pathPricer */
         next_ = std::shared_ptr<Path>(new AntitheticPath(timeGrid, model->getDimensionality()));
-    }
-    else {
+    } else {
         next_ = std::shared_ptr<Path>(new Path(timeGrid, model->getDimensionality()));
     }
 }
