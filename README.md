@@ -6,8 +6,8 @@ The documentation file can be found in the folder "documentation".
 
 Git initialisation procedure
 
-1. Create a new repo (project) in local computer and on GitHub with the same name(e.g. gitTest) for consistency. \n
-2. In Terminal,  git init \n
+1. Create a new repo (project) in local computer and on GitHub with the same name(e.g. gitTest) for consistency. 
+2. In Terminal,  git init 
 3. git remote add origin "https://github.com/scuiaa555/gitTest.git"
 4. git pull origin master
 5. git add *
