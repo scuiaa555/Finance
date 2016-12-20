@@ -5,10 +5,12 @@
 #ifndef FINANCE_LECUYERUNIFORMRNG1_H
 #define FINANCE_LECUYERUNIFORMRNG1_H
 
+#include "Singleton.h"
 
-class UniformLEcuyerRNG1 {
+class UniformLEcuyerRNG1 : public Singleton<UniformLEcuyerRNG1> {
 public:
-    explicit UniformLEcuyerRNG1(unsigned long seed = 7777);
+
+    friend class Singleton<UniformLEcuyerRNG1>;
 
     void setSeed(const long seed);
 
@@ -19,6 +21,8 @@ public:
 private:
     long seed_;
     double u_;
+
+    explicit UniformLEcuyerRNG1(unsigned long seed = 7777);
 };
 
 

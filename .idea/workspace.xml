@@ -11,8 +11,226 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="864a6095-397c-4358-9ac8-60dc0d38eac9" name="Default" comment="">
+    <list default="true" id="864a6095-397c-4358-9ac8-60dc0d38eac9" name="Default" comment="Compound Poisson RNG added">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_generic_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_generic_normal_1_1_argument.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_generic_random_variable_generator.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_generic_random_variable_generator_1_1_argument.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_multi_rand_generator.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_random_variable_generator.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeDetermineCompilerABI_C.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeDetermineCompilerABI_CXX.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdC/a.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdCXX/a.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Instrument.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Instruments/AsianOption.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Instruments/EuropeanOption.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Instruments/Forward.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Main.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/McFramework/Path.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Models/LMM.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Parameter.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Payoffs/VanillaPayoff.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/PricingEngine.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/PricingEngines/AnalyticEuropeanEngine.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/PricingEngines/AnalyticForwardEngine.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/PricingEngines/EuropeanPathPricer.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/RandNumGeneration/UniformLEcuyerRNG1.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Statistics.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/Finance" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_c_make_c_compiler_id_8c.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_c_make_c_x_x_compiler_id_8cpp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_m_c_asian_engine_8h.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_m_c_asian_engine_8h_source.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_m_c_european_engine_8h.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_m_c_european_engine_8h_source.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_multi_rand_generator_8cpp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_multi_rand_generator_8h.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_multi_rand_generator_8h_source.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_normal_8h.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_normal_8h_source.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_pseudo_random_8h.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_pseudo_random_8h_source.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_random_variable_generator_8h.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_random_variable_generator_8h_source.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_single_rand_sequence_generator_8h.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/_single_rand_sequence_generator_8h_source.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_generic_normal-members.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_generic_normal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_generic_normal_1_1_argument-members.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_generic_normal_1_1_argument.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_generic_random_variable_generator-members.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_generic_random_variable_generator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_generic_random_variable_generator_1_1_argument-members.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_generic_random_variable_generator_1_1_argument.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_multi_rand_generator-members.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_multi_rand_generator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_normal-members.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_normal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_random_variable_generator-members.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_random_variable_generator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_single_rand_sequence_generator-members.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/class_single_rand_sequence_generator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/dir_22305cb0964bbe63c21991dd2265ce48.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/dir_2350f986e7af1c6185a4f6aab2dbb602.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/dir_28d76fcacd75045f81fd83c19d89b0ff.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/dir_5f80a337cd2e864e29b5ac0dc059c9bc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/dir_609a12a07be992d2faf02d4f42847f1e.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/dir_95e29a8b8ee7c54052c171a88bb95675.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/dir_af434bc82c11297a68a150e35f42b857.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/dir_b32872ef41c5ac3dcd463f1fa6a32513.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/dir_cb1ca862a219fdce1a9c748dbfc6cddd.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/dir_d4a75f8c235f559d74a91dd64eca3406.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/dir_e8f426440a9e55a1a5bdddfe7318d1a1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/dir_f89abcb304c928c7d889aa5625570de5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/feature__tests_8c.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/feature__tests_8cxx.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_0x7e.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_b.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_c.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_e.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_f.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_g.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_i.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_l.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_m.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_n.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_o.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_p.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_q.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_r.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_s.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_t.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_type.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_u.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_v.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_x.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/functions_z.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/globals_defs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/main_8cpp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/md__r_e_a_d_m_e.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/all_16.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/all_16.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/defines_0.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/defines_0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/defines_1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/defines_1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/defines_2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/defines_2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/defines_3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/defines_3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/defines_4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/defines_4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/defines_5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/defines_5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/files_d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/files_d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_10.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_b.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_b.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_c.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_c.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_d.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_e.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_e.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_f.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_f.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/struct_multi_random-members.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/struct_multi_random.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/struct_single_random-members.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/html/struct_single_random.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/_c_make_c_compiler_id_8c.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/_c_make_c_x_x_compiler_id_8cpp.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/_m_c_asian_engine_8h.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/_m_c_european_engine_8h.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/_multi_rand_generator_8cpp.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/_multi_rand_generator_8h.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/_normal_8h.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/_pseudo_random_8h.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/_random_variable_generator_8h.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/_single_rand_sequence_generator_8h.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_generic_normal.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_generic_normal.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_generic_normal_1_1_argument.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_generic_normal_1_1_argument.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_generic_random_variable_generator.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_generic_random_variable_generator.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_generic_random_variable_generator_1_1_argument.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_generic_random_variable_generator_1_1_argument.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_multi_rand_generator.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_multi_rand_generator.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_normal.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_normal.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_random_variable_generator.eps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_random_variable_generator.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/class_single_rand_sequence_generator.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/dir_22305cb0964bbe63c21991dd2265ce48.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/dir_2350f986e7af1c6185a4f6aab2dbb602.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/dir_28d76fcacd75045f81fd83c19d89b0ff.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/dir_5f80a337cd2e864e29b5ac0dc059c9bc.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/dir_609a12a07be992d2faf02d4f42847f1e.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/dir_95e29a8b8ee7c54052c171a88bb95675.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/dir_af434bc82c11297a68a150e35f42b857.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/dir_b32872ef41c5ac3dcd463f1fa6a32513.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/dir_cb1ca862a219fdce1a9c748dbfc6cddd.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/dir_d4a75f8c235f559d74a91dd64eca3406.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/dir_e8f426440a9e55a1a5bdddfe7318d1a1.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/dir_f89abcb304c928c7d889aa5625570de5.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/feature__tests_8c.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/feature__tests_8cxx.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/main_8cpp.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/md__r_e_a_d_m_e.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/struct_multi_random.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Documentation/latex/struct_single_random.tex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Doxyfile_Finance" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Models/MertonJumpModel.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Models/MertonJumpModel.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Singleton.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeCCompiler.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeCXXCompiler.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeSystem.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdC/CMakeCCompilerId.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/CXX.includecache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/DependInfo.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/build.make" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/cmake_clean.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/depend.internal" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/depend.make" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/flags.make" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/link.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/progress.make" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/Finance.cbp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandNumGeneration/Normal.h" afterPath="$PROJECT_DIR$/RandNumGeneration/Normal.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandNumGeneration/NormalMarsagliaBrayRng.h" afterPath="$PROJECT_DIR$/RandNumGeneration/NormalMarsagliaBrayRng.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandNumGeneration/PoissonInverse.h" afterPath="$PROJECT_DIR$/RandNumGeneration/PoissonInverse.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.h" afterPath="$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.h" afterPath="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="Finance.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,49 +250,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Poisson.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/Poisson.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-              <folding>
-                <element signature="e#101#155#0" expanded="true" />
-                <element signature="e#713#774#0" expanded="true" />
-                <element signature="e#1202#1226#0" expanded="true" />
-                <element signature="e#1345#1369#0" expanded="true" />
-                <element signature="e#1446#1470#0" expanded="true" />
-                <marker date="1482206215000" expanded="true" signature="314:701" ph="{...}" />
-                <marker date="1482206215000" expanded="true" signature="455:590" ph="{...}" />
-                <marker date="1482206215000" expanded="true" signature="813:1190" ph="{...}" />
-                <marker date="1482206215000" expanded="true" signature="1272:1335" ph="{...}" />
-                <marker date="1482206215000" expanded="true" signature="1415:1436" ph="{...}" />
-                <marker date="1482206215000" expanded="true" signature="1551:1577" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompoundPoisson.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/CompoundPoisson.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="32" column="102" lean-forward="false" selection-start-line="32" selection-start-column="102" selection-end-line="32" selection-end-column="102" />
-              <folding>
-                <element signature="e#117#171#0" expanded="true" />
-                <element signature="e#687#726#0" expanded="true" />
-                <element signature="e#1326#1365#0" expanded="true" />
-                <element signature="e#1586#1625#0" expanded="true" />
-                <element signature="e#1716#1755#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+            <state relative-caret-position="551">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -82,87 +262,93 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiRandGenerator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="41" column="59" lean-forward="false" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
-              <folding>
-                <marker date="1482211420000" expanded="true" signature="326:2487" ph="{...}" />
-                <marker date="1482211420000" expanded="true" signature="437:511" ph="{...}" />
-                <marker date="1482211420000" expanded="true" signature="582:619" ph="{...}" />
-                <marker date="1482211420000" expanded="true" signature="1154:1268" ph="{...}" />
-                <marker date="1482211420000" expanded="true" signature="1870:1911" ph="{...}" />
-                <marker date="1482211420000" expanded="true" signature="2576:2679" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PoissonInverse.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/PoissonInverse.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-              <folding>
-                <element signature="e#176#197#0" expanded="true" />
-                <element signature="e#539#560#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PathGenerator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/McFramework/PathGenerator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1178">
-              <caret line="66" column="70" lean-forward="false" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NormalMarsagliaBrayRng.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/NormalMarsagliaBrayRng.h">
+      <file leaf-file-name="MertonJumpModel.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Models/MertonJumpModel.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
               <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <marker date="1482203471000" expanded="true" signature="263:319" ph="{...}" />
-                <marker date="1482203471000" expanded="true" signature="641:1042" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EuropeanOption.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Instruments/EuropeanOption.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="39" column="7" lean-forward="false" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomVariableGenerator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/RandomVariableGenerator.h">
+      <file leaf-file-name="MertonJumpModel.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Models/MertonJumpModel.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StochasticProcess.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StochasticProcess.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BSStochasticProcess.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogNormalProcess.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
               <folding>
-                <element signature="e#657#678#0" expanded="true" />
-                <element signature="e#1014#1035#0" expanded="true" />
+                <element signature="e#119#149#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Normal.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/Normal.h">
+      <file leaf-file-name="Doxyfile_Finance" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Doxyfile_Finance">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlackScholesModel.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="33" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LMM.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Models/LMM.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultiRandGenerator.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1691">
+              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -181,22 +367,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Payoff.h" />
-        <option value="$PROJECT_DIR$/Parameter.cpp" />
-        <option value="$PROJECT_DIR$/Model.cpp" />
         <option value="$PROJECT_DIR$/StochasticProcess.h" />
         <option value="$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.h" />
         <option value="$PROJECT_DIR$/StochasticProcess.cpp" />
         <option value="$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.cpp" />
         <option value="$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.h" />
-        <option value="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.h" />
         <option value="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.cpp" />
         <option value="$PROJECT_DIR$/NameDef.h" />
         <option value="$PROJECT_DIR$/Parameter.h" />
         <option value="$PROJECT_DIR$/Instrument.cpp" />
         <option value="$PROJECT_DIR$/Models/LMM.cpp" />
         <option value="$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.cpp" />
-        <option value="$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.h" />
         <option value="$PROJECT_DIR$/Models/LMM.h" />
         <option value="$PROJECT_DIR$/RandNumGeneration/RandomSequenceGenerator.h" />
         <option value="$PROJECT_DIR$/McFramework/McSimulation.cpp" />
@@ -225,13 +406,18 @@
         <option value="$PROJECT_DIR$/PricingEngines/MCEuropeanEngine.h" />
         <option value="$PROJECT_DIR$/McFramework/McSimulation.h" />
         <option value="$PROJECT_DIR$/Models/BlackScholesModel.h" />
-        <option value="$PROJECT_DIR$/RandNumGeneration/NormalMarsagliaBrayRng.h" />
-        <option value="$PROJECT_DIR$/RandNumGeneration/Normal.h" />
-        <option value="$PROJECT_DIR$/RandNumGeneration/PoissonInverse.h" />
         <option value="$PROJECT_DIR$/RandNumGeneration/Poisson.h" />
         <option value="$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/RandNumGeneration/CompoundPoisson.h" />
+        <option value="$PROJECT_DIR$/Singleton.h" />
+        <option value="$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.h" />
+        <option value="$PROJECT_DIR$/RandNumGeneration/PoissonInverse.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/RandNumGeneration/Normal.h" />
+        <option value="$PROJECT_DIR$/RandNumGeneration/NormalMarsagliaBrayRng.h" />
+        <option value="$PROJECT_DIR$/Models/MertonJumpModel.cpp" />
+        <option value="$PROJECT_DIR$/Models/MertonJumpModel.h" />
+        <option value="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.h" />
       </list>
     </option>
   </component>
@@ -243,8 +429,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1280" />
+    <option name="y" value="12" />
     <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -266,6 +453,20 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Finance" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Finance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StochasticProcesses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Finance" />
@@ -566,7 +767,10 @@
       <workItem from="1482127863025" duration="668000" />
       <workItem from="1482128871752" duration="7364000" />
       <workItem from="1482138567285" duration="1070000" />
-      <workItem from="1482201738717" duration="8276000" />
+      <workItem from="1482201738717" duration="13862000" />
+      <workItem from="1482224779248" duration="718000" />
+      <workItem from="1482228651266" duration="675000" />
+      <workItem from="1482231866592" duration="915000" />
     </task>
     <task id="LOCAL-00001" summary="antithetic branch merged into">
       <created>1476980586328</created>
@@ -715,11 +919,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482214745939</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Compound Poisson RNG added">
+      <created>1482214753540</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1482214753540</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35805000" />
+    <option name="totallyTimeSpent" value="43699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -731,21 +942,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="1280" y="12" width="1920" height="1057" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1269089" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17272249" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825205" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23780487" sideWeight="0.47815728" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32723576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31300813" sideWeight="0.51237494" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31300813" sideWeight="0.48762506" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31217483" sideWeight="0.5165877" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31217483" sideWeight="0.48341233" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32723576" sideWeight="0.4805401" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.49815693" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.49815693" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39430895" sideWeight="0.48451152" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57723576" sideWeight="0.48451152" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23780487" sideWeight="0.47815728" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="100" width="1080" height="600" />
@@ -810,19 +1021,19 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>25</line>
+          <line>34</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>31</line>
+          <line>40</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="37" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
@@ -831,36 +1042,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Models/LMM.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/McFramework/McSimulation.cpp" />
-    <entry file="file://$PROJECT_DIR$/StochasticProcess.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.cpp" />
-    <entry file="file://$PROJECT_DIR$/Documentation/html/search/all_a.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PricingEngine.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -910,24 +1091,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/LMM.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="14" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -970,21 +1137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1030,7 +1182,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1976">
           <caret line="104" column="79" lean-forward="false" selection-start-line="104" selection-start-column="79" selection-end-line="104" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,7 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,7 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="29" column="46" lean-forward="false" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,7 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,12 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="e#266#280#0" expanded="true" />
-            <element signature="e#691#705#0" expanded="true" />
-            <element signature="e#995#1009#0" expanded="true" />
-            <element signature="e#1292#1306#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1075,7 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="51" column="67" lean-forward="false" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,7 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1216">
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1091,15 +1231,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,18 +1238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/NormalMarsagliaBrayRng.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <marker date="1482203471000" expanded="true" signature="263:319" ph="{...}" />
-            <marker date="1482203471000" expanded="true" signature="641:1042" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1126,18 +1245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="39" column="7" lean-forward="false" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/PoissonInverse.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="e#176#197#0" expanded="true" />
-            <element signature="e#539#560#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1145,7 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95551">
           <caret line="5029" column="0" lean-forward="false" selection-start-line="5029" selection-start-column="0" selection-end-line="5029" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1153,33 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding>
-            <element signature="e#657#678#0" expanded="true" />
-            <element signature="e#1014#1035#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/Normal.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="41" column="59" lean-forward="false" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
-          <folding>
-            <marker date="1482211420000" expanded="true" signature="326:2487" ph="{...}" />
-            <marker date="1482211420000" expanded="true" signature="437:511" ph="{...}" />
-            <marker date="1482211420000" expanded="true" signature="582:619" ph="{...}" />
-            <marker date="1482211420000" expanded="true" signature="1154:1268" ph="{...}" />
-            <marker date="1482211420000" expanded="true" signature="1870:1911" ph="{...}" />
-            <marker date="1482211420000" expanded="true" signature="2576:2679" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1187,7 +1266,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1178">
           <caret line="66" column="70" lean-forward="false" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="70" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Singleton.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/PoissonInverse.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1195,43 +1301,114 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
           <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-          <folding>
-            <element signature="e#101#155#0" expanded="true" />
-            <element signature="e#713#774#0" expanded="true" />
-            <element signature="e#1202#1226#0" expanded="true" />
-            <element signature="e#1345#1369#0" expanded="true" />
-            <element signature="e#1446#1470#0" expanded="true" />
-            <marker date="1482206215000" expanded="true" signature="314:701" ph="{...}" />
-            <marker date="1482206215000" expanded="true" signature="455:590" ph="{...}" />
-            <marker date="1482206215000" expanded="true" signature="813:1190" ph="{...}" />
-            <marker date="1482206215000" expanded="true" signature="1272:1335" ph="{...}" />
-            <marker date="1482206215000" expanded="true" signature="1415:1436" ph="{...}" />
-            <marker date="1482206215000" expanded="true" signature="1551:1577" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RandNumGeneration/CompoundPoisson.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
+        <state relative-caret-position="608">
           <caret line="32" column="102" lean-forward="false" selection-start-line="32" selection-start-column="102" selection-end-line="32" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/Normal.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/NormalMarsagliaBrayRng.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
           <folding>
-            <element signature="e#117#171#0" expanded="true" />
-            <element signature="e#687#726#0" expanded="true" />
-            <element signature="e#1326#1365#0" expanded="true" />
-            <element signature="e#1586#1625#0" expanded="true" />
-            <element signature="e#1716#1755#0" expanded="true" />
+            <element signature="e#138#154#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1691">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        <state relative-caret-position="551">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/LMM.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="33" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/MertonJumpModel.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/MertonJumpModel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StochasticProcess.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="e#119#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Doxyfile_Finance">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

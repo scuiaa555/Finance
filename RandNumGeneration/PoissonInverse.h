@@ -7,8 +7,6 @@
 #ifndef FINANCE_POISSONINVERSE_H
 #define FINANCE_POISSONINVERSE_H
 
-#endif //FINANCE_POISSONINVERSE_H
-
 template<typename UniformRNG>
 class PoissonInverse {
 public:
@@ -21,14 +19,14 @@ public:
     double last() { return last_; }
 
 private:
-    UniformRNG rng_;
+    UniformRNG *rng_;
     double last_;        /**< last return value. */
 //    double lambda_;
 };
 
 template<typename UniformRNG>
 double PoissonInverse<UniformRNG>::next(double lambda) {
-    double u = rng_.next();
+    double u = rng_->getInstance().next();
     double poisson = 0;
     double expTerm = exp(-lambda);
     double current = 1.0;
@@ -41,3 +39,5 @@ double PoissonInverse<UniformRNG>::next(double lambda) {
     last_ = poisson;
     return last_;
 }
+
+#endif //FINANCE_POISSONINVERSE_H

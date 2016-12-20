@@ -1,0 +1,114 @@
+\hypertarget{class_normal}{}\section{Normal$<$ Norm\+Method $>$ Class Template Reference}
+\label{class_normal}\index{Normal$<$ Norm\+Method $>$@{Normal$<$ Norm\+Method $>$}}
+
+
+{\ttfamily \#include $<$Normal.\+h$>$}
+
+Inheritance diagram for Normal$<$ Norm\+Method $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_normal}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef double \hyperlink{class_normal_a32c30c2173a87e48270b909d9f9be06e}{rng\+\_\+return\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_normal_abd6aa5f1a9d1619ad8db2600e11e795e}{Normal} ()
+\item 
+const double \& \hyperlink{class_normal_a2cd9c31195181491a4bf0d3856746437}{next} () override
+\item 
+const double \& \hyperlink{class_normal_a3f10787d08cb2479764d7e0da8256aa7}{last} () override
+\item 
+virtual \hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument} $\ast$ \hyperlink{class_normal_ac4048e25ff218cfb6052bd1b022b1591}{get\+Argument} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Norm\+Method \hyperlink{class_normal_a84d6a0d0b702c4cc19d66f960040276c}{rng\+\_\+}
+\item 
+double \hyperlink{class_normal_a69f8977c8b8224cf6345b1e2d0d35382}{last\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_normal_a32c30c2173a87e48270b909d9f9be06e}{}\label{class_normal_a32c30c2173a87e48270b909d9f9be06e} 
+\index{Normal@{Normal}!rng\+\_\+return\+\_\+type@{rng\+\_\+return\+\_\+type}}
+\index{rng\+\_\+return\+\_\+type@{rng\+\_\+return\+\_\+type}!Normal@{Normal}}
+\subsubsection{\texorpdfstring{rng\+\_\+return\+\_\+type}{rng\_return\_type}}
+{\footnotesize\ttfamily template$<$typename Norm\+Method  = Normal\+Marsaglia\+Bray\+Rng$<$\+Uniform\+L\+Ecuyer\+R\+N\+G1$>$$>$ \\
+typedef double \hyperlink{class_normal}{Normal}$<$ Norm\+Method $>$\+::\hyperlink{class_normal_a32c30c2173a87e48270b909d9f9be06e}{rng\+\_\+return\+\_\+type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_normal_abd6aa5f1a9d1619ad8db2600e11e795e}{}\label{class_normal_abd6aa5f1a9d1619ad8db2600e11e795e} 
+\index{Normal@{Normal}!Normal@{Normal}}
+\index{Normal@{Normal}!Normal@{Normal}}
+\subsubsection{\texorpdfstring{Normal()}{Normal()}}
+{\footnotesize\ttfamily template$<$typename Norm\+Method  = Normal\+Marsaglia\+Bray\+Rng$<$\+Uniform\+L\+Ecuyer\+R\+N\+G1$>$$>$ \\
+\hyperlink{class_normal}{Normal}$<$ Norm\+Method $>$\+::\hyperlink{class_normal}{Normal} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_normal_ac4048e25ff218cfb6052bd1b022b1591}{}\label{class_normal_ac4048e25ff218cfb6052bd1b022b1591} 
+\index{Normal@{Normal}!get\+Argument@{get\+Argument}}
+\index{get\+Argument@{get\+Argument}!Normal@{Normal}}
+\subsubsection{\texorpdfstring{get\+Argument()}{getArgument()}}
+{\footnotesize\ttfamily template$<$typename Norm\+Method $>$ \\
+\hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument} $\ast$ \hyperlink{class_normal}{Normal}$<$ Norm\+Method $>$\+::get\+Argument (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_generic_normal_a3006d271c692bc02b64b538342592e4d}{Generic\+Normal}.
+
+\hypertarget{class_normal_a3f10787d08cb2479764d7e0da8256aa7}{}\label{class_normal_a3f10787d08cb2479764d7e0da8256aa7} 
+\index{Normal@{Normal}!last@{last}}
+\index{last@{last}!Normal@{Normal}}
+\subsubsection{\texorpdfstring{last()}{last()}}
+{\footnotesize\ttfamily template$<$typename Norm\+Method $>$ \\
+const double \& \hyperlink{class_normal}{Normal}$<$ Norm\+Method $>$\+::last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_random_variable_generator_aa84922aa58871845bc12116e05e6b5d4}{Random\+Variable\+Generator$<$ double $>$}.
+
+\hypertarget{class_normal_a2cd9c31195181491a4bf0d3856746437}{}\label{class_normal_a2cd9c31195181491a4bf0d3856746437} 
+\index{Normal@{Normal}!next@{next}}
+\index{next@{next}!Normal@{Normal}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily template$<$typename Norm\+Method $>$ \\
+const double \& \hyperlink{class_normal}{Normal}$<$ Norm\+Method $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_random_variable_generator_a5178e1f85eff432dffd6320767136836}{Random\+Variable\+Generator$<$ double $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_normal_a69f8977c8b8224cf6345b1e2d0d35382}{}\label{class_normal_a69f8977c8b8224cf6345b1e2d0d35382} 
+\index{Normal@{Normal}!last\+\_\+@{last\+\_\+}}
+\index{last\+\_\+@{last\+\_\+}!Normal@{Normal}}
+\subsubsection{\texorpdfstring{last\+\_\+}{last\_}}
+{\footnotesize\ttfamily template$<$typename Norm\+Method  = Normal\+Marsaglia\+Bray\+Rng$<$\+Uniform\+L\+Ecuyer\+R\+N\+G1$>$$>$ \\
+double \hyperlink{class_normal}{Normal}$<$ Norm\+Method $>$\+::last\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_normal_a84d6a0d0b702c4cc19d66f960040276c}{}\label{class_normal_a84d6a0d0b702c4cc19d66f960040276c} 
+\index{Normal@{Normal}!rng\+\_\+@{rng\+\_\+}}
+\index{rng\+\_\+@{rng\+\_\+}!Normal@{Normal}}
+\subsubsection{\texorpdfstring{rng\+\_\+}{rng\_}}
+{\footnotesize\ttfamily template$<$typename Norm\+Method  = Normal\+Marsaglia\+Bray\+Rng$<$\+Uniform\+L\+Ecuyer\+R\+N\+G1$>$$>$ \\
+Norm\+Method \hyperlink{class_normal}{Normal}$<$ Norm\+Method $>$\+::rng\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Rand\+Num\+Generation/\hyperlink{_normal_8h}{Normal.\+h}\end{DoxyCompactItemize}

@@ -6,24 +6,28 @@
 #define FINANCE_NORMALINVERSEMARSAGLIABRAY_H
 
 #include <cmath>
+#include "Singleton.h"
 
 template<typename UniformRNG>
-class NormalMarsagliaBrayRng {
+class NormalMarsagliaBrayRng : public Singleton<NormalMarsagliaBrayRng<UniformRNG>> {
 public:
-    NormalMarsagliaBrayRng() : rng_() {
-        z_ = 0.0;
-        secondExists_ = false;
-    }
+
+    friend class Singleton<NormalMarsagliaBrayRng<UniformRNG>>;
 
     double next();
 
     double last() { return last_; }
 
 private:
-    UniformRNG rng_;
+    UniformRNG *rng_;
     double z_;           /**< second value of Marsaglia Bray scheme. */
     double last_;        /**< last return value. */
     bool secondExists_;
+
+    NormalMarsagliaBrayRng() : rng_() {
+        z_ = 0.0;
+        secondExists_ = false;
+    }
 
 };
 
@@ -38,8 +42,8 @@ double NormalMarsagliaBrayRng<UniformRNG>::next() {
     secondExists_ = !secondExists_;
     double x, u1, u2;
     do {
-        u1 = 2.0 * rng_.next() - 1;
-        u2 = 2.0 * rng_.next() - 1;
+        u1 = 2.0 * rng_->getInstance().next() - 1;
+        u2 = 2.0 * rng_->getInstance().next() - 1;
         x = u1 * u1 + u2 * u2;
     } while (x > 1);
     double y = sqrt(-2 * log(x) / x);

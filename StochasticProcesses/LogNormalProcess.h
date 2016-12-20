@@ -21,7 +21,7 @@ private:
     Quote x0_;
     std::shared_ptr<Parameter> drift_;
     unsigned long dimVol_;
-    std::vector<std::shared_ptr<Parameter> > volatility_;
+    std::vector<std::shared_ptr<Parameter>> volatility_;
 };
 
 

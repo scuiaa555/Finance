@@ -1,0 +1,113 @@
+\hypertarget{class_multi_rand_generator}{}\section{Multi\+Rand\+Generator$<$ Args $>$ Class Template Reference}
+\label{class_multi_rand_generator}\index{Multi\+Rand\+Generator$<$ Args $>$@{Multi\+Rand\+Generator$<$ Args $>$}}
+
+
+{\ttfamily \#include $<$Multi\+Rand\+Generator.\+h$>$}
+
+Inheritance diagram for Multi\+Rand\+Generator$<$ Args $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_multi_rand_generator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_multi_rand_generator_abf466c4d24a1c565abe493b26926f3c1}{Multi\+Rand\+Generator} ()
+\item 
+vector$<$ \hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument} $\ast$ $>$ \hyperlink{class_multi_rand_generator_ab6309c317d42656c99fa0a81a019a48a}{get\+Argument} ()
+\item 
+const vector$<$ double $>$ \& \hyperlink{class_multi_rand_generator_a39838e440c70bb6de68052a2ea25e258}{next} () override
+\item 
+const vector$<$ double $>$ \& \hyperlink{class_multi_rand_generator_abb83dee0545ca24fab2999144de6f0e3}{last} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple$<$ Args... $>$ \hyperlink{class_multi_rand_generator_a531c3ee630241e7c43b0e3fce70850b1}{rngs\+\_\+}
+\item 
+vector$<$ double $>$ \hyperlink{class_multi_rand_generator_a9a4e23b864633276d73890b770736edd}{sequence\+\_\+}
+\item 
+unsigned long \hyperlink{class_multi_rand_generator_a31ad84bf3f1e2c7db54b563945801b75}{num\+Of\+Single\+R\+N\+G\+\_\+}
+\item 
+vector$<$ \hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument} $\ast$ $>$ \hyperlink{class_multi_rand_generator_a267533dce301acea01978671fa3cb72f}{rng\+Arguments\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_multi_rand_generator_abf466c4d24a1c565abe493b26926f3c1}{}\label{class_multi_rand_generator_abf466c4d24a1c565abe493b26926f3c1} 
+\index{Multi\+Rand\+Generator@{Multi\+Rand\+Generator}!Multi\+Rand\+Generator@{Multi\+Rand\+Generator}}
+\index{Multi\+Rand\+Generator@{Multi\+Rand\+Generator}!Multi\+Rand\+Generator@{Multi\+Rand\+Generator}}
+\subsubsection{\texorpdfstring{Multi\+Rand\+Generator()}{MultiRandGenerator()}}
+{\footnotesize\ttfamily template$<$typename ... Args$>$ \\
+\hyperlink{class_multi_rand_generator}{Multi\+Rand\+Generator}$<$ Args $>$\+::\hyperlink{class_multi_rand_generator}{Multi\+Rand\+Generator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_multi_rand_generator_ab6309c317d42656c99fa0a81a019a48a}{}\label{class_multi_rand_generator_ab6309c317d42656c99fa0a81a019a48a} 
+\index{Multi\+Rand\+Generator@{Multi\+Rand\+Generator}!get\+Argument@{get\+Argument}}
+\index{get\+Argument@{get\+Argument}!Multi\+Rand\+Generator@{Multi\+Rand\+Generator}}
+\subsubsection{\texorpdfstring{get\+Argument()}{getArgument()}}
+{\footnotesize\ttfamily template$<$typename ... Args$>$ \\
+vector$<$\hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument} $\ast$$>$ \hyperlink{class_multi_rand_generator}{Multi\+Rand\+Generator}$<$ Args $>$\+::get\+Argument (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{class_multi_rand_generator_abb83dee0545ca24fab2999144de6f0e3}{}\label{class_multi_rand_generator_abb83dee0545ca24fab2999144de6f0e3} 
+\index{Multi\+Rand\+Generator@{Multi\+Rand\+Generator}!last@{last}}
+\index{last@{last}!Multi\+Rand\+Generator@{Multi\+Rand\+Generator}}
+\subsubsection{\texorpdfstring{last()}{last()}}
+{\footnotesize\ttfamily template$<$typename ... Args$>$ \\
+const vector$<$double$>$\& \hyperlink{class_multi_rand_generator}{Multi\+Rand\+Generator}$<$ Args $>$\+::last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_random_variable_generator_aa84922aa58871845bc12116e05e6b5d4}{Random\+Variable\+Generator$<$ vector$<$ double $>$ $>$}.
+
+\hypertarget{class_multi_rand_generator_a39838e440c70bb6de68052a2ea25e258}{}\label{class_multi_rand_generator_a39838e440c70bb6de68052a2ea25e258} 
+\index{Multi\+Rand\+Generator@{Multi\+Rand\+Generator}!next@{next}}
+\index{next@{next}!Multi\+Rand\+Generator@{Multi\+Rand\+Generator}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily template$<$typename ... Args$>$ \\
+const vector$<$ double $>$ \& \hyperlink{class_multi_rand_generator}{Multi\+Rand\+Generator}$<$ Args $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_random_variable_generator_a5178e1f85eff432dffd6320767136836}{Random\+Variable\+Generator$<$ vector$<$ double $>$ $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_multi_rand_generator_a31ad84bf3f1e2c7db54b563945801b75}{}\label{class_multi_rand_generator_a31ad84bf3f1e2c7db54b563945801b75} 
+\index{Multi\+Rand\+Generator@{Multi\+Rand\+Generator}!num\+Of\+Single\+R\+N\+G\+\_\+@{num\+Of\+Single\+R\+N\+G\+\_\+}}
+\index{num\+Of\+Single\+R\+N\+G\+\_\+@{num\+Of\+Single\+R\+N\+G\+\_\+}!Multi\+Rand\+Generator@{Multi\+Rand\+Generator}}
+\subsubsection{\texorpdfstring{num\+Of\+Single\+R\+N\+G\+\_\+}{numOfSingleRNG\_}}
+{\footnotesize\ttfamily template$<$typename ... Args$>$ \\
+unsigned long \hyperlink{class_multi_rand_generator}{Multi\+Rand\+Generator}$<$ Args $>$\+::num\+Of\+Single\+R\+N\+G\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+dimension of different single random sequence generators \hypertarget{class_multi_rand_generator_a267533dce301acea01978671fa3cb72f}{}\label{class_multi_rand_generator_a267533dce301acea01978671fa3cb72f} 
+\index{Multi\+Rand\+Generator@{Multi\+Rand\+Generator}!rng\+Arguments\+\_\+@{rng\+Arguments\+\_\+}}
+\index{rng\+Arguments\+\_\+@{rng\+Arguments\+\_\+}!Multi\+Rand\+Generator@{Multi\+Rand\+Generator}}
+\subsubsection{\texorpdfstring{rng\+Arguments\+\_\+}{rngArguments\_}}
+{\footnotesize\ttfamily template$<$typename ... Args$>$ \\
+vector$<$\hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument} $\ast$$>$ \hyperlink{class_multi_rand_generator}{Multi\+Rand\+Generator}$<$ Args $>$\+::rng\+Arguments\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_multi_rand_generator_a531c3ee630241e7c43b0e3fce70850b1}{}\label{class_multi_rand_generator_a531c3ee630241e7c43b0e3fce70850b1} 
+\index{Multi\+Rand\+Generator@{Multi\+Rand\+Generator}!rngs\+\_\+@{rngs\+\_\+}}
+\index{rngs\+\_\+@{rngs\+\_\+}!Multi\+Rand\+Generator@{Multi\+Rand\+Generator}}
+\subsubsection{\texorpdfstring{rngs\+\_\+}{rngs\_}}
+{\footnotesize\ttfamily template$<$typename ... Args$>$ \\
+tuple$<$Args...$>$ \hyperlink{class_multi_rand_generator}{Multi\+Rand\+Generator}$<$ Args $>$\+::rngs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\hypertarget{class_multi_rand_generator_a9a4e23b864633276d73890b770736edd}{}\label{class_multi_rand_generator_a9a4e23b864633276d73890b770736edd} 
+\index{Multi\+Rand\+Generator@{Multi\+Rand\+Generator}!sequence\+\_\+@{sequence\+\_\+}}
+\index{sequence\+\_\+@{sequence\+\_\+}!Multi\+Rand\+Generator@{Multi\+Rand\+Generator}}
+\subsubsection{\texorpdfstring{sequence\+\_\+}{sequence\_}}
+{\footnotesize\ttfamily template$<$typename ... Args$>$ \\
+vector$<$double$>$ \hyperlink{class_multi_rand_generator}{Multi\+Rand\+Generator}$<$ Args $>$\+::sequence\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Rand\+Num\+Generation/\hyperlink{_multi_rand_generator_8h}{Multi\+Rand\+Generator.\+h}\end{DoxyCompactItemize}

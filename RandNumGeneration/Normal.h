@@ -53,7 +53,7 @@ public:
 //    };
 
 private:
-    NormMethod rng_;
+    NormMethod* rng_;
 //    double mean_;
 //    double variance_;
     double last_;
@@ -62,7 +62,7 @@ private:
 
 template<typename NormMethod>
 const double &Normal<NormMethod>::next() {
-    last_ = rng_.next() * sqrt(argument_.variance_) + argument_.mean_;
+    last_ = rng_->getInstance().next() * sqrt(argument_.variance_) + argument_.mean_;
     return last_;
 }
 

@@ -14,16 +14,25 @@ using namespace std;
 
 int main() {
 
-    CompoundPoisson<Poisson<>, Normal<>> rngs;
-//    MultiRandGenerator<Normal<>, Poisson<>> rngs;
+//    Normal<> norm;
+//    vector<double> bb;
+//    for (int i = 0; i < 8; ++i) {
+//        bb.push_back(norm.next());
+//    }
+
+    MultiRandGenerator<Normal<>, Normal<>> rngs;
+    vector<double> results = rngs.next();
+    results = rngs.next();
+    results = rngs.next();
 //    vector<GenericRandomVariableGenerator::Argument *> ptrs = rngs.getArgument();
 //    dynamic_cast<GenericPoisson::Argument *>(ptrs[1])->lambda_ = 1.0;
 
-    dynamic_cast<GenericCompoundPoisson::Argument *>(rngs.getArgument())->argPtrPoisson_->lambda_ = 1.0;
-    dynamic_cast<GenericNormal::Argument *>(dynamic_cast<GenericCompoundPoisson::Argument *>(rngs.getArgument())->argPtrJump_)->mean_ = 0.0;
-    dynamic_cast<GenericNormal::Argument *>(dynamic_cast<GenericCompoundPoisson::Argument *>(rngs.getArgument())->argPtrJump_)->variance_ = 1.0;
-    double result = rngs.next();
-    result = rngs.next();
+    CompoundPoisson<Poisson<>, Normal<>> rng;
+    dynamic_cast<GenericCompoundPoisson::Argument *>(rng.getArgument())->argPtrPoisson_->lambda_ = 1.0;
+    dynamic_cast<GenericNormal::Argument *>(dynamic_cast<GenericCompoundPoisson::Argument *>(rng.getArgument())->argPtrJump_)->mean_ = 0.0;
+    dynamic_cast<GenericNormal::Argument *>(dynamic_cast<GenericCompoundPoisson::Argument *>(rng.getArgument())->argPtrJump_)->variance_ = 5.0;
+    double result = rng.next();
+    result = rng.next();
 
 //    ConstantParameter ppp(5.0);
 //    std::shared_ptr<Parameter> sig(new ConstantParameter(2.4));
