@@ -5,7 +5,7 @@
 #include "PricingEngines/McEuropeanEngine.h"
 #include "PricingEngines/AnalyticEuropeanEngine.h"
 #include <boost/timer.hpp>
-#include "RandNumGeneration/Poisson.h"
+#include "RandNumGeneration/CompoundPoisson.h"
 //#include <armadillo>
 
 using namespace std;
@@ -14,10 +14,15 @@ using namespace std;
 
 int main() {
 
-    MultiRandGenerator<Normal<>, Poisson<>> rngs;
-    vector<GenericRandomVariableGenerator::Argument *> ptrs = rngs.getArgument();
-    dynamic_cast<GenericPoisson::Argument *>(ptrs[1])->lambda_ = 1.0;
-    vector<double> result = rngs.next();
+    CompoundPoisson<Poisson<>, Normal<>> rngs;
+//    MultiRandGenerator<Normal<>, Poisson<>> rngs;
+//    vector<GenericRandomVariableGenerator::Argument *> ptrs = rngs.getArgument();
+//    dynamic_cast<GenericPoisson::Argument *>(ptrs[1])->lambda_ = 1.0;
+
+    dynamic_cast<GenericCompoundPoisson::Argument *>(rngs.getArgument())->argPtrPoisson_->lambda_ = 1.0;
+    dynamic_cast<GenericNormal::Argument *>(dynamic_cast<GenericCompoundPoisson::Argument *>(rngs.getArgument())->argPtrJump_)->mean_ = 0.0;
+    dynamic_cast<GenericNormal::Argument *>(dynamic_cast<GenericCompoundPoisson::Argument *>(rngs.getArgument())->argPtrJump_)->variance_ = 1.0;
+    double result = rngs.next();
     result = rngs.next();
 
 //    ConstantParameter ppp(5.0);
