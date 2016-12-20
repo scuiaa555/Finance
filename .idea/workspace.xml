@@ -11,11 +11,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="864a6095-397c-4358-9ac8-60dc0d38eac9" name="Default" comment="Compound Poisson RNG added">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RandNumGeneration/CompoundPoisson.h" />
+    <list default="true" id="864a6095-397c-4358-9ac8-60dc0d38eac9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="Finance.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,8 +73,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="741">
+              <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -569,7 +566,7 @@
       <workItem from="1482127863025" duration="668000" />
       <workItem from="1482128871752" duration="7364000" />
       <workItem from="1482138567285" duration="1070000" />
-      <workItem from="1482201738717" duration="8238000" />
+      <workItem from="1482201738717" duration="8268000" />
     </task>
     <task id="LOCAL-00001" summary="antithetic branch merged into">
       <created>1476980586328</created>
@@ -704,11 +701,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482211876124</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Compound Poisson RNG added">
+      <created>1482214716940</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1482214716940</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35767000" />
+    <option name="totallyTimeSpent" value="35797000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1216,8 +1220,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="741">
+          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
