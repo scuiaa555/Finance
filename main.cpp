@@ -5,7 +5,7 @@
 #include "PricingEngines/McEuropeanEngine.h"
 #include "PricingEngines/AnalyticEuropeanEngine.h"
 #include <boost/timer.hpp>
-#include "RandNumGeneration/MultiRandGenerator.h"
+#include "RandNumGeneration/Poisson.h"
 //#include <armadillo>
 
 using namespace std;
@@ -14,8 +14,11 @@ using namespace std;
 
 int main() {
 
-    MultiRandGenerator<Normal<>,Normal<>> rngs;
-    vector<double> result=rngs.next();
+    MultiRandGenerator<Normal<>, Poisson<>> rngs;
+    vector<GenericRandomVariableGenerator::Argument *> ptrs = rngs.getArgument();
+    dynamic_cast<GenericPoisson::Argument *>(ptrs[1])->lambda_ = 1.0;
+    vector<double> result = rngs.next();
+    result = rngs.next();
 
 //    ConstantParameter ppp(5.0);
 //    std::shared_ptr<Parameter> sig(new ConstantParameter(2.4));

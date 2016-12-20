@@ -7,6 +7,7 @@
 
 #include "RandNumGeneration/RandomVariableGenerator.h"
 #include "RandNumGeneration/NormalMarsagliaBrayRng.h"
+#include "RandNumGeneration/UniformLEcuyerRNG1.h"
 #include <cmath>
 
 //using std::shared_ptr;

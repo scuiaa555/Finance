@@ -5,7 +5,6 @@
 #ifndef FINANCE_NORMALINVERSEMARSAGLIABRAY_H
 #define FINANCE_NORMALINVERSEMARSAGLIABRAY_H
 
-#include "RandNumGeneration/UniformLEcuyerRNG1.h"
 #include <cmath>
 
 template<typename UniformRNG>
@@ -22,8 +21,8 @@ public:
 
 private:
     UniformRNG rng_;
-    double z_;           //!< second value of Marsaglia Bray scheme
-    double last_;        //!< last return value
+    double z_;           /**< second value of Marsaglia Bray scheme. */
+    double last_;        /**< last return value. */
     bool secondExists_;
 
 };

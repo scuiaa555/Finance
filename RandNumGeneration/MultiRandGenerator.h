@@ -16,7 +16,8 @@ template<typename ...Args>
 class MultiRandGenerator : public RandomVariableGenerator<vector<double>> {
 public:
 
-    MultiRandGenerator() : rngs_(), sequence_(), numOfSingleRNG_(sizeof...(Args)), rngArguments_() {
+    MultiRandGenerator() : rngs_(), sequence_(), numOfSingleRNG_(sizeof...(Args)), rngArguments_(0) {
+        creatArgumentPtrs(rngs_);
         getEachDimension(rngs_);
     }
 
@@ -26,15 +27,25 @@ public:
 
     const vector<double> &next() override;
 
-
     const vector<double> &last() override { return sequence_; }
 
 private:
     tuple<Args...> rngs_;
     vector<double> sequence_;
-    unsigned long numOfSingleRNG_;   /*!< dimension of different single random sequence generators */
+    unsigned long numOfSingleRNG_;   /**< dimension of different single random sequence generators */
     vector<GenericRandomVariableGenerator::Argument *> rngArguments_;
 
+    /* compile recursion */
+    template<std::size_t I = 0, typename... Tp>
+    inline typename std::enable_if<I < sizeof...(Tp), void>::type
+    creatArgumentPtrs(std::tuple<Tp...> &t) {
+        rngArguments_.push_back(std::get<I>(t).getArgument());
+        creatArgumentPtrs<I + 1, Tp...>(t);
+    }
+
+    template<std::size_t I = 0, typename... Tp>
+    inline typename std::enable_if<I == sizeof...(Tp), void>::type
+    creatArgumentPtrs(std::tuple<Tp...> &t) {}
 
     /* compile recursion */
     template<std::size_t I = 0, typename... Tp>
