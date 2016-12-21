@@ -18,14 +18,6 @@ memory
 string
 -
 
-..//Instruments/AsianOption.h
-Instrument.h
-../Instruments/Instrument.h
-Payoffs/VanillaPayoff.h
-../Instruments/Payoffs/VanillaPayoff.h
-vector
--
-
 ..//Instruments/EuropeanOption.h
 Instrument.h
 ../Instruments/Instrument.h
@@ -295,8 +287,6 @@ Instruments/EuropeanOption.h
 /Users/CUI/Dropbox/C++/Finance/Instruments/EuropeanOption.h
 Models/BlackScholesModel.h
 /Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.h
-PricingEngines/McAsianEngine.h
-/Users/CUI/Dropbox/C++/Finance/PricingEngines/McAsianEngine.h
 PricingEngines/McEuropeanEngine.h
 /Users/CUI/Dropbox/C++/Finance/PricingEngines/McEuropeanEngine.h
 PricingEngines/AnalyticEuropeanEngine.h
@@ -305,16 +295,6 @@ boost/timer.hpp
 -
 RandNumGeneration/CompoundPoisson.h
 /Users/CUI/Dropbox/C++/Finance/RandNumGeneration/CompoundPoisson.h
-
-/Users/CUI/Dropbox/C++/Finance/McFramework/Path.cpp
-Path.h
-/Users/CUI/Dropbox/C++/Finance/McFramework/Path.h
-
-/Users/CUI/Dropbox/C++/Finance/McFramework/Path.h
-vector
--
-NameDef.h
-/Users/CUI/Dropbox/C++/Finance/McFramework/NameDef.h
 
 /Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.cpp
 BlackScholesModel.h
@@ -402,14 +382,6 @@ cmath
 Instruments/Forward.h
 /Users/CUI/Dropbox/C++/Finance/PricingEngines/Instruments/Forward.h
 
-/Users/CUI/Dropbox/C++/Finance/PricingEngines/AsianPathPricer.h
-McFramework/PathPricer.h
-/Users/CUI/Dropbox/C++/Finance/PricingEngines/McFramework/PathPricer.h
-Payoff.h
-/Users/CUI/Dropbox/C++/Finance/PricingEngines/Payoff.h
-Instruments/AsianOption.h
-/Users/CUI/Dropbox/C++/Finance/PricingEngines/Instruments/AsianOption.h
-
 /Users/CUI/Dropbox/C++/Finance/PricingEngines/EuropeanPathPricer.cpp
 PricingEngines/EuropeanPathPricer.h
 /Users/CUI/Dropbox/C++/Finance/PricingEngines/PricingEngines/EuropeanPathPricer.h
@@ -421,16 +393,6 @@ McFramework/PathPricer.h
 /Users/CUI/Dropbox/C++/Finance/PricingEngines/McFramework/PathPricer.h
 Payoff.h
 /Users/CUI/Dropbox/C++/Finance/PricingEngines/Payoff.h
-
-/Users/CUI/Dropbox/C++/Finance/PricingEngines/McAsianEngine.h
-McFramework/McSimulation.h
-/Users/CUI/Dropbox/C++/Finance/PricingEngines/McFramework/McSimulation.h
-AsianPathPricer.h
-/Users/CUI/Dropbox/C++/Finance/PricingEngines/AsianPathPricer.h
-iostream
--
-RandNumGeneration/PseudoRandom.h
-/Users/CUI/Dropbox/C++/Finance/PricingEngines/RandNumGeneration/PseudoRandom.h
 
 /Users/CUI/Dropbox/C++/Finance/PricingEngines/McEuropeanEngine.h
 Instruments/EuropeanOption.h
@@ -495,6 +457,14 @@ StochasticProcess.h
 /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/StochasticProcess.h
 Parameter.h
 /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/Parameter.h
+
+/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.cpp
+LogNormalwithNormalJump.h
+/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.h
+
+/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.h
+StochasticProcess.h
+/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/StochasticProcess.h
 
 /opt/local/include/boost/aligned_storage.hpp
 cstddef

@@ -23,12 +23,14 @@ set(SOURCE_FILES Main.cpp Payoff.h Instrument.cpp
         PricingEngines/AnalyticForwardEngine.cpp PricingEngines/AnalyticForwardEngine.h
         RandNumGeneration/UniformLEcuyerRNG1.cpp RandNumGeneration/UniformLEcuyerRNG1.h RandNumGeneration/SingleRandSequenceGenerator.h
         RandNumGeneration/NormalMarsagliaBrayRng.h Model.h
-        McFramework/Path.cpp McFramework/Path.h McFramework/PathGenerator.h McFramework/PathPricer.h
+        McFramework/Path.h McFramework/PathGenerator.h McFramework/PathPricer.h
         McFramework/McModel.h PricingEngines/EuropeanPathPricer.cpp Statistics.cpp Statistics.h
         McFramework/McSimulation.h PricingEngines/McEuropeanEngine.h
         Payoffs/VanillaPayoff.cpp Payoffs/VanillaPayoff.h Instruments/AsianOption.cpp Instruments/AsianOption.h
         PricingEngines/EuropeanPathPricer.h Parameter.cpp Parameter.h
         Models/BlackScholesModel.cpp Models/BlackScholesModel.h Models/LMM.cpp Models/LMM.h StochasticProcesses/BSStochasticProcess.cpp
         StochasticProcesses/BSStochasticProcess.h StochasticProcesses/LogNormalProcess.cpp StochasticProcesses/LogNormalProcess.h
-        RandNumGeneration/MultiRandGenerator.h RandNumGeneration/PseudoRandom.h RandNumGeneration/RandomVariableGenerator.h RandNumGeneration/Normal.h RandNumGeneration/Poisson.h RandNumGeneration/PoissonInverse.h RandNumGeneration/CompoundPoisson.h Singleton.h Models/MertonJumpModel.cpp Models/MertonJumpModel.h)
+        RandNumGeneration/MultiRandGenerator.h RandNumGeneration/PseudoRandom.h RandNumGeneration/RandomVariableGenerator.h
+        RandNumGeneration/Normal.h RandNumGeneration/Poisson.h RandNumGeneration/PoissonInverse.h RandNumGeneration/CompoundPoisson.h Singleton.h
+        StochasticProcesses/LogNormalwithNormalJump.cpp StochasticProcesses/LogNormalwithNormalJump.h)
 add_executable(Finance ${SOURCE_FILES})

@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Instruments/EuropeanOption.h"
 #include "Models/BlackScholesModel.h"
-#include "PricingEngines/McAsianEngine.h"
 #include "PricingEngines/McEuropeanEngine.h"
 #include "PricingEngines/AnalyticEuropeanEngine.h"
 #include <boost/timer.hpp>
@@ -14,30 +13,18 @@ using namespace std;
 
 int main() {
 
-//    Normal<> norm;
-//    vector<double> bb;
-//    for (int i = 0; i < 8; ++i) {
-//        bb.push_back(norm.next());
-//    }
+//    MultiRandGenerator<Normal<>, Normal<>> rngs;
+//    vector<double> results = rngs.next();
+//    results = rngs.next();
+//    results = rngs.next();
+//
+//    CompoundPoisson<Poisson<>, Normal<>> rng;
+//    dynamic_cast<GenericCompoundPoisson::Argument *>(rng.getArgument())->argPtrPoisson_->lambda_ = 1.0;
+//    dynamic_cast<GenericNormal::Argument *>(dynamic_cast<GenericCompoundPoisson::Argument *>(rng.getArgument())->argPtrJump_)->mean_ = 0.0;
+//    dynamic_cast<GenericNormal::Argument *>(dynamic_cast<GenericCompoundPoisson::Argument *>(rng.getArgument())->argPtrJump_)->variance_ = 5.0;
+//    double result = rng.next();
+//    result = rng.next();
 
-    MultiRandGenerator<Normal<>, Normal<>> rngs;
-    vector<double> results = rngs.next();
-    results = rngs.next();
-    results = rngs.next();
-//    vector<GenericRandomVariableGenerator::Argument *> ptrs = rngs.getArgument();
-//    dynamic_cast<GenericPoisson::Argument *>(ptrs[1])->lambda_ = 1.0;
-
-    CompoundPoisson<Poisson<>, Normal<>> rng;
-    dynamic_cast<GenericCompoundPoisson::Argument *>(rng.getArgument())->argPtrPoisson_->lambda_ = 1.0;
-    dynamic_cast<GenericNormal::Argument *>(dynamic_cast<GenericCompoundPoisson::Argument *>(rng.getArgument())->argPtrJump_)->mean_ = 0.0;
-    dynamic_cast<GenericNormal::Argument *>(dynamic_cast<GenericCompoundPoisson::Argument *>(rng.getArgument())->argPtrJump_)->variance_ = 5.0;
-    double result = rng.next();
-    result = rng.next();
-
-//    ConstantParameter ppp(5.0);
-//    std::shared_ptr<Parameter> sig(new ConstantParameter(2.4));
-//    std::vector<std::shared_ptr<Parameter> > sigs(4, sig);
-//    LMM lmm(2, std::vector<Quote>(2, 1), 2, sigs, 0.1);
     boost::timer tm;
     double a, a1, a2;
     shared_ptr<Payoff> vanillaPayoff(new VanillaPayoff(100.0, "put"));

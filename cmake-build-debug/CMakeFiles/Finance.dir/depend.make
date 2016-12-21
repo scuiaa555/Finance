@@ -39,7 +39,6 @@ CMakeFiles/Finance.dir/Instruments/Forward.cpp.o: ../Instruments/Forward.cpp
 CMakeFiles/Finance.dir/Instruments/Forward.cpp.o: ../Instruments/Forward.h
 
 CMakeFiles/Finance.dir/Main.cpp.o: ../Instrument.h
-CMakeFiles/Finance.dir/Main.cpp.o: ../Instruments/AsianOption.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../McFramework/McModel.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../McFramework/McSimulation.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../McFramework/Path.h
@@ -69,9 +68,7 @@ CMakeFiles/Finance.dir/Main.cpp.o: ../Instruments/EuropeanOption.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../Main.cpp
 CMakeFiles/Finance.dir/Main.cpp.o: ../Models/BlackScholesModel.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../PricingEngines/AnalyticEuropeanEngine.h
-CMakeFiles/Finance.dir/Main.cpp.o: ../PricingEngines/AsianPathPricer.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../PricingEngines/EuropeanPathPricer.h
-CMakeFiles/Finance.dir/Main.cpp.o: ../PricingEngines/McAsianEngine.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../PricingEngines/McEuropeanEngine.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../RandNumGeneration/CompoundPoisson.h
 CMakeFiles/Finance.dir/Main.cpp.o: /opt/local/include/boost/config.hpp
@@ -133,10 +130,6 @@ CMakeFiles/Finance.dir/Main.cpp.o: /opt/local/include/boost/config/suffix.hpp
 CMakeFiles/Finance.dir/Main.cpp.o: /opt/local/include/boost/config/user.hpp
 CMakeFiles/Finance.dir/Main.cpp.o: /opt/local/include/boost/limits.hpp
 CMakeFiles/Finance.dir/Main.cpp.o: /opt/local/include/boost/timer.hpp
-
-CMakeFiles/Finance.dir/McFramework/Path.cpp.o: ../NameDef.h
-CMakeFiles/Finance.dir/McFramework/Path.cpp.o: ../McFramework/Path.cpp
-CMakeFiles/Finance.dir/McFramework/Path.cpp.o: ../McFramework/Path.h
 
 CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o: ../Model.h
 CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o: ../RandNumGeneration/Normal.h
@@ -1524,4 +1517,10 @@ CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o: ../Stochastic
 CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o: ../NameDef.h
 CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o: ../StochasticProcesses/LogNormalProcess.cpp
 CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o: ../StochasticProcesses/LogNormalProcess.h
+
+CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o: ../StochasticProcess.h
+CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o: ../NameDef.h
+CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o: ../Parameter.h
+CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o: ../StochasticProcesses/LogNormalwithNormalJump.cpp
+CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o: ../StochasticProcesses/LogNormalwithNormalJump.h
 

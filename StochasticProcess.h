@@ -10,6 +10,8 @@
 #include "NameDef.h"
 #include "Parameter.h"
 
+using std::shared_ptr;
+
 class StochasticProcess {
 public:
     class ParameterSet {
@@ -17,10 +19,17 @@ public:
 
     virtual Quote getSpot() const = 0;
 
-    virtual ~StochasticProcess() { }
+    virtual ~StochasticProcess() {}
 };
 
-
-
+//class JumpComponent {
+//public:
+//    virtual ~JumpComponent() {}
+//};
+//
+//class JumpDiffusionProcess : public StochasticProcess {
+//protected:
+//    shared_ptr<JumpComponent> jumpComponent_;
+//};
 
 #endif //FINANCE_MODEL_H

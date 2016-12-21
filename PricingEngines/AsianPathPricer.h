@@ -9,12 +9,12 @@
 #include "Payoff.h"
 #include "Instruments/AsianOption.h"
 
-class AsianPathPricer : public PathPricer {
+class AsianPathPricer : public PathPricer<SingleVariate> {
 public:
     AsianPathPricer(std::shared_ptr<Payoff> payoff, Rate discount, std::shared_ptr<vector<Time> > monitoredTimesPtr,
                     AsianOption::AverageType averageType, bool isAntithetic);
 
-    Money operator()(const Path &path) const override;
+    Money operator()(const Path<SingleVariate> &path) const override;
 
 private:
     std::shared_ptr<Payoff> payoff_;

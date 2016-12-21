@@ -11,23 +11,25 @@
 #include "RandNumGeneration/MultiRandGenerator.h"
 #include <type_traits>
 
-template<typename RNG>
+template<typename RNG, typename PathType>
 class PathGenerator {
 public:
     typedef typename RNG::rng_return_type rng_return_type;
     typedef typename RNG::rng_type rng_type;
     typedef typename RNG::rng_argument_type rng_argument_type;
+    typedef typename PathType::path_return_type path_return_type;
+    typedef typename PathType::type_of_single_time path_return_type_of_single_time;
 
-    PathGenerator(const std::shared_ptr<Model> model, const vector<Time> &timeGrid,
+    PathGenerator(const std::shared_ptr<Model<path_return_type_of_single_time>> model, const vector<Time> &timeGrid,
                   bool isAntithetic = 0);
 
-    Path &next();
+    Path<PathType> &next();
 
 private:
     rng_type rng_;
-    std::shared_ptr<Model> model_;
+    std::shared_ptr<Model<path_return_type_of_single_time>> model_;
     /* the generator does not know the exact type of its path */
-    std::shared_ptr<Path> next_;
+    std::shared_ptr<Path<PathType>> next_;
     bool isAntithetic_;
 
 //    template<typename ArgType>
@@ -38,26 +40,23 @@ private:
 //            typename std::enable_if<std::is_same<ArgType, vector<Model::Argument *>>::value, vector<Model::Argument *>> args);
 };
 
-template<typename RNG>
-PathGenerator<RNG>::PathGenerator(const std::shared_ptr<Model> model, const vector<Time> &timeGrid,
-                                  bool isAntithetic)
+template<typename RNG, typename PathType>
+PathGenerator<RNG, PathType>::PathGenerator(const std::shared_ptr<Model<path_return_type_of_single_time>> model,
+                                            const vector<Time> &timeGrid,
+                                            bool isAntithetic)
         : rng_(), model_(model), isAntithetic_(isAntithetic) {
-//    typename RNG::rng_argument_type arg;
-//    setRNGs<typename RNG::rng_argument_type>(arg);
-    if (isAntithetic) {
-//        /*!!! dimension problem appeared here
-//         *!!! should be implied by process/pathPricer */
-        next_ = std::shared_ptr<Path>(new AntitheticPath(timeGrid, model->getDimensionality()));
-    } else {
-        next_ = std::shared_ptr<Path>(new Path(timeGrid, model->getDimensionality()));
-    }
+//    if (isAntithetic) {
+//        next_ = std::shared_ptr<Path>(new AntitheticPath(timeGrid, model->getDimensionality()));
+//    } else {
+    next_ = std::shared_ptr<Path<PathType>>(new Path<PathType>(timeGrid, model->getDimensionality()));
+//    }
 }
 
-template<typename RNG>
-Path &PathGenerator<RNG>::next() {
+template<typename RNG, typename PathType>
+Path<PathType> &PathGenerator<RNG, PathType>::next() {
     if (!isAntithetic_) {
-        vector<vector<Quote> >::iterator it_value = next_->getValues().begin();
-        vector<Quote> x0 = model_->getInitial();
+        typename PathGenerator<RNG, PathType>::path_return_type::iterator it_value = next_->getValues().begin();
+        typename PathGenerator<RNG, PathType>::path_return_type_of_single_time x0 = model_->getInitial();
         *it_value = x0;
         for (vector<Time>::const_iterator it_time = next_->getTimeGrid().begin();
              it_time != next_->getTimeGrid().end() - 1; it_time++) {

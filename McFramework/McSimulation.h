@@ -13,8 +13,9 @@
  * It will provide the mcModel class(its data member) with a specific path generator and a path pricer and control the calculation
  * procedure of mcModel.
  * @tparam RNG Generic random number generator(e.g. SingleRandom<Normal<>>, MultiRandom<Normal<>,Poisson>,...)
+ * @tparam PathType Type of generated path.
  */
-template<typename RNG>
+template<typename RNG, typename PathType>
 class McSimulation {
 public:
 
@@ -39,7 +40,7 @@ protected:
 
 private:
 
-    std::shared_ptr<McModel<RNG>> mcModel_;  /**< Shared_ptr of McModel which contains the needed path generator and pricer. */
+    std::shared_ptr<McModel<RNG, PathType>> mcModel_;  /**< Shared_ptr of McModel which contains the needed path generator and pricer. */
     bool isAntithetic_;                      /**< =1 indicates use of antithetic path; =0 makes no use of antithetic path. */
 //    shared_ptr<StochasticProcess> process_;
 
@@ -47,13 +48,13 @@ private:
      * Defer the implementation of pathGenerator to the derived class.
      * @return shared_ptr of path generator.
      */
-    virtual std::shared_ptr<PathGenerator<RNG> > pathGenerator() = 0;
+    virtual std::shared_ptr<PathGenerator<RNG, PathType>> pathGenerator() = 0;
 
     /**
      * Defer the implementation of pathPricer to the derived class.
      * @return shared_ptr of path pricer.
      */
-    virtual std::shared_ptr<PathPricer> pathPricer() = 0;
+    virtual std::shared_ptr<PathPricer<PathType>> pathPricer() = 0;
 
     /**
      * Defer the implementation of setting time grid to the derived class.
@@ -71,21 +72,21 @@ private:
     void value(unsigned long maxSamples, unsigned long minSamples);
 };
 
-template<typename RNG>
-void McSimulation<RNG>::calculate(unsigned long maxSamples, unsigned long minSamples) {
-    mcModel_ = std::shared_ptr<McModel<RNG>>(new McModel<RNG>(pathGenerator(), pathPricer()));
+template<typename RNG, typename PathType>
+void McSimulation<RNG, PathType>::calculate(unsigned long maxSamples, unsigned long minSamples) {
+    mcModel_ = std::shared_ptr<McModel<RNG, PathType>>(new McModel<RNG, PathType>(pathGenerator(), pathPricer()));
     value(maxSamples, minSamples);
 }
 
-template<typename RNG>
-void McSimulation<RNG>::value(unsigned long maxSamples, unsigned long minSamples) {
+template<typename RNG, typename PathType>
+void McSimulation<RNG, PathType>::value(unsigned long maxSamples, unsigned long minSamples) {
     for (unsigned long j = 1; j <= maxSamples / minSamples; j++) {
         mcModel_->addSamples(minSamples);
     }
 }
 
-template<typename RNG>
-const MCStatistics &McSimulation<RNG>::sampleAccumulator() const {
+template<typename RNG, typename PathType>
+const MCStatistics &McSimulation<RNG, PathType>::sampleAccumulator() const {
     return this->mcModel_->getStatistics();
 }
 

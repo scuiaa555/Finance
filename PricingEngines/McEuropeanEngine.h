@@ -12,42 +12,42 @@
 #include "RandNumGeneration/PseudoRandom.h"
 #include "RandNumGeneration/Normal.h"
 
-template<typename RNG>
+template<typename RNG, typename PathType=SingleVariate>
 class McEuropeanEngine
-        : public EuropeanOption::engine, private McSimulation<RNG> {
+        : public EuropeanOption::engine, private McSimulation<RNG, PathType> {
 public:
-    McEuropeanEngine(const std::shared_ptr<Model> model, Time timeStep, unsigned long maxSamples,
+    McEuropeanEngine(const std::shared_ptr<Model<double>> model, Time timeStep, unsigned long maxSamples,
                      unsigned long minSamples);
 
     void calculate() override;
 
 private:
-    std::shared_ptr<Model> model_;
+    std::shared_ptr<Model<double>> model_;
     unsigned long minSamples_;
     unsigned long maxSamples_;
     Time timeStep_;
 
-    std::shared_ptr<PathGenerator<RNG>> pathGenerator() override;
+    std::shared_ptr<PathGenerator<RNG, PathType>> pathGenerator() override;
 
-    std::shared_ptr<PathPricer> pathPricer() override;
+    std::shared_ptr<PathPricer<PathType>> pathPricer() override;
 
     const vector<Time> timeGrid() const override;
 
 };
 
-template<typename RNG>
-McEuropeanEngine<RNG>::McEuropeanEngine(const std::shared_ptr<Model> model, Time timeStep,
-                                        unsigned long maxSamples, unsigned long minSamples) :
+template<typename RNG, typename PathType>
+McEuropeanEngine<RNG, PathType>::McEuropeanEngine(const std::shared_ptr<Model<double>> model, Time timeStep,
+                                                  unsigned long maxSamples, unsigned long minSamples) :
         model_(model), timeStep_(timeStep), maxSamples_(maxSamples), minSamples_(minSamples) {}
 
-template<typename RNG>
-std::shared_ptr<PathGenerator<RNG>> McEuropeanEngine<RNG>::pathGenerator() {
-    return std::shared_ptr<PathGenerator<RNG>>(
-            new PathGenerator<RNG>(model_, timeGrid()));
+template<typename RNG, typename PathType>
+std::shared_ptr<PathGenerator<RNG, PathType>> McEuropeanEngine<RNG, PathType>::pathGenerator() {
+    return std::shared_ptr<PathGenerator<RNG, PathType>>(
+            new PathGenerator<RNG, PathType>(model_, timeGrid()));
 }
 
-template<typename RNG>
-std::shared_ptr<PathPricer> McEuropeanEngine<RNG>::pathPricer() {
+template<typename RNG, typename PathType>
+std::shared_ptr<PathPricer<PathType>> McEuropeanEngine<RNG, PathType>::pathPricer() {
     EuropeanOption::Arguments *arguments;
     arguments = dynamic_cast<EuropeanOption::Arguments *>(this->getArguments());
     std::shared_ptr<VanillaPayoff> payoff = std::dynamic_pointer_cast<VanillaPayoff>(arguments->payoff_);
@@ -57,8 +57,8 @@ std::shared_ptr<PathPricer> McEuropeanEngine<RNG>::pathPricer() {
     return std::shared_ptr<EuropeanPathPricer>(new EuropeanPathPricer(payoff, r));
 }
 
-template<typename RNG>
-const vector<Time> McEuropeanEngine<RNG>::timeGrid() const {
+template<typename RNG,typename PathType>
+const vector<Time> McEuropeanEngine<RNG,PathType>::timeGrid() const {
     vector<Time> timeGrid;
     EuropeanOption::Arguments *arguments;
     arguments = dynamic_cast<EuropeanOption::Arguments *>(this->getArguments());
@@ -71,9 +71,9 @@ const vector<Time> McEuropeanEngine<RNG>::timeGrid() const {
     return timeGrid;
 }
 
-template<typename RNG>
-void McEuropeanEngine<RNG>::calculate() {
-    McSimulation<RNG>::calculate(maxSamples_, minSamples_);
+template<typename RNG,typename PathType>
+void McEuropeanEngine<RNG,PathType>::calculate() {
+    McSimulation<RNG,PathType>::calculate(maxSamples_, minSamples_);
     EuropeanOption::Results *results;
     results = dynamic_cast<EuropeanOption::Results *> (this->getResults());
     double price = this->sampleAccumulator().mean();

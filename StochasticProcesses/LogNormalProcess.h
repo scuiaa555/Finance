@@ -10,18 +10,19 @@
 
 class LogNormalProcess : public StochasticProcess {
 public:
+
     LogNormalProcess() = default;
 
-    LogNormalProcess(Quote x0, const std::shared_ptr<Parameter> &drift, unsigned long dimVol,
-                     const std::vector<std::shared_ptr<Parameter> > &volatility);
+    LogNormalProcess(Quote x0, const shared_ptr<Parameter> &drift, unsigned long dimVol,
+                     const vector<shared_ptr<Parameter> > &volatility);
 
     Quote getSpot() const override;
 
 private:
     Quote x0_;
-    std::shared_ptr<Parameter> drift_;
+    shared_ptr<Parameter> drift_;
     unsigned long dimVol_;
-    std::vector<std::shared_ptr<Parameter>> volatility_;
+    vector<shared_ptr<Parameter>> volatility_;
 };
 
 

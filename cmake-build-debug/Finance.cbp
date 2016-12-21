@@ -121,9 +121,6 @@
 		<Unit filename="/Users/CUI/Dropbox/C++/Finance/McFramework/McSimulation.h">
 			<Option target="Finance"/>
 		</Unit>
-		<Unit filename="/Users/CUI/Dropbox/C++/Finance/McFramework/Path.cpp">
-			<Option target="Finance"/>
-		</Unit>
 		<Unit filename="/Users/CUI/Dropbox/C++/Finance/McFramework/Path.h">
 			<Option target="Finance"/>
 		</Unit>
@@ -146,12 +143,6 @@
 			<Option target="Finance"/>
 		</Unit>
 		<Unit filename="/Users/CUI/Dropbox/C++/Finance/Models/LMM.h">
-			<Option target="Finance"/>
-		</Unit>
-		<Unit filename="/Users/CUI/Dropbox/C++/Finance/Models/MertonJumpModel.cpp">
-			<Option target="Finance"/>
-		</Unit>
-		<Unit filename="/Users/CUI/Dropbox/C++/Finance/Models/MertonJumpModel.h">
 			<Option target="Finance"/>
 		</Unit>
 		<Unit filename="/Users/CUI/Dropbox/C++/Finance/NameDef.h">
@@ -254,6 +245,12 @@
 			<Option target="Finance"/>
 		</Unit>
 		<Unit filename="/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalProcess.h">
+			<Option target="Finance"/>
+		</Unit>
+		<Unit filename="/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.cpp">
+			<Option target="Finance"/>
+		</Unit>
+		<Unit filename="/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.h">
 			<Option target="Finance"/>
 		</Unit>
 		<Unit filename="/Users/CUI/Dropbox/C++/Finance/CMakeLists.txt">

@@ -258,33 +258,6 @@ Main.cpp.s:
 	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
-McFramework/Path.o: McFramework/Path.cpp.o
-
-.PHONY : McFramework/Path.o
-
-# target to build an object file
-McFramework/Path.cpp.o:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/McFramework/Path.cpp.o
-.PHONY : McFramework/Path.cpp.o
-
-McFramework/Path.i: McFramework/Path.cpp.i
-
-.PHONY : McFramework/Path.i
-
-# target to preprocess a source file
-McFramework/Path.cpp.i:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/McFramework/Path.cpp.i
-.PHONY : McFramework/Path.cpp.i
-
-McFramework/Path.s: McFramework/Path.cpp.s
-
-.PHONY : McFramework/Path.s
-
-# target to generate assembly for a file
-McFramework/Path.cpp.s:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/McFramework/Path.cpp.s
-.PHONY : McFramework/Path.cpp.s
-
 Models/BlackScholesModel.o: Models/BlackScholesModel.cpp.o
 
 .PHONY : Models/BlackScholesModel.o
@@ -338,33 +311,6 @@ Models/LMM.s: Models/LMM.cpp.s
 Models/LMM.cpp.s:
 	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Models/LMM.cpp.s
 .PHONY : Models/LMM.cpp.s
-
-Models/MertonJumpModel.o: Models/MertonJumpModel.cpp.o
-
-.PHONY : Models/MertonJumpModel.o
-
-# target to build an object file
-Models/MertonJumpModel.cpp.o:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o
-.PHONY : Models/MertonJumpModel.cpp.o
-
-Models/MertonJumpModel.i: Models/MertonJumpModel.cpp.i
-
-.PHONY : Models/MertonJumpModel.i
-
-# target to preprocess a source file
-Models/MertonJumpModel.cpp.i:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.i
-.PHONY : Models/MertonJumpModel.cpp.i
-
-Models/MertonJumpModel.s: Models/MertonJumpModel.cpp.s
-
-.PHONY : Models/MertonJumpModel.s
-
-# target to generate assembly for a file
-Models/MertonJumpModel.cpp.s:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.s
-.PHONY : Models/MertonJumpModel.cpp.s
 
 Parameter.o: Parameter.cpp.o
 
@@ -636,6 +582,33 @@ StochasticProcesses/LogNormalProcess.cpp.s:
 	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.s
 .PHONY : StochasticProcesses/LogNormalProcess.cpp.s
 
+StochasticProcesses/LogNormalwithNormalJump.o: StochasticProcesses/LogNormalwithNormalJump.cpp.o
+
+.PHONY : StochasticProcesses/LogNormalwithNormalJump.o
+
+# target to build an object file
+StochasticProcesses/LogNormalwithNormalJump.cpp.o:
+	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o
+.PHONY : StochasticProcesses/LogNormalwithNormalJump.cpp.o
+
+StochasticProcesses/LogNormalwithNormalJump.i: StochasticProcesses/LogNormalwithNormalJump.cpp.i
+
+.PHONY : StochasticProcesses/LogNormalwithNormalJump.i
+
+# target to preprocess a source file
+StochasticProcesses/LogNormalwithNormalJump.cpp.i:
+	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.i
+.PHONY : StochasticProcesses/LogNormalwithNormalJump.cpp.i
+
+StochasticProcesses/LogNormalwithNormalJump.s: StochasticProcesses/LogNormalwithNormalJump.cpp.s
+
+.PHONY : StochasticProcesses/LogNormalwithNormalJump.s
+
+# target to generate assembly for a file
+StochasticProcesses/LogNormalwithNormalJump.cpp.s:
+	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.s
+.PHONY : StochasticProcesses/LogNormalwithNormalJump.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -660,18 +633,12 @@ help:
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
-	@echo "... McFramework/Path.o"
-	@echo "... McFramework/Path.i"
-	@echo "... McFramework/Path.s"
 	@echo "... Models/BlackScholesModel.o"
 	@echo "... Models/BlackScholesModel.i"
 	@echo "... Models/BlackScholesModel.s"
 	@echo "... Models/LMM.o"
 	@echo "... Models/LMM.i"
 	@echo "... Models/LMM.s"
-	@echo "... Models/MertonJumpModel.o"
-	@echo "... Models/MertonJumpModel.i"
-	@echo "... Models/MertonJumpModel.s"
 	@echo "... Parameter.o"
 	@echo "... Parameter.i"
 	@echo "... Parameter.s"
@@ -702,6 +669,9 @@ help:
 	@echo "... StochasticProcesses/LogNormalProcess.o"
 	@echo "... StochasticProcesses/LogNormalProcess.i"
 	@echo "... StochasticProcesses/LogNormalProcess.s"
+	@echo "... StochasticProcesses/LogNormalwithNormalJump.o"
+	@echo "... StochasticProcesses/LogNormalwithNormalJump.i"
+	@echo "... StochasticProcesses/LogNormalwithNormalJump.s"
 .PHONY : help
 
 

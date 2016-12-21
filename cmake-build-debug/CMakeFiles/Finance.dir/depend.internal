@@ -40,7 +40,6 @@ CMakeFiles/Finance.dir/Instruments/Forward.cpp.o
  /Users/CUI/Dropbox/C++/Finance/Instruments/Forward.h
 CMakeFiles/Finance.dir/Main.cpp.o
  ..//Instrument.h
- ..//Instruments/AsianOption.h
  ..//McFramework/McModel.h
  ..//McFramework/McSimulation.h
  ..//McFramework/Path.h
@@ -70,9 +69,7 @@ CMakeFiles/Finance.dir/Main.cpp.o
  /Users/CUI/Dropbox/C++/Finance/Main.cpp
  /Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.h
  /Users/CUI/Dropbox/C++/Finance/PricingEngines/AnalyticEuropeanEngine.h
- /Users/CUI/Dropbox/C++/Finance/PricingEngines/AsianPathPricer.h
  /Users/CUI/Dropbox/C++/Finance/PricingEngines/EuropeanPathPricer.h
- /Users/CUI/Dropbox/C++/Finance/PricingEngines/McAsianEngine.h
  /Users/CUI/Dropbox/C++/Finance/PricingEngines/McEuropeanEngine.h
  /Users/CUI/Dropbox/C++/Finance/RandNumGeneration/CompoundPoisson.h
  /opt/local/include/boost/config.hpp
@@ -134,10 +131,6 @@ CMakeFiles/Finance.dir/Main.cpp.o
  /opt/local/include/boost/config/user.hpp
  /opt/local/include/boost/limits.hpp
  /opt/local/include/boost/timer.hpp
-CMakeFiles/Finance.dir/McFramework/Path.cpp.o
- ..//NameDef.h
- /Users/CUI/Dropbox/C++/Finance/McFramework/Path.cpp
- /Users/CUI/Dropbox/C++/Finance/McFramework/Path.h
 CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o
  ..//Model.h
  ..//RandNumGeneration/Normal.h
@@ -1525,3 +1518,9 @@ CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o
  ../NameDef.h
  /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalProcess.cpp
  /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalProcess.h
+CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o
+ ..//StochasticProcess.h
+ ../NameDef.h
+ ../Parameter.h
+ /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.cpp
+ /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.h

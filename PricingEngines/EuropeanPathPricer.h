@@ -8,11 +8,11 @@
 #include "McFramework/PathPricer.h"
 #include "Payoff.h"
 
-class EuropeanPathPricer : public PathPricer {
+class EuropeanPathPricer : public PathPricer<SingleVariate> {
 public:
     EuropeanPathPricer(const std::shared_ptr<Payoff> &payoff, Rate discount);
 
-    Money operator()(const Path &path) const override;
+    Money operator()(const Path<SingleVariate> &path) const override;
 
 private:
     std::shared_ptr<Payoff> payoff_;

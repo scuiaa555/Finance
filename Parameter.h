@@ -8,6 +8,8 @@
 #include <vector>
 #include "NameDef.h"
 
+using std::vector;
+
 /* Assume that Parameter is always 1-d.
  * If one stochastic process is multi-dimensional,
  * one way to handle is contain a vector of Parameters */
@@ -29,7 +31,7 @@ public:
 protected:
 //    Parameter(std::vector<double> &param) : params_(param) { }
 
-    std::vector<double> params_;
+    vector<double> params_;
 
 };
 

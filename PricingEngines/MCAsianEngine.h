@@ -10,15 +10,15 @@
 #include <iostream>
 #include "RandNumGeneration/PseudoRandom.h"
 
-template<typename RNG>
-class McAsianEngine : public AsianOption::engine, private McSimulation<RNG> {
+template<typename RNG, typename PathType=SingleVariate>
+class McAsianEngine : public AsianOption::engine, private McSimulation<RNG, PathType> {
 public:
-    McAsianEngine(const std::shared_ptr<Model> model, Time timeStep, unsigned long maxSamples,
+    McAsianEngine(const std::shared_ptr<Model<double>> model, Time timeStep, unsigned long maxSamples,
                   unsigned long minSamples, bool isAntithetic = 0);
 
-    std::shared_ptr<PathGenerator<RNG>> pathGenerator() override;
+    std::shared_ptr<PathGenerator<RNG,PathType>> pathGenerator() override;
 
-    std::shared_ptr<PathPricer> pathPricer() override;
+    std::shared_ptr<PathPricer<SingleVariate>> pathPricer() override;
 
     vector<Time> timeGrid() override;
 
@@ -34,12 +34,12 @@ private:
 
 template<typename RNG>
 McAsianEngine<RNG>::McAsianEngine(const std::shared_ptr<Model> model, Time timeStep,
-                                      unsigned long maxSamples, unsigned long minSamples, bool isAntithetic) :
+                                  unsigned long maxSamples, unsigned long minSamples, bool isAntithetic) :
         model_(model),
         timeStep_(timeStep),
         maxSamples_(maxSamples),
         minSamples_(minSamples),
-        isAntithetic_(isAntithetic) { }
+        isAntithetic_(isAntithetic) {}
 
 template<typename RNG>
 std::shared_ptr<PathGenerator<RNG>> McAsianEngine<RNG>::pathGenerator() {
@@ -57,7 +57,8 @@ std::shared_ptr<PathPricer> McAsianEngine<RNG>::pathPricer() {
     std::shared_ptr<vector<Time> > monitorTimesPtr(new vector<Time>(arguments->monitoredTimes_));
     AsianOption::AverageType averageType = arguments->averageType_;
     /* !!!problem here */
-    return std::shared_ptr<AsianPathPricer>(new AsianPathPricer(payoff, r, monitorTimesPtr, averageType, isAntithetic_));
+    return std::shared_ptr<AsianPathPricer>(
+            new AsianPathPricer(payoff, r, monitorTimesPtr, averageType, isAntithetic_));
 }
 
 template<typename RNG>

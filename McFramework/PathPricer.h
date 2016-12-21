@@ -9,9 +9,10 @@
 #include "McFramework/Path.h"
 //#include "Payoff.h"
 
+template<typename PathType>
 class PathPricer {
 public:
-    virtual Money operator()(const Path &path) const = 0;
+    virtual Money operator()(const Path<PathType> &path) const = 0;
 
 //private:
 //    bool isAntithetic_;

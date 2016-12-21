@@ -7,7 +7,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Finance.dir/Instruments/Forward.cpp.o"
   "CMakeFiles/Finance.dir/PricingEngines/AnalyticForwardEngine.cpp.o"
   "CMakeFiles/Finance.dir/RandNumGeneration/UniformLEcuyerRNG1.cpp.o"
-  "CMakeFiles/Finance.dir/McFramework/Path.cpp.o"
   "CMakeFiles/Finance.dir/PricingEngines/EuropeanPathPricer.cpp.o"
   "CMakeFiles/Finance.dir/Statistics.cpp.o"
   "CMakeFiles/Finance.dir/Payoffs/VanillaPayoff.cpp.o"
@@ -17,7 +16,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Finance.dir/Models/LMM.cpp.o"
   "CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o"
   "CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o"
-  "CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o"
+  "CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o"
   "Finance.pdb"
   "Finance"
 )
