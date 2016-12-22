@@ -13,10 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Finance.dir/Instruments/AsianOption.cpp.o"
   "CMakeFiles/Finance.dir/Parameter.cpp.o"
   "CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o"
-  "CMakeFiles/Finance.dir/Models/LMM.cpp.o"
   "CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o"
-  "CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o"
-  "CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o"
   "Finance.pdb"
   "Finance"
 )

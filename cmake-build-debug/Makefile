@@ -285,33 +285,6 @@ Models/BlackScholesModel.cpp.s:
 	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.s
 .PHONY : Models/BlackScholesModel.cpp.s
 
-Models/LMM.o: Models/LMM.cpp.o
-
-.PHONY : Models/LMM.o
-
-# target to build an object file
-Models/LMM.cpp.o:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Models/LMM.cpp.o
-.PHONY : Models/LMM.cpp.o
-
-Models/LMM.i: Models/LMM.cpp.i
-
-.PHONY : Models/LMM.i
-
-# target to preprocess a source file
-Models/LMM.cpp.i:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Models/LMM.cpp.i
-.PHONY : Models/LMM.cpp.i
-
-Models/LMM.s: Models/LMM.cpp.s
-
-.PHONY : Models/LMM.s
-
-# target to generate assembly for a file
-Models/LMM.cpp.s:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Models/LMM.cpp.s
-.PHONY : Models/LMM.cpp.s
-
 Parameter.o: Parameter.cpp.o
 
 .PHONY : Parameter.o
@@ -555,60 +528,6 @@ StochasticProcesses/BSStochasticProcess.cpp.s:
 	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.s
 .PHONY : StochasticProcesses/BSStochasticProcess.cpp.s
 
-StochasticProcesses/LogNormalProcess.o: StochasticProcesses/LogNormalProcess.cpp.o
-
-.PHONY : StochasticProcesses/LogNormalProcess.o
-
-# target to build an object file
-StochasticProcesses/LogNormalProcess.cpp.o:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o
-.PHONY : StochasticProcesses/LogNormalProcess.cpp.o
-
-StochasticProcesses/LogNormalProcess.i: StochasticProcesses/LogNormalProcess.cpp.i
-
-.PHONY : StochasticProcesses/LogNormalProcess.i
-
-# target to preprocess a source file
-StochasticProcesses/LogNormalProcess.cpp.i:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.i
-.PHONY : StochasticProcesses/LogNormalProcess.cpp.i
-
-StochasticProcesses/LogNormalProcess.s: StochasticProcesses/LogNormalProcess.cpp.s
-
-.PHONY : StochasticProcesses/LogNormalProcess.s
-
-# target to generate assembly for a file
-StochasticProcesses/LogNormalProcess.cpp.s:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.s
-.PHONY : StochasticProcesses/LogNormalProcess.cpp.s
-
-StochasticProcesses/LogNormalwithNormalJump.o: StochasticProcesses/LogNormalwithNormalJump.cpp.o
-
-.PHONY : StochasticProcesses/LogNormalwithNormalJump.o
-
-# target to build an object file
-StochasticProcesses/LogNormalwithNormalJump.cpp.o:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o
-.PHONY : StochasticProcesses/LogNormalwithNormalJump.cpp.o
-
-StochasticProcesses/LogNormalwithNormalJump.i: StochasticProcesses/LogNormalwithNormalJump.cpp.i
-
-.PHONY : StochasticProcesses/LogNormalwithNormalJump.i
-
-# target to preprocess a source file
-StochasticProcesses/LogNormalwithNormalJump.cpp.i:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.i
-.PHONY : StochasticProcesses/LogNormalwithNormalJump.cpp.i
-
-StochasticProcesses/LogNormalwithNormalJump.s: StochasticProcesses/LogNormalwithNormalJump.cpp.s
-
-.PHONY : StochasticProcesses/LogNormalwithNormalJump.s
-
-# target to generate assembly for a file
-StochasticProcesses/LogNormalwithNormalJump.cpp.s:
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.s
-.PHONY : StochasticProcesses/LogNormalwithNormalJump.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -636,9 +555,6 @@ help:
 	@echo "... Models/BlackScholesModel.o"
 	@echo "... Models/BlackScholesModel.i"
 	@echo "... Models/BlackScholesModel.s"
-	@echo "... Models/LMM.o"
-	@echo "... Models/LMM.i"
-	@echo "... Models/LMM.s"
 	@echo "... Parameter.o"
 	@echo "... Parameter.i"
 	@echo "... Parameter.s"
@@ -666,12 +582,6 @@ help:
 	@echo "... StochasticProcesses/BSStochasticProcess.o"
 	@echo "... StochasticProcesses/BSStochasticProcess.i"
 	@echo "... StochasticProcesses/BSStochasticProcess.s"
-	@echo "... StochasticProcesses/LogNormalProcess.o"
-	@echo "... StochasticProcesses/LogNormalProcess.i"
-	@echo "... StochasticProcesses/LogNormalProcess.s"
-	@echo "... StochasticProcesses/LogNormalwithNormalJump.o"
-	@echo "... StochasticProcesses/LogNormalwithNormalJump.i"
-	@echo "... StochasticProcesses/LogNormalwithNormalJump.s"
 .PHONY : help
 
 

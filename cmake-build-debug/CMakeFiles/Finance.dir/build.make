@@ -393,33 +393,9 @@ CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o.provides: CMakeFiles/Finan
 CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o.provides.build: CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o
 
 
-CMakeFiles/Finance.dir/Models/LMM.cpp.o: CMakeFiles/Finance.dir/flags.make
-CMakeFiles/Finance.dir/Models/LMM.cpp.o: ../Models/LMM.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/CUI/Dropbox/C++/Finance/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Finance.dir/Models/LMM.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Finance.dir/Models/LMM.cpp.o -c /Users/CUI/Dropbox/C++/Finance/Models/LMM.cpp
-
-CMakeFiles/Finance.dir/Models/LMM.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Finance.dir/Models/LMM.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/CUI/Dropbox/C++/Finance/Models/LMM.cpp > CMakeFiles/Finance.dir/Models/LMM.cpp.i
-
-CMakeFiles/Finance.dir/Models/LMM.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Finance.dir/Models/LMM.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/CUI/Dropbox/C++/Finance/Models/LMM.cpp -o CMakeFiles/Finance.dir/Models/LMM.cpp.s
-
-CMakeFiles/Finance.dir/Models/LMM.cpp.o.requires:
-
-.PHONY : CMakeFiles/Finance.dir/Models/LMM.cpp.o.requires
-
-CMakeFiles/Finance.dir/Models/LMM.cpp.o.provides: CMakeFiles/Finance.dir/Models/LMM.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Models/LMM.cpp.o.provides.build
-.PHONY : CMakeFiles/Finance.dir/Models/LMM.cpp.o.provides
-
-CMakeFiles/Finance.dir/Models/LMM.cpp.o.provides.build: CMakeFiles/Finance.dir/Models/LMM.cpp.o
-
-
 CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o: CMakeFiles/Finance.dir/flags.make
 CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o: ../StochasticProcesses/BSStochasticProcess.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/CUI/Dropbox/C++/Finance/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/CUI/Dropbox/C++/Finance/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o -c /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/BSStochasticProcess.cpp
 
 CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.i: cmake_force
@@ -441,54 +417,6 @@ CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o.provides: C
 CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o.provides.build: CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o
 
 
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o: CMakeFiles/Finance.dir/flags.make
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o: ../StochasticProcesses/LogNormalProcess.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/CUI/Dropbox/C++/Finance/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o -c /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalProcess.cpp
-
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalProcess.cpp > CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.i
-
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalProcess.cpp -o CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.s
-
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o.requires:
-
-.PHONY : CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o.requires
-
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o.provides: CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o.provides.build
-.PHONY : CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o.provides
-
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o.provides.build: CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o
-
-
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o: CMakeFiles/Finance.dir/flags.make
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o: ../StochasticProcesses/LogNormalwithNormalJump.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/CUI/Dropbox/C++/Finance/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o -c /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.cpp
-
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.cpp > CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.i
-
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.cpp -o CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.s
-
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o.requires:
-
-.PHONY : CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o.requires
-
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o.provides: CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o.provides.build
-.PHONY : CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o.provides
-
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o.provides.build: CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o
-
-
 # Object files for target Finance
 Finance_OBJECTS = \
 "CMakeFiles/Finance.dir/Main.cpp.o" \
@@ -505,10 +433,7 @@ Finance_OBJECTS = \
 "CMakeFiles/Finance.dir/Instruments/AsianOption.cpp.o" \
 "CMakeFiles/Finance.dir/Parameter.cpp.o" \
 "CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o" \
-"CMakeFiles/Finance.dir/Models/LMM.cpp.o" \
-"CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o" \
-"CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o" \
-"CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o"
+"CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o"
 
 # External object files for target Finance
 Finance_EXTERNAL_OBJECTS =
@@ -527,13 +452,10 @@ Finance: CMakeFiles/Finance.dir/Payoffs/VanillaPayoff.cpp.o
 Finance: CMakeFiles/Finance.dir/Instruments/AsianOption.cpp.o
 Finance: CMakeFiles/Finance.dir/Parameter.cpp.o
 Finance: CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o
-Finance: CMakeFiles/Finance.dir/Models/LMM.cpp.o
 Finance: CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o
-Finance: CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o
-Finance: CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o
 Finance: CMakeFiles/Finance.dir/build.make
 Finance: CMakeFiles/Finance.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/CUI/Dropbox/C++/Finance/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable Finance"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/CUI/Dropbox/C++/Finance/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable Finance"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Finance.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -555,10 +477,7 @@ CMakeFiles/Finance.dir/requires: CMakeFiles/Finance.dir/Payoffs/VanillaPayoff.cp
 CMakeFiles/Finance.dir/requires: CMakeFiles/Finance.dir/Instruments/AsianOption.cpp.o.requires
 CMakeFiles/Finance.dir/requires: CMakeFiles/Finance.dir/Parameter.cpp.o.requires
 CMakeFiles/Finance.dir/requires: CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o.requires
-CMakeFiles/Finance.dir/requires: CMakeFiles/Finance.dir/Models/LMM.cpp.o.requires
 CMakeFiles/Finance.dir/requires: CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o.requires
-CMakeFiles/Finance.dir/requires: CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o.requires
-CMakeFiles/Finance.dir/requires: CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o.requires
 
 .PHONY : CMakeFiles/Finance.dir/requires
 

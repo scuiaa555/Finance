@@ -163,8 +163,8 @@ Parameter.h
 ../Parameter.h
 
 ..//StochasticProcesses/BSStochasticProcess.h
-StochasticProcess.h
-../StochasticProcesses/StochasticProcess.h
+StochasticProcesses/LogNormalProcess.h
+../StochasticProcesses/StochasticProcesses/LogNormalProcess.h
 
 ..//StochasticProcesses/LogNormalProcess.h
 StochasticProcess.h
@@ -299,8 +299,6 @@ RandNumGeneration/CompoundPoisson.h
 /Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.cpp
 BlackScholesModel.h
 /Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.h
-cmath
--
 
 /Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.h
 Model.h
@@ -309,16 +307,6 @@ StochasticProcesses/BSStochasticProcess.h
 /Users/CUI/Dropbox/C++/Finance/Models/StochasticProcesses/BSStochasticProcess.h
 RandNumGeneration/Normal.h
 /Users/CUI/Dropbox/C++/Finance/Models/RandNumGeneration/Normal.h
-
-/Users/CUI/Dropbox/C++/Finance/Models/LMM.cpp
-LMM.h
-/Users/CUI/Dropbox/C++/Finance/Models/LMM.h
-StochasticProcesses/LogNormalProcess.h
-/Users/CUI/Dropbox/C++/Finance/Models/StochasticProcesses/LogNormalProcess.h
-
-/Users/CUI/Dropbox/C++/Finance/Models/LMM.h
-Model.h
-/Users/CUI/Dropbox/C++/Finance/Models/Model.h
 
 /Users/CUI/Dropbox/C++/Finance/NameDef.h
 
@@ -445,26 +433,8 @@ BSStochasticProcess.h
 /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/BSStochasticProcess.h
 
 /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/BSStochasticProcess.h
-StochasticProcess.h
-/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/StochasticProcess.h
-
-/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalProcess.cpp
-LogNormalProcess.h
-/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalProcess.h
-
-/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalProcess.h
-StochasticProcess.h
-/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/StochasticProcess.h
-Parameter.h
-/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/Parameter.h
-
-/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.cpp
-LogNormalwithNormalJump.h
-/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.h
-
-/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.h
-StochasticProcess.h
-/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/StochasticProcess.h
+StochasticProcesses/LogNormalProcess.h
+/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/StochasticProcesses/LogNormalProcess.h
 
 /opt/local/include/boost/aligned_storage.hpp
 cstddef

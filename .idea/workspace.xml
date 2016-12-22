@@ -12,39 +12,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="864a6095-397c-4358-9ac8-60dc0d38eac9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.h" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/McFramework/Path.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/McFramework/Path.cpp.o" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/PricingEngines/MCEuropeanEngine.h" afterPath="$PROJECT_DIR$/PricingEngines/McEuropeanEngine.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Models/LMM.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Main.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Models/LMM.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Models/LMM.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Parameter.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/Parameter.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/PricingEngines/AnalyticEuropeanEngine.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/PricingEngines/AnalyticEuropeanEngine.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/PricingEngines/EuropeanPathPricer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/PricingEngines/EuropeanPathPricer.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Finance" afterPath="$PROJECT_DIR$/cmake-build-debug/Finance" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/McFramework/McModel.h" afterPath="$PROJECT_DIR$/McFramework/McModel.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/McFramework/McSimulation.h" afterPath="$PROJECT_DIR$/McFramework/McSimulation.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/McFramework/Path.h" afterPath="$PROJECT_DIR$/McFramework/Path.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/McFramework/PathGenerator.h" afterPath="$PROJECT_DIR$/McFramework/PathGenerator.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/McFramework/PathPricer.h" afterPath="$PROJECT_DIR$/McFramework/PathPricer.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model.h" afterPath="$PROJECT_DIR$/Model.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/BlackScholesModel.cpp" afterPath="$PROJECT_DIR$/Models/BlackScholesModel.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/BlackScholesModel.h" afterPath="$PROJECT_DIR$/Models/BlackScholesModel.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/MertonJumpModel.cpp" afterPath="$PROJECT_DIR$/Models/MertonJumpModel.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/MertonJumpModel.h" afterPath="$PROJECT_DIR$/Models/MertonJumpModel.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Parameter.h" afterPath="$PROJECT_DIR$/Parameter.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PricingEngines/AsianPathPricer.h" afterPath="$PROJECT_DIR$/PricingEngines/AsianPathPricer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PricingEngines/EuropeanPathPricer.cpp" afterPath="$PROJECT_DIR$/PricingEngines/EuropeanPathPricer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PricingEngines/EuropeanPathPricer.h" afterPath="$PROJECT_DIR$/PricingEngines/EuropeanPathPricer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PricingEngines/MCAsianEngine.h" afterPath="$PROJECT_DIR$/PricingEngines/MCAsianEngine.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StochasticProcess.h" afterPath="$PROJECT_DIR$/StochasticProcess.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.cpp" afterPath="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.cpp" afterPath="$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.h" afterPath="$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.h" afterPath="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.h" afterPath="$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/CXX.includecache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/DependInfo.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Finance.dir/build.make" />
@@ -77,15 +64,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PathGenerator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/McFramework/PathGenerator.h">
+      <file leaf-file-name="LogNormalProcess.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="722">
+              <caret line="38" column="61" lean-forward="false" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
               <folding>
-                <element signature="e#297#330#0" expanded="true" />
-                <element signature="e#1445#1478#0" expanded="true" />
-                <element signature="e#2054#2087#0" expanded="true" />
+                <element signature="e#119#149#0" expanded="true" />
+                <element signature="e#411#429#0" expanded="true" />
+                <element signature="e#1310#1328#0" expanded="true" />
+                <element signature="e#1667#1685#0" expanded="true" />
+                <element signature="e#1781#1799#0" expanded="true" />
+                <element signature="e#2053#2071#0" expanded="true" />
+                <element signature="e#2201#2219#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,78 +85,99 @@
       <file leaf-file-name="BSStochasticProcess.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state relative-caret-position="665">
+              <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Normal.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/Normal.h">
+      <file leaf-file-name="Parameter.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parameter.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="196">
+              <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding>
+                <marker date="1482393199000" expanded="true" signature="1008:1068" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Singleton.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Singleton.h">
+      <file leaf-file-name="Parameter.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parameter.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UniformLEcuyerRNG1.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.cpp">
+      <file leaf-file-name="BSStochasticProcess.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="209">
+              <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding>
+                <marker date="1482392200000" expanded="true" signature="432:435" ph="{...}" />
+                <marker date="1482392200000" expanded="true" signature="560:578" ph="{...}" />
+                <marker date="1482392200000" expanded="true" signature="628:646" ph="{...}" />
+                <marker date="1482392200000" expanded="true" signature="698:720" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NormalMarsagliaBrayRng.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RandNumGeneration/NormalMarsagliaBrayRng.h">
+      <file leaf-file-name="LogNormalwithNormalJump.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="912">
+              <caret line="48" column="84" lean-forward="false" selection-start-line="48" selection-start-column="84" selection-end-line="48" selection-end-column="84" />
+              <folding>
+                <element signature="e#172#190#0" expanded="true" />
+                <element signature="e#1022#1040#0" expanded="true" />
+                <element signature="e#1641#1659#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="34" column="66" lean-forward="true" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlackScholesModel.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlackScholesModel.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="304">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model.h">
+      <file leaf-file-name="AnalyticEuropeanEngine.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlackScholesModel.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -177,6 +189,8 @@
     <findStrings>
       <find>Mer</find>
       <find>Asian</find>
+      <find>LMM</find>
+      <find>jum</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,8 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/RandNumGeneration/RandomSequenceGenerator.h" />
-        <option value="$PROJECT_DIR$/McFramework/McSimulation.cpp" />
         <option value="$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.cpp" />
         <option value="$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.cpp" />
         <option value="$PROJECT_DIR$/PricingEngines/McAsianEngine.h" />
@@ -216,16 +228,8 @@
         <option value="$PROJECT_DIR$/RandNumGeneration/PoissonInverse.h" />
         <option value="$PROJECT_DIR$/RandNumGeneration/Normal.h" />
         <option value="$PROJECT_DIR$/RandNumGeneration/NormalMarsagliaBrayRng.h" />
-        <option value="$PROJECT_DIR$/Models/MertonJumpModel.cpp" />
         <option value="$PROJECT_DIR$/StochasticProcess.h" />
         <option value="$PROJECT_DIR$/StochasticProcesses/LogNormalJump.h" />
-        <option value="$PROJECT_DIR$/Parameter.h" />
-        <option value="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.h" />
-        <option value="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.cpp" />
-        <option value="$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.cpp" />
-        <option value="$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.h" />
-        <option value="$PROJECT_DIR$/Models/MertonJumpModel.h" />
-        <option value="$PROJECT_DIR$/Model.h" />
         <option value="$PROJECT_DIR$/McFramework/PathPricer.h" />
         <option value="$PROJECT_DIR$/PricingEngines/EuropeanPathPricer.cpp" />
         <option value="$PROJECT_DIR$/PricingEngines/EuropeanPathPricer.h" />
@@ -235,12 +239,22 @@
         <option value="$PROJECT_DIR$/PricingEngines/AsianPathPricer.h" />
         <option value="$PROJECT_DIR$/PricingEngines/MCAsianEngine.h" />
         <option value="$PROJECT_DIR$/PricingEngines/MCEuropeanEngine.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/McFramework/Path.cpp" />
         <option value="$PROJECT_DIR$/McFramework/Path.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Models/BlackScholesModel.h" />
+        <option value="$PROJECT_DIR$/Model.h" />
+        <option value="$PROJECT_DIR$/Models/MertonJumpModel.h" />
+        <option value="$PROJECT_DIR$/Models/MertonJumpModel.cpp" />
+        <option value="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.cpp" />
         <option value="$PROJECT_DIR$/Models/BlackScholesModel.cpp" />
+        <option value="$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.cpp" />
+        <option value="$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.h" />
+        <option value="$PROJECT_DIR$/Parameter.h" />
+        <option value="$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.h" />
+        <option value="$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.cpp" />
+        <option value="$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -251,8 +265,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="x" value="1280" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -607,7 +622,8 @@
       <workItem from="1482228651266" duration="675000" />
       <workItem from="1482231866592" duration="2099000" />
       <workItem from="1482241961295" duration="1595000" />
-      <workItem from="1482299243793" duration="7614000" />
+      <workItem from="1482299243793" duration="7775000" />
+      <workItem from="1482377976653" duration="12187000" />
     </task>
     <task id="LOCAL-00001" summary="antithetic branch merged into">
       <created>1476980586328</created>
@@ -770,11 +786,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482232855901</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Path type added">
+      <created>1482336327184</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1482336327184</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54092000" />
+    <option name="totallyTimeSpent" value="66440000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -786,17 +809,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="1280" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22637014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21958926" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825205" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2372159" sideWeight="0.47815728" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23678862" sideWeight="0.47815728" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32723576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31217483" sideWeight="0.5165877" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32386363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31107953" sideWeight="0.48341233" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3252841" sideWeight="0.4805401" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32317072" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3109756" sideWeight="0.48341233" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32520324" sideWeight="0.4805401" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.49815693" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -858,14 +881,15 @@
     <MESSAGE value="Multiple RNG (tuple version) succeeds&#10;" />
     <MESSAGE value="Some comments added&#10;" />
     <MESSAGE value="Compound Poisson RNG added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compound Poisson RNG added" />
+    <MESSAGE value="Path type added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Path type added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="55" />
+      <option name="time" value="56" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
@@ -874,14 +898,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/McFramework/McModel.cpp" />
-    <entry file="file://$PROJECT_DIR$/Instruments/AsianOption.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1976">
-          <caret line="104" column="79" lean-forward="false" selection-start-line="104" selection-start-column="79" selection-end-line="104" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Instrument.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
@@ -917,13 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/CompoundPoisson.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="102" lean-forward="false" selection-start-line="32" selection-start-column="102" selection-end-line="32" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Models/LMM.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -932,75 +941,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/MertonJumpModel.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Doxyfile_Finance">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8683">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parameter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parameter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding>
-            <element signature="e#119#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,32 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1501">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/RandomVariableGenerator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/MertonJumpModel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#117#135#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PricingEngines/EuropeanPathPricer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1074,9 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-          <folding>
-            <element signature="e#188#207#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1123,92 +1038,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StochasticProcess.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandNumGeneration/SingleRandSequenceGenerator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PricingEngines/MCAsianEngine.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#112#149#0" expanded="false" />
-            <element signature="e#252#299#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PricingEngines/McEuropeanEngine.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="e#1025#1058#0" expanded="true" />
-            <element signature="e#1377#1410#0" expanded="true" />
-            <element signature="e#1644#1677#0" expanded="true" />
-            <element signature="e#2231#2263#0" expanded="true" />
-            <element signature="e#2729#2761#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1482335169000" expanded="true" signature="374:3900" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/McFramework/Path.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/McFramework/Path.cpp" />
     <entry file="file://$PROJECT_DIR$/McFramework/Path.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1248">
@@ -1229,13 +1069,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="1357" column="0" lean-forward="false" selection-start-line="1357" selection-start-column="0" selection-end-line="1357" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Singleton.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
+        <state relative-caret-position="228">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
@@ -1243,7 +1082,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RandNumGeneration/UniformLEcuyerRNG1.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="437">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
@@ -1251,7 +1090,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RandNumGeneration/NormalMarsagliaBrayRng.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state relative-caret-position="988">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
@@ -1259,7 +1098,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RandNumGeneration/Normal.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="1235">
           <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
@@ -1267,7 +1106,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/McFramework/PathGenerator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
+        <state relative-caret-position="1121">
           <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
             <element signature="e#297#330#0" expanded="true" />
@@ -1277,34 +1116,223 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.h">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/MertonJumpModel.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="152">
+          <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.h">
+    <entry file="file://$PROJECT_DIR$/Models/MertonJumpModel.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        <state relative-caret-position="437">
+          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <element signature="e#117#135#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StochasticProcess.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="380">
+          <caret line="23" column="75" lean-forward="false" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/SingleRandSequenceGenerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/RandomVariableGenerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/MultiRandGenerator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandNumGeneration/CompoundPoisson.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151">
+          <caret line="32" column="102" lean-forward="false" selection-start-line="32" selection-start-column="102" selection-end-line="32" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PricingEngines/McEuropeanEngine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding>
+            <element signature="e#121#139#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Models/BlackScholesModel.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="304">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PricingEngines/AnalyticEuropeanEngine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <marker date="1482392200000" expanded="true" signature="432:435" ph="{...}" />
+            <marker date="1482392200000" expanded="true" signature="560:578" ph="{...}" />
+            <marker date="1482392200000" expanded="true" signature="628:646" ph="{...}" />
+            <marker date="1482392200000" expanded="true" signature="698:720" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StochasticProcesses/BSStochasticProcess.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parameter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parameter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <marker date="1482393199000" expanded="true" signature="1008:1068" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StochasticProcesses/LogNormalProcess.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="38" column="61" lean-forward="false" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
+          <folding>
+            <element signature="e#119#149#0" expanded="true" />
+            <element signature="e#411#429#0" expanded="true" />
+            <element signature="e#1310#1328#0" expanded="true" />
+            <element signature="e#1667#1685#0" expanded="true" />
+            <element signature="e#1781#1799#0" expanded="true" />
+            <element signature="e#2053#2071#0" expanded="true" />
+            <element signature="e#2201#2219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StochasticProcesses/LogNormalwithNormalJump.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" column="84" lean-forward="false" selection-start-line="48" selection-start-column="84" selection-end-line="48" selection-end-column="84" />
+          <folding>
+            <element signature="e#172#190#0" expanded="true" />
+            <element signature="e#1022#1040#0" expanded="true" />
+            <element signature="e#1641#1659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="66" lean-forward="true" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
           <folding />
         </state>
       </provider>

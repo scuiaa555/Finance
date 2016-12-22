@@ -25,6 +25,8 @@ int main() {
 //    double result = rng.next();
 //    result = rng.next();
 
+
+
     boost::timer tm;
     double a, a1, a2;
     shared_ptr<Payoff> vanillaPayoff(new VanillaPayoff(100.0, "put"));

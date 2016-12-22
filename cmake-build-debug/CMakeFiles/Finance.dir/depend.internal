@@ -57,6 +57,7 @@ CMakeFiles/Finance.dir/Main.cpp.o
  ..//Statistics.h
  ..//StochasticProcess.h
  ..//StochasticProcesses/BSStochasticProcess.h
+ ..//StochasticProcesses/LogNormalProcess.h
  ../McFramework/PathGenerator.h
  ../McFramework/PathPricer.h
  ../NameDef.h
@@ -139,20 +140,12 @@ CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o
  ..//RandNumGeneration/UniformLEcuyerRNG1.h
  ..//Singleton.h
  ..//StochasticProcesses/BSStochasticProcess.h
+ ..//StochasticProcesses/LogNormalProcess.h
  ../NameDef.h
  ../Parameter.h
  ../StochasticProcess.h
  /Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.cpp
  /Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.h
-CMakeFiles/Finance.dir/Models/LMM.cpp.o
- ..//Model.h
- ..//Parameter.h
- ..//RandNumGeneration/RandomVariableGenerator.h
- ..//StochasticProcess.h
- ..//StochasticProcesses/LogNormalProcess.h
- ../NameDef.h
- /Users/CUI/Dropbox/C++/Finance/Models/LMM.cpp
- /Users/CUI/Dropbox/C++/Finance/Models/LMM.h
 CMakeFiles/Finance.dir/Parameter.cpp.o
  /Users/CUI/Dropbox/C++/Finance/NameDef.h
  /Users/CUI/Dropbox/C++/Finance/Parameter.cpp
@@ -175,6 +168,7 @@ CMakeFiles/Finance.dir/PricingEngines/AnalyticEuropeanEngine.cpp.o
  ..//PricingEngines/AnalyticEuropeanEngine.h
  ..//StochasticProcess.h
  ..//StochasticProcesses/BSStochasticProcess.h
+ ..//StochasticProcesses/LogNormalProcess.h
  ../NameDef.h
  ../Parameter.h
  ../Payoff.h
@@ -1507,20 +1501,9 @@ CMakeFiles/Finance.dir/Statistics.cpp.o
  /Users/CUI/Dropbox/C++/Finance/Statistics.cpp
  /Users/CUI/Dropbox/C++/Finance/Statistics.h
 CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o
- ..//StochasticProcess.h
- ../NameDef.h
- ../Parameter.h
- /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/BSStochasticProcess.cpp
- /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/BSStochasticProcess.h
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalProcess.cpp.o
  ..//Parameter.h
  ..//StochasticProcess.h
+ ..//StochasticProcesses/LogNormalProcess.h
  ../NameDef.h
- /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalProcess.cpp
- /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalProcess.h
-CMakeFiles/Finance.dir/StochasticProcesses/LogNormalwithNormalJump.cpp.o
- ..//StochasticProcess.h
- ../NameDef.h
- ../Parameter.h
- /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.cpp
- /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.h
+ /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/BSStochasticProcess.cpp
+ /Users/CUI/Dropbox/C++/Finance/StochasticProcesses/BSStochasticProcess.h

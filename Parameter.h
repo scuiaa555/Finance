@@ -12,7 +12,7 @@ using std::vector;
 
 /* Assume that Parameter is always 1-d.
  * If one stochastic process is multi-dimensional,
- * one way to handle is contain a vector of Parameters */
+ * one way to handle this is contain a vector of Parameters */
 class Parameter {
 public:
     Parameter() = default;

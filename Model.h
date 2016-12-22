@@ -16,9 +16,13 @@ template<typename Type_of_single_time>
 class Model {
 public:
     /* acceptable when return a vector by value, since vector has move assignment operation */
-    virtual Type_of_single_time evolve(Time t0, Type_of_single_time &x0, Time dt, double dw) const {}
+    virtual Type_of_single_time evolve(Time t0, Type_of_single_time &x0, Time dt, double dw) const {
+        throw ("Random numbers type of generator and model do not match.");
+    }
 
-    virtual Type_of_single_time evolve(Time t0, Type_of_single_time &x0, Time dt, vector<double> dw) const {}
+    virtual Type_of_single_time evolve(Time t0, Type_of_single_time &x0, Time dt, vector<double> dw) const {
+        throw ("Random numbers type of generator and model do not match.");
+    }
 
 //    virtual const std::vector<Quote> &GetInitial() const = 0;
 

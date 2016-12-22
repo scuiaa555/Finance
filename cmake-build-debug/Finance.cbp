@@ -139,12 +139,6 @@
 		<Unit filename="/Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.h">
 			<Option target="Finance"/>
 		</Unit>
-		<Unit filename="/Users/CUI/Dropbox/C++/Finance/Models/LMM.cpp">
-			<Option target="Finance"/>
-		</Unit>
-		<Unit filename="/Users/CUI/Dropbox/C++/Finance/Models/LMM.h">
-			<Option target="Finance"/>
-		</Unit>
 		<Unit filename="/Users/CUI/Dropbox/C++/Finance/NameDef.h">
 			<Option target="Finance"/>
 		</Unit>
@@ -241,13 +235,7 @@
 		<Unit filename="/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/BSStochasticProcess.h">
 			<Option target="Finance"/>
 		</Unit>
-		<Unit filename="/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalProcess.cpp">
-			<Option target="Finance"/>
-		</Unit>
 		<Unit filename="/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalProcess.h">
-			<Option target="Finance"/>
-		</Unit>
-		<Unit filename="/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.cpp">
 			<Option target="Finance"/>
 		</Unit>
 		<Unit filename="/Users/CUI/Dropbox/C++/Finance/StochasticProcesses/LogNormalwithNormalJump.h">

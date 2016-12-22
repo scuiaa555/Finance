@@ -4,24 +4,28 @@
 
 #include "BSStochasticProcess.h"
 
-BSStochasticProcess::BSStochasticProcess(double r, double q, double sigma, double spot) : r_(r), q_(q), sigma_(sigma),
-                                                                                          spot_(spot) {
+BSStochasticProcess::BSStochasticProcess(double r, double q, double sigma, double spot)
+        : LogNormalProcess(spot,
+                           shared_ptr<Parameter>(new ConstantParameter(r - q)),
+                           1,
+                           shared_ptr<Parameter>(new ConstantParameter(sigma))),
+          r_(r), q_(q), sigma_(sigma) {
 }
-
-double BSStochasticProcess::getSpot() const {
-    return spot_;
-}
+//
+//double BSStochasticProcess::getSpot() const {
+//    return spot_;
+//}
 
 double BSStochasticProcess::getRiskFree() const {
-    return r_(0);
+    return r_;
 }
 
 double BSStochasticProcess::getDividend() const {
-    return q_(0);
+    return q_;
 }
 
 double BSStochasticProcess::getVolatility() const {
-    return sigma_(0);
+    return sigma_;
 }
 
 //void BSModel::GetParameterSet() {
