@@ -9,15 +9,19 @@
 #include "StochasticProcesses/BSStochasticProcess.h"
 #include "RandNumGeneration/Normal.h"
 
+/**
+ * Black-Scholes model.
+ *
+ */
 class BlackScholesModel : public Model1D {
 public:
     BlackScholesModel(std::shared_ptr<BSStochasticProcess> process);
 
     BlackScholesModel(double r, double q, double sigma, double spot);
 
-    virtual Quote evolve(Time t0, Quote &x0, Time dt, double dw) const override;
+    virtual void evolve(Time t0, Quote &x0, Time dt, double dw, double &value) const override;
 
-    const vector<int> &getMCdimension() const override { return MCdimension_; }
+//    const vector<int> &getMCdimension() const override { return MCdimension_; }
 
     void setupArgument(Time t, Time dt, GenericRandomVariableGenerator::Argument *arg) override {
         GenericNormal::Argument *argument = dynamic_cast<GenericNormal::Argument *>(arg);
@@ -26,7 +30,7 @@ public:
     }
 
 private:
-    vector<int> MCdimension_;
+//    vector<int> MCdimension_;
 };
 
 

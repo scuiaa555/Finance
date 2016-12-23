@@ -12,6 +12,12 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -76,8 +82,8 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_mc_asian_engine.html#a709959c19317f1dd319e043e409199fa">McAsianEngine</a>(const std::shared_ptr&lt; Model&lt; double &gt;&gt; model, Time timeStep, unsigned long maxSamples, unsigned long minSamples, bool isAntithetic=0)</td><td class="entry"><a class="el" href="class_mc_asian_engine.html">McAsianEngine&lt; RNG, PathType &gt;</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_mc_asian_engine.html#a648fd96c21d0cd572e6dae0a1e8aa175">minSamples_</a></td><td class="entry"><a class="el" href="class_mc_asian_engine.html">McAsianEngine&lt; RNG, PathType &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_mc_asian_engine.html#a8c94082ee2d4169b704428ebb4b30965">model_</a></td><td class="entry"><a class="el" href="class_mc_asian_engine.html">McAsianEngine&lt; RNG, PathType &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_mc_asian_engine.html#ae38592c71ae4d5d09c9eb13d7cc0c5ff">pathGenerator</a>() override</td><td class="entry"><a class="el" href="class_mc_asian_engine.html">McAsianEngine&lt; RNG, PathType &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_mc_asian_engine.html#a5b7351c28b68878b7f6d130eef293d6c">pathPricer</a>() override</td><td class="entry"><a class="el" href="class_mc_asian_engine.html">McAsianEngine&lt; RNG, PathType &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_mc_asian_engine.html#aafae065fc8b31b009b4b42a53b850e82">pathGenerator</a>() const override</td><td class="entry"><a class="el" href="class_mc_asian_engine.html">McAsianEngine&lt; RNG, PathType &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_mc_asian_engine.html#a4ad8ccd05433f0668d751a8b3dcbb746">pathPricer</a>() const override</td><td class="entry"><a class="el" href="class_mc_asian_engine.html">McAsianEngine&lt; RNG, PathType &gt;</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_pricing_engine.html#abfd32778b0483e92db2e7cd00a2f9345">PricingEngine</a>()</td><td class="entry"><a class="el" href="class_pricing_engine.html">PricingEngine</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_generic_engine.html#acd6af7c4b3fd0e43826755ba7d347dd5">results_</a></td><td class="entry"><a class="el" href="class_generic_engine.html">GenericEngine&lt; AsianOption::Arguments, AsianOption::Results &gt;</a></td><td class="entry"><span class="mlabel">mutable</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_mc_simulation.html#a61ed7348fc9fd05f05ede3c1ef83da16">sampleAccumulator</a>() const</td><td class="entry"><a class="el" href="class_mc_simulation.html">McSimulation&lt; RNG, PathType &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>

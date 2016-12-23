@@ -9,11 +9,15 @@
 
 /**
  * Base class for all Monte Carlo pricing engines.
- * Any Monte Carlo pricing engine will be privately inherited(implement in terms of) from this class.\n
+ * Any Monte Carlo pricing engine will be privately inherited(implemented in terms of) from this class.\n
  * It will provide the mcModel class(its data member) with a specific path generator and a path pricer and control the calculation
  * procedure of mcModel.
  * @tparam RNG Generic random number generator(e.g. SingleRandom<Normal<>>, MultiRandom<Normal<>,Poisson>,...)
  * @tparam PathType Type of generated path.
+ *
+ * \e How \e to \e use: \n
+ * Classes derived from McSimulation<RNG,PathType> should override pure member functions: pathGenerator(), pathPricer(), timeGrid().
+ *
  */
 template<typename RNG, typename PathType>
 class McSimulation {
@@ -33,7 +37,7 @@ protected:
     /**
      * Get all the statistics back from mcModel.
      * \e Accessibility: Protected, since other class except derived classes should not be able to get the statistics.\n
-     * \e Constness: Return type is a const, since users should not modify this result.
+     * \e Constness: Return type is a const, since users should not modify the result.
      * @return All the statistics(mean, variance,...) after calculations.
      */
     const MCStatistics &sampleAccumulator() const;
@@ -46,15 +50,16 @@ private:
 
     /**
      * Defer the implementation of pathGenerator to the derived class.
+     * Provide the mcModel with a specific path generator.
      * @return shared_ptr of path generator.
      */
-    virtual std::shared_ptr<PathGenerator<RNG, PathType>> pathGenerator() = 0;
+    virtual std::shared_ptr<PathGenerator<RNG, PathType>> pathGenerator() const = 0;
 
     /**
      * Defer the implementation of pathPricer to the derived class.
      * @return shared_ptr of path pricer.
      */
-    virtual std::shared_ptr<PathPricer<PathType>> pathPricer() = 0;
+    virtual std::shared_ptr<PathPricer<PathType>> pathPricer() const = 0;
 
     /**
      * Defer the implementation of setting time grid to the derived class.
@@ -69,7 +74,7 @@ private:
      * @param maxSamples Maximum number of samples.
      * @param minSamples Number of samples for each valuation.
      */
-    void value(unsigned long maxSamples, unsigned long minSamples);
+    void value(unsigned long maxSamples, unsigned long minSamples) const;
 };
 
 template<typename RNG, typename PathType>
@@ -79,7 +84,7 @@ void McSimulation<RNG, PathType>::calculate(unsigned long maxSamples, unsigned l
 }
 
 template<typename RNG, typename PathType>
-void McSimulation<RNG, PathType>::value(unsigned long maxSamples, unsigned long minSamples) {
+void McSimulation<RNG, PathType>::value(unsigned long maxSamples, unsigned long minSamples) const {
     for (unsigned long j = 1; j <= maxSamples / minSamples; j++) {
         mcModel_->addSamples(minSamples);
     }

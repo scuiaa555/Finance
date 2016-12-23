@@ -12,6 +12,12 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -98,23 +104,23 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ad2338ca624a9bbfaec8e4d882471d546"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG, PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#ad2338ca624a9bbfaec8e4d882471d546">pathGenerator</a> ()=0</td></tr>
-<tr class="memdesc:ad2338ca624a9bbfaec8e4d882471d546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathGenerator to the derived class.  <a href="#ad2338ca624a9bbfaec8e4d882471d546">More...</a><br /></td></tr>
-<tr class="separator:ad2338ca624a9bbfaec8e4d882471d546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d755ea777c2f3a2ec2fcc70acf71a6d"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a>&lt; PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a4d755ea777c2f3a2ec2fcc70acf71a6d">pathPricer</a> ()=0</td></tr>
-<tr class="memdesc:a4d755ea777c2f3a2ec2fcc70acf71a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathPricer to the derived class.  <a href="#a4d755ea777c2f3a2ec2fcc70acf71a6d">More...</a><br /></td></tr>
-<tr class="separator:a4d755ea777c2f3a2ec2fcc70acf71a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7ba8d9b534837e7c62f47c6d20a353"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG, PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#afa7ba8d9b534837e7c62f47c6d20a353">pathGenerator</a> () const =0</td></tr>
+<tr class="memdesc:afa7ba8d9b534837e7c62f47c6d20a353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathGenerator to the derived class.  <a href="#afa7ba8d9b534837e7c62f47c6d20a353">More...</a><br /></td></tr>
+<tr class="separator:afa7ba8d9b534837e7c62f47c6d20a353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a3e635c1fa9d25797dc0cbad767238"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a>&lt; PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a64a3e635c1fa9d25797dc0cbad767238">pathPricer</a> () const =0</td></tr>
+<tr class="memdesc:a64a3e635c1fa9d25797dc0cbad767238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathPricer to the derived class.  <a href="#a64a3e635c1fa9d25797dc0cbad767238">More...</a><br /></td></tr>
+<tr class="separator:a64a3e635c1fa9d25797dc0cbad767238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf7d24981be3025a2cf07f8623dbe8ce"><td class="memItemLeft" align="right" valign="top">virtual const vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#acf7d24981be3025a2cf07f8623dbe8ce">timeGrid</a> () const =0</td></tr>
 <tr class="memdesc:acf7d24981be3025a2cf07f8623dbe8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of setting time grid to the derived class.  <a href="#acf7d24981be3025a2cf07f8623dbe8ce">More...</a><br /></td></tr>
 <tr class="separator:acf7d24981be3025a2cf07f8623dbe8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2f03b55464c189295aab9b8fd7b0a37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#ae2f03b55464c189295aab9b8fd7b0a37">value</a> (unsigned long maxSamples, unsigned long minSamples)</td></tr>
-<tr class="memdesc:ae2f03b55464c189295aab9b8fd7b0a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the <a class="el" href="class_mc_model.html">McModel</a> to do the valuation.  <a href="#ae2f03b55464c189295aab9b8fd7b0a37">More...</a><br /></td></tr>
-<tr class="separator:ae2f03b55464c189295aab9b8fd7b0a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5d11df4cca5b1f3dcdc8f528a9a56f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a0e5d11df4cca5b1f3dcdc8f528a9a56f">value</a> (unsigned long maxSamples, unsigned long minSamples) const</td></tr>
+<tr class="memdesc:a0e5d11df4cca5b1f3dcdc8f528a9a56f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the <a class="el" href="class_mc_model.html" title="Non-base class which encapsulates a path generator and a path pricer and a statistic class...">McModel</a> to do the valuation.  <a href="#a0e5d11df4cca5b1f3dcdc8f528a9a56f">More...</a><br /></td></tr>
+<tr class="separator:a0e5d11df4cca5b1f3dcdc8f528a9a56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a194d2f5aa4a4e3863d6590a88af9c445"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_mc_model.html">McModel</a>&lt; RNG, PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a194d2f5aa4a4e3863d6590a88af9c445">mcModel_</a></td></tr>
-<tr class="memdesc:a194d2f5aa4a4e3863d6590a88af9c445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared_ptr of <a class="el" href="class_mc_model.html">McModel</a> which contains the needed path generator and pricer.  <a href="#a194d2f5aa4a4e3863d6590a88af9c445">More...</a><br /></td></tr>
+<tr class="memdesc:a194d2f5aa4a4e3863d6590a88af9c445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared_ptr of <a class="el" href="class_mc_model.html" title="Non-base class which encapsulates a path generator and a path pricer and a statistic class...">McModel</a> which contains the needed path generator and pricer.  <a href="#a194d2f5aa4a4e3863d6590a88af9c445">More...</a><br /></td></tr>
 <tr class="separator:a194d2f5aa4a4e3863d6590a88af9c445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af17f26f85e3f48406229d7b6f84b3f89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#af17f26f85e3f48406229d7b6f84b3f89">isAntithetic_</a></td></tr>
 <tr class="memdesc:af17f26f85e3f48406229d7b6f84b3f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">=1 indicates use of antithetic path; =0 makes no use of antithetic path.  <a href="#af17f26f85e3f48406229d7b6f84b3f89">More...</a><br /></td></tr>
@@ -125,14 +131,16 @@ Private Attributes</h2></td></tr>
 class McSimulation&lt; RNG, PathType &gt;</h3>
 
 <p>Base class for all Monte Carlo pricing engines. </p>
-<p>Any Monte Carlo pricing engine will be privately inherited(implement in terms of) from this class.<br />
+<p>Any Monte Carlo pricing engine will be privately inherited(implemented in terms of) from this class.<br />
 It will provide the mcModel class(its data member) with a specific path generator and a path pricer and control the calculation procedure of mcModel. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">RNG</td><td>Generic random number generator(e.g. <a class="el" href="struct_single_random.html">SingleRandom</a>&lt;Normal&lt;&gt;&gt;, <a class="el" href="struct_multi_random.html">MultiRandom</a>&lt;Normal&lt;&gt;,<a class="el" href="class_poisson.html">Poisson</a>&gt;,...) </td></tr>
-    <tr><td class="paramname">PathType</td><td>Type of generated path. </td></tr>
+    <tr><td class="paramname">PathType</td><td>Type of generated path.</td></tr>
   </table>
   </dd>
 </dl>
+<p><em>How</em> <em>to</em> <em>use:</em> <br />
+Classes derived from McSimulation&lt;RNG,PathType&gt; should override pure member functions: <a class="el" href="class_mc_simulation.html#afa7ba8d9b534837e7c62f47c6d20a353" title="Defer the implementation of pathGenerator to the derived class. ">pathGenerator()</a>, <a class="el" href="class_mc_simulation.html#a64a3e635c1fa9d25797dc0cbad767238" title="Defer the implementation of pathPricer to the derived class. ">pathPricer()</a>, <a class="el" href="class_mc_simulation.html#acf7d24981be3025a2cf07f8623dbe8ce" title="Defer the implementation of setting time grid to the derived class. ">timeGrid()</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9d323dca5d0a6c50d6fbab6ea564a1f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d323dca5d0a6c50d6fbab6ea564a1f3">&sect;&nbsp;</a></span>calculate()</h2>
@@ -173,8 +181,8 @@ template&lt;typename RNG , typename PathType &gt; </div>
 
 </div>
 </div>
-<a id="ad2338ca624a9bbfaec8e4d882471d546"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2338ca624a9bbfaec8e4d882471d546">&sect;&nbsp;</a></span>pathGenerator()</h2>
+<a id="afa7ba8d9b534837e7c62f47c6d20a353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa7ba8d9b534837e7c62f47c6d20a353">&sect;&nbsp;</a></span>pathGenerator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +196,7 @@ template&lt;typename RNG , typename PathType &gt; </div>
           <td class="memname">virtual std::shared_ptr&lt;<a class="el" href="class_path_generator.html">PathGenerator</a>&lt;RNG, PathType&gt; &gt; <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG, PathType &gt;::pathGenerator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -199,14 +207,14 @@ template&lt;typename RNG , typename PathType &gt; </div>
 </div><div class="memdoc">
 
 <p>Defer the implementation of pathGenerator to the derived class. </p>
-<dl class="section return"><dt>Returns</dt><dd>shared_ptr of path generator. </dd></dl>
+<p>Provide the mcModel with a specific path generator. </p><dl class="section return"><dt>Returns</dt><dd>shared_ptr of path generator. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_mc_european_engine.html#a1e4fff8cadebec5aae259fc747dc12a3">McEuropeanEngine&lt; RNG, PathType &gt;</a>, and <a class="el" href="class_mc_asian_engine.html#ae38592c71ae4d5d09c9eb13d7cc0c5ff">McAsianEngine&lt; RNG, PathType &gt;</a>.</p>
+<p>Implemented in <a class="el" href="class_mc_european_engine.html#ac0f14a7ff770c69ce802eb662230e4cb">McEuropeanEngine&lt; RNG, PathType &gt;</a>, and <a class="el" href="class_mc_asian_engine.html#aafae065fc8b31b009b4b42a53b850e82">McAsianEngine&lt; RNG, PathType &gt;</a>.</p>
 
 </div>
 </div>
-<a id="a4d755ea777c2f3a2ec2fcc70acf71a6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d755ea777c2f3a2ec2fcc70acf71a6d">&sect;&nbsp;</a></span>pathPricer()</h2>
+<a id="a64a3e635c1fa9d25797dc0cbad767238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a3e635c1fa9d25797dc0cbad767238">&sect;&nbsp;</a></span>pathPricer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,7 +228,7 @@ template&lt;typename RNG , typename PathType &gt; </div>
           <td class="memname">virtual std::shared_ptr&lt;<a class="el" href="class_path_pricer.html">PathPricer</a>&lt;PathType&gt; &gt; <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG, PathType &gt;::pathPricer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -233,7 +241,7 @@ template&lt;typename RNG , typename PathType &gt; </div>
 <p>Defer the implementation of pathPricer to the derived class. </p>
 <dl class="section return"><dt>Returns</dt><dd>shared_ptr of path pricer. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_mc_european_engine.html#ab07c50b4305c3e65f68ce3f0c9b740d6">McEuropeanEngine&lt; RNG, PathType &gt;</a>, and <a class="el" href="class_mc_asian_engine.html#a5b7351c28b68878b7f6d130eef293d6c">McAsianEngine&lt; RNG, PathType &gt;</a>.</p>
+<p>Implemented in <a class="el" href="class_mc_european_engine.html#ad4fb94329470643f2edc491bfcb31bdf">McEuropeanEngine&lt; RNG, PathType &gt;</a>, and <a class="el" href="class_mc_asian_engine.html#a4ad8ccd05433f0668d751a8b3dcbb746">McAsianEngine&lt; RNG, PathType &gt;</a>.</p>
 
 </div>
 </div>
@@ -264,7 +272,7 @@ template&lt;typename RNG , typename PathType &gt; </div>
 
 <p>Get all the statistics back from mcModel. </p>
 <p><em>Accessibility:</em> Protected, since other class except derived classes should not be able to get the statistics.<br />
-<em>Constness:</em> Return type is a const, since users should not modify this result. </p><dl class="section return"><dt>Returns</dt><dd>All the statistics(mean, variance,...) after calculations. </dd></dl>
+<em>Constness:</em> Return type is a const, since users should not modify the result. </p><dl class="section return"><dt>Returns</dt><dd>All the statistics(mean, variance,...) after calculations. </dd></dl>
 
 </div>
 </div>
@@ -294,15 +302,15 @@ template&lt;typename RNG , typename PathType &gt; </div>
 </div><div class="memdoc">
 
 <p>Defer the implementation of setting time grid to the derived class. </p>
-<p>Time grid is a vector which is saved in the <a class="el" href="class_path.html">Path</a> class.<br />
+<p>Time grid is a vector which is saved in the <a class="el" href="class_path.html" title="Base class for a single path. ">Path</a> class.<br />
 <em>Constness:</em> Return by value, since it is a local variable. </p><dl class="section return"><dt>Returns</dt><dd>Vector of time grid. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_mc_european_engine.html#ae4e0ab6834416144221f1a91dd154587">McEuropeanEngine&lt; RNG, PathType &gt;</a>.</p>
 
 </div>
 </div>
-<a id="ae2f03b55464c189295aab9b8fd7b0a37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2f03b55464c189295aab9b8fd7b0a37">&sect;&nbsp;</a></span>value()</h2>
+<a id="a0e5d11df4cca5b1f3dcdc8f528a9a56f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5d11df4cca5b1f3dcdc8f528a9a56f">&sect;&nbsp;</a></span>value()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,7 +335,7 @@ template&lt;typename RNG , typename PathType &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -337,7 +345,7 @@ template&lt;typename RNG , typename PathType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Call the <a class="el" href="class_mc_model.html">McModel</a> to do the valuation. </p>
+<p>Call the <a class="el" href="class_mc_model.html" title="Non-base class which encapsulates a path generator and a path pricer and a statistic class...">McModel</a> to do the valuation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">maxSamples</td><td>Maximum number of samples. </td></tr>
@@ -397,7 +405,7 @@ template&lt;typename RNG , typename PathType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Shared_ptr of <a class="el" href="class_mc_model.html">McModel</a> which contains the needed path generator and pricer. </p>
+<p>Shared_ptr of <a class="el" href="class_mc_model.html" title="Non-base class which encapsulates a path generator and a path pricer and a statistic class...">McModel</a> which contains the needed path generator and pricer. </p>
 
 </div>
 </div>

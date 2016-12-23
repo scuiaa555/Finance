@@ -12,6 +12,12 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -67,11 +73,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Non-base class which encapsulates a path generator and a path pricer and a statistic class.  
+ <a href="class_mc_model.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_mc_model_8h_source.html">McModel.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2c4ccfd7b882e80516e1f9733243e48d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#a2c4ccfd7b882e80516e1f9733243e48d">McModel</a> (const std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG, PathType &gt;&gt; &amp;pathGenerator, const std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a>&lt; PathType &gt;&gt; pathPricer)</td></tr>
+<tr class="memdesc:a2c4ccfd7b882e80516e1f9733243e48d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a2c4ccfd7b882e80516e1f9733243e48d">More...</a><br /></td></tr>
 <tr class="separator:a2c4ccfd7b882e80516e1f9733243e48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ce369cb607a221259e4a93bb63ea4ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#a6ce369cb607a221259e4a93bb63ea4ec">addSamples</a> (unsigned long numSamples)</td></tr>
 <tr class="separator:a6ce369cb607a221259e4a93bb63ea4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -87,7 +97,19 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a3ec600743d8341a4cd46b5005a0f70ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_c_statistics.html">MCStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#a3ec600743d8341a4cd46b5005a0f70ff">sampleAccumulator_</a></td></tr>
 <tr class="separator:a3ec600743d8341a4cd46b5005a0f70ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename RNG, typename PathType&gt;<br />
+class McModel&lt; RNG, PathType &gt;</h3>
+
+<p>Non-base class which encapsulates a path generator and a path pricer and a statistic class. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">RNG</td><td>Random number generator type(e.g., <a class="el" href="struct_single_random.html">SingleRandom</a>&lt;Normal&lt;&gt;&gt;, <a class="el" href="struct_multi_random.html">MultiRandom</a>&lt;Normal&lt;&gt;, Normal&lt;&gt;&gt;). </td></tr>
+    <tr><td class="paramname">PathType</td><td>Type of path(i.e., <a class="el" href="struct_single_variate.html" title="PathType for models of 1-d(e.g. ">SingleVariate</a> or <a class="el" href="struct_multi_variate.html" title="PathType for models of multi-dimension(e.g. ">MultiVariate</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2c4ccfd7b882e80516e1f9733243e48d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c4ccfd7b882e80516e1f9733243e48d">&sect;&nbsp;</a></span>McModel()</h2>
 
@@ -115,6 +137,15 @@ template&lt;typename RNG , typename PathType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pathGenerator</td><td>Shared_ptr of a path generator. </td></tr>
+    <tr><td class="paramname">pathPricer</td><td>Shared_ptr of a path pricer. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

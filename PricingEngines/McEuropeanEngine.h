@@ -27,9 +27,9 @@ private:
     unsigned long maxSamples_;
     Time timeStep_;
 
-    std::shared_ptr<PathGenerator<RNG, PathType>> pathGenerator() override;
+    std::shared_ptr<PathGenerator<RNG, PathType>> pathGenerator() const override;
 
-    std::shared_ptr<PathPricer<PathType>> pathPricer() override;
+    std::shared_ptr<PathPricer<PathType>> pathPricer() const override;
 
     const vector<Time> timeGrid() const override;
 
@@ -41,13 +41,13 @@ McEuropeanEngine<RNG, PathType>::McEuropeanEngine(const std::shared_ptr<Model<do
         model_(model), timeStep_(timeStep), maxSamples_(maxSamples), minSamples_(minSamples) {}
 
 template<typename RNG, typename PathType>
-std::shared_ptr<PathGenerator<RNG, PathType>> McEuropeanEngine<RNG, PathType>::pathGenerator() {
+std::shared_ptr<PathGenerator<RNG, PathType>> McEuropeanEngine<RNG, PathType>::pathGenerator() const {
     return std::shared_ptr<PathGenerator<RNG, PathType>>(
             new PathGenerator<RNG, PathType>(model_, timeGrid()));
 }
 
 template<typename RNG, typename PathType>
-std::shared_ptr<PathPricer<PathType>> McEuropeanEngine<RNG, PathType>::pathPricer() {
+std::shared_ptr<PathPricer<PathType>> McEuropeanEngine<RNG, PathType>::pathPricer() const {
     EuropeanOption::Arguments *arguments;
     arguments = dynamic_cast<EuropeanOption::Arguments *>(this->getArguments());
     std::shared_ptr<VanillaPayoff> payoff = std::dynamic_pointer_cast<VanillaPayoff>(arguments->payoff_);

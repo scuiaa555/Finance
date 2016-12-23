@@ -12,6 +12,12 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -68,24 +74,32 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Base class for a single path.  
+ <a href="class_path.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_path_8h_source.html">Path.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a3b1c34a87f7867f6fed2e0a33f801e7d"><td class="memItemLeft" align="right" valign="top">typedef PathType::path_return_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a3b1c34a87f7867f6fed2e0a33f801e7d">path_return_type</a></td></tr>
+<tr class="memdesc:a3b1c34a87f7867f6fed2e0a33f801e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of single path for PathType.  <a href="#a3b1c34a87f7867f6fed2e0a33f801e7d">More...</a><br /></td></tr>
 <tr class="separator:a3b1c34a87f7867f6fed2e0a33f801e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af716cfa221637551e0b0a5b78be82d5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#af716cfa221637551e0b0a5b78be82d5c">Path</a> (const vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; &amp;timeGrid, unsigned long dimensional)</td></tr>
-<tr class="separator:af716cfa221637551e0b0a5b78be82d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0fff5e8514331bba55ab5745fc485a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#ab0fff5e8514331bba55ab5745fc485a4">Path</a> (const vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; &amp;timeGrid, unsigned long dimension)</td></tr>
+<tr class="memdesc:ab0fff5e8514331bba55ab5745fc485a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ab0fff5e8514331bba55ab5745fc485a4">More...</a><br /></td></tr>
+<tr class="separator:ab0fff5e8514331bba55ab5745fc485a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8437fecb95fe145057c957feb8b8955a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a8437fecb95fe145057c957feb8b8955a">Path</a> ()=default</td></tr>
 <tr class="separator:a8437fecb95fe145057c957feb8b8955a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a511b7a93c62893bcafba4749ad1dd1b3"><td class="memItemLeft" align="right" valign="top">virtual const vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a511b7a93c62893bcafba4749ad1dd1b3">getTimeGrid</a> () const</td></tr>
+<tr class="memdesc:a511b7a93c62893bcafba4749ad1dd1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the vector of time grid.  <a href="#a511b7a93c62893bcafba4749ad1dd1b3">More...</a><br /></td></tr>
 <tr class="separator:a511b7a93c62893bcafba4749ad1dd1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ba07fadae45801824240317c311bb84"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_path.html#a3b1c34a87f7867f6fed2e0a33f801e7d">path_return_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a8ba07fadae45801824240317c311bb84">getValues</a> ()</td></tr>
+<tr class="memdesc:a8ba07fadae45801824240317c311bb84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the values of path.  <a href="#a8ba07fadae45801824240317c311bb84">More...</a><br /></td></tr>
 <tr class="separator:a8ba07fadae45801824240317c311bb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2490ad69198170463f98c7d8f7212917"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_path.html#a3b1c34a87f7867f6fed2e0a33f801e7d">path_return_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a2490ad69198170463f98c7d8f7212917">getValues</a> () const</td></tr>
+<tr class="memdesc:a2490ad69198170463f98c7d8f7212917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the values of path.  <a href="#a2490ad69198170463f98c7d8f7212917">More...</a><br /></td></tr>
 <tr class="separator:a2490ad69198170463f98c7d8f7212917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83933167b70441af12427b23d88b0447"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a83933167b70441af12427b23d88b0447">~Path</a> ()</td></tr>
 <tr class="separator:a83933167b70441af12427b23d88b0447"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,13 +107,29 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a23350d9575ae171881cd45dc1ce2a701"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a23350d9575ae171881cd45dc1ce2a701">timeGrid_</a></td></tr>
+<tr class="memdesc:a23350d9575ae171881cd45dc1ce2a701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of time grid.  <a href="#a23350d9575ae171881cd45dc1ce2a701">More...</a><br /></td></tr>
 <tr class="separator:a23350d9575ae171881cd45dc1ce2a701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad71125972f4c21aa8233b08dea6fca13"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#ad71125972f4c21aa8233b08dea6fca13">dimensional_</a></td></tr>
-<tr class="separator:ad71125972f4c21aa8233b08dea6fca13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1011b18bd2dc22cc4b2151db076fb6f5"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a1011b18bd2dc22cc4b2151db076fb6f5">dimension_</a></td></tr>
+<tr class="memdesc:a1011b18bd2dc22cc4b2151db076fb6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimension of a single path.  <a href="#a1011b18bd2dc22cc4b2151db076fb6f5">More...</a><br /></td></tr>
+<tr class="separator:a1011b18bd2dc22cc4b2151db076fb6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f90f314a504ea1c9828dd2aa999f6ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_path.html#a3b1c34a87f7867f6fed2e0a33f801e7d">path_return_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path.html#a6f90f314a504ea1c9828dd2aa999f6ff">vals_</a></td></tr>
+<tr class="memdesc:a6f90f314a504ea1c9828dd2aa999f6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of values of a single path.  <a href="#a6f90f314a504ea1c9828dd2aa999f6ff">More...</a><br /></td></tr>
 <tr class="separator:a6f90f314a504ea1c9828dd2aa999f6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename PathType = SingleVariate&gt;<br />
+class Path&lt; PathType &gt;</h3>
+
+<p>Base class for a single path. </p>
+<p>This <a class="el" href="class_path.html" title="Base class for a single path. ">Path</a> class simply stores the information(e.g. time grid, stock price...) of a single path. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">PathType</td><td>Type of path(SingleVariate or MultiVariate).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><em>How</em> <em>to</em> <em>use:</em> <br />
+The path with antithetic path or control variable path will be derived from this class by using decorator pattern.</p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd></dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3b1c34a87f7867f6fed2e0a33f801e7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b1c34a87f7867f6fed2e0a33f801e7d">&sect;&nbsp;</a></span>path_return_type</h2>
 
@@ -114,11 +144,13 @@ template&lt;typename PathType = SingleVariate&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Type of single path for PathType. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af716cfa221637551e0b0a5b78be82d5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af716cfa221637551e0b0a5b78be82d5c">&sect;&nbsp;</a></span>Path() <span class="overload">[1/2]</span></h2>
+<a id="ab0fff5e8514331bba55ab5745fc485a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0fff5e8514331bba55ab5745fc485a4">&sect;&nbsp;</a></span>Path() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,7 +167,7 @@ template&lt;typename PathType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned long&#160;</td>
-          <td class="paramname"><em>dimensional</em>&#160;</td>
+          <td class="paramname"><em>dimension</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -144,6 +176,15 @@ template&lt;typename PathType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeGrid</td><td>Vector of time grid. </td></tr>
+    <tr><td class="paramname">dimensional</td><td>Dimension of a single path(i.e., 1 for <a class="el" href="struct_single_variate.html" title="PathType for models of 1-d(e.g. ">SingleVariate</a>, &gt;1 for <a class="el" href="struct_multi_variate.html" title="PathType for models of multi-dimension(e.g. ">MultiVariate</a>). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -227,6 +268,9 @@ template&lt;typename PathType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Return the vector of time grid. </p>
+<dl class="section return"><dt>Returns</dt><dd>Vector of time grid. </dd></dl>
+
 </div>
 </div>
 <a id="a8ba07fadae45801824240317c311bb84"></a>
@@ -253,6 +297,9 @@ template&lt;typename PathType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Return the values of path. </p>
+<dl class="section return"><dt>Returns</dt><dd>Vector of values of a single path. </dd></dl>
 
 </div>
 </div>
@@ -281,11 +328,14 @@ template&lt;typename PathType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Return the values of path. </p>
+<p><em>Constness:</em> There are two overloaded versions of this method in this class distinguished by constness. The const member function prohibits the change of data member inside the function and only can call other const member function. Const object can call const member function, where normal object can call both const and non-const member functions. Two versions facilitates the call by both const object and non-const object. </p><dl class="section return"><dt>Returns</dt><dd>Vector of values of a single path. </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad71125972f4c21aa8233b08dea6fca13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad71125972f4c21aa8233b08dea6fca13">&sect;&nbsp;</a></span>dimensional_</h2>
+<a id="a1011b18bd2dc22cc4b2151db076fb6f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1011b18bd2dc22cc4b2151db076fb6f5">&sect;&nbsp;</a></span>dimension_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -296,7 +346,7 @@ template&lt;typename PathType = SingleVariate&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long <a class="el" href="class_path.html">Path</a>&lt; PathType &gt;::dimensional_</td>
+          <td class="memname">unsigned long <a class="el" href="class_path.html">Path</a>&lt; PathType &gt;::dimension_</td>
         </tr>
       </table>
   </td>
@@ -305,6 +355,8 @@ template&lt;typename PathType = SingleVariate&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Dimension of a single path. </p>
 
 </div>
 </div>
@@ -330,6 +382,8 @@ template&lt;typename PathType = SingleVariate&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Vector of time grid. </p>
+
 </div>
 </div>
 <a id="a6f90f314a504ea1c9828dd2aa999f6ff"></a>
@@ -353,6 +407,8 @@ template&lt;typename PathType = SingleVariate&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Vector of values of a single path. </p>
 
 </div>
 </div>

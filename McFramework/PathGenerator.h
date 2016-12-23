@@ -11,26 +11,49 @@
 #include "RandNumGeneration/MultiRandGenerator.h"
 #include <type_traits>
 
+/**
+ * Non-base class which uses a random number generator to generate a path for pricing.
+ * The information of path that needs to be generated is stored in its data member model_(shared_ptr).\n
+ * @tparam RNG Random number generator (e.g., Single<Normal<>>).
+ * @tparam PathType Type of path (SingleVariate or MultiVariate).
+ *
+ * \e How \e to \e use: \n
+ * It cannnot be derived from since it has no virtual member functions, but the RNG type and PathType need to be provided
+ * through template arguments and model_(information of model(e.g. LMM)) should be taken in through constructors.
+ */
 template<typename RNG, typename PathType>
 class PathGenerator {
 public:
-    typedef typename RNG::rng_return_type rng_return_type;
-    typedef typename RNG::rng_type rng_type;
-    typedef typename RNG::rng_argument_type rng_argument_type;
-    typedef typename PathType::path_return_type path_return_type;
-    typedef typename PathType::type_of_single_time path_return_type_of_single_time;
+    typedef typename RNG::rng_return_type rng_return_type;          /**< Return type of RNG (double or vector<double>). */
+    typedef typename RNG::rng_type rng_type;                        /**< Internal specific type of RNG (e.g. Normal, MultiRandGenerator<Normal<>,Normal<>>). */
+    typedef typename RNG::rng_argument_type rng_argument_type;      /**< Argument type for RNG (GenericRandomVariableGenerator::Argument* or vector<GenericRandomVariableGenerator::Argument*>). */
+    typedef typename PathType::path_return_type path_return_type;                    /**< Return type of generated path (vector<double> or vector<vector<double>>). */
+    typedef typename PathType::type_of_single_time path_return_type_of_single_time;  /**< Return type of path at a single time (double for 1-d, vector<double> for n-d). */
 
+    /**
+     * Constructor.
+     * @param model Shared_ptr of model.
+     * @param timeGrid Vector of monitored times.
+     * @param isAntithetic =1 means to calculate antithetic path; =0 not to calculate antithetic path.
+     */
     PathGenerator(const std::shared_ptr<Model<path_return_type_of_single_time>> model, const vector<Time> &timeGrid,
                   bool isAntithetic = 0);
 
-    Path<PathType> &next();
+    /**
+     * Returns a newly-generated path.\n
+     * \e Constness: Definitely it is not a const member function, since inside data member next_(shared_ptr) will be changed.
+     * Return reference type is const, since logically users cannot modify the path by using this reference.
+     * @return Reference of a path.
+     */
+    const Path<PathType> &next();
 
 private:
-    rng_type rng_;
-    std::shared_ptr<Model<path_return_type_of_single_time>> model_;
+
+    rng_type rng_;        /**< Random number generator(s). */
+    std::shared_ptr<Model<path_return_type_of_single_time>> model_;  /**< Shared_ptr of model. */
     /* the generator does not know the exact type of its path */
-    std::shared_ptr<Path<PathType>> next_;
-    bool isAntithetic_;
+    std::shared_ptr<Path<PathType>> next_;                           /**< Newly-generated path. */
+    bool isAntithetic_;                                              /**< Antithetic variable indicator. */
 
 //    template<typename ArgType>
 //    void setRNGs(typename std::enable_if<std::is_same<ArgType, Model::Argument *>::value, Model::Argument *> args);
@@ -48,12 +71,20 @@ PathGenerator<RNG, PathType>::PathGenerator(const std::shared_ptr<Model<path_ret
 //    if (isAntithetic) {
 //        next_ = std::shared_ptr<Path>(new AntitheticPath(timeGrid, model->getDimensionality()));
 //    } else {
-    next_ = std::shared_ptr<Path<PathType>>(new Path<PathType>(timeGrid, model->getDimensionality()));
+    next_ = std::shared_ptr<Path<PathType>>(new Path<PathType>(timeGrid, model->getDimension()));
 //    }
 }
 
+
 template<typename RNG, typename PathType>
-Path<PathType> &PathGenerator<RNG, PathType>::next() {
+const Path<PathType> &PathGenerator<RNG, PathType>::next() {
+/**
+ * Implementation involves several steps. \n
+ * 1. It updates the initial value of path from model_; \n
+ * 2. For each time t, model_ set up the arguments needed for the rng_(random number generator; \n
+ * 3. rng_ generates a new sequence of random numbers; \n
+ * 4. model_ evolves according to the random numbers.
+ */
     if (!isAntithetic_) {
         typename PathGenerator<RNG, PathType>::path_return_type::iterator it_value = next_->getValues().begin();
         typename PathGenerator<RNG, PathType>::path_return_type_of_single_time x0 = model_->getInitial();
@@ -63,7 +94,7 @@ Path<PathType> &PathGenerator<RNG, PathType>::next() {
             it_value++;
             Time dt = *(it_time + 1) - *it_time;
             model_->setupArgument(*it_time, dt, rng_.getArgument());
-            *it_value = model_->evolve(*it_time, x0, dt, rng_.next());
+            model_->evolve(*it_time, x0, dt, rng_.next(), *it_value);
             x0 = *it_value;
         }
     }

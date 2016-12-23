@@ -12,6 +12,12 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -76,12 +82,12 @@ $(function() {
 <div class="ttc" id="_b_s_stochastic_process_8h_html"><div class="ttname"><a href="_b_s_stochastic_process_8h.html">BSStochasticProcess.h</a></div></div>
 <div class="ttc" id="class_generic_normal_1_1_argument_html_a2831c73fc24cfc71afc7045b47ef5d49"><div class="ttname"><a href="class_generic_normal_1_1_argument.html#a2831c73fc24cfc71afc7045b47ef5d49">GenericNormal::Argument::mean_</a></div><div class="ttdeci">double mean_</div><div class="ttdef"><b>Definition:</b> Normal.h:23</div></div>
 <div class="ttc" id="class_generic_normal_1_1_argument_html_a95dbb3649aa02c89f3614ce0836e0596"><div class="ttname"><a href="class_generic_normal_1_1_argument.html#a95dbb3649aa02c89f3614ce0836e0596">GenericNormal::Argument::variance_</a></div><div class="ttdeci">double variance_</div><div class="ttdef"><b>Definition:</b> Normal.h:24</div></div>
-<div class="ttc" id="class_black_scholes_model_html_a67c3ed604a6d057112ec7e7a1a3fb301"><div class="ttname"><a href="class_black_scholes_model.html#a67c3ed604a6d057112ec7e7a1a3fb301">BlackScholesModel::evolve</a></div><div class="ttdeci">virtual Quote evolve(Time t0, Quote &amp;x0, Time dt, double dw) const override</div><div class="ttdef"><b>Definition:</b> BlackScholesModel.cpp:18</div></div>
+<div class="ttc" id="class_black_scholes_model_html_a67c3ed604a6d057112ec7e7a1a3fb301"><div class="ttname"><a href="class_black_scholes_model.html#a67c3ed604a6d057112ec7e7a1a3fb301">BlackScholesModel::evolve</a></div><div class="ttdeci">virtual Quote evolve(Time t0, Quote &amp;x0, Time dt, double dw) const override</div><div class="ttdoc">Interface of evolve() when the required random number is only 1-d. </div><div class="ttdef"><b>Definition:</b> BlackScholesModel.cpp:18</div></div>
 <div class="ttc" id="class_black_scholes_model_html_a5665e6ea247e4f243082f5c98bbdbad6"><div class="ttname"><a href="class_black_scholes_model.html#a5665e6ea247e4f243082f5c98bbdbad6">BlackScholesModel::getMCdimension</a></div><div class="ttdeci">const vector&lt; int &gt; &amp; getMCdimension() const override</div><div class="ttdef"><b>Definition:</b> BlackScholesModel.h:20</div></div>
 <div class="ttc" id="_name_def_8h_html_ac2d3e0ba793497bcca555c7c2cf64ff3"><div class="ttname"><a href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a></div><div class="ttdeci">double Time</div><div class="ttdef"><b>Definition:</b> NameDef.h:8</div></div>
 <div class="ttc" id="class_black_scholes_model_html_a5cc9ce0cdb0f040da65677b2c07f09b5"><div class="ttname"><a href="class_black_scholes_model.html#a5cc9ce0cdb0f040da65677b2c07f09b5">BlackScholesModel::BlackScholesModel</a></div><div class="ttdeci">BlackScholesModel(std::shared_ptr&lt; BSStochasticProcess &gt; process)</div></div>
 <div class="ttc" id="class_black_scholes_model_html_a9457c1edc58d9f737f7eeeaaa6812488"><div class="ttname"><a href="class_black_scholes_model.html#a9457c1edc58d9f737f7eeeaaa6812488">BlackScholesModel::MCdimension_</a></div><div class="ttdeci">vector&lt; int &gt; MCdimension_</div><div class="ttdef"><b>Definition:</b> BlackScholesModel.h:29</div></div>
-<div class="ttc" id="class_model1_d_html"><div class="ttname"><a href="class_model1_d.html">Model1D</a></div><div class="ttdef"><b>Definition:</b> Model.h:57</div></div>
+<div class="ttc" id="class_model1_d_html"><div class="ttname"><a href="class_model1_d.html">Model1D</a></div><div class="ttdef"><b>Definition:</b> Model.h:78</div></div>
 <div class="ttc" id="class_generic_normal_1_1_argument_html"><div class="ttname"><a href="class_generic_normal_1_1_argument.html">GenericNormal::Argument</a></div><div class="ttdef"><b>Definition:</b> Normal.h:19</div></div>
 <div class="ttc" id="_name_def_8h_html_a642a6c5fd87319d922637de0e0bb0305"><div class="ttname"><a href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a></div><div class="ttdeci">double Quote</div><div class="ttdef"><b>Definition:</b> NameDef.h:10</div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -2,37 +2,58 @@
 \label{class_path}\index{Path$<$ Path\+Type $>$@{Path$<$ Path\+Type $>$}}
 
 
+Base class for a single path.  
+
+
+
+
 {\ttfamily \#include $<$Path.\+h$>$}
 
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
 typedef Path\+Type\+::path\+\_\+return\+\_\+type \hyperlink{class_path_a3b1c34a87f7867f6fed2e0a33f801e7d}{path\+\_\+return\+\_\+type}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Type of single path for Path\+Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_path_af716cfa221637551e0b0a5b78be82d5c}{Path} (const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \&time\+Grid, unsigned long dimensional)
-\item 
+\hyperlink{class_path_ab0fff5e8514331bba55ab5745fc485a4}{Path} (const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \&time\+Grid, unsigned long dimension)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 \hyperlink{class_path_a8437fecb95fe145057c957feb8b8955a}{Path} ()=default
 \item 
 virtual const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \& \hyperlink{class_path_a511b7a93c62893bcafba4749ad1dd1b3}{get\+Time\+Grid} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Return the vector of time grid. \end{DoxyCompactList}\item 
 virtual \hyperlink{class_path_a3b1c34a87f7867f6fed2e0a33f801e7d}{path\+\_\+return\+\_\+type} \& \hyperlink{class_path_a8ba07fadae45801824240317c311bb84}{get\+Values} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Return the values of path. \end{DoxyCompactList}\item 
 virtual const \hyperlink{class_path_a3b1c34a87f7867f6fed2e0a33f801e7d}{path\+\_\+return\+\_\+type} \& \hyperlink{class_path_a2490ad69198170463f98c7d8f7212917}{get\+Values} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Return the values of path. \end{DoxyCompactList}\item 
 virtual \hyperlink{class_path_a83933167b70441af12427b23d88b0447}{$\sim$\+Path} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_path_a23350d9575ae171881cd45dc1ce2a701}{time\+Grid\+\_\+}
-\item 
-unsigned long \hyperlink{class_path_ad71125972f4c21aa8233b08dea6fca13}{dimensional\+\_\+}
-\item 
+\begin{DoxyCompactList}\small\item\em Vector of time grid. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{class_path_a1011b18bd2dc22cc4b2151db076fb6f5}{dimension\+\_\+}
+\begin{DoxyCompactList}\small\item\em Dimension of a single path. \end{DoxyCompactList}\item 
 \hyperlink{class_path_a3b1c34a87f7867f6fed2e0a33f801e7d}{path\+\_\+return\+\_\+type} \hyperlink{class_path_a6f90f314a504ea1c9828dd2aa999f6ff}{vals\+\_\+}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Vector of values of a single path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Path\+Type = Single\+Variate$>$\newline
+class Path$<$ Path\+Type $>$}
+
+Base class for a single path. 
+
+This \hyperlink{class_path}{Path} class simply stores the information(e.\+g. time grid, stock price...) of a single path. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Path\+Type} & Type of path(\+Single\+Variate or Multi\+Variate).\\
+\hline
+\end{DoxyTemplParams}
+{\itshape How} {\itshape to} {\itshape use\+:} ~\newline
+The path with antithetic path or control variable path will be derived from this class by using decorator pattern.\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]\end{DoxyRefDesc}
 
 
 \subsection{Member Typedef Documentation}
@@ -45,14 +66,29 @@ typedef Path\+Type\+::path\+\_\+return\+\_\+type \hyperlink{class_path}{Path}$<$
 
 
 
+Type of single path for Path\+Type. 
+
+
+
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_path_af716cfa221637551e0b0a5b78be82d5c}{}\label{class_path_af716cfa221637551e0b0a5b78be82d5c} 
+\hypertarget{class_path_ab0fff5e8514331bba55ab5745fc485a4}{}\label{class_path_ab0fff5e8514331bba55ab5745fc485a4} 
 \index{Path@{Path}!Path@{Path}}
 \index{Path@{Path}!Path@{Path}}
 \subsubsection{\texorpdfstring{Path()}{Path()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily template$<$typename Path\+Type $>$ \\
-\hyperlink{class_path}{Path}$<$ Path\+Type $>$\+::\hyperlink{class_path}{Path} (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \&}]{time\+Grid,  }\item[{unsigned long}]{dimensional }\end{DoxyParamCaption})}
+\hyperlink{class_path}{Path}$<$ Path\+Type $>$\+::\hyperlink{class_path}{Path} (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \&}]{time\+Grid,  }\item[{unsigned long}]{dimension }\end{DoxyParamCaption})}
 
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Grid} & Vector of time grid. \\
+\hline
+{\em dimensional} & Dimension of a single path(i.\+e., 1 for \hyperlink{struct_single_variate}{Single\+Variate}, $>$1 for \hyperlink{struct_multi_variate}{Multi\+Variate}). \\
+\hline
+\end{DoxyParams}
 \hypertarget{class_path_a8437fecb95fe145057c957feb8b8955a}{}\label{class_path_a8437fecb95fe145057c957feb8b8955a} 
 \index{Path@{Path}!Path@{Path}}
 \index{Path@{Path}!Path@{Path}}
@@ -77,6 +113,13 @@ virtual \hyperlink{class_path}{Path}$<$ Path\+Type $>$\+::$\sim$\hyperlink{class
 {\footnotesize\ttfamily template$<$typename Path\+Type $>$ \\
 const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \& \hyperlink{class_path}{Path}$<$ Path\+Type $>$\+::get\+Time\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Return the vector of time grid. 
+
+\begin{DoxyReturn}{Returns}
+Vector of time grid. 
+\end{DoxyReturn}
 \hypertarget{class_path_a8ba07fadae45801824240317c311bb84}{}\label{class_path_a8ba07fadae45801824240317c311bb84} 
 \index{Path@{Path}!get\+Values@{get\+Values}}
 \index{get\+Values@{get\+Values}!Path@{Path}}
@@ -84,6 +127,13 @@ const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}
 {\footnotesize\ttfamily template$<$typename Path\+Type $>$ \\
 \hyperlink{class_path}{Path}$<$ Path\+Type $>$\+::\hyperlink{class_path_a3b1c34a87f7867f6fed2e0a33f801e7d}{path\+\_\+return\+\_\+type} \& \hyperlink{class_path}{Path}$<$ Path\+Type $>$\+::get\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Return the values of path. 
+
+\begin{DoxyReturn}{Returns}
+Vector of values of a single path. 
+\end{DoxyReturn}
 \hypertarget{class_path_a2490ad69198170463f98c7d8f7212917}{}\label{class_path_a2490ad69198170463f98c7d8f7212917} 
 \index{Path@{Path}!get\+Values@{get\+Values}}
 \index{get\+Values@{get\+Values}!Path@{Path}}
@@ -93,13 +143,24 @@ const \hyperlink{class_path}{Path}$<$ Path\+Type $>$\+::\hyperlink{class_path_a3
 
 
 
+Return the values of path. 
+
+{\itshape Constness\+:} There are two overloaded versions of this method in this class distinguished by constness. The const member function prohibits the change of data member inside the function and only can call other const member function. Const object can call const member function, where normal object can call both const and non-\/const member functions. Two versions facilitates the call by both const object and non-\/const object. \begin{DoxyReturn}{Returns}
+Vector of values of a single path. 
+\end{DoxyReturn}
+
+
 \subsection{Member Data Documentation}
-\hypertarget{class_path_ad71125972f4c21aa8233b08dea6fca13}{}\label{class_path_ad71125972f4c21aa8233b08dea6fca13} 
-\index{Path@{Path}!dimensional\+\_\+@{dimensional\+\_\+}}
-\index{dimensional\+\_\+@{dimensional\+\_\+}!Path@{Path}}
-\subsubsection{\texorpdfstring{dimensional\+\_\+}{dimensional\_}}
+\hypertarget{class_path_a1011b18bd2dc22cc4b2151db076fb6f5}{}\label{class_path_a1011b18bd2dc22cc4b2151db076fb6f5} 
+\index{Path@{Path}!dimension\+\_\+@{dimension\+\_\+}}
+\index{dimension\+\_\+@{dimension\+\_\+}!Path@{Path}}
+\subsubsection{\texorpdfstring{dimension\+\_\+}{dimension\_}}
 {\footnotesize\ttfamily template$<$typename Path\+Type = Single\+Variate$>$ \\
-unsigned long \hyperlink{class_path}{Path}$<$ Path\+Type $>$\+::dimensional\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+unsigned long \hyperlink{class_path}{Path}$<$ Path\+Type $>$\+::dimension\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dimension of a single path. 
 
 \hypertarget{class_path_a23350d9575ae171881cd45dc1ce2a701}{}\label{class_path_a23350d9575ae171881cd45dc1ce2a701} 
 \index{Path@{Path}!time\+Grid\+\_\+@{time\+Grid\+\_\+}}
@@ -108,12 +169,20 @@ unsigned long \hyperlink{class_path}{Path}$<$ Path\+Type $>$\+::dimensional\+\_\
 {\footnotesize\ttfamily template$<$typename Path\+Type = Single\+Variate$>$ \\
 vector$<$\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}$>$ \hyperlink{class_path}{Path}$<$ Path\+Type $>$\+::time\+Grid\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Vector of time grid. 
+
 \hypertarget{class_path_a6f90f314a504ea1c9828dd2aa999f6ff}{}\label{class_path_a6f90f314a504ea1c9828dd2aa999f6ff} 
 \index{Path@{Path}!vals\+\_\+@{vals\+\_\+}}
 \index{vals\+\_\+@{vals\+\_\+}!Path@{Path}}
 \subsubsection{\texorpdfstring{vals\+\_\+}{vals\_}}
 {\footnotesize\ttfamily template$<$typename Path\+Type = Single\+Variate$>$ \\
 \hyperlink{class_path_a3b1c34a87f7867f6fed2e0a33f801e7d}{path\+\_\+return\+\_\+type} \hyperlink{class_path}{Path}$<$ Path\+Type $>$\+::vals\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector of values of a single path. 
 
 
 

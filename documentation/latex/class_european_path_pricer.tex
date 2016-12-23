@@ -16,7 +16,7 @@ Inheritance diagram for European\+Path\+Pricer\+:\begin{figure}[H]
 \hyperlink{class_european_path_pricer_aa571bb1652a0d7e4f97d3d58e7c8b295}{European\+Path\+Pricer} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ \&payoff, \hyperlink{_name_def_8h_a25bee43a162de339c81f3d1caf6b887d}{Rate} discount)
 \item 
 \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_european_path_pricer_a879d161eeff532f1f3e2fc5224b3361b}{operator()} (const \hyperlink{class_path}{Path}$<$ \hyperlink{struct_single_variate}{Single\+Variate} $>$ \&path) const override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Price on a single path. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -42,6 +42,18 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ \hyperlink{class_
 \subsubsection{\texorpdfstring{operator()()}{operator()()}}
 {\footnotesize\ttfamily \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} European\+Path\+Pricer\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_path}{Path}$<$ \hyperlink{struct_single_variate}{Single\+Variate} $>$ \&}]{path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+Price on a single path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & A single path that needs to be priced. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Price after calculations. 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{class_path_pricer_a14b2a03f259bb56a24a66c9b95bdcf67}{Path\+Pricer$<$ Single\+Variate $>$}.

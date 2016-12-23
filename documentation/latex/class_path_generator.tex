@@ -2,40 +2,62 @@
 \label{class_path_generator}\index{Path\+Generator$<$ R\+N\+G, Path\+Type $>$@{Path\+Generator$<$ R\+N\+G, Path\+Type $>$}}
 
 
+Non-\/base class which uses a random number generator to generate a path for pricing.  
+
+
+
+
 {\ttfamily \#include $<$Path\+Generator.\+h$>$}
 
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
 typedef R\+N\+G\+::rng\+\_\+return\+\_\+type \hyperlink{class_path_generator_aa97ab7e55299daa0f38539816f171369}{rng\+\_\+return\+\_\+type}
-\item 
+\begin{DoxyCompactList}\small\item\em Return type of R\+NG (double or vector$<$double$>$). \end{DoxyCompactList}\item 
 typedef R\+N\+G\+::rng\+\_\+type \hyperlink{class_path_generator_a7e71cbb5376b07b319b1f042a1035335}{rng\+\_\+type}
-\item 
+\begin{DoxyCompactList}\small\item\em Internal specific type of R\+NG (e.\+g. \end{DoxyCompactList}\item 
 typedef R\+N\+G\+::rng\+\_\+argument\+\_\+type \hyperlink{class_path_generator_a2f6a701b324534da9f05ccc11c320e6b}{rng\+\_\+argument\+\_\+type}
-\item 
+\begin{DoxyCompactList}\small\item\em Argument type for R\+NG (\hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument}$\ast$ or vector$<$\+Generic\+Random\+Variable\+Generator\+::\+Argument$\ast$$>$). \end{DoxyCompactList}\item 
 typedef Path\+Type\+::path\+\_\+return\+\_\+type \hyperlink{class_path_generator_a7c8e36c418bdb1d8e99c44ac75a5e02a}{path\+\_\+return\+\_\+type}
-\item 
+\begin{DoxyCompactList}\small\item\em Return type of generated path (vector$<$double$>$ or vector$<$vector$<$double$>$$>$). \end{DoxyCompactList}\item 
 typedef Path\+Type\+::type\+\_\+of\+\_\+single\+\_\+time \hyperlink{class_path_generator_a467bc3ddaa5e9104170550617e767349}{path\+\_\+return\+\_\+type\+\_\+of\+\_\+single\+\_\+time}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Return type of path at a single time (double for 1-\/d, vector$<$double$>$ for n-\/d). \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_path_generator_af6c5d75655e077378f702248f84e2920}{Path\+Generator} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model}$<$ \hyperlink{class_path_generator_a467bc3ddaa5e9104170550617e767349}{path\+\_\+return\+\_\+type\+\_\+of\+\_\+single\+\_\+time} $>$$>$ model, const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \&time\+Grid, bool is\+Antithetic=0)
-\item 
-\hyperlink{class_path}{Path}$<$ Path\+Type $>$ \& \hyperlink{class_path_generator_aa90d7cd4206c42ac84b1ad7ee8660950}{next} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+const \hyperlink{class_path}{Path}$<$ Path\+Type $>$ \& \hyperlink{class_path_generator_ae441d07eddccff9c1b53a8230d739a16}{next} ()
+\begin{DoxyCompactList}\small\item\em Returns a newly-\/generated path. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_path_generator_a7e71cbb5376b07b319b1f042a1035335}{rng\+\_\+type} \hyperlink{class_path_generator_a9a6ba7393db535890497b21b46bdfe67}{rng\+\_\+}
-\item 
+\begin{DoxyCompactList}\small\item\em Random number generator(s). \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model}$<$ \hyperlink{class_path_generator_a467bc3ddaa5e9104170550617e767349}{path\+\_\+return\+\_\+type\+\_\+of\+\_\+single\+\_\+time} $>$ $>$ \hyperlink{class_path_generator_a92eef9405a03784534b561f56080ed8b}{model\+\_\+}
-\item 
+\begin{DoxyCompactList}\small\item\em Shared\+\_\+ptr of model. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \hyperlink{class_path}{Path}$<$ Path\+Type $>$ $>$ \hyperlink{class_path_generator_a2a085e303b74fbc34f12161eed56c331}{next\+\_\+}
-\item 
+\begin{DoxyCompactList}\small\item\em Newly-\/generated path. \end{DoxyCompactList}\item 
 bool \hyperlink{class_path_generator_a936af20e588195ca95d02cc302ea5d8b}{is\+Antithetic\+\_\+}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Antithetic variable indicator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename R\+NG, typename Path\+Type$>$\newline
+class Path\+Generator$<$ R\+N\+G, Path\+Type $>$}
+
+Non-\/base class which uses a random number generator to generate a path for pricing. 
+
+The information of path that needs to be generated is stored in its data member model\+\_\+(shared\+\_\+ptr).~\newline
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em R\+NG} & Random number generator (e.\+g., Single$<$Normal$<$$>$$>$). \\
+\hline
+{\em Path\+Type} & Type of path (\hyperlink{struct_single_variate}{Single\+Variate} or \hyperlink{struct_multi_variate}{Multi\+Variate}).\\
+\hline
+\end{DoxyTemplParams}
+{\itshape How} {\itshape to} {\itshape use\+:} ~\newline
+It cannnot be derived from since it has no virtual member functions, but the R\+NG type and Path\+Type need to be provided through template arguments and model\+\_\+(information of model(e.\+g. \hyperlink{class_l_m_m}{L\+MM})) should be taken in through constructors. 
 
 \subsection{Member Typedef Documentation}
 \hypertarget{class_path_generator_a7c8e36c418bdb1d8e99c44ac75a5e02a}{}\label{class_path_generator_a7c8e36c418bdb1d8e99c44ac75a5e02a} 
@@ -45,12 +67,20 @@ bool \hyperlink{class_path_generator_a936af20e588195ca95d02cc302ea5d8b}{is\+Anti
 {\footnotesize\ttfamily template$<$typename R\+NG, typename Path\+Type$>$ \\
 typedef Path\+Type\+::path\+\_\+return\+\_\+type \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$\+::\hyperlink{class_path_generator_a7c8e36c418bdb1d8e99c44ac75a5e02a}{path\+\_\+return\+\_\+type}}
 
+
+
+Return type of generated path (vector$<$double$>$ or vector$<$vector$<$double$>$$>$). 
+
 \hypertarget{class_path_generator_a467bc3ddaa5e9104170550617e767349}{}\label{class_path_generator_a467bc3ddaa5e9104170550617e767349} 
 \index{Path\+Generator@{Path\+Generator}!path\+\_\+return\+\_\+type\+\_\+of\+\_\+single\+\_\+time@{path\+\_\+return\+\_\+type\+\_\+of\+\_\+single\+\_\+time}}
 \index{path\+\_\+return\+\_\+type\+\_\+of\+\_\+single\+\_\+time@{path\+\_\+return\+\_\+type\+\_\+of\+\_\+single\+\_\+time}!Path\+Generator@{Path\+Generator}}
 \subsubsection{\texorpdfstring{path\+\_\+return\+\_\+type\+\_\+of\+\_\+single\+\_\+time}{path\_return\_type\_of\_single\_time}}
 {\footnotesize\ttfamily template$<$typename R\+NG, typename Path\+Type$>$ \\
 typedef Path\+Type\+::type\+\_\+of\+\_\+single\+\_\+time \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$\+::\hyperlink{class_path_generator_a467bc3ddaa5e9104170550617e767349}{path\+\_\+return\+\_\+type\+\_\+of\+\_\+single\+\_\+time}}
+
+
+
+Return type of path at a single time (double for 1-\/d, vector$<$double$>$ for n-\/d). 
 
 \hypertarget{class_path_generator_a2f6a701b324534da9f05ccc11c320e6b}{}\label{class_path_generator_a2f6a701b324534da9f05ccc11c320e6b} 
 \index{Path\+Generator@{Path\+Generator}!rng\+\_\+argument\+\_\+type@{rng\+\_\+argument\+\_\+type}}
@@ -59,12 +89,20 @@ typedef Path\+Type\+::type\+\_\+of\+\_\+single\+\_\+time \hyperlink{class_path_g
 {\footnotesize\ttfamily template$<$typename R\+NG, typename Path\+Type$>$ \\
 typedef R\+N\+G\+::rng\+\_\+argument\+\_\+type \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$\+::\hyperlink{class_path_generator_a2f6a701b324534da9f05ccc11c320e6b}{rng\+\_\+argument\+\_\+type}}
 
+
+
+Argument type for R\+NG (\hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument}$\ast$ or vector$<$\+Generic\+Random\+Variable\+Generator\+::\+Argument$\ast$$>$). 
+
 \hypertarget{class_path_generator_aa97ab7e55299daa0f38539816f171369}{}\label{class_path_generator_aa97ab7e55299daa0f38539816f171369} 
 \index{Path\+Generator@{Path\+Generator}!rng\+\_\+return\+\_\+type@{rng\+\_\+return\+\_\+type}}
 \index{rng\+\_\+return\+\_\+type@{rng\+\_\+return\+\_\+type}!Path\+Generator@{Path\+Generator}}
 \subsubsection{\texorpdfstring{rng\+\_\+return\+\_\+type}{rng\_return\_type}}
 {\footnotesize\ttfamily template$<$typename R\+NG, typename Path\+Type$>$ \\
 typedef R\+N\+G\+::rng\+\_\+return\+\_\+type \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$\+::\hyperlink{class_path_generator_aa97ab7e55299daa0f38539816f171369}{rng\+\_\+return\+\_\+type}}
+
+
+
+Return type of R\+NG (double or vector$<$double$>$). 
 
 \hypertarget{class_path_generator_a7e71cbb5376b07b319b1f042a1035335}{}\label{class_path_generator_a7e71cbb5376b07b319b1f042a1035335} 
 \index{Path\+Generator@{Path\+Generator}!rng\+\_\+type@{rng\+\_\+type}}
@@ -74,6 +112,10 @@ typedef R\+N\+G\+::rng\+\_\+return\+\_\+type \hyperlink{class_path_generator}{Pa
 typedef R\+N\+G\+::rng\+\_\+type \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$\+::\hyperlink{class_path_generator_a7e71cbb5376b07b319b1f042a1035335}{rng\+\_\+type}}
 
 
+
+Internal specific type of R\+NG (e.\+g. 
+
+\hyperlink{class_normal}{Normal}, \hyperlink{class_multi_rand_generator}{Multi\+Rand\+Generator}$<$Normal$<$$>$,Normal$<$$>$$>$). 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{class_path_generator_af6c5d75655e077378f702248f84e2920}{}\label{class_path_generator_af6c5d75655e077378f702248f84e2920} 
@@ -85,15 +127,46 @@ typedef R\+N\+G\+::rng\+\_\+type \hyperlink{class_path_generator}{Path\+Generato
 
 
 
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & Shared\+\_\+ptr of model. \\
+\hline
+{\em time\+Grid} & Vector of monitored times. \\
+\hline
+{\em is\+Antithetic} & =1 means to calculate antithetic path; =0 not to calculate antithetic path. \\
+\hline
+\end{DoxyParams}
+
+
 \subsection{Member Function Documentation}
-\hypertarget{class_path_generator_aa90d7cd4206c42ac84b1ad7ee8660950}{}\label{class_path_generator_aa90d7cd4206c42ac84b1ad7ee8660950} 
+\hypertarget{class_path_generator_ae441d07eddccff9c1b53a8230d739a16}{}\label{class_path_generator_ae441d07eddccff9c1b53a8230d739a16} 
 \index{Path\+Generator@{Path\+Generator}!next@{next}}
 \index{next@{next}!Path\+Generator@{Path\+Generator}}
 \subsubsection{\texorpdfstring{next()}{next()}}
 {\footnotesize\ttfamily template$<$typename R\+NG , typename Path\+Type $>$ \\
-\hyperlink{class_path}{Path}$<$ Path\+Type $>$ \& \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+const \hyperlink{class_path}{Path}$<$ Path\+Type $>$ \& \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Returns a newly-\/generated path. 
+
+~\newline
+{\itshape Constness\+:} Definitely it is not a const member function, since inside data member next\+\_\+(shared\+\_\+ptr) will be changed. Return reference type is const, since logically users cannot modify the path by using this reference. \begin{DoxyReturn}{Returns}
+Reference of a path. 
+\end{DoxyReturn}
+Implementation involves several steps. ~\newline
+
+\begin{DoxyEnumerate}
+\item It updates the initial value of path from model\+\_\+; ~\newline
+
+\item For each time t, model\+\_\+ set up the arguments needed for the rng\+\_\+(random number generator; ~\newline
+
+\item rng\+\_\+ generates a new sequence of random numbers; ~\newline
+
+\item model\+\_\+ evolves according to the random numbers.
+\end{DoxyEnumerate}
 
 \subsection{Member Data Documentation}
 \hypertarget{class_path_generator_a936af20e588195ca95d02cc302ea5d8b}{}\label{class_path_generator_a936af20e588195ca95d02cc302ea5d8b} 
@@ -103,12 +176,20 @@ typedef R\+N\+G\+::rng\+\_\+type \hyperlink{class_path_generator}{Path\+Generato
 {\footnotesize\ttfamily template$<$typename R\+NG, typename Path\+Type$>$ \\
 bool \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$\+::is\+Antithetic\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Antithetic variable indicator. 
+
 \hypertarget{class_path_generator_a92eef9405a03784534b561f56080ed8b}{}\label{class_path_generator_a92eef9405a03784534b561f56080ed8b} 
 \index{Path\+Generator@{Path\+Generator}!model\+\_\+@{model\+\_\+}}
 \index{model\+\_\+@{model\+\_\+}!Path\+Generator@{Path\+Generator}}
 \subsubsection{\texorpdfstring{model\+\_\+}{model\_}}
 {\footnotesize\ttfamily template$<$typename R\+NG, typename Path\+Type$>$ \\
 std\+::shared\+\_\+ptr$<$\hyperlink{class_model}{Model}$<$\hyperlink{class_path_generator_a467bc3ddaa5e9104170550617e767349}{path\+\_\+return\+\_\+type\+\_\+of\+\_\+single\+\_\+time}$>$ $>$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$\+::model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Shared\+\_\+ptr of model. 
 
 \hypertarget{class_path_generator_a2a085e303b74fbc34f12161eed56c331}{}\label{class_path_generator_a2a085e303b74fbc34f12161eed56c331} 
 \index{Path\+Generator@{Path\+Generator}!next\+\_\+@{next\+\_\+}}
@@ -117,12 +198,20 @@ std\+::shared\+\_\+ptr$<$\hyperlink{class_model}{Model}$<$\hyperlink{class_path_
 {\footnotesize\ttfamily template$<$typename R\+NG, typename Path\+Type$>$ \\
 std\+::shared\+\_\+ptr$<$\hyperlink{class_path}{Path}$<$Path\+Type$>$ $>$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$\+::next\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Newly-\/generated path. 
+
 \hypertarget{class_path_generator_a9a6ba7393db535890497b21b46bdfe67}{}\label{class_path_generator_a9a6ba7393db535890497b21b46bdfe67} 
 \index{Path\+Generator@{Path\+Generator}!rng\+\_\+@{rng\+\_\+}}
 \index{rng\+\_\+@{rng\+\_\+}!Path\+Generator@{Path\+Generator}}
 \subsubsection{\texorpdfstring{rng\+\_\+}{rng\_}}
 {\footnotesize\ttfamily template$<$typename R\+NG, typename Path\+Type$>$ \\
 \hyperlink{class_path_generator_a7e71cbb5376b07b319b1f042a1035335}{rng\+\_\+type} \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$\+::rng\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Random number generator(s). 
 
 
 

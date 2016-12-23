@@ -18,7 +18,7 @@ Inheritance diagram for Black\+Scholes\+Model\+:\begin{figure}[H]
 \hyperlink{class_black_scholes_model_a59aa736bd849bc59fed035f702e9813b}{Black\+Scholes\+Model} (double \hyperlink{_uniform_l_ecuyer_r_n_g1_8cpp_a372556d73d7e403d9b677b89b21ee572}{r}, double \hyperlink{_uniform_l_ecuyer_r_n_g1_8cpp_a5cf10165494588b84d4231e0e8a5b1a9}{q}, double sigma, double spot)
 \item 
 virtual \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \hyperlink{class_black_scholes_model_a67c3ed604a6d057112ec7e7a1a3fb301}{evolve} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t0, \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \&x0, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} dt, double dw) const override
-\item 
+\begin{DoxyCompactList}\small\item\em Interface of \hyperlink{class_black_scholes_model_a67c3ed604a6d057112ec7e7a1a3fb301}{evolve()} when the required random number is only 1-\/d. \end{DoxyCompactList}\item 
 const vector$<$ int $>$ \& \hyperlink{class_black_scholes_model_a5665e6ea247e4f243082f5c98bbdbad6}{get\+M\+Cdimension} () const override
 \item 
 void \hyperlink{class_black_scholes_model_a04a6ba4c59cd70a92dedbeb482e9d5aa}{setup\+Argument} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} dt, \hyperlink{class_generic_random_variable_generator_1_1_argument}{Generic\+Random\+Variable\+Generator\+::\+Argument} $\ast$arg) override
@@ -54,6 +54,24 @@ vector$<$ int $>$ \hyperlink{class_black_scholes_model_a9457c1edc58d9f737f7eeeaa
 {\footnotesize\ttfamily \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} Black\+Scholes\+Model\+::evolve (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{t0,  }\item[{\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \&}]{x0,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{dt,  }\item[{double}]{dw }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
+
+Interface of \hyperlink{class_black_scholes_model_a67c3ed604a6d057112ec7e7a1a3fb301}{evolve()} when the required random number is only 1-\/d. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t0} & Last time point, consistent with x0. \\
+\hline
+{\em x0} & Value at time t0. \\
+\hline
+{\em dt} & Time step. \\
+\hline
+{\em dw} & Random number required. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value type of path at single time point.
+\end{DoxyReturn}
+{\itshape Implementation\+:} There are two versions of \hyperlink{class_black_scholes_model_a67c3ed604a6d057112ec7e7a1a3fb301}{evolve()} as interfaces, distinguished by type of random numbers dw. Each derived class should only override one of them, so they cannot be declared as pure virtual function. And they are supposed not to be called, so if they are called by mistake, they should throw \char`\"{}mismatch\char`\"{} error. 
 
 Reimplemented from \hyperlink{class_model_a18b1fe1476b5adde8d6125e7f6a7f932}{Model$<$ double $>$}.
 

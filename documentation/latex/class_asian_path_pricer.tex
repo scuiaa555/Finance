@@ -16,7 +16,7 @@ Inheritance diagram for Asian\+Path\+Pricer\+:\begin{figure}[H]
 \hyperlink{class_asian_path_pricer_a8e295461d8e635e39d8075810bcc1e6a}{Asian\+Path\+Pricer} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_payoff}{Payoff} $>$ payoff, \hyperlink{_name_def_8h_a25bee43a162de339c81f3d1caf6b887d}{Rate} discount, std\+::shared\+\_\+ptr$<$ vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ $>$ monitored\+Times\+Ptr, \hyperlink{class_asian_option_add7292791bf85820ff9fdbfd4407f3b9}{Asian\+Option\+::\+Average\+Type} average\+Type, bool is\+Antithetic)
 \item 
 \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_asian_path_pricer_a929e8a33447f977bfc947e1d5344e353}{operator()} (const \hyperlink{class_path}{Path}$<$ \hyperlink{struct_single_variate}{Single\+Variate} $>$ \&path) const override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Price on a single path. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -61,6 +61,18 @@ bool \hyperlink{class_asian_path_pricer_ad42c5d8d3b3d1c66d01620491c07bef6}{is\+A
 \subsubsection{\texorpdfstring{operator()()}{operator()()}}
 {\footnotesize\ttfamily \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} Asian\+Path\+Pricer\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_path}{Path}$<$ \hyperlink{struct_single_variate}{Single\+Variate} $>$ \&}]{path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+Price on a single path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & A single path that needs to be priced. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Price after calculations. 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{class_path_pricer_a14b2a03f259bb56a24a66c9b95bdcf67}{Path\+Pricer$<$ Single\+Variate $>$}.

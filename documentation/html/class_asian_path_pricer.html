@@ -12,6 +12,12 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -84,6 +90,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e295461d8e635e39d8075810bcc1e6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_asian_path_pricer.html#a8e295461d8e635e39d8075810bcc1e6a">AsianPathPricer</a> (std::shared_ptr&lt; <a class="el" href="class_payoff.html">Payoff</a> &gt; payoff, <a class="el" href="_name_def_8h.html#a25bee43a162de339c81f3d1caf6b887d">Rate</a> discount, std::shared_ptr&lt; vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt; &gt; monitoredTimesPtr, <a class="el" href="class_asian_option.html#add7292791bf85820ff9fdbfd4407f3b9">AsianOption::AverageType</a> averageType, bool isAntithetic)</td></tr>
 <tr class="separator:a8e295461d8e635e39d8075810bcc1e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a929e8a33447f977bfc947e1d5344e353"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_asian_path_pricer.html#a929e8a33447f977bfc947e1d5344e353">operator()</a> (const <a class="el" href="class_path.html">Path</a>&lt; <a class="el" href="struct_single_variate.html">SingleVariate</a> &gt; &amp;path) const override</td></tr>
+<tr class="memdesc:a929e8a33447f977bfc947e1d5344e353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Price on a single path.  <a href="#a929e8a33447f977bfc947e1d5344e353">More...</a><br /></td></tr>
 <tr class="separator:a929e8a33447f977bfc947e1d5344e353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -213,6 +220,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Price on a single path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>A single path that needs to be priced. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Price after calculations. </dd></dl>
 
 <p>Implements <a class="el" href="class_path_pricer.html#a14b2a03f259bb56a24a66c9b95bdcf67">PathPricer&lt; SingleVariate &gt;</a>.</p>
 

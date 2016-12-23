@@ -2,13 +2,18 @@
 \label{class_mc_model}\index{Mc\+Model$<$ R\+N\+G, Path\+Type $>$@{Mc\+Model$<$ R\+N\+G, Path\+Type $>$}}
 
 
+Non-\/base class which encapsulates a path generator and a path pricer and a statistic class.  
+
+
+
+
 {\ttfamily \#include $<$Mc\+Model.\+h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_mc_model_a2c4ccfd7b882e80516e1f9733243e48d}{Mc\+Model} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$$>$ \&path\+Generator, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer}$<$ Path\+Type $>$$>$ path\+Pricer)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 void \hyperlink{class_mc_model_a6ce369cb607a221259e4a93bb63ea4ec}{add\+Samples} (unsigned long num\+Samples)
 \item 
 const \hyperlink{class_m_c_statistics}{M\+C\+Statistics} \& \hyperlink{class_mc_model_a07af7562a83c0bc16ba822ac52154684}{get\+Statistics} () const
@@ -24,6 +29,21 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer}$<$ Path\+T
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename R\+NG, typename Path\+Type$>$\newline
+class Mc\+Model$<$ R\+N\+G, Path\+Type $>$}
+
+Non-\/base class which encapsulates a path generator and a path pricer and a statistic class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em R\+NG} & Random number generator type(e.\+g., \hyperlink{struct_single_random}{Single\+Random}$<$Normal$<$$>$$>$, \hyperlink{struct_multi_random}{Multi\+Random}$<$Normal$<$$>$, Normal$<$$>$$>$). \\
+\hline
+{\em Path\+Type} & Type of path(i.\+e., \hyperlink{struct_single_variate}{Single\+Variate} or \hyperlink{struct_multi_variate}{Multi\+Variate}). \\
+\hline
+\end{DoxyTemplParams}
+
+
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{class_mc_model_a2c4ccfd7b882e80516e1f9733243e48d}{}\label{class_mc_model_a2c4ccfd7b882e80516e1f9733243e48d} 
 \index{Mc\+Model@{Mc\+Model}!Mc\+Model@{Mc\+Model}}
@@ -32,6 +52,17 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer}$<$ Path\+T
 {\footnotesize\ttfamily template$<$typename R\+NG , typename Path\+Type $>$ \\
 \hyperlink{class_mc_model}{Mc\+Model}$<$ R\+NG, Path\+Type $>$\+::\hyperlink{class_mc_model}{Mc\+Model} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$$>$ \&}]{path\+Generator,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer}$<$ Path\+Type $>$$>$}]{path\+Pricer }\end{DoxyParamCaption})}
 
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\+Generator} & Shared\+\_\+ptr of a path generator. \\
+\hline
+{\em path\+Pricer} & Shared\+\_\+ptr of a path pricer. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}

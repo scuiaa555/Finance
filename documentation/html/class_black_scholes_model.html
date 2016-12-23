@@ -12,6 +12,12 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -86,6 +92,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a59aa736bd849bc59fed035f702e9813b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_black_scholes_model.html#a59aa736bd849bc59fed035f702e9813b">BlackScholesModel</a> (double <a class="el" href="_uniform_l_ecuyer_r_n_g1_8cpp.html#a372556d73d7e403d9b677b89b21ee572">r</a>, double <a class="el" href="_uniform_l_ecuyer_r_n_g1_8cpp.html#a5cf10165494588b84d4231e0e8a5b1a9">q</a>, double sigma, double spot)</td></tr>
 <tr class="separator:a59aa736bd849bc59fed035f702e9813b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67c3ed604a6d057112ec7e7a1a3fb301"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_black_scholes_model.html#a67c3ed604a6d057112ec7e7a1a3fb301">evolve</a> (<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> t0, <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &amp;x0, <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> dt, double dw) const override</td></tr>
+<tr class="memdesc:a67c3ed604a6d057112ec7e7a1a3fb301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface of <a class="el" href="class_black_scholes_model.html#a67c3ed604a6d057112ec7e7a1a3fb301" title="Interface of evolve() when the required random number is only 1-d. ">evolve()</a> when the required random number is only 1-d.  <a href="#a67c3ed604a6d057112ec7e7a1a3fb301">More...</a><br /></td></tr>
 <tr class="separator:a67c3ed604a6d057112ec7e7a1a3fb301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5665e6ea247e4f243082f5c98bbdbad6"><td class="memItemLeft" align="right" valign="top">const vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_black_scholes_model.html#a5665e6ea247e4f243082f5c98bbdbad6">getMCdimension</a> () const override</td></tr>
 <tr class="separator:a5665e6ea247e4f243082f5c98bbdbad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,6 +238,19 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Interface of <a class="el" href="class_black_scholes_model.html#a67c3ed604a6d057112ec7e7a1a3fb301" title="Interface of evolve() when the required random number is only 1-d. ">evolve()</a> when the required random number is only 1-d. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t0</td><td>Last time point, consistent with x0. </td></tr>
+    <tr><td class="paramname">x0</td><td>Value at time t0. </td></tr>
+    <tr><td class="paramname">dt</td><td>Time step. </td></tr>
+    <tr><td class="paramname">dw</td><td>Random number required. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value type of path at single time point.</dd></dl>
+<p><em>Implementation:</em> There are two versions of <a class="el" href="class_black_scholes_model.html#a67c3ed604a6d057112ec7e7a1a3fb301" title="Interface of evolve() when the required random number is only 1-d. ">evolve()</a> as interfaces, distinguished by type of random numbers dw. Each derived class should only override one of them, so they cannot be declared as pure virtual function. And they are supposed not to be called, so if they are called by mistake, they should throw "mismatch" error. </p>
 
 <p>Reimplemented from <a class="el" href="class_model.html#a18b1fe1476b5adde8d6125e7f6a7f932">Model&lt; double &gt;</a>.</p>
 

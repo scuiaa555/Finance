@@ -12,6 +12,12 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -101,12 +107,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a1e4fff8cadebec5aae259fc747dc12a3"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG, PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#a1e4fff8cadebec5aae259fc747dc12a3">pathGenerator</a> () override</td></tr>
-<tr class="memdesc:a1e4fff8cadebec5aae259fc747dc12a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathGenerator to the derived class.  <a href="#a1e4fff8cadebec5aae259fc747dc12a3">More...</a><br /></td></tr>
-<tr class="separator:a1e4fff8cadebec5aae259fc747dc12a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab07c50b4305c3e65f68ce3f0c9b740d6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a>&lt; PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#ab07c50b4305c3e65f68ce3f0c9b740d6">pathPricer</a> () override</td></tr>
-<tr class="memdesc:ab07c50b4305c3e65f68ce3f0c9b740d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathPricer to the derived class.  <a href="#ab07c50b4305c3e65f68ce3f0c9b740d6">More...</a><br /></td></tr>
-<tr class="separator:ab07c50b4305c3e65f68ce3f0c9b740d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f14a7ff770c69ce802eb662230e4cb"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG, PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#ac0f14a7ff770c69ce802eb662230e4cb">pathGenerator</a> () const override</td></tr>
+<tr class="memdesc:ac0f14a7ff770c69ce802eb662230e4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathGenerator to the derived class.  <a href="#ac0f14a7ff770c69ce802eb662230e4cb">More...</a><br /></td></tr>
+<tr class="separator:ac0f14a7ff770c69ce802eb662230e4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4fb94329470643f2edc491bfcb31bdf"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a>&lt; PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#ad4fb94329470643f2edc491bfcb31bdf">pathPricer</a> () const override</td></tr>
+<tr class="memdesc:ad4fb94329470643f2edc491bfcb31bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathPricer to the derived class.  <a href="#ad4fb94329470643f2edc491bfcb31bdf">More...</a><br /></td></tr>
+<tr class="separator:ad4fb94329470643f2edc491bfcb31bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4e0ab6834416144221f1a91dd154587"><td class="memItemLeft" align="right" valign="top">const vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_european_engine.html#ae4e0ab6834416144221f1a91dd154587">timeGrid</a> () const override</td></tr>
 <tr class="memdesc:ae4e0ab6834416144221f1a91dd154587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of setting time grid to the derived class.  <a href="#ae4e0ab6834416144221f1a91dd154587">More...</a><br /></td></tr>
 <tr class="separator:ae4e0ab6834416144221f1a91dd154587"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,8 +216,8 @@ template&lt;typename RNG , typename PathType &gt; </div>
 
 </div>
 </div>
-<a id="a1e4fff8cadebec5aae259fc747dc12a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e4fff8cadebec5aae259fc747dc12a3">&sect;&nbsp;</a></span>pathGenerator()</h2>
+<a id="ac0f14a7ff770c69ce802eb662230e4cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f14a7ff770c69ce802eb662230e4cb">&sect;&nbsp;</a></span>pathGenerator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +231,7 @@ template&lt;typename RNG , typename PathType &gt; </div>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG, PathType &gt; &gt; <a class="el" href="class_mc_european_engine.html">McEuropeanEngine</a>&lt; RNG, PathType &gt;::pathGenerator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -236,14 +242,14 @@ template&lt;typename RNG , typename PathType &gt; </div>
 </div><div class="memdoc">
 
 <p>Defer the implementation of pathGenerator to the derived class. </p>
-<dl class="section return"><dt>Returns</dt><dd>shared_ptr of path generator. </dd></dl>
+<p>Provide the mcModel with a specific path generator. </p><dl class="section return"><dt>Returns</dt><dd>shared_ptr of path generator. </dd></dl>
 
-<p>Implements <a class="el" href="class_mc_simulation.html#ad2338ca624a9bbfaec8e4d882471d546">McSimulation&lt; RNG, PathType &gt;</a>.</p>
+<p>Implements <a class="el" href="class_mc_simulation.html#afa7ba8d9b534837e7c62f47c6d20a353">McSimulation&lt; RNG, PathType &gt;</a>.</p>
 
 </div>
 </div>
-<a id="ab07c50b4305c3e65f68ce3f0c9b740d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab07c50b4305c3e65f68ce3f0c9b740d6">&sect;&nbsp;</a></span>pathPricer()</h2>
+<a id="ad4fb94329470643f2edc491bfcb31bdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4fb94329470643f2edc491bfcb31bdf">&sect;&nbsp;</a></span>pathPricer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,7 +263,7 @@ template&lt;typename RNG , typename PathType &gt; </div>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a>&lt; PathType &gt; &gt; <a class="el" href="class_mc_european_engine.html">McEuropeanEngine</a>&lt; RNG, PathType &gt;::pathPricer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -270,7 +276,7 @@ template&lt;typename RNG , typename PathType &gt; </div>
 <p>Defer the implementation of pathPricer to the derived class. </p>
 <dl class="section return"><dt>Returns</dt><dd>shared_ptr of path pricer. </dd></dl>
 
-<p>Implements <a class="el" href="class_mc_simulation.html#a4d755ea777c2f3a2ec2fcc70acf71a6d">McSimulation&lt; RNG, PathType &gt;</a>.</p>
+<p>Implements <a class="el" href="class_mc_simulation.html#a64a3e635c1fa9d25797dc0cbad767238">McSimulation&lt; RNG, PathType &gt;</a>.</p>
 
 </div>
 </div>
@@ -300,7 +306,7 @@ template&lt;typename RNG , typename PathType &gt; </div>
 </div><div class="memdoc">
 
 <p>Defer the implementation of setting time grid to the derived class. </p>
-<p>Time grid is a vector which is saved in the <a class="el" href="class_path.html">Path</a> class.<br />
+<p>Time grid is a vector which is saved in the <a class="el" href="class_path.html" title="Base class for a single path. ">Path</a> class.<br />
 <em>Constness:</em> Return by value, since it is a local variable. </p><dl class="section return"><dt>Returns</dt><dd>Vector of time grid. </dd></dl>
 
 <p>Implements <a class="el" href="class_mc_simulation.html#acf7d24981be3025a2cf07f8623dbe8ce">McSimulation&lt; RNG, PathType &gt;</a>.</p>

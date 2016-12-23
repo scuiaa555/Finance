@@ -16,9 +16,9 @@ public:
     McAsianEngine(const std::shared_ptr<Model<double>> model, Time timeStep, unsigned long maxSamples,
                   unsigned long minSamples, bool isAntithetic = 0);
 
-    std::shared_ptr<PathGenerator<RNG,PathType>> pathGenerator() override;
+    std::shared_ptr<PathGenerator<RNG,PathType>> pathGenerator() const override;
 
-    std::shared_ptr<PathPricer<SingleVariate>> pathPricer() override;
+    std::shared_ptr<PathPricer<SingleVariate>> pathPricer() const override;
 
     vector<Time> timeGrid() override;
 
@@ -42,13 +42,13 @@ McAsianEngine<RNG>::McAsianEngine(const std::shared_ptr<Model> model, Time timeS
         isAntithetic_(isAntithetic) {}
 
 template<typename RNG>
-std::shared_ptr<PathGenerator<RNG>> McAsianEngine<RNG>::pathGenerator() {
+std::shared_ptr<PathGenerator<RNG>> McAsianEngine<RNG>::pathGenerator() const {
     return std::shared_ptr<PathGenerator<RNG>>(
             new PathGenerator<RNG>(model_, timeGrid(), isAntithetic_));
 }
 
 template<typename RNG>
-std::shared_ptr<PathPricer> McAsianEngine<RNG>::pathPricer() {
+std::shared_ptr<PathPricer> McAsianEngine<RNG>::pathPricer() const {
     AsianOption::Arguments *arguments;
     arguments = dynamic_cast<AsianOption::Arguments *>(this->getArguments());
     std::shared_ptr<VanillaPayoff> payoff = std::dynamic_pointer_cast<VanillaPayoff>(arguments->payoff_);

@@ -2,14 +2,33 @@
 \label{class_path_pricer}\index{Path\+Pricer$<$ Path\+Type $>$@{Path\+Pricer$<$ Path\+Type $>$}}
 
 
+Base class for path pricers.  
+
+
+
+
 {\ttfamily \#include $<$Path\+Pricer.\+h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_path_pricer_a14b2a03f259bb56a24a66c9b95bdcf67}{operator()} (const \hyperlink{class_path}{Path}$<$ Path\+Type $>$ \&path) const =0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Price on a single path. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Path\+Type$>$\newline
+class Path\+Pricer$<$ Path\+Type $>$}
+
+Base class for path pricers. 
+
+Any path pricers(e.\+g. Mc\+European\+Path\+Pricer, Analytic\+European\+Path\+Pricer) will derive from this class. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Path\+Type} & \hyperlink{class_path}{Path} type that is consistent with the path pricer.\\
+\hline
+\end{DoxyTemplParams}
+{\itshape How} {\itshape to} {\itshape use\+:} ~\newline
+The derived class should know the exact path type that is needed. Also, it should implement the pure virtual operator() which does the calculations of pricing based on a single path. 
 
 \subsection{Member Function Documentation}
 \hypertarget{class_path_pricer_a14b2a03f259bb56a24a66c9b95bdcf67}{}\label{class_path_pricer_a14b2a03f259bb56a24a66c9b95bdcf67} 
@@ -19,6 +38,18 @@ virtual \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyper
 {\footnotesize\ttfamily template$<$typename Path\+Type$>$ \\
 virtual \hyperlink{_name_def_8h_a5a9d48c16a694e9a2d9f1eca730dc8c5}{Money} \hyperlink{class_path_pricer}{Path\+Pricer}$<$ Path\+Type $>$\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_path}{Path}$<$ Path\+Type $>$ \&}]{path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+
+
+Price on a single path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & A single path that needs to be priced. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Price after calculations. 
+\end{DoxyReturn}
 
 
 Implemented in \hyperlink{class_asian_path_pricer_a929e8a33447f977bfc947e1d5344e353}{Asian\+Path\+Pricer}, and \hyperlink{class_european_path_pricer_a879d161eeff532f1f3e2fc5224b3361b}{European\+Path\+Pricer}.

@@ -16,14 +16,14 @@ public:
 
     MertonJumpModel(double r, double q, double sigma, double lambda, double jumpMean, double jumpVariance, double spot);
 
-    virtual Quote evolve(Time t0, Quote &x0, Time dt, vector<double> dw) const override;
+    virtual void evolve(Time t0, Quote &x0, Time dt, vector<double> dw, double &value) const override;
 
-    const vector<int> &getMCdimension() const override { return MCdimension_; }
+//    const vector<int> &getMCdimension() const override { return MCdimension_; }
 
     void setupArgument(Time t, Time dt, vector<GenericRandomVariableGenerator::Argument *> args) override;
 
 private:
-    vector<int> MCdimension_;
+//    vector<int> MCdimension_;
 };
 
 #endif //FINANCE_MERTONJUMPMODEL_H

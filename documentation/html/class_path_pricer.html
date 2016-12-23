@@ -12,6 +12,12 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -66,14 +72,31 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Base class for path pricers.  
+ <a href="class_path_pricer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_path_pricer_8h_source.html">PathPricer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a14b2a03f259bb56a24a66c9b95bdcf67"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path_pricer.html#a14b2a03f259bb56a24a66c9b95bdcf67">operator()</a> (const <a class="el" href="class_path.html">Path</a>&lt; PathType &gt; &amp;path) const =0</td></tr>
+<tr class="memdesc:a14b2a03f259bb56a24a66c9b95bdcf67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Price on a single path.  <a href="#a14b2a03f259bb56a24a66c9b95bdcf67">More...</a><br /></td></tr>
 <tr class="separator:a14b2a03f259bb56a24a66c9b95bdcf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename PathType&gt;<br />
+class PathPricer&lt; PathType &gt;</h3>
+
+<p>Base class for path pricers. </p>
+<p>Any path pricers(e.g. McEuropeanPathPricer, AnalyticEuropeanPathPricer) will derive from this class. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">PathType</td><td><a class="el" href="class_path.html" title="Base class for a single path. ">Path</a> type that is consistent with the path pricer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><em>How</em> <em>to</em> <em>use:</em> <br />
+The derived class should know the exact path type that is needed. Also, it should implement the pure virtual operator() which does the calculations of pricing based on a single path. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a14b2a03f259bb56a24a66c9b95bdcf67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14b2a03f259bb56a24a66c9b95bdcf67">&sect;&nbsp;</a></span>operator()()</h2>
 
@@ -99,6 +122,15 @@ template&lt;typename PathType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Price on a single path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>A single path that needs to be priced. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Price after calculations. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_asian_path_pricer.html#a929e8a33447f977bfc947e1d5344e353">AsianPathPricer</a>, and <a class="el" href="class_european_path_pricer.html#a879d161eeff532f1f3e2fc5224b3361b">EuropeanPathPricer</a>.</p>
 

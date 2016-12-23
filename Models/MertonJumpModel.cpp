@@ -13,12 +13,12 @@ MertonJumpModel::MertonJumpModel(double r, double q, double sigma, double lambda
                                                jumpVariance))) {
 }
 
-Quote MertonJumpModel::evolve(Time t0, Quote &x0, Time dt, vector<double> dw) const {
+void MertonJumpModel::evolve(Time t0, Quote &x0, Time dt, vector<double> dw, double &value) const {
     shared_ptr<LogNormalWithNormalJump<SingleVol>> process = std::dynamic_pointer_cast<LogNormalWithNormalJump<SingleVol>>(
             process_);
     double drift = (*std::dynamic_pointer_cast<ConstantParameter>(process->getDrift()))();
     double sigma = (*std::dynamic_pointer_cast<ConstantParameter>(process->getVolatility()))();
-    return x0 * exp(sigma * dw[0] + (drift - 0.5 * sigma * sigma) * dt + dw[1]);
+    value = x0 * exp(sigma * dw[0] + (drift - 0.5 * sigma * sigma) * dt + dw[1]);
 }
 
 void MertonJumpModel::setupArgument(Time t, Time dt, vector<GenericRandomVariableGenerator::Argument *> args) {

@@ -2,13 +2,18 @@
 \label{class_model}\index{Model$<$ Type\+\_\+of\+\_\+single\+\_\+time $>$@{Model$<$ Type\+\_\+of\+\_\+single\+\_\+time $>$}}
 
 
+Base class for all models(e.\+g.  
+
+
+
+
 {\ttfamily \#include $<$Model.\+h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual Type\+\_\+of\+\_\+single\+\_\+time \hyperlink{class_model_a18b1fe1476b5adde8d6125e7f6a7f932}{evolve} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t0, Type\+\_\+of\+\_\+single\+\_\+time \&x0, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} dt, double dw) const
-\item 
+\begin{DoxyCompactList}\small\item\em Interface of \hyperlink{class_model_a18b1fe1476b5adde8d6125e7f6a7f932}{evolve()} when the required random number is only 1-\/d. \end{DoxyCompactList}\item 
 virtual Type\+\_\+of\+\_\+single\+\_\+time \hyperlink{class_model_a2bc277990d41a0abc4e2658f94107481}{evolve} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t0, Type\+\_\+of\+\_\+single\+\_\+time \&x0, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} dt, vector$<$ double $>$ dw) const
 \item 
 virtual const shared\+\_\+ptr$<$ \hyperlink{class_stochastic_process}{Stochastic\+Process} $>$ \& \hyperlink{class_model_a6f584114ffcbd4eac04a2bbf8e9cede2}{get\+Process} () const =0
@@ -32,6 +37,22 @@ Type\+\_\+of\+\_\+single\+\_\+time \hyperlink{class_model_a8b547d019a51a21f53920
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Type\+\_\+of\+\_\+single\+\_\+time$>$\newline
+class Model$<$ Type\+\_\+of\+\_\+single\+\_\+time $>$}
+
+Base class for all models(e.\+g. 
+
+Black-\/\+Scholes model, Merton\textquotesingle{}s jump model, \hyperlink{class_l_m_m}{L\+MM}, etc.). It is divided into two sub base classes. ~\newline
+One is \hyperlink{class_model1_d}{Model1D} simply for model which only contains 1-\/d underlying asset(e.\+g. Black-\/\+Scholes). ~\newline
+Another one is \hyperlink{class_model_n_d}{Model\+ND} for multi-\/dimensional underlyings(e.\+g. \hyperlink{class_l_m_m}{L\+MM}). ~\newline
+Any specific model class should derive from \hyperlink{class_model1_d}{Model1D} or \hyperlink{class_model_n_d}{Model\+ND} due to its dimension. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type\+\_\+of\+\_\+single\+\_\+time} & Value type of one path(double or vector$<$double$>$). \\
+\hline
+\end{DoxyTemplParams}
+
+
 \subsection{Member Function Documentation}
 \hypertarget{class_model_a18b1fe1476b5adde8d6125e7f6a7f932}{}\label{class_model_a18b1fe1476b5adde8d6125e7f6a7f932} 
 \index{Model@{Model}!evolve@{evolve}}
@@ -41,6 +62,24 @@ Type\+\_\+of\+\_\+single\+\_\+time \hyperlink{class_model_a8b547d019a51a21f53920
 virtual Type\+\_\+of\+\_\+single\+\_\+time \hyperlink{class_model}{Model}$<$ Type\+\_\+of\+\_\+single\+\_\+time $>$\+::evolve (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{t0,  }\item[{Type\+\_\+of\+\_\+single\+\_\+time \&}]{x0,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{dt,  }\item[{double}]{dw }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
+
+Interface of \hyperlink{class_model_a18b1fe1476b5adde8d6125e7f6a7f932}{evolve()} when the required random number is only 1-\/d. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t0} & Last time point, consistent with x0. \\
+\hline
+{\em x0} & Value at time t0. \\
+\hline
+{\em dt} & Time step. \\
+\hline
+{\em dw} & Random number required. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value type of path at single time point.
+\end{DoxyReturn}
+{\itshape Implementation\+:} There are two versions of \hyperlink{class_model_a18b1fe1476b5adde8d6125e7f6a7f932}{evolve()} as interfaces, distinguished by type of random numbers dw. Each derived class should only override one of them, so they cannot be declared as pure virtual function. And they are supposed not to be called, so if they are called by mistake, they should throw \char`\"{}mismatch\char`\"{} error. 
 
 Reimplemented in \hyperlink{class_black_scholes_model_a67c3ed604a6d057112ec7e7a1a3fb301}{Black\+Scholes\+Model}.
 

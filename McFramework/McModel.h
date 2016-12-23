@@ -11,9 +11,20 @@
 #include "RandNumGeneration/PseudoRandom.h"
 #include "RandNumGeneration/Normal.h"
 
+/**
+ * Non-base class which encapsulates a path generator and a path pricer and a statistic class.
+ * @tparam RNG Random number generator type(e.g., SingleRandom<Normal<>>, MultiRandom<Normal<>, Normal<>>).
+ * @tparam PathType Type of path(i.e., SingleVariate or MultiVariate).
+ */
 template<typename RNG, typename PathType>
 class McModel {
 public:
+
+    /**
+     * Constructor.
+     * @param pathGenerator Shared_ptr of a path generator.
+     * @param pathPricer Shared_ptr of a path pricer.
+     */
     McModel(const std::shared_ptr<PathGenerator<RNG, PathType>> &pathGenerator,
             const std::shared_ptr<PathPricer<PathType>> pathPricer);
 
