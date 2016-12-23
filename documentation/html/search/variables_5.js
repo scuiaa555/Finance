@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['last_5f',['last_',['../class_normal.html#a69f8977c8b8224cf6345b1e2d0d35382',1,'Normal::last_()'],['../class_normal_marsaglia_bray_rng.html#a39a4a809c38812b344b3695b915133c6',1,'NormalMarsagliaBrayRng::last_()']]]
+  ['jumpmean_5f',['jumpMean_',['../class_log_normal_with_normal_jump.html#a8c400472fa1655423e9c5c63b474b177',1,'LogNormalWithNormalJump']]],
+  ['jumpvariance_5f',['jumpVariance_',['../class_log_normal_with_normal_jump.html#a3dfa5dc3dd79bcb6ec661ff9e70df03b',1,'LogNormalWithNormalJump']]]
 ];

@@ -98,6 +98,12 @@ McFramework/PathPricer.h
 Payoff.h
 ../PricingEngines/Payoff.h
 
+..//RandNumGeneration/CompoundPoisson.h
+RandNumGeneration/RandomVariableGenerator.h
+../RandNumGeneration/RandNumGeneration/RandomVariableGenerator.h
+RandNumGeneration/Poisson.h
+../RandNumGeneration/RandNumGeneration/Poisson.h
+
 ..//RandNumGeneration/MultiRandGenerator.h
 SingleRandSequenceGenerator.h
 ../RandNumGeneration/SingleRandSequenceGenerator.h
@@ -171,6 +177,10 @@ StochasticProcess.h
 ../StochasticProcesses/StochasticProcess.h
 Parameter.h
 ../StochasticProcesses/Parameter.h
+
+..//StochasticProcesses/LogNormalwithNormalJump.h
+StochasticProcesses/LogNormalProcess.h
+../StochasticProcesses/StochasticProcesses/LogNormalProcess.h
 
 ../McFramework/PathGenerator.h
 RandNumGeneration/NormalMarsagliaBrayRng.h
@@ -293,8 +303,8 @@ PricingEngines/AnalyticEuropeanEngine.h
 /Users/CUI/Dropbox/C++/Finance/PricingEngines/AnalyticEuropeanEngine.h
 boost/timer.hpp
 -
-RandNumGeneration/CompoundPoisson.h
-/Users/CUI/Dropbox/C++/Finance/RandNumGeneration/CompoundPoisson.h
+Models/MertonJumpModel.h
+/Users/CUI/Dropbox/C++/Finance/Models/MertonJumpModel.h
 
 /Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.cpp
 BlackScholesModel.h
@@ -307,6 +317,20 @@ StochasticProcesses/BSStochasticProcess.h
 /Users/CUI/Dropbox/C++/Finance/Models/StochasticProcesses/BSStochasticProcess.h
 RandNumGeneration/Normal.h
 /Users/CUI/Dropbox/C++/Finance/Models/RandNumGeneration/Normal.h
+
+/Users/CUI/Dropbox/C++/Finance/Models/MertonJumpModel.cpp
+MertonJumpModel.h
+/Users/CUI/Dropbox/C++/Finance/Models/MertonJumpModel.h
+
+/Users/CUI/Dropbox/C++/Finance/Models/MertonJumpModel.h
+Model.h
+/Users/CUI/Dropbox/C++/Finance/Models/Model.h
+StochasticProcesses/LogNormalwithNormalJump.h
+/Users/CUI/Dropbox/C++/Finance/Models/StochasticProcesses/LogNormalwithNormalJump.h
+RandNumGeneration/Normal.h
+/Users/CUI/Dropbox/C++/Finance/Models/RandNumGeneration/Normal.h
+RandNumGeneration/CompoundPoisson.h
+/Users/CUI/Dropbox/C++/Finance/Models/RandNumGeneration/CompoundPoisson.h
 
 /Users/CUI/Dropbox/C++/Finance/NameDef.h
 
@@ -395,12 +419,6 @@ RandNumGeneration/PseudoRandom.h
 /Users/CUI/Dropbox/C++/Finance/PricingEngines/RandNumGeneration/PseudoRandom.h
 RandNumGeneration/Normal.h
 /Users/CUI/Dropbox/C++/Finance/PricingEngines/RandNumGeneration/Normal.h
-
-/Users/CUI/Dropbox/C++/Finance/RandNumGeneration/CompoundPoisson.h
-RandNumGeneration/RandomVariableGenerator.h
-/Users/CUI/Dropbox/C++/Finance/RandNumGeneration/RandNumGeneration/RandomVariableGenerator.h
-RandNumGeneration/Poisson.h
-/Users/CUI/Dropbox/C++/Finance/RandNumGeneration/RandNumGeneration/Poisson.h
 
 /Users/CUI/Dropbox/C++/Finance/RandNumGeneration/UniformLEcuyerRNG1.cpp
 UniformLEcuyerRNG1.h

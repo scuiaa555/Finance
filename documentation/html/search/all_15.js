@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z_5f',['z_',['../class_normal_marsaglia_bray_rng.html#a6d021a285cd0eb2d95c25cdb8af0ee93',1,'NormalMarsagliaBrayRng']]]
+  ['x0_5f',['x0_',['../class_model.html#a8b547d019a51a21f539209227fbde146',1,'Model::x0_()'],['../class_log_normal_process.html#aaad6cd95af55b1d573fa384ddb0066ef',1,'LogNormalProcess::x0_()']]]
 ];

@@ -1,10 +1,10 @@
-\hypertarget{class_mc_european_engine}{}\section{Mc\+European\+Engine$<$ R\+NG $>$ Class Template Reference}
-\label{class_mc_european_engine}\index{Mc\+European\+Engine$<$ R\+N\+G $>$@{Mc\+European\+Engine$<$ R\+N\+G $>$}}
+\hypertarget{class_mc_european_engine}{}\section{Mc\+European\+Engine$<$ R\+NG, Path\+Type $>$ Class Template Reference}
+\label{class_mc_european_engine}\index{Mc\+European\+Engine$<$ R\+N\+G, Path\+Type $>$@{Mc\+European\+Engine$<$ R\+N\+G, Path\+Type $>$}}
 
 
-{\ttfamily \#include $<$M\+C\+European\+Engine.\+h$>$}
+{\ttfamily \#include $<$Mc\+European\+Engine.\+h$>$}
 
-Inheritance diagram for Mc\+European\+Engine$<$ R\+NG $>$\+:\begin{figure}[H]
+Inheritance diagram for Mc\+European\+Engine$<$ R\+NG, Path\+Type $>$\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.586605cm]{class_mc_european_engine}
@@ -13,61 +13,61 @@ Inheritance diagram for Mc\+European\+Engine$<$ R\+NG $>$\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_mc_european_engine_a22424812ecaf6e04134eeaa45b9d1e1f}{Mc\+European\+Engine} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$ model, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} time\+Step, unsigned long max\+Samples, unsigned long min\+Samples)
+\hyperlink{class_mc_european_engine_aa571d66762d49d9bdb29b591a74e1ee0}{Mc\+European\+Engine} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model}$<$ double $>$$>$ model, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} time\+Step, unsigned long max\+Samples, unsigned long min\+Samples)
 \item 
-void \hyperlink{class_mc_european_engine_a6c29ef7a7ba6cd1a2f93ee63070cf40e}{calculate} () override
+void \hyperlink{class_mc_european_engine_ade20e53724dc0a0b103b211ee61a7c67}{calculate} () override
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$ $>$ \hyperlink{class_mc_european_engine_af3bd77fe30b60833448ee44efe6280d9}{path\+Generator} () override
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$ $>$ \hyperlink{class_mc_european_engine_a1e4fff8cadebec5aae259fc747dc12a3}{path\+Generator} () override
 \begin{DoxyCompactList}\small\item\em Defer the implementation of path\+Generator to the derived class. \end{DoxyCompactList}\item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_european_engine_aa504b56142c757d49cc4c9e079682f6d}{path\+Pricer} () override
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer}$<$ Path\+Type $>$ $>$ \hyperlink{class_mc_european_engine_ab07c50b4305c3e65f68ce3f0c9b740d6}{path\+Pricer} () override
 \begin{DoxyCompactList}\small\item\em Defer the implementation of path\+Pricer to the derived class. \end{DoxyCompactList}\item 
-const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_european_engine_a62341229306247e5c1eed9a7d4a2dba3}{time\+Grid} () const override
+const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_european_engine_ae4e0ab6834416144221f1a91dd154587}{time\+Grid} () const override
 \begin{DoxyCompactList}\small\item\em Defer the implementation of setting time grid to the derived class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$ \hyperlink{class_mc_european_engine_a81d241a7b2c065d2ecb9c8ed367f65b6}{model\+\_\+}
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model}$<$ double $>$ $>$ \hyperlink{class_mc_european_engine_a1065e84b2bf625de4ea8d9ed02eb15bf}{model\+\_\+}
 \item 
-unsigned long \hyperlink{class_mc_european_engine_a1fc3ac7c29f0ebb565d4f3a6a0baa315}{min\+Samples\+\_\+}
+unsigned long \hyperlink{class_mc_european_engine_a3e90a1e87e9096d2cbeebc45b0bb358b}{min\+Samples\+\_\+}
 \item 
-unsigned long \hyperlink{class_mc_european_engine_a4f951d1b93039bb0cf5e65abb1d61f2e}{max\+Samples\+\_\+}
+unsigned long \hyperlink{class_mc_european_engine_a25c0f328428ef5d24fef469e8861cca7}{max\+Samples\+\_\+}
 \item 
-\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} \hyperlink{class_mc_european_engine_aa2e85e2348747a35494677719b023991}{time\+Step\+\_\+}
+\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} \hyperlink{class_mc_european_engine_abb61c5565c1f4a1775f04d4d28bd5d21}{time\+Step\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_mc_european_engine_a22424812ecaf6e04134eeaa45b9d1e1f}{}\label{class_mc_european_engine_a22424812ecaf6e04134eeaa45b9d1e1f} 
+\hypertarget{class_mc_european_engine_aa571d66762d49d9bdb29b591a74e1ee0}{}\label{class_mc_european_engine_aa571d66762d49d9bdb29b591a74e1ee0} 
 \index{Mc\+European\+Engine@{Mc\+European\+Engine}!Mc\+European\+Engine@{Mc\+European\+Engine}}
 \index{Mc\+European\+Engine@{Mc\+European\+Engine}!Mc\+European\+Engine@{Mc\+European\+Engine}}
 \subsubsection{\texorpdfstring{Mc\+European\+Engine()}{McEuropeanEngine()}}
-{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-\hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::\hyperlink{class_mc_european_engine}{Mc\+European\+Engine} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model} $>$}]{model,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{time\+Step,  }\item[{unsigned long}]{max\+Samples,  }\item[{unsigned long}]{min\+Samples }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename R\+NG , typename Path\+Type $>$ \\
+\hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG, Path\+Type $>$\+::\hyperlink{class_mc_european_engine}{Mc\+European\+Engine} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_model}{Model}$<$ double $>$$>$}]{model,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{time\+Step,  }\item[{unsigned long}]{max\+Samples,  }\item[{unsigned long}]{min\+Samples }\end{DoxyParamCaption})}
 
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_mc_european_engine_a6c29ef7a7ba6cd1a2f93ee63070cf40e}{}\label{class_mc_european_engine_a6c29ef7a7ba6cd1a2f93ee63070cf40e} 
+\hypertarget{class_mc_european_engine_ade20e53724dc0a0b103b211ee61a7c67}{}\label{class_mc_european_engine_ade20e53724dc0a0b103b211ee61a7c67} 
 \index{Mc\+European\+Engine@{Mc\+European\+Engine}!calculate@{calculate}}
 \index{calculate@{calculate}!Mc\+European\+Engine@{Mc\+European\+Engine}}
 \subsubsection{\texorpdfstring{calculate()}{calculate()}}
-{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-void \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily template$<$typename R\+NG , typename Path\+Type $>$ \\
+void \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG, Path\+Type $>$\+::calculate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \hyperlink{class_pricing_engine_a733511ffc3cf5e4dc1fbc2a39208d8bd}{Pricing\+Engine}.
 
-\hypertarget{class_mc_european_engine_af3bd77fe30b60833448ee44efe6280d9}{}\label{class_mc_european_engine_af3bd77fe30b60833448ee44efe6280d9} 
+\hypertarget{class_mc_european_engine_a1e4fff8cadebec5aae259fc747dc12a3}{}\label{class_mc_european_engine_a1e4fff8cadebec5aae259fc747dc12a3} 
 \index{Mc\+European\+Engine@{Mc\+European\+Engine}!path\+Generator@{path\+Generator}}
 \index{path\+Generator@{path\+Generator}!Mc\+European\+Engine@{Mc\+European\+Engine}}
 \subsubsection{\texorpdfstring{path\+Generator()}{pathGenerator()}}
-{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG $>$ $>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::path\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily template$<$typename R\+NG , typename Path\+Type $>$ \\
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_generator}{Path\+Generator}$<$ R\+NG, Path\+Type $>$ $>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG, Path\+Type $>$\+::path\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
 
 
@@ -78,14 +78,14 @@ shared\+\_\+ptr of path generator.
 \end{DoxyReturn}
 
 
-Implements \hyperlink{class_mc_simulation_a44086a1efd452d8644c9f2e52417038f}{Mc\+Simulation$<$ R\+N\+G $>$}.
+Implements \hyperlink{class_mc_simulation_ad2338ca624a9bbfaec8e4d882471d546}{Mc\+Simulation$<$ R\+N\+G, Path\+Type $>$}.
 
-\hypertarget{class_mc_european_engine_aa504b56142c757d49cc4c9e079682f6d}{}\label{class_mc_european_engine_aa504b56142c757d49cc4c9e079682f6d} 
+\hypertarget{class_mc_european_engine_ab07c50b4305c3e65f68ce3f0c9b740d6}{}\label{class_mc_european_engine_ab07c50b4305c3e65f68ce3f0c9b740d6} 
 \index{Mc\+European\+Engine@{Mc\+European\+Engine}!path\+Pricer@{path\+Pricer}}
 \index{path\+Pricer@{path\+Pricer}!Mc\+European\+Engine@{Mc\+European\+Engine}}
 \subsubsection{\texorpdfstring{path\+Pricer()}{pathPricer()}}
-{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer} $>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::path\+Pricer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily template$<$typename R\+NG , typename Path\+Type $>$ \\
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_path_pricer}{Path\+Pricer}$<$ Path\+Type $>$ $>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG, Path\+Type $>$\+::path\+Pricer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
 
 
@@ -96,14 +96,14 @@ shared\+\_\+ptr of path pricer.
 \end{DoxyReturn}
 
 
-Implements \hyperlink{class_mc_simulation_ae3b894a78823df7897abf418bb04a4a1}{Mc\+Simulation$<$ R\+N\+G $>$}.
+Implements \hyperlink{class_mc_simulation_a4d755ea777c2f3a2ec2fcc70acf71a6d}{Mc\+Simulation$<$ R\+N\+G, Path\+Type $>$}.
 
-\hypertarget{class_mc_european_engine_a62341229306247e5c1eed9a7d4a2dba3}{}\label{class_mc_european_engine_a62341229306247e5c1eed9a7d4a2dba3} 
+\hypertarget{class_mc_european_engine_ae4e0ab6834416144221f1a91dd154587}{}\label{class_mc_european_engine_ae4e0ab6834416144221f1a91dd154587} 
 \index{Mc\+European\+Engine@{Mc\+European\+Engine}!time\+Grid@{time\+Grid}}
 \index{time\+Grid@{time\+Grid}!Mc\+European\+Engine@{Mc\+European\+Engine}}
 \subsubsection{\texorpdfstring{time\+Grid()}{timeGrid()}}
-{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::time\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily template$<$typename R\+NG , typename Path\+Type $>$ \\
+const vector$<$ \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} $>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG, Path\+Type $>$\+::time\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
 
 
 
@@ -115,41 +115,41 @@ Vector of time grid.
 \end{DoxyReturn}
 
 
-Implements \hyperlink{class_mc_simulation_a8af54a9121f2d875872295b03a1b2a40}{Mc\+Simulation$<$ R\+N\+G $>$}.
+Implements \hyperlink{class_mc_simulation_acf7d24981be3025a2cf07f8623dbe8ce}{Mc\+Simulation$<$ R\+N\+G, Path\+Type $>$}.
 
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_mc_european_engine_a4f951d1b93039bb0cf5e65abb1d61f2e}{}\label{class_mc_european_engine_a4f951d1b93039bb0cf5e65abb1d61f2e} 
+\hypertarget{class_mc_european_engine_a25c0f328428ef5d24fef469e8861cca7}{}\label{class_mc_european_engine_a25c0f328428ef5d24fef469e8861cca7} 
 \index{Mc\+European\+Engine@{Mc\+European\+Engine}!max\+Samples\+\_\+@{max\+Samples\+\_\+}}
 \index{max\+Samples\+\_\+@{max\+Samples\+\_\+}!Mc\+European\+Engine@{Mc\+European\+Engine}}
 \subsubsection{\texorpdfstring{max\+Samples\+\_\+}{maxSamples\_}}
-{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-unsigned long \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::max\+Samples\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename R\+NG , typename Path\+Type  = Single\+Variate$>$ \\
+unsigned long \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG, Path\+Type $>$\+::max\+Samples\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{class_mc_european_engine_a1fc3ac7c29f0ebb565d4f3a6a0baa315}{}\label{class_mc_european_engine_a1fc3ac7c29f0ebb565d4f3a6a0baa315} 
+\hypertarget{class_mc_european_engine_a3e90a1e87e9096d2cbeebc45b0bb358b}{}\label{class_mc_european_engine_a3e90a1e87e9096d2cbeebc45b0bb358b} 
 \index{Mc\+European\+Engine@{Mc\+European\+Engine}!min\+Samples\+\_\+@{min\+Samples\+\_\+}}
 \index{min\+Samples\+\_\+@{min\+Samples\+\_\+}!Mc\+European\+Engine@{Mc\+European\+Engine}}
 \subsubsection{\texorpdfstring{min\+Samples\+\_\+}{minSamples\_}}
-{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-unsigned long \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::min\+Samples\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename R\+NG , typename Path\+Type  = Single\+Variate$>$ \\
+unsigned long \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG, Path\+Type $>$\+::min\+Samples\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{class_mc_european_engine_a81d241a7b2c065d2ecb9c8ed367f65b6}{}\label{class_mc_european_engine_a81d241a7b2c065d2ecb9c8ed367f65b6} 
+\hypertarget{class_mc_european_engine_a1065e84b2bf625de4ea8d9ed02eb15bf}{}\label{class_mc_european_engine_a1065e84b2bf625de4ea8d9ed02eb15bf} 
 \index{Mc\+European\+Engine@{Mc\+European\+Engine}!model\+\_\+@{model\+\_\+}}
 \index{model\+\_\+@{model\+\_\+}!Mc\+European\+Engine@{Mc\+European\+Engine}}
 \subsubsection{\texorpdfstring{model\+\_\+}{model\_}}
-{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-std\+::shared\+\_\+ptr$<$\hyperlink{class_model}{Model}$>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename R\+NG , typename Path\+Type  = Single\+Variate$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{class_model}{Model}$<$double$>$ $>$ \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG, Path\+Type $>$\+::model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
-\hypertarget{class_mc_european_engine_aa2e85e2348747a35494677719b023991}{}\label{class_mc_european_engine_aa2e85e2348747a35494677719b023991} 
+\hypertarget{class_mc_european_engine_abb61c5565c1f4a1775f04d4d28bd5d21}{}\label{class_mc_european_engine_abb61c5565c1f4a1775f04d4d28bd5d21} 
 \index{Mc\+European\+Engine@{Mc\+European\+Engine}!time\+Step\+\_\+@{time\+Step\+\_\+}}
 \index{time\+Step\+\_\+@{time\+Step\+\_\+}!Mc\+European\+Engine@{Mc\+European\+Engine}}
 \subsubsection{\texorpdfstring{time\+Step\+\_\+}{timeStep\_}}
-{\footnotesize\ttfamily template$<$typename R\+NG $>$ \\
-\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG $>$\+::time\+Step\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename R\+NG , typename Path\+Type  = Single\+Variate$>$ \\
+\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} \hyperlink{class_mc_european_engine}{Mc\+European\+Engine}$<$ R\+NG, Path\+Type $>$\+::time\+Step\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Pricing\+Engines/\hyperlink{_m_c_european_engine_8h}{M\+C\+European\+Engine.\+h}\end{DoxyCompactItemize}
+Pricing\+Engines/\hyperlink{_mc_european_engine_8h}{Mc\+European\+Engine.\+h}\end{DoxyCompactItemize}

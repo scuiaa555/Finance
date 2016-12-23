@@ -12,12 +12,11 @@
 
 class MertonJumpModel : public Model1D {
 public:
-    MertonJumpModel(std::shared_ptr<LogNormalWithNormalJump> process);
+    MertonJumpModel(std::shared_ptr<StochasticProcess> process);
 
-    MertonJumpModel(double r, double q, double sigma, double jumpMean, double jumpVariance, double spot);
+    MertonJumpModel(double r, double q, double sigma, double lambda, double jumpMean, double jumpVariance, double spot);
 
     virtual Quote evolve(Time t0, Quote &x0, Time dt, vector<double> dw) const override;
-
 
     const vector<int> &getMCdimension() const override { return MCdimension_; }
 

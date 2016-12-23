@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Finance: PathPricer Class Reference</title>
+<title>Finance: PathPricer&lt; PathType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,41 +62,33 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_path_pricer-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">PathPricer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">PathPricer&lt; PathType &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_path_pricer_8h_source.html">PathPricer.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for PathPricer:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_path_pricer.png" usemap="#PathPricer_map" alt=""/>
-  <map id="PathPricer_map" name="PathPricer_map">
-<area href="class_asian_path_pricer.html" alt="AsianPathPricer" shape="rect" coords="0,56,127,80"/>
-<area href="class_european_path_pricer.html" alt="EuropeanPathPricer" shape="rect" coords="137,56,264,80"/>
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a057bf6a83f0cc2be06154144192ed918"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path_pricer.html#a057bf6a83f0cc2be06154144192ed918">operator()</a> (const <a class="el" href="class_path.html">Path</a> &amp;path) const =0</td></tr>
-<tr class="separator:a057bf6a83f0cc2be06154144192ed918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b2a03f259bb56a24a66c9b95bdcf67"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_path_pricer.html#a14b2a03f259bb56a24a66c9b95bdcf67">operator()</a> (const <a class="el" href="class_path.html">Path</a>&lt; PathType &gt; &amp;path) const =0</td></tr>
+<tr class="separator:a14b2a03f259bb56a24a66c9b95bdcf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a057bf6a83f0cc2be06154144192ed918"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a057bf6a83f0cc2be06154144192ed918">&sect;&nbsp;</a></span>operator()()</h2>
+<a id="a14b2a03f259bb56a24a66c9b95bdcf67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14b2a03f259bb56a24a66c9b95bdcf67">&sect;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename PathType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a> PathPricer::operator() </td>
+          <td class="memname">virtual <a class="el" href="_name_def_8h.html#a5a9d48c16a694e9a2d9f1eca730dc8c5">Money</a> <a class="el" href="class_path_pricer.html">PathPricer</a>&lt; PathType &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_path.html">Path</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_path.html">Path</a>&lt; PathType &gt; &amp;&#160;</td>
           <td class="paramname"><em>path</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -108,7 +100,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_asian_path_pricer.html#adb10ce912ab34560d762ce0523ae394e">AsianPathPricer</a>, and <a class="el" href="class_european_path_pricer.html#ac12142089ccdc7fe73ba93d66a7964e6">EuropeanPathPricer</a>.</p>
+<p>Implemented in <a class="el" href="class_asian_path_pricer.html#a929e8a33447f977bfc947e1d5344e353">AsianPathPricer</a>, and <a class="el" href="class_european_path_pricer.html#a879d161eeff532f1f3e2fc5224b3361b">EuropeanPathPricer</a>.</p>
 
 </div>
 </div>

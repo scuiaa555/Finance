@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Finance: McModel&lt; RNG &gt; Class Template Reference</title>
+<title>Finance: McModel&lt; RNG, PathType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_mc_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">McModel&lt; RNG &gt; Class Template Reference</div>  </div>
+<div class="title">McModel&lt; RNG, PathType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -71,41 +71,41 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeb469e49833dce6d5ffecfb31bcd0714"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#aeb469e49833dce6d5ffecfb31bcd0714">McModel</a> (const std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG &gt;&gt; &amp;pathGenerator, const std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a> &gt; pathPricer)</td></tr>
-<tr class="separator:aeb469e49833dce6d5ffecfb31bcd0714"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ed7099395a0eae21fd3b719fab6b9de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#a9ed7099395a0eae21fd3b719fab6b9de">addSamples</a> (unsigned long numSamples)</td></tr>
-<tr class="separator:a9ed7099395a0eae21fd3b719fab6b9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb59f4097bca3e5c22920cec8ce8b80f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_m_c_statistics.html">MCStatistics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#afb59f4097bca3e5c22920cec8ce8b80f">getStatistics</a> () const</td></tr>
-<tr class="separator:afb59f4097bca3e5c22920cec8ce8b80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c4ccfd7b882e80516e1f9733243e48d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#a2c4ccfd7b882e80516e1f9733243e48d">McModel</a> (const std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG, PathType &gt;&gt; &amp;pathGenerator, const std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a>&lt; PathType &gt;&gt; pathPricer)</td></tr>
+<tr class="separator:a2c4ccfd7b882e80516e1f9733243e48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce369cb607a221259e4a93bb63ea4ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#a6ce369cb607a221259e4a93bb63ea4ec">addSamples</a> (unsigned long numSamples)</td></tr>
+<tr class="separator:a6ce369cb607a221259e4a93bb63ea4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07af7562a83c0bc16ba822ac52154684"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_m_c_statistics.html">MCStatistics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#a07af7562a83c0bc16ba822ac52154684">getStatistics</a> () const</td></tr>
+<tr class="separator:a07af7562a83c0bc16ba822ac52154684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae583ee693ceb83b83593f15e2e5e371e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#ae583ee693ceb83b83593f15e2e5e371e">pathGenerator_</a></td></tr>
-<tr class="separator:ae583ee693ceb83b83593f15e2e5e371e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0936370baabb19be59052f108733279d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#a0936370baabb19be59052f108733279d">pathPricer_</a></td></tr>
-<tr class="separator:a0936370baabb19be59052f108733279d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fd3f9f39a642cbb8fd0f7fb3c18f919"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_c_statistics.html">MCStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#a8fd3f9f39a642cbb8fd0f7fb3c18f919">sampleAccumulator_</a></td></tr>
-<tr class="separator:a8fd3f9f39a642cbb8fd0f7fb3c18f919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb4ba15045ba3c05d2f54340a63a1000"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG, PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#abb4ba15045ba3c05d2f54340a63a1000">pathGenerator_</a></td></tr>
+<tr class="separator:abb4ba15045ba3c05d2f54340a63a1000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05affe30ae38a403977d3b708d46608"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a>&lt; PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#aa05affe30ae38a403977d3b708d46608">pathPricer_</a></td></tr>
+<tr class="separator:aa05affe30ae38a403977d3b708d46608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec600743d8341a4cd46b5005a0f70ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_m_c_statistics.html">MCStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_model.html#a3ec600743d8341a4cd46b5005a0f70ff">sampleAccumulator_</a></td></tr>
+<tr class="separator:a3ec600743d8341a4cd46b5005a0f70ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aeb469e49833dce6d5ffecfb31bcd0714"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb469e49833dce6d5ffecfb31bcd0714">&sect;&nbsp;</a></span>McModel()</h2>
+<a id="a2c4ccfd7b882e80516e1f9733243e48d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c4ccfd7b882e80516e1f9733243e48d">&sect;&nbsp;</a></span>McModel()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_mc_model.html">McModel</a>&lt; RNG &gt;::<a class="el" href="class_mc_model.html">McModel</a> </td>
+          <td class="memname"><a class="el" href="class_mc_model.html">McModel</a>&lt; RNG, PathType &gt;::<a class="el" href="class_mc_model.html">McModel</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG &gt;&gt; &amp;&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG, PathType &gt;&gt; &amp;&#160;</td>
           <td class="paramname"><em>pathGenerator</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a> &gt;&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a>&lt; PathType &gt;&gt;&#160;</td>
           <td class="paramname"><em>pathPricer</em>&#160;</td>
         </tr>
         <tr>
@@ -119,16 +119,16 @@ template&lt;typename RNG &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9ed7099395a0eae21fd3b719fab6b9de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ed7099395a0eae21fd3b719fab6b9de">&sect;&nbsp;</a></span>addSamples()</h2>
+<a id="a6ce369cb607a221259e4a93bb63ea4ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce369cb607a221259e4a93bb63ea4ec">&sect;&nbsp;</a></span>addSamples()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_mc_model.html">McModel</a>&lt; RNG &gt;::addSamples </td>
+          <td class="memname">void <a class="el" href="class_mc_model.html">McModel</a>&lt; RNG, PathType &gt;::addSamples </td>
           <td>(</td>
           <td class="paramtype">unsigned long&#160;</td>
           <td class="paramname"><em>numSamples</em></td><td>)</td>
@@ -139,16 +139,16 @@ template&lt;typename RNG &gt; </div>
 
 </div>
 </div>
-<a id="afb59f4097bca3e5c22920cec8ce8b80f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb59f4097bca3e5c22920cec8ce8b80f">&sect;&nbsp;</a></span>getStatistics()</h2>
+<a id="a07af7562a83c0bc16ba822ac52154684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07af7562a83c0bc16ba822ac52154684">&sect;&nbsp;</a></span>getStatistics()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class_m_c_statistics.html">MCStatistics</a> &amp; <a class="el" href="class_mc_model.html">McModel</a>&lt; RNG &gt;::getStatistics </td>
+          <td class="memname">const <a class="el" href="class_m_c_statistics.html">MCStatistics</a> &amp; <a class="el" href="class_mc_model.html">McModel</a>&lt; RNG, PathType &gt;::getStatistics </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -159,19 +159,19 @@ template&lt;typename RNG &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae583ee693ceb83b83593f15e2e5e371e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae583ee693ceb83b83593f15e2e5e371e">&sect;&nbsp;</a></span>pathGenerator_</h2>
+<a id="abb4ba15045ba3c05d2f54340a63a1000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb4ba15045ba3c05d2f54340a63a1000">&sect;&nbsp;</a></span>pathGenerator_</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_path_generator.html">PathGenerator</a>&lt;RNG&gt; &gt; <a class="el" href="class_mc_model.html">McModel</a>&lt; RNG &gt;::pathGenerator_</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_path_generator.html">PathGenerator</a>&lt;RNG, PathType&gt; &gt; <a class="el" href="class_mc_model.html">McModel</a>&lt; RNG, PathType &gt;::pathGenerator_</td>
         </tr>
       </table>
   </td>
@@ -183,19 +183,19 @@ template&lt;typename RNG &gt; </div>
 
 </div>
 </div>
-<a id="a0936370baabb19be59052f108733279d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0936370baabb19be59052f108733279d">&sect;&nbsp;</a></span>pathPricer_</h2>
+<a id="aa05affe30ae38a403977d3b708d46608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05affe30ae38a403977d3b708d46608">&sect;&nbsp;</a></span>pathPricer_</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_path_pricer.html">PathPricer</a>&gt; <a class="el" href="class_mc_model.html">McModel</a>&lt; RNG &gt;::pathPricer_</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_path_pricer.html">PathPricer</a>&lt;PathType&gt; &gt; <a class="el" href="class_mc_model.html">McModel</a>&lt; RNG, PathType &gt;::pathPricer_</td>
         </tr>
       </table>
   </td>
@@ -207,19 +207,19 @@ template&lt;typename RNG &gt; </div>
 
 </div>
 </div>
-<a id="a8fd3f9f39a642cbb8fd0f7fb3c18f919"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fd3f9f39a642cbb8fd0f7fb3c18f919">&sect;&nbsp;</a></span>sampleAccumulator_</h2>
+<a id="a3ec600743d8341a4cd46b5005a0f70ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec600743d8341a4cd46b5005a0f70ff">&sect;&nbsp;</a></span>sampleAccumulator_</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_m_c_statistics.html">MCStatistics</a> <a class="el" href="class_mc_model.html">McModel</a>&lt; RNG &gt;::sampleAccumulator_</td>
+          <td class="memname"><a class="el" href="class_m_c_statistics.html">MCStatistics</a> <a class="el" href="class_mc_model.html">McModel</a>&lt; RNG, PathType &gt;::sampleAccumulator_</td>
         </tr>
       </table>
   </td>

@@ -59,21 +59,23 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">PathGenerator&lt; RNG &gt; Member List</div>  </div>
+<div class="title">PathGenerator&lt; RNG, PathType &gt; Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="class_path_generator.html">PathGenerator&lt; RNG &gt;</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="class_path_generator.html">PathGenerator&lt; RNG, PathType &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_path_generator.html#aa45100f04c27cd0f25c059c410316346">isAntithetic_</a></td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_path_generator.html#a80dcaacd0b79c84c4bf83e980f5ed7ff">model_</a></td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_path_generator.html#a848a4f432d86df5b03d835d99472ab37">next</a>()</td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG &gt;</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_path_generator.html#a2af5b3cab0498565a56b20e97a3d6f35">next_</a></td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_path_generator.html#aca7349e0f3e916f634b1a162756b5e1a">PathGenerator</a>(const std::shared_ptr&lt; Model &gt; model, const vector&lt; Time &gt; &amp;timeGrid, bool isAntithetic=0)</td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG &gt;</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_path_generator.html#a4fad0001eee9b8185049f3c860f53b1f">rng_</a></td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_path_generator.html#ae1055b21996819be953fb102e5980c18">rng_argument_type</a> typedef</td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG &gt;</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_path_generator.html#a7e88a4843d6bb3488b62b1516760a031">rng_return_type</a> typedef</td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG &gt;</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_path_generator.html#a519a5baf42ff4c7c1addc9a4f2826b12">rng_type</a> typedef</td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_path_generator.html#a936af20e588195ca95d02cc302ea5d8b">isAntithetic_</a></td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG, PathType &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_path_generator.html#a92eef9405a03784534b561f56080ed8b">model_</a></td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG, PathType &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_path_generator.html#aa90d7cd4206c42ac84b1ad7ee8660950">next</a>()</td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG, PathType &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_path_generator.html#a2a085e303b74fbc34f12161eed56c331">next_</a></td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG, PathType &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_path_generator.html#a7c8e36c418bdb1d8e99c44ac75a5e02a">path_return_type</a> typedef</td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG, PathType &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_path_generator.html#a467bc3ddaa5e9104170550617e767349">path_return_type_of_single_time</a> typedef</td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG, PathType &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_path_generator.html#af6c5d75655e077378f702248f84e2920">PathGenerator</a>(const std::shared_ptr&lt; Model&lt; path_return_type_of_single_time &gt;&gt; model, const vector&lt; Time &gt; &amp;timeGrid, bool isAntithetic=0)</td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG, PathType &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_path_generator.html#a9a6ba7393db535890497b21b46bdfe67">rng_</a></td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG, PathType &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_path_generator.html#a2f6a701b324534da9f05ccc11c320e6b">rng_argument_type</a> typedef</td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG, PathType &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_path_generator.html#aa97ab7e55299daa0f38539816f171369">rng_return_type</a> typedef</td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG, PathType &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_path_generator.html#a7e71cbb5376b07b319b1f042a1035335">rng_type</a> typedef</td><td class="entry"><a class="el" href="class_path_generator.html">PathGenerator&lt; RNG, PathType &gt;</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

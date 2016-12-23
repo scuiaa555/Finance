@@ -9,7 +9,7 @@
 
 template<typename VolType>
 class LogNormalWithNormalJump : protected LogNormalProcess<VolType>,  /* "has-a" relationship */
-                                public StochasticProcess {
+                                public virtual StochasticProcess {
 public:
 
     typedef typename VolType::vol_return_type vol_return_type;
@@ -18,33 +18,47 @@ public:
     LogNormalWithNormalJump() = default;
 
     LogNormalWithNormalJump(Quote x0, const shared_ptr<Parameter> &drift, unsigned long dimVol,
-                            const vol_ptr_type volatility, const shared_ptr<Parameter> jumpMean,
-                            const shared_ptr<Parameter> jumpVariance);
+                            const vol_ptr_type volatility, const shared_ptr<Parameter> lambda,
+                            const shared_ptr<Parameter> jumpMean, const shared_ptr<Parameter> jumpVariance);
 
-    LogNormalWithNormalJump(Quote x0, double drift, double volatility, double jumpMean,
+    LogNormalWithNormalJump(Quote x0, double drift, double volatility, double lambda, double jumpMean,
                             double jumpVariance);
 
+    virtual double getSpot() const override { return LogNormalProcess<VolType>::x0_; }
+
+    shared_ptr<Parameter> getDrift() const { return LogNormalProcess<VolType>::drift_; }
+
+    vol_ptr_type getVolatility() const { return LogNormalProcess<VolType>::volatility_; }
+
+    shared_ptr<Parameter> getLambda() const { return lambda_; }
+
+    shared_ptr<Parameter> getJumpMean() const { return jumpMean_; }
+
+    shared_ptr<Parameter> getJumpVariance() const { return jumpVariance_; }
+
 private:
+    shared_ptr<Parameter> lambda_;
     shared_ptr<Parameter> jumpMean_;
     shared_ptr<Parameter> jumpVariance_;
 };
 
 template<typename VolType>
 LogNormalWithNormalJump<VolType>::LogNormalWithNormalJump(Quote x0, const shared_ptr<Parameter> &drift,
-                                                          unsigned long dimVol,
-                                                          const vol_ptr_type volatility,
+                                                          unsigned long dimVol, const vol_ptr_type volatility,
+                                                          const shared_ptr<Parameter> lambda,
                                                           const shared_ptr<Parameter> jumpMean,
                                                           const shared_ptr<Parameter> jumpVariance)
-        : LogNormalProcess<VolType>(x0, drift, dimVol, volatility), jumpMean_(jumpMean), jumpVariance_(jumpVariance) {
+        : LogNormalProcess<VolType>(x0, drift, dimVol, volatility), lambda_(lambda), jumpMean_(jumpMean),
+          jumpVariance_(jumpVariance) {
 }
 
 
 template<typename VolType>
-LogNormalWithNormalJump<VolType>::LogNormalWithNormalJump(Quote x0, double drift, unsigned long dimVol,
-                                                          double volatility,
-                                                          double jumpMean, double jumpVariance)
+LogNormalWithNormalJump<VolType>::LogNormalWithNormalJump(Quote x0, double drift, double volatility,
+                                                          double lambda, double jumpMean, double jumpVariance)
         : LogNormalProcess<VolType>(x0, shared_ptr<Parameter>(new ConstantParameter(drift)),
                                     1, shared_ptr<Parameter>(new ConstantParameter(volatility))),
+          lambda_(shared_ptr<Parameter>(new ConstantParameter(lambda))),
           jumpMean_(shared_ptr<Parameter>(new ConstantParameter(jumpMean))),
           jumpVariance_(shared_ptr<Parameter>(new ConstantParameter(jumpVariance))) {
 }

@@ -15,6 +15,7 @@ var menudata={children:[
 {text:'f',url:'functions_f.html#index_f'},
 {text:'g',url:'functions_g.html#index_g'},
 {text:'i',url:'functions_i.html#index_i'},
+{text:'j',url:'functions_j.html#index_j'},
 {text:'l',url:'functions_l.html#index_l'},
 {text:'m',url:'functions_m.html#index_m'},
 {text:'n',url:'functions_n.html#index_n'},
@@ -51,6 +52,7 @@ var menudata={children:[
 {text:'a',url:'functions_vars.html#index_a'},
 {text:'d',url:'functions_vars.html#index_d'},
 {text:'i',url:'functions_vars.html#index_i'},
+{text:'j',url:'functions_vars.html#index_j'},
 {text:'l',url:'functions_vars.html#index_l'},
 {text:'m',url:'functions_vars.html#index_m'},
 {text:'n',url:'functions_vars.html#index_n'},
@@ -65,7 +67,8 @@ var menudata={children:[
 {text:'z',url:'functions_vars.html#index_z'}]},
 {text:'Typedefs',url:'functions_type.html'},
 {text:'Enumerations',url:'functions_enum.html'},
-{text:'Enumerator',url:'functions_eval.html'}]}]},
+{text:'Enumerator',url:'functions_eval.html'},
+{text:'Related Functions',url:'functions_rela.html'}]}]},
 {text:'Files',url:'files.html',children:[
 {text:'File List',url:'files.html'},
 {text:'File Members',url:'globals.html',children:[

@@ -139,6 +139,12 @@
 		<Unit filename="/Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.h">
 			<Option target="Finance"/>
 		</Unit>
+		<Unit filename="/Users/CUI/Dropbox/C++/Finance/Models/MertonJumpModel.cpp">
+			<Option target="Finance"/>
+		</Unit>
+		<Unit filename="/Users/CUI/Dropbox/C++/Finance/Models/MertonJumpModel.h">
+			<Option target="Finance"/>
+		</Unit>
 		<Unit filename="/Users/CUI/Dropbox/C++/Finance/NameDef.h">
 			<Option target="Finance"/>
 		</Unit>

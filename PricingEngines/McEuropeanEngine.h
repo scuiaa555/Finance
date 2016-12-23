@@ -52,7 +52,7 @@ std::shared_ptr<PathPricer<PathType>> McEuropeanEngine<RNG, PathType>::pathPrice
     arguments = dynamic_cast<EuropeanOption::Arguments *>(this->getArguments());
     std::shared_ptr<VanillaPayoff> payoff = std::dynamic_pointer_cast<VanillaPayoff>(arguments->payoff_);
     /* problem here */
-    Rate r = std::dynamic_pointer_cast<BSStochasticProcess>(model_->getProcess())->getRiskFree();
+    Rate r = 0.05;
     /* problem here */
     return std::shared_ptr<EuropeanPathPricer>(new EuropeanPathPricer(payoff, r));
 }

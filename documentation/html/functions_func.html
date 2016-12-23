@@ -65,7 +65,7 @@ $(function() {
 : <a class="el" href="class_m_c_statistics.html#a6557ced886141997d13d86777b1970c5">MCStatistics</a>
 </li>
 <li>addSamples()
-: <a class="el" href="class_mc_model.html#a9ed7099395a0eae21fd3b719fab6b9de">McModel&lt; RNG &gt;</a>
+: <a class="el" href="class_mc_model.html#a6ce369cb607a221259e4a93bb63ea4ec">McModel&lt; RNG, PathType &gt;</a>
 </li>
 <li>AnalyticEuropeanEngine()
 : <a class="el" href="class_analytic_european_engine.html#ae29c59f14976eaa910d4773d11aa234f">AnalyticEuropeanEngine</a>
@@ -73,11 +73,9 @@ $(function() {
 <li>AnalyticForwardEngine()
 : <a class="el" href="class_analytic_forward_engine.html#a7745431773dc2910c8aa01183b7780d0">AnalyticForwardEngine</a>
 </li>
-<li>AntitheticPath()
-: <a class="el" href="class_antithetic_path.html#a3064f50d9c097f15a0472c94871911cc">AntitheticPath</a>
-</li>
 <li>Argument()
 : <a class="el" href="class_generic_normal_1_1_argument.html#abeb9e43c8b41714083aee28875ab7cb0">GenericNormal::Argument</a>
+, <a class="el" href="class_generic_poisson_1_1_argument.html#ab40a4ec3587e83186141c0ee6b86e33c">GenericPoisson::Argument</a>
 </li>
 <li>Arguments()
 : <a class="el" href="class_pricing_engine_1_1_arguments.html#a8c28435a8a4be10299e86d62ba72f5f8">PricingEngine::Arguments</a>
@@ -105,13 +103,16 @@ $(function() {
 <li>calculate()
 : <a class="el" href="class_analytic_european_engine.html#adeda22c7b482779d7deaa17037195487">AnalyticEuropeanEngine</a>
 , <a class="el" href="class_analytic_forward_engine.html#a12d6791a13bf727d43ffcff9cb55b094">AnalyticForwardEngine</a>
-, <a class="el" href="class_mc_asian_engine.html#ac16f4259846f55dc6c02d0b628f34e63">McAsianEngine&lt; RNG &gt;</a>
-, <a class="el" href="class_mc_european_engine.html#a6c29ef7a7ba6cd1a2f93ee63070cf40e">McEuropeanEngine&lt; RNG &gt;</a>
-, <a class="el" href="class_mc_simulation.html#acaa09060a9ee90e0cc3631d8b30ebae0">McSimulation&lt; RNG &gt;</a>
+, <a class="el" href="class_mc_asian_engine.html#ac16f4259846f55dc6c02d0b628f34e63">McAsianEngine&lt; RNG, PathType &gt;</a>
+, <a class="el" href="class_mc_european_engine.html#ade20e53724dc0a0b103b211ee61a7c67">McEuropeanEngine&lt; RNG, PathType &gt;</a>
+, <a class="el" href="class_mc_simulation.html#a9d323dca5d0a6c50d6fbab6ea564a1f3">McSimulation&lt; RNG, PathType &gt;</a>
 , <a class="el" href="class_pricing_engine.html#a733511ffc3cf5e4dc1fbc2a39208d8bd">PricingEngine</a>
 </li>
+<li>CompoundPoisson()
+: <a class="el" href="class_compound_poisson.html#aa0963430c700dd348b8d937fdfba8f14">CompoundPoisson&lt; PoissonRNG, JumpRNG &gt;</a>
+</li>
 <li>ConstantParameter()
-: <a class="el" href="class_constant_parameter.html#ae3bc9ec65c93b6b88fe04dcb7010d897">ConstantParameter</a>
+: <a class="el" href="class_constant_parameter.html#a914cfa1103bc8361f8f668316af04f27">ConstantParameter</a>
 </li>
 </ul>
 
@@ -124,9 +125,10 @@ $(function() {
 : <a class="el" href="class_european_path_pricer.html#aa571bb1652a0d7e4f97d3d58e7c8b295">EuropeanPathPricer</a>
 </li>
 <li>evolve()
-: <a class="el" href="class_black_scholes_model.html#ae7ece51fd9f0eac3f77975cff857216d">BlackScholesModel</a>
+: <a class="el" href="class_black_scholes_model.html#a67c3ed604a6d057112ec7e7a1a3fb301">BlackScholesModel</a>
 , <a class="el" href="class_l_m_m.html#a8dfdd340048e482a8059f473b5aacfd1">LMM</a>
-, <a class="el" href="class_model.html#a087d56280bb51e8b04be3a9a30d06c76">Model</a>
+, <a class="el" href="class_merton_jump_model.html#a2d3491f75435d364f6102e72b8376d81">MertonJumpModel</a>
+, <a class="el" href="class_model.html#a18b1fe1476b5adde8d6125e7f6a7f932">Model&lt; Type_of_single_time &gt;</a>
 </li>
 </ul>
 
@@ -145,23 +147,29 @@ $(function() {
 
 
 <h3><a id="index_g"></a>- g -</h3><ul>
+<li>GenericCompoundPoisson()
+: <a class="el" href="class_generic_compound_poisson.html#a064f78fd44400f27cd1ec5db6dc94973">GenericCompoundPoisson</a>
+</li>
 <li>GenericEngine()
 : <a class="el" href="class_generic_engine.html#a080b4df876712b5529b4a19ec3b0c48f">GenericEngine&lt; ArgumentsType, ResultsType &gt;</a>
 </li>
 <li>GenericNormal()
 : <a class="el" href="class_generic_normal.html#ae835b7fa40969da5cab6425fb6a12a26">GenericNormal</a>
 </li>
-<li>GenericRandomVariableGenerator()
-: <a class="el" href="class_generic_random_variable_generator.html#a331a9e178a7f44349e03a6ed21b940e0">GenericRandomVariableGenerator</a>
+<li>GenericPoisson()
+: <a class="el" href="class_generic_poisson.html#aa65123803f9daf6b684296216a16b5f5">GenericPoisson</a>
 </li>
-<li>getAntitheticValues()
-: <a class="el" href="class_antithetic_path.html#a7b6c87162d9c4642dda68b4f9af5f653">AntitheticPath</a>
-, <a class="el" href="class_path.html#ae6097f4761ac45d2d3656c35f09563f0">Path</a>
+<li>GenericRandomVariableGenerator()
+: <a class="el" href="class_generic_random_variable_generator.html#a4e113dd8b32eb72dc0719b677a938358">GenericRandomVariableGenerator</a>
 </li>
 <li>getArgument()
-: <a class="el" href="class_generic_normal.html#a3006d271c692bc02b64b538342592e4d">GenericNormal</a>
+: <a class="el" href="class_compound_poisson.html#a06a7f409e322b047d36747b265be98d0">CompoundPoisson&lt; PoissonRNG, JumpRNG &gt;</a>
+, <a class="el" href="class_generic_compound_poisson.html#acaf162bba5409500ca01a15fb7d9ced6">GenericCompoundPoisson</a>
+, <a class="el" href="class_generic_normal.html#a3006d271c692bc02b64b538342592e4d">GenericNormal</a>
+, <a class="el" href="class_generic_poisson.html#a245d4b1cf565f853e77005946dfb7f42">GenericPoisson</a>
 , <a class="el" href="class_multi_rand_generator.html#ab6309c317d42656c99fa0a81a019a48a">MultiRandGenerator&lt; Args &gt;</a>
 , <a class="el" href="class_normal.html#ac4048e25ff218cfb6052bd1b022b1591">Normal&lt; NormMethod &gt;</a>
+, <a class="el" href="class_poisson.html#a1f1fd2523c82124c707d2af9c989202b">Poisson&lt; PoissonMethod &gt;</a>
 </li>
 <li>getArguments()
 : <a class="el" href="class_generic_engine.html#ac2adcbbc8d7b554e2cc1f90e4c4d055d">GenericEngine&lt; ArgumentsType, ResultsType &gt;</a>
@@ -172,27 +180,43 @@ $(function() {
 </li>
 <li>getDimensionality()
 : <a class="el" href="class_model1_d.html#ac81875523be6153cb58d0f37914eb9a1">Model1D</a>
-, <a class="el" href="class_model.html#acbe41cf30367bce4b96e92812d644f2d">Model</a>
+, <a class="el" href="class_model.html#a26832ec2df24d7941783d3cd6d500898">Model&lt; Type_of_single_time &gt;</a>
 , <a class="el" href="class_model_n_d.html#ab2356536a38f4961257654de629d6093">ModelND</a>
 </li>
 <li>getDividend()
 : <a class="el" href="class_b_s_stochastic_process.html#a42caffac3e61f92af6849b86df0d9b6b">BSStochasticProcess</a>
 </li>
+<li>getDrift()
+: <a class="el" href="class_log_normal_process.html#a629e2612ff67a957accb04e5fe0ad2a9">LogNormalProcess&lt; VolType &gt;</a>
+</li>
 <li>getInitial()
-: <a class="el" href="class_model.html#ade5d08aae4d32777bfa048f356bbcca9">Model</a>
+: <a class="el" href="class_model.html#a22cdf510508e6cf3adc69e2bcd9d151e">Model&lt; Type_of_single_time &gt;</a>
+</li>
+<li>getInstance()
+: <a class="el" href="class_singleton.html#a8ec70839501fe76ec61195233d8fdb62">Singleton&lt; T &gt;</a>
+</li>
+<li>getJumpMean()
+: <a class="el" href="class_log_normal_with_normal_jump.html#ab408b0be4c1125e8e4c49640fbc6caa9">LogNormalWithNormalJump&lt; VolType &gt;</a>
+</li>
+<li>getJumpVariance()
+: <a class="el" href="class_log_normal_with_normal_jump.html#a5c775c7c185199c696740efcd89f309c">LogNormalWithNormalJump&lt; VolType &gt;</a>
+</li>
+<li>getLambda()
+: <a class="el" href="class_log_normal_with_normal_jump.html#a7675aaeef7edc3443d2a463b09516cff">LogNormalWithNormalJump&lt; VolType &gt;</a>
 </li>
 <li>getMCdimension()
 : <a class="el" href="class_black_scholes_model.html#a5665e6ea247e4f243082f5c98bbdbad6">BlackScholesModel</a>
-, <a class="el" href="class_model.html#ac8a8c7e69b0be1df63ad141e0e14bf1e">Model</a>
+, <a class="el" href="class_merton_jump_model.html#a6f901e305a9b852fd69aa7c6ff5da728">MertonJumpModel</a>
+, <a class="el" href="class_model.html#a11fb36244c91ca8c36317581b73bca08">Model&lt; Type_of_single_time &gt;</a>
 </li>
 <li>getPayoff()
 : <a class="el" href="class_payoff.html#a908e732330294a111345b4183ddb025b">Payoff</a>
 , <a class="el" href="class_vanilla_payoff.html#aa141f5b29c30d54448c93a21bef83bb3">VanillaPayoff</a>
 </li>
 <li>getProcess()
-: <a class="el" href="class_model1_d.html#ae3cdfcb2922f03a68b8e8e02d572746f">Model1D</a>
-, <a class="el" href="class_model.html#a23adaaf21b2955a1f4d4893ad9b77f02">Model</a>
-, <a class="el" href="class_model_n_d.html#a98976fe73a8895ff98ba60ea174232f8">ModelND</a>
+: <a class="el" href="class_model1_d.html#a670fd7ee0b66d5d865e0d13d6e50bb40">Model1D</a>
+, <a class="el" href="class_model.html#a6f584114ffcbd4eac04a2bbf8e9cede2">Model&lt; Type_of_single_time &gt;</a>
+, <a class="el" href="class_model_n_d.html#ae0965f73049004a6634429b96c9190b8">ModelND</a>
 </li>
 <li>getResults()
 : <a class="el" href="class_generic_engine.html#a2b8d7fba7e51c0795ea9f1e9c2f54afd">GenericEngine&lt; ArgumentsType, ResultsType &gt;</a>
@@ -202,59 +226,69 @@ $(function() {
 : <a class="el" href="class_b_s_stochastic_process.html#a9cd46cb3dceb0aee302bf3a6c2ea39a1">BSStochasticProcess</a>
 </li>
 <li>getSpot()
-: <a class="el" href="class_b_s_stochastic_process.html#a604f867d372fc55a6dfae456f56604ea">BSStochasticProcess</a>
-, <a class="el" href="class_log_normal_process.html#a3732c44145aa35d1e2000cc0140bfb03">LogNormalProcess</a>
+: <a class="el" href="class_log_normal_process.html#a2c01b829c59e9b6156f0e34b3632c800">LogNormalProcess&lt; VolType &gt;</a>
 , <a class="el" href="class_stochastic_process.html#aad2ef51ca4bc2fe5f33a73e8f0ee361e">StochasticProcess</a>
 </li>
 <li>getStatistics()
-: <a class="el" href="class_mc_model.html#afb59f4097bca3e5c22920cec8ce8b80f">McModel&lt; RNG &gt;</a>
+: <a class="el" href="class_mc_model.html#a07af7562a83c0bc16ba822ac52154684">McModel&lt; RNG, PathType &gt;</a>
 </li>
 <li>getStrike()
 : <a class="el" href="class_vanilla_payoff.html#ae99fb31f1496f723ec598367ece825e3">VanillaPayoff</a>
 </li>
 <li>getTimeGrid()
-: <a class="el" href="class_antithetic_path.html#a8986e32381ea393159a15dc2b1c0b12c">AntitheticPath</a>
-, <a class="el" href="class_path.html#a774bc2169ae87142b8165c3934a9deb9">Path</a>
+: <a class="el" href="class_path.html#a511b7a93c62893bcafba4749ad1dd1b3">Path&lt; PathType &gt;</a>
 </li>
 <li>getType()
 : <a class="el" href="class_vanilla_payoff.html#ac1b4cc9e4152ed3f7c07c71270fc1831">VanillaPayoff</a>
 </li>
 <li>getValues()
-: <a class="el" href="class_antithetic_path.html#a631294808de3c75c98563f292464a7da">AntitheticPath</a>
-, <a class="el" href="class_path.html#a6d3469e98b5da124b51ca8a9cc2caa28">Path</a>
+: <a class="el" href="class_path.html#a8ba07fadae45801824240317c311bb84">Path&lt; PathType &gt;</a>
 </li>
 <li>getVolatility()
 : <a class="el" href="class_b_s_stochastic_process.html#ab63f363e94441ed0ee22ef10beea16a6">BSStochasticProcess</a>
+, <a class="el" href="class_log_normal_process.html#af2d153f75cd5efbeaa3a9028585dd835">LogNormalProcess&lt; VolType &gt;</a>
+</li>
+<li>getVolDimension()
+: <a class="el" href="class_log_normal_process.html#a708854438eccd5ed5d1a996c5f0b6ff8">LogNormalProcess&lt; VolType &gt;</a>
+</li>
+<li>getVolHelper()
+: <a class="el" href="class_log_normal_process.html#a547e799140c1575cc979416f3cf7ab24">LogNormalProcess&lt; VolType &gt;</a>
 </li>
 </ul>
 
 
 <h3><a id="index_l"></a>- l -</h3><ul>
 <li>last()
-: <a class="el" href="class_multi_rand_generator.html#abb83dee0545ca24fab2999144de6f0e3">MultiRandGenerator&lt; Args &gt;</a>
+: <a class="el" href="class_compound_poisson.html#a1a3bdf34c71996f6e549ffe3c7bcbbea">CompoundPoisson&lt; PoissonRNG, JumpRNG &gt;</a>
+, <a class="el" href="class_multi_rand_generator.html#abb83dee0545ca24fab2999144de6f0e3">MultiRandGenerator&lt; Args &gt;</a>
 , <a class="el" href="class_normal.html#a3f10787d08cb2479764d7e0da8256aa7">Normal&lt; NormMethod &gt;</a>
 , <a class="el" href="class_normal_marsaglia_bray_rng.html#af90ac458fcbf302dfad98816132658c2">NormalMarsagliaBrayRng&lt; UniformRNG &gt;</a>
+, <a class="el" href="class_poisson.html#a85d653cd5405fed6aadc761cb15668e6">Poisson&lt; PoissonMethod &gt;</a>
+, <a class="el" href="class_poisson_inverse.html#a09035021739d8d3001d4a22add8dfca6">PoissonInverse&lt; UniformRNG &gt;</a>
 , <a class="el" href="class_random_variable_generator.html#aa84922aa58871845bc12116e05e6b5d4">RandomVariableGenerator&lt; returnType &gt;</a>
 , <a class="el" href="class_uniform_l_ecuyer_r_n_g1.html#aaed8bab7d34f76064ca34b1d35b204f4">UniformLEcuyerRNG1</a>
 </li>
 <li>LMM()
-: <a class="el" href="class_l_m_m.html#aa6d3ff98a4153869dd59c17135181a4c">LMM</a>
+: <a class="el" href="class_l_m_m.html#a4de26d3647b221d5d16667a402edfef2">LMM</a>
 </li>
 <li>LogNormalProcess()
-: <a class="el" href="class_log_normal_process.html#ace234a1856730ea48978eaf3cb3f7a79">LogNormalProcess</a>
+: <a class="el" href="class_log_normal_process.html#acf4b8a29784c43d8c613d9707492179c">LogNormalProcess&lt; VolType &gt;</a>
+</li>
+<li>LogNormalWithNormalJump()
+: <a class="el" href="class_log_normal_with_normal_jump.html#a8ed80b19a9d292a0a3b81ac09f504dd4">LogNormalWithNormalJump&lt; VolType &gt;</a>
 </li>
 </ul>
 
 
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>McAsianEngine()
-: <a class="el" href="class_mc_asian_engine.html#a4b2cd236024fd32623e1f7a7a27277d6">McAsianEngine&lt; RNG &gt;</a>
+: <a class="el" href="class_mc_asian_engine.html#a709959c19317f1dd319e043e409199fa">McAsianEngine&lt; RNG, PathType &gt;</a>
 </li>
 <li>McEuropeanEngine()
-: <a class="el" href="class_mc_european_engine.html#a22424812ecaf6e04134eeaa45b9d1e1f">McEuropeanEngine&lt; RNG &gt;</a>
+: <a class="el" href="class_mc_european_engine.html#aa571d66762d49d9bdb29b591a74e1ee0">McEuropeanEngine&lt; RNG, PathType &gt;</a>
 </li>
 <li>McModel()
-: <a class="el" href="class_mc_model.html#aeb469e49833dce6d5ffecfb31bcd0714">McModel&lt; RNG &gt;</a>
+: <a class="el" href="class_mc_model.html#a2c4ccfd7b882e80516e1f9733243e48d">McModel&lt; RNG, PathType &gt;</a>
 </li>
 <li>MCStatistics()
 : <a class="el" href="class_m_c_statistics.html#aa4a6abdd39edf6efff8151da45568095">MCStatistics</a>
@@ -262,8 +296,11 @@ $(function() {
 <li>mean()
 : <a class="el" href="class_m_c_statistics.html#af1aab02cf590dee3fdc6d7b6cf9443fa">MCStatistics</a>
 </li>
+<li>MertonJumpModel()
+: <a class="el" href="class_merton_jump_model.html#a377dce15944132c86e07f97317d29b67">MertonJumpModel</a>
+</li>
 <li>Model1D()
-: <a class="el" href="class_model1_d.html#aca6508f11a4b419dacdc830afbe0af36">Model1D</a>
+: <a class="el" href="class_model1_d.html#a4a4fa285bc474bd52d8a9bc1bc4f2dbf">Model1D</a>
 </li>
 <li>MultiRandGenerator()
 : <a class="el" href="class_multi_rand_generator.html#abf466c4d24a1c565abe493b26926f3c1">MultiRandGenerator&lt; Args &gt;</a>
@@ -273,10 +310,13 @@ $(function() {
 
 <h3><a id="index_n"></a>- n -</h3><ul>
 <li>next()
-: <a class="el" href="class_multi_rand_generator.html#a39838e440c70bb6de68052a2ea25e258">MultiRandGenerator&lt; Args &gt;</a>
+: <a class="el" href="class_compound_poisson.html#a4e16aa85ae83e5c3529b282811bbc689">CompoundPoisson&lt; PoissonRNG, JumpRNG &gt;</a>
+, <a class="el" href="class_multi_rand_generator.html#a39838e440c70bb6de68052a2ea25e258">MultiRandGenerator&lt; Args &gt;</a>
 , <a class="el" href="class_normal.html#a2cd9c31195181491a4bf0d3856746437">Normal&lt; NormMethod &gt;</a>
 , <a class="el" href="class_normal_marsaglia_bray_rng.html#a2cc54f5f331a5bd71eedc67c84db7279">NormalMarsagliaBrayRng&lt; UniformRNG &gt;</a>
-, <a class="el" href="class_path_generator.html#a848a4f432d86df5b03d835d99472ab37">PathGenerator&lt; RNG &gt;</a>
+, <a class="el" href="class_path_generator.html#aa90d7cd4206c42ac84b1ad7ee8660950">PathGenerator&lt; RNG, PathType &gt;</a>
+, <a class="el" href="class_poisson.html#ac5b7abe30dce61dd6a587e565d69802e">Poisson&lt; PoissonMethod &gt;</a>
+, <a class="el" href="class_poisson_inverse.html#a0c20c49509ed3cf10d1adab951246a2a">PoissonInverse&lt; UniformRNG &gt;</a>
 , <a class="el" href="class_random_variable_generator.html#a5178e1f85eff432dffd6320767136836">RandomVariableGenerator&lt; returnType &gt;</a>
 , <a class="el" href="class_uniform_l_ecuyer_r_n_g1.html#a6a166e0bef412d4c85565ec0017ae489">UniformLEcuyerRNG1</a>
 </li>
@@ -300,14 +340,15 @@ $(function() {
 : <a class="el" href="class_asian_path_pricer.html#a33d53acde0a8553f4adcee70c47f50b4">AsianPathPricer</a>
 </li>
 <li>operator()()
-: <a class="el" href="class_asian_path_pricer.html#adb10ce912ab34560d762ce0523ae394e">AsianPathPricer</a>
+: <a class="el" href="class_asian_path_pricer.html#a929e8a33447f977bfc947e1d5344e353">AsianPathPricer</a>
 , <a class="el" href="class_constant_parameter.html#a23abb141692843e2ef68d43f610beb5e">ConstantParameter</a>
-, <a class="el" href="class_european_path_pricer.html#ac12142089ccdc7fe73ba93d66a7964e6">EuropeanPathPricer</a>
+, <a class="el" href="class_european_path_pricer.html#a879d161eeff532f1f3e2fc5224b3361b">EuropeanPathPricer</a>
 , <a class="el" href="class_parameter.html#ae6317fac3d0b5e69101eb7059d151ca7">Parameter</a>
-, <a class="el" href="class_path_pricer.html#a057bf6a83f0cc2be06154144192ed918">PathPricer</a>
+, <a class="el" href="class_path_pricer.html#a14b2a03f259bb56a24a66c9b95bdcf67">PathPricer&lt; PathType &gt;</a>
 </li>
 <li>operator=()
 : <a class="el" href="class_parameter.html#ac7e34f069ed1474901fce2f06e0ee54f">Parameter</a>
+, <a class="el" href="class_singleton.html#a371f260f31335a12d6a1c830f16c71c8">Singleton&lt; T &gt;</a>
 </li>
 </ul>
 
@@ -317,23 +358,26 @@ $(function() {
 : <a class="el" href="class_parameter.html#a5de1d76f6b0342f3e98d004733ce9c2c">Parameter</a>
 </li>
 <li>Path()
-: <a class="el" href="class_path.html#a6ae58f503394f12a90ff7d059d30d26c">Path</a>
-</li>
-<li>PathDecorator()
-: <a class="el" href="class_path_decorator.html#a11d7b37b1c60bc36e26609ff96e0e329">PathDecorator</a>
+: <a class="el" href="class_path.html#a8437fecb95fe145057c957feb8b8955a">Path&lt; PathType &gt;</a>
 </li>
 <li>pathGenerator()
-: <a class="el" href="class_mc_asian_engine.html#ae38592c71ae4d5d09c9eb13d7cc0c5ff">McAsianEngine&lt; RNG &gt;</a>
-, <a class="el" href="class_mc_european_engine.html#af3bd77fe30b60833448ee44efe6280d9">McEuropeanEngine&lt; RNG &gt;</a>
-, <a class="el" href="class_mc_simulation.html#a44086a1efd452d8644c9f2e52417038f">McSimulation&lt; RNG &gt;</a>
+: <a class="el" href="class_mc_asian_engine.html#ae38592c71ae4d5d09c9eb13d7cc0c5ff">McAsianEngine&lt; RNG, PathType &gt;</a>
+, <a class="el" href="class_mc_european_engine.html#a1e4fff8cadebec5aae259fc747dc12a3">McEuropeanEngine&lt; RNG, PathType &gt;</a>
+, <a class="el" href="class_mc_simulation.html#ad2338ca624a9bbfaec8e4d882471d546">McSimulation&lt; RNG, PathType &gt;</a>
 </li>
 <li>PathGenerator()
-: <a class="el" href="class_path_generator.html#aca7349e0f3e916f634b1a162756b5e1a">PathGenerator&lt; RNG &gt;</a>
+: <a class="el" href="class_path_generator.html#af6c5d75655e077378f702248f84e2920">PathGenerator&lt; RNG, PathType &gt;</a>
 </li>
 <li>pathPricer()
-: <a class="el" href="class_mc_asian_engine.html#a5b7351c28b68878b7f6d130eef293d6c">McAsianEngine&lt; RNG &gt;</a>
-, <a class="el" href="class_mc_european_engine.html#aa504b56142c757d49cc4c9e079682f6d">McEuropeanEngine&lt; RNG &gt;</a>
-, <a class="el" href="class_mc_simulation.html#ae3b894a78823df7897abf418bb04a4a1">McSimulation&lt; RNG &gt;</a>
+: <a class="el" href="class_mc_asian_engine.html#a5b7351c28b68878b7f6d130eef293d6c">McAsianEngine&lt; RNG, PathType &gt;</a>
+, <a class="el" href="class_mc_european_engine.html#ab07c50b4305c3e65f68ce3f0c9b740d6">McEuropeanEngine&lt; RNG, PathType &gt;</a>
+, <a class="el" href="class_mc_simulation.html#a4d755ea777c2f3a2ec2fcc70acf71a6d">McSimulation&lt; RNG, PathType &gt;</a>
+</li>
+<li>Poisson()
+: <a class="el" href="class_poisson.html#a35d55c816050b65af8e80a662c1b9288">Poisson&lt; PoissonMethod &gt;</a>
+</li>
+<li>PoissonInverse()
+: <a class="el" href="class_poisson_inverse.html#a4ccdab4a6144d4edfcdb0b0f47ca1d15">PoissonInverse&lt; UniformRNG &gt;</a>
 </li>
 <li>PricingEngine()
 : <a class="el" href="class_pricing_engine.html#abfd32778b0483e92db2e7cd00a2f9345">PricingEngine</a>
@@ -353,13 +397,13 @@ $(function() {
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>sampleAccumulator()
-: <a class="el" href="class_mc_simulation.html#ae806933e305840081ef1554ad17012c3">McSimulation&lt; RNG &gt;</a>
+: <a class="el" href="class_mc_simulation.html#a61ed7348fc9fd05f05ede3c1ef83da16">McSimulation&lt; RNG, PathType &gt;</a>
 </li>
 <li>SampleResults()
 : <a class="el" href="class_m_c_statistics_1_1_sample_results.html#a49be18ef127e000d7f828ff69813abee">MCStatistics::SampleResults</a>
 </li>
 <li>setModel()
-: <a class="el" href="class_model1_d.html#af0665a1beba2852b5382d4590e9fbbce">Model1D</a>
+: <a class="el" href="class_model1_d.html#ab6c3618666b21f261898597e6e416495">Model1D</a>
 </li>
 <li>setParam()
 : <a class="el" href="class_parameter.html#a8cebb26e89537b098c8b42ef9aeb0f66">Parameter</a>
@@ -372,13 +416,17 @@ $(function() {
 </li>
 <li>setupArgument()
 : <a class="el" href="class_black_scholes_model.html#a04a6ba4c59cd70a92dedbeb482e9d5aa">BlackScholesModel</a>
-, <a class="el" href="class_model.html#a86fe5251e1a0c56097ba71f7d8c228d1">Model</a>
+, <a class="el" href="class_merton_jump_model.html#aaa2a274f47e3d70b4e331df023855ddc">MertonJumpModel</a>
+, <a class="el" href="class_model.html#a603717845fc9c6317d65a39409d10aed">Model&lt; Type_of_single_time &gt;</a>
 </li>
 <li>setupArguments()
 : <a class="el" href="class_asian_option.html#a82c9b5fb3bea69f476a65e9675e1cc28">AsianOption</a>
 , <a class="el" href="class_european_option.html#a77e3bc17dbcf317561c4920f6bfa84de">EuropeanOption</a>
 , <a class="el" href="class_forward.html#a909ab0cefa0ab42bdaf3bf6e84ac0096">Forward</a>
 , <a class="el" href="class_instrument.html#a5cd384be384fe415f09ecc78e2a87539">Instrument</a>
+</li>
+<li>Singleton()
+: <a class="el" href="class_singleton.html#a78bf7a846c3f522f760793d2edf0351a">Singleton&lt; T &gt;</a>
 </li>
 <li>size()
 : <a class="el" href="class_parameter.html#ae1ca6e3ab5f2d2ed3bffbdee6e941068">Parameter</a>
@@ -388,9 +436,9 @@ $(function() {
 
 <h3><a id="index_t"></a>- t -</h3><ul>
 <li>timeGrid()
-: <a class="el" href="class_mc_asian_engine.html#ad8d2c8721172ab1d7327db91a26c5052">McAsianEngine&lt; RNG &gt;</a>
-, <a class="el" href="class_mc_european_engine.html#a62341229306247e5c1eed9a7d4a2dba3">McEuropeanEngine&lt; RNG &gt;</a>
-, <a class="el" href="class_mc_simulation.html#a8af54a9121f2d875872295b03a1b2a40">McSimulation&lt; RNG &gt;</a>
+: <a class="el" href="class_mc_asian_engine.html#ad8d2c8721172ab1d7327db91a26c5052">McAsianEngine&lt; RNG, PathType &gt;</a>
+, <a class="el" href="class_mc_european_engine.html#ae4e0ab6834416144221f1a91dd154587">McEuropeanEngine&lt; RNG, PathType &gt;</a>
+, <a class="el" href="class_mc_simulation.html#acf7d24981be3025a2cf07f8623dbe8ce">McSimulation&lt; RNG, PathType &gt;</a>
 </li>
 </ul>
 
@@ -404,7 +452,7 @@ $(function() {
 
 <h3><a id="index_v"></a>- v -</h3><ul>
 <li>value()
-: <a class="el" href="class_mc_simulation.html#a476b6d633c6ebb742d6d26a62a6a3810">McSimulation&lt; RNG &gt;</a>
+: <a class="el" href="class_mc_simulation.html#ae2f03b55464c189295aab9b8fd7b0a37">McSimulation&lt; RNG, PathType &gt;</a>
 </li>
 <li>VanillaPayoff()
 : <a class="el" href="class_vanilla_payoff.html#ae0d7f1fdb70f4ad9c2002f96df2199d3">VanillaPayoff</a>
@@ -423,10 +471,13 @@ $(function() {
 : <a class="el" href="class_generic_random_variable_generator.html#a5a95e8b9b2432f2cbbf1f7b32773d036">GenericRandomVariableGenerator</a>
 </li>
 <li>~Path()
-: <a class="el" href="class_path.html#a11618e66fc700531d3ad998acfdb88a3">Path</a>
+: <a class="el" href="class_path.html#a83933167b70441af12427b23d88b0447">Path&lt; PathType &gt;</a>
 </li>
 <li>~Results()
 : <a class="el" href="class_pricing_engine_1_1_results.html#a3a0c59acadf917438c07697f547de53e">PricingEngine::Results</a>
+</li>
+<li>~Singleton()
+: <a class="el" href="class_singleton.html#ad3c93143836479fb3dd96b21b795938c">Singleton&lt; T &gt;</a>
 </li>
 <li>~StochasticProcess()
 : <a class="el" href="class_stochastic_process.html#ac9c66520ce049a6ee61c079d2910e409">StochasticProcess</a>

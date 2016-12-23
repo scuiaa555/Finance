@@ -46,6 +46,7 @@ CMakeFiles/Finance.dir/Main.cpp.o
  ..//McFramework/PathPricer.h
  ..//Model.h
  ..//Payoffs/VanillaPayoff.h
+ ..//RandNumGeneration/CompoundPoisson.h
  ..//RandNumGeneration/MultiRandGenerator.h
  ..//RandNumGeneration/Normal.h
  ..//RandNumGeneration/NormalMarsagliaBrayRng.h
@@ -58,6 +59,7 @@ CMakeFiles/Finance.dir/Main.cpp.o
  ..//StochasticProcess.h
  ..//StochasticProcesses/BSStochasticProcess.h
  ..//StochasticProcesses/LogNormalProcess.h
+ ..//StochasticProcesses/LogNormalwithNormalJump.h
  ../McFramework/PathGenerator.h
  ../McFramework/PathPricer.h
  ../NameDef.h
@@ -69,10 +71,10 @@ CMakeFiles/Finance.dir/Main.cpp.o
  /Users/CUI/Dropbox/C++/Finance/Instruments/EuropeanOption.h
  /Users/CUI/Dropbox/C++/Finance/Main.cpp
  /Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.h
+ /Users/CUI/Dropbox/C++/Finance/Models/MertonJumpModel.h
  /Users/CUI/Dropbox/C++/Finance/PricingEngines/AnalyticEuropeanEngine.h
  /Users/CUI/Dropbox/C++/Finance/PricingEngines/EuropeanPathPricer.h
  /Users/CUI/Dropbox/C++/Finance/PricingEngines/McEuropeanEngine.h
- /Users/CUI/Dropbox/C++/Finance/RandNumGeneration/CompoundPoisson.h
  /opt/local/include/boost/config.hpp
  /opt/local/include/boost/config/compiler/borland.hpp
  /opt/local/include/boost/config/compiler/clang.hpp
@@ -146,6 +148,23 @@ CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o
  ../StochasticProcess.h
  /Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.cpp
  /Users/CUI/Dropbox/C++/Finance/Models/BlackScholesModel.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o
+ ..//Model.h
+ ..//RandNumGeneration/CompoundPoisson.h
+ ..//RandNumGeneration/Normal.h
+ ..//RandNumGeneration/NormalMarsagliaBrayRng.h
+ ..//RandNumGeneration/Poisson.h
+ ..//RandNumGeneration/RandomVariableGenerator.h
+ ..//RandNumGeneration/UniformLEcuyerRNG1.h
+ ..//Singleton.h
+ ..//StochasticProcesses/LogNormalProcess.h
+ ..//StochasticProcesses/LogNormalwithNormalJump.h
+ ../NameDef.h
+ ../Parameter.h
+ ../RandNumGeneration/PoissonInverse.h
+ ../StochasticProcess.h
+ /Users/CUI/Dropbox/C++/Finance/Models/MertonJumpModel.cpp
+ /Users/CUI/Dropbox/C++/Finance/Models/MertonJumpModel.h
 CMakeFiles/Finance.dir/Parameter.cpp.o
  /Users/CUI/Dropbox/C++/Finance/NameDef.h
  /Users/CUI/Dropbox/C++/Finance/Parameter.cpp

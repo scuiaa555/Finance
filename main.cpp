@@ -4,7 +4,7 @@
 #include "PricingEngines/McEuropeanEngine.h"
 #include "PricingEngines/AnalyticEuropeanEngine.h"
 #include <boost/timer.hpp>
-#include "RandNumGeneration/CompoundPoisson.h"
+#include "Models/MertonJumpModel.h"
 //#include <armadillo>
 
 using namespace std;
@@ -28,7 +28,7 @@ int main() {
 
 
     boost::timer tm;
-    double a, a1, a2;
+    double a, a1, a2, a3;
     shared_ptr<Payoff> vanillaPayoff(new VanillaPayoff(100.0, "put"));
     shared_ptr<BSStochasticProcess> bsProcess(new BSStochasticProcess(0.05, 0.0, 0.3, 100));
     shared_ptr<BlackScholesModel> bsModel(new BlackScholesModel(bsProcess));
@@ -49,6 +49,15 @@ int main() {
     a2 = vanillaOpt.npv();
     double duration = tm.elapsed();
     std::cout << "***Time elapsed in " << duration << " seconds.***" << endl;
+
+    shared_ptr<MertonJumpModel> mertonModel(new MertonJumpModel(0.05, 0.0, 0.3, 0.1, 0, 1, 100));
+    shared_ptr<McEuropeanEngine<MultiRandom<Normal<>, CompoundPoisson<Poisson<>, Normal<>>>>> pricingEngine3(
+            new McEuropeanEngine<MultiRandom<Normal<>, CompoundPoisson<Poisson<>, Normal<>>>>(mertonModel, 1, 200000,
+                                                                                              10000));
+    vanillaOpt.setPricingEngine(pricingEngine3);
+    a3 = vanillaOpt.npv();
+    double duration2 = tm.elapsed();
+    std::cout << "***Time elapsed in " << duration2 - duration << " seconds.***" << endl;
 
 
 //    a = bsProcess->evolve(0, 100, 0.1, 0.2);

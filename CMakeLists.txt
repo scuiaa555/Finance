@@ -32,5 +32,5 @@ set(SOURCE_FILES Main.cpp Payoff.h Instrument.cpp
         StochasticProcesses/BSStochasticProcess.h StochasticProcesses/LogNormalProcess.h
         RandNumGeneration/MultiRandGenerator.h RandNumGeneration/PseudoRandom.h RandNumGeneration/RandomVariableGenerator.h
         RandNumGeneration/Normal.h RandNumGeneration/Poisson.h RandNumGeneration/PoissonInverse.h RandNumGeneration/CompoundPoisson.h
-        Singleton.h StochasticProcesses/LogNormalwithNormalJump.h)
+        Singleton.h StochasticProcesses/LogNormalwithNormalJump.h Models/MertonJumpModel.h Models/MertonJumpModel.cpp)
 add_executable(Finance ${SOURCE_FILES})

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Finance: McSimulation&lt; RNG &gt; Class Template Reference</title>
+<title>Finance: McSimulation&lt; RNG, PathType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ $(function() {
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_mc_simulation-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">McSimulation&lt; RNG &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">McSimulation&lt; RNG, PathType &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -74,75 +74,76 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="_mc_simulation_8h_source.html">McSimulation.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for McSimulation&lt; RNG &gt;:</div>
+Inheritance diagram for McSimulation&lt; RNG, PathType &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_mc_simulation.png" usemap="#McSimulation_3C_20RNG_20_3E_map" alt=""/>
-  <map id="McSimulation_3C_20RNG_20_3E_map" name="McSimulation&lt; RNG &gt;_map">
-<area href="class_mc_asian_engine.html" alt="McAsianEngine&lt; RNG &gt;" shape="rect" coords="0,56,174,80"/>
-<area href="class_mc_european_engine.html" alt="McEuropeanEngine&lt; RNG &gt;" shape="rect" coords="184,56,358,80"/>
+  <img src="class_mc_simulation.png" usemap="#McSimulation_3C_20RNG_2C_20PathType_20_3E_map" alt=""/>
+  <map id="McSimulation_3C_20RNG_2C_20PathType_20_3E_map" name="McSimulation&lt; RNG, PathType &gt;_map">
+<area href="class_mc_asian_engine.html" alt="McAsianEngine&lt; RNG, PathType &gt;" shape="rect" coords="0,56,236,80"/>
+<area href="class_mc_european_engine.html" alt="McEuropeanEngine&lt; RNG, PathType &gt;" shape="rect" coords="246,56,482,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acaa09060a9ee90e0cc3631d8b30ebae0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#acaa09060a9ee90e0cc3631d8b30ebae0">calculate</a> (unsigned long maxSamples, unsigned long minSamples)</td></tr>
-<tr class="memdesc:acaa09060a9ee90e0cc3631d8b30ebae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create its data member mcModel(shared_ptr) with corresponding path generator and path pricer and control the calculation procedure.  <a href="#acaa09060a9ee90e0cc3631d8b30ebae0">More...</a><br /></td></tr>
-<tr class="separator:acaa09060a9ee90e0cc3631d8b30ebae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d323dca5d0a6c50d6fbab6ea564a1f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a9d323dca5d0a6c50d6fbab6ea564a1f3">calculate</a> (unsigned long maxSamples, unsigned long minSamples)</td></tr>
+<tr class="memdesc:a9d323dca5d0a6c50d6fbab6ea564a1f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create its data member mcModel(shared_ptr) with corresponding path generator and path pricer and control the calculation procedure.  <a href="#a9d323dca5d0a6c50d6fbab6ea564a1f3">More...</a><br /></td></tr>
+<tr class="separator:a9d323dca5d0a6c50d6fbab6ea564a1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ae806933e305840081ef1554ad17012c3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_m_c_statistics.html">MCStatistics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#ae806933e305840081ef1554ad17012c3">sampleAccumulator</a> () const</td></tr>
-<tr class="memdesc:ae806933e305840081ef1554ad17012c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the statistics back from mcModel.  <a href="#ae806933e305840081ef1554ad17012c3">More...</a><br /></td></tr>
-<tr class="separator:ae806933e305840081ef1554ad17012c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ed7348fc9fd05f05ede3c1ef83da16"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_m_c_statistics.html">MCStatistics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a61ed7348fc9fd05f05ede3c1ef83da16">sampleAccumulator</a> () const</td></tr>
+<tr class="memdesc:a61ed7348fc9fd05f05ede3c1ef83da16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the statistics back from mcModel.  <a href="#a61ed7348fc9fd05f05ede3c1ef83da16">More...</a><br /></td></tr>
+<tr class="separator:a61ed7348fc9fd05f05ede3c1ef83da16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a44086a1efd452d8644c9f2e52417038f"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a44086a1efd452d8644c9f2e52417038f">pathGenerator</a> ()=0</td></tr>
-<tr class="memdesc:a44086a1efd452d8644c9f2e52417038f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathGenerator to the derived class.  <a href="#a44086a1efd452d8644c9f2e52417038f">More...</a><br /></td></tr>
-<tr class="separator:a44086a1efd452d8644c9f2e52417038f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3b894a78823df7897abf418bb04a4a1"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#ae3b894a78823df7897abf418bb04a4a1">pathPricer</a> ()=0</td></tr>
-<tr class="memdesc:ae3b894a78823df7897abf418bb04a4a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathPricer to the derived class.  <a href="#ae3b894a78823df7897abf418bb04a4a1">More...</a><br /></td></tr>
-<tr class="separator:ae3b894a78823df7897abf418bb04a4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8af54a9121f2d875872295b03a1b2a40"><td class="memItemLeft" align="right" valign="top">virtual const vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a8af54a9121f2d875872295b03a1b2a40">timeGrid</a> () const =0</td></tr>
-<tr class="memdesc:a8af54a9121f2d875872295b03a1b2a40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of setting time grid to the derived class.  <a href="#a8af54a9121f2d875872295b03a1b2a40">More...</a><br /></td></tr>
-<tr class="separator:a8af54a9121f2d875872295b03a1b2a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a476b6d633c6ebb742d6d26a62a6a3810"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a476b6d633c6ebb742d6d26a62a6a3810">value</a> (unsigned long maxSamples, unsigned long minSamples)</td></tr>
-<tr class="memdesc:a476b6d633c6ebb742d6d26a62a6a3810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the <a class="el" href="class_mc_model.html">McModel</a> to do the valuation.  <a href="#a476b6d633c6ebb742d6d26a62a6a3810">More...</a><br /></td></tr>
-<tr class="separator:a476b6d633c6ebb742d6d26a62a6a3810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2338ca624a9bbfaec8e4d882471d546"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="class_path_generator.html">PathGenerator</a>&lt; RNG, PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#ad2338ca624a9bbfaec8e4d882471d546">pathGenerator</a> ()=0</td></tr>
+<tr class="memdesc:ad2338ca624a9bbfaec8e4d882471d546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathGenerator to the derived class.  <a href="#ad2338ca624a9bbfaec8e4d882471d546">More...</a><br /></td></tr>
+<tr class="separator:ad2338ca624a9bbfaec8e4d882471d546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d755ea777c2f3a2ec2fcc70acf71a6d"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="class_path_pricer.html">PathPricer</a>&lt; PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a4d755ea777c2f3a2ec2fcc70acf71a6d">pathPricer</a> ()=0</td></tr>
+<tr class="memdesc:a4d755ea777c2f3a2ec2fcc70acf71a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of pathPricer to the derived class.  <a href="#a4d755ea777c2f3a2ec2fcc70acf71a6d">More...</a><br /></td></tr>
+<tr class="separator:a4d755ea777c2f3a2ec2fcc70acf71a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf7d24981be3025a2cf07f8623dbe8ce"><td class="memItemLeft" align="right" valign="top">virtual const vector&lt; <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#acf7d24981be3025a2cf07f8623dbe8ce">timeGrid</a> () const =0</td></tr>
+<tr class="memdesc:acf7d24981be3025a2cf07f8623dbe8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defer the implementation of setting time grid to the derived class.  <a href="#acf7d24981be3025a2cf07f8623dbe8ce">More...</a><br /></td></tr>
+<tr class="separator:acf7d24981be3025a2cf07f8623dbe8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f03b55464c189295aab9b8fd7b0a37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#ae2f03b55464c189295aab9b8fd7b0a37">value</a> (unsigned long maxSamples, unsigned long minSamples)</td></tr>
+<tr class="memdesc:ae2f03b55464c189295aab9b8fd7b0a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the <a class="el" href="class_mc_model.html">McModel</a> to do the valuation.  <a href="#ae2f03b55464c189295aab9b8fd7b0a37">More...</a><br /></td></tr>
+<tr class="separator:ae2f03b55464c189295aab9b8fd7b0a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a7bc913519c8fdf97955870ca8d0530e4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_mc_model.html">McModel</a>&lt; RNG &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a7bc913519c8fdf97955870ca8d0530e4">mcModel_</a></td></tr>
-<tr class="memdesc:a7bc913519c8fdf97955870ca8d0530e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared_ptr of <a class="el" href="class_mc_model.html">McModel</a> which contains the needed path generator and pricer.  <a href="#a7bc913519c8fdf97955870ca8d0530e4">More...</a><br /></td></tr>
-<tr class="separator:a7bc913519c8fdf97955870ca8d0530e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42eb4d165bfdfae218b4508e2321c4a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a42eb4d165bfdfae218b4508e2321c4a3">isAntithetic_</a></td></tr>
-<tr class="memdesc:a42eb4d165bfdfae218b4508e2321c4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">=1 indicates use of antithetic path; =0 makes no use of antithetic path.  <a href="#a42eb4d165bfdfae218b4508e2321c4a3">More...</a><br /></td></tr>
-<tr class="separator:a42eb4d165bfdfae218b4508e2321c4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a194d2f5aa4a4e3863d6590a88af9c445"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_mc_model.html">McModel</a>&lt; RNG, PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#a194d2f5aa4a4e3863d6590a88af9c445">mcModel_</a></td></tr>
+<tr class="memdesc:a194d2f5aa4a4e3863d6590a88af9c445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared_ptr of <a class="el" href="class_mc_model.html">McModel</a> which contains the needed path generator and pricer.  <a href="#a194d2f5aa4a4e3863d6590a88af9c445">More...</a><br /></td></tr>
+<tr class="separator:a194d2f5aa4a4e3863d6590a88af9c445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17f26f85e3f48406229d7b6f84b3f89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mc_simulation.html#af17f26f85e3f48406229d7b6f84b3f89">isAntithetic_</a></td></tr>
+<tr class="memdesc:af17f26f85e3f48406229d7b6f84b3f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">=1 indicates use of antithetic path; =0 makes no use of antithetic path.  <a href="#af17f26f85e3f48406229d7b6f84b3f89">More...</a><br /></td></tr>
+<tr class="separator:af17f26f85e3f48406229d7b6f84b3f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename RNG&gt;<br />
-class McSimulation&lt; RNG &gt;</h3>
+<div class="textblock"><h3>template&lt;typename RNG, typename PathType&gt;<br />
+class McSimulation&lt; RNG, PathType &gt;</h3>
 
 <p>Base class for all Monte Carlo pricing engines. </p>
 <p>Any Monte Carlo pricing engine will be privately inherited(implement in terms of) from this class.<br />
 It will provide the mcModel class(its data member) with a specific path generator and a path pricer and control the calculation procedure of mcModel. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">RNG</td><td>Generic random number generator(e.g. <a class="el" href="struct_single_random.html">SingleRandom</a>&lt;Normal&lt;&gt;&gt;, <a class="el" href="struct_multi_random.html">MultiRandom</a>&lt;Normal&lt;&gt;,Poisson&gt;,...) </td></tr>
+    <tr><td class="paramname">RNG</td><td>Generic random number generator(e.g. <a class="el" href="struct_single_random.html">SingleRandom</a>&lt;Normal&lt;&gt;&gt;, <a class="el" href="struct_multi_random.html">MultiRandom</a>&lt;Normal&lt;&gt;,<a class="el" href="class_poisson.html">Poisson</a>&gt;,...) </td></tr>
+    <tr><td class="paramname">PathType</td><td>Type of generated path. </td></tr>
   </table>
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="acaa09060a9ee90e0cc3631d8b30ebae0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acaa09060a9ee90e0cc3631d8b30ebae0">&sect;&nbsp;</a></span>calculate()</h2>
+<a id="a9d323dca5d0a6c50d6fbab6ea564a1f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d323dca5d0a6c50d6fbab6ea564a1f3">&sect;&nbsp;</a></span>calculate()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG &gt;::calculate </td>
+          <td class="memname">void <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG, PathType &gt;::calculate </td>
           <td>(</td>
           <td class="paramtype">unsigned long&#160;</td>
           <td class="paramname"><em>maxSamples</em>, </td>
@@ -172,19 +173,19 @@ template&lt;typename RNG &gt; </div>
 
 </div>
 </div>
-<a id="a44086a1efd452d8644c9f2e52417038f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44086a1efd452d8644c9f2e52417038f">&sect;&nbsp;</a></span>pathGenerator()</h2>
+<a id="ad2338ca624a9bbfaec8e4d882471d546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2338ca624a9bbfaec8e4d882471d546">&sect;&nbsp;</a></span>pathGenerator()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::shared_ptr&lt;<a class="el" href="class_path_generator.html">PathGenerator</a>&lt;RNG&gt; &gt; <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG &gt;::pathGenerator </td>
+          <td class="memname">virtual std::shared_ptr&lt;<a class="el" href="class_path_generator.html">PathGenerator</a>&lt;RNG, PathType&gt; &gt; <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG, PathType &gt;::pathGenerator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -200,23 +201,23 @@ template&lt;typename RNG &gt; </div>
 <p>Defer the implementation of pathGenerator to the derived class. </p>
 <dl class="section return"><dt>Returns</dt><dd>shared_ptr of path generator. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_mc_european_engine.html#af3bd77fe30b60833448ee44efe6280d9">McEuropeanEngine&lt; RNG &gt;</a>, and <a class="el" href="class_mc_asian_engine.html#ae38592c71ae4d5d09c9eb13d7cc0c5ff">McAsianEngine&lt; RNG &gt;</a>.</p>
+<p>Implemented in <a class="el" href="class_mc_european_engine.html#a1e4fff8cadebec5aae259fc747dc12a3">McEuropeanEngine&lt; RNG, PathType &gt;</a>, and <a class="el" href="class_mc_asian_engine.html#ae38592c71ae4d5d09c9eb13d7cc0c5ff">McAsianEngine&lt; RNG, PathType &gt;</a>.</p>
 
 </div>
 </div>
-<a id="ae3b894a78823df7897abf418bb04a4a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3b894a78823df7897abf418bb04a4a1">&sect;&nbsp;</a></span>pathPricer()</h2>
+<a id="a4d755ea777c2f3a2ec2fcc70acf71a6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d755ea777c2f3a2ec2fcc70acf71a6d">&sect;&nbsp;</a></span>pathPricer()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::shared_ptr&lt;<a class="el" href="class_path_pricer.html">PathPricer</a>&gt; <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG &gt;::pathPricer </td>
+          <td class="memname">virtual std::shared_ptr&lt;<a class="el" href="class_path_pricer.html">PathPricer</a>&lt;PathType&gt; &gt; <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG, PathType &gt;::pathPricer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -232,23 +233,23 @@ template&lt;typename RNG &gt; </div>
 <p>Defer the implementation of pathPricer to the derived class. </p>
 <dl class="section return"><dt>Returns</dt><dd>shared_ptr of path pricer. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_mc_european_engine.html#aa504b56142c757d49cc4c9e079682f6d">McEuropeanEngine&lt; RNG &gt;</a>, and <a class="el" href="class_mc_asian_engine.html#a5b7351c28b68878b7f6d130eef293d6c">McAsianEngine&lt; RNG &gt;</a>.</p>
+<p>Implemented in <a class="el" href="class_mc_european_engine.html#ab07c50b4305c3e65f68ce3f0c9b740d6">McEuropeanEngine&lt; RNG, PathType &gt;</a>, and <a class="el" href="class_mc_asian_engine.html#a5b7351c28b68878b7f6d130eef293d6c">McAsianEngine&lt; RNG, PathType &gt;</a>.</p>
 
 </div>
 </div>
-<a id="ae806933e305840081ef1554ad17012c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae806933e305840081ef1554ad17012c3">&sect;&nbsp;</a></span>sampleAccumulator()</h2>
+<a id="a61ed7348fc9fd05f05ede3c1ef83da16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61ed7348fc9fd05f05ede3c1ef83da16">&sect;&nbsp;</a></span>sampleAccumulator()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class_m_c_statistics.html">MCStatistics</a> &amp; <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG &gt;::sampleAccumulator </td>
+          <td class="memname">const <a class="el" href="class_m_c_statistics.html">MCStatistics</a> &amp; <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG, PathType &gt;::sampleAccumulator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -267,19 +268,19 @@ template&lt;typename RNG &gt; </div>
 
 </div>
 </div>
-<a id="a8af54a9121f2d875872295b03a1b2a40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8af54a9121f2d875872295b03a1b2a40">&sect;&nbsp;</a></span>timeGrid()</h2>
+<a id="acf7d24981be3025a2cf07f8623dbe8ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf7d24981be3025a2cf07f8623dbe8ce">&sect;&nbsp;</a></span>timeGrid()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const vector&lt;<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a>&gt; <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG &gt;::timeGrid </td>
+          <td class="memname">virtual const vector&lt;<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a>&gt; <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG, PathType &gt;::timeGrid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -296,23 +297,23 @@ template&lt;typename RNG &gt; </div>
 <p>Time grid is a vector which is saved in the <a class="el" href="class_path.html">Path</a> class.<br />
 <em>Constness:</em> Return by value, since it is a local variable. </p><dl class="section return"><dt>Returns</dt><dd>Vector of time grid. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_mc_european_engine.html#a62341229306247e5c1eed9a7d4a2dba3">McEuropeanEngine&lt; RNG &gt;</a>.</p>
+<p>Implemented in <a class="el" href="class_mc_european_engine.html#ae4e0ab6834416144221f1a91dd154587">McEuropeanEngine&lt; RNG, PathType &gt;</a>.</p>
 
 </div>
 </div>
-<a id="a476b6d633c6ebb742d6d26a62a6a3810"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a476b6d633c6ebb742d6d26a62a6a3810">&sect;&nbsp;</a></span>value()</h2>
+<a id="ae2f03b55464c189295aab9b8fd7b0a37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f03b55464c189295aab9b8fd7b0a37">&sect;&nbsp;</a></span>value()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG &gt;::value </td>
+          <td class="memname">void <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG, PathType &gt;::value </td>
           <td>(</td>
           <td class="paramtype">unsigned long&#160;</td>
           <td class="paramname"><em>maxSamples</em>, </td>
@@ -348,19 +349,19 @@ template&lt;typename RNG &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a42eb4d165bfdfae218b4508e2321c4a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42eb4d165bfdfae218b4508e2321c4a3">&sect;&nbsp;</a></span>isAntithetic_</h2>
+<a id="af17f26f85e3f48406229d7b6f84b3f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af17f26f85e3f48406229d7b6f84b3f89">&sect;&nbsp;</a></span>isAntithetic_</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG &gt;::isAntithetic_</td>
+          <td class="memname">bool <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG, PathType &gt;::isAntithetic_</td>
         </tr>
       </table>
   </td>
@@ -374,19 +375,19 @@ template&lt;typename RNG &gt; </div>
 
 </div>
 </div>
-<a id="a7bc913519c8fdf97955870ca8d0530e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bc913519c8fdf97955870ca8d0530e4">&sect;&nbsp;</a></span>mcModel_</h2>
+<a id="a194d2f5aa4a4e3863d6590a88af9c445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a194d2f5aa4a4e3863d6590a88af9c445">&sect;&nbsp;</a></span>mcModel_</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RNG &gt; </div>
+template&lt;typename RNG , typename PathType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_mc_model.html">McModel</a>&lt;RNG&gt; &gt; <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG &gt;::mcModel_</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_mc_model.html">McModel</a>&lt;RNG, PathType&gt; &gt; <a class="el" href="class_mc_simulation.html">McSimulation</a>&lt; RNG, PathType &gt;::mcModel_</td>
         </tr>
       </table>
   </td>

@@ -19,7 +19,7 @@ public:
 
     Parameter(const Parameter &) = default;
 
-    Parameter &operator=(const Parameter&) = default;
+    Parameter &operator=(const Parameter &) = default;
 
     virtual double operator()(Time t) const = 0;
 
@@ -42,11 +42,13 @@ public:
     ConstantParameter(double param);
 
     double operator()(Time t) const override;
+
+    double operator()() const { return params_[0]; }
 };
 
 class NullParameter : public ConstantParameter {
 public:
-    NullParameter() : ConstantParameter(0.0) { }
+    NullParameter() : ConstantParameter(0.0) {}
 };
 
 #endif //FINANCE_PARAMETER_H

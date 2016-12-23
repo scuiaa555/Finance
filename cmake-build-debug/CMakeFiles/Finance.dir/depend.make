@@ -45,6 +45,7 @@ CMakeFiles/Finance.dir/Main.cpp.o: ../McFramework/Path.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../McFramework/PathPricer.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../Model.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../Payoffs/VanillaPayoff.h
+CMakeFiles/Finance.dir/Main.cpp.o: ../RandNumGeneration/CompoundPoisson.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../RandNumGeneration/MultiRandGenerator.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../RandNumGeneration/Normal.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../RandNumGeneration/NormalMarsagliaBrayRng.h
@@ -57,6 +58,7 @@ CMakeFiles/Finance.dir/Main.cpp.o: ../Statistics.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../StochasticProcess.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../StochasticProcesses/BSStochasticProcess.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../StochasticProcesses/LogNormalProcess.h
+CMakeFiles/Finance.dir/Main.cpp.o: ../StochasticProcesses/LogNormalwithNormalJump.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../McFramework/PathGenerator.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../McFramework/PathPricer.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../NameDef.h
@@ -68,10 +70,10 @@ CMakeFiles/Finance.dir/Main.cpp.o: ../RandNumGeneration/SingleRandSequenceGenera
 CMakeFiles/Finance.dir/Main.cpp.o: ../Instruments/EuropeanOption.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../Main.cpp
 CMakeFiles/Finance.dir/Main.cpp.o: ../Models/BlackScholesModel.h
+CMakeFiles/Finance.dir/Main.cpp.o: ../Models/MertonJumpModel.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../PricingEngines/AnalyticEuropeanEngine.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../PricingEngines/EuropeanPathPricer.h
 CMakeFiles/Finance.dir/Main.cpp.o: ../PricingEngines/McEuropeanEngine.h
-CMakeFiles/Finance.dir/Main.cpp.o: ../RandNumGeneration/CompoundPoisson.h
 CMakeFiles/Finance.dir/Main.cpp.o: /opt/local/include/boost/config.hpp
 CMakeFiles/Finance.dir/Main.cpp.o: /opt/local/include/boost/config/compiler/borland.hpp
 CMakeFiles/Finance.dir/Main.cpp.o: /opt/local/include/boost/config/compiler/clang.hpp
@@ -145,6 +147,23 @@ CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o: ../Parameter.h
 CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o: ../StochasticProcess.h
 CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o: ../Models/BlackScholesModel.cpp
 CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o: ../Models/BlackScholesModel.h
+
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../Model.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../RandNumGeneration/CompoundPoisson.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../RandNumGeneration/Normal.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../RandNumGeneration/NormalMarsagliaBrayRng.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../RandNumGeneration/Poisson.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../RandNumGeneration/RandomVariableGenerator.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../RandNumGeneration/UniformLEcuyerRNG1.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../Singleton.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../StochasticProcesses/LogNormalProcess.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../StochasticProcesses/LogNormalwithNormalJump.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../NameDef.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../Parameter.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../RandNumGeneration/PoissonInverse.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../StochasticProcess.h
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../Models/MertonJumpModel.cpp
+CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o: ../Models/MertonJumpModel.h
 
 CMakeFiles/Finance.dir/Parameter.cpp.o: ../NameDef.h
 CMakeFiles/Finance.dir/Parameter.cpp.o: ../Parameter.cpp

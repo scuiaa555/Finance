@@ -74,40 +74,42 @@ Inheritance diagram for ModelND:</div>
  <div class="center">
   <img src="class_model_n_d.png" usemap="#ModelND_map" alt=""/>
   <map id="ModelND_map" name="ModelND_map">
-<area href="class_model.html" alt="Model" shape="rect" coords="0,0,65,24"/>
-<area href="class_l_m_m.html" title="Standard LMM model. " alt="LMM" shape="rect" coords="0,112,65,136"/>
+<area href="class_model.html" alt="Model&lt; vector&lt; double &gt; &gt;" shape="rect" coords="0,0,169,24"/>
+<area href="class_l_m_m.html" title="Standard LMM model. " alt="LMM" shape="rect" coords="0,112,169,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a98976fe73a8895ff98ba60ea174232f8"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; <a class="el" href="class_stochastic_process.html">StochasticProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_n_d.html#a98976fe73a8895ff98ba60ea174232f8">getProcess</a> () const override</td></tr>
-<tr class="separator:a98976fe73a8895ff98ba60ea174232f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62866814432b7c0a0d8f58223cc6279d"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; <a class="el" href="class_stochastic_process.html">StochasticProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_n_d.html#a62866814432b7c0a0d8f58223cc6279d">getProcess</a> (int i) const override</td></tr>
-<tr class="separator:a62866814432b7c0a0d8f58223cc6279d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0965f73049004a6634429b96c9190b8"><td class="memItemLeft" align="right" valign="top">const shared_ptr&lt; <a class="el" href="class_stochastic_process.html">StochasticProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_n_d.html#ae0965f73049004a6634429b96c9190b8">getProcess</a> () const override</td></tr>
+<tr class="separator:ae0965f73049004a6634429b96c9190b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbbc63ae751cb1b3ad6f045fb42b6ac3"><td class="memItemLeft" align="right" valign="top">const shared_ptr&lt; <a class="el" href="class_stochastic_process.html">StochasticProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_n_d.html#acbbc63ae751cb1b3ad6f045fb42b6ac3">getProcess</a> (int i) const override</td></tr>
+<tr class="separator:acbbc63ae751cb1b3ad6f045fb42b6ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2356536a38f4961257654de629d6093"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_n_d.html#ab2356536a38f4961257654de629d6093">getDimensionality</a> () const override</td></tr>
 <tr class="separator:ab2356536a38f4961257654de629d6093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_model.html">Model</a></td></tr>
-<tr class="memitem:a087d56280bb51e8b04be3a9a30d06c76 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a087d56280bb51e8b04be3a9a30d06c76">evolve</a> (<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> t0, std::vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &amp;x0, <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> dt, double dw) const =0</td></tr>
-<tr class="separator:a087d56280bb51e8b04be3a9a30d06c76 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8a8c7e69b0be1df63ad141e0e14bf1e inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual const vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ac8a8c7e69b0be1df63ad141e0e14bf1e">getMCdimension</a> () const =0</td></tr>
-<tr class="separator:ac8a8c7e69b0be1df63ad141e0e14bf1e inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade5d08aae4d32777bfa048f356bbcca9 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ade5d08aae4d32777bfa048f356bbcca9">getInitial</a> () const</td></tr>
-<tr class="separator:ade5d08aae4d32777bfa048f356bbcca9 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab75ee969956d763343ebe2e19f80735c inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ab75ee969956d763343ebe2e19f80735c">setupArgument</a> (<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> t, <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> dt, <a class="el" href="class_generic_random_variable_generator_1_1_argument.html">GenericRandomVariableGenerator::Argument</a> *)</td></tr>
-<tr class="separator:ab75ee969956d763343ebe2e19f80735c inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86fe5251e1a0c56097ba71f7d8c228d1 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a86fe5251e1a0c56097ba71f7d8c228d1">setupArgument</a> (<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> t, <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> dt, vector&lt; <a class="el" href="class_generic_random_variable_generator_1_1_argument.html">GenericRandomVariableGenerator::Argument</a> *&gt;)</td></tr>
-<tr class="separator:a86fe5251e1a0c56097ba71f7d8c228d1 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_model.html">Model&lt; vector&lt; double &gt; &gt;</a></td></tr>
+<tr class="memitem:a18b1fe1476b5adde8d6125e7f6a7f932 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a18b1fe1476b5adde8d6125e7f6a7f932">evolve</a> (<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> t0, vector&lt; double &gt; &amp;x0, <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> dt, double dw) const</td></tr>
+<tr class="separator:a18b1fe1476b5adde8d6125e7f6a7f932 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc277990d41a0abc4e2658f94107481 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a2bc277990d41a0abc4e2658f94107481">evolve</a> (<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> t0, vector&lt; double &gt; &amp;x0, <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> dt, vector&lt; double &gt; dw) const</td></tr>
+<tr class="separator:a2bc277990d41a0abc4e2658f94107481 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11fb36244c91ca8c36317581b73bca08 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual const vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a11fb36244c91ca8c36317581b73bca08">getMCdimension</a> () const=0</td></tr>
+<tr class="separator:a11fb36244c91ca8c36317581b73bca08 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22cdf510508e6cf3adc69e2bcd9d151e inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">const vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a22cdf510508e6cf3adc69e2bcd9d151e">getInitial</a> () const</td></tr>
+<tr class="separator:a22cdf510508e6cf3adc69e2bcd9d151e inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ba3a18a45aad9012dbc6cbafb09e39 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a19ba3a18a45aad9012dbc6cbafb09e39">setupArgument</a> (<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> t, <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> dt, <a class="el" href="class_generic_random_variable_generator_1_1_argument.html">GenericRandomVariableGenerator::Argument</a> *)</td></tr>
+<tr class="separator:a19ba3a18a45aad9012dbc6cbafb09e39 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603717845fc9c6317d65a39409d10aed inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a603717845fc9c6317d65a39409d10aed">setupArgument</a> (<a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> t, <a class="el" href="_name_def_8h.html#ac2d3e0ba793497bcca555c7c2cf64ff3">Time</a> dt, vector&lt; <a class="el" href="class_generic_random_variable_generator_1_1_argument.html">GenericRandomVariableGenerator::Argument</a> * &gt;)</td></tr>
+<tr class="separator:a603717845fc9c6317d65a39409d10aed inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a9cb778073c54caae0ffea17a59a9a2f9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_stochastic_process.html">StochasticProcess</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_n_d.html#a9cb778073c54caae0ffea17a59a9a2f9">processes_</a></td></tr>
-<tr class="separator:a9cb778073c54caae0ffea17a59a9a2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25eac0a332967200b9d247c9a58572f"><td class="memItemLeft" align="right" valign="top">vector&lt; shared_ptr&lt; <a class="el" href="class_stochastic_process.html">StochasticProcess</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_n_d.html#ab25eac0a332967200b9d247c9a58572f">processes_</a></td></tr>
+<tr class="separator:ab25eac0a332967200b9d247c9a58572f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac86872437daeeffeb8fb1b387bea28f8"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_n_d.html#ac86872437daeeffeb8fb1b387bea28f8">dimension_</a></td></tr>
 <tr class="separator:ac86872437daeeffeb8fb1b387bea28f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_model"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_model')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_model.html">Model</a></td></tr>
-<tr class="memitem:aea7cb62b50849b8c9beef1493435241e inherit pro_attribs_class_model"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="_name_def_8h.html#a642a6c5fd87319d922637de0e0bb0305">Quote</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#aea7cb62b50849b8c9beef1493435241e">x0_</a></td></tr>
-<tr class="separator:aea7cb62b50849b8c9beef1493435241e inherit pro_attribs_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_model"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_model')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_model.html">Model&lt; vector&lt; double &gt; &gt;</a></td></tr>
+<tr class="memitem:a8b547d019a51a21f539209227fbde146 inherit pro_attribs_class_model"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a8b547d019a51a21f539209227fbde146">x0_</a></td></tr>
+<tr class="separator:a8b547d019a51a21f539209227fbde146 inherit pro_attribs_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab2356536a38f4961257654de629d6093"></a>
@@ -133,12 +135,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_model.html#acbe41cf30367bce4b96e92812d644f2d">Model</a>.</p>
+<p>Implements <a class="el" href="class_model.html#a26832ec2df24d7941783d3cd6d500898">Model&lt; vector&lt; double &gt; &gt;</a>.</p>
 
 </div>
 </div>
-<a id="a98976fe73a8895ff98ba60ea174232f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98976fe73a8895ff98ba60ea174232f8">&sect;&nbsp;</a></span>getProcess() <span class="overload">[1/2]</span></h2>
+<a id="ae0965f73049004a6634429b96c9190b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0965f73049004a6634429b96c9190b8">&sect;&nbsp;</a></span>getProcess() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,7 +149,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::shared_ptr&lt;<a class="el" href="class_stochastic_process.html">StochasticProcess</a>&gt;&amp; ModelND::getProcess </td>
+          <td class="memname">const shared_ptr&lt;<a class="el" href="class_stochastic_process.html">StochasticProcess</a>&gt;&amp; ModelND::getProcess </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -160,12 +162,12 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_model.html#adc6a695d3f6b2def79f2dde69b3ab547">Model</a>.</p>
+<p>Implements <a class="el" href="class_model.html#a6f584114ffcbd4eac04a2bbf8e9cede2">Model&lt; vector&lt; double &gt; &gt;</a>.</p>
 
 </div>
 </div>
-<a id="a62866814432b7c0a0d8f58223cc6279d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62866814432b7c0a0d8f58223cc6279d">&sect;&nbsp;</a></span>getProcess() <span class="overload">[2/2]</span></h2>
+<a id="acbbc63ae751cb1b3ad6f045fb42b6ac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbbc63ae751cb1b3ad6f045fb42b6ac3">&sect;&nbsp;</a></span>getProcess() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +176,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::shared_ptr&lt;<a class="el" href="class_stochastic_process.html">StochasticProcess</a>&gt;&amp; ModelND::getProcess </td>
+          <td class="memname">const shared_ptr&lt;<a class="el" href="class_stochastic_process.html">StochasticProcess</a>&gt;&amp; ModelND::getProcess </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -188,7 +190,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_model.html#a23adaaf21b2955a1f4d4893ad9b77f02">Model</a>.</p>
+<p>Implements <a class="el" href="class_model.html#a7b9e58a51a5d244aa7012f1cdb7aebd8">Model&lt; vector&lt; double &gt; &gt;</a>.</p>
 
 </div>
 </div>
@@ -215,8 +217,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9cb778073c54caae0ffea17a59a9a2f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cb778073c54caae0ffea17a59a9a2f9">&sect;&nbsp;</a></span>processes_</h2>
+<a id="ab25eac0a332967200b9d247c9a58572f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25eac0a332967200b9d247c9a58572f">&sect;&nbsp;</a></span>processes_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +227,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="class_stochastic_process.html">StochasticProcess</a>&gt; &gt; ModelND::processes_</td>
+          <td class="memname">vector&lt;shared_ptr&lt;<a class="el" href="class_stochastic_process.html">StochasticProcess</a>&gt; &gt; ModelND::processes_</td>
         </tr>
       </table>
   </td>

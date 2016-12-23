@@ -285,6 +285,33 @@ Models/BlackScholesModel.cpp.s:
 	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.s
 .PHONY : Models/BlackScholesModel.cpp.s
 
+Models/MertonJumpModel.o: Models/MertonJumpModel.cpp.o
+
+.PHONY : Models/MertonJumpModel.o
+
+# target to build an object file
+Models/MertonJumpModel.cpp.o:
+	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o
+.PHONY : Models/MertonJumpModel.cpp.o
+
+Models/MertonJumpModel.i: Models/MertonJumpModel.cpp.i
+
+.PHONY : Models/MertonJumpModel.i
+
+# target to preprocess a source file
+Models/MertonJumpModel.cpp.i:
+	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.i
+.PHONY : Models/MertonJumpModel.cpp.i
+
+Models/MertonJumpModel.s: Models/MertonJumpModel.cpp.s
+
+.PHONY : Models/MertonJumpModel.s
+
+# target to generate assembly for a file
+Models/MertonJumpModel.cpp.s:
+	$(MAKE) -f CMakeFiles/Finance.dir/build.make CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.s
+.PHONY : Models/MertonJumpModel.cpp.s
+
 Parameter.o: Parameter.cpp.o
 
 .PHONY : Parameter.o
@@ -555,6 +582,9 @@ help:
 	@echo "... Models/BlackScholesModel.o"
 	@echo "... Models/BlackScholesModel.i"
 	@echo "... Models/BlackScholesModel.s"
+	@echo "... Models/MertonJumpModel.o"
+	@echo "... Models/MertonJumpModel.i"
+	@echo "... Models/MertonJumpModel.s"
 	@echo "... Parameter.o"
 	@echo "... Parameter.i"
 	@echo "... Parameter.s"

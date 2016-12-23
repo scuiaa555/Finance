@@ -25,7 +25,7 @@ public:
      * Calculate the net present value by using the attached pricing engine.
      * Implemented by template pattern. \n
      * Set the argument of PricingEngine first and then calculate the npv by calling the method of PricingEngine and finally
-     *     fetch the results back from the PricingEngine class.
+     * fetch the results back from the PricingEngine class.
      */
     Money npv();
 

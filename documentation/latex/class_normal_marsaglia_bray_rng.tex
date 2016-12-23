@@ -4,26 +4,41 @@
 
 {\ttfamily \#include $<$Normal\+Marsaglia\+Bray\+Rng.\+h$>$}
 
+Inheritance diagram for Normal\+Marsaglia\+Bray\+Rng$<$ Uniform\+R\+NG $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_normal_marsaglia_bray_rng}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
-\item 
-\hyperlink{class_normal_marsaglia_bray_rng_a4d225dedc26e6dcf154a2902827b2ede}{Normal\+Marsaglia\+Bray\+Rng} ()
 \item 
 double \hyperlink{class_normal_marsaglia_bray_rng_a2cc54f5f331a5bd71eedc67c84db7279}{next} ()
 \item 
 double \hyperlink{class_normal_marsaglia_bray_rng_af90ac458fcbf302dfad98816132658c2}{last} ()
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_normal_marsaglia_bray_rng_a4d225dedc26e6dcf154a2902827b2ede}{Normal\+Marsaglia\+Bray\+Rng} ()
+\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-Uniform\+R\+NG \hyperlink{class_normal_marsaglia_bray_rng_a590b5bfbb3888d5163c6e3d702bfb2e0}{rng\+\_\+}
+Uniform\+R\+NG $\ast$ \hyperlink{class_normal_marsaglia_bray_rng_aa3741fc5dcca3f53aed89d2ec76d0402}{rng\+\_\+}
 \item 
 double \hyperlink{class_normal_marsaglia_bray_rng_a6d021a285cd0eb2d95c25cdb8af0ee93}{z\+\_\+}
-\begin{DoxyCompactList}\small\item\em second value of Marsaglia Bray scheme \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em second value of Marsaglia Bray scheme. \end{DoxyCompactList}\item 
 double \hyperlink{class_normal_marsaglia_bray_rng_a39a4a809c38812b344b3695b915133c6}{last\+\_\+}
-\begin{DoxyCompactList}\small\item\em last return value \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em last return value. \end{DoxyCompactList}\item 
 bool \hyperlink{class_normal_marsaglia_bray_rng_a6b795b729e795b1b81aa1b30d5dfe8ef}{second\+Exists\+\_\+}
 \end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_normal_marsaglia_bray_rng_aa99df0c9327941ffb3d6995b103ce8c0}{Singleton$<$ Normal\+Marsaglia\+Bray\+Rng$<$ Uniform\+R\+N\+G $>$ $>$}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -32,7 +47,7 @@ bool \hyperlink{class_normal_marsaglia_bray_rng_a6b795b729e795b1b81aa1b30d5dfe8e
 \index{Normal\+Marsaglia\+Bray\+Rng@{Normal\+Marsaglia\+Bray\+Rng}!Normal\+Marsaglia\+Bray\+Rng@{Normal\+Marsaglia\+Bray\+Rng}}
 \subsubsection{\texorpdfstring{Normal\+Marsaglia\+Bray\+Rng()}{NormalMarsagliaBrayRng()}}
 {\footnotesize\ttfamily template$<$typename Uniform\+R\+NG $>$ \\
-\hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}$<$ Uniform\+R\+NG $>$\+::\hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}$<$ Uniform\+R\+NG $>$\+::\hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
 
 
 
@@ -53,6 +68,16 @@ double \hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}
 
 
 
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_normal_marsaglia_bray_rng_aa99df0c9327941ffb3d6995b103ce8c0}{}\label{class_normal_marsaglia_bray_rng_aa99df0c9327941ffb3d6995b103ce8c0} 
+\index{Normal\+Marsaglia\+Bray\+Rng@{Normal\+Marsaglia\+Bray\+Rng}!Singleton$<$ Normal\+Marsaglia\+Bray\+Rng$<$ Uniform\+R\+N\+G $>$ $>$@{Singleton$<$ Normal\+Marsaglia\+Bray\+Rng$<$ Uniform\+R\+N\+G $>$ $>$}}
+\index{Singleton$<$ Normal\+Marsaglia\+Bray\+Rng$<$ Uniform\+R\+N\+G $>$ $>$@{Singleton$<$ Normal\+Marsaglia\+Bray\+Rng$<$ Uniform\+R\+N\+G $>$ $>$}!Normal\+Marsaglia\+Bray\+Rng@{Normal\+Marsaglia\+Bray\+Rng}}
+\subsubsection{\texorpdfstring{Singleton$<$ Normal\+Marsaglia\+Bray\+Rng$<$ Uniform\+R\+N\+G $>$ $>$}{Singleton< NormalMarsagliaBrayRng< UniformRNG > >}}
+{\footnotesize\ttfamily template$<$typename Uniform\+R\+NG $>$ \\
+friend class \hyperlink{class_singleton}{Singleton}$<$ \hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}$<$ Uniform\+R\+NG $>$ $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
 \subsection{Member Data Documentation}
 \hypertarget{class_normal_marsaglia_bray_rng_a39a4a809c38812b344b3695b915133c6}{}\label{class_normal_marsaglia_bray_rng_a39a4a809c38812b344b3695b915133c6} 
 \index{Normal\+Marsaglia\+Bray\+Rng@{Normal\+Marsaglia\+Bray\+Rng}!last\+\_\+@{last\+\_\+}}
@@ -63,14 +88,14 @@ double \hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}
 
 
 
-last return value 
+last return value. 
 
-\hypertarget{class_normal_marsaglia_bray_rng_a590b5bfbb3888d5163c6e3d702bfb2e0}{}\label{class_normal_marsaglia_bray_rng_a590b5bfbb3888d5163c6e3d702bfb2e0} 
+\hypertarget{class_normal_marsaglia_bray_rng_aa3741fc5dcca3f53aed89d2ec76d0402}{}\label{class_normal_marsaglia_bray_rng_aa3741fc5dcca3f53aed89d2ec76d0402} 
 \index{Normal\+Marsaglia\+Bray\+Rng@{Normal\+Marsaglia\+Bray\+Rng}!rng\+\_\+@{rng\+\_\+}}
 \index{rng\+\_\+@{rng\+\_\+}!Normal\+Marsaglia\+Bray\+Rng@{Normal\+Marsaglia\+Bray\+Rng}}
 \subsubsection{\texorpdfstring{rng\+\_\+}{rng\_}}
 {\footnotesize\ttfamily template$<$typename Uniform\+R\+NG $>$ \\
-Uniform\+R\+NG \hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}$<$ Uniform\+R\+NG $>$\+::rng\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+Uniform\+R\+NG$\ast$ \hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}$<$ Uniform\+R\+NG $>$\+::rng\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 \hypertarget{class_normal_marsaglia_bray_rng_a6b795b729e795b1b81aa1b30d5dfe8ef}{}\label{class_normal_marsaglia_bray_rng_a6b795b729e795b1b81aa1b30d5dfe8ef} 
 \index{Normal\+Marsaglia\+Bray\+Rng@{Normal\+Marsaglia\+Bray\+Rng}!second\+Exists\+\_\+@{second\+Exists\+\_\+}}
@@ -88,7 +113,7 @@ double \hyperlink{class_normal_marsaglia_bray_rng}{Normal\+Marsaglia\+Bray\+Rng}
 
 
 
-second value of Marsaglia Bray scheme 
+second value of Marsaglia Bray scheme. 
 
 
 

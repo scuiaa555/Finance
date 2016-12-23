@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Finance.dir/Parameter.cpp.o"
   "CMakeFiles/Finance.dir/Models/BlackScholesModel.cpp.o"
   "CMakeFiles/Finance.dir/StochasticProcesses/BSStochasticProcess.cpp.o"
+  "CMakeFiles/Finance.dir/Models/MertonJumpModel.cpp.o"
   "Finance.pdb"
   "Finance"
 )

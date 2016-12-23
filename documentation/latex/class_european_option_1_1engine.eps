@@ -177,7 +177,7 @@ boxfont setfont
 (GenericEngine< EuropeanOption::Arguments, EuropeanOption::Results >) cw
 (PricingEngine) cw
 (AnalyticEuropeanEngine) cw
-(McEuropeanEngine< RNG >) cw
+(McEuropeanEngine< RNG, PathType >) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -193,7 +193,7 @@ boundx scalefactor div boundy scalefactor div scale
  (GenericEngine< EuropeanOption::Arguments, EuropeanOption::Results >) 0.500000 2.000000 box
  (PricingEngine) 0.500000 3.000000 box
  (AnalyticEuropeanEngine) 0.000000 0.000000 box
- (McEuropeanEngine< RNG >) 1.000000 0.000000 box
+ (McEuropeanEngine< RNG, PathType >) 1.000000 0.000000 box
 
 % ----- relations -----
 

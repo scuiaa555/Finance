@@ -1,93 +1,193 @@
-\hypertarget{class_log_normal_process}{}\section{Log\+Normal\+Process Class Reference}
-\label{class_log_normal_process}\index{Log\+Normal\+Process@{Log\+Normal\+Process}}
+\hypertarget{class_log_normal_process}{}\section{Log\+Normal\+Process$<$ Vol\+Type $>$ Class Template Reference}
+\label{class_log_normal_process}\index{Log\+Normal\+Process$<$ Vol\+Type $>$@{Log\+Normal\+Process$<$ Vol\+Type $>$}}
 
 
 {\ttfamily \#include $<$Log\+Normal\+Process.\+h$>$}
 
-Inheritance diagram for Log\+Normal\+Process\+:\begin{figure}[H]
+Inheritance diagram for Log\+Normal\+Process$<$ Vol\+Type $>$\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_log_normal_process}
+\includegraphics[height=3.000000cm]{class_log_normal_process}
 \end{center}
 \end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Vol\+Type\+::vol\+\_\+return\+\_\+type \hyperlink{class_log_normal_process_a160d9cd152962a42ac9fc016d0948c1c}{vol\+\_\+return\+\_\+type}
+\item 
+typedef Vol\+Type\+::vol\+\_\+ptr\+\_\+type \hyperlink{class_log_normal_process_a904926553c5e4d60e52caf87e1745651}{vol\+\_\+ptr\+\_\+type}
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_log_normal_process_aef0d0728fe801074ee79abcf099e30e2}{Log\+Normal\+Process} ()=default
+\hyperlink{class_log_normal_process_acf4b8a29784c43d8c613d9707492179c}{Log\+Normal\+Process} ()=default
 \item 
-\hyperlink{class_log_normal_process_ace234a1856730ea48978eaf3cb3f7a79}{Log\+Normal\+Process} (\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} x0, const std\+::shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ \&drift, unsigned long dim\+Vol, const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ $>$ \&volatility)
+\hyperlink{class_log_normal_process_a1320686151d44d334be1289d21f1c711}{Log\+Normal\+Process} (\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} x0, const shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ \&drift, unsigned long dim\+Vol, const \hyperlink{class_log_normal_process_a904926553c5e4d60e52caf87e1745651}{vol\+\_\+ptr\+\_\+type} \&volatility)
 \item 
-\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \hyperlink{class_log_normal_process_a3732c44145aa35d1e2000cc0140bfb03}{get\+Spot} () const override
+virtual double \hyperlink{class_log_normal_process_a2c01b829c59e9b6156f0e34b3632c800}{get\+Spot} () const override
+\item 
+double \hyperlink{class_log_normal_process_a629e2612ff67a957accb04e5fe0ad2a9}{get\+Drift} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t) const
+\item 
+shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ \hyperlink{class_log_normal_process_a474db0a26169f742a61cb187347151ec}{get\+Drift} () const
+\item 
+virtual \hyperlink{class_log_normal_process_a160d9cd152962a42ac9fc016d0948c1c}{vol\+\_\+return\+\_\+type} \hyperlink{class_log_normal_process_af2d153f75cd5efbeaa3a9028585dd835}{get\+Volatility} (\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t) const
+\item 
+shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ \hyperlink{class_log_normal_process_a7860abf96c754c037531680cb0dde6ff}{get\+Volatility} () const
+\item 
+unsigned long \hyperlink{class_log_normal_process_a708854438eccd5ed5d1a996c5f0b6ff8}{get\+Vol\+Dimension} () const
 \end{DoxyCompactItemize}
-\subsection*{Private Attributes}
+\subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \hyperlink{class_log_normal_process_a209592d8c0657d00ecbb3072567903e1}{x0\+\_\+}
+double \hyperlink{class_log_normal_process_a547e799140c1575cc979416f3cf7ab24}{get\+Vol\+Helper} (const shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ vol, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t) const
 \item 
-std\+::shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ \hyperlink{class_log_normal_process_a0d4e011f211503c5bc8482f68e257074}{drift\+\_\+}
-\item 
-unsigned long \hyperlink{class_log_normal_process_a2ef2bb09ad7763645dd2d8396355fdb0}{dim\+Vol\+\_\+}
-\item 
-std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ $>$ \hyperlink{class_log_normal_process_ac51be6698f524d4cc5da8ccbdd4e1256}{volatility\+\_\+}
+vector$<$ double $>$ \hyperlink{class_log_normal_process_aa65ab0e1f6b6679f49e993dfd1d3e9a0}{get\+Vol\+Helper} (const vector$<$ shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$$>$ vols, \hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time} t) const
 \end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \hyperlink{class_log_normal_process_aaad6cd95af55b1d573fa384ddb0066ef}{x0\+\_\+}
+\item 
+shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ \hyperlink{class_log_normal_process_ae59abec9b1917c092665a99464f4af85}{drift\+\_\+}
+\item 
+unsigned long \hyperlink{class_log_normal_process_ae126cc386f39576fa62debd75443fa08}{dim\+Vol\+\_\+}
+\item 
+\hyperlink{class_log_normal_process_a904926553c5e4d60e52caf87e1745651}{vol\+\_\+ptr\+\_\+type} \hyperlink{class_log_normal_process_a90615a4b65992ad6fb280b18a9a705b3}{volatility\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_log_normal_process_a904926553c5e4d60e52caf87e1745651}{}\label{class_log_normal_process_a904926553c5e4d60e52caf87e1745651} 
+\index{Log\+Normal\+Process@{Log\+Normal\+Process}!vol\+\_\+ptr\+\_\+type@{vol\+\_\+ptr\+\_\+type}}
+\index{vol\+\_\+ptr\+\_\+type@{vol\+\_\+ptr\+\_\+type}!Log\+Normal\+Process@{Log\+Normal\+Process}}
+\subsubsection{\texorpdfstring{vol\+\_\+ptr\+\_\+type}{vol\_ptr\_type}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type$>$ \\
+typedef Vol\+Type\+::vol\+\_\+ptr\+\_\+type \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::\hyperlink{class_log_normal_process_a904926553c5e4d60e52caf87e1745651}{vol\+\_\+ptr\+\_\+type}}
+
+\hypertarget{class_log_normal_process_a160d9cd152962a42ac9fc016d0948c1c}{}\label{class_log_normal_process_a160d9cd152962a42ac9fc016d0948c1c} 
+\index{Log\+Normal\+Process@{Log\+Normal\+Process}!vol\+\_\+return\+\_\+type@{vol\+\_\+return\+\_\+type}}
+\index{vol\+\_\+return\+\_\+type@{vol\+\_\+return\+\_\+type}!Log\+Normal\+Process@{Log\+Normal\+Process}}
+\subsubsection{\texorpdfstring{vol\+\_\+return\+\_\+type}{vol\_return\_type}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type$>$ \\
+typedef Vol\+Type\+::vol\+\_\+return\+\_\+type \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::\hyperlink{class_log_normal_process_a160d9cd152962a42ac9fc016d0948c1c}{vol\+\_\+return\+\_\+type}}
+
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{class_log_normal_process_aef0d0728fe801074ee79abcf099e30e2}{}\label{class_log_normal_process_aef0d0728fe801074ee79abcf099e30e2} 
+\hypertarget{class_log_normal_process_acf4b8a29784c43d8c613d9707492179c}{}\label{class_log_normal_process_acf4b8a29784c43d8c613d9707492179c} 
 \index{Log\+Normal\+Process@{Log\+Normal\+Process}!Log\+Normal\+Process@{Log\+Normal\+Process}}
 \index{Log\+Normal\+Process@{Log\+Normal\+Process}!Log\+Normal\+Process@{Log\+Normal\+Process}}
 \subsubsection{\texorpdfstring{Log\+Normal\+Process()}{LogNormalProcess()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Log\+Normal\+Process\+::\+Log\+Normal\+Process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type$>$ \\
+\hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::\hyperlink{class_log_normal_process}{Log\+Normal\+Process} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
-\hypertarget{class_log_normal_process_ace234a1856730ea48978eaf3cb3f7a79}{}\label{class_log_normal_process_ace234a1856730ea48978eaf3cb3f7a79} 
+\hypertarget{class_log_normal_process_a1320686151d44d334be1289d21f1c711}{}\label{class_log_normal_process_a1320686151d44d334be1289d21f1c711} 
 \index{Log\+Normal\+Process@{Log\+Normal\+Process}!Log\+Normal\+Process@{Log\+Normal\+Process}}
 \index{Log\+Normal\+Process@{Log\+Normal\+Process}!Log\+Normal\+Process@{Log\+Normal\+Process}}
 \subsubsection{\texorpdfstring{Log\+Normal\+Process()}{LogNormalProcess()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Log\+Normal\+Process\+::\+Log\+Normal\+Process (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote}}]{x0,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ \&}]{drift,  }\item[{unsigned long}]{dim\+Vol,  }\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ $>$ \&}]{volatility }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily template$<$typename Vol\+Type$>$ \\
+\hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::\hyperlink{class_log_normal_process}{Log\+Normal\+Process} (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote}}]{x0,  }\item[{const shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$ \&}]{drift,  }\item[{unsigned long}]{dim\+Vol,  }\item[{const \hyperlink{class_log_normal_process_a904926553c5e4d60e52caf87e1745651}{vol\+\_\+ptr\+\_\+type} \&}]{volatility }\end{DoxyParamCaption})}
 
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_log_normal_process_a3732c44145aa35d1e2000cc0140bfb03}{}\label{class_log_normal_process_a3732c44145aa35d1e2000cc0140bfb03} 
+\hypertarget{class_log_normal_process_a629e2612ff67a957accb04e5fe0ad2a9}{}\label{class_log_normal_process_a629e2612ff67a957accb04e5fe0ad2a9} 
+\index{Log\+Normal\+Process@{Log\+Normal\+Process}!get\+Drift@{get\+Drift}}
+\index{get\+Drift@{get\+Drift}!Log\+Normal\+Process@{Log\+Normal\+Process}}
+\subsubsection{\texorpdfstring{get\+Drift()}{getDrift()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type $>$ \\
+double \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::get\+Drift (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{t }\end{DoxyParamCaption}) const}
+
+\hypertarget{class_log_normal_process_a474db0a26169f742a61cb187347151ec}{}\label{class_log_normal_process_a474db0a26169f742a61cb187347151ec} 
+\index{Log\+Normal\+Process@{Log\+Normal\+Process}!get\+Drift@{get\+Drift}}
+\index{get\+Drift@{get\+Drift}!Log\+Normal\+Process@{Log\+Normal\+Process}}
+\subsubsection{\texorpdfstring{get\+Drift()}{getDrift()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type$>$ \\
+shared\+\_\+ptr$<$\hyperlink{class_parameter}{Parameter}$>$ \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::get\+Drift (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{class_log_normal_process_a2c01b829c59e9b6156f0e34b3632c800}{}\label{class_log_normal_process_a2c01b829c59e9b6156f0e34b3632c800} 
 \index{Log\+Normal\+Process@{Log\+Normal\+Process}!get\+Spot@{get\+Spot}}
 \index{get\+Spot@{get\+Spot}!Log\+Normal\+Process@{Log\+Normal\+Process}}
 \subsubsection{\texorpdfstring{get\+Spot()}{getSpot()}}
-{\footnotesize\ttfamily \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} Log\+Normal\+Process\+::get\+Spot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type$>$ \\
+virtual double \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::get\+Spot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
 Implements \hyperlink{class_stochastic_process_aad2ef51ca4bc2fe5f33a73e8f0ee361e}{Stochastic\+Process}.
 
+\hypertarget{class_log_normal_process_af2d153f75cd5efbeaa3a9028585dd835}{}\label{class_log_normal_process_af2d153f75cd5efbeaa3a9028585dd835} 
+\index{Log\+Normal\+Process@{Log\+Normal\+Process}!get\+Volatility@{get\+Volatility}}
+\index{get\+Volatility@{get\+Volatility}!Log\+Normal\+Process@{Log\+Normal\+Process}}
+\subsubsection{\texorpdfstring{get\+Volatility()}{getVolatility()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type $>$ \\
+\hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::\hyperlink{class_log_normal_process_a160d9cd152962a42ac9fc016d0948c1c}{vol\+\_\+return\+\_\+type} \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::get\+Volatility (\begin{DoxyParamCaption}\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_b_s_stochastic_process_ad20afb9e82ee123452a7d828837289f6}{B\+S\+Stochastic\+Process}.
+
+\hypertarget{class_log_normal_process_a7860abf96c754c037531680cb0dde6ff}{}\label{class_log_normal_process_a7860abf96c754c037531680cb0dde6ff} 
+\index{Log\+Normal\+Process@{Log\+Normal\+Process}!get\+Volatility@{get\+Volatility}}
+\index{get\+Volatility@{get\+Volatility}!Log\+Normal\+Process@{Log\+Normal\+Process}}
+\subsubsection{\texorpdfstring{get\+Volatility()}{getVolatility()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type$>$ \\
+shared\+\_\+ptr$<$\hyperlink{class_parameter}{Parameter}$>$ \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::get\+Volatility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{class_log_normal_process_a708854438eccd5ed5d1a996c5f0b6ff8}{}\label{class_log_normal_process_a708854438eccd5ed5d1a996c5f0b6ff8} 
+\index{Log\+Normal\+Process@{Log\+Normal\+Process}!get\+Vol\+Dimension@{get\+Vol\+Dimension}}
+\index{get\+Vol\+Dimension@{get\+Vol\+Dimension}!Log\+Normal\+Process@{Log\+Normal\+Process}}
+\subsubsection{\texorpdfstring{get\+Vol\+Dimension()}{getVolDimension()}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type$>$ \\
+unsigned long \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::get\+Vol\+Dimension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hypertarget{class_log_normal_process_a547e799140c1575cc979416f3cf7ab24}{}\label{class_log_normal_process_a547e799140c1575cc979416f3cf7ab24} 
+\index{Log\+Normal\+Process@{Log\+Normal\+Process}!get\+Vol\+Helper@{get\+Vol\+Helper}}
+\index{get\+Vol\+Helper@{get\+Vol\+Helper}!Log\+Normal\+Process@{Log\+Normal\+Process}}
+\subsubsection{\texorpdfstring{get\+Vol\+Helper()}{getVolHelper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type $>$ \\
+double \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::get\+Vol\+Helper (\begin{DoxyParamCaption}\item[{const shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$}]{vol,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{class_log_normal_process_aa65ab0e1f6b6679f49e993dfd1d3e9a0}{}\label{class_log_normal_process_aa65ab0e1f6b6679f49e993dfd1d3e9a0} 
+\index{Log\+Normal\+Process@{Log\+Normal\+Process}!get\+Vol\+Helper@{get\+Vol\+Helper}}
+\index{get\+Vol\+Helper@{get\+Vol\+Helper}!Log\+Normal\+Process@{Log\+Normal\+Process}}
+\subsubsection{\texorpdfstring{get\+Vol\+Helper()}{getVolHelper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type $>$ \\
+vector$<$ double $>$ \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::get\+Vol\+Helper (\begin{DoxyParamCaption}\item[{const vector$<$ shared\+\_\+ptr$<$ \hyperlink{class_parameter}{Parameter} $>$$>$}]{vols,  }\item[{\hyperlink{_name_def_8h_ac2d3e0ba793497bcca555c7c2cf64ff3}{Time}}]{t }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_log_normal_process_a2ef2bb09ad7763645dd2d8396355fdb0}{}\label{class_log_normal_process_a2ef2bb09ad7763645dd2d8396355fdb0} 
+\hypertarget{class_log_normal_process_ae126cc386f39576fa62debd75443fa08}{}\label{class_log_normal_process_ae126cc386f39576fa62debd75443fa08} 
 \index{Log\+Normal\+Process@{Log\+Normal\+Process}!dim\+Vol\+\_\+@{dim\+Vol\+\_\+}}
 \index{dim\+Vol\+\_\+@{dim\+Vol\+\_\+}!Log\+Normal\+Process@{Log\+Normal\+Process}}
 \subsubsection{\texorpdfstring{dim\+Vol\+\_\+}{dimVol\_}}
-{\footnotesize\ttfamily unsigned long Log\+Normal\+Process\+::dim\+Vol\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type$>$ \\
+unsigned long \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::dim\+Vol\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{class_log_normal_process_a0d4e011f211503c5bc8482f68e257074}{}\label{class_log_normal_process_a0d4e011f211503c5bc8482f68e257074} 
+\hypertarget{class_log_normal_process_ae59abec9b1917c092665a99464f4af85}{}\label{class_log_normal_process_ae59abec9b1917c092665a99464f4af85} 
 \index{Log\+Normal\+Process@{Log\+Normal\+Process}!drift\+\_\+@{drift\+\_\+}}
 \index{drift\+\_\+@{drift\+\_\+}!Log\+Normal\+Process@{Log\+Normal\+Process}}
 \subsubsection{\texorpdfstring{drift\+\_\+}{drift\_}}
-{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{class_parameter}{Parameter}$>$ Log\+Normal\+Process\+::drift\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type$>$ \\
+shared\+\_\+ptr$<$\hyperlink{class_parameter}{Parameter}$>$ \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::drift\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{class_log_normal_process_ac51be6698f524d4cc5da8ccbdd4e1256}{}\label{class_log_normal_process_ac51be6698f524d4cc5da8ccbdd4e1256} 
+\hypertarget{class_log_normal_process_a90615a4b65992ad6fb280b18a9a705b3}{}\label{class_log_normal_process_a90615a4b65992ad6fb280b18a9a705b3} 
 \index{Log\+Normal\+Process@{Log\+Normal\+Process}!volatility\+\_\+@{volatility\+\_\+}}
 \index{volatility\+\_\+@{volatility\+\_\+}!Log\+Normal\+Process@{Log\+Normal\+Process}}
 \subsubsection{\texorpdfstring{volatility\+\_\+}{volatility\_}}
-{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\hyperlink{class_parameter}{Parameter}$>$ $>$ Log\+Normal\+Process\+::volatility\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type$>$ \\
+\hyperlink{class_log_normal_process_a904926553c5e4d60e52caf87e1745651}{vol\+\_\+ptr\+\_\+type} \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::volatility\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
 
-\hypertarget{class_log_normal_process_a209592d8c0657d00ecbb3072567903e1}{}\label{class_log_normal_process_a209592d8c0657d00ecbb3072567903e1} 
+\hypertarget{class_log_normal_process_aaad6cd95af55b1d573fa384ddb0066ef}{}\label{class_log_normal_process_aaad6cd95af55b1d573fa384ddb0066ef} 
 \index{Log\+Normal\+Process@{Log\+Normal\+Process}!x0\+\_\+@{x0\+\_\+}}
 \index{x0\+\_\+@{x0\+\_\+}!Log\+Normal\+Process@{Log\+Normal\+Process}}
 \subsubsection{\texorpdfstring{x0\+\_\+}{x0\_}}
-{\footnotesize\ttfamily \hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} Log\+Normal\+Process\+::x0\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily template$<$typename Vol\+Type$>$ \\
+\hyperlink{_name_def_8h_a642a6c5fd87319d922637de0e0bb0305}{Quote} \hyperlink{class_log_normal_process}{Log\+Normal\+Process}$<$ Vol\+Type $>$\+::x0\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Stochastic\+Processes/\hyperlink{_log_normal_process_8h}{Log\+Normal\+Process.\+h}\item 
-Stochastic\+Processes/\hyperlink{_log_normal_process_8cpp}{Log\+Normal\+Process.\+cpp}\end{DoxyCompactItemize}
+Stochastic\+Processes/\hyperlink{_log_normal_process_8h}{Log\+Normal\+Process.\+h}\end{DoxyCompactItemize}

@@ -56,6 +56,9 @@ protected:
 /* 1D means that this model only has one driving stochastic process */
 class Model1D : public Model<double> {
 public:
+
+    Model1D() = default;
+
     Model1D(const shared_ptr<StochasticProcess> &process) : process_(process) {
         x0_ = process_->getSpot();
     }

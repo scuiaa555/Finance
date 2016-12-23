@@ -34,12 +34,16 @@ public:
 
     double getDrift(Time t) const;
 
+    shared_ptr<Parameter> getDrift() const { return drift_; }
+
     virtual vol_return_type getVolatility(Time t) const;
+
+    shared_ptr<Parameter> getVolatility() const { return volatility_; }
 
     unsigned long getVolDimension() const { return dimVol_; }
 
 
-private:
+protected:
 
     Quote x0_;
     shared_ptr<Parameter> drift_;

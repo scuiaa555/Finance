@@ -176,7 +176,7 @@ boxfont setfont
 (AsianOption::engine) cw
 (GenericEngine< AsianOption::Arguments, AsianOption::Results >) cw
 (PricingEngine) cw
-(McAsianEngine< RNG >) cw
+(McAsianEngine< RNG, PathType >) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -191,7 +191,7 @@ boundx scalefactor div boundy scalefactor div scale
  (AsianOption::engine) 0.000000 1.000000 box
  (GenericEngine< AsianOption::Arguments, AsianOption::Results >) 0.000000 2.000000 box
  (PricingEngine) 0.000000 3.000000 box
- (McAsianEngine< RNG >) 0.000000 0.000000 box
+ (McAsianEngine< RNG, PathType >) 0.000000 0.000000 box
 
 % ----- relations -----
 
